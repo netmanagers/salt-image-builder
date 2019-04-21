@@ -12,7 +12,7 @@ The images are tested with [`inspec`](https://www.inspec.io/) before commiting, 
 salt got installed and it's the desired version.
 
 Requirements
-............
+------------
 
 * Python3: the initial script is a silly python script to ease the process.
 * Packer: https://www.packer.io/downloads.html, a binary you can just download and copy
@@ -21,7 +21,7 @@ Requirements
   build the images.
 
 Basic usage of the builder scripts
-..................................
+----------------------------------
 
 1. Edit `matrix.csv`. This is the matrix of VMs to build. The format is
 
@@ -48,7 +48,7 @@ salt-py3/debian-9       2019.2              5bd9384b94ee        14 minutes ago  
 ```
 
 How to use the images
-.....................
+---------------------
 
 Just edit your `kitchen.local.yml` file, and add the image you want to use, like
 
@@ -66,6 +66,6 @@ platforms:
 ```
 
 TODO
-....
+----
 
 Lots. This is just an initial attempt. Any suggestion is welcome :)
