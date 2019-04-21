@@ -1,0 +1,49 @@
+{
+  "variables": {
+    "os": null,
+    "os_ver": null,
+    "salt_ver": "2019.2",
+    "py_ver": "3"
+  },
+  "builders": [
+    {
+      "type": "docker",
+      "image": "{{user `os`}}:{{user `os_ver`}}",
+      "pull": true,
+      "commit": true
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "file",
+      "source": "/tmp/saltbootstrap.sh",
+      "destination": "/tmp/saltbootstrap.sh"
+    },
+    {
+      "type": "shell",
+      "script": "scripts/prepare.sh",
+      "environment_vars": [
+        "OS={{user `os`}}",
+        "OS_VER={{user `os_ver`}}"
+      ]
+    },
+    {
+      "type": "shell",
+      "inline": [
+        "chmod u+x /tmp/saltbootstrap.sh",
+        "/tmp/saltbootstrap.sh -XUd -x python{{user `py_ver`}} stable {{user `salt_ver`}}"
+      ]
+    },
+    {
+      "type": "inspec",
+      "profile": "test/integration/{{user `salt_ver` }}"
+    }
+  ],
+  "post-processors": [
+    {
+      "type": "docker-tag",
+      "repository": "salt-py{{user `py_ver`}}/{{user `os`}}-{{user `os_ver`}}",
+      "tag": "{{user `salt_ver`}}"
+    }
+  ]
+}
