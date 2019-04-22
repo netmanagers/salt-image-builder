@@ -15,6 +15,10 @@
   ],
   "provisioners": [
     {
+      "type": "shell-local",
+      "command": "echo version: \"'{{user `salt_ver` }}'\" > /tmp/packer-salt-attributes.yml"
+    },
+    {
       "type": "file",
       "source": "/tmp/saltbootstrap.sh",
       "destination": "/tmp/saltbootstrap.sh"
@@ -31,12 +35,13 @@
       "type": "shell",
       "inline": [
         "chmod u+x /tmp/saltbootstrap.sh",
-        "/tmp/saltbootstrap.sh -XUd -x python{{user `py_ver`}} stable {{user `salt_ver`}}"
+        "/tmp/saltbootstrap.sh -XUdf -x python{{user `py_ver`}} git {{user `salt_ver`}}"
       ]
     },
     {
       "type": "inspec",
-      "profile": "test/integration/{{user `salt_ver` }}"
+      "profile": "test/integration",
+      "attributes": "/tmp/packer-salt-attributes.yml"
     }
   ],
   "post-processors": [

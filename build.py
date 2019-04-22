@@ -17,7 +17,7 @@ import subprocess
 
 SALT_BS = 'https://bootstrap.saltstack.com'
 
-# Get the salt bootstrapper for later use
+# Get the salt bootstrapper here, to download it just once for later use
 subprocess.run([
                 "curl",
                 "-L",
