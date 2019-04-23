@@ -7,12 +7,12 @@ echo "               **** OS_VERSION is ${OS_VER} ****"
 mkdir -p /run/sshd
 
 case ${OS} in
-  debian,ubuntu)
+  debian|ubuntu)
     apt-get update && apt-get install -y udev locales git procps
-    locale-gen en_US.UTF-8
-    update-locale LANG=en_US.UTF-8
+    echo "en_US.UTF-8 UTF-8" >> /etc//etc/locale.gen
+    locale-gen
     ;;
-  centos,fedora)
+  centos|fedora)
     yum -y update && yum -y install udev git
     ;;
   opensuse)
