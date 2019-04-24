@@ -12,7 +12,7 @@ control 'formulas prerequisites' do
     pkgs = %w(udev git locales procps)
   end
 
-  pkgs. each do |p|
+  pkgs.each do |p|
     describe package(p) do
       it { should be_installed }
     end
