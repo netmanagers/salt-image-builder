@@ -29,6 +29,7 @@
       "environment_vars": [
         "OS={{user `os`}}",
         "OS_VER={{user `os_ver`}}"
+        "PY_VER={{user `py_ver`}}"
       ]
     },
     {
@@ -47,8 +48,8 @@
   "post-processors": [
     {
       "type": "docker-tag",
-      "repository": "salt-py{{user `py_ver`}}/{{user `os`}}-{{user `os_ver`}}",
-      "tag": "{{user `salt_ver`}}"
+      "repository": "netmanagers/salt-{{user `salt_ver`}}--py{{user `py_ver`}}",
+      "tag": "{{user `os`}}-{{user `os_ver`}}"
     }
   ]
 }
