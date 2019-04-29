@@ -30,7 +30,7 @@ subprocess.run([
 with open("matrix.csv") as f:
   reader = csv.reader(f)
   list = list(reader)
-  print(list)
+
   for line in list:
     print(line)
     subprocess.run([
@@ -48,4 +48,3 @@ with open("matrix.csv") as f:
       "py_ver=" + line[4],
       "salt-testing-docker.json"
     ])
-

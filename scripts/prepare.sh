@@ -19,9 +19,13 @@ case ${OS} in
   centos)
     if [ "${PY_VER}" = "3" ]; then
       C_PKGS="${COMMON_PKGS} epel-release"
+    else
+      C_PKGS="${COMMON_PKGS}"
     fi
     yum -y update && yum -y install ${C_PKGS}
-    yum -y update && yum -y install python36
+    if [ "${PY_VER}" = "3" ]; then
+      yum -y update && yum -y install python36
+    fi
     # yum -y update && yum -y install python4 python34-pip python34-devel
     # # python34 does not have a python3 binary, so adding a link
     # ln -s /usr/bin/python3.4 /usr/local/bin/python3
@@ -29,8 +33,13 @@ case ${OS} in
   fedora)
     dnf -y update && dnf -y install ${COMMON_PKGS}
     ;;
-  opensuse)
-    O_PKGS="${COMMON_PKGS} glibc-locale net-tools-deprecated"
+  opensuse*)
+    O_PKGS="${COMMON_PKGS} glibc-locale net-tools"
+    if [ "${OS_VER}" = "15" ]; then
+      O_PKGS="${O_PKGS} net-tools-deprecated python-xml"
+    fi
+    # https://github.com/inspec/train/issues/377
+    ln -s /etc/os-release /etc/SuSE-release
     zypper refresh && zypper install -y ${O_PKGS}
     systemctl enable sshd
     ;;

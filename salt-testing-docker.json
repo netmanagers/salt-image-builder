@@ -54,7 +54,7 @@
     {
       "type": "docker-tag",
       "repository": "netmanagers/salt-{{user `salt_ver`}}-py{{user `py_ver`}}",
-      "tag": "{{user `os`}}-{{user `os_ver`}}"
+      "tag": "{{user `os` | sed \"s#/#-#g\" }}-{{user `os_ver`}}"
     }
   ]
 }
