@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 
 echo "**** PACKER_BUILDER_TYPE is ${PACKER_BUILDER_TYPE} ****"
 echo "               **** OS is ${OS} ****"
@@ -17,11 +17,14 @@ case ${OS} in
     locale-gen
     ;;
   centos)
-    if [ ${PY_VERSION} = "3" ]; then
+    if [ "${PY_VER}" = "3" ]; then
       C_PKGS="${COMMON_PKGS} epel-release"
     fi
     yum -y update && yum -y install ${C_PKGS}
     yum -y update && yum -y install python36
+    # yum -y update && yum -y install python4 python34-pip python34-devel
+    # # python34 does not have a python3 binary, so adding a link
+    # ln -s /usr/bin/python3.4 /usr/local/bin/python3
     ;;
   fedora)
     dnf -y update && dnf -y install ${COMMON_PKGS}

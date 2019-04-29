@@ -1,9 +1,9 @@
 version = attribute('version')
 
-control 'salt minion' do
+control 'salt call' do
   title 'should be installed'
 
-  describe command('salt-minion --version') do
+  describe command('salt-call --version') do
     its('stdout') { should match /#{version}/ }
     its('exit_status') { should eq 0 }
   end

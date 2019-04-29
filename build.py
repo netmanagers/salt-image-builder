@@ -43,7 +43,9 @@ with open("matrix.csv") as f:
       "-var",
       "salt_ver=" + line[2],
       "-var",
-      "py_ver=" + line[3],
+      "salt_install_method=" + line[3],
+      "-var",
+      "py_ver=" + line[4],
       "salt-testing-docker.json"
     ])
 

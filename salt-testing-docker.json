@@ -3,6 +3,7 @@
     "os": null,
     "os_ver": null,
     "salt_ver": "2019.2",
+    "salt_install_method": "stable",
     "py_ver": "3"
   },
   "builders": [
@@ -28,7 +29,7 @@
       "script": "scripts/prepare.sh",
       "environment_vars": [
         "OS={{user `os`}}",
-        "OS_VER={{user `os_ver`}}"
+        "OS_VER={{user `os_ver`}}",
         "PY_VER={{user `py_ver`}}"
       ]
     },
@@ -36,8 +37,12 @@
       "type": "shell",
       "inline": [
         "chmod u+x /tmp/saltbootstrap.sh",
-        "/tmp/saltbootstrap.sh -XUdf -x python{{user `py_ver`}} git {{user `salt_ver`}}"
+        "/tmp/saltbootstrap.sh -XUdfP -x python{{user `py_ver`}} {{user `salt_install_method`}} {{user `salt_ver`}}"
       ]
+    },
+    {
+      "type": "shell",
+      "script": "scripts/clean.sh"
     },
     {
       "type": "inspec",
@@ -48,7 +53,7 @@
   "post-processors": [
     {
       "type": "docker-tag",
-      "repository": "netmanagers/salt-{{user `salt_ver`}}--py{{user `py_ver`}}",
+      "repository": "netmanagers/salt-{{user `salt_ver`}}-py{{user `py_ver`}}",
       "tag": "{{user `os`}}-{{user `os_ver`}}"
     }
   ]
