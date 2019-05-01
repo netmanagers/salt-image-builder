@@ -26,9 +26,9 @@ case ${OS} in
     if [ "${PY_VER}" = "3" ]; then
       yum -y update && yum -y install python36
     fi
-    # yum -y update && yum -y install python4 python34-pip python34-devel
-    # # python34 does not have a python3 binary, so adding a link
-    # ln -s /usr/bin/python3.4 /usr/local/bin/python3
+    if [ "${OS_VER}" = "6" ]; then
+      yum -y install sudo openssh-server openssh-clients which
+    fi
     ;;
   fedora)
     dnf -y update && dnf -y install ${COMMON_PKGS}
