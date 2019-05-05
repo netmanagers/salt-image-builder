@@ -38,6 +38,13 @@ case ${OS} in
     if [ "${OS_VER}" = "15" ]; then
       O_PKGS="${O_PKGS} net-tools-deprecated python-xml"
     fi
+
+    # Edit zypper repos (see https://github.com/netmanagers/salt-image-builder/issues/4)
+    cd /etc/zypp/repos.d/
+    ls | while read F; do
+      sed -i "s#download.opensuse.org#mirror.23media.com/opensuse#g" "${F}"
+    done
+
     # https://github.com/inspec/train/issues/377
     ln -s /etc/os-release /etc/SuSE-release
     zypper refresh && zypper install -y ${O_PKGS}
