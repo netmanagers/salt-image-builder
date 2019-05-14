@@ -23,7 +23,7 @@ case ${OS} in
     C_PKGS="${COMMON_PKGS} openssh-server openssh-clients which"
 
     if [ "${PY_VER}" = "3" ]; then
-      C_PKGS="${COMMON_PKGS} epel-release"
+      C_PKGS="${C_PKGS} epel-release"
     fi
 
     yum -y update && yum -y install ${C_PKGS}
