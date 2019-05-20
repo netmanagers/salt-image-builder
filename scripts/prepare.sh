@@ -1,5 +1,16 @@
 #!/bin/bash -x
 
+_exit_handler() {
+  local rc="$?"
+  trap - EXIT
+  if [ "${rc}" -ne 0 ]; then
+    echo "Error occurred (${rc}) while running $0 at line $1 : ${BASH_COMMAND}"
+  fi
+  exit "$rc"
+}
+
+trap '_exit_handler ${LINENO}' EXIT ERR
+
 echo "**** PACKER_BUILDER_TYPE is ${PACKER_BUILDER_TYPE} ****"
 echo "               **** OS is ${OS} ****"
 echo "               **** OS_VERSION is ${OS_VER} ****"
@@ -16,8 +27,11 @@ case ${OS} in
     D_PKGS="${COMMON_PKGS} locales procps openssh-server lsb-release"
 
     apt-get update && apt-get install -y ${D_PKGS}
-    echo "en_US.UTF-8 UTF-8" >> /etc//etc/locale.gen
-    locale-gen
+    # Use @vutny's suggestion in https://github.com/saltstack-formulas/postgres-formula/pull/269#issuecomment-492597286
+    rm -f /etc/default/locale /etc/locale.gen
+    echo 'locales locales/locales_to_be_generated multiselect en_US.UTF-8 UTF-8' | debconf-set-selections -
+    echo 'locales locales/default_environment_locale select en_US.UTF-8' | debconf-set-selections -
+    dpkg-reconfigure -f noninteractive locales
     ;;
   centos)
     C_PKGS="${COMMON_PKGS} openssh-server openssh-clients which"
@@ -51,7 +65,9 @@ case ${OS} in
     done
 
     # https://github.com/inspec/train/issues/377
-    ln -s /etc/os-release /etc/SuSE-release
+    if [ ! -e /etc/SuSE-release ]; then
+      ln -s /etc/os-release /etc/SuSE-releasea
+    fi
     zypper refresh && zypper install -y ${O_PKGS}
     systemctl enable sshd
     ;;
