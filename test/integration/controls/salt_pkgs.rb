@@ -1,4 +1,4 @@
-version = attribute('version')
+version = attribute('version') == 'develop' ? 'Fluorine' : attribute('version')
 
 control 'salt call' do
   title 'should be installed'

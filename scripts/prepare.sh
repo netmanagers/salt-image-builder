@@ -15,6 +15,7 @@ echo "**** PACKER_BUILDER_TYPE is ${PACKER_BUILDER_TYPE} ****"
 echo "               **** OS is ${OS} ****"
 echo "               **** OS_VERSION is ${OS_VER} ****"
 echo "               **** PY_VERSION is ${PY_VER} ****"
+echo "               **** SALT_VERSION is ${SALT_VER} ****"
 
 mkdir -p /run/sshd
 
@@ -43,7 +44,15 @@ case ${OS} in
     yum -y update && yum -y install ${C_PKGS}
 
     if [ "${PY_VER}" = "3" ]; then
-      yum -y update && yum -y install python36
+      if [ "${SALT_VER}" = "develop" ]; then
+        PY_PKGS="python34 python34-pip python34-devel openssl-devel gcc-g++ zeromq zeromq-devel"
+        # The bootstrapper script only installs python3.4 packages
+        # and searches for python3 binary, which does not exist on the python3.4 package
+        ln -s /usr/bin/python3.4 /usr/bin/python3
+      else
+        PY_PKGS="python36"
+      fi
+      yum -y update && yum -y install ${PY_PKGS}
     fi
     ;;
   fedora)

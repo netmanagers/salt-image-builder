@@ -34,7 +34,8 @@
       "environment_vars": [
         "OS={{user `os`}}",
         "OS_VER={{user `os_ver`}}",
-        "PY_VER={{user `py_ver`}}"
+        "PY_VER={{user `py_ver`}}",
+        "SALT_VER={{user `salt_ver`}}"
       ]
     },
     {
