@@ -21,7 +21,10 @@
   "provisioners": [
     {
       "type": "shell-local",
-      "command": "echo version: \"'{{user `salt_ver` }}'\" > /tmp/packer-salt-attributes.yml"
+      "inline": [
+        "echo salt_version: \"'{{user `salt_ver` }}'\" > /tmp/packer-inspec-inputs.yml",
+        "echo py_version: \"'{{user `py_ver` }}'\" >> /tmp/packer-inspec-inputs.yml"
+      ]
     },
     {
       "type": "file",
@@ -52,7 +55,7 @@
     {
       "type": "inspec",
       "profile": "test/integration",
-      "attributes": "/tmp/packer-salt-attributes.yml"
+      "attributes": "/tmp/packer-inspec-inputs.yml"
     }
   ],
   "post-processors": [

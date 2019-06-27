@@ -26,6 +26,11 @@ COMMON_PKGS="udev git net-tools sudo curl"
 case ${OS} in
   debian|ubuntu)
     D_PKGS="${COMMON_PKGS} locales procps openssh-server lsb-release"
+    if [ "${PY_VER}" = "3" ]; then
+      D_PKGS="${D_PKGS} python3-pip"
+    else
+      D_PKGS="${D_PKGS} python-pip"
+    fi
 
     apt-get update && apt-get install -y ${D_PKGS}
     # Use @vutny's suggestion in https://github.com/saltstack-formulas/postgres-formula/pull/269#issuecomment-492597286
@@ -35,11 +40,7 @@ case ${OS} in
     dpkg-reconfigure -f noninteractive locales
     ;;
   centos)
-    C_PKGS="${COMMON_PKGS} openssh-server openssh-clients which"
-
-    if [ "${PY_VER}" = "3" ]; then
-      C_PKGS="${C_PKGS} epel-release"
-    fi
+    C_PKGS="${COMMON_PKGS} openssh-server openssh-clients which epel-release"
 
     yum -y update && yum -y install ${C_PKGS}
 
@@ -47,21 +48,40 @@ case ${OS} in
       if [ "${SALT_VER}" = "develop" ]; then
         PY_PKGS="python34 python34-pip python34-devel openssl-devel gcc-g++ zeromq zeromq-devel"
         # The bootstrapper script only installs python3.4 packages
-        # and searches for python3 binary, which does not exist on the python3.4 package
+        # and searches for *3 binaries, which do not exist on the python3.4 packages
         ln -s /usr/bin/python3.4 /usr/bin/python3
+        ln -s /usr/bin/pip3.4 /usr/bin/pip3
       else
-        PY_PKGS="python36"
+        PY_PKGS="python36 python36-pip"
       fi
-      yum -y update && yum -y install ${PY_PKGS}
+    else # py2
+      if [ "${OS_VER}" = "7" ]; then
+        PY_PKGS="python2-pip"
+      else # centos6
+        PY_PKGS="python-pip"
+      fi
     fi
+    yum -y update && yum -y install ${PY_PKGS}
     ;;
   fedora)
     F_PKGS="${COMMON_PKGS} openssh-server openssh-clients which"
+
+    if [ "${PY_VER}" = "3" ]; then
+      F_PKGS="${F_PKGS} python3-pip"
+    else
+      F_PKGS="${F_PKGS} python2-pip"
+    fi
 
     dnf -y update && dnf -y install ${F_PKGS}
     ;;
   opensuse*)
     O_PKGS="${COMMON_PKGS} glibc-locale net-tools openssh which"
+
+    if [ "${PY_VER}" = "3" ]; then
+      O_PKGS="${O_PKGS} python3-pip"
+    else
+      O_PKGS="${O_PKGS} python-pip"
+    fi
 
     if [ "${OS_VER}" = "15" ]; then
       O_PKGS="${O_PKGS} net-tools-deprecated python-xml"

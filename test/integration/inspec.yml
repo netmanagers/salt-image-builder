@@ -6,8 +6,11 @@ copyright_email: javier@netmanagers.com.ar
 license: Apache-2.0
 summary: Verify that the salt-{minion,call,solo} is pre-installed
 version: 0.1.0
-attributes:
-  - name: version
+inputs:
+  - name: salt_version
+    type: string
+    required: true
+  - name: py_version
     type: string
     required: true
 
