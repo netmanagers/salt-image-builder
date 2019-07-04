@@ -11,6 +11,21 @@ These are based in upstream's images for each distro supported.
 The images are tested with [`inspec`](https://www.inspec.io/) before commiting, to check 
 salt got installed and it's the desired version.
 
+Images maintained
+-----------------
+
+The distros matrix is maintained for the lastest two, not EOL'ed, major distros versions.
+If you need to build a version not supported in the distributed `matrix.csv` file, just modify
+it and add the combination that suits your needs.
+
+The EOLs can be checked here:
+
+* Debian: https://wiki.debian.org/DebianReleases
+* Centos: https://wiki.centos.org/About/Product
+* Fedora: https://fedoraproject.org/wiki/End_of_life
+* Opensuse: https://en.opensuse.org/Lifetime#openSUSE_Leap
+* Ubuntu: https://wiki.ubuntu.com/Releases
+
 Requirements
 ------------
 
@@ -26,7 +41,7 @@ Basic usage of the builder scripts
 1. Edit `matrix.csv`. This is the matrix of VMs to build. The format is
 
 ```
-DISTRO_NAME, DISTRO_VERSION, SALT_VERSION, PYTHON VERSION
+DISTRO_NAME, DISTRO_VERSION, SALT_VERSION, PYTHON_VERSION
 ```
 
 like
@@ -35,6 +50,8 @@ like
 debian,9,2019.2,3
 fedora,28,2018.3,2
 ```
+
+empty lines or lines starting with # will be ignored
 
 2. Run `./build.py` and take a coffee while building.
 

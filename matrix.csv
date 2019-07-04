@@ -1,30 +1,48 @@
+# Rationale, based on salt version
+
+# `develop`: only in the latest distro_version + py3
+# `2019.2` (latest stable): latest distro_version in both py3 and py2 (until its EOL)
+# `2018.3` (previous stable): latest and previous distro_version + py2
+# `2017.7` (oldes supported salt version): previous distro_version + py2
+
+# FORMAT
+# DISTRO_NAME, DISTRO_VERSION, SALT_VERSION, PYTHON_VERSION
+
+# CENTOS
 centos,7,develop,git,3
-debian,9,develop,git,3
-fedora,29,develop,git,3
-opensuse/leap,15,develop,git,3
-ubuntu,18.04,develop,git,3
 centos,7,2019.2,stable,3
-debian,9,2019.2,stable,3
-fedora,29,2019.2,git,3
-opensuse/leap,15,2019.2,git,3
-ubuntu,18.04,2019.2,stable,3
 centos,7,2019.2,stable,2
-debian,9,2019.2,stable,2
-fedora,29,2019.2,git,2
-opensuse/leap,15,2019.2,git,2
-ubuntu,18.04,2019.2,stable,2
 centos,7,2018.3,stable,2
-debian,9,2018.3,stable,2
-fedora,29,2018.3,git,2
-opensuse/leap,15,2018.3,git,2
-ubuntu,18.04,2018.3,stable,2
 centos,6,2018.3,stable,2
-debian,8,2018.3,stable,2
-fedora,28,2018.3,git,2
-opensuse/leap,42,2018.3,git,2
-ubuntu,16.04,2018.3,stable,2
 centos,6,2017.7,stable,2
+
+# DEBIAN
+debian,9,develop,git,3
+debian,9,2019.2,stable,3
+debian,9,2019.2,stable,2
+debian,9,2018.3,stable,2
+debian,8,2018.3,stable,2
 debian,8,2017.7,stable,2
-fedora,28,2017.7,git,2
-opensuse/leap,42,2017.7,git,2
+
+# FEDORA
+# Fedora has no python3 packages due to a tornado issue,
+# but they ship with Python3 since 29, so we install it using git
+# https://bugzilla.redhat.com/show_bug.cgi?id=1723207
+fedora,30,develop,git,3
+fedora,30,2019.2,git,3
+fedora,29,2018.3,git,3
+fedora,29,2017.7,git,3
+
+# OPENSUSE
+opensuse/leap,15,develop,git,3
+opensuse/leap,15,2019.2,git,3
+opensuse/leap,15,2019.2,git,2
+opensuse/leap,15,2018.3,git,2
+opensuse/leap,15,2017.7,git,2
+
+# UBUNTU
+ubuntu,18.04,develop,git,3
+ubuntu,18.04,2019.2,stable,3
+ubuntu,18.04,2019.2,stable,2
+ubuntu,18.04,2018.3,stable,2
 ubuntu,16.04,2017.7,stable,2
