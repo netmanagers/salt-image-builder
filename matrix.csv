@@ -28,10 +28,11 @@ debian,8,2017.7,stable,2
 # Fedora has no python3 packages due to a tornado issue,
 # but they ship with Python3 since 29, so we install it using git
 # https://bugzilla.redhat.com/show_bug.cgi?id=1723207
+# except for 2017.7, which does not run on python3
 fedora,30,develop,git,3
 fedora,30,2019.2,git,3
 fedora,29,2018.3,git,3
-fedora,29,2017.7,git,3
+fedora,29,2017.7,git,2
 
 # OPENSUSE
 opensuse/leap,15,develop,git,3
