@@ -64,7 +64,7 @@ case ${OS} in
     yum -y update && yum -y install ${PY_PKGS}
     ;;
   fedora)
-    F_PKGS="${COMMON_PKGS} openssh-server openssh-clients which"
+    F_PKGS="${COMMON_PKGS} openssh-server openssh-clients which findutils"
 
     if [ "${PY_VER}" = "3" ]; then
       F_PKGS="${F_PKGS} python3-pip"
