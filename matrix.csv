@@ -3,7 +3,7 @@
 # `develop`: only in the latest distro_version + py3
 # `2019.2` (latest stable): latest distro_version in both py3 and py2 (until its EOL)
 # `2018.3` (previous stable): latest and previous distro_version + py2
-# `2017.7` (oldes supported salt version): previous distro_version + py2
+# `2017.7` (oldest supported salt version): previous distro_version + py2
 
 # FORMAT
 # DISTRO_NAME, DISTRO_VERSION, SALT_VERSION, PYTHON_VERSION
