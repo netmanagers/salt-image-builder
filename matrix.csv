@@ -18,7 +18,9 @@ centos,6,2017.7,stable,2
 
 # DEBIAN
 debian,10,develop,git,3
-debian,10,2019.2,stable,3
+# Stable package for buster fails to install on salt-common dependencies
+# leaving commented until it's fixed in the bootstrapper
+# debian,10,2019.2,stable,3
 debian,10,2019.2,stable,2
 debian,10,2018.3,stable,2
 debian,9,2018.3,stable,2
@@ -48,3 +50,11 @@ ubuntu,18.04,2019.2,stable,2
 ubuntu,18.04,2018.3,stable,2
 ubuntu,16.04,2018.3,stable,2
 ubuntu,16.04,2017.7,stable,2
+
+# AMAZONLINUX
+# AmazonLinux packages are py2, even if the installer says
+# it's using python3
+amazonlinux,2,develop,git,2
+amazonlinux,2,2019.2,stable,2
+amazonlinux,2,2018.3,stable,2
+amazonlinux,2,2017.7,stable,2

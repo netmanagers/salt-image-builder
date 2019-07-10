@@ -25,6 +25,7 @@ The EOLs can be checked here:
 * Fedora: https://fedoraproject.org/wiki/End_of_life
 * Opensuse: https://en.opensuse.org/Lifetime#openSUSE_Leap
 * Ubuntu: https://wiki.ubuntu.com/Releases
+* AmazonLinux: https://aws.amazon.com/about-aws/whats-new/2018/06/announcing-amazon-linux-2-with-long-term-support/
 
 Requirements
 ------------

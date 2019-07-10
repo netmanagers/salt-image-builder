@@ -100,4 +100,16 @@ case ${OS} in
     zypper refresh && zypper install -y ${O_PKGS}
     systemctl enable sshd
     ;;
+  amazonlinux)
+    # A_PKGS="${COMMON_PKGS} openssh-server openssh-clients which epel-release yum-utils"
+    A_PKGS="${COMMON_PKGS} yum-utils"
+
+    if [ "${PY_VER}" = "3" ]; then
+      A_PKGS="${A_PKGS} python3-pip"
+    else
+      A_PKGS="${A_PKGS} python-pip"
+    fi
+
+    yum -y update && yum -y install ${A_PKGS}
+    ;;
 esac
