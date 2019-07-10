@@ -17,12 +17,12 @@ centos,6,2018.3,stable,2
 centos,6,2017.7,stable,2
 
 # DEBIAN
-debian,9,develop,git,3
-debian,9,2019.2,stable,3
-debian,9,2019.2,stable,2
+debian,10,develop,git,3
+debian,10,2019.2,stable,3
+debian,10,2019.2,stable,2
+debian,10,2018.3,stable,2
 debian,9,2018.3,stable,2
-debian,8,2018.3,stable,2
-debian,8,2017.7,stable,2
+debian,9,2017.7,stable,2
 
 # FEDORA
 # Fedora has no python3 packages due to a tornado issue,
