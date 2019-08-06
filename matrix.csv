@@ -18,7 +18,8 @@ centos,6,2017.7,stable,2
 
 # DEBIAN
 debian,10,develop,git,3
-# Stable package for buster fails to install on salt-common dependencies
+# Stable packages for buster are not ready yet
+# https://saltstackcommunity.slack.com/archives/C8E7RJCPN/p1562940070040900
 # leaving commented until it's fixed in the bootstrapper
 # debian,10,2019.2,stable,3
 debian,10,2019.2,stable,2

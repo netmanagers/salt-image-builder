@@ -95,7 +95,7 @@ case ${OS} in
 
     # https://github.com/inspec/train/issues/377
     if [ ! -e /etc/SuSE-release ]; then
-      ln -s /etc/os-release /etc/SuSE-releasea
+      ln -s /etc/os-release /etc/SuSE-release
     fi
     zypper refresh && zypper install -y ${O_PKGS}
     systemctl enable sshd
