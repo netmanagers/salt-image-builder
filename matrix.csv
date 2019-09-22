@@ -6,7 +6,15 @@
 # `2017.7` (oldest supported salt version): previous distro_version + py2
 
 # FORMAT
-# DISTRO_NAME, DISTRO_VERSION, SALT_VERSION, PYTHON_VERSION
+# DISTRO_NAME, DISTRO_VERSION, SALT_VERSION, SALT_INSTALLER_METHOD, PYTHON_VERSION
+
+# ARCHLINUX
+# The Salt bootstrap installer does not provide packages nor installs with py3 for Arch
+# so we're building only the git'ted py2 versions
+archlinux/base,latest,develop,git,2
+archlinux/base,latest,2019.2,git,2
+archlinux/base,latest,2018.3,git,2
+archlinux/base,latest,2017.7,git,2
 
 # CENTOS
 centos,7,develop,git,3

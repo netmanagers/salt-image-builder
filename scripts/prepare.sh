@@ -24,6 +24,13 @@ mkdir -p /run/sshd
 COMMON_PKGS="udev git net-tools sudo curl"
 
 case ${OS} in
+  archlinux*)
+    A_PKGS="${COMMON_PKGS} openssl openssh awk procps python2-pip"
+    pacman --noconfirm -Sy archlinux-keyring
+    pacman-db-upgrade
+    pacman --noconfirm -Syu ${A_PKGS}
+    systemctl enable sshd
+    ;;
   debian|ubuntu)
     D_PKGS="${COMMON_PKGS} locales procps openssh-server lsb-release"
     if [ "${PY_VER}" = "3" ]; then
