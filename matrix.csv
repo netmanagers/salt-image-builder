@@ -46,11 +46,11 @@ fedora,29,2018.3,git,3
 fedora,29,2017.7,git,2
 
 # OPENSUSE
-opensuse/leap,15,develop,git,3
-opensuse/leap,15,2019.2,git,3
-opensuse/leap,15,2019.2,git,2
-opensuse/leap,15,2018.3,git,2
-opensuse/leap,15,2017.7,git,2
+opensuse/leap,15.1,develop,git,3
+opensuse/leap,15.1,2019.2,git,3
+opensuse/leap,15.1,2019.2,git,2
+opensuse/leap,15.1,2018.3,git,2
+opensuse/leap,15.1,2017.7,git,2
 
 # UBUNTU
 ubuntu,18.04,develop,git,3
