@@ -82,7 +82,7 @@ case ${OS} in
     dnf -y update && dnf -y install ${F_PKGS}
     ;;
   opensuse*)
-    O_PKGS="${COMMON_PKGS} glibc-locale net-tools openssh which"
+    O_PKGS="${COMMON_PKGS} glibc-locale openssh which"
 
     if [ "${PY_VER}" = "3" ]; then
       O_PKGS="${O_PKGS} python3-pip"
