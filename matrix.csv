@@ -17,7 +17,8 @@ archlinux/base,latest,2018.3,git,2
 archlinux/base,latest,2017.7,git,2
 
 # CENTOS
-centos,7,develop,git,3
+centos,8,develop,git,3
+centos,8,2019.2,stable,3
 centos,7,2019.2,stable,3
 centos,7,2019.2,stable,2
 centos,7,2018.3,stable,2
@@ -26,11 +27,7 @@ centos,6,2017.7,stable,2
 
 # DEBIAN
 debian,10,develop,git,3
-# Stable packages for buster are not ready yet
-# https://saltstackcommunity.slack.com/archives/C8E7RJCPN/p1562940070040900
-# leaving commented until it's fixed in the bootstrapper
-# debian,10,2019.2,stable,3
-debian,10,2019.2,stable,2
+debian,10,2019.2,stable,3
 debian,10,2018.3,stable,2
 debian,9,2018.3,stable,2
 debian,9,2017.7,stable,2
@@ -48,9 +45,10 @@ fedora,29,2017.7,git,2
 # OPENSUSE
 opensuse/leap,15.1,develop,git,3
 opensuse/leap,15.1,2019.2,git,3
-opensuse/leap,15.1,2019.2,git,2
 opensuse/leap,15.1,2018.3,git,2
 opensuse/leap,15.1,2017.7,git,2
+opensuse/leap,15.0,2018.3,git,2
+opensuse/leap,15.0,2017.7,git,2
 
 # UBUNTU
 ubuntu,18.04,develop,git,3
