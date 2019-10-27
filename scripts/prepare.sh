@@ -71,7 +71,7 @@ case ${OS} in
     yum -y update && yum -y install ${PY_PKGS}
     ;;
   fedora)
-    F_PKGS="${COMMON_PKGS} openssh-server openssh-clients which findutils"
+    F_PKGS="${COMMON_PKGS} openssh-server openssh-clients which findutils glibc-langpack-en"
 
     if [ "${PY_VER}" = "3" ]; then
       F_PKGS="${F_PKGS} python3-pip"
@@ -82,22 +82,12 @@ case ${OS} in
     dnf -y update && dnf -y install ${F_PKGS}
     ;;
   opensuse*)
-    O_PKGS="${COMMON_PKGS} glibc-locale net-tools openssh which"
+    O_PKGS="${COMMON_PKGS} glibc-locale net-tools openssh which net-tools-deprecated python-xml"
 
     if [ "${PY_VER}" = "3" ]; then
       O_PKGS="${O_PKGS} python3-pip"
     else
       O_PKGS="${O_PKGS} python-pip"
-    fi
-
-    if [ "${OS_VER}" = "15" ]; then
-      O_PKGS="${O_PKGS} net-tools-deprecated python-xml"
-
-      # Edit zypper repos (see https://github.com/netmanagers/salt-image-builder/issues/4)
-      cd /etc/zypp/repos.d/
-      ls | while read F; do
-        sed -i "s#download.opensuse.org#mirror.23media.com/opensuse#g" "${F}"
-      done
     fi
 
     # https://github.com/inspec/train/issues/377
