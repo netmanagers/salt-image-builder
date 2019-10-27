@@ -29,8 +29,8 @@ centos,6,2017.7,stable,2
 debian,10,master,git,3
 debian,10,2019.2,stable,3
 debian,10,2018.3,stable,2
-debian,9,2018.3,stable,3
-debian,9,2017.7,stable,2
+debian,9,2019.2,stable,3
+debian,9,2018.3,stable,2
 debian,8,2018.3,stable,2
 debian,8,2017.7,stable,2
 
@@ -47,8 +47,6 @@ fedora,30,2017.7,git,2
 # OPENSUSE
 opensuse/leap,15.1,master,git,3
 opensuse/leap,15.1,2019.2,git,3
-opensuse/leap,15.1,2018.3,git,2
-opensuse/leap,15.1,2017.7,git,2
 opensuse/leap,15.1,2018.3,git,2
 opensuse/leap,15.1,2017.7,git,2
 
