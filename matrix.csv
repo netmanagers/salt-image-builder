@@ -28,7 +28,10 @@ centos,6,2017.7,stable,2
 # DEBIAN
 debian,10,master,git,3
 debian,10,2019.2,stable,3
-debian,10,2018.3,stable,2
+# There's no Py2 repo for debian10 so the bootstrap fails any attempt to install dependencies to
+# install 2018.3 from git. Also, there's no 2018.3 repo in buster (neither py2 or py3), so trying
+# to install this combination atm is more work thant it's worth.
+# debian,10,2018.3,stable,2
 debian,9,2019.2,stable,3
 debian,9,2018.3,stable,2
 debian,8,2018.3,stable,2
