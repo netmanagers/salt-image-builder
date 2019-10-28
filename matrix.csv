@@ -66,8 +66,8 @@ ubuntu,16.04,2017.7,stable,2
 
 # AMAZONLINUX
 # AmazonLinux packages are py2, even if the installer says
-# it's using python3
-amazonlinux,2,master,git,3
-amazonlinux,2,2019.2,stable,3
+# it's using python3. Dependencies are hardcoded to py2
+# amazonlinux,2,master,git,3
+# amazonlinux,2,2019.2,stable,3
 amazonlinux,2,2018.3,stable,2
 amazonlinux,2,2017.7,stable,2
