@@ -16,6 +16,7 @@ import csv
 import subprocess
 
 SALT_BS = 'https://bootstrap.saltstack.com'
+SALT_BS = 'https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh'
 
 # Get the salt bootstrapper here, to download it just once for later use
 subprocess.run([
