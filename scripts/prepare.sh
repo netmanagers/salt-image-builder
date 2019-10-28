@@ -47,19 +47,19 @@ case ${OS} in
     dpkg-reconfigure -f noninteractive locales
     ;;
   centos)
+    # This is a quick fix for https://github.com/saltstack/salt-bootstrap/issues/1371
+    # No other stanza uses `python34` and current centos 7 & 8 have python3 packages
+    # FIXME: modifying this here is really, really, really horrible and messy
+    sed -i "s/python34/python3/g" /tmp/saltbootstrap.sh
+
     C_PKGS="${COMMON_PKGS} openssh-server openssh-clients which epel-release"
 
     yum -y update && yum -y install ${C_PKGS}
 
     if [ "${PY_VER}" = "3" ]; then
-      if [ "${SALT_VER}" = "develop" ]; then
-        PY_PKGS="python34 python34-pip python34-devel openssl-devel gcc-g++ zeromq zeromq-devel"
-        # The bootstrapper script only installs python3.4 packages
-        # and searches for *3 binaries, which do not exist on the python3.4 packages
-        ln -s /usr/bin/python3.4 /usr/bin/python3
-        ln -s /usr/bin/pip3.4 /usr/bin/pip3
-      else
-        PY_PKGS="python36 python36-pip"
+      PY_PKGS="python3 python3-pip python3-devel openssl-devel swig"
+      if [ "${OS_VER}" = "7" ]; then
+        PY_PKGS="${PY_PKGS} gcc-g++ zeromq zeromq-devel"
       fi
     else # py2
       if [ "${OS_VER}" = "7" ]; then

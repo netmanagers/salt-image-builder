@@ -18,7 +18,9 @@ archlinux/base,latest,2017.7,git,2
 
 # CENTOS
 centos,8,master,git,3
-centos,8,2019.2,stable,3
+# There are no RPM's for Centos8 https://repo.saltstack.com/yum/redhat/
+# centos,8,2019.2,stable,3
+centos,8,2019.2,git,3
 centos,7,2019.2,stable,3
 centos,7,2019.2,stable,2
 centos,7,2018.3,stable,2
