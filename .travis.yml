@@ -2,9 +2,10 @@
 # vim: ft=yaml
 ---
 ## Machine config
+os: linux
 dist: bionic
-sudo: required
-language: bash
+version: '~> 1.0'
+language: shell
 services:
   - docker
 
@@ -17,87 +18,89 @@ env:
   # SIM: salt install method (git, stable)
   # PV: python version (3, 2)
   # EP: extra packages required for the specific build
-  matrix:
+  jobs:
     # AMAZONLINUX
     # AmazonLinux packages are py2, even if the installer says
     # it's using python3. Dependencies are hardcoded to py2
     # amazonlinux,2 SV=master SIM=git PV=3
     # amazonlinux,2 SV=2019.2 SIM=stable PV=3
-    - DN=amazonlinux DV=2 PI=yum SV=2018.3 SIM=stable PV=2 EP="yum-utils python-pip"
-    - DN=amazonlinux DV=2 PI=yum SV=2017.7 SIM=stable PV=2 EP="yum-utils python-pip"
+    #WIP# - DN=amazonlinux DV=2 PI=yum SV=2018.3 SIM=stable PV=2 EP="yum-utils python-pip"
+    #WIP# - DN=amazonlinux DV=2 PI=yum SV=2017.7 SIM=stable PV=2 EP="yum-utils python-pip"
 
     # ARCHLINUX
     # The Salt bootstrap installer does not provide packages nor installs with py3 for Arch
     # so we're building only the git'ted py2 versions
-    - DN=archlinux/base DV=latest PI=pac SV=master SIM=git PV=2 EP="openssl openssh awk procps python2-pip"
-    - DN=archlinux/base DV=latest PI=pac SV=2019.2 SIM=git PV=2 EP="openssl openssh awk procps python2-pip"
-    - DN=archlinux/base DV=latest PI=pac SV=2018.3 SIM=git PV=2 EP="openssl openssh awk procps python2-pip"
-    - DN=archlinux/base DV=latest PI=pac SV=2017.7 SIM=git PV=2 EP="openssl openssh awk procps python2-pip"
-    
+    #WIP# - DN=archlinux/base DV=latest PI=pac SV=master SIM=git PV=2 EP="openssl openssh awk procps python2-pip"
+    #WIP# - DN=archlinux/base DV=latest PI=pac SV=2019.2 SIM=git PV=2 EP="openssl openssh awk procps python2-pip"
+    #WIP# - DN=archlinux/base DV=latest PI=pac SV=2018.3 SIM=git PV=2 EP="openssl openssh awk procps python2-pip"
+    #WIP# - DN=archlinux/base DV=latest PI=pac SV=2017.7 SIM=git PV=2 EP="openssl openssh awk procps python2-pip"
+
     # CENTOS
-    - DN=centos DV=8 PI=rpm SV=master SIM=git    PV=3 EP="epel-release python3 python3-pip python3-devel openssl-devel swig"
+    #WIP# - DN=centos DV=8 PI=rpm SV=master SIM=git    PV=3 EP="epel-release python3 python3-pip python3-devel openssl-devel swig"
     # There are no RPM's for Centos8 https://repo.saltstack.com/yum/redhat/
     # centos,8 SV=2019.2 SIM=stable PV=3
-    - DN=centos DV=8 PI=yum SV=2019.2 SIM=git    PV=3 EP="epel-release python3 python3-pip python3-devel openssl-devel swig"
+    #WIP# - DN=centos DV=8 PI=yum SV=2019.2 SIM=git    PV=3 EP="epel-release python3 python3-pip python3-devel openssl-devel swig"
     - DN=centos DV=7 PI=yum SV=2019.2 SIM=stable PV=3 EP="epel-release python3 python3-pip python3-devel openssl-devel swig gcc-g++ zeromq zeromq-devel"
-    - DN=centos DV=7 PI=yum SV=2019.2 SIM=stable PV=2 EP="epel-release python2-pip"
-    - DN=centos DV=7 PI=yum SV=2018.3 SIM=stable PV=2 EP="epel-release python2-pip"
-    - DN=centos DV=6 PI=yum SV=2018.3 SIM=stable PV=2 EP="epel-release python-pip"
-    - DN=centos DV=6 PI=yum SV=2017.7 SIM=stable PV=2 EP="epel-release python-pip"
-    
+    #WIP# - DN=centos DV=7 PI=yum SV=2019.2 SIM=stable PV=2 EP="epel-release python2-pip"
+    #WIP# - DN=centos DV=7 PI=yum SV=2018.3 SIM=stable PV=2 EP="epel-release python2-pip"
+    #WIP# - DN=centos DV=6 PI=yum SV=2018.3 SIM=stable PV=2 EP="epel-release python-pip"
+    #WIP# - DN=centos DV=6 PI=yum SV=2017.7 SIM=stable PV=2 EP="epel-release python-pip"
+
     # DEBIAN
     - DN=debian DV=10 PI=apt SV=master SIM=git    PV=3 EP="python3-pip"
-    - DN=debian DV=10 PI=apt SV=2019.2 SIM=stable PV=3 EP="python3-pip"
+    #WIP# - DN=debian DV=10 PI=apt SV=2019.2 SIM=stable PV=3 EP="python3-pip"
     # There's no Py2 repo for debian10 so the bootstrap fails any attempt to install dependencies to
     # install 2018.3 from git. Also, there's no 2018.3 repo in buster (neither py2 or py3), so trying
     # to install this combination atm is more work thant it's worth.
     # debian,10 SV=2018.3 SIM=stable PV=2
-    - DN=debian DV=9 PI=apt SV=2019.2 SIM=stable PV=3 EP="python3-pip"
-    - DN=debian DV=9 PI=apt SV=2018.3 SIM=stable PV=2 EP="python-pip"
-    - DN=debian DV=8 PI=apt SV=2018.3 SIM=stable PV=2 EP="python-pip"
-    - DN=debian DV=8 PI=apt SV=2017.7 SIM=stable PV=2 EP="python-pip"
-    
+    #WIP# - DN=debian DV=9 PI=apt SV=2019.2 SIM=stable PV=3 EP="python3-pip"
+    #WIP# - DN=debian DV=9 PI=apt SV=2018.3 SIM=stable PV=2 EP="python-pip"
+    #WIP# - DN=debian DV=8 PI=apt SV=2018.3 SIM=stable PV=2 EP="python-pip"
+    #WIP# - DN=debian DV=8 PI=apt SV=2017.7 SIM=stable PV=2 EP="python-pip"
+
     # FEDORA
     # Fedora has no python3 packages due to a tornado issue,
     # but they ship with Python3 since 29, so we install it using git
     # https://bugzilla.redhat.com/show_bug.cgi?id=1723207
     # except for 2017.7, which does not run on python3
-    - DN=fedora DV=31 PI=dnf SV=master SIM=git PV=3 EP="openssh-server openssh-clients which findutils glibc-langpack-en python3-pip"
-    - DN=fedora DV=31 PI=dnf SV=2019.2 SIM=git PV=3 EP="openssh-server openssh-clients which findutils glibc-langpack-en python3-pip"
-    - DN=fedora DV=30 PI=dnf SV=2018.3 SIM=git PV=3 EP="openssh-server openssh-clients which findutils glibc-langpack-en python3-pip"
-    - DN=fedora DV=30 PI=dnf SV=2017.7 SIM=git PV=2 EP="openssh-server openssh-clients which findutils glibc-langpack-en python-pip"
-    
+    #WIP# - DN=fedora DV=31 PI=dnf SV=master SIM=git PV=3 EP="openssh-server openssh-clients which findutils glibc-langpack-en python3-pip"
+    #WIP# - DN=fedora DV=31 PI=dnf SV=2019.2 SIM=git PV=3 EP="openssh-server openssh-clients which findutils glibc-langpack-en python3-pip"
+    #WIP# - DN=fedora DV=30 PI=dnf SV=2018.3 SIM=git PV=3 EP="openssh-server openssh-clients which findutils glibc-langpack-en python3-pip"
+    #WIP# - DN=fedora DV=30 PI=dnf SV=2017.7 SIM=git PV=2 EP="openssh-server openssh-clients which findutils glibc-langpack-en python-pip"
+
     # OPENSUSE
-    - DN=opensuse/leap DV=15.1 PI=zyp SV=master SIM=git PV=3 EP="glibc-locale net-tools openssh which net-tools-deprecated python-xml python3-pip"
-    - DN=opensuse/leap DV=15.1 PI=zyp SV=2019.2 SIM=git PV=3 EP="glibc-locale net-tools openssh which net-tools-deprecated python-xml python3-pip"
-    - DN=opensuse/leap DV=15.1 PI=zyp SV=2018.3 SIM=git PV=2 EP="glibc-locale net-tools openssh which net-tools-deprecated python-xml python-pip"
-    - DN=opensuse/leap DV=15.1 PI=zyp SV=2017.7 SIM=git PV=2 EP="glibc-locale net-tools openssh which net-tools-deprecated python-xml python-pip"
-    
+    #WIP# - DN=opensuse/leap DV=15.1 PI=zyp SV=master SIM=git PV=3 EP="glibc-locale net-tools openssh which net-tools-deprecated python-xml python3-pip"
+    #WIP# - DN=opensuse/leap DV=15.1 PI=zyp SV=2019.2 SIM=git PV=3 EP="glibc-locale net-tools openssh which net-tools-deprecated python-xml python3-pip"
+    #WIP# - DN=opensuse/leap DV=15.1 PI=zyp SV=2018.3 SIM=git PV=2 EP="glibc-locale net-tools openssh which net-tools-deprecated python-xml python-pip"
+    #WIP# - DN=opensuse/leap DV=15.1 PI=zyp SV=2017.7 SIM=git PV=2 EP="glibc-locale net-tools openssh which net-tools-deprecated python-xml python-pip"
+
     # UBUNTU
-    - DN=ubuntu DV=18.04 PI=deb SV=master SIM=git    PV=3 EP="python3-pip"
-    - DN=ubuntu DV=18.04 PI=deb SV=2019.2 SIM=stable PV=3 EP="python3-pip"
-    - DN=ubuntu DV=18.04 PI=deb SV=2019.2 SIM=stable PV=2 EP="python-pip"
-    - DN=ubuntu DV=18.04 PI=deb SV=2018.3 SIM=stable PV=2 EP="python-pip"
-    - DN=ubuntu DV=16.04 PI=deb SV=2019.2 SIM=stable PV=3 EP="python3-pip"
-    - DN=ubuntu DV=16.04 PI=deb SV=2018.3 SIM=stable PV=2 EP="python-pip"
-    - DN=ubuntu DV=16.04 PI=deb SV=2017.7 SIM=stable PV=2 EP="python-pip"
+    #WIP# - DN=ubuntu DV=18.04 PI=deb SV=master SIM=git    PV=3 EP="python3-pip"
+    #WIP# - DN=ubuntu DV=18.04 PI=deb SV=2019.2 SIM=stable PV=3 EP="python3-pip"
+    #WIP# - DN=ubuntu DV=18.04 PI=deb SV=2019.2 SIM=stable PV=2 EP="python-pip"
+    #WIP# - DN=ubuntu DV=18.04 PI=deb SV=2018.3 SIM=stable PV=2 EP="python-pip"
+    #WIP# - DN=ubuntu DV=16.04 PI=deb SV=2019.2 SIM=stable PV=3 EP="python3-pip"
+    #WIP# - DN=ubuntu DV=16.04 PI=deb SV=2018.3 SIM=stable PV=2 EP="python-pip"
+    #WIP# - DN=ubuntu DV=16.04 PI=deb SV=2017.7 SIM=stable PV=2 EP="python-pip"
 
 # adding the inspec license-accepted file as different lines because of
 # https://travis-ci.community/t/multiline-commands-have-two-spaces-in-front-breaks-heredocs/2756/4
 before_install:
   - gem install inspec
   - gem install inspec-bin
-  - echo '---' > .chef/accepted_licenses/inspec
-  - echo 'name: inspec' >> .chef/accepted_licenses/inspec
-  - echo "date_accepted: '2019-05-04T22:10:07+00:00'" >> .chef/accepted_licenses/inspec
-  - echo 'accepting_product: inspec' >> .chef/accepted_licenses/inspec
-  - echo 'accepting_product_version: 4.18.24' >> .chef/accepted_licenses/inspec
-  - echo 'user: ubuntu' >> .chef/accepted_licenses/inspec
-  - echo 'file_format: 1' >> .chef/accepted_licenses/inspec
+  - mkdir -p .chef/accepted_licenses
+  - "echo '---' > .chef/accepted_licenses/inspec"
+  - "echo 'name: inspec' >> .chef/accepted_licenses/inspec"
+  - "echo 'date_accepted: \'2019-05-04T22:10:07+00:00\'' >> .chef/accepted_licenses/inspec"
+  - "echo 'accepting_product: inspec' >> .chef/accepted_licenses/inspec"
+  - "echo 'accepting_product_version: 4.18.24' >> .chef/accepted_licenses/inspec"
+  - "echo 'user: ubuntu' >> .chef/accepted_licenses/inspec"
+  - "echo 'file_format: 1' >> .chef/accepted_licenses/inspec"
 
 install:
   - export TAG=$(echo ${DN} | sed "s#/#-#g")-${DV}
-  - DOCKER_BUILDKIT=1 docker build . \
+  - |
+    DOCKER_BUILDKIT=1 docker build . \
       --file "Dockerfile.${PI}" \
       --tag "${TAG}" \
       --build-arg DISTRO_NAME="${DN}" \
@@ -110,4 +113,3 @@ install:
 script:
   - docker run --detach=true --name "inspec-${DN}-${TAG}" "${TAG}" tail -f /dev/null
   - inspec exec test/integration  --input py_version="${PV}" salt_version="${SV}" --target=docker://"inspec-${DN}-${TAG}"
-
