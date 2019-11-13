@@ -1,5 +1,3 @@
-# syntax=docker/dockerfile:experimental
-
 ARG DISTRO_NAME
 ARG DISTRO_VERSION
 FROM $DISTRO_NAME:$DISTRO_VERSION
@@ -15,9 +13,7 @@ ARG DEBIAN_FRONTEND="noninteractive"
 
 ARG PKGS="udev git net-tools sudo curl locales procps openssh-server lsb-release $EXTRA_PACKAGES"
 
-RUN --mount=type=cache,target=/var/cache/apt \
-    --mount=type=cache,target=/var/lib/apt \
-    apt update \
+RUN apt update \
  && apt install --yes $PKGS
 
 # Use @vutny's suggestion in https://github.com/saltstack-formulas/postgres-formula/pull/269#issuecomment-492597286

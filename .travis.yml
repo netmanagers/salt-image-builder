@@ -40,7 +40,7 @@ env:
     # There are no RPM's for Centos8 https://repo.saltstack.com/yum/redhat/
     # centos,8 SV=2019.2 SIM=stable PV=3
     #WIP# - DN=centos DV=8 PI=yum SV=2019.2 SIM=git    PV=3 EP="epel-release python3 python3-pip python3-devel openssl-devel swig"
-    - DN=centos DV=7 PI=yum SV=2019.2 SIM=stable PV=3 EP="epel-release python3 python3-pip python3-devel openssl-devel swig gcc-g++ zeromq zeromq-devel"
+    #WIP# - DN=centos DV=7 PI=yum SV=2019.2 SIM=stable PV=3 EP="epel-release python3 python3-pip python3-devel openssl-devel swig gcc-g++ zeromq zeromq-devel"
     #WIP# - DN=centos DV=7 PI=yum SV=2019.2 SIM=stable PV=2 EP="epel-release python2-pip"
     #WIP# - DN=centos DV=7 PI=yum SV=2018.3 SIM=stable PV=2 EP="epel-release python2-pip"
     #WIP# - DN=centos DV=6 PI=yum SV=2018.3 SIM=stable PV=2 EP="epel-release python-pip"
@@ -100,7 +100,7 @@ before_install:
 install:
   - export TAG=$(echo ${DN} | sed "s#/#-#g")-${DV}
   - |
-    DOCKER_BUILDKIT=1 docker build . \
+    docker build . \
       --file "Dockerfile.${PI}" \
       --tag "${TAG}" \
       --build-arg DISTRO_NAME="${DN}" \
