@@ -40,7 +40,7 @@ env:
     # There are no RPM's for Centos8 https://repo.saltstack.com/yum/redhat/
     # centos,8 SV=2019.2 SIM=stable PV=3
     #WIP# - DN=centos DV=8 PI=yum SV=2019.2 SIM=git    PV=3 EP="epel-release python3 python3-pip python3-devel openssl-devel swig"
-    - DN=centos DV=7 PI=yum SV=2019.2 SIM=stable PV=3 EP="epel-release python3 python3-pip python3-devel openssl-devel swig gcc-g++ zeromq zeromq-devel"
+    #WIP# - DN=centos DV=7 PI=yum SV=2019.2 SIM=stable PV=3 EP="epel-release python3 python3-pip python3-devel openssl-devel swig gcc-g++ zeromq zeromq-devel"
     #WIP# - DN=centos DV=7 PI=yum SV=2019.2 SIM=stable PV=2 EP="epel-release python2-pip"
     #WIP# - DN=centos DV=7 PI=yum SV=2018.3 SIM=stable PV=2 EP="epel-release python2-pip"
     #WIP# - DN=centos DV=6 PI=yum SV=2018.3 SIM=stable PV=2 EP="epel-release python-pip"
@@ -88,19 +88,20 @@ env:
 before_install:
   - gem install inspec
   - gem install inspec-bin
-  - mkdir -p .chef/accepted_licenses
-  - "echo '---' > .chef/accepted_licenses/inspec"
-  - "echo 'name: inspec' >> .chef/accepted_licenses/inspec"
-  - "echo 'date_accepted: \'2019-05-04T22:10:07+00:00\'' >> .chef/accepted_licenses/inspec"
-  - "echo 'accepting_product: inspec' >> .chef/accepted_licenses/inspec"
-  - "echo 'accepting_product_version: 4.18.24' >> .chef/accepted_licenses/inspec"
-  - "echo 'user: ubuntu' >> .chef/accepted_licenses/inspec"
-  - "echo 'file_format: 1' >> .chef/accepted_licenses/inspec"
+  - mkdir -p ~/.chef/accepted_licenses
+  - "echo '---' > ~/.chef/accepted_licenses/inspec"
+  - "echo 'name: inspec' >> ~/.chef/accepted_licenses/inspec"
+  - "echo 'date_accepted: \'2019-05-04T22:10:07+00:00\'' >> ~/.chef/accepted_licenses/inspec"
+  - "echo 'accepting_product: inspec' >> ~/.chef/accepted_licenses/inspec"
+  - "echo 'accepting_product_version: 4.18.24' >> ~/.chef/accepted_licenses/inspec"
+  - "echo 'user: ubuntu' >> ~/.chef/accepted_licenses/inspec"
+  - "echo 'file_format: 1' >> ~/.chef/accepted_licenses/inspec"
 
 install:
   - export TAG=$(echo ${DN} | sed "s#/#-#g")-${DV}
+  - "echo \"Building: ${TAG}\""
   - |
-    DOCKER_BUILDKIT=1 docker build . \
+    docker build . \
       --file "Dockerfile.${PI}" \
       --tag "${TAG}" \
       --build-arg DISTRO_NAME="${DN}" \
@@ -113,3 +114,7 @@ install:
 script:
   - docker run --detach=true --name "inspec-${DN}-${TAG}" "${TAG}" tail -f /dev/null
   - inspec exec test/integration  --input py_version="${PV}" salt_version="${SV}" --target=docker://"inspec-${DN}-${TAG}"
+
+after_success:
+  # - "echo \"${DOCKERHUB_PASSWORD}\" | docker login -u \"${DOCKERHUB_USER}\" --password-stdin"
+  - "echo docker push ${DOCKERHUB_USER}/salt-${SV}-py${PV}:${TAG}"
