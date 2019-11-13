@@ -88,6 +88,7 @@ env:
 before_install:
   - gem install inspec
   - gem install inspec-bin
+  - mkdir -p .chef/accepted_licenses
   - echo '---' > .chef/accepted_licenses/inspec
   - echo 'name: inspec' >> .chef/accepted_licenses/inspec
   - echo 'date_accepted: \'2019-05-04T22:10:07+00:00\'' >> .chef/accepted_licenses/inspec
