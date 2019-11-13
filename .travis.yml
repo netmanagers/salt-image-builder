@@ -2,10 +2,10 @@
 # vim: ft=yaml
 ---
 ## Machine config
+os: linux
 dist: bionic
 version: '~> 1.0'
-sudo: required
-language: bash
+language: shell
 services:
   - docker
 
@@ -18,7 +18,7 @@ env:
   # SIM: salt install method (git, stable)
   # PV: python version (3, 2)
   # EP: extra packages required for the specific build
-  matrix:
+  jobs:
     # AMAZONLINUX
     # AmazonLinux packages are py2, even if the installer says
     # it's using python3. Dependencies are hardcoded to py2
@@ -89,17 +89,18 @@ before_install:
   - gem install inspec
   - gem install inspec-bin
   - mkdir -p .chef/accepted_licenses
-  - echo '---' > .chef/accepted_licenses/inspec
-  - echo 'name: inspec' >> .chef/accepted_licenses/inspec
-  - echo 'date_accepted: \'2019-05-04T22:10:07+00:00\'' >> .chef/accepted_licenses/inspec
-  - echo 'accepting_product: inspec' >> .chef/accepted_licenses/inspec
-  - echo 'accepting_product_version: 4.18.24' >> .chef/accepted_licenses/inspec
-  - echo 'user: ubuntu' >> .chef/accepted_licenses/inspec
-  - echo 'file_format: 1' >> .chef/accepted_licenses/inspec
+  - "echo '---' > .chef/accepted_licenses/inspec"
+  - "echo 'name: inspec' >> .chef/accepted_licenses/inspec"
+  - "echo 'date_accepted: \'2019-05-04T22:10:07+00:00\'' >> .chef/accepted_licenses/inspec"
+  - "echo 'accepting_product: inspec' >> .chef/accepted_licenses/inspec"
+  - "echo 'accepting_product_version: 4.18.24' >> .chef/accepted_licenses/inspec"
+  - "echo 'user: ubuntu' >> .chef/accepted_licenses/inspec"
+  - "echo 'file_format: 1' >> .chef/accepted_licenses/inspec"
 
 install:
   - export TAG=$(echo ${DN} | sed "s#/#-#g")-${DV}
-  - DOCKER_BUILDKIT=1 docker build . \
+  - |
+    DOCKER_BUILDKIT=1 docker build . \
       --file "Dockerfile.${PI}" \
       --tag "${TAG}" \
       --build-arg DISTRO_NAME="${DN}" \
