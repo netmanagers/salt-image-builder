@@ -88,14 +88,14 @@ env:
 before_install:
   - gem install inspec
   - gem install inspec-bin
-  - mkdir -p .chef/accepted_licenses
-  - "echo '---' > .chef/accepted_licenses/inspec"
-  - "echo 'name: inspec' >> .chef/accepted_licenses/inspec"
-  - "echo 'date_accepted: \'2019-05-04T22:10:07+00:00\'' >> .chef/accepted_licenses/inspec"
-  - "echo 'accepting_product: inspec' >> .chef/accepted_licenses/inspec"
-  - "echo 'accepting_product_version: 4.18.24' >> .chef/accepted_licenses/inspec"
-  - "echo 'user: ubuntu' >> .chef/accepted_licenses/inspec"
-  - "echo 'file_format: 1' >> .chef/accepted_licenses/inspec"
+  - mkdir -p ~/.chef/accepted_licenses
+  - "echo '---' > ~/.chef/accepted_licenses/inspec"
+  - "echo 'name: inspec' >> ~/.chef/accepted_licenses/inspec"
+  - "echo 'date_accepted: \'2019-05-04T22:10:07+00:00\'' >> ~/.chef/accepted_licenses/inspec"
+  - "echo 'accepting_product: inspec' >> ~/.chef/accepted_licenses/inspec"
+  - "echo 'accepting_product_version: 4.18.24' >> ~/.chef/accepted_licenses/inspec"
+  - "echo 'user: ubuntu' >> ~/.chef/accepted_licenses/inspec"
+  - "echo 'file_format: 1' >> ~/.chef/accepted_licenses/inspec"
 
 install:
   - export TAG=$(echo ${DN} | sed "s#/#-#g")-${DV}
