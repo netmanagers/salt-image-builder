@@ -27,5 +27,5 @@ RUN curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/b
 
 RUN rm -rf /var/cache/{salt,apt} \
  && rm -rf /var/lib/apt/lists/* \
- && (find / -name "*pyc" ; find / -name "__pycache__") |grep -v /proc | xargs rm -rf
+ && (find / -name "*pyc" ; find / -name "__pycache__"; find /var/log -type f) |grep -v /proc | xargs rm -rf
 

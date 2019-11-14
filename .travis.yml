@@ -116,5 +116,5 @@ script:
   - inspec exec test/integration  --input py_version="${PV}" salt_version="${SV}" --target=docker://"inspec-${DN}-${TAG}"
 
 after_success:
-  # - echo "${DOCKER_PASSWORD}" | docker login -u "${DOCKER_USER}" --password-stdin
-  - "echo docker push ${DOCKER_USER}/${TAG}"
+  # - "echo \"${DOCKERHUB_PASSWORD}\" | docker login -u \"${DOCKERHUB_USER}\" --password-stdin"
+  - "echo docker push ${DOCKERHUB_USER}/salt-${SV}-py${PV}:${TAG}"
