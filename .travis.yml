@@ -99,6 +99,7 @@ before_install:
 
 install:
   - export TAG=$(echo ${DN} | sed "s#/#-#g")-${DV}
+  - "echo \"Building: ${TAG}\""
   - |
     docker build . \
       --file "Dockerfile.${PI}" \
@@ -113,3 +114,7 @@ install:
 script:
   - docker run --detach=true --name "inspec-${DN}-${TAG}" "${TAG}" tail -f /dev/null
   - inspec exec test/integration  --input py_version="${PV}" salt_version="${SV}" --target=docker://"inspec-${DN}-${TAG}"
+
+after_success:
+  # - echo "${DOCKER_PASSWORD}" | docker login -u "${DOCKER_USER}" --password-stdin
+  - "echo docker push ${DOCKER_USER}/${TAG}"
