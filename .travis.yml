@@ -39,7 +39,7 @@ env:
     - DN=archlinux/base DV=latest PI=pac SV=2017.7 SIM=git PV=2 EP="openssl openssh awk procps python2-pip"
 
     # CENTOS
-    - DN=centos DV=8 PI=rpm SV=master SIM=git    PV=3 EP="epel-release python3 python3-pip python3-devel openssl-devel swig"
+    - DN=centos DV=8 PI=yum SV=master SIM=git    PV=3 EP="epel-release python3 python3-pip python3-devel openssl-devel swig"
     # There are no RPM's for Centos8 https://repo.saltstack.com/yum/redhat/
     # centos,8 SV=2019.2 SIM=stable PV=3
     - DN=centos DV=8 PI=yum SV=2019.2 SIM=git    PV=3 EP="epel-release python3 python3-pip python3-devel openssl-devel swig"
@@ -89,16 +89,19 @@ env:
 # adding the inspec license-accepted file as different lines because of
 # https://travis-ci.community/t/multiline-commands-have-two-spaces-in-front-breaks-heredocs/2756/4
 before_install:
-  - curl -L -o /tmp/inspec.deb https://packages.chef.io/files/stable/inspec/4.18.39/ubuntu/18.04/inspec_4.18.39-1_amd64.deb
-  - sudo dpkg -i /tmp/inspec.deb
-  - mkdir -p ~/.chef/accepted_licenses
-  - "echo '---' > ~/.chef/accepted_licenses/inspec"
-  - "echo 'name: inspec' >> ~/.chef/accepted_licenses/inspec"
-  - "echo 'date_accepted: 2019-05-04T22:10:07+00:00' >> ~/.chef/accepted_licenses/inspec"
-  - "echo 'accepting_product: inspec' >> ~/.chef/accepted_licenses/inspec"
-  - "echo 'accepting_product_version: 4.18.39' >> ~/.chef/accepted_licenses/inspec"
-  - "echo 'user: ubuntu' >> ~/.chef/accepted_licenses/inspec"
-  - "echo 'file_format: 1' >> ~/.chef/accepted_licenses/inspec"
+  - |
+    if [ ! -x /usr/bin/inspec ]; then
+      curl -L -o /tmp/inspec.deb https://packages.chef.io/files/stable/inspec/4.18.39/ubuntu/18.04/inspec_4.18.39-1_amd64.deb
+      sudo dpkg -i /tmp/inspec.deb
+      mkdir -p ~/.chef/accepted_licenses
+      echo '---' | tee ~/.chef/accepted_licenses/inspec
+      echo 'name: inspec' | tee -a ~/.chef/accepted_licenses/inspec
+      echo 'date_accepted: 2019-05-04T22:10:07+00:00' | tee -a ~/.chef/accepted_licenses/inspec
+      echo 'accepting_product: inspec' | tee -a ~/.chef/accepted_licenses/inspec
+      echo 'accepting_product_version: 4.18.39' | tee -a ~/.chef/accepted_licenses/inspec
+      echo 'user: ubuntu' | tee -a ~/.chef/accepted_licenses/inspec
+      echo 'file_format: 1' | tee -a ~/.chef/accepted_licenses/inspec
+    fi
 
 install:
   - export TAG=$(echo ${DN} | sed "s#/#-#g")-${DV}
@@ -121,11 +124,10 @@ script:
 
 # Using after_success because deploy does not support docker.
 after_success:
-  - test $TRAVIS_BRANCH = "master" &&
-    echo Push to DockerHub
-  - test $TRAVIS_BRANCH = "master" &&
-    echo "${DOCKERHUB_PASSWORD}" | docker login -u "${DOCKERHUB_USER}" --password-stdin
-  - test $TRAVIS_BRANCH = "master" &&
-    docker tag ${TAG} ${DOCKERHUB_USER}/salt-${SV}-py${PV}:${TAG}
-  - test $TRAVIS_BRANCH = "master" &&
-    docker push ${DOCKERHUB_USER}/salt-${SV}-py${PV}:${TAG}
+  - |
+    if [ "$TRAVIS_BRANCH" = "master" ]; then
+      echo "Push to DockerHub"
+      echo "${DOCKERHUB_PASSWORD}" | docker login -u "${DOCKERHUB_USER}" --password-stdin
+      docker tag ${TAG} ${DOCKERHUB_USER}/salt-${SV}-py${PV}:${TAG}
+      docker push ${DOCKERHUB_USER}/salt-${SV}-py${PV}:${TAG}
+    fi
