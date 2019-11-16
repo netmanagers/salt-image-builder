@@ -47,17 +47,18 @@ Basic usage of the builder scripts
 
 1. Edit `.travis.yml`. Check the matrix of images to build in the section `env.jobs`. The generic format is
 
-```
-DN=distro_name DV=distro_version PI=packages_installer SV=salt_version SIM=salt_install_method PV=python_version EP="extra list of packages to install between quotes whitespace-separated"
-```
+
+.. code-block::
+
+   DN=distro_name DV=distro_version PI=packages_installer SV=salt_version SIM=salt_install_method PV=python_version EP="extra list of packages to install between quotes whitespace-separated"
 
 like
 
-```yaml
-    - DN=amazonlinux DV=2 PI=yum SV=2018.3 SIM=stable PV=2 EP="yum-utils python-pip procps-ng"
+.. code-block:: yaml
+
+   - DN=amazonlinux DV=2 PI=yum SV=2018.3 SIM=stable PV=2 EP="yum-utils python-pip procps-ng"
    - DN=centos DV=8 PI=rpm SV=master SIM=git PV=3 EP="epel-release python3 python3-pip python3-devel openssl-devel swig"
 
-```
 
 empty lines or lines starting with # will be ignored (you can install travis gem locally and run travis list on the file to check syntax)
 
@@ -65,30 +66,30 @@ empty lines or lines starting with # will be ignored (you can install travis gem
 
 3. When it finishes, you can run `docker images` and you'll see the new images created, like
 
-```
-REPOSITORY              TAG                 IMAGE ID            CREATED             SIZE
-salt-py2/centos-7       2019.2              bea6a547bd78        6 minutes ago       475MB
-salt-py3/ubuntu-18.04   2019.2              b3660626bf24        11 minutes ago      329MB
-salt-py3/debian-9       2019.2              5bd9384b94ee        14 minutes ago      269MB
-```
+.. code-block::
+
+   REPOSITORY              TAG                 IMAGE ID            CREATED             SIZE
+   salt-py2/centos-7       2019.2              bea6a547bd78        6 minutes ago       475MB
+   salt-py3/ubuntu-18.04   2019.2              b3660626bf24        11 minutes ago      329MB
+   salt-py3/debian-9       2019.2              5bd9384b94ee        14 minutes ago      269MB
 
 How to use the images
 ---------------------
 
 Just edit your `kitchen.local.yml` file, and add the image you want to use, like
 
-```yaml
-provisioner:
-  salt_install: none
+.. code-block:: yaml
 
-platforms:
-  - name: debian-9
-    driver_config:
-      image: salt-py3/debian-9:2019.2
-  - name: ubuntu-16.04
-    driver_config:
-        image: salt-py2/ubuntu-16.04:2018.3
-```
+   provisioner:
+     salt_install: none
+
+   platforms:
+     - name: debian-9
+       driver_config:
+         image: salt-py3/debian-9:2019.2
+     - name: ubuntu-16.04
+       driver_config:
+           image: salt-py2/ubuntu-16.04:2018.3
 
 TODO
 ----
