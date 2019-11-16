@@ -39,15 +39,15 @@ env:
     - DN=archlinux/base DV=latest PI=pac SV=2017.7 SIM=git PV=2 EP="openssl openssh awk procps python2-pip"
 
     # CENTOS
-    - DN=centos DV=8 PI=yum SV=master SIM=git    PV=3 EP="epel-release python3 python3-pip python3-devel openssl-devel swig"
+    - DN=centos DV=8 PI=yum SV=master SIM=git    PV=3 EP="python3 python3-pip python3-devel openssl-devel swig glibc-langpack-en"
     # There are no RPM's for Centos8 https://repo.saltstack.com/yum/redhat/
     # centos,8 SV=2019.2 SIM=stable PV=3
-    - DN=centos DV=8 PI=yum SV=2019.2 SIM=git    PV=3 EP="epel-release python3 python3-pip python3-devel openssl-devel swig"
-    - DN=centos DV=7 PI=yum SV=2019.2 SIM=stable PV=3 EP="epel-release python3 python3-pip python3-devel openssl-devel swig gcc-g++ zeromq zeromq-devel"
-    - DN=centos DV=7 PI=yum SV=2019.2 SIM=stable PV=2 EP="epel-release python2-pip"
-    - DN=centos DV=7 PI=yum SV=2018.3 SIM=stable PV=2 EP="epel-release python2-pip"
-    - DN=centos DV=6 PI=yum SV=2018.3 SIM=stable PV=2 EP="epel-release python-pip"
-    - DN=centos DV=6 PI=yum SV=2017.7 SIM=stable PV=2 EP="epel-release python-pip"
+    - DN=centos DV=8 PI=yum SV=2019.2 SIM=git    PV=3 EP="python3 python3-pip python3-devel openssl-devel swig glibc-langpack-en"
+    - DN=centos DV=7 PI=yum SV=2019.2 SIM=stable PV=3 EP="python3 python3-pip python3-devel openssl-devel swig gcc-g++ zeromq zeromq-devel"
+    - DN=centos DV=7 PI=yum SV=2019.2 SIM=stable PV=2 EP="python2-pip"
+    - DN=centos DV=7 PI=yum SV=2018.3 SIM=stable PV=2 EP="python2-pip"
+    - DN=centos DV=6 PI=yum SV=2018.3 SIM=stable PV=2 EP="python-pip"
+    - DN=centos DV=6 PI=yum SV=2017.7 SIM=stable PV=2 EP="python-pip"
 
     # DEBIAN
     - DN=debian DV=10 PI=apt SV=master SIM=git    PV=3 EP="python3-pip"
@@ -78,13 +78,13 @@ env:
     - DN=opensuse/leap DV=15.1 PI=zyp SV=2017.7 SIM=git PV=2 EP="glibc-locale net-tools openssh which net-tools-deprecated python-xml python-pip"
 
     # UBUNTU
-    - DN=ubuntu DV=18.04 PI=deb SV=master SIM=git    PV=3 EP="python3-pip"
-    - DN=ubuntu DV=18.04 PI=deb SV=2019.2 SIM=stable PV=3 EP="python3-pip"
-    - DN=ubuntu DV=18.04 PI=deb SV=2019.2 SIM=stable PV=2 EP="python-pip"
-    - DN=ubuntu DV=18.04 PI=deb SV=2018.3 SIM=stable PV=2 EP="python-pip"
-    - DN=ubuntu DV=16.04 PI=deb SV=2019.2 SIM=stable PV=3 EP="python3-pip"
-    - DN=ubuntu DV=16.04 PI=deb SV=2018.3 SIM=stable PV=2 EP="python-pip"
-    - DN=ubuntu DV=16.04 PI=deb SV=2017.7 SIM=stable PV=2 EP="python-pip"
+    - DN=ubuntu DV=18.04 PI=apt SV=master SIM=git    PV=3 EP="python3-pip"
+    - DN=ubuntu DV=18.04 PI=apt SV=2019.2 SIM=stable PV=3 EP="python3-pip"
+    - DN=ubuntu DV=18.04 PI=apt SV=2019.2 SIM=stable PV=2 EP="python-pip"
+    - DN=ubuntu DV=18.04 PI=apt SV=2018.3 SIM=stable PV=2 EP="python-pip"
+    - DN=ubuntu DV=16.04 PI=apt SV=2019.2 SIM=stable PV=3 EP="python3-pip"
+    - DN=ubuntu DV=16.04 PI=apt SV=2018.3 SIM=stable PV=2 EP="python-pip"
+    - DN=ubuntu DV=16.04 PI=apt SV=2017.7 SIM=stable PV=2 EP="python-pip"
 
 # adding the inspec license-accepted file as different lines because of
 # https://travis-ci.community/t/multiline-commands-have-two-spaces-in-front-breaks-heredocs/2756/4

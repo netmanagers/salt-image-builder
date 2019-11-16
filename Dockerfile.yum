@@ -11,6 +11,8 @@ ARG EXTRA_PACKAGES=""
 
 ARG PKGS="udev git net-tools sudo curl openssh-server openssh-clients which $EXTRA_PACKAGES"
 
+# Centos 7 and 6 requires EPEL repo before being able to install python2-pip
+RUN [ "$DISTRO_NAME" = "centos" ] && yum -y install epel-release
 RUN yum -y update && yum -y install ${PKGS}
 
 # The sed command is a quick fix for https://github.com/saltstack/salt-bootstrap/issues/1371
