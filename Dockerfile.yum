@@ -16,7 +16,7 @@ RUN yum -y update && yum -y install ${PKGS}
 # The sed command is a quick fix for https://github.com/saltstack/salt-bootstrap/issues/1371
 # FIXME: modifying this here is really, really, really horrible and messy
 RUN curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
-    sed -i "s/python34/python3/g" | \
+    sed "s/python34/python3/g" | \
     sudo sh -s -- -XUdfP -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION
 
 RUN rm -rf /var/cache/{salt,yum} \
