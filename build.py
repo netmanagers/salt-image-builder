@@ -27,7 +27,7 @@ for job_line in travis_yaml['env']['jobs']:
     # Extra packages lines require some extra processing
     EP = ' '.join(EP).split('=')[1]
 
-    buid_script = '/tmp/salt-docker-builder-script-' + DN.replace('/','-') + DV + '-' + PI + '-' + PV + '-' + SV + '-' + SIM
+    build_script = '/tmp/salt-docker-builder-script-' + DN.replace('/','-') + DV + '-' + PI + '-' + PV + '-' + SV + '-' + SIM
     with open(build_script, 'w') as script:
       script.write( 'export DN="' + DN + '"\n')
       script.write( 'export DV="' + DV + '"\n')
