@@ -130,4 +130,8 @@ after_success:
       echo "${DOCKERHUB_PASSWORD}" | docker login -u "${DOCKERHUB_USER}" --password-stdin
       docker tag ${TAG} ${DOCKERHUB_USER}/salt-${SV}-py${PV}:${TAG}
       docker push ${DOCKERHUB_USER}/salt-${SV}-py${PV}:${TAG}
+      if [ "${TAG}" = "archlinux-base-latest" ]; then
+        docker tag ${TAG} ${DOCKERHUB_USER}/salt-${SV}-py${PV}:arch-base-latest
+        docker push ${DOCKERHUB_USER}/salt-${SV}-py${PV}:arch-base-latest
+      fi
     fi
