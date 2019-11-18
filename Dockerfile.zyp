@@ -9,7 +9,7 @@ ARG SALT_VERSION
 ARG PYTHON_VERSION
 ARG EXTRA_PACKAGES=""
 
-ARG PKGS="udev git net-tools sudo curl $EXTRA_PACKAGES"
+ARG PKGS="udev git net-tools net-tools-deprecated sudo curl glibc-locale openssh which python-xml $EXTRA_PACKAGES"
 
 RUN zypper refresh && zypper install -y ${PKGS}
 

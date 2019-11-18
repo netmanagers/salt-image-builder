@@ -66,16 +66,16 @@ env:
     # but they ship with Python3 since 29, so we install it using git
     # https://bugzilla.redhat.com/show_bug.cgi?id=1723207
     # except for 2017.7, which does not run on python3
-    - DN=fedora DV=31 PI=dnf SV=master SIM=git PV=3 EP="openssh-server openssh-clients which findutils glibc-langpack-en python3-pip"
-    - DN=fedora DV=31 PI=dnf SV=2019.2 SIM=git PV=3 EP="openssh-server openssh-clients which findutils glibc-langpack-en python3-pip"
-    - DN=fedora DV=30 PI=dnf SV=2018.3 SIM=git PV=3 EP="openssh-server openssh-clients which findutils glibc-langpack-en python3-pip"
-    - DN=fedora DV=30 PI=dnf SV=2017.7 SIM=git PV=2 EP="openssh-server openssh-clients which findutils glibc-langpack-en python-pip"
+    - DN=fedora DV=31 PI=dnf SV=master SIM=git PV=3 EP="python3-pip"
+    - DN=fedora DV=31 PI=dnf SV=2019.2 SIM=git PV=3 EP="python3-pip"
+    - DN=fedora DV=30 PI=dnf SV=2018.3 SIM=git PV=3 EP="python3-pip"
+    - DN=fedora DV=30 PI=dnf SV=2017.7 SIM=git PV=2 EP="python-pip"
 
     # OPENSUSE
-    - DN=opensuse/leap DV=15.1 PI=zyp SV=master SIM=git PV=3 EP="glibc-locale net-tools openssh which net-tools-deprecated python-xml python3-pip"
-    - DN=opensuse/leap DV=15.1 PI=zyp SV=2019.2 SIM=git PV=3 EP="glibc-locale net-tools openssh which net-tools-deprecated python-xml python3-pip"
-    - DN=opensuse/leap DV=15.1 PI=zyp SV=2018.3 SIM=git PV=2 EP="glibc-locale net-tools openssh which net-tools-deprecated python-xml python-pip"
-    - DN=opensuse/leap DV=15.1 PI=zyp SV=2017.7 SIM=git PV=2 EP="glibc-locale net-tools openssh which net-tools-deprecated python-xml python-pip"
+    - DN=opensuse/leap DV=15.1 PI=zyp SV=master SIM=git PV=3 EP="python3-pip"
+    - DN=opensuse/leap DV=15.1 PI=zyp SV=2019.2 SIM=git PV=3 EP="python3-pip"
+    - DN=opensuse/leap DV=15.1 PI=zyp SV=2018.3 SIM=git PV=2 EP="python-pip"
+    - DN=opensuse/leap DV=15.1 PI=zyp SV=2017.7 SIM=git PV=2 EP="python-pip"
 
     # UBUNTU
     - DN=ubuntu DV=18.04 PI=apt SV=master SIM=git    PV=3 EP="python3-pip"
