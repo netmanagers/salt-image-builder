@@ -50,7 +50,7 @@ env:
     - DN=centos DV=6 PI=yum SV=2017.7 SIM=stable PV=2 EP="python-pip"
 
     # DEBIAN
-    - DN=debian DV=10 PI=apt SV=master SIM=git    PV=3 EP="python3-pip"
+    - DN=debian DV=10 PI=apt SV=master SIM=git    PV=3 EP="python3-apt python3-pip"
     - DN=debian DV=10 PI=apt SV=2019.2 SIM=stable PV=3 EP="python3-pip"
     # There's no Py2 repo for debian10 so the bootstrap fails any attempt to install dependencies to
     # install 2018.3 from git. Also, there's no 2018.3 repo in buster (neither py2 or py3), so trying
