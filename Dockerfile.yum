@@ -13,8 +13,8 @@ ARG EXTRA_PACKAGES=""
 
 ARG PKGS="udev git net-tools sudo curl openssh-server openssh-clients which $EXTRA_PACKAGES"
 
-# Centos 7 and 6 requires EPEL repo before being able to install python2-pip
-RUN if [ "${DISTRO_NAME}" = "centos" ]; \
+# Centos 7 requires EPEL repo before being able to install python2-pip
+RUN if [ "${DISTRO_NAME}" = "centos" -a "${DISTRO_NAME}" = "7" ]; \
     then yum -y install epel-release; \
     fi
 RUN yum -y update && yum -y install ${PKGS}
@@ -25,6 +25,11 @@ RUN curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/b
     sed "s/python34/python3/g" | \
     sudo sh -s -- -XUdfP -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION
 
+# Centos 6 installs python27-pip from the salt repo
+RUN if [ "${DISTRO_NAME}" = "centos" -a "${DISTRO_VERSION}" = "6" ]; \
+    then yum -y update && yum -y install $EXTRA_PACKAGES; \
+         ln -s /usr/bin/pip2.7 /usr/bin/pip; \
+    fi
 RUN rm -rf /var/cache/{salt,yum} \
  && (find / -name "*pyc" ; find / -name "__pycache__") |grep -v /proc | xargs rm -rf
 
