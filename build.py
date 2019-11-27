@@ -9,6 +9,7 @@ This script allows you to build locally, pulling the images matrix from the .tra
 Check that file for details.
 """
 import yaml
+import os
 import subprocess
 
 travis_file = open('.travis.yml', 'r')
@@ -29,12 +30,13 @@ for job_line in travis_yaml['env']['jobs']:
 
     build_script = '/tmp/salt-docker-builder-script-' + DN.replace('/','-') + DV + '-' + PI + '-' + PV + '-' + SV + '-' + SIM
     with open(build_script, 'w') as script:
+      script.write( '#!/bin/bash\n')
       script.write( 'export DN="' + DN + '"\n')
       script.write( 'export DV="' + DV + '"\n')
       script.write( 'export SV="' + SV + '"\n')
       script.write( 'export SIM="' + SIM + '"\n')
       script.write( 'export PV="' + PV + '"\n')
-      script.write( 'export EP="' + EP.replace('"','\\"') + '"\n')
+      script.write( 'export EP="' + EP.replace('"','') + '"\n')
       script.write( 'export PI="' + PI + '"\n')
 
       for install_line in travis_yaml['before_install']:
@@ -44,4 +46,5 @@ for job_line in travis_yaml['env']['jobs']:
       for install_line in travis_yaml['script']:
         script.write(install_line + '\n')
 
-      subprocess.run(build_script)
+    os.chmod(build_script, 0o755)
+    subprocess.run(build_script)

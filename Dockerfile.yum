@@ -14,7 +14,7 @@ ARG EXTRA_PACKAGES=""
 ARG PKGS="udev git net-tools sudo curl openssh-server openssh-clients which $EXTRA_PACKAGES"
 
 # Centos 7 requires EPEL repo before being able to install python2-pip
-RUN if [ "${DISTRO_NAME}" = "centos" -a "${DISTRO_NAME}" = "7" ]; \
+RUN if [ "${DISTRO_NAME}" = "centos" -a "${DISTRO_VERSION}" = "7" ]; \
     then yum -y install epel-release; \
     fi
 RUN yum -y update && yum -y install ${PKGS}
