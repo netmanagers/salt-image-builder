@@ -30,6 +30,11 @@ RUN if [ "${DISTRO_NAME}" = "centos" -a "${DISTRO_VERSION}" = "6" ]; \
     then yum -y update && yum -y install $EXTRA_PACKAGES; \
          ln -s /usr/bin/pip2.7 /usr/bin/pip; \
     fi
+# Amazon 1 installs python26-pip
+RUN if [ "${DISTRO_NAME}" = "amazonlinux" -a "${DISTRO_VERSION}" = "1" ]; \
+    then yum -y update && yum -y install $EXTRA_PACKAGES; \
+         ln -s /usr/bin/pip-2.6 /usr/bin/pip; \
+    fi
 RUN rm -rf /var/cache/{salt,yum} \
  && (find / -name "*pyc" ; find / -name "__pycache__") |grep -v /proc | xargs rm -rf
 
