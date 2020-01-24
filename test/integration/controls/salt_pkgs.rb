@@ -1,4 +1,4 @@
-salt_version = input('salt_version') == 'master' ? 'Fluorine' : input('salt_version')
+salt_version = input('salt_version') == 'master' ? 'Neon' : input('salt_version')
 python_version = input('py_version') == '3' ? '3' : '2'
 
 control 'salt call' do
