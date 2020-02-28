@@ -13,6 +13,10 @@ ARG DEBIAN_FRONTEND="noninteractive"
 
 ARG PKGS="udev git net-tools sudo curl locales procps openssh-server lsb-release $EXTRA_PACKAGES"
 
+# Avoid unnecessary files when installing packages
+COPY files/dpkg-nodoc /etc/dpkg/dpkg.cfg.d/01_nodoc
+COPY files/apt-no-recommends /etc/apt/apt.conf.d/99synaptic
+
 RUN apt update \
  && apt install --yes $PKGS
 
