@@ -82,22 +82,10 @@ env:
     - DN=ubuntu DV=16.04 PI=apt SIM=stable SV=2019.2 PV=3 EP="python3-pip"
     - DN=ubuntu DV=16.04 PI=apt SIM=stable SV=2018.3 PV=2 EP="python-pip"
 
-# adding the inspec license-accepted file as different lines because of
-# https://travis-ci.community/t/multiline-commands-have-two-spaces-in-front-breaks-heredocs/2756/4
 before_install:
-  - |
-    if [ ! -x /usr/bin/inspec ]; then
-      curl -L -o /tmp/inspec.deb https://packages.chef.io/files/stable/inspec/4.18.39/ubuntu/18.04/inspec_4.18.39-1_amd64.deb
-      sudo dpkg -i /tmp/inspec.deb
-      mkdir -p ~/.chef/accepted_licenses
-      echo '---' | tee ~/.chef/accepted_licenses/inspec
-      echo 'name: inspec' | tee -a ~/.chef/accepted_licenses/inspec
-      echo 'date_accepted: 2019-05-04T22:10:07+00:00' | tee -a ~/.chef/accepted_licenses/inspec
-      echo 'accepting_product: inspec' | tee -a ~/.chef/accepted_licenses/inspec
-      echo 'accepting_product_version: 4.18.39' | tee -a ~/.chef/accepted_licenses/inspec
-      echo 'user: ubuntu' | tee -a ~/.chef/accepted_licenses/inspec
-      echo 'file_format: 1' | tee -a ~/.chef/accepted_licenses/inspec
-    fi
+  - sudo apt-get install python3-venv
+  - python3 -m venv venv
+  - venv/bin/pip install -r requirements.txt
 
 install:
   - export TAG=$(echo ${DN} | sed "s#/#-#g")-${DV}
@@ -113,10 +101,10 @@ install:
       --build-arg EXTRA_PACKAGES="${EP}"
 
 script:
-  - docker run --detach=true --name "inspec-${TAG}-${PI}-${PV}-${SIM}-${SV}" "${TAG}" tail -f /dev/null
-  - inspec exec test/integration  --input py_version="${PV}" salt_version="${SV}" --target=docker://"inspec-${TAG}-${PI}-${PV}-${SIM}-${SV}"
-  - docker stop "inspec-${TAG}-${PI}-${PV}-${SIM}-${SV}"
-  - docker rm "inspec-${TAG}-${PI}-${PV}-${SIM}-${SV}"
+  - docker run --detach=true --name "testinfra-${TAG}-${PI}-${PV}-${SIM}-${SV}" "${TAG}" tail -f /dev/null
+  - venv/bin/pytest --hosts="docker://testinfra-${TAG}-${PI}-${PV}-${SIM}-${SV}" test/integration --pyvers "${PV}" --saltvers "${SV}" -v
+  - docker stop "testinfra-${TAG}-${PI}-${PV}-${SIM}-${SV}"
+  - docker rm "testinfra-${TAG}-${PI}-${PV}-${SIM}-${SV}"
 
 # Using after_success because deploy does not support docker.
 after_success:

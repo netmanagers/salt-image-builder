@@ -1,7 +1,7 @@
 .. _readme:
 
-Packer script to build salt images to speed up testing
-======================================================
+Dockerfile and script to build salt images to speed up testing
+==============================================================
 
 .. image:: https://travis-ci.com/netmanagers/salt-image-builder.svg?branch=master
 
@@ -12,8 +12,8 @@ to skip all the bootstrap process in the image you use.
 
 These are based in dockerhub upstream's images for each distro supported.
 
-The images are tested with `Inspec <https://www.inspec.io/>`_ before commiting, to check 
-salt got installed with the desired version and the dependencies are satisfied.
+The images are tested with `Testinfra <https://testinfra.readthedocs.io/en/latest/>`_ before commiting,
+to check salt got installed with the desired version and the dependencies are satisfied.
 
 Images maintained
 -----------------
@@ -40,7 +40,7 @@ There's a silly python script to allow building the images locally if you want t
 
 * Python3
 * Docker (ce is OK)
-* Latest Inspec installed (>= 4.18.24)
+* Latest Testinfra installed (>= 4.1.0)
 
 Basic usage of the builder scripts
 ----------------------------------
@@ -80,16 +80,25 @@ Just edit your `kitchen.local.yml` file, and add the image you want to use, like
 
 .. code-block:: yaml
 
+  driver:
+    name: docker
+    use_sudo: false
+    remove_images: true
+    run_command: /lib/systemd/systemd
+    privileged: true
+    volume:
+      - "/sys/fs/cgroup:/sys/fs/cgroup:ro"
+
    provisioner:
      salt_install: none
 
    platforms:
      - name: debian-9
        driver_config:
-         image: salt-py3/debian-9:2019.2
+         image: salt-2019.2-py3:debian-9
      - name: ubuntu-16.04
        driver_config:
-           image: salt-py2/ubuntu-16.04:2018.3
+           image: salt-2018.3-py2:ubuntu-16.04
 
 TODO
 ----
