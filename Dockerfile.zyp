@@ -22,6 +22,9 @@ RUN if [ ! -e /etc/SuSE-release ]; then ln -s /etc/os-release /etc/SuSE-release;
 RUN curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
     sudo sh -s -- -XUdfP -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION
 
+# FIXME: Remove this temporary workaround when `repo.saltstack.com` is fixed
+RUN sed -i -e 's:staging/::g' /etc/zypp/repos.d/systemsmanagement_saltstack_products.repo && zypper --gpg-auto-import-keys refresh
+
 RUN rm -rf /var/cache/{salt,zyp} \
  && (find / -name "*pyc" ; find / -name "__pycache__") |grep -v /proc | xargs rm -rf
 
