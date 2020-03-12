@@ -42,8 +42,7 @@ env:
     - DN=centos DV=8 PI=yum SIM=stable SV=3000   PV=3 EP="python3 python3-pip python3-devel openssl-devel swig glibc-langpack-en"
     - DN=centos DV=8 PI=yum SIM=stable SV=2019.2 PV=3 EP="python3 python3-pip python3-devel openssl-devel swig glibc-langpack-en"
     - DN=centos DV=7 PI=yum SIM=stable SV=2019.2 PV=3 EP="python3 python3-pip python3-devel openssl-devel swig gcc-g++ zeromq zeromq-devel"
-    - DN=centos DV=7 PI=yum SIM=stable SV=2019.2 PV=2 EP="python2-pip"
-    - DN=centos DV=7 PI=yum SIM=stable SV=2018.3 PV=2 EP="python2-pip"
+    - DN=centos DV=7 PI=yum SIM=stable SV=2018.3 PV=3 EP="python3 python3-pip python3-devel openssl-devel swig gcc-g++ zeromq zeromq-devel"
     - DN=centos DV=6 PI=yum SIM=stable SV=2018.3 PV=2 EP="python27-pip"
 
     # DEBIAN
