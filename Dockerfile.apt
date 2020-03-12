@@ -22,7 +22,7 @@ RUN apt update \
 
 # Remove unnecessary getty and udev targets that result in high CPU usage when using
 # multiple containers with Molecule or Kitchen (https://github.com/ansible/molecule/issues/1104)
-RUN rm -f /lib/systemd/system/systemd*udev* /lib/systemd/system/getty.target
+RUN rm -rf /lib/systemd/system/systemd*udev* /lib/systemd/system/getty.target
 
 # Use @vutny's suggestion in https://github.com/saltstack-formulas/postgres-formula/pull/269#issuecomment-492597286
 RUN rm -f /etc/default/locale /etc/locale.gen
