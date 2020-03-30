@@ -20,10 +20,6 @@ COPY files/apt-no-recommends /etc/apt/apt.conf.d/99synaptic
 RUN apt update \
  && apt install --yes $PKGS
 
-# Remove unnecessary getty and udev targets that result in high CPU usage when using
-# multiple containers with Molecule or Kitchen (https://github.com/ansible/molecule/issues/1104)
-RUN rm -f /lib/systemd/system/systemd*udev* /lib/systemd/system/getty.target
-
 # Use @vutny's suggestion in https://github.com/saltstack-formulas/postgres-formula/pull/269#issuecomment-492597286
 RUN rm -f /etc/default/locale /etc/locale.gen
 RUN echo 'locales locales/locales_to_be_generated multiselect en_US.UTF-8 UTF-8' | debconf-set-selections -
@@ -37,3 +33,8 @@ RUN rm -rf /var/cache/{salt,apt} \
  && rm -rf /var/lib/apt/lists/* \
  && (find / -name "*pyc" ; find / -name "__pycache__"; find /var/log -type f) |grep -v /proc | xargs rm -rf
 
+# Remove unnecessary getty and udev targets that result in high CPU usage when using
+# multiple containers with Molecule or Kitchen (https://github.com/ansible/molecule/issues/1104)
+RUN rm -rf /lib/systemd/system/systemd*udev* /lib/systemd/system/getty.target
+# Also obscure any `getty` binaries (https://github.com/moby/moby/issues/4040#issuecomment-339022455)
+RUN cp /bin/true /sbin/agetty
