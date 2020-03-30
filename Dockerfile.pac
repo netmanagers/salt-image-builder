@@ -17,13 +17,14 @@ RUN pacman --noconfirm -Sy archlinux-keyring \
 
 RUN systemctl enable sshd
 
-# Remove unnecessary getty and udev targets that result in high CPU usage when using
-# multiple containers with Molecule or Kitchen (https://github.com/ansible/molecule/issues/1104)
-RUN rm -rf /lib/systemd/system/systemd*udev* /lib/systemd/system/getty.target
-
 RUN curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
     sudo sh -s -- -XUdfP -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION
 
 RUN rm -rf /var/cache/{salt,pacman} \
  && (find / -name "*pyc" ; find / -name "__pycache__") |grep -v /proc | xargs rm -rf
 
+# Remove unnecessary getty and udev targets that result in high CPU usage when using
+# multiple containers with Molecule or Kitchen (https://github.com/ansible/molecule/issues/1104)
+RUN rm -rf /usr/lib/systemd/system/systemd*udev* /usr/lib/systemd/system/getty.target
+# Also obscure any `getty` binaries (https://github.com/moby/moby/issues/4040#issuecomment-339022455)
+RUN cp /bin/true /sbin/agetty
