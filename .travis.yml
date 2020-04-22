@@ -114,3 +114,10 @@ after_success:
         docker push ${DOCKERHUB_USER}/salt-${SV}-py${PV}:arch-base-latest
       fi
     fi
+
+notifications:
+  irc:
+    channels:
+      - 'chat.freenode.net##salt-image-builder'
+    on_success: always
+    on_failure: always
