@@ -118,6 +118,6 @@ after_success:
 notifications:
   irc:
     channels:
-      - 'chat.freenode.net##salt-image-builder'
+      - 'chat.freenode.net#salt-image-builder'
     on_success: always
     on_failure: always
