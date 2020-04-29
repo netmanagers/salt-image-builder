@@ -51,7 +51,6 @@ env:
     - DN=debian         DV=10     PI=apt SIM=stable SV=2019.2 PV=3 EP="python3-pip"
     - DN=debian         DV=9      PI=apt SIM=stable SV=2019.2 PV=3 EP="python3-pip"
     - DN=debian         DV=9      PI=apt SIM=stable SV=2018.3 PV=2 EP="python-pip"
-    - DN=debian         DV=8      PI=apt SIM=stable SV=2018.3 PV=2 EP="python-pip"
 
     # FEDORA
     # Fedora has no python3 packages due to a tornado issue,
@@ -60,7 +59,6 @@ env:
     - DN=fedora         DV=31     PI=dnf SIM=git    SV=master PV=3 EP="python3-pip"
     - DN=fedora         DV=31     PI=dnf SIM=git    SV=3000.1 PV=3 EP="python3-pip"
     - DN=fedora         DV=31     PI=dnf SIM=git    SV=2019.2 PV=3 EP="python3-pip"
-    - DN=fedora         DV=30     PI=dnf SIM=git    SV=2018.3 PV=3 EP="python3-pip"
 
     # OPENSUSE
     - DN=opensuse/leap  DV=15.1   PI=zyp SIM=git    SV=master PV=3 EP="python3-pip"
