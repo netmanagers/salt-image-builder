@@ -18,7 +18,7 @@ env:
   # DV:  distro version
   # PI:  packages installer, used as dockerfile extension (deb, yum, pac, zyp)
   # SIM: salt install method (git, stable)
-  # SV:  salt version (master, 3000.1, 2019.2, 2018.3)
+  # SV:  salt version (master, 3000.1, 2019.2)
   # PV:  python version (3, 2)
   # EP:  extra packages required for the specific build
   jobs:
@@ -27,7 +27,6 @@ env:
     - DN=amazonlinux    DV=2      PI=yum SIM=stable SV=3000.1 PV=3 EP="yum-utils python3-pip procps-ng"
     - DN=amazonlinux    DV=2      PI=yum SIM=stable SV=2019.2 PV=3 EP="yum-utils python3-pip procps-ng"
     - DN=amazonlinux    DV=1      PI=yum SIM=stable SV=2019.2 PV=2 EP="yum-utils python-pip procps-ng"
-    - DN=amazonlinux    DV=1      PI=yum SIM=stable SV=2018.3 PV=2 EP="yum-utils python-pip procps-ng"
 
     # ARCHLINUX
     # The Salt bootstrap installer does not provide packages nor installs with py3 for Arch
@@ -35,22 +34,18 @@ env:
     - DN=archlinux/base DV=latest PI=pac SIM=git    SV=master PV=2 EP="openssl openssh awk procps python2-pip"
     - DN=archlinux/base DV=latest PI=pac SIM=git    SV=3000.1 PV=2 EP="openssl openssh awk procps python2-pip"
     - DN=archlinux/base DV=latest PI=pac SIM=git    SV=2019.2 PV=2 EP="openssl openssh awk procps python2-pip"
-    - DN=archlinux/base DV=latest PI=pac SIM=git    SV=2018.3 PV=2 EP="openssl openssh awk procps python2-pip"
 
     # CENTOS
     - DN=centos         DV=8      PI=yum SIM=git    SV=master PV=3 EP="python3 python3-pip python3-devel openssl-devel swig glibc-langpack-en"
     - DN=centos         DV=8      PI=yum SIM=stable SV=3000.1 PV=3 EP="python3 python3-pip python3-devel openssl-devel swig glibc-langpack-en"
     - DN=centos         DV=8      PI=yum SIM=stable SV=2019.2 PV=3 EP="python3 python3-pip python3-devel openssl-devel swig glibc-langpack-en"
     - DN=centos         DV=7      PI=yum SIM=stable SV=2019.2 PV=3 EP="python3 python3-pip python3-devel openssl-devel swig gcc-g++ zeromq zeromq-devel"
-    - DN=centos         DV=7      PI=yum SIM=stable SV=2018.3 PV=3 EP="python3 python3-pip python3-devel openssl-devel swig gcc-g++ zeromq zeromq-devel"
-    - DN=centos         DV=6      PI=yum SIM=stable SV=2018.3 PV=2 EP="python27-pip"
 
     # DEBIAN
     - DN=debian         DV=10     PI=apt SIM=git    SV=master PV=3 EP="python3-apt python3-pip"
     - DN=debian         DV=10     PI=apt SIM=stable SV=3000.1 PV=3 EP="python3-pip"
     - DN=debian         DV=10     PI=apt SIM=stable SV=2019.2 PV=3 EP="python3-pip"
     - DN=debian         DV=9      PI=apt SIM=stable SV=2019.2 PV=3 EP="python3-pip"
-    - DN=debian         DV=9      PI=apt SIM=stable SV=2018.3 PV=2 EP="python-pip"
 
     # FEDORA
     # Fedora has no python3 packages due to a tornado issue,
@@ -64,16 +59,13 @@ env:
     - DN=opensuse/leap  DV=15.1   PI=zyp SIM=git    SV=master PV=3 EP="python3-pip"
     - DN=opensuse/leap  DV=15.1   PI=zyp SIM=git    SV=3000.1 PV=3 EP="python3-pip"
     - DN=opensuse/leap  DV=15.1   PI=zyp SIM=git    SV=2019.2 PV=3 EP="python3-pip"
-    - DN=opensuse/leap  DV=15.1   PI=zyp SIM=git    SV=2018.3 PV=2 EP="python2-pip"
 
     # UBUNTU
     - DN=ubuntu         DV=18.04  PI=apt SIM=git    SV=master PV=3 EP="python3-apt python3-pip"
     - DN=ubuntu         DV=18.04  PI=apt SIM=stable SV=3000.1 PV=3 EP="python3-pip"
     - DN=ubuntu         DV=18.04  PI=apt SIM=stable SV=2019.2 PV=3 EP="python3-pip"
     - DN=ubuntu         DV=18.04  PI=apt SIM=stable SV=2019.2 PV=2 EP="python-pip"
-    - DN=ubuntu         DV=18.04  PI=apt SIM=stable SV=2018.3 PV=2 EP="python-pip"
     - DN=ubuntu         DV=16.04  PI=apt SIM=stable SV=2019.2 PV=3 EP="python3-pip"
-    - DN=ubuntu         DV=16.04  PI=apt SIM=stable SV=2018.3 PV=2 EP="python-pip"
 
 before_install:
   - sudo apt-get install -y python3-venv
