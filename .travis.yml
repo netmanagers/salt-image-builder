@@ -31,7 +31,8 @@ env:
     # ARCHLINUX
     # The Salt bootstrap installer does not provide packages nor installs with py3 for Arch
     # so we're building only the git'ted py2 versions
-    - DN=archlinux/base DV=latest PI=pac SIM=git    SV=master PV=2 EP="openssl openssh awk procps python2-pip"
+    # NOTE: Removed broken `py2` image for `SV=master` since that's been deprecated in `Sodium` and
+    #       no working `py3` version available
     - DN=archlinux/base DV=latest PI=pac SIM=git    SV=3000.2 PV=2 EP="openssl openssh awk procps python2-pip"
     - DN=archlinux/base DV=latest PI=pac SIM=git    SV=2019.2 PV=2 EP="openssl openssh awk procps python2-pip"
 
