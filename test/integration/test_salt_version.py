@@ -1,7 +1,7 @@
 def test_salt_version(host, saltvers):
     cmd = host.run("salt-call --version")
     if saltvers in ["latest", "master"]:
-        saltvers = "3000"
+        saltvers = "3001"
     assert saltvers in cmd.stdout
     assert cmd.rc == 0
 
