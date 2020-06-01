@@ -18,7 +18,10 @@ RUN pacman --noconfirm -Sy archlinux-keyring \
 RUN systemctl enable sshd
 
 RUN curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
-    sudo sh -s -- -XUdfP -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION
+    sudo sh -s -- -XUdfP -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION \
+ && for fname in api master minion syndic; do \
+      /bin/systemctl disable salt-$fname.service; \
+    done
 
 RUN rm -rf /var/cache/{salt,pacman} \
  && (find / -name "*pyc" ; find / -name "__pycache__") |grep -v /proc | xargs rm -rf

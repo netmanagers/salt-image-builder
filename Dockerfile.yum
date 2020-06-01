@@ -23,7 +23,10 @@ RUN yum -y update && yum -y install ${PKGS}
 # FIXME: modifying this here is really, really, really horrible and messy
 RUN curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
     sed "s/python34/python3/g" | \
-    sudo sh -s -- -XUdfP -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION
+    sudo sh -s -- -XUdfP -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION \
+ && for fname in api master minion syndic; do \
+      /bin/systemctl disable salt-$fname.service; \
+    done
 
 # Centos 6 installs python27-pip from the salt repo
 RUN if [ "${DISTRO_NAME}" = "centos" -a "${DISTRO_VERSION}" = "6" ]; \
