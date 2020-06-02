@@ -94,7 +94,7 @@ install:
 
 script:
   - docker run --detach=true --name "testinfra-${TAG}-${PI}-${PV}-${SIM}-${SV}" "${TAG}" tail -f /dev/null
-  - venv/bin/pytest --hosts="docker://testinfra-${TAG}-${PI}-${PV}-${SIM}-${SV}" test/integration --pyvers "${PV}" --saltvers "${SV}" -v
+  - venv/bin/pytest --hosts="docker://testinfra-${TAG}-${PI}-${PV}-${SIM}-${SV}" test/integration --pyvers "${PV}" --saltvers "${SV}" --installmethod "${SIM}" -v
   - docker stop "testinfra-${TAG}-${PI}-${PV}-${SIM}-${SV}"
   - docker rm "testinfra-${TAG}-${PI}-${PV}-${SIM}-${SV}"
 
