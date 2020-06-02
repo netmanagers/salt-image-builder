@@ -28,9 +28,7 @@ RUN dpkg-reconfigure -f noninteractive locales
 
 RUN curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
     sudo sh -s -- -XUdfP -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION \
- && for fname in api master minion syndic; do \
-      /bin/systemctl disable salt-$fname.service; \
-    done
+ && /bin/systemctl disable salt-minion.service > /dev/null 2>&1
 
 RUN rm -rf /var/cache/{salt,apt} \
  && rm -rf /var/lib/apt/lists/* \
