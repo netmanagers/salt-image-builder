@@ -3,6 +3,7 @@
 ---
 ## Machine config
 os: linux
+arch: amd64
 dist: bionic
 version: '~> 1.0'
 language: shell
@@ -26,7 +27,7 @@ env:
     - DN=amazonlinux    DV=2      PI=yum SIM=git    SV=master PV=3 EP="yum-utils python3-pip procps-ng"
     - DN=amazonlinux    DV=2      PI=yum SIM=stable SV=3000.3 PV=3 EP="yum-utils python3-pip procps-ng"
     - DN=amazonlinux    DV=2      PI=yum SIM=stable SV=2019.2 PV=3 EP="yum-utils python3-pip procps-ng"
-    - DN=amazonlinux    DV=1      PI=yum SIM=stable SV=2019.2 PV=2 EP="yum-utils python-pip procps-ng"
+    - DN=amazonlinux    DV=1      PI=yum SIM=stable SV=2019.2 PV=2 EP="yum-utils python-pip procps"
 
     # ARCHLINUX
     # The Salt bootstrap installer does not provide packages nor installs with py3 for Arch
