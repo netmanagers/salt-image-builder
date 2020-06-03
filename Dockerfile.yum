@@ -17,6 +17,14 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN if [[ "${DISTRO_NAME}" = "centos" && "${DISTRO_VERSION}" = "7" ]]; \
     then yum -y install epel-release; \
     fi \
+ && yum -y update && yum -y install ${PKGS} \
+ && curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
+    sh -s -- -XUdfP -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION \
+ && if [ -f /bin/systemctl ]; then \
+      /bin/systemctl disable salt-minion.service > /dev/null 2>&1; \
+    elif [ -f "/etc/init.d/salt-minion" ]; then \
+      /sbin/chkconfig salt-minion off; \
+    fi \
     # Centos 6 installs python27-pip from the salt repo
  && if [[ "${DISTRO_NAME}" = "centos" && "${DISTRO_VERSION}" = "6" ]]; \
     then yum -y update && yum -y install $EXTRA_PACKAGES; \
@@ -26,14 +34,6 @@ RUN if [[ "${DISTRO_NAME}" = "centos" && "${DISTRO_VERSION}" = "7" ]]; \
  && if [[ "${DISTRO_NAME}" = "amazonlinux" && "${DISTRO_VERSION}" = "1" ]]; \
     then yum -y update && yum -y install $EXTRA_PACKAGES; \
          ln -s /usr/bin/pip-2.6 /usr/bin/pip; \
-    fi \
- && yum -y update && yum -y install ${PKGS} \
- && curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
-    sh -s -- -XUdfP -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION \
- && if [ -f /bin/systemctl ]; then \
-      /bin/systemctl disable salt-minion.service > /dev/null 2>&1; \
-    elif [ -f "/etc/init.d/salt-minion" ]; then \
-      /sbin/chkconfig salt-minion off; \
     fi \
     # Remove unnecessary getty and udev targets that result in high CPU usage when using
     # multiple containers with Molecule or Kitchen (https://github.com/ansible/molecule/issues/1104)
