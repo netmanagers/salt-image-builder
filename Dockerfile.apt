@@ -8,34 +8,35 @@ ARG SALT_INSTALL_METHOD
 ARG SALT_VERSION
 ARG PYTHON_VERSION
 ARG EXTRA_PACKAGES=""
-
 ARG DEBIAN_FRONTEND="noninteractive"
-
 ARG PKGS="udev git net-tools sudo curl locales procps openssh-server lsb-release systemd systemd-sysv gnupg dirmngr $EXTRA_PACKAGES"
 
 # Avoid unnecessary files when installing packages
 COPY files/dpkg-nodoc /etc/dpkg/dpkg.cfg.d/01_nodoc
 COPY files/apt-no-recommends /etc/apt/apt.conf.d/99synaptic
 
-RUN apt update \
- && apt install --yes $PKGS
-
-# Use @vutny's suggestion in https://github.com/saltstack-formulas/postgres-formula/pull/269#issuecomment-492597286
-RUN rm -f /etc/default/locale /etc/locale.gen
-RUN echo 'locales locales/locales_to_be_generated multiselect en_US.UTF-8 UTF-8' | debconf-set-selections -
-RUN echo 'locales locales/default_environment_locale select en_US.UTF-8' | debconf-set-selections -
-RUN dpkg-reconfigure -f noninteractive locales
-
-RUN curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
-    sudo sh -s -- -XUdfP -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION \
- && /bin/systemctl disable salt-minion.service > /dev/null 2>&1
-
-RUN rm -rf /var/cache/{salt,apt} \
- && rm -rf /var/lib/apt/lists/* \
- && (find / -name "*pyc" ; find / -name "__pycache__"; find /var/log -type f) |grep -v /proc | xargs rm -rf
-
-# Remove unnecessary getty and udev targets that result in high CPU usage when using
-# multiple containers with Molecule or Kitchen (https://github.com/ansible/molecule/issues/1104)
-RUN rm -rf /lib/systemd/system/systemd*udev* /lib/systemd/system/getty.target
-# Also obscure any `getty` binaries (https://github.com/moby/moby/issues/4040#issuecomment-339022455)
-RUN cp /bin/true /sbin/agetty
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+# hadolint ignore=DL3008
+RUN apt-get update \
+ && apt-get install --yes --no-install-recommends $PKGS \
+ && curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
+    sh -s -- -XUdfP -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION \
+    # Disable salt's service as we don't need it running
+ && /bin/systemctl disable salt-minion.service > /dev/null 2>&1 \
+    # Remove unnecessary getty and udev targets that result in high CPU usage when using
+    # multiple containers with Molecule or Kitchen https://github.com/ansible/molecule/issues/1104
+ && rm -rf /var/cache/apt \
+           /var/cache/salt \
+           /var/lib/apt-get/lists/* \
+           /lib/systemd/system/systemd*udev* \
+           /lib/systemd/system/getty.target \
+          /etc/default/locale /etc/locale.gen \
+ && (find / -name "*pyc"; \
+     find / -name "__pycache__"; \
+     find /var/log -type f) | \
+    grep -v /proc | xargs rm -rf \
+    # Also obscure any `getty` binaries https://github.com/moby/moby/issues/4040#issuecomment-339022455
+ && cp /bin/true /sbin/agetty \
+ && echo 'locales locales/locales_to_be_generated multiselect en_US.UTF-8 UTF-8' | debconf-set-selections - \
+ && echo 'locales locales/default_environment_locale select en_US.UTF-8' | debconf-set-selections - \
+ && dpkg-reconfigure -f noninteractive locales

@@ -3,6 +3,7 @@
 ---
 ## Machine config
 os: linux
+arch: amd64
 dist: bionic
 version: '~> 1.0'
 language: shell

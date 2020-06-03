@@ -10,42 +10,39 @@ ARG SALT_INSTALL_METHOD
 ARG SALT_VERSION
 ARG PYTHON_VERSION
 ARG EXTRA_PACKAGES=""
-
 ARG PKGS="udev git net-tools sudo curl openssh-server openssh-clients which $EXTRA_PACKAGES"
 
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # Centos 7 requires EPEL repo before being able to install python2-pip
-RUN if [ "${DISTRO_NAME}" = "centos" -a "${DISTRO_VERSION}" = "7" ]; \
+RUN if [ "${DISTRO_NAME}" = "centos" ] && [ "${DISTRO_VERSION}" = "7" ]; \
     then yum -y install epel-release; \
-    fi
-RUN yum -y update && yum -y install ${PKGS}
-
-# The sed command is a quick fix for https://github.com/saltstack/salt-bootstrap/issues/1371
-# FIXME: modifying this here is really, really, really horrible and messy
-RUN curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
-    sed "s/python34/python3/g" | \
-    sudo sh -s -- -XUdfP -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION \
- && if [ -f /bin/systemctl ]; then \
-      /bin/systemctl disable salt-minion.service > /dev/null 2>&1; \
-    elif [ -f "/etc/init.d/salt-${fname}" ]; then \
-      /sbin/chkconfig salt-${fname} off; \
-    fi
-
-# Centos 6 installs python27-pip from the salt repo
-RUN if [ "${DISTRO_NAME}" = "centos" -a "${DISTRO_VERSION}" = "6" ]; \
+    fi \
+    # Centos 6 installs python27-pip from the salt repo
+ && if [ "${DISTRO_NAME}" = "centos" ] && [ "${DISTRO_VERSION}" = "6" ]; \
     then yum -y update && yum -y install $EXTRA_PACKAGES; \
          ln -s /usr/bin/pip2.7 /usr/bin/pip; \
-    fi
-# Amazon 1 installs python26-pip
-RUN if [ "${DISTRO_NAME}" = "amazonlinux" -a "${DISTRO_VERSION}" = "1" ]; \
+    fi \
+    # Amazon 1 installs python26-pip
+ && if [ "${DISTRO_NAME}" = "amazonlinux" ] && [ "${DISTRO_VERSION}" = "1" ]; \
     then yum -y update && yum -y install $EXTRA_PACKAGES; \
          ln -s /usr/bin/pip-2.6 /usr/bin/pip; \
-    fi
-RUN rm -rf /var/cache/{salt,yum} \
- && (find / -name "*pyc" ; find / -name "__pycache__") |grep -v /proc | xargs rm -rf
-
-# Remove unnecessary getty and udev targets that result in high CPU usage when using
-# multiple containers with Molecule or Kitchen (https://github.com/ansible/molecule/issues/1104)
-RUN rm -rf /usr/lib/systemd/system/systemd*udev* /usr/lib/systemd/system/getty.target || true
-# Also obscure any `getty` binaries (https://github.com/moby/moby/issues/4040#issuecomment-339022455)
-RUN cp /bin/true /sbin/agetty
-RUN if [ -e /sbin/mingetty ]; then cp /bin/true /sbin/mingetty; fi
+    fi \
+ && yum -y update && yum -y install ${PKGS} \
+ && curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
+    sh -s -- -XUdfP -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION \
+ && if [ -f /bin/systemctl ]; then \
+      /bin/systemctl disable salt-minion.service > /dev/null 2>&1; \
+    elif [ -f "/etc/init.d/salt-minion" ]; then \
+      /sbin/chkconfig salt-minion off; \
+    fi \
+    # Remove unnecessary getty and udev targets that result in high CPU usage when using
+    # multiple containers with Molecule or Kitchen (https://github.com/ansible/molecule/issues/1104)
+ && rm -rf /var/cache/{salt,yum} \
+           /usr/lib/systemd/system/systemd*udev* \
+           /usr/lib/systemd/system/getty.target \
+ && (find / -name "*pyc"; \
+     find / -name "__pycache__") | \
+    grep -v /proc | xargs rm -rf \
+    # Also obscure any `getty` binaries (https://github.com/moby/moby/issues/4040#issuecomment-339022455)
+ && cp /bin/true /sbin/agetty \
+ && if [ -e /sbin/mingetty ]; then cp /bin/true /sbin/mingetty; fi
