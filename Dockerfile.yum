@@ -14,16 +14,16 @@ ARG PKGS="udev git net-tools sudo curl openssh-server openssh-clients which $EXT
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # Centos 7 requires EPEL repo before being able to install python2-pip
-RUN if [ "${DISTRO_NAME}" = "centos" ] && [ "${DISTRO_VERSION}" = "7" ]; \
+RUN if [[ "${DISTRO_NAME}" = "centos" && "${DISTRO_VERSION}" = "7" ]]; \
     then yum -y install epel-release; \
     fi \
     # Centos 6 installs python27-pip from the salt repo
- && if [ "${DISTRO_NAME}" = "centos" ] && [ "${DISTRO_VERSION}" = "6" ]; \
+ && if [[ "${DISTRO_NAME}" = "centos" && "${DISTRO_VERSION}" = "6" ]]; \
     then yum -y update && yum -y install $EXTRA_PACKAGES; \
          ln -s /usr/bin/pip2.7 /usr/bin/pip; \
     fi \
     # Amazon 1 installs python26-pip
- && if [ "${DISTRO_NAME}" = "amazonlinux" ] && [ "${DISTRO_VERSION}" = "1" ]; \
+ && if [[ "${DISTRO_NAME}" = "amazonlinux" && "${DISTRO_VERSION}" = "1" ]]; \
     then yum -y update && yum -y install $EXTRA_PACKAGES; \
          ln -s /usr/bin/pip-2.6 /usr/bin/pip; \
     fi \
