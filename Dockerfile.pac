@@ -10,7 +10,7 @@ ARG PYTHON_VERSION
 ARG EXTRA_PACKAGES=""
 ARG PKGS="udev git net-tools sudo curl $EXTRA_PACKAGES"
 
-SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+SHELL ["/bin/bash", "-x", "-o", "pipefail", "-c"]
 RUN pacman --noconfirm -Sy archlinux-keyring \
  && pacman-db-upgrade \
  && pacman --noconfirm -Syu ${PKGS} \
@@ -23,8 +23,8 @@ RUN pacman --noconfirm -Sy archlinux-keyring \
  && rm -rf /var/cache/{salt,pacman} \
            /usr/lib/systemd/system/systemd*udev* \
            /usr/lib/systemd/system/getty.target \
- && (find / -name "*pyc"; \
-     find / -name "__pycache__"; \
+ && (find / ! -path "/{proc,sys,dev}" -name "*.pyc"; \
+     find / ! -path "/{proc,sys,dev}" -name "__pycache__"; \
      find /var/log -type f) | \
     grep -v /proc | xargs rm -rf \
     # Also obscure any `getty` binaries (https://github.com/moby/moby/issues/4040#issuecomment-339022455)

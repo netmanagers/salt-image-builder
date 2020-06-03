@@ -15,7 +15,7 @@ ARG PKGS="udev git net-tools sudo curl locales procps openssh-server lsb-release
 COPY files/dpkg-nodoc /etc/dpkg/dpkg.cfg.d/01_nodoc
 COPY files/apt-no-recommends /etc/apt/apt.conf.d/99synaptic
 
-SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+SHELL ["/bin/bash", "-x", "-o", "pipefail", "-c"]
 # hadolint ignore=DL3008
 RUN apt-get update \
  && apt-get install --yes --no-install-recommends $PKGS \
@@ -31,8 +31,8 @@ RUN apt-get update \
            /lib/systemd/system/systemd*udev* \
            /lib/systemd/system/getty.target \
           /etc/default/locale /etc/locale.gen \
- && (find / -name "*pyc"; \
-     find / -name "__pycache__"; \
+ && (find / ! -path "/{proc,sys,dev}" -name "*.pyc"; \
+     find / ! -path "/{proc,sys,dev}" -name "__pycache__"; \
      find /var/log -type f) | \
     grep -v /proc | xargs rm -rf \
     # Also obscure any `getty` binaries https://github.com/moby/moby/issues/4040#issuecomment-339022455

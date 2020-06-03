@@ -12,7 +12,7 @@ ARG PYTHON_VERSION
 ARG EXTRA_PACKAGES=""
 ARG PKGS="udev git net-tools sudo curl openssh-server openssh-clients which $EXTRA_PACKAGES"
 
-SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+SHELL ["/bin/bash", "-x", "-o", "pipefail", "-c"]
 # Centos 7 requires EPEL repo before being able to install python2-pip
 RUN if [[ "${DISTRO_NAME}" = "centos" && "${DISTRO_VERSION}" = "7" ]]; \
     then yum -y install epel-release; \
@@ -40,8 +40,9 @@ RUN if [[ "${DISTRO_NAME}" = "centos" && "${DISTRO_VERSION}" = "7" ]]; \
  && rm -rf /var/cache/{salt,yum} \
            /usr/lib/systemd/system/systemd*udev* \
            /usr/lib/systemd/system/getty.target \
- && (find / -name "*pyc"; \
-     find / -name "__pycache__") | \
+ && (find / ! -path "/{proc,sys,dev}" -name "*.pyc"; \
+     find / ! -path "/{proc,sys,dev}" -name "__pycache__"; \
+     find /var/log -type f) | \
     grep -v /proc | xargs rm -rf \
     # Also obscure any `getty` binaries (https://github.com/moby/moby/issues/4040#issuecomment-339022455)
  && cp /bin/true /sbin/agetty \
