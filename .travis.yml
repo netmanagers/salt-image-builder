@@ -17,7 +17,7 @@ env:
   # VARS:
   # DN:  distro name (amazonlinux, archlinux, centos, debian, fedora, opensuse, ubuntu)
   # DV:  distro version
-  # PI:  packages installer, used as dockerfile extension (deb, yum, pac, zyp)
+  # PI:  packages installer, used as dockerfile extension (apt, dnf, pac, yum, zyp)
   # SIM: salt install method (git, stable)
   # SV:  salt version (master, 3000.3, 2019.2)
   # PV:  python version (3, 2)
