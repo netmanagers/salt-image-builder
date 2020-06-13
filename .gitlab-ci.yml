@@ -1,0 +1,36 @@
+---
+###############################################################################
+# Define all YAML node anchors
+###############################################################################
+.node_anchors:
+  # `stage`
+  stage_release: &stage_release 'release'
+  # `image`
+  image_node: &image_node 'node:12-buster-slim'
+  # `before_script`
+  before_script_image_node: &before_script_image_node
+    - 'apt-get update
+       && apt-get install -y --no-install-recommends git-core ca-certificates'
+  # `only` (also used for `except` where applicable)
+  only_branch_master: &only_branch_master ['master']
+
+###############################################################################
+# Define stages
+###############################################################################
+stages:
+  - 'release'
+
+###############################################################################
+# `release` stage: `semantic-release`
+###############################################################################
+semantic-release:
+  only: *only_branch_master
+  stage: *stage_release
+  image: *image_node
+  before_script: *before_script_image_node
+  script:
+    - 'npm install -g semantic-release
+                      @semantic-release/gitlab
+                      @semantic-release/changelog
+                      @semantic-release/git'
+    - 'semantic-release'
