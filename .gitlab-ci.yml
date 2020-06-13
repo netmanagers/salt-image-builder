@@ -7,6 +7,7 @@
   stage_lint: &stage_lint 'lint'
   stage_release: &stage_release 'release'
   # `image`
+  image_hadolint: &image_hadolint 'hadolint/hadolint:latest'
   image_node: &image_node 'node:12-buster-slim'
   image_yamllint: &image_yamllint
     name: 'cytopia/yamllint:latest'
@@ -26,13 +27,20 @@ stages:
   - 'release'
 
 ###############################################################################
-# `lint` stage: `yamllint` & `commitlint`
+# `lint` stage: `yamllint`, `hadolint` & `commitlint`
 ###############################################################################
 yamllint:
   stage: *stage_lint
   image: *image_yamllint
   script:
     - 'yamllint -s .'
+
+hadolint:
+  stage: *stage_lint
+  image: *image_hadolint
+  script:
+    - 'find . -maxdepth 1 -type f -name "Dockerfile.*"
+                      | xargs hadolint'
 
 commitlint:
   stage: *stage_lint
