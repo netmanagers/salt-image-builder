@@ -8,6 +8,9 @@
   stage_release: &stage_release 'release'
   # `image`
   image_node: &image_node 'node:12-buster-slim'
+  image_yamllint: &image_yamllint
+    name: 'cytopia/yamllint:latest'
+    entrypoint: ['/bin/ash', '-c']
   # `before_script`
   before_script_image_node: &before_script_image_node
     - 'apt-get update
@@ -23,8 +26,14 @@ stages:
   - 'release'
 
 ###############################################################################
-# `lint` stage: `commitlint`
+# `lint` stage: `yamllint` & `commitlint`
 ###############################################################################
+yamllint:
+  stage: *stage_lint
+  image: *image_yamllint
+  script:
+    - 'yamllint -s .'
+
 commitlint:
   stage: *stage_lint
   image: *image_node
