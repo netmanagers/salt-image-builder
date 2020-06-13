@@ -4,12 +4,14 @@
 ###############################################################################
 .node_anchors:
   # `stage`
+  stage_build: &stage_build 'build'
   stage_lint: &stage_lint 'lint'
   stage_release: &stage_release 'release'
   # `image`
   image_black: &image_black
     name: 'cytopia/black:latest'
     entrypoint: ['/bin/ash', '-c']
+  image_docker: &image_docker 'docker:latest'
   image_hadolint: &image_hadolint 'hadolint/hadolint:latest'
   image_node: &image_node 'node:12-buster-slim'
   image_yamllint: &image_yamllint
@@ -23,11 +25,14 @@
   only_branch_master: &only_branch_master ['master']
 
 ###############################################################################
-# Define stages
+# Define stages and global variables
 ###############################################################################
 stages:
   - 'lint'
+  - 'build'
   - 'release'
+variables:
+  DOCKER_DRIVER: 'overlay2'
 
 ###############################################################################
 # `lint` stage: `yamllint`, `black`, `hadolint` & `commitlint`
@@ -63,6 +68,64 @@ commitlint:
                       @commitlint/cli'
     - 'npx commitlint --from "$(git merge-base origin/master HEAD)"
                       --to   "${CI_COMMIT_SHA}"'
+
+###############################################################################
+# Define `build` template
+###############################################################################
+.build_image:
+  stage: *stage_build
+  image: *image_docker
+  services:
+    - 'docker:dind'
+  before_script:
+    - 'apk update
+       && apk add py3-virtualenv'
+    - 'python3 -m venv venv'
+    - 'venv/bin/pip install -r requirements.txt'
+    - 'export TAG=$(echo ${DN} | sed "s#/#-#g")-${DV}'
+    - |
+        if [ "${TAG}" = "archlinux-base-latest" ]; then
+          export TAG=arch-base-latest
+        fi
+    - 'echo "Building: ${TAG}"'
+    - 'export DOCKERHUB_IMAGE=salt-${SV}-py${PV}:${TAG}'
+    # TODO: Use `netmanagers` temporarily until all images are transferred to new org
+    - 'export CACHE_FROM=netmanagers/${DOCKERHUB_IMAGE}'
+    # - 'export CACHE_FROM=${DOCKERHUB_ORG}/${DOCKERHUB_IMAGE}'
+    - 'docker pull ${CACHE_FROM} || true'
+    - 'docker build .
+         --cache-from ${CACHE_FROM}
+         --file "Dockerfile.${PI}"
+         --tag "${TAG}"
+         --build-arg DISTRO_NAME="${DN}"
+         --build-arg DISTRO_VERSION="${DV}"
+         --build-arg SALT_INSTALL_METHOD="${SIM}"
+         --build-arg SALT_VERSION="${SV}"
+         --build-arg PYTHON_VERSION="${PV}"
+         --build-arg EXTRA_PACKAGES="${EP}"'
+    - 'export TESTINFRA_CONTAINER=testinfra-${TAG}-${PI}-${PV}-${SIM}-${SV}'
+    - 'docker run
+         --detach=true
+         --name "${TESTINFRA_CONTAINER}"
+         "${TAG}" tail -f /dev/null'
+    - 'venv/bin/pytest
+         --hosts="docker://${TESTINFRA_CONTAINER}"
+         test/integration
+         --pyvers "${PV}"
+         --saltvers "${SV}"
+         --installmethod "${SIM}"
+         -v'
+    - 'docker stop "${TESTINFRA_CONTAINER}"'
+    - 'docker rm "${TESTINFRA_CONTAINER}"'
+  script:
+    - |
+      if [ "${CI_COMMIT_BRANCH}" = "master" ]; then
+        echo "Push to Docker Hub"
+        echo "${DOCKERHUB_PASSWORD}" | \
+          docker login -u "${DOCKERHUB_USER}" --password-stdin
+        docker tag ${TAG} ${DOCKERHUB_ORG}/${DOCKERHUB_IMAGE}
+        docker push ${DOCKERHUB_ORG}/${DOCKERHUB_IMAGE}
+      fi
 
 ###############################################################################
 # `release` stage: `semantic-release`
