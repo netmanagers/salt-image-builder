@@ -1,5 +1,17 @@
 # Changelog
 
+# [1.2.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.1.0...v1.2.0) (2020-06-13)
+
+
+### Continuous Integration
+
+* **gitlab-ci:** remove temporary netmanagers workaround for caching [skip ci] ([d46f5e0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/d46f5e08de2548c4de01299aac67924a2f42ca1f))
+
+
+### Features
+
+* **gitlab-ci:** add `oraclelinux` ([3b1a5a2](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/3b1a5a29e522dce4753ffabfd31bee712a54d3e5))
+
 # [1.1.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.0.1...v1.1.0) (2020-06-13)
 
 
