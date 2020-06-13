@@ -1,5 +1,13 @@
 # Changelog
 
+# [1.1.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.0.1...v1.1.0) (2020-06-13)
+
+
+### Features
+
+* **gitlab-ci:** add `build` stage structure converted from Travis CI ([f0e22a6](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/f0e22a66ea214b3f9462ec0c1c48b112aa727d74))
+* **gitlab-ci:** add build matrix converted from Travis CI ([70546e8](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/70546e895e8c5c21df826c0a3a5167c800aec0b6))
+
 ## [1.0.1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.0.0...v1.0.1) (2020-06-13)
 
 
