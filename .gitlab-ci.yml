@@ -4,9 +4,17 @@
 ###############################################################################
 .node_anchors:
   # `stage`
+  stage_lint: &stage_lint 'lint'
   stage_release: &stage_release 'release'
   # `image`
+  image_black: &image_black
+    name: 'cytopia/black:latest'
+    entrypoint: ['/bin/ash', '-c']
+  image_hadolint: &image_hadolint 'hadolint/hadolint:latest'
   image_node: &image_node 'node:12-buster-slim'
+  image_yamllint: &image_yamllint
+    name: 'cytopia/yamllint:latest'
+    entrypoint: ['/bin/ash', '-c']
   # `before_script`
   before_script_image_node: &before_script_image_node
     - 'apt-get update
@@ -18,7 +26,43 @@
 # Define stages
 ###############################################################################
 stages:
+  - 'lint'
   - 'release'
+
+###############################################################################
+# `lint` stage: `yamllint`, `black`, `hadolint` & `commitlint`
+###############################################################################
+yamllint:
+  stage: *stage_lint
+  image: *image_yamllint
+  script:
+    - 'yamllint -s .'
+
+black:
+  stage: *stage_lint
+  image: *image_black
+  script:
+    - 'black --check -v .'
+
+hadolint:
+  stage: *stage_lint
+  image: *image_hadolint
+  script:
+    - 'find . -maxdepth 1 -type f -name "Dockerfile.*"
+                      | xargs hadolint'
+
+commitlint:
+  stage: *stage_lint
+  image: *image_node
+  before_script: *before_script_image_node
+  script:
+    # Install and run `commitlint`
+    # Run `git fetch` to get access to `origin/master`
+    - 'git fetch --all'
+    - 'npm install -D @commitlint/config-conventional
+                      @commitlint/cli'
+    - 'npx commitlint --from "$(git merge-base origin/master HEAD)"
+                      --to   "${CI_COMMIT_SHA}"'
 
 ###############################################################################
 # `release` stage: `semantic-release`
