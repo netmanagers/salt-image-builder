@@ -7,6 +7,9 @@
   stage_lint: &stage_lint 'lint'
   stage_release: &stage_release 'release'
   # `image`
+  image_black: &image_black
+    name: 'cytopia/black:latest'
+    entrypoint: ['/bin/ash', '-c']
   image_hadolint: &image_hadolint 'hadolint/hadolint:latest'
   image_node: &image_node 'node:12-buster-slim'
   image_yamllint: &image_yamllint
@@ -27,13 +30,19 @@ stages:
   - 'release'
 
 ###############################################################################
-# `lint` stage: `yamllint`, `hadolint` & `commitlint`
+# `lint` stage: `yamllint`, `black`, `hadolint` & `commitlint`
 ###############################################################################
 yamllint:
   stage: *stage_lint
   image: *image_yamllint
   script:
     - 'yamllint -s .'
+
+black:
+  stage: *stage_lint
+  image: *image_black
+  script:
+    - 'black --check -v .'
 
 hadolint:
   stage: *stage_lint
