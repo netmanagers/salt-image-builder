@@ -4,6 +4,7 @@
 ###############################################################################
 .node_anchors:
   # `stage`
+  stage_lint: &stage_lint 'lint'
   stage_release: &stage_release 'release'
   # `image`
   image_node: &image_node 'node:12-buster-slim'
@@ -18,7 +19,24 @@
 # Define stages
 ###############################################################################
 stages:
+  - 'lint'
   - 'release'
+
+###############################################################################
+# `lint` stage: `commitlint`
+###############################################################################
+commitlint:
+  stage: *stage_lint
+  image: *image_node
+  before_script: *before_script_image_node
+  script:
+    # Install and run `commitlint`
+    # Run `git fetch` to get access to `origin/master`
+    - 'git fetch --all'
+    - 'npm install -D @commitlint/config-conventional
+                      @commitlint/cli'
+    - 'npx commitlint --from "$(git merge-base origin/master HEAD)"
+                      --to   "${CI_COMMIT_SHA}"'
 
 ###############################################################################
 # `release` stage: `semantic-release`
