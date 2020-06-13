@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.0.1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.0.0...v1.0.1) (2020-06-13)
+
+
+### Code Refactoring
+
+* **black:** apply `black` modifications ([9f86a99](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/9f86a9932bb2d9d0add15c84bc4549eaa976f463))
+
+
+### Continuous Integration
+
+* **gitlab-ci:** add `black` to `lint` stage ([b890ad5](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/b890ad59eb79502fb325ffcf904f10c775512a48))
+* **gitlab-ci:** add `commitlint` to `lint` stage ([a687802](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/a6878023ea67457372bfbb608c6949993eea9a89))
+* **gitlab-ci:** add `hadolint` to `lint` stage ([c78f3e6](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/c78f3e69fd249738cfea7d2df91a7b8bba9391e8))
+* **gitlab-ci:** add `yamllint` to `lint` stage ([5510603](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/5510603fd460d7f35a64f8cba0bc7ff399a9adb4))
+
 # 1.0.0 (2020-06-13)
 
 
