@@ -89,9 +89,7 @@ commitlint:
         fi
     - 'echo "Building: ${TAG}"'
     - 'export DOCKERHUB_IMAGE=salt-${SV}-py${PV}:${TAG}'
-    # TODO: Use `netmanagers` temporarily until all images are transferred to new org
-    - 'export CACHE_FROM=netmanagers/${DOCKERHUB_IMAGE}'
-    # - 'export CACHE_FROM=${DOCKERHUB_ORG}/${DOCKERHUB_IMAGE}'
+    - 'export CACHE_FROM=${DOCKERHUB_ORG}/${DOCKERHUB_IMAGE}'
     - 'docker pull ${CACHE_FROM} || true'
     - 'docker build .
          --cache-from ${CACHE_FROM}
