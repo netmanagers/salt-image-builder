@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.3.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.2.0...v1.3.0) (2020-06-14)
+
+
+### Features
+
+* **github:** add lockdown config and messages [skip ci] ([cdbc252](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/cdbc252037a017110f9cfc4c7e576186d3e7c531))
+
 # [1.2.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.1.0...v1.2.0) (2020-06-13)
 
 
