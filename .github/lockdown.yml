@@ -9,7 +9,12 @@ skipCreatedBefore: 2020-06-01
 exemptLabels: []
 
 # Comment to post before closing or locking. Set to `false` to disable
-comment: false
+comment: >
+  This repository was moved to [Gitlab](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder).
+
+  Tickets and pull requests should be submitted there.
+
+  This repo will continue to receive updates as a GitLab mirrored repository.
 
 # Label to add before closing or locking. Set to `false` to disable
 label: false
@@ -26,14 +31,6 @@ lock: true
 # Optionally, specify configuration settings just for `issues` or `pulls`
 # issues:
 #   label: wontfix
-
-pulls:
-  comment: >
-    This repository was moved to [Gitlab](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder).
-
-    Tickets and pull requests should be submitted there.
-
-  lock: false
 
 # Repository to extend settings from
 # _extends: repo
