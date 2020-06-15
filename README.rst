@@ -5,6 +5,8 @@ Dockerfile and script to build salt images to speed up testing
 
 .. image:: https://travis-ci.com/netmanagers/salt-image-builder.svg?branch=master
 
+NOTE: Moved to GitLab.
+
 This repo holds a script to build docker images with salt-minion/salt-solo pre-installed
 so testing `Salt formulas <https://github.com/saltstack-formulas/>`_ is faster/easier, as
 all the basic requirements (salt, git, etc) are pre-installed in these images, allowing you
