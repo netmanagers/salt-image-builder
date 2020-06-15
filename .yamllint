@@ -12,7 +12,6 @@ ignore: |
   node_modules/
   .kitchen/
   .travis.yml
-  .github/lockdown.yml
 
 yaml-files:
   # Default settings

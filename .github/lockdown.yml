@@ -10,7 +10,8 @@ exemptLabels: []
 
 # Comment to post before closing or locking. Set to `false` to disable
 comment: >
-  This repository was moved to [Gitlab](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder).
+  This repository was moved to
+  [Gitlab](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder).
 
   Tickets and pull requests should be submitted there.
 
