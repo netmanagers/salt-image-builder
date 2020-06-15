@@ -3,7 +3,7 @@
 
 # Skip issues and pull requests created before a given timestamp. Timestamp must
 # follow ISO 8601 (`YYYY-MM-DD`). Set to `false` to disable
-skipCreatedBefore: 2020-06-01
+skipCreatedBefore: 2020-06-14
 
 # Issues and pull requests with these labels will be ignored. Set to `[]` to disable
 exemptLabels: []
@@ -27,11 +27,11 @@ close: true
 lock: true
 
 # Limit to only `issues` or `pulls`
-# only: issues
+# only: 'issues'
 
 # Optionally, specify configuration settings just for `issues` or `pulls`
 # issues:
-#   label: wontfix
+#   label: 'wontfix'
 
 # Repository to extend settings from
-# _extends: repo
+# _extends: 'repo'
