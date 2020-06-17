@@ -28,9 +28,9 @@
 # Define stages and global variables
 ###############################################################################
 stages:
-  - 'lint'
-  - 'build'
-  - 'release'
+  - *stage_lint
+  - *stage_build
+  - *stage_release
 variables:
   DOCKER_DRIVER: 'overlay2'
 
