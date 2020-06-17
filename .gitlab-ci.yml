@@ -61,13 +61,16 @@ commitlint:
   image: *image_node
   before_script: *before_script_image_node
   script:
-    # Install and run `commitlint`
-    # Run `git fetch` to get access to `origin/master`
+    # Add `upstream` remote to get access to `upstream/master`
+    - 'git remote add upstream
+       https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder.git'
     - 'git fetch --all'
+    # Install and run `commitlint`
     - 'npm install -D @commitlint/config-conventional
                       @commitlint/cli'
-    - 'npx commitlint --from "$(git merge-base origin/master HEAD)"
-                      --to   "${CI_COMMIT_SHA}"'
+    - 'npx commitlint --from "$(git merge-base upstream/master HEAD)"
+                      --to   "${CI_COMMIT_SHA}"
+                      --verbose'
 
 ###############################################################################
 # Define `build` template
