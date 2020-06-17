@@ -116,6 +116,8 @@ commitlint:
          --saltvers "${SV}"
          --installmethod "${SIM}"
          -v'
+    # Display `--versions-report` for debugging purposes
+    - 'docker exec "${TESTINFRA_CONTAINER}" salt-call --versions-report'
     - 'docker stop "${TESTINFRA_CONTAINER}"'
     - 'docker rm "${TESTINFRA_CONTAINER}"'
   script:
