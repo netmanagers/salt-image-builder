@@ -1,5 +1,30 @@
 # Changelog
 
+# [1.4.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.3.0...v1.4.0) (2020-06-18)
+
+
+### Bug Fixes
+
+* **github:** add lockdown message to both issues and PRs  [skip ci] ([f175d5f](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/f175d5f2436bfdfa343c88a79d069a646d84ac28))
+* **gitlab-ci:** use `upstream/master` for `commitlint` ([c6748ae](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/c6748ae2089123d6bed055c2f958eef8999367f3))
+
+
+### Continuous Integration
+
+* **gitlab-ci:** display `--version-report` for debug purposes ([dc4807f](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/dc4807f11d4080f4a46c5b3d4d56a173b1d96ac6))
+* **travis:** add `3001` ([3953016](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/3953016bf3c5fcb49db7facc1d7f8b7a1642207b))
+* **travis:** add `oraclelinux` ([d248645](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/d2486453e648f154a42ea776fdd0cfd62a0106bf))
+
+
+### Features
+
+* **sodium:** build images for `3001` ([0b90c54](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/0b90c5457572164210b629dc76e817213f16c835))
+
+
+### Styles
+
+* **gitlab-ci:** use node anchors for `stages` entries ([22bcb57](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/22bcb57ae8a5d14ce32f56379063d0b19be8bcc3))
+
 # [1.3.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.2.0...v1.3.0) (2020-06-14)
 
 
