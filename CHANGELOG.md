@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.4.1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.4.0...v1.4.1) (2020-09-11)
+
+
+### Code Refactoring
+
+* **black:** apply `black` modifications ([87f6d01](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/87f6d01dac52d70a2e9491f6f7c99f20cb5948b7))
+
+
+### Continuous Integration
+
+* **gitlab-ci:** use `diff` as well as `check` for `black` ([ca543ca](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/ca543ca28dc3204aca481e7d477d868a57175e02))
+
 # [1.4.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.3.0...v1.4.0) (2020-06-18)
 
 
