@@ -2,7 +2,8 @@ import pytest
 
 
 @pytest.mark.parametrize(
-    "cmd", ["python", "pip"],
+    "cmd",
+    ["python", "pip"],
 )
 def test_python(host, pyvers, cmd):
     if host.system_info.distribution == "arch":
@@ -15,7 +16,8 @@ def test_python(host, pyvers, cmd):
 
 
 @pytest.mark.parametrize(
-    "cmd", ["git", "netstat", "ps"],
+    "cmd",
+    ["git", "netstat", "ps"],
 )
 def test_reqs(host, cmd):
     host.find_command(cmd)
