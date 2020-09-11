@@ -47,7 +47,10 @@ black:
   stage: *stage_lint
   image: *image_black
   script:
+    # The `--check` will provide the failure, if encountered
+    # The `--diff` will show any files that need to be fixed
     - 'black --check -v .'
+    - 'black --diff .'
 
 hadolint:
   stage: *stage_lint
