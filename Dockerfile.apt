@@ -39,4 +39,10 @@ RUN apt-get update \
  && cp /bin/true /sbin/agetty \
  && echo 'locales locales/locales_to_be_generated multiselect en_US.UTF-8 UTF-8' | debconf-set-selections - \
  && echo 'locales locales/default_environment_locale select en_US.UTF-8' | debconf-set-selections - \
- && dpkg-reconfigure -f noninteractive locales
+ && dpkg-reconfigure -f noninteractive locales \
+    # Temporary fix for troublesome `log.debug` that causes Travis failures due to excess logging
+    # Has been fixed upstream recently but some of our cached builds still use affected versions
+    # Only affects the `master` branch builds
+    # The first `find` command is to log where the actual file is located
+ && find / -type f -name loader.py | grep "salt/loader.py" \
+ && sed -i -e "/log.debug(self.file_mapping)/s/debug/trace/" "$(find / -type f -name loader.py | grep 'salt/loader.py')"
