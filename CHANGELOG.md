@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.5.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.4.1...v1.5.0) (2020-09-18)
+
+
+### Features
+
+* **dockerfile:** workaround debug spam breaking CI ([a2f383e](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/a2f383e2e44aba099d4583fc383b1ff335aac268))
+
 ## [1.4.1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.4.0...v1.4.1) (2020-09-11)
 
 
