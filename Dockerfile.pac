@@ -33,5 +33,5 @@ RUN pacman --noconfirm -Sy archlinux-keyring \
     # Has been fixed upstream recently but some of our cached builds still use affected versions
     # Only affects the `master` branch builds
     # The first `find` command is to log where the actual file is located
- && find / -type f -name loader.py | grep "salt/loader.py" \
- && sed -i -e "/log.debug(self.file_mapping)/s/debug/trace/" "$(find / -type f -name loader.py | grep 'salt/loader.py')"
+ && find /usr/ -type f -name loader.py | grep "salt/loader.py" \
+ && sed -i -e "/log.debug(self.file_mapping)/s/debug/trace/" "$(find /usr/ -type f -name loader.py | grep 'salt/loader.py')"

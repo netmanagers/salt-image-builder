@@ -9,18 +9,30 @@ ARG SALT_VERSION
 ARG PYTHON_VERSION
 ARG EXTRA_PACKAGES=""
 ARG DEBIAN_FRONTEND="noninteractive"
-ARG PKGS="udev git net-tools sudo curl locales procps openssh-server lsb-release systemd systemd-sysv gnupg dirmngr $EXTRA_PACKAGES"
+ARG PKGS="udev git net-tools sudo curl locales procps openssh-server lsb-release systemd systemd-sysv gnupg dirmngr wget apt-transport-https $EXTRA_PACKAGES"
 
 # Avoid unnecessary files when installing packages
 COPY files/dpkg-nodoc /etc/dpkg/dpkg.cfg.d/01_nodoc
 COPY files/apt-no-recommends /etc/apt/apt.conf.d/99synaptic
 
 SHELL ["/bin/bash", "-x", "-o", "pipefail", "-c"]
-# hadolint ignore=DL3008
+# hadolint ignore=DL3008,DL4001
 RUN apt-get update \
  && apt-get install --yes --no-install-recommends $PKGS \
- && curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
-    sh -s -- -XUdfP -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION \
+ && if [ "${SALT_VERSION}" != "tiamat" ]; then \
+      curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
+      sh -s -- -XUdfP -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION; \
+    else \
+      CODENAME=$(grep VERSION_CODENAME /etc/os-release | cut -d= -f2); \
+      # Output the `CODENAME` for debugging purposes
+      echo "${CODENAME}"; \
+      wget -O - https://artifactory.saltstack.net/artifactory/api/gpg/key/public | apt-key add -; \
+      echo 'deb https://artifactory.saltstack.net/artifactory/open-debian-staging '"${CODENAME}"' main' > /etc/apt/sources.list.d/saltstack.list; \
+      # Output the file for debugging purposes
+      cat /etc/apt/sources.list.d/saltstack.list; \
+      apt-get update; \
+      apt-get install --yes --no-install-recommends salt-minion; \
+    fi \
     # Disable salt's service as we don't need it running
  && /bin/systemctl disable salt-minion.service > /dev/null 2>&1 \
     # Remove unnecessary getty and udev targets that result in high CPU usage when using
@@ -42,7 +54,7 @@ RUN apt-get update \
  && dpkg-reconfigure -f noninteractive locales \
     # Temporary fix for troublesome `log.debug` that causes Travis failures due to excess logging
     # Has been fixed upstream recently but some of our cached builds still use affected versions
-    # Only affects the `master` branch builds
+    # Only affects the `master` branch builds; also checking Tiamat builds under `/opt/`
     # The first `find` command is to log where the actual file is located
- && find / -type f -name loader.py | grep "salt/loader.py" \
- && sed -i -e "/log.debug(self.file_mapping)/s/debug/trace/" "$(find / -type f -name loader.py | grep 'salt/loader.py')"
+ && find /opt/ /usr/ -type f -name loader.py | grep "salt/loader.py" \
+ && sed -i -e "/log.debug(self.file_mapping)/s/debug/trace/" "$(find /opt/ /usr/ -type f -name loader.py | grep 'salt/loader.py')"
