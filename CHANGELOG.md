@@ -1,5 +1,27 @@
 # Changelog
 
+# [1.6.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.5.0...v1.6.0) (2020-09-19)
+
+
+### Bug Fixes
+
+* **dockerfile:** restrict `find` to `/usr/` for debug spam workaround ([88194c2](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/88194c2e0a58224194a794e7faa715302aa988bb))
+
+
+### Code Refactoring
+
+* apply consistent formatting and update comments ([c7dfc97](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/c7dfc9793df84fa720a618af9bd4210b8825a2fc))
+
+
+### Continuous Integration
+
+* **gitlab-ci:** deprecate `2019.2` ([2b755d9](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/2b755d9ca14a5d1e00dcbcbef5b213fe4734f798))
+
+
+### Features
+
+* **tiamat:** build images from SaltStack's Tiamat repo (artifactory) ([d435827](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/d435827228dc980fa5a2260ff1f15294823297dd))
+
 # [1.5.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.4.1...v1.5.0) (2020-09-18)
 
 
