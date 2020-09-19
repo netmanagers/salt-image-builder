@@ -13,9 +13,9 @@ ARG EXTRA_PACKAGES=""
 ARG PKGS="udev git net-tools sudo curl openssh-server openssh-clients which $EXTRA_PACKAGES"
 
 SHELL ["/bin/bash", "-x", "-o", "pipefail", "-c"]
-# Centos 7 requires EPEL repo before being able to install python2-pip
-RUN if [[ "${DISTRO_NAME}" = "centos" && "${DISTRO_VERSION}" = "7" ]]; \
-    then yum -y install epel-release; \
+RUN if [[ "${DISTRO_NAME}" = "centos" ]]; then \
+      # Install EPEL repo for `centos`
+      yum -y install epel-release; \
     fi \
  && yum -y update && yum -y install ${PKGS} \
  && curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
@@ -26,14 +26,14 @@ RUN if [[ "${DISTRO_NAME}" = "centos" && "${DISTRO_VERSION}" = "7" ]]; \
       /sbin/chkconfig salt-minion off; \
     fi \
     # Centos 6 installs python27-pip from the salt repo
- && if [[ "${DISTRO_NAME}" = "centos" && "${DISTRO_VERSION}" = "6" ]]; \
-    then yum -y update && yum -y install $EXTRA_PACKAGES; \
-         ln -s /usr/bin/pip2.7 /usr/bin/pip; \
+ && if [[ "${DISTRO_NAME}" = "centos" && "${DISTRO_VERSION}" = "6" ]]; then \
+      yum -y update && yum -y install $EXTRA_PACKAGES; \
+      ln -s /usr/bin/pip2.7 /usr/bin/pip; \
     fi \
     # Amazon 1 installs python26-pip
- && if [[ "${DISTRO_NAME}" = "amazonlinux" && "${DISTRO_VERSION}" = "1" ]]; \
-    then yum -y update && yum -y install $EXTRA_PACKAGES; \
-         ln -s /usr/bin/pip-2.6 /usr/bin/pip; \
+ && if [[ "${DISTRO_NAME}" = "amazonlinux" && "${DISTRO_VERSION}" = "1" ]]; then \
+      yum -y update && yum -y install $EXTRA_PACKAGES; \
+      ln -s /usr/bin/pip-2.6 /usr/bin/pip; \
     fi \
     # Remove unnecessary getty and udev targets that result in high CPU usage when using
     # multiple containers with Molecule or Kitchen (https://github.com/ansible/molecule/issues/1104)

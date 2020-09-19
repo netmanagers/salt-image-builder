@@ -137,7 +137,8 @@ commitlint:
 # `build` stage: `...`
 ###############################################################################
 # VARS:
-# DN:  distro name (amazonlinux, archlinux, centos, debian, fedora, opensuse, ubuntu)
+# DN:  distro name (amazonlinux, archlinux, centos,      debian,
+#                   fedora,      opensuse,  oraclelinux, ubuntu)
 # DV:  distro version
 # PI:  packages installer, used as dockerfile extension (apt, dnf, pac, yum, zyp)
 # SIM: salt install method (git, stable)
@@ -214,7 +215,7 @@ ubun-18.0-3000.3-py2: {extends: '.build_image', variables: {DN: 'ubuntu'        
 ubun-18.0-2019.2-py3: {extends: '.build_image', variables: {DN: 'ubuntu'         , DV: '18.04'  , PI: 'apt' , SIM: 'stable' , SV: '2019.2' , PV: '3' , EP: 'python3-pip'}}
 ubun-16.0-3000.3-py2: {extends: '.build_image', variables: {DN: 'ubuntu'         , DV: '16.04'  , PI: 'apt' , SIM: 'stable' , SV: '3000.3' , PV: '2' , EP: 'python-pip'}}
 ubun-16.0-2019.2-py3: {extends: '.build_image', variables: {DN: 'ubuntu'         , DV: '16.04'  , PI: 'apt' , SIM: 'stable' , SV: '2019.2' , PV: '3' , EP: 'python3-pip'}}
-# yamllint enable
+# yamllint enable rule:commas rule:line-length
 
 ###############################################################################
 # `release` stage: `semantic-release`
