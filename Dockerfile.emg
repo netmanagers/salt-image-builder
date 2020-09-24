@@ -1,0 +1,32 @@
+ARG DISTRO_NAME
+ARG DISTRO_VERSION
+FROM $DISTRO_NAME:$DISTRO_VERSION
+
+LABEL maintainer="javier@netmanagers.com.ar"
+
+ARG SALT_INSTALL_METHOD
+ARG SALT_VERSION
+ARG PYTHON_VERSION
+ARG EXTRA_PACKAGES=""
+
+ARG PKGS="udev git net-tools sudo curl openssh-server openssh-clients which findutils glibc-langpack-en $EXTRA_PACKAGES"
+
+RUN echo 'ACCEPT_KEYWORDS="~amd64"' | tee -a /etc/portage/make.conf
+RUN emerge-webrsync \
+ && emerge -u system \
+ && emerge -u world
+
+RUN emerge --getbinpkg ${PKGS}
+
+# Setting this var makes the bootstrap install from binaries
+ENV BS_GENTOO_USE_BINHOST=1
+# https://bugs.gentoo.org/684992
+RUN if [ ${SALT_INSTALL_METHOD} = "stable" ];
+    then SALT_VERSION = ""; \
+    fi; \
+    curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
+    sudo sh -s -- -XUdfP -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION
+    
+RUN rm -rf /var/cache/{salt,pacman} \
+ && (find / -name "*pyc" ; find / -name "__pycache__") |grep -v /proc | xargs rm -rf
+
