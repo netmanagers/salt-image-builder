@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.6.0...v1.6.1) (2020-10-01)
+
+
+### Bug Fixes
+
+* **dockerfile:** restrict `/proc` grep inversion to root path [skip ci] ([ae1e20f](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/ae1e20f2c0380a617640cc11e1c0cf7d8194a455))
+
 # [1.6.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.5.0...v1.6.0) (2020-09-19)
 
 
