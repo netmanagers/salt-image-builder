@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.2](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.6.1...v1.6.2) (2020-10-01)
+
+
+### Bug Fixes
+
+* **dockerfile:** ensure all build args are available after the `FROM` ([36b4274](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/36b4274ae9ace633a516ac5910d4096385081788))
+
 ## [1.6.1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.6.0...v1.6.1) (2020-10-01)
 
 
