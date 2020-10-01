@@ -46,7 +46,7 @@ RUN apt-get update \
  && (find / ! -path "/{proc,sys,dev}" -name "*.pyc"; \
      find / ! -path "/{proc,sys,dev}" -name "__pycache__"; \
      find /var/log -type f) | \
-    grep -v /proc | xargs rm -rf \
+    grep -v ^/proc | xargs rm -rf \
     # Also obscure any `getty` binaries https://github.com/moby/moby/issues/4040#issuecomment-339022455
  && cp /bin/true /sbin/agetty \
  && echo 'locales locales/locales_to_be_generated multiselect en_US.UTF-8 UTF-8' | debconf-set-selections - \

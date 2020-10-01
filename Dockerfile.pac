@@ -26,7 +26,7 @@ RUN pacman --noconfirm -Sy archlinux-keyring \
  && (find / ! -path "/{proc,sys,dev}" -name "*.pyc"; \
      find / ! -path "/{proc,sys,dev}" -name "__pycache__"; \
      find /var/log -type f) | \
-    grep -v /proc | xargs rm -rf \
+    grep -v ^/proc | xargs rm -rf \
     # Also obscure any `getty` binaries (https://github.com/moby/moby/issues/4040#issuecomment-339022455)
  && cp /bin/true /sbin/agetty \
     # Temporary fix for troublesome `log.debug` that causes Travis failures due to excess logging
