@@ -4,6 +4,10 @@ FROM $DISTRO_NAME:$DISTRO_VERSION
 
 LABEL maintainer="javier@netmanagers.com.ar"
 
+# Both args before the `FROM` are repeated here so that they can be used below, as required
+# https://docs.docker.com/engine/reference/builder/#understand-how-arg-and-from-interact
+ARG DISTRO_NAME
+ARG DISTRO_VERSION
 ARG SALT_INSTALL_METHOD
 ARG SALT_VERSION
 ARG PYTHON_VERSION
