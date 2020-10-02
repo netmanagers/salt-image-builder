@@ -137,10 +137,10 @@ commitlint:
 # `build` stage: `...`
 ###############################################################################
 # VARS:
-# DN:  distro name (amazonlinux, archlinux, centos,      debian,
-#                   fedora,      opensuse,  oraclelinux, ubuntu)
+# DN:  distro name (amazonlinux, archlinux, centos,      debian, fedora,
+#                   gentoo,      opensuse,  oraclelinux, ubuntu)
 # DV:  distro version
-# PI:  packages installer, used as dockerfile extension (apt, dnf, pac, yum, zyp)
+# PI:  packages installer, used as dockerfile extension (apt, dnf, emg, pac, yum, zyp)
 # SIM: salt install method (git, stable)
 # SV:  salt version (tiamat, master, 3001, 3000.3)
 # PV:  python version (3, 2)
@@ -187,6 +187,14 @@ fedo-32.0-3001.0-py3: {extends: '.build_image', variables: {DN: 'fedora'        
 fedo-31.0-master-py3: {extends: '.build_image', variables: {DN: 'fedora'         , DV: '31'     , PI: 'dnf' , SIM: 'git'    , SV: 'master' , PV: '3' , EP: 'python3-pip'}}
 fedo-31.0-3001.0-py3: {extends: '.build_image', variables: {DN: 'fedora'         , DV: '31'     , PI: 'dnf' , SIM: 'git'    , SV: '3001'   , PV: '3' , EP: 'python3-pip'}}
 fedo-31.0-3000.3-py3: {extends: '.build_image', variables: {DN: 'fedora'         , DV: '31'     , PI: 'dnf' , SIM: 'git'    , SV: '3000.3' , PV: '3' , EP: 'python3-pip'}}
+
+# GENTOO
+gent-late-master-py3: {extends: '.build_image', variables: {DN: 'gentoo/stage3'  , DV: 'latest' , PI: 'emg' , SIM: 'git'    , SV: 'master' , PV: '3' , EP: 'dev-python/pip'}}
+gent-late-3001.0-py3: {extends: '.build_image', variables: {DN: 'gentoo/stage3'  , DV: 'latest' , PI: 'emg' , SIM: 'stable' , SV: '3001'   , PV: '3' , EP: 'dev-python/pip'}}
+gent-late-3000.3-py3: {extends: '.build_image', variables: {DN: 'gentoo/stage3'  , DV: 'latest' , PI: 'emg' , SIM: 'stable' , SV: '3000.3' , PV: '3' , EP: 'dev-python/pip'}}
+gent-sysd-master-py3: {extends: '.build_image', variables: {DN: 'gentoo/stage3'  , DV: 'systemd', PI: 'emg' , SIM: 'git'    , SV: 'master' , PV: '3' , EP: 'dev-python/pip'}}
+gent-sysd-3001.0-py3: {extends: '.build_image', variables: {DN: 'gentoo/stage3'  , DV: 'systemd', PI: 'emg' , SIM: 'stable' , SV: '3001'   , PV: '3' , EP: 'dev-python/pip'}}
+gent-sysd-3000.3-py3: {extends: '.build_image', variables: {DN: 'gentoo/stage3'  , DV: 'systemd', PI: 'emg' , SIM: 'stable' , SV: '3000.3' , PV: '3' , EP: 'dev-python/pip'}}
 
 # OPENSUSE
 opsu-15.2-master-py3: {extends: '.build_image', variables: {DN: 'opensuse/leap'  , DV: '15.2'   , PI: 'zyp' , SIM: 'git'    , SV: 'master' , PV: '3' , EP: 'python3-pip'}}
