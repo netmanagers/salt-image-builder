@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.7.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.6.2...v1.7.0) (2020-10-02)
+
+
+### Features
+
+* **gentoo:** build Gentoo images ([fa1b62f](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/fa1b62f92ca5569e58bf48b249545df4235db50c))
+
 ## [1.6.2](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.6.1...v1.6.2) (2020-10-01)
 
 
