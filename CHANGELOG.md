@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.7.0...v1.7.1) (2020-10-08)
+
+
+### Bug Fixes
+
+* **dockerfile.yum:** update for new `hadolint` rules ([581a582](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/581a582c87c8f0e378e6f9f3080c6641d450c27a))
+
 # [1.7.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.6.2...v1.7.0) (2020-10-02)
 
 
