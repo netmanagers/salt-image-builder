@@ -15,12 +15,12 @@ ARG EXTRA_PACKAGES=""
 ARG PKGS="udev git net-tools sudo curl openssh-server openssh-clients which $EXTRA_PACKAGES"
 
 SHELL ["/bin/bash", "-x", "-o", "pipefail", "-c"]
-# hadolint ignore=SC1075,SC2016
+# hadolint ignore=SC1075,SC2016,DL3033
 RUN if [[ "${DISTRO_NAME}" = "centos" ]]; then \
       # Install EPEL repo for `centos`
       yum -y install epel-release; \
     fi \
- && yum -y update && yum -y install ${PKGS} \
+ && yum -y install ${PKGS} \
  && if [ "${SALT_VERSION}" != "tiamat" ]; then \
       curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
       sh -s -- -XUdfP -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION; \
@@ -59,12 +59,12 @@ RUN if [[ "${DISTRO_NAME}" = "centos" ]]; then \
     fi \
     # Centos 6 installs python27-pip from the salt repo
  && if [[ "${DISTRO_NAME}" = "centos" && "${DISTRO_VERSION}" = "6" ]]; then \
-      yum -y update && yum -y install $EXTRA_PACKAGES; \
+      yum -y install $EXTRA_PACKAGES; \
       ln -s /usr/bin/pip2.7 /usr/bin/pip; \
     fi \
     # Amazon 1 installs python26-pip
  && if [[ "${DISTRO_NAME}" = "amazonlinux" && "${DISTRO_VERSION}" = "1" ]]; then \
-      yum -y update && yum -y install $EXTRA_PACKAGES; \
+      yum -y install $EXTRA_PACKAGES; \
       ln -s /usr/bin/pip-2.6 /usr/bin/pip; \
     fi \
     # Remove unnecessary getty and udev targets that result in high CPU usage when using
