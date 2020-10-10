@@ -15,7 +15,9 @@ ARG EXTRA_PACKAGES=""
 ARG PKGS="dev-vcs/git app-admin/sudo $EXTRA_PACKAGES"
 
 SHELL ["/bin/bash", "-x", "-o", "pipefail", "-c"]
-RUN emerge-webrsync \
+RUN mkdir --parents /etc/portage/repos.conf \
+ && cp /usr/share/portage/config/repos.conf /etc/portage/repos.conf/gentoo.conf \
+ && emerge-webrsync \
  && emerge --noreplace --quiet ${PKGS} \
  && curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
     sh -s -- -XUdfP -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION \
@@ -33,7 +35,6 @@ RUN emerge-webrsync \
     # multiple containers with Molecule or Kitchen https://github.com/ansible/molecule/issues/1104
     # Remove portage repository, binary packages, and downloaded sources
  && rm -rf /var/cache/{salt,binpkgs,distfiles} \
-           /var/db/repos/gentoo \
            /lib/systemd/system/systemd*udev* \
            /lib/systemd/system/getty.target \
  && (find / ! -path "/{proc,sys,dev}" -name "*.pyc"; \
