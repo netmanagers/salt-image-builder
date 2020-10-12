@@ -1,5 +1,17 @@
 # Changelog
 
+# [1.8.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.7.1...v1.8.0) (2020-10-12)
+
+
+### Features
+
+* **gentoo:** improve performance by enabling `emaint` ([844ec6d](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/844ec6dee01cd8e06b45906e81f7f058b3399a5e)), closes [/gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/-/merge_requests/55#note_427462634](https://gitlab.com//gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/-/merge_requests/55/issues/note_427462634)
+
+
+### Tests
+
+* **salt_version:** update for `master` (now Magnesium `3002`) ([6ab3387](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/6ab3387f03e4ca9722149f446f84f84a337980fb))
+
 ## [1.7.1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.7.0...v1.7.1) (2020-10-08)
 
 
