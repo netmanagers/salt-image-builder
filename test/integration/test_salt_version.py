@@ -1,6 +1,8 @@
 def test_salt_version(host, saltvers, installmethod):
     cmd = host.run("salt-call --version")
-    if saltvers in ["latest", "master", "tiamat"]:
+    if saltvers in ["latest", "master"]:
+        saltvers = "3002"
+    elif saltvers in ["tiamat"]:
         saltvers = "3001"
     # Handle version branch when installing from git, remove leading "v"
     # v3001rc1 becomes 3001rc1
