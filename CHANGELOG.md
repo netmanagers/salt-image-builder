@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.8.1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.8.0...v1.8.1) (2020-10-15)
+
+
+### Continuous Integration
+
+* **gitlab-ci:** build latest Salt version for all remaining platforms ([7061a75](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/7061a75681e4dfc53322b0d6ed16d9b7ced9da4d))
+
+
+### Tests
+
+* **salt_version:** update for `tiamat` (now Magnesium `3002`) ([dc6d8d0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/dc6d8d0eaccc9e5a943891e1ea7e245e893e3340))
+
 # [1.8.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.7.1...v1.8.0) (2020-10-12)
 
 
