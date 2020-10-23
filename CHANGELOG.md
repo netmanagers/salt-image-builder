@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.9.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.8.1...v1.9.0) (2020-10-23)
+
+
+### Features
+
+* **magnesium:** add `3002.0` & fix `3001` => `3001.1` ([334fa83](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/334fa8322184b7091acf25ea11e3bbb403ae227c))
+
 ## [1.8.1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.8.0...v1.8.1) (2020-10-15)
 
 
