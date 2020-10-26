@@ -15,7 +15,8 @@ ARG EXTRA_PACKAGES=""
 ARG PKGS="udev git net-tools net-tools-deprecated sudo curl glibc-locale openssh which python-xml $EXTRA_PACKAGES"
 
 SHELL ["/bin/bash", "-x", "-o", "pipefail", "-c"]
-RUN zypper refresh && zypper install -y ${PKGS} \
+# hadolint ignore=DL3037
+RUN zypper refresh && zypper install -y ${PKGS} && zypper clean \
  && systemctl enable sshd \
     # https://github.com/inspec/train/issues/377
     # https://github.com/inspec/train/pull/505
