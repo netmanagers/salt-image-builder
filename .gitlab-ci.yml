@@ -165,6 +165,7 @@ amaz-02.0-master-py3: {extends: '.build_image', variables: {DN: 'amazonlinux'   
 amaz-02.0-3002.0-py3: {extends: '.build_image', variables: {DN: 'amazonlinux'    , DV: '2'      , PI: 'yum' , SIM: 'stable' , SV: '3002.0' , PV: '3' , EP: 'yum-utils python3-pip procps-ng'}}
 amaz-02.0-3001.1-py3: {extends: '.build_image', variables: {DN: 'amazonlinux'    , DV: '2'      , PI: 'yum' , SIM: 'stable' , SV: '3001.1' , PV: '3' , EP: 'yum-utils python3-pip procps-ng'}}
 amaz-02.0-3000.3-py3: {extends: '.build_image', variables: {DN: 'amazonlinux'    , DV: '2'      , PI: 'yum' , SIM: 'stable' , SV: '3000.3' , PV: '3' , EP: 'yum-utils python3-pip procps-ng'}}
+amaz-01.0-3000.3-py2: {extends: '.build_image', variables: {DN: 'amazonlinux'    , DV: '1'      , PI: 'yum' , SIM: 'stable' , SV: '3000.3' , PV: '2' , EP: 'yum-utils python-pip procps'}}
 
 # ARCHLINUX
 # The Salt bootstrap installer does not provide packages nor installs with py3 for Arch
@@ -184,6 +185,7 @@ cent-07.0-master-py3: {extends: '.build_image', variables: {DN: 'centos'        
 cent-07.0-3002.0-py3: {extends: '.build_image', variables: {DN: 'centos'         , DV: '7'      , PI: 'yum' , SIM: 'stable' , SV: '3002.0' , PV: '3' , EP: 'python3 python3-pip python3-devel openssl-devel swig gcc-g++ zeromq zeromq-devel'}}
 cent-07.0-3001.1-py3: {extends: '.build_image', variables: {DN: 'centos'         , DV: '7'      , PI: 'yum' , SIM: 'stable' , SV: '3001.1' , PV: '3' , EP: 'python3 python3-pip python3-devel openssl-devel swig gcc-g++ zeromq zeromq-devel'}}
 cent-07.0-3000.3-py3: {extends: '.build_image', variables: {DN: 'centos'         , DV: '7'      , PI: 'yum' , SIM: 'stable' , SV: '3000.3' , PV: '3' , EP: 'python3 python3-pip python3-devel openssl-devel swig gcc-g++ zeromq zeromq-devel'}}
+cent-06.0-3000.3-py2: {extends: '.build_image', variables: {DN: 'centos'         , DV: '6'      , PI: 'yum' , SIM: 'stable' , SV: '3000.3' , PV: '2' , EP: 'python27-pip'}}
 
 # DEBIAN
 debi-10.0-tiamat-py3: {extends: '.build_image', variables: {DN: 'debian'         , DV: '10'     , PI: 'apt' , SIM: 'stable' , SV: 'tiamat' , PV: '3' , EP: 'python3-pip'}}
@@ -254,6 +256,7 @@ ubun-16.0-tiamat-py3: {extends: '.build_image', variables: {DN: 'ubuntu'        
 ubun-16.0-master-py3: {extends: '.build_image', variables: {DN: 'ubuntu'         , DV: '16.04'  , PI: 'apt' , SIM: 'git'    , SV: 'master' , PV: '3' , EP: 'python3-pip'}}
 ubun-16.0-3002.0-py3: {extends: '.build_image', variables: {DN: 'ubuntu'         , DV: '16.04'  , PI: 'apt' , SIM: 'stable' , SV: '3002.0' , PV: '3' , EP: 'python3-pip'}}
 ubun-16.0-3001.1-py3: {extends: '.build_image', variables: {DN: 'ubuntu'         , DV: '16.04'  , PI: 'apt' , SIM: 'stable' , SV: '3001.1' , PV: '3' , EP: 'python3-pip'}}
+ubun-16.0-3000.3-py3: {extends: '.build_image', variables: {DN: 'ubuntu'         , DV: '16.04'  , PI: 'apt' , SIM: 'stable' , SV: '3000.3' , PV: '3' , EP: 'python3-pip'}}
 ubun-16.0-3000.3-py2: {extends: '.build_image', variables: {DN: 'ubuntu'         , DV: '16.04'  , PI: 'apt' , SIM: 'stable' , SV: '3000.3' , PV: '2' , EP: 'python-pip'}}
 # yamllint enable rule:commas rule:line-length
 
