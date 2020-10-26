@@ -1,5 +1,17 @@
 # Changelog
 
+# [1.10.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.9.0...v1.10.0) (2020-10-26)
+
+
+### Bug Fixes
+
+* **dockerfile.zyp:** fix/ignore hadolint violations ([4fe8d0b](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/4fe8d0b11f531736a6f360a599acd404b089e321))
+
+
+### Features
+
+* **3000.3:** build remaining images ([0077e57](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/0077e578c8a862e3f89b22e5ac38ab85bd5d343e))
+
 # [1.9.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.8.1...v1.9.0) (2020-10-23)
 
 
