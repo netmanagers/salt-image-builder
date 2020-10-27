@@ -203,6 +203,9 @@ debi-09.0-3000.3-py3: {extends: '.build_image', variables: {DN: 'debian'        
 # Fedora has no python3 packages due to a tornado issue,
 # but they ship with Python3 since 29, so we install it using git
 # https://bugzilla.redhat.com/show_bug.cgi?id: 1723207
+fedo-33.0-master-py3: {extends: '.build_image', variables: {DN: 'fedora'         , DV: '33'     , PI: 'dnf' , SIM: 'git'    , SV: 'master' , PV: '3' , EP: 'python3-pip'}}
+fedo-33.0-3002.0-py3: {extends: '.build_image', variables: {DN: 'fedora'         , DV: '33'     , PI: 'dnf' , SIM: 'git'    , SV: '3002.0' , PV: '3' , EP: 'python3-pip'}}
+fedo-33.0-3001.1-py3: {extends: '.build_image', variables: {DN: 'fedora'         , DV: '33'     , PI: 'dnf' , SIM: 'git'    , SV: '3001.1' , PV: '3' , EP: 'python3-pip'}}
 fedo-32.0-master-py3: {extends: '.build_image', variables: {DN: 'fedora'         , DV: '32'     , PI: 'dnf' , SIM: 'git'    , SV: 'master' , PV: '3' , EP: 'python3-pip'}}
 fedo-32.0-3002.0-py3: {extends: '.build_image', variables: {DN: 'fedora'         , DV: '32'     , PI: 'dnf' , SIM: 'git'    , SV: '3002.0' , PV: '3' , EP: 'python3-pip'}}
 fedo-32.0-3001.1-py3: {extends: '.build_image', variables: {DN: 'fedora'         , DV: '32'     , PI: 'dnf' , SIM: 'git'    , SV: '3001.1' , PV: '3' , EP: 'python3-pip'}}
