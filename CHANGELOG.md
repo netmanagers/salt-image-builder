@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.11.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.10.0...v1.11.0) (2020-10-27)
+
+
+### Features
+
+* **fedora:** build Fedora 33 images ([934f57c](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/934f57c836543d3b85926a7043292f748bc3ac38))
+
 # [1.10.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.9.0...v1.10.0) (2020-10-26)
 
 
