@@ -80,25 +80,25 @@ Just edit your `kitchen.local.yml` file, and add the image you want to use, like
 
 .. code-block:: yaml
 
-  driver:
-    name: docker
-    use_sudo: false
-    remove_images: true
-    run_command: /lib/systemd/systemd
-    privileged: true
-    volume:
-      - "/sys/fs/cgroup:/sys/fs/cgroup:ro"
-
+   driver:
+     name: docker
+     use_sudo: false
+     remove_images: true
+     run_command: /lib/systemd/systemd
+     privileged: true
+     volume:
+       - "/sys/fs/cgroup:/sys/fs/cgroup:ro"
+ 
    provisioner:
      salt_install: none
-
+ 
    platforms:
      - name: debian-9
        driver_config:
          image: salt-2019.2-py3:debian-9
      - name: ubuntu-16.04
        driver_config:
-           image: salt-2018.3-py2:ubuntu-16.04
+         image: salt-2018.3-py2:ubuntu-16.04
 
 TODO
 ----
