@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.11.1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.11.0...v1.11.1) (2020-10-29)
+
+
+### Bug Fixes
+
+* **dockerfile.apt:** fix typo [skip ci] ([afaa748](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/afaa748b613845e8362cd145fe758a19b1f08f5a))
+* **Dockerfile.apt:** search/replace typo ([b110e13](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/b110e139eea07a1cc7cc8b5320c867636a8d917c))
+
+
+### Documentation
+
+* **readme:** rst formatting ([1230474](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/123047493f38effdb9a279a008509978632190f1))
+
 # [1.11.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.10.0...v1.11.0) (2020-10-27)
 
 
