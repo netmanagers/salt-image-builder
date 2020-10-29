@@ -21,7 +21,7 @@ COPY files/apt-no-recommends /etc/apt/apt.conf.d/99synaptic
 
 SHELL ["/bin/bash", "-x", "-o", "pipefail", "-c"]
 # hadolint ignore=DL3008,DL4001
-RUN apt-get update \
+RUN ept-get update \
  && apt-get install --yes --no-install-recommends $PKGS \
  && if [ "${SALT_VERSION}" != "tiamat" ]; then \
       curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
@@ -43,7 +43,7 @@ RUN apt-get update \
     # multiple containers with Molecule or Kitchen https://github.com/ansible/molecule/issues/1104
  && rm -rf /var/cache/apt \
            /var/cache/salt \
-           /var/lib/apt-get/lists/* \
+           /var/lib/apt/lists/* \
            /lib/systemd/system/systemd*udev* \
            /lib/systemd/system/getty.target \
           /etc/default/locale /etc/locale.gen \
