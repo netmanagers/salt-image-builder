@@ -172,6 +172,8 @@ amaz-01.0-3000.3-py2: {extends: '.build_image', variables: {DN: 'amazonlinux'   
 # so we're building only the git'ted py2 versions
 # NOTE: Removed broken `py2` image for `SV: 'master'` since that's been deprecated in `Sodium` and
 #       no working `py3` version available
+arch-late-3002.0-py3: {extends: '.build_image', variables: {DN: 'archlinux/base' , DV: 'latest' , PI: 'pac' , SIM: 'git'    , SV: '3002.0' , PV: '3' , EP: 'openssl openssh awk procps python-pip'}}
+arch-late-3001.1-py3: {extends: '.build_image', variables: {DN: 'archlinux/base' , DV: 'latest' , PI: 'pac' , SIM: 'git'    , SV: '3001.1' , PV: '3' , EP: 'openssl openssh awk procps python-pip'}}
 arch-late-3000.3-py2: {extends: '.build_image', variables: {DN: 'archlinux/base' , DV: 'latest' , PI: 'pac' , SIM: 'git'    , SV: '3000.3' , PV: '2' , EP: 'openssl openssh awk procps python2-pip'}}
 
 # CENTOS

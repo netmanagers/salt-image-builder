@@ -7,7 +7,7 @@ import pytest
 )
 def test_python(host, pyvers, cmd):
     if host.system_info.distribution == "arch":
-        python_verstr = "2"
+        python_verstr = "" if pyvers == "3" else pyvers
     elif pyvers == "2":
         python_verstr = ""
     else:
