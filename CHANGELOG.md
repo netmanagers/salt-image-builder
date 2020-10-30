@@ -1,5 +1,13 @@
 # Changelog
 
+# [1.12.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.11.1...v1.12.0) (2020-10-30)
+
+
+### Features
+
+* **arch:** build `salt-py3` image ([96b3fcd](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/96b3fcdb81310c6862db27fb7917e0830b3cec16))
+* **dockerfile.dnf:** workaround `ssh-rsa` Kitchen issue on `fedora-33` ([5e664ba](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/5e664bad2ce33f6e00da88813e939140e9fc9b50))
+
 ## [1.11.1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.11.0...v1.11.1) (2020-10-29)
 
 
