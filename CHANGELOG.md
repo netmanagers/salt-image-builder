@@ -1,5 +1,13 @@
 # Changelog
 
+# [1.13.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.12.0...v1.13.0) (2020-11-03)
+
+
+### Features
+
+* **gitlab-ci:** build CVE `3002.1`, `3001.3` & `3000.5` images ([680f2e3](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/680f2e31173e35fb9bbc107196a00a3a69df784a))
+* **gitlab-ci:** enable Gentoo `3002` builds ([8398efa](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/8398efa023398a864daae9a9a0281e298ebbb748))
+
 # [1.12.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.11.1...v1.12.0) (2020-10-30)
 
 
