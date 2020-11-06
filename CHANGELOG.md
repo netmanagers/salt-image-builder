@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.14.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.13.0...v1.14.0) (2020-11-06)
+
+
+### Features
+
+* **gitlab-ci:** enable Gentoo CVE builds ([3e18e36](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/3e18e3652b82cdfcc9adcdd2fb322e16e38d3491))
+
 # [1.13.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.12.0...v1.13.0) (2020-11-03)
 
 
