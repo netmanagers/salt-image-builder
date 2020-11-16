@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.14.1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.14.0...v1.14.1) (2020-11-16)
+
+
+### Bug Fixes
+
+* **dockerfile.dnf:** fix/ignore hadolint violations ([6365c88](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/6365c88d95f7368f457e019fb2abd653ba2af6bb)), closes [/gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/-/jobs/846035659#L23](https://gitlab.com//gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/-/jobs/846035659/issues/L23)
+
 # [1.14.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.13.0...v1.14.0) (2020-11-06)
 
 
