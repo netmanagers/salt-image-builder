@@ -32,7 +32,10 @@ RUN pacman --noconfirm -Sy archlinux-keyring \
       # Set the exports for installing the specific version of Salt
       export PKGVER="${SALT_VERSION}"; \
       # Note that the `.0` versions will be sent through to this file without the `.0`.
-      if [ "${SALT_VERSION}" = "3002.1" ]; then \
+      if [ "${SALT_VERSION}" = "3002.2" ]; then \
+        export PKGSUM_SHA512=0f617a07475347b1bb0d1c6059de541e102103182820dfd6f64f4c281d660e68358eb1ab7171a637e16cef9fea2517c8356df9c449f9bbc92538aa86c316f652; \
+        export PKGSUM_B2=b26895ababc8551e01baa806c5a0e41dab9a379e47d2289b5c3c529ef762c69631d7ed8b32339ec66c3929c5883782131eb56d1bfbcc743829c4f0199a900ca1; \
+      elif [ "${SALT_VERSION}" = "3002.1" ]; then \
         export PKGSUM_SHA512=8fc02d0b47dad60f96eb4442b0e8a31f04d796f12b845c8142135593af4c7ea9c2d9335a3f520f8858951f87b0e8cc6be70d383fde2d93a6d529e077bcc87114; \
         export PKGSUM_B2=d084dc650b8bc92b4ebdb145a41a39bfbd034064fad65e364260eca84d7105fb645ad8f6cea2cc1b6affb1abf21a9858ab6fb526eaf4ecd8f76c70d1384c7edc; \
       elif [ "${SALT_VERSION}" = "3002" ]; then \
