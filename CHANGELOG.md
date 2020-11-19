@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.16.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.15.0...v1.16.0) (2020-11-19)
+
+
+### Features
+
+* **magnesium:** update Gentoo for `3002.2` & `3001.3` ([ca873d8](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/ca873d85e8835e20861aa497e54eb753b4687766))
+
 # [1.15.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.14.1...v1.15.0) (2020-11-19)
 
 
