@@ -187,7 +187,6 @@ cent-07.0-master-py3: {extends: '.build_image', variables: {DN: 'centos'        
 cent-07.0-3002.2-py3: {extends: '.build_image', variables: {DN: 'centos'         , DV: '7'      , PI: 'yum' , SIM: 'stable' , SV: '3002.2' , PV: '3' , EP: 'python3 python3-pip python3-devel openssl-devel swig gcc-g++ zeromq zeromq-devel'}}
 cent-07.0-3001.3-py3: {extends: '.build_image', variables: {DN: 'centos'         , DV: '7'      , PI: 'yum' , SIM: 'stable' , SV: '3001.3' , PV: '3' , EP: 'python3 python3-pip python3-devel openssl-devel swig gcc-g++ zeromq zeromq-devel'}}
 cent-07.0-3000.5-py3: {extends: '.build_image', variables: {DN: 'centos'         , DV: '7'      , PI: 'yum' , SIM: 'stable' , SV: '3000.5' , PV: '3' , EP: 'python3 python3-pip python3-devel openssl-devel swig gcc-g++ zeromq zeromq-devel'}}
-cent-06.0-3000.5-py2: {extends: '.build_image', variables: {DN: 'centos'         , DV: '6'      , PI: 'yum' , SIM: 'stable' , SV: '3000.5' , PV: '2' , EP: 'python27-pip'}}
 
 # DEBIAN
 debi-10.0-tiamat-py3: {extends: '.build_image', variables: {DN: 'debian'         , DV: '10'     , PI: 'apt' , SIM: 'stable' , SV: 'tiamat' , PV: '3' , EP: 'python3-pip'}}
