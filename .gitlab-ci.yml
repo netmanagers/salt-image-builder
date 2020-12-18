@@ -14,16 +14,13 @@
   image_black: &image_black
     name: 'cytopia/black:latest'
     entrypoint: ['/bin/ash', '-c']
+  image_commitlint: &image_commitlint 'myii/ssf-commitlint:11'
   image_docker: &image_docker 'docker:latest'
   image_hadolint: &image_hadolint 'hadolint/hadolint:latest'
-  image_node: &image_node 'node:12-buster-slim'
+  image_semantic-release: &image_semanticrelease 'myii/ssf-semantic-release-gitlab:17.3'
   image_yamllint: &image_yamllint
     name: 'cytopia/yamllint:latest'
     entrypoint: ['/bin/ash', '-c']
-  # `before_script`
-  before_script_image_node: &before_script_image_node
-    - 'apt-get update
-       && apt-get install -y --no-install-recommends git-core ca-certificates'
 
 ###############################################################################
 # Define stages and global variables
@@ -62,19 +59,15 @@ hadolint:
 
 commitlint:
   stage: *stage_lint
-  image: *image_node
-  before_script: *before_script_image_node
+  image: *image_commitlint
   script:
     # Add `upstream` remote to get access to `upstream/master`
-    - 'git remote add upstream
-       https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder.git'
+    - 'git remote add upstream ${CI_PROJECT_URL}.git'
     - 'git fetch --all'
-    # Install and run `commitlint`
-    - 'npm install -D @commitlint/config-conventional
-                      @commitlint/cli'
-    - 'npx commitlint --from "$(git merge-base upstream/master HEAD)"
-                      --to   "${CI_COMMIT_SHA}"
-                      --verbose'
+    # Run `commitlint`
+    - 'commitlint --from "$(git merge-base upstream/master HEAD)"
+                  --to   "${CI_COMMIT_SHA}"
+                  --verbose'
 
 ###############################################################################
 # Define `build` template (`allow_failure: false` -- implicit)
@@ -277,11 +270,6 @@ ubun-16.0-3000.6-py2: {extends: '.build_image_failure_forbidden', variables: {DN
 semantic-release:
   only: *only_branch_master_parent_repo
   stage: *stage_release
-  image: *image_node
-  before_script: *before_script_image_node
+  image: *image_semanticrelease
   script:
-    - 'npm install -g semantic-release
-                      @semantic-release/gitlab
-                      @semantic-release/changelog
-                      @semantic-release/git'
     - 'semantic-release'
