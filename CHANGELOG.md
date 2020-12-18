@@ -1,5 +1,25 @@
 # Changelog
 
+# [1.17.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.16.0...v1.17.0) (2020-12-18)
+
+
+### Continuous Integration
+
+* **gitlab-ci:** deprecate `centos-6` (EOL) ([6f41944](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/6f41944820e3d897c324118a82c0ca9881962093))
+* **gitlab-ci:** limit `only` to `master` branch of parent repo ([6ad8c1b](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/6ad8c1be3f079603befbfd8ceeb2928a5f349104))
+
+
+### Features
+
+* **gentoo:** use `allow_failure` for Gentoo builds ([d9dc291](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/d9dc291c6fbf0131a8f6061b1fd6d8517a342313))
+* **gitlab-ci:** update for `3001.4` & `3000.6` ([ebd52cc](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/ebd52cc8ddcd8541620310516bcce6772df95c83))
+
+
+### Performance Improvements
+
+* **gitlab-ci:** use specific `commitlint` & `semantic-release` images ([a235038](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/a235038463b73910b8dd516eb5b103675bc12e9e))
+* **gitlab-ci:** use specific `dind-py3-virtualenv` image ([449afe1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/449afe1a95d323cc620a21508f17694390a59281))
+
 # [1.16.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.15.0...v1.16.0) (2020-11-19)
 
 
