@@ -15,12 +15,26 @@
     name: 'cytopia/black:latest'
     entrypoint: ['/bin/ash', '-c']
   image_commitlint: &image_commitlint 'myii/ssf-commitlint:11'
-  image_docker: &image_docker 'docker:latest'
+  # yamllint disable-line rule:line-length
+  image_dindpy3virtualenv: &image_dindpy3virtualenv 'myii/ssf-dind-py3-virtualenv:20.0.21-r0'
   image_hadolint: &image_hadolint 'hadolint/hadolint:latest'
   image_semantic-release: &image_semanticrelease 'myii/ssf-semantic-release-gitlab:17.3'
   image_yamllint: &image_yamllint
     name: 'cytopia/yamllint:latest'
     entrypoint: ['/bin/ash', '-c']
+  # `script`
+  script_dind_push_to_docker_hub: &script_dind_push_to_docker_hub
+    - |
+      if [ "${CI_COMMIT_BRANCH}" = "master" ]; then
+        echo "Push to Docker Hub"
+        echo "${DOCKERHUB_PASSWORD}" | \
+          docker login -u "${DOCKERHUB_USER}" --password-stdin
+        docker tag ${TAG} ${DOCKERHUB_ORG}/${DOCKERHUB_IMAGE}
+        docker push ${DOCKERHUB_ORG}/${DOCKERHUB_IMAGE}
+      fi
+  # `services`
+  services_docker_dind: &services_docker_dind
+    - 'docker:dind'
 
 ###############################################################################
 # Define stages and global variables
@@ -74,12 +88,9 @@ commitlint:
 ###############################################################################
 .build_image_failure_forbidden: &build_image_failure_forbidden
   stage: *stage_build
-  image: *image_docker
-  services:
-    - 'docker:dind'
+  image: *image_dindpy3virtualenv
+  services: *services_docker_dind
   before_script:
-    - 'apk update
-       && apk add py3-virtualenv'
     - 'python3 -m venv venv'
     - 'venv/bin/pip install -r requirements.txt'
     - 'export TAG=$(echo ${DN} | sed "s#/#-#g")-${DV}'
@@ -98,7 +109,7 @@ commitlint:
         if [ "${SIM}" != "git" ]; then
           export SVFB=${SV}
         else
-          export SVFB=$(echo ${SV} | sed "s/\.0$//"); \
+          export SVFB=$(echo ${SV} | sed "s/\.0$//")
         fi
     - 'docker build .
          --cache-from ${CACHE_FROM}
@@ -129,15 +140,7 @@ commitlint:
     - 'docker exec "${TESTINFRA_CONTAINER}" salt-call --versions-report'
     - 'docker stop "${TESTINFRA_CONTAINER}"'
     - 'docker rm "${TESTINFRA_CONTAINER}"'
-  script:
-    - |
-      if [ "${CI_COMMIT_BRANCH}" = "master" ]; then
-        echo "Push to Docker Hub"
-        echo "${DOCKERHUB_PASSWORD}" | \
-          docker login -u "${DOCKERHUB_USER}" --password-stdin
-        docker tag ${TAG} ${DOCKERHUB_ORG}/${DOCKERHUB_IMAGE}
-        docker push ${DOCKERHUB_ORG}/${DOCKERHUB_IMAGE}
-      fi
+  script: *script_dind_push_to_docker_hub
 
 ###############################################################################
 # Define `build` template (`allow_failure: true`)
