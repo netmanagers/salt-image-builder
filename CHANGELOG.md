@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.18.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.17.0...v1.18.0) (2020-12-19)
+
+
+### Features
+
+* **gentoo:** use ksmanis/stage3 image ([1c11a74](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/1c11a744431d29c600ae6cc4acd983df3923041c))
+
 # [1.17.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.16.0...v1.17.0) (2020-12-18)
 
 
