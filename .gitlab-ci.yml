@@ -169,7 +169,6 @@ amaz-02.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 amaz-02.0-3002.2-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'amazonlinux'    , DV: '2'      , PI: 'yum' , SIM: 'stable' , SV: '3002.2' , PV: '3' , EP: 'yum-utils python3-pip procps-ng'}}
 amaz-02.0-3001.4-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'amazonlinux'    , DV: '2'      , PI: 'yum' , SIM: 'stable' , SV: '3001.4' , PV: '3' , EP: 'yum-utils python3-pip procps-ng'}}
 amaz-02.0-3000.6-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'amazonlinux'    , DV: '2'      , PI: 'yum' , SIM: 'stable' , SV: '3000.6' , PV: '3' , EP: 'yum-utils python3-pip procps-ng'}}
-amaz-01.0-3000.6-py2: {extends: '.build_image_failure_forbidden', variables: {DN: 'amazonlinux'    , DV: '1'      , PI: 'yum' , SIM: 'stable' , SV: '3000.6' , PV: '2' , EP: 'yum-utils python-pip procps'}}
 
 # ARCHLINUX
 # The Salt bootstrap installer does not provide packages nor installs with py3 for Arch
@@ -214,10 +213,6 @@ fedo-33.0-3001.4-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 fedo-32.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'         , DV: '32'     , PI: 'dnf' , SIM: 'git'    , SV: 'master' , PV: '3' , EP: 'python3-pip'}}
 fedo-32.0-3002.2-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'         , DV: '32'     , PI: 'dnf' , SIM: 'git'    , SV: '3002.2' , PV: '3' , EP: 'python3-pip'}}
 fedo-32.0-3001.4-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'         , DV: '32'     , PI: 'dnf' , SIM: 'git'    , SV: '3001.4' , PV: '3' , EP: 'python3-pip'}}
-fedo-31.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'         , DV: '31'     , PI: 'dnf' , SIM: 'git'    , SV: 'master' , PV: '3' , EP: 'python3-pip'}}
-fedo-31.0-3002.2-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'         , DV: '31'     , PI: 'dnf' , SIM: 'git'    , SV: '3002.2' , PV: '3' , EP: 'python3-pip'}}
-fedo-31.0-3001.4-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'         , DV: '31'     , PI: 'dnf' , SIM: 'git'    , SV: '3001.4' , PV: '3' , EP: 'python3-pip'}}
-fedo-31.0-3000.6-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'         , DV: '31'     , PI: 'dnf' , SIM: 'git'    , SV: '3000.6' , PV: '3' , EP: 'python3-pip'}}
 
 # GENTOO
 gent-late-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'ksmanis/stage3' , DV: 'latest' , PI: 'emg' , SIM: 'git'    , SV: 'master' , PV: '3' , EP: 'dev-python/pip'}}
