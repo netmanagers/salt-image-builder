@@ -76,7 +76,8 @@ commitlint:
   image: *image_commitlint
   script:
     # Add `upstream` remote to get access to `upstream/master`
-    - 'git remote add upstream ${CI_PROJECT_URL}.git'
+    - 'git remote add upstream
+       https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder.git'
     - 'git fetch --all'
     # Run `commitlint`
     - 'commitlint --from "$(git merge-base upstream/master HEAD)"
