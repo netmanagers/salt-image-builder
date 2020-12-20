@@ -76,7 +76,8 @@ commitlint:
   image: *image_commitlint
   script:
     # Add `upstream` remote to get access to `upstream/master`
-    - 'git remote add upstream ${CI_PROJECT_URL}.git'
+    - 'git remote add upstream
+       https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder.git'
     - 'git fetch --all'
     # Run `commitlint`
     - 'commitlint --from "$(git merge-base upstream/master HEAD)"
@@ -215,14 +216,14 @@ fedo-32.0-3002.2-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 fedo-32.0-3001.4-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'         , DV: '32'     , PI: 'dnf' , SIM: 'git'    , SV: '3001.4' , PV: '3' , EP: 'python3-pip'}}
 
 # GENTOO
-gent-late-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'ksmanis/stage3' , DV: 'latest' , PI: 'emg' , SIM: 'git'    , SV: 'master' , PV: '3' , EP: 'dev-python/pip'}}
-gent-late-3002.2-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'ksmanis/stage3' , DV: 'latest' , PI: 'emg' , SIM: 'stable' , SV: '3002.2' , PV: '3' , EP: 'dev-python/pip'}}
-gent-late-3001.4-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'ksmanis/stage3' , DV: 'latest' , PI: 'emg' , SIM: 'stable' , SV: '3001.4' , PV: '3' , EP: 'dev-python/pip'}}
-gent-late-3000.6-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'ksmanis/stage3' , DV: 'latest' , PI: 'emg' , SIM: 'stable' , SV: '3000.6' , PV: '3' , EP: 'dev-python/pip'}}
-gent-sysd-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'ksmanis/stage3' , DV: 'systemd', PI: 'emg' , SIM: 'git'    , SV: 'master' , PV: '3' , EP: 'dev-python/pip'}}
-gent-sysd-3002.2-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'ksmanis/stage3' , DV: 'systemd', PI: 'emg' , SIM: 'stable' , SV: '3002.2' , PV: '3' , EP: 'dev-python/pip'}}
-gent-sysd-3001.4-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'ksmanis/stage3' , DV: 'systemd', PI: 'emg' , SIM: 'stable' , SV: '3001.4' , PV: '3' , EP: 'dev-python/pip'}}
-gent-sysd-3000.6-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'ksmanis/stage3' , DV: 'systemd', PI: 'emg' , SIM: 'stable' , SV: '3000.6' , PV: '3' , EP: 'dev-python/pip'}}
+gent-late-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'  , DV: 'latest' , PI: 'emg' , SIM: 'git'    , SV: 'master' , PV: '3' , EP: 'dev-python/pip'}}
+gent-late-3002.2-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'  , DV: 'latest' , PI: 'emg' , SIM: 'stable' , SV: '3002.2' , PV: '3' , EP: 'dev-python/pip'}}
+gent-late-3001.4-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'  , DV: 'latest' , PI: 'emg' , SIM: 'stable' , SV: '3001.4' , PV: '3' , EP: 'dev-python/pip'}}
+gent-late-3000.6-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'  , DV: 'latest' , PI: 'emg' , SIM: 'stable' , SV: '3000.6' , PV: '3' , EP: 'dev-python/pip'}}
+gent-sysd-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'  , DV: 'systemd', PI: 'emg' , SIM: 'git'    , SV: 'master' , PV: '3' , EP: 'dev-python/pip'}}
+gent-sysd-3002.2-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'  , DV: 'systemd', PI: 'emg' , SIM: 'stable' , SV: '3002.2' , PV: '3' , EP: 'dev-python/pip'}}
+gent-sysd-3001.4-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'  , DV: 'systemd', PI: 'emg' , SIM: 'stable' , SV: '3001.4' , PV: '3' , EP: 'dev-python/pip'}}
+gent-sysd-3000.6-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'  , DV: 'systemd', PI: 'emg' , SIM: 'stable' , SV: '3000.6' , PV: '3' , EP: 'dev-python/pip'}}
 
 # OPENSUSE
 opsu-15.2-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'  , DV: '15.2'   , PI: 'zyp' , SIM: 'git'    , SV: 'master' , PV: '3' , EP: 'python3-pip'}}
