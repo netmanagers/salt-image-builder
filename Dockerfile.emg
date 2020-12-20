@@ -1,6 +1,6 @@
-ARG DISTRO_NAME
+# Use `ksmanis/stage3` until `gentoo/stage3` is upgraded
 ARG DISTRO_VERSION
-FROM $DISTRO_NAME:$DISTRO_VERSION
+FROM ksmanis/stage3:$DISTRO_VERSION
 
 LABEL maintainer="javier@netmanagers.com.ar"
 
