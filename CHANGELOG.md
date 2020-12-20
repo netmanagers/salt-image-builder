@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.18.2](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.18.1...v1.18.2) (2020-12-20)
+
+
+### Bug Fixes
+
+* **gitlab-ci:** add `python3-apt` for all `master/git` installations ([f290987](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/f290987e68eeadd2833d870d21ce908abc3ee7ee))
+
 ## [1.18.1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.18.0...v1.18.1) (2020-12-20)
 
 
