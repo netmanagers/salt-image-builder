@@ -199,7 +199,7 @@ debi-10.0-3002.2-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 debi-10.0-3001.4-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'         , DV: '10'     , PI: 'apt' , SIM: 'stable' , SV: '3001.4' , PV: '3' , EP: 'python3-pip'}}
 debi-10.0-3000.6-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'         , DV: '10'     , PI: 'apt' , SIM: 'stable' , SV: '3000.6' , PV: '3' , EP: 'python3-pip'}}
 debi-09.0-tiamat-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'         , DV: '9'      , PI: 'apt' , SIM: 'stable' , SV: 'tiamat' , PV: '3' , EP: 'python3-pip'}}
-debi-09.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'         , DV: '9'      , PI: 'apt' , SIM: 'git'    , SV: 'master' , PV: '3' , EP: 'python3-pip'}}
+debi-09.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'         , DV: '9'      , PI: 'apt' , SIM: 'git'    , SV: 'master' , PV: '3' , EP: 'python3-apt python3-pip'}}
 debi-09.0-3002.2-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'         , DV: '9'      , PI: 'apt' , SIM: 'stable' , SV: '3002.2' , PV: '3' , EP: 'python3-pip'}}
 debi-09.0-3001.4-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'         , DV: '9'      , PI: 'apt' , SIM: 'stable' , SV: '3001.4' , PV: '3' , EP: 'python3-pip'}}
 debi-09.0-3000.6-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'         , DV: '9'      , PI: 'apt' , SIM: 'stable' , SV: '3000.6' , PV: '3' , EP: 'python3-pip'}}
@@ -256,7 +256,7 @@ ubun-18.0-3001.4-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 ubun-18.0-3000.6-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'         , DV: '18.04'  , PI: 'apt' , SIM: 'stable' , SV: '3000.6' , PV: '3' , EP: 'python3-pip'}}
 ubun-18.0-3000.6-py2: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'         , DV: '18.04'  , PI: 'apt' , SIM: 'stable' , SV: '3000.6' , PV: '2' , EP: 'python-pip'}}
 ubun-16.0-tiamat-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'         , DV: '16.04'  , PI: 'apt' , SIM: 'stable' , SV: 'tiamat' , PV: '3' , EP: 'python3-pip'}}
-ubun-16.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'         , DV: '16.04'  , PI: 'apt' , SIM: 'git'    , SV: 'master' , PV: '3' , EP: 'python3-pip'}}
+ubun-16.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'         , DV: '16.04'  , PI: 'apt' , SIM: 'git'    , SV: 'master' , PV: '3' , EP: 'python3-apt python3-pip'}}
 ubun-16.0-3002.2-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'         , DV: '16.04'  , PI: 'apt' , SIM: 'stable' , SV: '3002.2' , PV: '3' , EP: 'python3-pip'}}
 ubun-16.0-3001.4-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'         , DV: '16.04'  , PI: 'apt' , SIM: 'stable' , SV: '3001.4' , PV: '3' , EP: 'python3-pip'}}
 ubun-16.0-3000.6-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'         , DV: '16.04'  , PI: 'apt' , SIM: 'stable' , SV: '3000.6' , PV: '3' , EP: 'python3-pip'}}
