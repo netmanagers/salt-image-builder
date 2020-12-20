@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.18.1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.18.0...v1.18.1) (2020-12-20)
+
+
+### Bug Fixes
+
+* **dockerfile.emg:** use `ksmanis/stage3` until `gentoo/stage3` upgraded ([a891fa4](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/a891fa47d62f2d24667506af722a3df04d7c370c))
+
+
+### Continuous Integration
+
+* **commitlint:** ensure `upstream/master` uses the main repo's URL ([5300d72](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/5300d72df66b3e1eaa1e2978a19f794d1777ebd6))
+* **gitlab-ci:** deprecate `amazonlinux-1` and `fedora-31` (EOL) [skip ci] ([1c55f71](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/1c55f716cf04acfdf31e16284f793e12f14f7ed4))
+
 # [1.18.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.17.0...v1.18.0) (2020-12-19)
 
 
