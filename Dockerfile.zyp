@@ -23,7 +23,9 @@ RUN zypper refresh && zypper install -y ${PKGS} && zypper clean \
  && if [ ! -e /etc/SuSE-release ]; then \
       ln -s /etc/os-release /etc/SuSE-release; \
     fi \
- && curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
+    # Temporarily use the bootstrap script from the bugfix PR branch (until merged)
+    # https://github.com/saltstack/salt-bootstrap/pull/1525
+ && curl -L https://raw.githubusercontent.com/myii/salt-bootstrap/bug/fix-opensuse-tumbleweed/bootstrap-salt.sh | \
     sh -s -- -XUdfP -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION \
  && systemctl disable salt-minion.service > /dev/null 2>&1 \
     # Remove unnecessary getty and udev targets that result in high CPU usage when using
