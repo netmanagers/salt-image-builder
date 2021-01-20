@@ -12,7 +12,7 @@ ARG SALT_INSTALL_METHOD
 ARG SALT_VERSION
 ARG PYTHON_VERSION
 ARG EXTRA_PACKAGES=""
-ARG PKGS="udev git net-tools net-tools-deprecated sudo curl glibc-locale openssh which python-xml $EXTRA_PACKAGES"
+ARG PKGS="systemd udev git net-tools net-tools-deprecated sudo curl glibc-locale openssh which python-xml $EXTRA_PACKAGES"
 
 SHELL ["/bin/bash", "-x", "-o", "pipefail", "-c"]
 # hadolint ignore=DL3037

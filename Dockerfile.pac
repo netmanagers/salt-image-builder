@@ -13,7 +13,7 @@ ARG SALT_VERSION
 ARG PYTHON_VERSION
 ARG EXTRA_PACKAGES=""
 ARG BUILD_PACKAGES="tar fakeroot binutils"
-ARG PKGS="udev git net-tools sudo curl $EXTRA_PACKAGES $BUILD_PACKAGES"
+ARG PKGS="systemd udev git net-tools sudo curl $EXTRA_PACKAGES $BUILD_PACKAGES"
 ARG BUILD_USER="bin"
 
 SHELL ["/bin/bash", "-x", "-o", "pipefail", "-c"]
