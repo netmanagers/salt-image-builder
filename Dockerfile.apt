@@ -38,7 +38,7 @@ RUN apt-get update \
       apt-get install --yes --no-install-recommends salt-minion; \
     fi \
     # Disable salt's service as we don't need it running
- && /bin/systemctl disable salt-minion.service > /dev/null 2>&1 \
+ && systemctl disable salt-minion.service > /dev/null 2>&1 \
     # Remove unnecessary getty and udev targets that result in high CPU usage when using
     # multiple containers with Molecule or Kitchen https://github.com/ansible/molecule/issues/1104
  && rm -rf /var/cache/apt \

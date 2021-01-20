@@ -25,8 +25,8 @@ RUN mkdir --parents /etc/portage/repos.conf \
  && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen && locale-gen \
     # Enable sshd and disable salt's service as we don't need it running
  && if [ "${DISTRO_VERSION}" = "systemd" ]; then \
-      ( /bin/systemctl enable sshd.service > /dev/null 2>&1; \
-        /bin/systemctl disable salt-minion.service > /dev/null 2>&1 ) || true; \
+      ( systemctl enable sshd.service > /dev/null 2>&1; \
+        systemctl disable salt-minion.service > /dev/null 2>&1 ) || true; \
     else \
       ( /sbin/rc-update add sshd default > /dev/null 2>&1; \
         /sbin/rc-update del salt-minion default > /dev/null 2>&1 ) || true; \

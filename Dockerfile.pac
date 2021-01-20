@@ -61,7 +61,7 @@ RUN pacman --noconfirm -Sy archlinux-keyring \
       pacman --noconfirm -Rs ${BUILD_PACKAGES}; \
       rm -rf /etc/sudoers.d/salt-build /tmp/salt-py3/; \
     fi \
- && /bin/systemctl disable salt-minion.service > /dev/null 2>&1 \
+ && systemctl disable salt-minion.service > /dev/null 2>&1 \
     # Remove unnecessary getty and udev targets that result in high CPU usage when using
     # multiple containers with Molecule or Kitchen (https://github.com/ansible/molecule/issues/1104)
  && rm -rf /var/cache/{salt,pacman} \

@@ -52,8 +52,8 @@ RUN if [[ "${DISTRO_NAME}" = "centos" ]]; then \
       yum clean expire-cache; \
       yum -y install salt-minion; \
     fi \
- && if [ -f /bin/systemctl ]; then \
-      /bin/systemctl disable salt-minion.service > /dev/null 2>&1; \
+ && if command -v systemctl; then \
+      systemctl disable salt-minion.service > /dev/null 2>&1; \
     elif [ -f "/etc/init.d/salt-minion" ]; then \
       /sbin/chkconfig salt-minion off; \
     fi \
