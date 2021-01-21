@@ -46,19 +46,13 @@ RUN apt-get update \
            /var/lib/apt/lists/* \
            /lib/systemd/system/systemd*udev* \
            /lib/systemd/system/getty.target \
-          /etc/default/locale /etc/locale.gen \
+           /etc/default/locale /etc/locale.gen \
  && (find / ! -path "/{proc,sys,dev}" -name "*.pyc"; \
      find / ! -path "/{proc,sys,dev}" -name "__pycache__"; \
-     find /var/log -type f) | \
-    grep -v ^/proc | xargs rm -rf \
+     find /var/log -type f) \
+    | grep -v ^/proc | xargs rm -rf \
     # Also obscure any `getty` binaries https://github.com/moby/moby/issues/4040#issuecomment-339022455
  && cp /bin/true /sbin/agetty \
  && echo 'locales locales/locales_to_be_generated multiselect en_US.UTF-8 UTF-8' | debconf-set-selections - \
  && echo 'locales locales/default_environment_locale select en_US.UTF-8' | debconf-set-selections - \
- && dpkg-reconfigure -f noninteractive locales \
-    # Temporary fix for troublesome `log.debug` that causes Travis failures due to excess logging
-    # Has been fixed upstream recently but some of our cached builds still use affected versions
-    # Only affects the `master` branch builds; also checking Tiamat builds under `/opt/`
-    # The first `find` command is to log where the actual file is located
- && find /opt/ /usr/ -type f -name loader.py | grep "salt/loader.py" \
- && sed -i -e "/log.debug(self.file_mapping)/s/debug/trace/" "$(find /opt/ /usr/ -type f -name loader.py | grep 'salt/loader.py')"
+ && dpkg-reconfigure -f noninteractive locales
