@@ -13,7 +13,7 @@ ARG SALT_VERSION
 ARG PYTHON_VERSION
 ARG EXTRA_PACKAGES=""
 ARG DEBIAN_FRONTEND="noninteractive"
-ARG PKGS="systemd udev git net-tools sudo curl locales procps openssh-server lsb-release systemd systemd-sysv gnupg dirmngr wget apt-transport-https $EXTRA_PACKAGES"
+ARG PKGS="apt-transport-https curl dirmngr git gnupg locales lsb-release net-tools openssh-server procps sudo systemd systemd systemd-sysv udev wget ${EXTRA_PACKAGES}"
 
 # Avoid unnecessary files when installing packages
 COPY files/dpkg-nodoc /etc/dpkg/dpkg.cfg.d/01_nodoc

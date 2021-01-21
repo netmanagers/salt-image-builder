@@ -12,7 +12,7 @@ ARG SALT_INSTALL_METHOD
 ARG SALT_VERSION
 ARG PYTHON_VERSION
 ARG EXTRA_PACKAGES=""
-ARG PKGS="dev-vcs/git app-admin/sudo $EXTRA_PACKAGES"
+ARG PKGS="app-admin/sudo dev-vcs/git ${EXTRA_PACKAGES}"
 
 SHELL ["/bin/bash", "-x", "-o", "pipefail", "-c"]
 RUN mkdir --parents /etc/portage/repos.conf \

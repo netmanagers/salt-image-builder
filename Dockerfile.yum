@@ -12,7 +12,7 @@ ARG SALT_INSTALL_METHOD
 ARG SALT_VERSION
 ARG PYTHON_VERSION
 ARG EXTRA_PACKAGES=""
-ARG PKGS="systemd udev git net-tools sudo curl openssh-server openssh-clients which $EXTRA_PACKAGES"
+ARG PKGS="curl git net-tools openssh-clients openssh-server sudo systemd udev which ${EXTRA_PACKAGES}"
 
 SHELL ["/bin/bash", "-x", "-o", "pipefail", "-c"]
 # hadolint ignore=SC1075,SC2016,DL3033
