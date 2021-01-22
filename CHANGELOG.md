@@ -1,5 +1,31 @@
 # Changelog
 
+# [1.19.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.18.2...v1.19.0) (2021-01-22)
+
+
+### Bug Fixes
+
+* **dockerfile.*:** fix `/bin/systemctl` => `systemctl` ([7171453](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/7171453c800656dc25c3a168307a610a36663577))
+
+
+### Code Refactoring
+
+* **dockerfile.*:** remove temporary `log.debug` fix & do clean-up ([c193d2f](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/c193d2fc110b83ec5af7b1b50b0ddeacccb53a71))
+* centralise common packages into relevant `Dockerfile` ([238f27d](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/238f27db7bbbdaf813fb9ac1bdb75cd0006b298f))
+* use alphabetical ordering for installation packages ([aadd1b1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/aadd1b1dbae423c0b0a71a8e0b3a1c27b727510b))
+
+
+### Continuous Integration
+
+* **dockerfile.*:** install `systemd` explicitly ([c78aa3b](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/c78aa3b84e7ceef53d6afb308187c11415205ead))
+* **dockerfile.zyp:** use bootstrap script from bugfix PR branch ([61307ac](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/61307ac0f00ed13dcd10edadea3ae0363a88321a))
+* **dockerfile.zyp:** use common path exclusions in `find` => `rm -rf` ([551b833](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/551b83316776522f477b16763ee123125ed61a05))
+
+
+### Features
+
+* **opensuse:** build openSUSE Tumbleweed images ([6c2a37d](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/6c2a37d92cb004dfb7c077023970a79d1b9cafa5))
+
 ## [1.18.2](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.18.1...v1.18.2) (2020-12-20)
 
 
