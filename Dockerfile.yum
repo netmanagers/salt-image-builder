@@ -12,7 +12,7 @@ ARG SALT_INSTALL_METHOD
 ARG SALT_VERSION
 ARG PYTHON_VERSION
 ARG EXTRA_PACKAGES=""
-ARG PKGS="udev git net-tools sudo curl openssh-server openssh-clients which $EXTRA_PACKAGES"
+ARG PKGS="curl git net-tools openssh-clients openssh-server python3-pip sudo systemd udev which ${EXTRA_PACKAGES}"
 
 SHELL ["/bin/bash", "-x", "-o", "pipefail", "-c"]
 # hadolint ignore=SC1075,SC2016,DL3033
@@ -52,8 +52,8 @@ RUN if [[ "${DISTRO_NAME}" = "centos" ]]; then \
       yum clean expire-cache; \
       yum -y install salt-minion; \
     fi \
- && if [ -f /bin/systemctl ]; then \
-      /bin/systemctl disable salt-minion.service > /dev/null 2>&1; \
+ && if command -v systemctl; then \
+      systemctl disable salt-minion.service > /dev/null 2>&1; \
     elif [ -f "/etc/init.d/salt-minion" ]; then \
       /sbin/chkconfig salt-minion off; \
     fi \
@@ -74,14 +74,8 @@ RUN if [[ "${DISTRO_NAME}" = "centos" ]]; then \
            /usr/lib/systemd/system/getty.target \
  && (find / ! -path "/{proc,sys,dev}" -name "*.pyc"; \
      find / ! -path "/{proc,sys,dev}" -name "__pycache__"; \
-     find /var/log -type f) | \
-    grep -v ^/proc | xargs rm -rf \
+     find /var/log -type f) \
+    | grep -v ^/proc | xargs rm -rf \
     # Also obscure any `getty` binaries (https://github.com/moby/moby/issues/4040#issuecomment-339022455)
  && cp /bin/true /sbin/agetty \
- && if [ -e /sbin/mingetty ]; then cp /bin/true /sbin/mingetty; fi \
-    # Temporary fix for troublesome `log.debug` that causes Travis failures due to excess logging
-    # Has been fixed upstream recently but some of our cached builds still use affected versions
-    # Only affects the `master` branch builds; also checking Tiamat builds under `/opt/`
-    # The first `find` command is to log where the actual file is located
- && find /opt/ /usr/ -type f -name loader.py | grep "salt/loader.py" \
- && sed -i -e "/log.debug(self.file_mapping)/s/debug/trace/" "$(find /opt/ /usr/ -type f -name loader.py | grep 'salt/loader.py')"
+ && if [ -e /sbin/mingetty ]; then cp /bin/true /sbin/mingetty; fi
