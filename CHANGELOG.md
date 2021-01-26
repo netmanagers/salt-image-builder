@@ -1,5 +1,31 @@
 # Changelog
 
+# [1.20.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.19.0...v1.20.0) (2021-01-26)
+
+
+### Build System
+
+* **requirements:** update package versions used for `testinfra` ([5cb4acb](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/5cb4acb4a9ecf36586e8d17628b2583d12ae3f6c))
+
+
+### Continuous Integration
+
+* **dockerfile.*:** avoid installing recommended packages ([b3680ec](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/b3680ecc460492834aaa74443b355e96121e9fe3))
+* **dockerfile.zyp:** apply workaround for Tumbleweed InSpec bug ([a5e931a](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/a5e931afaeb01ff9c3ce755d47416026223bc14b))
+* **dockerfile.zyp:** reset bootstrap script source [skip ci] ([52f797e](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/52f797e73e61f2a0a434460657cb9905fc41b5e4))
+* **gitlab-ci:** avoid using Docker caching for Tiamat builds ([bc38e46](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/bc38e461f6da6293b61f729047ae52f2840e48a2))
+* **gitlab-ci:** build `stable latest` where available for Fedora ([60444a8](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/60444a8abf254bc3a01ee3a9945d7872efb72f11))
+* **gitlab-ci:** build openSUSE `3002.2` using `stable latest` ([9b6b6f8](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/9b6b6f86aff593082b319bf5127803236897adeb))
+* **gitlab-ci:** display the `--versions-report` before the tests run ([6b82e74](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/6b82e7422578ebf57df70788b420b31d54764202))
+* **gitlab-ci:** install `gzip` in Tumbleweed to avoid `busybox-gzip` ([1062315](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/10623151883f51c34d3d25b913dea4f453ceb4cc)), closes [/github.com/saltstack-formulas/libvirt-formula/pull/83#issuecomment-767748061](https://gitlab.com//github.com/saltstack-formulas/libvirt-formula/pull/83/issues/issuecomment-767748061)
+* **gitlab-ci:** run `black --diff` before `black --check` ([7f69af5](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/7f69af5faf9299ca77b171faba1d39000efbd1d5))
+
+
+### Features
+
+* **dockerfile.zyp:** use downstream repo for openSUSE (`-w` flag) ([3796d7c](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/3796d7cb8a23d411c0bc83e22101a3cd53b5ba56))
+* **salt_version:** use `SVB` to deal with version number for bootstrap ([566c86b](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/566c86b1d87fabf80677ea6a9067c7ab977b7cb4))
+
 # [1.19.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.18.2...v1.19.0) (2021-01-22)
 
 
