@@ -16,7 +16,7 @@ ARG PKGS="curl git glibc-locale net-tools net-tools-deprecated openssh python-xm
 
 SHELL ["/bin/bash", "-x", "-o", "pipefail", "-c"]
 # hadolint ignore=DL3037
-RUN zypper refresh && zypper install -y ${PKGS} && zypper clean \
+RUN zypper refresh && zypper install --no-recommends -y ${PKGS} && zypper clean \
  && systemctl enable sshd \
     # https://github.com/inspec/train/issues/377
     # https://github.com/inspec/train/pull/505

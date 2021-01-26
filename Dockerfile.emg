@@ -18,7 +18,7 @@ SHELL ["/bin/bash", "-x", "-o", "pipefail", "-c"]
 RUN mkdir --parents /etc/portage/repos.conf \
  && cp /usr/share/portage/config/repos.conf /etc/portage/repos.conf/gentoo.conf \
  && emerge-webrsync \
- && emerge --noreplace --quiet ${PKGS} \
+ && emerge --noreplace --quiet --with-bdeps-auto=n ${PKGS} \
  && curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
     sh -s -- -XUdfP -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION \
     # Generate locales
