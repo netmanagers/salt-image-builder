@@ -226,11 +226,16 @@ gent-sysd-3001.4-py3: {extends: '.build_image_failure_permitted', variables: {DN
 gent-sysd-3000.6-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'      , DV: 'systemd', PI: 'emg' , SIM: 'stable' , SV: '3000.6' , PV: '3' , EP: ''}}
 
 # OPENSUSE
+# For openSUSE, the bootstrap script only allows `latest` to be built using `stable`
+# Now using the `-w` switch with the bootstrap script in order to build using the packages available in the downstream, official openSUSE repo, which is kept up-to-date.  Compare:
+# * Downstream: https://download.opensuse.org/repositories/systemsmanagement:/saltstack/
+# * Upstream:   http://repo.saltstack.com/opensuse/
+# Use for both Leap and Tumbleweed in order to test against these latest available packages
 opsu-tmbl-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/tumbleweed', DV: 'latest' , PI: 'zyp' , SIM: 'git'    , SV: 'master' , PV: '3' , EP: ''}}
-opsu-tmbl-3002.2-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/tumbleweed', DV: 'latest' , PI: 'zyp' , SIM: 'git'    , SV: '3002.2' , PV: '3' , EP: ''}}
+opsu-tmbl-3002.2-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/tumbleweed', DV: 'latest' , PI: 'zyp' , SIM: 'stable' , SV: 'latest' , PV: '3' , EP: ''}}
 opsu-tmbl-3001.4-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/tumbleweed', DV: 'latest' , PI: 'zyp' , SIM: 'git'    , SV: '3001.4' , PV: '3' , EP: ''}}
 opsu-15.2-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'      , DV: '15.2'   , PI: 'zyp' , SIM: 'git'    , SV: 'master' , PV: '3' , EP: ''}}
-opsu-15.2-3002.2-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'      , DV: '15.2'   , PI: 'zyp' , SIM: 'git'    , SV: '3002.2' , PV: '3' , EP: ''}}
+opsu-15.2-3002.2-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'      , DV: '15.2'   , PI: 'zyp' , SIM: 'stable' , SV: 'latest' , PV: '3' , EP: ''}}
 opsu-15.2-3001.4-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'      , DV: '15.2'   , PI: 'zyp' , SIM: 'git'    , SV: '3001.4' , PV: '3' , EP: ''}}
 opsu-15.2-3000.6-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'      , DV: '15.2'   , PI: 'zyp' , SIM: 'git'    , SV: '3000.6' , PV: '3' , EP: ''}}
 
