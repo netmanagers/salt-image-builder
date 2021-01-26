@@ -127,6 +127,8 @@ commitlint:
          --detach=true
          --name "${TESTINFRA_CONTAINER}"
          "${TAG}" tail -f /dev/null'
+    # Display `--versions-report` for debugging purposes
+    - 'docker exec "${TESTINFRA_CONTAINER}" salt-call --versions-report'
     # Not using `${SVFB}` instead of `${SV}` here since that will only be
     # adjusted for `git`-based installations; the test file itself handles the
     # extra `.0` in the version number.
@@ -137,8 +139,6 @@ commitlint:
          --saltvers "${SV}"
          --installmethod "${SIM}"
          -v'
-    # Display `--versions-report` for debugging purposes
-    - 'docker exec "${TESTINFRA_CONTAINER}" salt-call --versions-report'
     - 'docker stop "${TESTINFRA_CONTAINER}"'
     - 'docker rm "${TESTINFRA_CONTAINER}"'
   script: *script_dind_push_to_docker_hub
