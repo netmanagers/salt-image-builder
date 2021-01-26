@@ -101,8 +101,14 @@ commitlint:
         fi
     - 'echo "Building: ${TAG}"'
     - 'export DOCKERHUB_IMAGE=salt-${SV}-py${PV}:${TAG}'
+    - 'export CMD_DOCKER_BUILD="docker build ."'
     - 'export CACHE_FROM=${DOCKERHUB_ORG}/${DOCKERHUB_IMAGE}'
-    - 'docker pull ${CACHE_FROM} || true'
+    # Avoid using Docker caching for Tiamat builds
+    - |
+        if [ "${SV}" != "tiamat" ]; then
+          export CMD_DOCKER_BUILD="${CMD_DOCKER_BUILD} --cache-from ${CACHE_FROM}"
+          docker pull ${CACHE_FROM} || true
+        fi
     # Use `SVB` for passing through to the bootstrap
     # This covers the previous situation of dealing with `.0` releases,
     # which can now be passed via. `SVB` instead (rather than using `sed`)
@@ -110,8 +116,7 @@ commitlint:
         if [ "${SVB}" = "" ]; then
           export SVB=${SV}
         fi
-    - 'docker build .
-         --cache-from ${CACHE_FROM}
+    - '${CMD_DOCKER_BUILD}
          --file "Dockerfile.${PI}"
          --tag "${TAG}"
          --build-arg DISTRO_NAME="${DN}"
