@@ -205,15 +205,16 @@ debi-09.0-3001.4-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 debi-09.0-3000.6-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'             , DV: '9'      , PI: 'apt' , SIM: 'stable' , SV: '3000.6' , PV: '3' , EP: 'python3-pip'}}
 
 # FEDORA
-# Fedora has no python3 packages due to a tornado issue,
-# but they ship with Python3 since 29, so we install it using git
-# https://bugzilla.redhat.com/show_bug.cgi?id: 1723207
+# For Fedora, `stable` builds only appear to work with `latest` but that doesn't guarantee the actual latest version of Salt
+# * Fedora 33: `3002.2`
+# * Fedora 32: `3001.4`
+# Use for both accordingly in order to test against these latest available packages
 fedo-33.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'             , DV: '33'     , PI: 'dnf' , SIM: 'git'    , SV: 'master' , PV: '3' , EP: ''}}
-fedo-33.0-3002.2-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'             , DV: '33'     , PI: 'dnf' , SIM: 'git'    , SV: '3002.2' , PV: '3' , EP: ''}}
+fedo-33.0-3002.2-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'             , DV: '33'     , PI: 'dnf' , SIM: 'stable' , SV: 'latest' , PV: '3' , EP: ''}}
 fedo-33.0-3001.4-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'             , DV: '33'     , PI: 'dnf' , SIM: 'git'    , SV: '3001.4' , PV: '3' , EP: ''}}
 fedo-32.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'             , DV: '32'     , PI: 'dnf' , SIM: 'git'    , SV: 'master' , PV: '3' , EP: ''}}
 fedo-32.0-3002.2-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'             , DV: '32'     , PI: 'dnf' , SIM: 'git'    , SV: '3002.2' , PV: '3' , EP: ''}}
-fedo-32.0-3001.4-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'             , DV: '32'     , PI: 'dnf' , SIM: 'git'    , SV: '3001.4' , PV: '3' , EP: ''}}
+fedo-32.0-3001.4-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'             , DV: '32'     , PI: 'dnf' , SIM: 'stable' , SV: 'latest' , PV: '3' , EP: ''}}
 
 # GENTOO
 gent-late-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'      , DV: 'latest' , PI: 'emg' , SIM: 'git'    , SV: 'master' , PV: '3' , EP: ''}}
