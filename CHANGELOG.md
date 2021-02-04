@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.20.1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.20.0...v1.20.1) (2021-02-04)
+
+
+### Build System
+
+* **requirements:** fix package versions used for `testinfra` ([5e36581](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/5e365812cf5655c1f81adb47bebec2424be1c556))
+
+
+### Tests
+
+* **salt_version:** update for new PEP440-compliant version numbers ([793acf0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/793acf0ffa3217c8abb9b218615310df63f83919))
+
 # [1.20.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.19.0...v1.20.0) (2021-01-26)
 
 
