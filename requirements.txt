@@ -7,10 +7,10 @@ pathlib2==2.3.5
 pluggy==0.13.1
 py==1.10.0
 pyparsing==2.4.7
-pytest-testinfra==6.1.0
 pytest==6.2.2
+pytest-testinfra==6.1.0
 six==1.15.0
-testinfra==6.0.0
 toml==0.10.2
+typing-extensions==3.7.4.3
 wcwidth==0.2.5
 zipp==3.4.0
