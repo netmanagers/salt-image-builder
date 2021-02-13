@@ -1,5 +1,13 @@
 # Changelog
 
+# [1.21.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.20.1...v1.21.0) (2021-02-13)
+
+
+### Features
+
+* **gitlab-ci:** allow failures for Arch Linux & Oracle Linux 8 ([fe7ba7d](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/fe7ba7d4c496523ac6ca9ca9f02fef4ba0cbf309))
+* **gitlab-ci:** build `orac-07.0-master-py3` (Oracle Linux 7) ([80f4886](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/80f488686895bf4a399b65916eadeb6d96bdfbc7))
+
 ## [1.20.1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.20.0...v1.20.1) (2021-02-04)
 
 
