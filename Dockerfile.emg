@@ -12,7 +12,11 @@ ARG SALT_INSTALL_METHOD
 ARG SALT_VERSION
 ARG PYTHON_VERSION
 ARG EXTRA_PACKAGES=""
-ARG PKGS="app-admin/sudo dev-python/pip dev-vcs/git ${EXTRA_PACKAGES}"
+# Provide packages used by `kitchen-docker` to speed up testing
+# These are now expected by the `ssf` customised `kitchen-docker` being used:
+# - https://gitlab.com/saltstack-formulas/infrastructure/kitchen-docker/-/compare/master...ssf 
+ARG KITCHEN_DOCKER_PACKAGES="app-admin/sudo net-misc/openssh"
+ARG PKGS="${KITCHEN_DOCKER_PACKAGES} dev-python/pip dev-vcs/git ${EXTRA_PACKAGES}"
 
 SHELL ["/bin/bash", "-x", "-o", "pipefail", "-c"]
 RUN mkdir --parents /etc/portage/repos.conf \
