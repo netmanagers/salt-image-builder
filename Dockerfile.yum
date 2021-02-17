@@ -12,7 +12,11 @@ ARG SALT_INSTALL_METHOD
 ARG SALT_VERSION
 ARG PYTHON_VERSION
 ARG EXTRA_PACKAGES=""
-ARG PKGS="curl git net-tools openssh-clients openssh-server python3-pip sudo systemd udev which ${EXTRA_PACKAGES}"
+# Provide packages used by `kitchen-docker` to speed up testing
+# These are now expected by the `ssf` customised `kitchen-docker` being used:
+# - https://gitlab.com/saltstack-formulas/infrastructure/kitchen-docker/-/compare/master...ssf 
+ARG KITCHEN_DOCKER_PACKAGES="curl openssh-clients openssh-server sudo which"
+ARG PKGS="${KITCHEN_DOCKER_PACKAGES} git net-tools python3-pip systemd udev ${EXTRA_PACKAGES}"
 
 SHELL ["/bin/bash", "-x", "-o", "pipefail", "-c"]
 # hadolint ignore=SC1075,SC2016,DL3033

@@ -13,7 +13,11 @@ ARG SALT_VERSION
 ARG PYTHON_VERSION
 ARG EXTRA_PACKAGES=""
 ARG DEBIAN_FRONTEND="noninteractive"
-ARG PKGS="apt-transport-https curl dirmngr git gnupg locales lsb-release net-tools openssh-server procps sudo systemd systemd systemd-sysv udev wget ${EXTRA_PACKAGES}"
+# Provide packages used by `kitchen-docker` to speed up testing
+# These are now expected by the `ssf` customised `kitchen-docker` being used:
+# - https://gitlab.com/saltstack-formulas/infrastructure/kitchen-docker/-/compare/master...ssf 
+ARG KITCHEN_DOCKER_PACKAGES="curl lsb-release openssh-server sudo"
+ARG PKGS="${KITCHEN_DOCKER_PACKAGES} apt-transport-https dirmngr git gnupg locales net-tools procps systemd systemd-sysv udev wget ${EXTRA_PACKAGES}"
 
 # Avoid unnecessary files when installing packages
 COPY files/dpkg-nodoc /etc/dpkg/dpkg.cfg.d/01_nodoc
