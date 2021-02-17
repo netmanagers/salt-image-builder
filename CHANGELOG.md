@@ -1,5 +1,13 @@
 # Changelog
 
+# [1.22.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.21.0...v1.22.0) (2021-02-17)
+
+
+### Features
+
+* **dockerfile.*:** update to work with custom `kitchen-docker` repo ([435222b](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/435222bf78e5dbd5f34808aefe880862a3d9b090))
+* **gitlab-ci:** allow failures for openSUSE Tumbleweed ([cb88b3a](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/cb88b3aefef969280f0f39c6036908580953edf5))
+
 # [1.21.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.20.1...v1.21.0) (2021-02-13)
 
 
