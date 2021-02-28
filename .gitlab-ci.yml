@@ -182,13 +182,9 @@ amaz-02.0-3001.6-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 amaz-02.0-3000.8-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'amazonlinux'        , DV: '2'      , PI: 'yum', SIM: 'stable', SV: '3000.8', SVB: ''      , PV: '3', EP: 'procps-ng yum-utils'}}
 
 # ARCHLINUX
-# The Salt bootstrap installer does not provide packages nor installs with py3 for Arch
-# so we're building only the git'ted py2 versions
-# NOTE: Removed broken `py2` image for `SV: 'master'` since that's been deprecated in `Sodium` and
-#       no working `py3` version available
-arch-late-3002.5-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'archlinux/base'     , DV: 'latest' , PI: 'pac', SIM: 'git'   , SV: '3002.5', SVB: ''      , PV: '3', EP: 'python-pip'}}
-arch-late-3001.6-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'archlinux/base'     , DV: 'latest' , PI: 'pac', SIM: 'git'   , SV: '3001.6', SVB: ''      , PV: '3', EP: 'python-pip'}}
-arch-late-3000.8-py2: {extends: '.build_image_failure_permitted', variables: {DN: 'archlinux/base'     , DV: 'latest' , PI: 'pac', SIM: 'git'   , SV: '3000.8', SVB: ''      , PV: '2', EP: 'python2-pip'}}
+arch-late-3002.5-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'archlinux/base'     , DV: 'latest' , PI: 'pac', SIM: 'stable', SV: '3002.5', SVB: 'latest', PV: '3', EP: 'python-pip'}}
+arch-late-3001.6-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'archlinux/base'     , DV: 'latest' , PI: 'pac', SIM: 'git'   , SV: '3001.6', SVB: ''      , PV: '3', EP: 'python-pip'}}
+arch-late-3000.8-py2: {extends: '.build_image_failure_forbidden', variables: {DN: 'archlinux/base'     , DV: 'latest' , PI: 'pac', SIM: 'git'   , SV: '3000.8', SVB: ''      , PV: '2', EP: 'python2-pip'}}
 
 # CENTOS
 cent-08.0-tiamat-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'centos'             , DV: '8'      , PI: 'yum', SIM: 'stable', SV: 'tiamat', SVB: ''      , PV: '3', EP: 'glibc-langpack-en openssl-devel python3 python3-devel swig'}}

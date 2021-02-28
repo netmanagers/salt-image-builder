@@ -23,16 +23,15 @@ ARG BUILD_USER="bin"
 SHELL ["/bin/bash", "-x", "-o", "pipefail", "-c"]
 RUN pacman --noconfirm -Sy archlinux-keyring \
  && pacman-db-upgrade \
- && pacman --noconfirm -Syu ${PKGS} \
- && systemctl enable sshd \
- && if [ "${PYTHON_VERSION}" != "3" ]; then \
+ && if [ "${PYTHON_VERSION}" = "2" ] || [ "${SALT_INSTALL_METHOD}" = "stable" ]; then \
+      pacman --noconfirm -Syu ${PKGS}; \
       curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
       sh -s -- -XUdfP -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION; \
     else \
+      pacman --noconfirm -Syu ${PKGS} ${BUILD_PACKAGES}; \
       # Build using the AUR `salt-py3` package provided by zer0def <zer0def@github>
       # This section is based upon the diff provided by zer0def during a conversation
       # in the Slack #irc channel: https://freenode.logbot.info/salt/20201027#c5608179-c5610234
-
       # Set the exports for installing the specific version of Salt
       export PKGVER="${SALT_VERSION}"; \
       # Note that the `.0` versions will be sent through to this file without the `.0`.
@@ -74,6 +73,7 @@ RUN pacman --noconfirm -Sy archlinux-keyring \
       pacman --noconfirm -Rs ${BUILD_PACKAGES}; \
       rm -rf /etc/sudoers.d/salt-build /tmp/salt-py3/; \
     fi \
+ && systemctl enable sshd \
  && systemctl disable salt-minion.service > /dev/null 2>&1 \
     # Remove unnecessary getty and udev targets that result in high CPU usage when using
     # multiple containers with Molecule or Kitchen (https://github.com/ansible/molecule/issues/1104)
