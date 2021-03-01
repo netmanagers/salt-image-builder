@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.23.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.22.0...v1.23.0) (2021-03-01)
+
+
+### Features
+
+* **gentoo:** prevent `pkg.refresh_db` when actually testing formulas ([354456c](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/354456c541f05b5fa19777c001f377466ae4d876)), closes [/github.com/saltstack/salt/blob/321ddbecbab0bd3f6e697d683d8a130b0b9a6f85/salt/modules/ebuildpkg.py#L506](https://gitlab.com//github.com/saltstack/salt/blob/321ddbecbab0bd3f6e697d683d8a130b0b9a6f85/salt/modules/ebuildpkg.py/issues/L506) [/github.com/saltstack/salt/blob/321ddbecbab0bd3f6e697d683d8a130b0b9a6f85/salt/modules/ebuildpkg.py#L469-L475](https://gitlab.com//github.com/saltstack/salt/blob/321ddbecbab0bd3f6e697d683d8a130b0b9a6f85/salt/modules/ebuildpkg.py/issues/L469-L475) [/github.com/saltstack/salt/blob/321ddbecbab0bd3f6e697d683d8a130b0b9a6f85/salt/modules/ebuildpkg.py#L483](https://gitlab.com//github.com/saltstack/salt/blob/321ddbecbab0bd3f6e697d683d8a130b0b9a6f85/salt/modules/ebuildpkg.py/issues/L483)
+
 # [1.22.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.21.0...v1.22.0) (2021-02-17)
 
 
