@@ -37,9 +37,20 @@ RUN mkdir --parents /etc/portage/repos.conf \
        /sbin/rc-update del salt-minion default > /dev/null 2>&1) \
       || true; \
     fi \
+    # Adjust `pkg.refresh_db` to never run in `master`-version test containers when running tests
+    # Keeping the portage repository, as mentioned below
+    # Since these images are built every week, this essentially "simulates" a weekly version of `portage:sync_wait_one_day`
+    # Consider removing this `if` to apply to all versions
+ && if [ "${SALT_VERSION}" == "master" ]; then \
+      # The first `find` command is to log where the actual file is located
+      find /usr/lib/ -type f -name ebuildpkg.py | grep 'salt/modules/ebuildpkg.py'; \
+      sed -i -e '/has_emaint = os.path.isdir("\/etc\/portage\/repos.conf")/s//log.debug("Did not sync package tree in order to speed up testing with this custom Gentoo container.")\n    return False\n    &/' "$(find /usr/lib/ -type f -name ebuildpkg.py | grep 'salt/modules/ebuildpkg.py')"; \
+    fi \
     # Remove unnecessary getty and udev targets that result in high CPU usage when using
     # multiple containers with Molecule or Kitchen https://github.com/ansible/molecule/issues/1104
-    # Remove portage repository, binary packages, and downloaded sources
+    # Remove binary packages and downloaded sources
+    # Was also removing the portage repository until (844ec6dee01cd8e06b45906e81f7f058b3399a5e):
+    # https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/-/merge_requests/55#note_427462634
  && rm -rf /var/cache/{salt,binpkgs,distfiles} \
            /lib/systemd/system/systemd*udev* \
            /lib/systemd/system/getty.target \
