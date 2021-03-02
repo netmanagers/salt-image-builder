@@ -21,6 +21,11 @@ ARG PKGS="${KITCHEN_DOCKER_PACKAGES} dev-python/pip dev-vcs/git ${EXTRA_PACKAGES
 SHELL ["/bin/bash", "-x", "-o", "pipefail", "-c"]
 RUN mkdir --parents /etc/portage/repos.conf \
  && cp /usr/share/portage/config/repos.conf /etc/portage/repos.conf/gentoo.conf \
+    # Adjust portage configuration to avoid syncing the package tree when Salt's `pkg.refresh_db` runs `emaint sync -a`
+    # The idea is to never run a sync in containers when running tests, due to it taking ~15 minutes each time
+    # We're already keeping the portage repository, as mentioned below
+    # Since these images are built every week, this essentially "simulates" a weekly version of `portage:sync_wait_one_day`
+ && sed -i -e "/^\(auto-sync = \)yes$/s//\1no/" /etc/portage/repos.conf/gentoo.conf \
  && emerge-webrsync \
  && emerge --noreplace --quiet --with-bdeps-auto=n ${PKGS} \
  && curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
@@ -36,15 +41,6 @@ RUN mkdir --parents /etc/portage/repos.conf \
       (/sbin/rc-update add sshd default > /dev/null 2>&1; \
        /sbin/rc-update del salt-minion default > /dev/null 2>&1) \
       || true; \
-    fi \
-    # Adjust `pkg.refresh_db` to never run in `master`-version test containers when running tests
-    # Keeping the portage repository, as mentioned below
-    # Since these images are built every week, this essentially "simulates" a weekly version of `portage:sync_wait_one_day`
-    # Consider removing this `if` to apply to all versions
- && if [ "${SALT_VERSION}" == "master" ]; then \
-      # The first `find` command is to log where the actual file is located
-      find /usr/lib/ -type f -name ebuildpkg.py | grep 'salt/modules/ebuildpkg.py'; \
-      sed -i -e '/has_emaint = os.path.isdir("\/etc\/portage\/repos.conf")/s//log.debug("Did not sync package tree in order to speed up testing with this custom Gentoo container.")\n    return False\n    &/' "$(find /usr/lib/ -type f -name ebuildpkg.py | grep 'salt/modules/ebuildpkg.py')"; \
     fi \
     # Remove unnecessary getty and udev targets that result in high CPU usage when using
     # multiple containers with Molecule or Kitchen https://github.com/ansible/molecule/issues/1104
