@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.23.1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.23.0...v1.23.1) (2021-03-02)
+
+
+### Bug Fixes
+
+* **gitlab-ci:** use `security-opt` workaround for Tumbleweed ([b2947c5](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/b2947c572d94a71d72ff97228a24d7b79d1dbe78))
+
 # [1.23.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.22.0...v1.23.0) (2021-03-01)
 
 
