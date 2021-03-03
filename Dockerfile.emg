@@ -1,6 +1,14 @@
-# Use `ksmanis/stage3` until `gentoo/stage3` is upgraded
 ARG DISTRO_VERSION
+
+# Name the portage image
+# hadolint ignore=DL3007
+FROM gentoo/portage:latest as portage
+
+# Use `ksmanis/stage3` until `gentoo/stage3` is upgraded
 FROM ksmanis/stage3:$DISTRO_VERSION
+
+# copy the entire portage volume in
+COPY --from=portage /var/db/repos/gentoo /var/db/repos/gentoo
 
 LABEL maintainer="javier@netmanagers.com.ar"
 
@@ -26,7 +34,6 @@ RUN mkdir --parents /etc/portage/repos.conf \
     # We're already keeping the portage repository, as mentioned below
     # Since these images are built every week, this essentially "simulates" a weekly version of `portage:sync_wait_one_day`
  && sed -i -e "/^\(auto-sync = \)yes$/s//\1no/" /etc/portage/repos.conf/gentoo.conf \
- && emerge-webrsync \
  && emerge --noreplace --quiet --with-bdeps-auto=n ${PKGS} \
  && curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
     sh -s -- -XUdfP -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION \
