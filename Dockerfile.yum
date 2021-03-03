@@ -19,10 +19,14 @@ ARG KITCHEN_DOCKER_PACKAGES="curl openssh-clients openssh-server sudo which"
 ARG PKGS="${KITCHEN_DOCKER_PACKAGES} git net-tools python3-pip systemd udev ${EXTRA_PACKAGES}"
 
 SHELL ["/bin/bash", "-x", "-o", "pipefail", "-c"]
-# hadolint ignore=SC1075,SC2016,DL3033
+# hadolint ignore=SC1075,SC2016,DL3033,DL3041
 RUN if [[ "${DISTRO_NAME}" = "centos" ]]; then \
       # Install EPEL repo for `centos`
       yum -y install epel-release; \
+    fi \
+    # Workaround: `yum` is no longer available in Oracle Linux 8
+ && if [ "${DISTRO_NAME}" = "oraclelinux" ] && [ "${DISTRO_VERSION}" = "8" ]; then \
+      dnf install -y yum && dnf clean all; \
     fi \
  && yum -y install ${PKGS} \
  && if [ "${SALT_VERSION}" != "tiamat" ]; then \
@@ -32,7 +36,7 @@ RUN if [[ "${DISTRO_NAME}" = "centos" ]]; then \
       # TODO: Use `TIAMAT_DISTRO_NAME` for this section, to deal with trimming
       #       `linux` from the end of the name as well, as required below
       # Use `centos` packages for `oraclelinux`
-      if [[ "${DISTRO_NAME}" = "oraclelinux" ]]; then \
+      if [ "${DISTRO_NAME}" = "oraclelinux" ]; then \
         DISTRO_NAME="centos"; \
       fi; \
       rpm --import https://artifactory.saltstack.net/artifactory/api/gpg/key/public; \
@@ -60,16 +64,6 @@ RUN if [[ "${DISTRO_NAME}" = "centos" ]]; then \
       systemctl disable salt-minion.service > /dev/null 2>&1; \
     elif [ -f "/etc/init.d/salt-minion" ]; then \
       /sbin/chkconfig salt-minion off; \
-    fi \
-    # Centos 6 installs python27-pip from the salt repo
- && if [[ "${DISTRO_NAME}" = "centos" && "${DISTRO_VERSION}" = "6" ]]; then \
-      yum -y install $EXTRA_PACKAGES; \
-      ln -s /usr/bin/pip2.7 /usr/bin/pip; \
-    fi \
-    # Amazon 1 installs python26-pip
- && if [[ "${DISTRO_NAME}" = "amazonlinux" && "${DISTRO_VERSION}" = "1" ]]; then \
-      yum -y install $EXTRA_PACKAGES; \
-      ln -s /usr/bin/pip-2.6 /usr/bin/pip; \
     fi \
     # Remove unnecessary getty and udev targets that result in high CPU usage when using
     # multiple containers with Molecule or Kitchen (https://github.com/ansible/molecule/issues/1104)
