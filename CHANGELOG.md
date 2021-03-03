@@ -1,5 +1,20 @@
 # Changelog
 
+# [1.24.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.23.1...v1.24.0) (2021-03-03)
+
+
+### Code Refactoring
+
+* **gentoo:** use portage config instead of `pkg.refresh_db` hack ([8ed74fc](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/8ed74fcde8166d78ae876510793310c87a91ace2)), closes [/gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/-/merge_requests/85#note_520616666](https://gitlab.com//gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/-/merge_requests/85/issues/note_520616666) [/github.com/saltstack/salt/blob/321ddbecbab0bd3f6e697d683d8a130b0b9a6f85/salt/modules/ebuildpkg.py#L483](https://gitlab.com//github.com/saltstack/salt/blob/321ddbecbab0bd3f6e697d683d8a130b0b9a6f85/salt/modules/ebuildpkg.py/issues/L483) [/github.com/saltstack/salt/blob/321ddbecbab0bd3f6e697d683d8a130b0b9a6f85/salt/modules/ebuildpkg.py#L506](https://gitlab.com//github.com/saltstack/salt/blob/321ddbecbab0bd3f6e697d683d8a130b0b9a6f85/salt/modules/ebuildpkg.py/issues/L506)
+
+
+### Features
+
+* **arch:** install using `salt-bootstrap` for `stable` or `py2` ([9d964cf](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/9d964cf4abfb0682c59fea1f4d91d0a2ca180470))
+* **gentoo:** use `portage` image to provide `/var/db/repos/gentoo` ([74d9657](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/74d96575eabf2c5c8d871c695ee0e39aec4e7364))
+* **gitlab-ci:** build CVE `3002.5`, `3001.6` & `3000.8` images ([64318c2](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/64318c2b46b6c68084e21b3347d5d457435b82b0))
+* **oracle-8:** install `yum` as workaround (also clear old platforms) ([702d807](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/702d807b43af0ee6eec7bcfd939a6177aff346b2)), closes [/github.com/saltstack/salt-bootstrap/issues/1537#issuecomment-789488271](https://gitlab.com//github.com/saltstack/salt-bootstrap/issues/1537/issues/issuecomment-789488271)
+
 ## [1.23.1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.23.0...v1.23.1) (2021-03-02)
 
 
