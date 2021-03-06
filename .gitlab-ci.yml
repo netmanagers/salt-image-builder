@@ -244,7 +244,7 @@ gent-sysd-3000.8-py3: {extends: '.build_image_failure_permitted', variables: {DN
 opsu-tmbl-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/tumbleweed', DV: 'latest' , PI: 'zyp', SIM: 'git'   , SV: 'master', SVB: ''      , PV: '3', EP: 'gzip'}}
 # opsu-tmbl-3002.5-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/tumbleweed', DV: 'latest' , PI: 'zyp', SIM: 'stable', SV: '3002.5', SVB: 'latest', PV: '3', EP: 'gzip'}}
 opsu-tmbl-3002.2-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/tumbleweed', DV: 'latest' , PI: 'zyp', SIM: 'stable', SV: '3002.2', SVB: 'latest', PV: '3', EP: 'gzip'}}
-opsu-tmbl-3001.4-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/tumbleweed', DV: 'latest' , PI: 'zyp', SIM: 'git'   , SV: '3001.4', SVB: ''      , PV: '3', EP: 'gzip'}}
+opsu-tmbl-3001.6-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/tumbleweed', DV: 'latest' , PI: 'zyp', SIM: 'git'   , SV: '3001.6', SVB: ''      , PV: '3', EP: 'gzip'}}
 opsu-15.2-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'      , DV: '15.2'   , PI: 'zyp', SIM: 'git'   , SV: 'master', SVB: ''      , PV: '3', EP: ''}}
 # opsu-15.2-3002.5-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'      , DV: '15.2'   , PI: 'zyp', SIM: 'stable', SV: '3002.5', SVB: 'latest', PV: '3', EP: ''}}
 opsu-15.2-3002.2-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'      , DV: '15.2'   , PI: 'zyp', SIM: 'stable', SV: '3002.2', SVB: 'latest', PV: '3', EP: ''}}
