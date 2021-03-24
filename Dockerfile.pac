@@ -35,36 +35,25 @@ RUN pacman --noconfirm -Sy archlinux-keyring \
       # Set the exports for installing the specific version of Salt
       export PKGVER="${SALT_VERSION}"; \
       # Note that the `.0` versions will be sent through to this file without the `.0`.
-      if [ "${SALT_VERSION}" = "3002.5" ]; then \
+      # Only keeping the last two releases for each version
+      if [ "${SALT_VERSION}" = "3002.6" ]; then \
+        export PKGSUM_SHA512=1c0c4d3c925202809d65566da15bf33ec01830ab9da3ad8e98d06bb0626b3c084e1adfb8e31f1e43baaf6e307803e788b3d05c415a1a8e08e61be788a61503f5; \
+        export PKGSUM_B2=a4c607131f1676ce263a1301745feaded5a699dd28d2e31862064e08452214c2c6c5791f476288b951a0e96c65574b209b1544ecf503698acf31e190e5d44325; \
+      elif [ "${SALT_VERSION}" = "3002.5" ]; then \
         export PKGSUM_SHA512=dda2caa338f646ec51d2de6b0df10fbb27eceddbe8c797ae192b9ef1312d566ae71a243a3a95918fa375b125089aa29a73b1b908c5cc1b0451dccb582a4978a1; \
         export PKGSUM_B2=baa90bb0caea572dfbe12d92fb488ee0c4adef9a07221f394009cd43a62ffef18c57f2e7cdcfcd923807c7a3d02ce6833480f74d70250c29d311420f30514300; \
-      elif [ "${SALT_VERSION}" = "3002.2" ]; then \
-        export PKGSUM_SHA512=0f617a07475347b1bb0d1c6059de541e102103182820dfd6f64f4c281d660e68358eb1ab7171a637e16cef9fea2517c8356df9c449f9bbc92538aa86c316f652; \
-        export PKGSUM_B2=b26895ababc8551e01baa806c5a0e41dab9a379e47d2289b5c3c529ef762c69631d7ed8b32339ec66c3929c5883782131eb56d1bfbcc743829c4f0199a900ca1; \
-      elif [ "${SALT_VERSION}" = "3002.1" ]; then \
-        export PKGSUM_SHA512=8fc02d0b47dad60f96eb4442b0e8a31f04d796f12b845c8142135593af4c7ea9c2d9335a3f520f8858951f87b0e8cc6be70d383fde2d93a6d529e077bcc87114; \
-        export PKGSUM_B2=d084dc650b8bc92b4ebdb145a41a39bfbd034064fad65e364260eca84d7105fb645ad8f6cea2cc1b6affb1abf21a9858ab6fb526eaf4ecd8f76c70d1384c7edc; \
-      elif [ "${SALT_VERSION}" = "3002" ]; then \
-        export PKGSUM_SHA512=7a3ed78b301e9c1ef65c8e6aeeaebc2376b3942e94e38b0591860fa1d9213c6c0f85db4d932b4c7c9d20717027a686690973d0dfd2aff17f44abae0ec0e97d31; \
-        export PKGSUM_B2=7463cfe558515697177fedb25fdf9f2e2819b62e3a96c8196b4243a4f2a59a202ac5a3869138b2df00fb47238329ba102396b464379f09d2a79c8c0a672638fb; \
+      elif [ "${SALT_VERSION}" = "3001.7" ]; then \
+        export PKGSUM_SHA512=5414298cf9e3e198980bef5eec856290b1b73d5c4fbd01fbf43a4f4c3757daa86d54fcc4ed93a23e3ee224c2968941d26937ea2a6201bde47f2b8ec8918838e4; \
+        export PKGSUM_B2=6141cd62edb67f8520134420b6fddc201dc8222bd24f4387c20e42f72157c108940d219336889577341b86b195f96d55a64b9ac88006adea656dc10368131d45; \
       elif [ "${SALT_VERSION}" = "3001.6" ]; then \
         export PKGSUM_SHA512=e45c9cfddb64ab1c9d66b6b6b3e5ff8d9010c01307161e5013140b4362ee630cf912ab153d1afa72f56d18fc5353293b2f4b449caf8ee384d1e93204d490bf4c; \
         export PKGSUM_B2=00e7674452e9d61c3cd487d27a3a1f3435c6b12dcc89008aa63c96814957b6ce8654f4d4d51dbce7b14027f0cee66fd2ea9602f6be18bf2f4beac11ae164f89f; \
-      elif [ "${SALT_VERSION}" = "3001.4" ]; then \
-        export PKGSUM_SHA512=b7f343c65917280a96d8a3eaa6b508121b11b9f9b0bfffa5b4c79af0023bdecf4581f76014847d97f48d9677edb6f632adec3850153c3048c3114128a250b84b; \
-        export PKGSUM_B2=cc33b29b0da9cfaae22726b2b471245880aafa106187b531872a9ae5ee773a94e0d550a68b11b74826bc0b35197a311f690535f2280931ccb5050275ad967c2d; \
-      elif [ "${SALT_VERSION}" = "3001.3" ]; then \
-        export PKGSUM_SHA512=a3c0f019fbe1f1edac11af291667f06597dbf4badeb0026107dcab4937efcb306ca6d3ba20195ff9fea5ee7a995db1c3a79236de3e990fc809c305e7f05e1c9d; \
-        export PKGSUM_B2=50d073d39826fb15cb424df3e55c2308dd18391c13a5c4a3fb01c1e1ecd8636dd45fdf34b1937563d069e51141fc40f48f77eaec6b1e1d6f9802418e611b20b1; \
-      elif [ "${SALT_VERSION}" = "3001.1" ]; then \
-        export PKGSUM_SHA512=d59b6c3580d3379192f36e462385c74b53b0b385e63b3db7734003d0a71df8f88593a59eeccd86b1dc15800e46d050094e7a88f2636673770ddc952d0110ca29; \
-        export PKGSUM_B2=3088955a07b6ff95588f5b6235e0bae9cea366e957e026bacd228af9f1ed500f88f7fb543833f2398d64fe7e4546f0f29d7c65362464097bf89424174e76c954; \
+      elif [ "${SALT_VERSION}" = "3000.9" ]; then \
+        export PKGSUM_SHA512=94214f20a8a080ebdcbb7e3351f60a466c3a92cc85d177c2ea677192a63e58b0f9cacfb1af04e14022a7ac570ebd0b931722d1d001a7655dcd7502813c29a092; \
+        export PKGSUM_B2=b76c166363b0b0fd3e3aa4b5306ba8280a2c99fbc7fd9866d957406bba8e6fcc03b769b53dbb80b115f9fa9f1fdc93e1eb257f4bf04283e414a309c16e4f078f; \
       elif [ "${SALT_VERSION}" = "3000.8" ]; then \
         export PKGSUM_SHA512=a18d5bea3b3835f83d5b1e5315990d83f6c58c36df5589d5de0f8cc3a46db4c960b58032e29d56841a160b9b170cdbb81bca38dbbd72ccb5866ccc8a7da6e800; \
         export PKGSUM_B2=df306669ba11dd650621222ff9c69f5a6e16b6f431e9d93e6712ee95da43091bfe28416fe0d71988ed9ee70cb347755b779a356c50fa59c63c67a874ed1906f4; \
-      elif [ "${SALT_VERSION}" = "3000.6" ]; then \
-        export PKGSUM_SHA512=739e3671766c45a0ef1eb45933c7f00f14586e91f4c4a79cbed913a48961a48baee853206ba569491756e8a872d22f3635eb6bc1a366020e551c567b2334c508; \
-        export PKGSUM_B2=5a532a6915b331fb532dc6e1651cf8fca3e1a5e9f29f6d75260fdb1162dbfeec755c65f7c6fc28b1cc7dc3ace978547830af31aafc1eee8419bbc7e695725787; \
       fi; \
       # Perform the build
       echo "${BUILD_USER} ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/salt-build; \
