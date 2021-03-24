@@ -1,5 +1,29 @@
 # Changelog
 
+# [1.25.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.24.0...v1.25.0) (2021-03-24)
+
+
+### Bug Fixes
+
+* **dockerfile.apt:** fix `hadolint` violation (DL3047) ([583c41c](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/583c41c030c911a104fd8cec61d2d08e4b4dedf3))
+* **dockerfile.pac:** add workaround for removed `python2-futures` ([83efb01](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/83efb01cb8d12bfed121b003233afc7000300f06))
+
+
+### Continuous Integration
+
+* **gitlab-ci:** add missed `opsu-tmbl-3001.6-py3` [skip ci] ([00d12fa](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/00d12fa2471447b9cded7bdf3b79fc01a99cc0cb))
+* **gitlab-ci:** avoid using Docker caching for `master` builds ([9b544d2](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/9b544d2a998479e44bed43c817f8dbb7430f05ca))
+
+
+### Features
+
+* **gitlab-ci:** build `3002.6`, `3001.7` & `3000.9` images ([fb9300e](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/fb9300e90f923a934ca5a49012ce85e53226ab47))
+
+
+### Tests
+
+* **salt_version:** update & simplify regexes for `master` & `tiamat` ([80bacf0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/80bacf0aae152a1ad56281e9b7b65ac22bde20c4))
+
 # [1.24.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.23.1...v1.24.0) (2021-03-03)
 
 
