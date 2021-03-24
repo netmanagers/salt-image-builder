@@ -6,18 +6,15 @@ def test_salt_version(host, saltvers, installmethod):
     # See https://github.com/saltstack/salt/blob/01b22ea1b141/salt/version.py#L54-L63
     git_sha_regex = r"g?[a-f0-9]{7,40}"
     pep440_master_format = r"3003\+0na." + git_sha_regex
-    master_format = r"3003-n/a-" + git_sha_regex
-    pep440_tiamat_format = r"3002\+0na." + git_sha_regex
-    tiamat_format = r"3002(.2)?-\d{3}-" + git_sha_regex
-    major_minor = r"3002.2"
+    pep440_tiamat_format = r"3003(rc\d)?\+\d{1,4}." + git_sha_regex
     if saltvers == "master":
-        # Either: new PEP440-compliant or existing `master` format
-        # https://pythex.org/?regex=3002%5C%2B0na.g%3F%5Ba-f0-9%5D%7B7%2C40%7D%7C3002-n%2Fa-g%3F%5Ba-f0-9%5D%7B7%2C40%7D&test_string=3002%2B0na.01b22ea%0A3002-n%2Fa-1e37616&ignorecase=0&multiline=0&dotall=0&verbose=0
-        saltvers = pep440_master_format + r"|" + master_format
+        # New PEP440-compliant `master` format
+        # https://pythex.org/?regex=3003%5C%2B0na.g%3F%5Ba-f0-9%5D%7B7%2C40%7D&test_string=3003%2B0na.10c4da2&ignorecase=0&multiline=0&dotall=0&verbose=0
+        saltvers = pep440_master_format
     elif saltvers == "tiamat":
-        # Either: new PEP440-compliant, existing `tiamat` format or even major/minor
-        # https://pythex.org/?regex=3002%5C%2B0na.g%3F%5Ba-f0-9%5D%7B7%2C40%7D%7C3002(.2)%3F-%5Cd%7B3%7D-g%3F%5Ba-f0-9%5D%7B7%2C40%7D%7C3002.2&test_string=3002%2B0na.2627e6c%0A3002.2-117-gda6819735c%0A3002-117-gda6819735c%0A3002.2&ignorecase=0&multiline=0&dotall=0&verbose=0
-        saltvers = pep440_tiamat_format + r"|" + tiamat_format + r"|" + major_minor
+        # New PEP440-compliant `tiamat` format
+        # https://pythex.org/?regex=3003(rc%5Cd)%3F%5C%2B%5Cd%7B1%2C4%7D.g%3F%5Ba-f0-9%5D%7B7%2C40%7D&test_string=3003rc1%2B52.g10c4da25c2%0A3003rc1%2B52.g10c4da2&ignorecase=0&multiline=0&dotall=0&verbose=0
+        saltvers = pep440_tiamat_format
     else:
         # Handle version branch when installing from git, remove leading "v"
         # v3001rc1 becomes 3001rc1
