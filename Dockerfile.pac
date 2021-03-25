@@ -26,8 +26,6 @@ RUN pacman --noconfirm -Sy archlinux-keyring \
  && if [ "${PYTHON_VERSION}" = "2" ] || [ "${SALT_INSTALL_METHOD}" = "stable" ]; then \
       pacman --noconfirm -Syu ${PKGS}; \
       curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
-      # Workaround recently removed `python2-futures` package
-      sed -e "/^\s\+pacman -Syu --noconfirm salt python2-futures || return 1/s/ python2-futures//" | \
       sh -s -- -XUdfP -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION; \
     else \
       pacman --noconfirm -Syu ${PKGS} ${BUILD_PACKAGES}; \

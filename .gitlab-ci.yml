@@ -183,8 +183,7 @@ amaz-02.0-3000.9-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 
 # ARCHLINUX
 # Latest stable release (can flag out-of-date from this page): https://archlinux.org/packages/community/any/salt/
-# arch-late-3002.6-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'archlinux/base'     , DV: 'latest' , PI: 'pac', SIM: 'stable', SV: '3002.6', SVB: 'latest', PV: '3', EP: 'python-pip'}}
-arch-late-3002.5-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'archlinux/base'     , DV: 'latest' , PI: 'pac', SIM: 'stable', SV: '3002.5', SVB: 'latest', PV: '3', EP: 'python-pip'}}
+arch-late-3002.6-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'archlinux/base'     , DV: 'latest' , PI: 'pac', SIM: 'stable', SV: '3002.6', SVB: 'latest', PV: '3', EP: 'python-pip'}}
 arch-late-3001.7-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'archlinux/base'     , DV: 'latest' , PI: 'pac', SIM: 'git'   , SV: '3001.7', SVB: ''      , PV: '3', EP: 'python-pip'}}
 arch-late-3000.9-py2: {extends: '.build_image_failure_forbidden', variables: {DN: 'archlinux/base'     , DV: 'latest' , PI: 'pac', SIM: 'git'   , SV: '3000.9', SVB: ''      , PV: '2', EP: 'python2-pip'}}
 
