@@ -1,5 +1,17 @@
 # Changelog
 
+# [1.26.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.25.0...v1.26.0) (2021-04-01)
+
+
+### Bug Fixes
+
+* **dockerfile.pac:** remove workaround for removed `python2-futures` ([f2047cf](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/f2047cf2b91d81d5a22df1b046ddce2b46f7784e))
+
+
+### Features
+
+* **gitlab-ci:** build `3002.6` for Arch Linux [skip ci] ([00c39d9](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/00c39d9e1ecfa607296d10de0d03e45ec78c4187))
+
 # [1.25.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.24.0...v1.25.0) (2021-03-24)
 
 
