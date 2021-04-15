@@ -218,15 +218,11 @@ debi-09.0-3000.9-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 # Use for both accordingly in order to test against these latest available packages
 # Progress for new releases is visible here: https://bodhi.fedoraproject.org/updates/?search=salt
 fedo-33.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'             , DV: '33'     , PI: 'dnf', SIM: 'git'   , SV: 'master', SVB: ''      , PV: '3', EP: ''}}
-# fedo-33.0-3002.6-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'             , DV: '33'     , PI: 'dnf', SIM: 'stable', SV: '3002.6', SVB: 'latest', PV: '3', EP: ''}}
-fedo-33.0-3002.5-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'             , DV: '33'     , PI: 'dnf', SIM: 'stable', SV: '3002.5', SVB: 'latest', PV: '3', EP: ''}}
-# fedo-33.0-3001.7-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'             , DV: '33'     , PI: 'dnf', SIM: 'git'   , SV: '3001.7', SVB: ''      , PV: '3', EP: ''}}
-fedo-33.0-3001.6-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'             , DV: '33'     , PI: 'dnf', SIM: 'git'   , SV: '3001.6', SVB: ''      , PV: '3', EP: ''}}
+fedo-33.0-3002.6-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'             , DV: '33'     , PI: 'dnf', SIM: 'stable', SV: '3002.6', SVB: 'latest', PV: '3', EP: ''}}
+fedo-33.0-3001.7-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'             , DV: '33'     , PI: 'dnf', SIM: 'git'   , SV: '3001.7', SVB: ''      , PV: '3', EP: ''}}
 fedo-32.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'             , DV: '32'     , PI: 'dnf', SIM: 'git'   , SV: 'master', SVB: ''      , PV: '3', EP: ''}}
-# fedo-32.0-3002.6-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'             , DV: '32'     , PI: 'dnf', SIM: 'git'   , SV: '3002.6', SVB: ''      , PV: '3', EP: ''}}
-fedo-32.0-3002.5-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'             , DV: '32'     , PI: 'dnf', SIM: 'git'   , SV: '3002.5', SVB: ''      , PV: '3', EP: ''}}
-# fedo-32.0-3001.7-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'             , DV: '32'     , PI: 'dnf', SIM: 'stable', SV: '3001.7', SVB: 'latest', PV: '3', EP: ''}}
-fedo-32.0-3001.6-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'             , DV: '32'     , PI: 'dnf', SIM: 'stable', SV: '3001.6', SVB: 'latest', PV: '3', EP: ''}}
+fedo-32.0-3002.6-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'             , DV: '32'     , PI: 'dnf', SIM: 'git'   , SV: '3002.6', SVB: ''      , PV: '3', EP: ''}}
+fedo-32.0-3001.7-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'             , DV: '32'     , PI: 'dnf', SIM: 'stable', SV: '3001.7', SVB: 'latest', PV: '3', EP: ''}}
 
 # GENTOO
 # Available versions: https://packages.gentoo.org/packages/app-admin/salt
