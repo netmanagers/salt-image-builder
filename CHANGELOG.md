@@ -1,5 +1,30 @@
 # Changelog
 
+# [1.27.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.26.0...v1.27.0) (2021-04-20)
+
+
+### Bug Fixes
+
+* **dockerfile.yum:** use workaround for Amazon Linux stable builds ([95e8362](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/95e83624364156a310bd22dcb9dfc6faaf6b1c0c))
+
+
+### Continuous Integration
+
+* **travis:** remove unused Travis CI configuration file ([5ebf370](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/5ebf370c6b01ebd4ef2bfedf46be81eeadd1dafe))
+
+
+### Features
+
+* **aluminium:** add `3003.0` ([524d12e](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/524d12efdd1ed2bff35ca5a128d87fe2d56d4fe4))
+* **fedora:** build `3002.6` & `3001.7` images ([ca021ae](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/ca021ae8abc2be46f790a81c88af29f98811e79a))
+* **fedora:** build Fedora 34 & 35 images ([bccddec](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/bccddec16c00cbde13db2b0fd1449040831df43d))
+* **gitlab-ci:** use new Arch Linux image (previous is deprecated) ([9325d30](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/9325d30a8b88a6453dbbea3d4d1d0073eff41d0a))
+
+
+### Tests
+
+* **salt_version:** reintroduce major/minor version for `tiamat` builds ([55f83f5](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/55f83f51cfa97310ffc0367c292a6572292d9678))
+
 # [1.26.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.25.0...v1.26.0) (2021-04-01)
 
 
