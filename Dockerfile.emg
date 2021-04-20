@@ -36,7 +36,7 @@ RUN mkdir --parents /etc/portage/repos.conf \
  && sed -i -e "/^\(auto-sync = \)yes$/s//\1no/" /etc/portage/repos.conf/gentoo.conf \
  && emerge --noreplace --quiet --with-bdeps-auto=n ${PKGS} \
  && curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
-    sh -s -- -XUdfP -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION \
+    sh -s -- -XUdfPD -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION \
     # Generate locales
  && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen && locale-gen \
     # Enable sshd and disable salt's service as we don't need it running

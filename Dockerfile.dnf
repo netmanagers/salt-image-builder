@@ -22,7 +22,7 @@ SHELL ["/bin/bash", "-x", "-o", "pipefail", "-c"]
 # hadolint ignore=DL3041
 RUN dnf -y update && dnf -y install ${PKGS} --setopt=install_weak_deps=False && dnf clean all \
  && curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
-    sh -s -- -XUdfP -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION \
+    sh -s -- -XUdfPD -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION \
  && systemctl disable salt-minion.service > /dev/null 2>&1 \
     # Add `ssh-rsa` to `PubkeyAcceptedKeyTypes` since Kitchen testing currently relies on
     # this keypair type (make the SSH policy in `fedora-33` behave like previous versions)
