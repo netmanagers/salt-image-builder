@@ -34,7 +34,7 @@ RUN zypper refresh && zypper install --no-recommends -y ${PKGS} && zypper clean 
     # Also use the `-w` flag for SUSE, to use the downstream repo, as outlined here:
     # https://github.com/saltstack/salt-bootstrap/blob/4310738bc4cf3b89b2873c0d66f71cbf0888edff/bootstrap-salt.sh#L323-L325
  && curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
-    sh -s -- -XUdfPw -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION \
+    sh -s -- -XUdfPwD -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION \
  && systemctl disable salt-minion.service > /dev/null 2>&1 \
     # Remove unnecessary getty and udev targets that result in high CPU usage when using
     # multiple containers with Molecule or Kitchen (https://github.com/ansible/molecule/issues/1104)
