@@ -26,7 +26,7 @@ RUN dnf -y update && dnf -y install ${PKGS} --setopt=install_weak_deps=False && 
  && systemctl disable salt-minion.service > /dev/null 2>&1 \
     # Add `ssh-rsa` to `PubkeyAcceptedKeyTypes` since Kitchen testing currently relies on
     # this keypair type (make the SSH policy in `fedora-33` behave like previous versions)
- && if [ "${DISTRO_VERSION}" = "33" ]; then \
+ && if [ "${DISTRO_VERSION}" != "32" ]; then \
       sed -i -e "/^PubkeyAcceptedKeyTypes/s/$/,ssh-rsa/" /etc/crypto-policies/back-ends/opensshserver.config; \
     fi \
     # Remove unnecessary getty and udev targets that result in high CPU usage when using
