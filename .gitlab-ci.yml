@@ -97,7 +97,7 @@ commitlint:
     - 'export TAG=$(echo ${DN} | sed "s#/#-#g")-${DV}'
     - |
         if [ "${TAG}" = "archlinux-archlinux-latest" ]; then
-          export TAG=archlinux-latest
+          export TAG=arch-base-latest
         fi
     - 'echo "Building: ${TAG}"'
     - 'export DOCKERHUB_IMAGE=salt-${SV}-py${PV}:${TAG}'
