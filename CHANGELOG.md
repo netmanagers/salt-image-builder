@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.27.1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.27.0...v1.27.1) (2021-04-22)
+
+
+### Bug Fixes
+
+* **dockerfile.dnf:** use `ssh-rsa` workaround for all Fedora except `32` ([f13c77e](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/f13c77e7f29299bcac159745808292206ae0f5a8))
+
+
+### Continuous Integration
+
+* **gitlab-ci:** reset tag to `arch-base-latest` to avoid all usage issues ([a22eda5](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/a22eda5fee98700ddc37eb1d10cb73d8a140780e))
+
 # [1.27.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.26.0...v1.27.0) (2021-04-20)
 
 
