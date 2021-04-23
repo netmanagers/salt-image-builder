@@ -88,10 +88,10 @@ Just edit your `kitchen.local.yml` file, and add the image you want to use, like
      privileged: true
      volume:
        - "/sys/fs/cgroup:/sys/fs/cgroup:ro"
- 
+
    provisioner:
      salt_install: none
- 
+
    platforms:
      - name: debian-9
        driver_config:

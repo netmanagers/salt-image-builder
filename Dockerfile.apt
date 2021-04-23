@@ -15,7 +15,7 @@ ARG EXTRA_PACKAGES=""
 ARG DEBIAN_FRONTEND="noninteractive"
 # Provide packages used by `kitchen-docker` to speed up testing
 # These are now expected by the `ssf` customised `kitchen-docker` being used:
-# - https://gitlab.com/saltstack-formulas/infrastructure/kitchen-docker/-/compare/master...ssf 
+# - https://gitlab.com/saltstack-formulas/infrastructure/kitchen-docker/-/compare/master...ssf
 ARG KITCHEN_DOCKER_PACKAGES="curl lsb-release openssh-server sudo"
 ARG PKGS="${KITCHEN_DOCKER_PACKAGES} apt-transport-https dirmngr git gnupg locales net-tools procps systemd systemd-sysv udev wget ${EXTRA_PACKAGES}"
 

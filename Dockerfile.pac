@@ -15,7 +15,7 @@ ARG EXTRA_PACKAGES=""
 ARG BUILD_PACKAGES="binutils fakeroot tar"
 # Provide packages used by `kitchen-docker` to speed up testing
 # These are now expected by the `ssf` customised `kitchen-docker` being used:
-# - https://gitlab.com/saltstack-formulas/infrastructure/kitchen-docker/-/compare/master...ssf 
+# - https://gitlab.com/saltstack-formulas/infrastructure/kitchen-docker/-/compare/master...ssf
 ARG KITCHEN_DOCKER_PACKAGES="curl openssh openssl sudo"
 ARG PKGS="${KITCHEN_DOCKER_PACKAGES} awk git net-tools procps systemd udev ${EXTRA_PACKAGES} ${BUILD_PACKAGES}"
 ARG BUILD_USER="bin"
