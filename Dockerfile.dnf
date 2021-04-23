@@ -24,10 +24,11 @@ RUN dnf -y update && dnf -y install ${PKGS} --setopt=install_weak_deps=False && 
  && curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
     sh -s -- -XUdfPD -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION \
  && systemctl disable salt-minion.service > /dev/null 2>&1 \
-    # Add `ssh-rsa` to `PubkeyAcceptedKeyTypes` since Kitchen testing currently relies on
-    # this keypair type (make the SSH policy in `fedora-33` behave like previous versions)
+    # Use the `LEGACY` crypto policy since Kitchen testing currently relies on
+    # this keypair type (make the SSH policy in Fedora 33+ behave like Fedora 32)
  && if [ "${DISTRO_VERSION}" != "32" ]; then \
-      sed -i -e "/^PubkeyAcceptedKeyTypes/s/$/,ssh-rsa/" /etc/crypto-policies/back-ends/opensshserver.config; \
+      dnf -y install crypto-policies-scripts; \
+      update-crypto-policies --set LEGACY; \
     fi \
     # Remove unnecessary getty and udev targets that result in high CPU usage when using
     # multiple containers with Molecule or Kitchen (https://github.com/ansible/molecule/issues/1104)
