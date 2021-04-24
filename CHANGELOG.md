@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.28.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.27.1...v1.28.0) (2021-04-24)
+
+
+### Features
+
+* **dockerfile.dnf:** improve `ssh-rsa` workaround on Fedora 33+ ([ac145f3](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/ac145f3022a13ad21d799f71f25ce737620c952d)), closes [/github.com/myii/ssf-formula/blob/32549bf5decd/ssf/files/default/kitchen.yml#L152-L165](https://gitlab.com//github.com/myii/ssf-formula/blob/32549bf5decd/ssf/files/default/kitchen.yml/issues/L152-L165)
+
 ## [1.27.1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.27.0...v1.27.1) (2021-04-22)
 
 
