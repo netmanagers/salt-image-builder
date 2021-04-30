@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.29.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.28.0...v1.29.0) (2021-04-30)
+
+
+### Features
+
+* **fedora:** build `3002.6` (`git`) & `3003.0` (`stable`) images ([1642ba9](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/1642ba98ddaeaa1bbf32400cec3a4e46d6d12772))
+
 # [1.28.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.27.1...v1.28.0) (2021-04-24)
 
 
