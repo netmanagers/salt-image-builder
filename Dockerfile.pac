@@ -22,7 +22,7 @@ SHELL ["/bin/bash", "-x", "-o", "pipefail", "-c"]
 RUN pacman --noconfirm -Sy archlinux-keyring \
  && pacman-db-upgrade \
  && pacman --noconfirm -Syu ${PKGS} \
- && curl -L https://raw.githubusercontent.com/myii/salt-bootstrap/bug/fix-gentoo-and-arch/bootstrap-salt.sh | \
+ && curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
     sh -s -- -XUdfPD -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION \
  && systemctl enable sshd \
  && systemctl disable salt-minion.service > /dev/null 2>&1 \
