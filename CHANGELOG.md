@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.29.1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.29.0...v1.29.1) (2021-05-04)
+
+
+### Bug Fixes
+
+* **dockerfile.emg:** use upgraded `gentoo/stage3` again [skip ci] ([9af0a97](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/9af0a97ed662171af702baa9fa77e4558fc1530c)), closes [/gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/-/issues/42#note_565302485](https://gitlab.com//gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/-/issues/42/issues/note_565302485)
+
 # [1.29.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.28.0...v1.29.0) (2021-04-30)
 
 
