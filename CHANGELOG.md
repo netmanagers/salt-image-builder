@@ -1,5 +1,22 @@
 # Changelog
 
+# [1.30.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.29.1...v1.30.0) (2021-05-04)
+
+
+### Code Refactoring
+
+* **dockerfile.pac:** remove AUR-based installation workaround ([5801610](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/5801610de625b6c983587b70f589664c19b79777))
+
+
+### Continuous Integration
+
+* **gitlab-ci:** build `arch-late-master-py3` ([26b73d5](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/26b73d534e2a6f66c05aaf276756d8cf11d65cb6))
+
+
+### Features
+
+* **emg+pac:** use `salt-bootstrap` fix PR tracking branch ([9c3e394](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/9c3e394671e603b92f4bdfd5fb3f1e7e0bdb5c96)), closes [/gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/-/issues/42#note_565302485](https://gitlab.com//gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/-/issues/42/issues/note_565302485)
+
 ## [1.29.1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.29.0...v1.29.1) (2021-05-04)
 
 
