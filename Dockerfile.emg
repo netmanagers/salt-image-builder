@@ -1,11 +1,11 @@
+ARG DISTRO_NAME
 ARG DISTRO_VERSION
 
 # Name the portage image
 # hadolint ignore=DL3007
 FROM gentoo/portage:latest as portage
 
-# Use `ksmanis/stage3` until `gentoo/stage3` is upgraded
-FROM ksmanis/stage3:$DISTRO_VERSION
+FROM $DISTRO_NAME:$DISTRO_VERSION
 
 # copy the entire portage volume in
 COPY --from=portage /var/db/repos/gentoo /var/db/repos/gentoo
