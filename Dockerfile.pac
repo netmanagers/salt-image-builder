@@ -25,7 +25,7 @@ RUN pacman --noconfirm -Sy archlinux-keyring \
  && pacman-db-upgrade \
  && if [ "${PYTHON_VERSION}" = "2" ] || [ "${SALT_INSTALL_METHOD}" = "stable" ]; then \
       pacman --noconfirm -Syu ${PKGS}; \
-      curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
+      curl -L https://raw.githubusercontent.com/myii/salt-bootstrap/bug/fix-gentoo-and-arch/bootstrap-salt.sh | \
       sh -s -- -XUdfPD -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION; \
     else \
       pacman --noconfirm -Syu ${PKGS} ${BUILD_PACKAGES}; \
