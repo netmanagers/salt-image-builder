@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.30.1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.30.0...v1.30.1) (2021-05-06)
+
+
+### Reverts
+
+* **emg+pac:** use `salt-bootstrap` fix PR tracking branch [skip ci] ([101f6da](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/101f6da2c387cf5d37975dc6c8072b0dbe7b86c5)), closes [#42](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/issues/42)
+
 # [1.30.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.29.1...v1.30.0) (2021-05-04)
 
 
