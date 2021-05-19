@@ -28,6 +28,8 @@ RUN pacman --noconfirm -Sy archlinux-keyring \
     # See https://github.com/saltstack/salt/issues/60188
  && if [ "${SALT_INSTALL_METHOD}" = "git" ] && [ "${PYTHON_VERSION}" = "3" ]; then \
       pip3 install --no-cache-dir Jinja2==2.11.3; \
+    else \
+      pacman --noconfirm -U https://archive.archlinux.org/packages/p/python-jinja/python-jinja-2.11.3-2-any.pkg.tar.zst; \
     fi \
  && systemctl enable sshd \
  && systemctl disable salt-minion.service > /dev/null 2>&1 \
