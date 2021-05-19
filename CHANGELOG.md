@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.31.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.30.1...v1.31.0) (2021-05-19)
+
+
+### Features
+
+* **master:** use Jinja2 downgrade workaround (`3.0.x` => `2.11.3`) ([2899000](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/28990007fa82a62b9451f93e7da27fbfc3e73f02))
+
 ## [1.30.1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.30.0...v1.30.1) (2021-05-06)
 
 
