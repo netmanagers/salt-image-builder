@@ -69,6 +69,11 @@ RUN if [[ "${DISTRO_NAME}" = "centos" ]]; then \
       yum clean expire-cache; \
       yum -y install salt-minion; \
     fi \
+    # Use temporary workaround of downgrading Jinja2 for `master` image builds
+    # See https://github.com/saltstack/salt/issues/60188
+ && if [ "${SALT_VERSION}" = "master" ]; then \
+      pip3 install --no-cache-dir Jinja2==2.11.3; \
+    fi \
  && if command -v systemctl; then \
       systemctl disable salt-minion.service > /dev/null 2>&1; \
     elif [ -f "/etc/init.d/salt-minion" ]; then \

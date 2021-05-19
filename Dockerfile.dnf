@@ -23,6 +23,11 @@ SHELL ["/bin/bash", "-x", "-o", "pipefail", "-c"]
 RUN dnf -y update && dnf -y install ${PKGS} --setopt=install_weak_deps=False && dnf clean all \
  && curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
     sh -s -- -XUdfPD -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION \
+    # Use temporary workaround of downgrading Jinja2 for `master` image builds
+    # See https://github.com/saltstack/salt/issues/60188
+ && if [ "${SALT_VERSION}" = "master" ]; then \
+      pip3 install --no-cache-dir Jinja2==2.11.3; \
+    fi \
  && systemctl disable salt-minion.service > /dev/null 2>&1 \
     # Use the `LEGACY` crypto policy since Kitchen testing currently relies on
     # this keypair type (make the SSH policy in Fedora 33+ behave like Fedora 32)

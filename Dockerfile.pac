@@ -24,6 +24,11 @@ RUN pacman --noconfirm -Sy archlinux-keyring \
  && pacman --noconfirm -Syu ${PKGS} \
  && curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
     sh -s -- -XUdfPD -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION \
+    # Use temporary workaround of downgrading Jinja2 for `master` image builds
+    # See https://github.com/saltstack/salt/issues/60188
+ && if [ "${SALT_VERSION}" = "master" ]; then \
+      pip3 install --no-cache-dir Jinja2==2.11.3; \
+    fi \
  && systemctl enable sshd \
  && systemctl disable salt-minion.service > /dev/null 2>&1 \
     # Remove unnecessary getty and udev targets that result in high CPU usage when using
