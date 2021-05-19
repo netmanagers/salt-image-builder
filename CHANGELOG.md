@@ -1,5 +1,17 @@
 # Changelog
 
+# [1.32.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.31.0...v1.32.0) (2021-05-19)
+
+
+### Bug Fixes
+
+* **dockerfile.emg:** add `--prefix` for `pip3` Jinja2 workaround ([c3e48fa](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/c3e48fa06381f3194ee38c5e36ea894469b9fa02))
+
+
+### Features
+
+* **git:** use Jinja2 downgrade workaround (`3.0.x` => `2.11.3`) ([62ec052](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/62ec05263f57c45962a38e6d93de7538c747c2fa))
+
 # [1.31.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.30.1...v1.31.0) (2021-05-19)
 
 
