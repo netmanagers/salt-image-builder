@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.33.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.32.0...v1.33.0) (2021-05-19)
+
+
+### Features
+
+* **stable:** use pacman to downgrade jinja2 in Arch ([d5c444a](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/d5c444a76e479b00e584e32969f9d8628a0a5df2))
+
 # [1.32.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.31.0...v1.32.0) (2021-05-19)
 
 
