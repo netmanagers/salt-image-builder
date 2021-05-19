@@ -24,9 +24,9 @@ RUN pacman --noconfirm -Sy archlinux-keyring \
  && pacman --noconfirm -Syu ${PKGS} \
  && curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
     sh -s -- -XUdfPD -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION \
-    # Use temporary workaround of downgrading Jinja2 for `master` image builds
+    # Use temporary workaround of downgrading Jinja2 for images built using `git`
     # See https://github.com/saltstack/salt/issues/60188
- && if [ "${SALT_VERSION}" = "master" ]; then \
+ && if [ "${SALT_INSTALL_METHOD}" = "git" ] && [ "${PYTHON_VERSION}" = "3" ]; then \
       pip3 install --no-cache-dir Jinja2==2.11.3; \
     fi \
  && systemctl enable sshd \
