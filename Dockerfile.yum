@@ -48,18 +48,18 @@ RUN if [[ "${DISTRO_NAME}" = "centos" ]]; then \
       if [ "${DISTRO_NAME}" = "oraclelinux" ]; then \
         DISTRO_NAME="centos"; \
       fi; \
-      rpm --import https://artifactory.saltstack.net/artifactory/api/gpg/key/public; \
+      rpm --import https://archive.repo.saltproject.io/artifactory/api/gpg/key/public; \
       # Only need this because building on top of an existing image (`--cache-from`)
       rm -rf /etc/yum.repos.d/saltstack.repo; \
       { \
         echo '[saltstack-repo]'; \
         echo 'name=SaltStack Tiamat Release Channel for RHEL/CentOS $releasever'; \
         # Need to remove `linux` from the end of the `DISTRO_NAME` where present
-        echo 'baseurl=https://artifactory.saltstack.net/artifactory/open-rpm-staging/'"${DISTRO_NAME/linux/}/${DISTRO_VERSION}"'/$basearch/'; \
+        echo 'baseurl=https://archive.repo.saltproject.io/artifactory/open-rpm-staging/'"${DISTRO_NAME/linux/}/${DISTRO_VERSION}"'/$basearch/'; \
         echo 'skip_if_unavailable=True'; \
         # Using `repo_gpgcheck=1` instead
         echo 'gpgcheck=0'; \
-        echo 'gpgkey=https://artifactory.saltstack.net/artifactory/api/gpg/key/public'; \
+        echo 'gpgkey=https://archive.repo.saltproject.io/artifactory/api/gpg/key/public'; \
         echo 'enabled=1'; \
         echo 'enabled_metadata=1'; \
         echo 'repo_gpgcheck=1'; \

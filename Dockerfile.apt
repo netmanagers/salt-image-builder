@@ -34,8 +34,8 @@ RUN apt-get update \
       CODENAME=$(grep VERSION_CODENAME /etc/os-release | cut -d= -f2); \
       # Output the `CODENAME` for debugging purposes
       echo "${CODENAME}"; \
-      wget --progress=dot:giga -O - https://artifactory.saltstack.net/artifactory/api/gpg/key/public | apt-key add -; \
-      echo 'deb https://artifactory.saltstack.net/artifactory/open-debian-staging '"${CODENAME}"' main' > /etc/apt/sources.list.d/saltstack.list; \
+      wget --progress=dot:giga -O - https://archive.repo.saltproject.io/artifactory/api/gpg/key/public | apt-key add -; \
+      echo 'deb https://archive.repo.saltproject.io/artifactory/open-debian-staging '"${CODENAME}"' main' > /etc/apt/sources.list.d/saltstack.list; \
       # Output the file for debugging purposes
       cat /etc/apt/sources.list.d/saltstack.list; \
       apt-get update; \
