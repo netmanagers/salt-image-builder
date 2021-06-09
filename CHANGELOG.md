@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.33.1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.33.0...v1.33.1) (2021-06-09)
+
+
+### Code Refactoring
+
+* **tiamat:** update source URLs ([87aaa65](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/87aaa65b194c2129dfd1f472f5796a88a6e983a5))
+
 # [1.33.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.32.0...v1.33.0) (2021-05-19)
 
 
