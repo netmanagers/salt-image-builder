@@ -35,6 +35,10 @@
   # `services`
   services_docker_dind: &services_docker_dind
     - 'docker:dind'
+  # `artifacts`
+  artifacts_packages_versions: &artifacts_packages_versions
+    paths:
+      - 'packages_versions/'
 
 ###############################################################################
 # Define stages and global variables
@@ -137,8 +141,30 @@ commitlint:
          --detach=true
          --name "${TESTINFRA_CONTAINER}"
          "${TAG}" tail -f /dev/null'
-    # Display `--versions-report` for debugging purposes
-    - 'docker exec "${TESTINFRA_CONTAINER}" salt-call --versions-report'
+    # Set up the variables (and directory) for capturing the versions of packages
+    # installed in the image
+    - 'export PKGS_VERSIONS_DIR=packages_versions'
+    - 'export PKGS_VERSIONS_FILE=${PKGS_VERSIONS_DIR}/${DOCKER_ENV_CI_JOB_NAME}.txt'
+    - 'mkdir -p ${PKGS_VERSIONS_DIR}'
+    # Capture the image name
+    - 'echo "${DOCKER_ENV_CI_JOB_NAME}"
+         | tee -a ${PKGS_VERSIONS_FILE}'
+    # Capture the Salt versions report
+    - 'echo "# salt-call --versions-report"
+         | tee -a ${PKGS_VERSIONS_FILE}'
+    - 'docker exec "${TESTINFRA_CONTAINER}" salt-call --versions-report
+         | tee -a ${PKGS_VERSIONS_FILE}'
+    # Capture the list of installed packages
+    - 'echo "# salt-call --local pkg.list_pkgs"
+         | tee -a ${PKGS_VERSIONS_FILE}'
+    - 'docker exec "${TESTINFRA_CONTAINER}" salt-call --local pkg.list_pkgs
+         | tee -a ${PKGS_VERSIONS_FILE}'
+    # Capture the list of `pip`-installed packages
+    - 'echo "# salt-call --local pip.list"
+         | tee -a ${PKGS_VERSIONS_FILE}'
+    - 'docker exec "${TESTINFRA_CONTAINER}" salt-call --local pip.list
+         | tee -a ${PKGS_VERSIONS_FILE}'
+    # Run the integration tests
     # Not using `${SVB}` instead of `${SV}` here since the test file itself handles
     # the any version number issues (e.g. the extra `.0` in the version number).
     - 'venv/bin/pytest
@@ -148,9 +174,11 @@ commitlint:
          --saltvers "${SV}"
          --installmethod "${SIM}"
          -v'
+    # Stop and remove the container
     - 'docker stop "${TESTINFRA_CONTAINER}"'
     - 'docker rm "${TESTINFRA_CONTAINER}"'
   script: *script_dind_push_to_docker_hub
+  artifacts: *artifacts_packages_versions
 
 ###############################################################################
 # Define `build` template (`allow_failure: true`)
