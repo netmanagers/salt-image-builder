@@ -11,7 +11,7 @@ module.exports = {
         changelogTitle: '# Changelog',
       }],
       ['@semantic-release/git', {
-        assets: ['*.md'],
+        assets: ['*.md', 'packages_versions/*.txt'],
       }],
       '@semantic-release/gitlab',
   ],
