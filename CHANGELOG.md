@@ -1,5 +1,13 @@
 # Changelog
 
+# [1.34.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.33.1...v1.34.0) (2021-06-18)
+
+
+### Features
+
+* **gitlab-ci:** allow failures for Fedora 35 ([cf2acdf](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/cf2acdf095e3f38d488f74791d6933fa6e42e10b))
+* **gitlab-ci:** produce text files with versions of packages installed ([b397d81](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/b397d816377a9841417bb9161ec9e8aca28ac796))
+
 ## [1.33.1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.33.0...v1.33.1) (2021-06-09)
 
 
