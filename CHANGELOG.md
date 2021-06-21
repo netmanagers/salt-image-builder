@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.35.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.34.0...v1.35.0) (2021-06-21)
+
+
+### Features
+
+* **gitlab-ci:** deprecate `ubuntu-16` and `fedora-32` (EOL) [skip ci] ([3e4957c](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/3e4957c2d6fdecb842b6171b5741e163864cd98c))
+
 # [1.34.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.33.1...v1.34.0) (2021-06-18)
 
 
