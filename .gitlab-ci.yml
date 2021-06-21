@@ -251,7 +251,6 @@ debi-09.0-3000.9-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 # * Fedora 35: `3003.X`
 # * Fedora 34: `3003.X`
 # * Fedora 33: `3003.X`
-# * Fedora 32: `3001.X`
 # Use for both accordingly in order to test against these latest available packages
 # Progress for new releases is visible here: https://bodhi.fedoraproject.org/updates/?search=salt
 fedo-35.0-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'fedora'             , DV: '35'     , PI: 'dnf', SIM: 'git'   , SV: 'master', SVB: ''      , PV: '3', EP: ''}}
@@ -266,10 +265,6 @@ fedo-33.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 fedo-33.0-3003.0-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'             , DV: '33'     , PI: 'dnf', SIM: 'stable', SV: '3003.0', SVB: 'latest', PV: '3', EP: ''}}
 fedo-33.0-3002.6-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'             , DV: '33'     , PI: 'dnf', SIM: 'git'   , SV: '3002.6', SVB: ''      , PV: '3', EP: ''}}
 fedo-33.0-3001.7-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'             , DV: '33'     , PI: 'dnf', SIM: 'git'   , SV: '3001.7', SVB: ''      , PV: '3', EP: ''}}
-fedo-32.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'             , DV: '32'     , PI: 'dnf', SIM: 'git'   , SV: 'master', SVB: ''      , PV: '3', EP: ''}}
-fedo-32.0-3003.0-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'             , DV: '32'     , PI: 'dnf', SIM: 'git'   , SV: '3003.0', SVB: '3003'  , PV: '3', EP: ''}}
-fedo-32.0-3002.6-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'             , DV: '32'     , PI: 'dnf', SIM: 'git'   , SV: '3002.6', SVB: ''      , PV: '3', EP: ''}}
-fedo-32.0-3001.7-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'             , DV: '32'     , PI: 'dnf', SIM: 'stable', SV: '3001.7', SVB: 'latest', PV: '3', EP: ''}}
 
 # GENTOO
 # Available versions: https://packages.gentoo.org/packages/app-admin/salt
@@ -336,12 +331,6 @@ ubun-18.0-3002.6-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 ubun-18.0-3001.7-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'             , DV: '18.04'  , PI: 'apt', SIM: 'stable', SV: '3001.7', SVB: ''      , PV: '3', EP: 'python3-pip'}}
 ubun-18.0-3000.9-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'             , DV: '18.04'  , PI: 'apt', SIM: 'stable', SV: '3000.9', SVB: ''      , PV: '3', EP: 'python3-pip'}}
 ubun-18.0-3000.9-py2: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'             , DV: '18.04'  , PI: 'apt', SIM: 'stable', SV: '3000.9', SVB: ''      , PV: '2', EP: 'python-pip'}}
-ubun-16.0-tiamat-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'             , DV: '16.04'  , PI: 'apt', SIM: 'stable', SV: 'tiamat', SVB: ''      , PV: '3', EP: 'python3-pip'}}
-ubun-16.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'             , DV: '16.04'  , PI: 'apt', SIM: 'git'   , SV: 'master', SVB: ''      , PV: '3', EP: 'python3-apt python3-pip'}}
-ubun-16.0-3002.6-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'             , DV: '16.04'  , PI: 'apt', SIM: 'stable', SV: '3002.6', SVB: ''      , PV: '3', EP: 'python3-pip'}}
-ubun-16.0-3001.7-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'             , DV: '16.04'  , PI: 'apt', SIM: 'stable', SV: '3001.7', SVB: ''      , PV: '3', EP: 'python3-pip'}}
-ubun-16.0-3000.9-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'             , DV: '16.04'  , PI: 'apt', SIM: 'stable', SV: '3000.9', SVB: ''      , PV: '3', EP: 'python3-pip'}}
-ubun-16.0-3000.9-py2: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'             , DV: '16.04'  , PI: 'apt', SIM: 'stable', SV: '3000.9', SVB: ''      , PV: '2', EP: 'python-pip'}}
 # yamllint enable rule:commas rule:line-length
 
 ###############################################################################
