@@ -146,9 +146,9 @@ commitlint:
     - 'export PKGS_VERSIONS_DIR=packages_versions'
     - 'export PKGS_VERSIONS_FILE=${PKGS_VERSIONS_DIR}/${DOCKER_ENV_CI_JOB_NAME}.txt'
     - 'mkdir -p ${PKGS_VERSIONS_DIR}'
-    # Capture the image name
+    # Capture the image name (first `tee` used without `-a`)
     - 'echo "${DOCKER_ENV_CI_JOB_NAME}"
-         | tee -a ${PKGS_VERSIONS_FILE}'
+         | tee ${PKGS_VERSIONS_FILE}'
     # Capture the Salt versions report
     - 'echo "# salt-call --versions-report"
          | tee -a ${PKGS_VERSIONS_FILE}'
