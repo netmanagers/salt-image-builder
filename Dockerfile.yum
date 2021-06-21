@@ -40,7 +40,7 @@ RUN if [[ "${DISTRO_NAME}" = "centos" ]]; then \
         yum versionlock add python3-urllib3-0:1.23-6.amzn2.noarch; \
       fi; \
       curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
-      sh -s -- -XUdfPD -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION; \
+      sh -s -- -XdfPD -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION; \
     else \
       # TODO: Use `TIAMAT_DISTRO_NAME` for this section, to deal with trimming
       #       `linux` from the end of the name as well, as required below
