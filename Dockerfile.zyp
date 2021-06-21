@@ -27,10 +27,6 @@ RUN zypper refresh && zypper install --no-recommends -y ${PKGS} && zypper clean 
  && if [ ! -e /etc/SuSE-release ]; then \
       ln -s /etc/os-release /etc/SuSE-release; \
     fi \
-    # Uncomment all lines in both files, to fix `nil` Tumbleweed `platform[:release]` in InSpec
-    # TODO: Add InSpec bug report link when it is available
- && sed -i -e "s/^# //" /etc/os-release \
- && sed -i -e "s/^# //" /etc/SuSE-release \
     # Also use the `-w` flag for SUSE, to use the downstream repo, as outlined here:
     # https://github.com/saltstack/salt-bootstrap/blob/4310738bc4cf3b89b2873c0d66f71cbf0888edff/bootstrap-salt.sh#L323-L325
  && curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
@@ -40,6 +36,13 @@ RUN zypper refresh && zypper install --no-recommends -y ${PKGS} && zypper clean 
  && if [ "${SALT_INSTALL_METHOD}" = "git" ] && [ "${PYTHON_VERSION}" = "3" ]; then \
       pip3 install --no-cache-dir Jinja2==2.11.3; \
     fi \
+    # NOTE: This needs to be done after running the bootstrap, in case `openSUSE-release` is updated during that process,
+    #       which results in `/etc/os-release` being updated again; this is a particular problem if the Tumbleweed
+    #       Docker Hub image hasn't been updated for a few days
+    # Uncomment all lines in both files, to fix `nil` Tumbleweed `platform[:release]` in InSpec
+    # TODO: Add InSpec bug report link when it is available
+ && sed -i -e "s/^# //" /etc/os-release \
+ && sed -i -e "s/^# //" /etc/SuSE-release \
  && systemctl disable salt-minion.service > /dev/null 2>&1 \
     # Remove unnecessary getty and udev targets that result in high CPU usage when using
     # multiple containers with Molecule or Kitchen (https://github.com/ansible/molecule/issues/1104)
