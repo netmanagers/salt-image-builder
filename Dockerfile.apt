@@ -29,7 +29,7 @@ RUN apt-get update \
  && apt-get install --yes --no-install-recommends $PKGS \
  && if [ "${SALT_VERSION}" != "tiamat" ]; then \
       curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
-      sh -s -- -XdfPD -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION; \
+      sh -s -- -XUdfPD -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION; \
     else \
       CODENAME=$(grep VERSION_CODENAME /etc/os-release | cut -d= -f2); \
       # Output the `CODENAME` for debugging purposes
