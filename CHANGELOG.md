@@ -1,5 +1,18 @@
 # Changelog
 
+# [1.36.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.35.0...v1.36.0) (2021-06-22)
+
+
+### Bug Fixes
+
+* **dockerfile.zyp:** reorder Tumbleweed InSpec bug workaround [skip ci] ([b887cb7](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/b887cb7056669483381dff9f69d22a2e7cd011a6))
+* **gitlab-ci:** avoid `-a` for first `tee` [skip ci] ([48bb8b1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/48bb8b1604f25aa8f8e8d5780269a7b475ee4bfd))
+
+
+### Features
+
+* **dockerfiles:** disable images upgrade before deploying ([17d62c2](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/17d62c2d64a690e1934b417e44c0e3454a2481aa))
+
 # [1.35.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.34.0...v1.35.0) (2021-06-21)
 
 

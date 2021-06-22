@@ -21,10 +21,10 @@ Dependency Versions:
       pycrypto: Not Installed
   pycryptodome: 3.10.1
         pygit2: Not Installed
-        Python: 3.9.5 (default, May  4 2021, 00:00:00)
+        Python: 3.9.5 (default, May 14 2021, 00:00:00)
   python-gnupg: Not Installed
         PyYAML: 5.4.1
-         PyZMQ: 22.0.3
+         PyZMQ: 22.1.0
          smmap: Not Installed
        timelib: Not Installed
        Tornado: 4.5.3
@@ -74,7 +74,7 @@ local:
     crypto-policies-scripts:
         20200918-1.git85dccc5.fc33
     cryptsetup-libs:
-        2.3.5-2.fc33
+        2.3.6-1.fc33
     curl:
         7.71.1-9.fc33
     cyrus-sasl-lib:
@@ -89,6 +89,8 @@ local:
         1.02.173-1.fc33
     device-mapper-libs:
         1.02.173-1.fc33
+    diffutils:
+        3.7-7.fc33
     dnf:
         4.7.0-1.fc33
     dnf-data:
@@ -96,13 +98,13 @@ local:
     dracut:
         050-64.git20200529.fc33
     elfutils-debuginfod-client:
-        0.183-1.fc33
+        0.185-2.fc33
     elfutils-default-yama-scope:
-        0.183-1.fc33
+        0.185-2.fc33
     elfutils-libelf:
-        0.183-1.fc33
+        0.185-2.fc33
     elfutils-libs:
-        0.183-1.fc33
+        0.185-2.fc33
     emacs-filesystem:
         1:27.2-2.fc33
     expat:
@@ -150,23 +152,23 @@ local:
     glib2:
         2.66.8-1.fc33
     glibc:
-        2.32-4.fc33
+        2.32-6.fc33
     glibc-common:
-        2.32-4.fc33
+        2.32-6.fc33
     glibc-devel:
-        2.32-4.fc33
+        2.32-6.fc33
     glibc-headers-x86:
-        2.32-4.fc33
+        2.32-6.fc33
     glibc-langpack-en:
-        2.32-4.fc33
+        2.32-6.fc33
     glibc-minimal-langpack:
-        2.32-4.fc33
+        2.32-6.fc33
     gmp:
         1:6.2.0-5.fc33
     gnupg2:
         2.2.25-2.fc33
     gnutls:
-        3.6.15-1.fc33
+        3.6.16-1.fc33
     gpg-pubkey.(none):
         9570ff31-5e3006fb
     gpgme:
@@ -188,7 +190,7 @@ local:
     gzip:
         1.10-3.fc33
     hwdata:
-        0.347-1.fc33
+        0.348-1.fc33
     ima-evm-utils:
         1.3.2-1.fc33
     iptables-libs:
@@ -204,13 +206,13 @@ local:
     kbd-misc:
         2.3.0-2.fc33
     kernel-headers:
-        5.11.20-200.fc33
+        5.12.9-200.fc33
     keyutils-libs:
         1.6.1-1.fc33
     kmod:
-        27-3.fc33
+        29-2.fc33
     kmod-libs:
-        27-3.fc33
+        29-2.fc33
     kpartx:
         0.8.4-7.fc33
     krb5-libs:
@@ -250,7 +252,7 @@ local:
     libeconf:
         0.3.8-4.fc33
     libedit:
-        3.1-33.20191231cvs.fc33
+        3.1-37.20210522cvs.fc33
     libfdisk:
         2.36.1-1.fc33
     libffi:
@@ -266,9 +268,9 @@ local:
     libgpg-error:
         1.41-1.fc33
     libibverbs:
-        34.0-1.fc33
+        35.0-1.fc33
     libidn2:
-        2.3.0-4.fc33
+        2.3.1-1.fc33
     libkcapi:
         1.2.1-1.fc33
     libkcapi-hmaccalc:
@@ -280,7 +282,7 @@ local:
     libmnl:
         1.0.4-12.fc33
     libmodulemd:
-        2.12.0-1.fc33
+        2.12.1-1.fc33
     libmount:
         2.36.1-1.fc33
     libmpc:
@@ -326,9 +328,9 @@ local:
     libssh-config:
         0.9.5-1.fc33
     libsss_idmap:
-        2.5.0-1.fc33
+        2.5.1-1.fc33
     libsss_nss_idmap:
-        2.5.0-1.fc33
+        2.5.1-1.fc33
     libstdc++:
         10.3.1-1.fc33
     libtasn1:
@@ -336,7 +338,7 @@ local:
     libtextstyle:
         0.21-3.fc33
     libtirpc:
-        1.2.6-3.rc4.fc33
+        1.2.6-4.rc4.fc33
     libtool-ltdl:
         2.4.6-36.fc33
     libunistring:
@@ -355,8 +357,10 @@ local:
         4.4.20-2.fc33
     libxcrypt-devel:
         4.4.20-2.fc33
+    libxkbcommon:
+        1.0.1-1.fc33
     libxml2:
-        2.9.10-8.fc33
+        2.9.12-4.fc33
     libyaml:
         0.2.5-3.fc33
     libzstd:
@@ -370,7 +374,7 @@ local:
     memstrack:
         0.1.9-1.fc33
     mpfr:
-        4.1.0-6.fc33
+        4.1.0-7.fc33
     ncurses:
         6.2-3.20200222.fc33
     ncurses-base:
@@ -386,11 +390,11 @@ local:
     openldap:
         2.4.50-5.fc33
     openssh:
-        8.4p1-5.fc33
+        8.4p1-6.fc33
     openssh-clients:
-        8.4p1-5.fc33
+        8.4p1-6.fc33
     openssh-server:
-        8.4p1-5.fc33
+        8.4p1-6.fc33
     openssl-libs:
         1:1.1.1k-1.fc33
     os-prober:
@@ -526,15 +530,15 @@ local:
     publicsuffix-list-dafsa:
         20190417-4.fc33
     python-pip-wheel:
-        20.2.2-1.fc33
+        20.2.2-2.fc33
     python-setuptools-wheel:
         49.1.3-1.fc33
     python-unversioned-command:
-        3.9.5-1.fc33
+        3.9.5-2.fc33
     python3:
-        3.9.5-1.fc33
+        3.9.5-2.fc33
     python3-devel:
-        3.9.5-1.fc33
+        3.9.5-2.fc33
     python3-dnf:
         4.7.0-1.fc33
     python3-gpg:
@@ -546,9 +550,9 @@ local:
     python3-libdnf:
         0.62.0-1.fc33
     python3-libs:
-        3.9.5-1.fc33
+        3.9.5-2.fc33
     python3-pip:
-        20.2.2-1.fc33
+        20.2.2-2.fc33
     python3-rpm:
         4.16.1.3-1.fc33
     python3-setuptools:
@@ -556,7 +560,7 @@ local:
     qrencode-libs:
         4.0.2-6.fc33
     rdma-core:
-        34.0-1.fc33
+        35.0-1.fc33
     readline:
         8.0-5.fc33
     rootfiles:
@@ -578,31 +582,39 @@ local:
     sqlite-libs:
         3.34.1-1.fc33
     sssd-client:
-        2.5.0-1.fc33
+        2.5.1-1.fc33
     sudo:
         1.9.5p2-1.fc33
     systemd:
-        246.13-1.fc33
+        246.14-1.fc33
     systemd-libs:
-        246.13-1.fc33
+        246.14-1.fc33
+    systemd-networkd:
+        246.14-1.fc33
     systemd-pam:
-        246.13-1.fc33
+        246.14-1.fc33
     systemd-rpm-macros:
-        246.13-1.fc33
+        246.14-1.fc33
     systemd-udev:
-        246.13-1.fc33
+        246.14-1.fc33
     tar:
         2:1.32-6.fc33
     tpm2-tss:
-        3.0.3-1.fc33
+        3.0.4-1.fc33
+    trousers:
+        0.3.14-4.fc33
+    trousers-lib:
+        0.3.14-4.fc33
     tzdata:
         2021a-1.fc33
     util-linux:
         2.36.1-1.fc33
     vim-minimal:
-        2:8.2.2846-1.fc33
+        2:8.2.2875-1.fc33
     which:
         2.21-20.fc33
+    xkeyboard-config:
+        2.30-3.fc33
     xz:
         5.2.5-4.fc33
     xz-libs:
@@ -610,7 +622,7 @@ local:
     yum:
         4.7.0-1.fc33
     zchunk-libs:
-        1.1.11-1.fc33
+        1.1.15-1.fc33
     zlib:
         1.2.11-23.fc33
 # salt-call --local pip.list
