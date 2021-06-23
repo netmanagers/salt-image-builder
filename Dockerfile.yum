@@ -31,7 +31,8 @@ RUN if [[ "${DISTRO_NAME}" = "centos" ]]; then \
  && yum -y install ${PKGS} \
  && if [ "${SALT_VERSION}" != "tiamat" ]; then \
       # Use workaround for Amazon Linux stable builds until packaging resolved (https://github.com/saltstack/salt/issues/59982)
-      if [ "${DISTRO_NAME}" = "amazonlinux" ] && [ "${DISTRO_VERSION}" = "2" ] && [ "${SALT_INSTALL_METHOD}" = "stable" ]; then \
+      # Update: Issue has been closed but this workaround will be required for all versions < `3003.1`
+      if [ "${DISTRO_NAME}" = "amazonlinux" ] && [ "${DISTRO_VERSION}" = "2" ] && [ "${SALT_INSTALL_METHOD}" = "stable" ] && [ "${SALT_VERSION}" \< "3003.1" ]; then \
         SALT_MAJOR_VERSION=$(echo "${SALT_VERSION}" | cut -d. -f1); \
         rpm --import https://repo.saltproject.io/py3/amazon/2/x86_64/${SALT_MAJOR_VERSION}/SALTSTACK-GPG-KEY.pub; \
         curl -fsSL https://repo.saltproject.io/py3/amazon/2/x86_64/${SALT_MAJOR_VERSION}.repo | tee /etc/yum.repos.d/saltstack-py3-repo.repo; \
