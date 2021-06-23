@@ -1,5 +1,17 @@
 # Changelog
 
+# [1.37.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.36.0...v1.37.0) (2021-06-23)
+
+
+### Features
+
+* **dockerfile.pac:** install `contextvars` manually until package fixed ([1ac6b64](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/1ac6b64bdb63e7010c99fc30c989b96507c85353))
+* **dockerfile.yum:** update workaround for Amazon Linux stable builds ([4a92088](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/4a92088785ff0267533f8a1a5cab59be9518eb6b))
+* **gentoo:** build `3000.9` images ([906d5e6](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/906d5e6a6a1aa334e37d09a38016aad174b70695))
+* **gitlab-ci:** add `3003.1` ([d50458d](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/d50458d241e2578930733cd83838dcd0429843e9))
+* **gitlab-ci:** build openSUSE 15.3 images ([74d0f52](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/74d0f52919bd12917a454e8f69905edf280ce926))
+* **gitlab-ci:** build SUSE `git`-based `3003.*` until `stable` released ([ee7fba4](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/ee7fba49bba83672ae6b7d06b4317c0b70bf3e86))
+
 # [1.36.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.35.0...v1.36.0) (2021-06-22)
 
 
