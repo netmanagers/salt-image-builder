@@ -31,6 +31,11 @@ RUN pacman --noconfirm -Sy archlinux-keyring \
     else \
       pacman --noconfirm -U https://archive.archlinux.org/packages/p/python-jinja/python-jinja-2.11.3-2-any.pkg.tar.zst; \
     fi \
+    # Use temporary workaround of installing `contextvars` for latest stable (`3003.1`)
+    # See https://bugs.archlinux.org/task/71344
+ && if [ "${SALT_INSTALL_METHOD}" = "stable" ]; then \
+      pip3 install --no-cache-dir contextvars==2.4; \
+    fi \
  && systemctl enable sshd \
  && systemctl disable salt-minion.service > /dev/null 2>&1 \
     # Remove unnecessary getty and udev targets that result in high CPU usage when using
