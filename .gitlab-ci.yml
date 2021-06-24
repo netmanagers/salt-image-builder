@@ -150,19 +150,29 @@ commitlint:
     - 'echo "${DOCKER_ENV_CI_JOB_NAME}"
          | tee ${PKGS_VERSIONS_FILE}'
     # Capture the Salt versions report
-    - 'echo "# salt-call --versions-report"
+    - 'export CMD_SALT_CALL_VERSIONS_REPORT="salt-call --versions-report"'
+    - 'echo "# ${CMD_SALT_CALL_VERSIONS_REPORT}"
          | tee -a ${PKGS_VERSIONS_FILE}'
-    - 'docker exec "${TESTINFRA_CONTAINER}" salt-call --versions-report
+    - 'docker exec "${TESTINFRA_CONTAINER}" ${CMD_SALT_CALL_VERSIONS_REPORT}
+         | tee -a ${PKGS_VERSIONS_FILE}'
+    # Capture a list of selected grains
+    # yamllint disable-line rule:line-length
+    - 'export CMD_SALT_CALL_GRAIN_ITEM="salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion"'
+    - 'echo "# ${CMD_SALT_CALL_GRAIN_ITEM}"
+         | tee -a ${PKGS_VERSIONS_FILE}'
+    - 'docker exec "${TESTINFRA_CONTAINER}" ${CMD_SALT_CALL_GRAIN_ITEM}
          | tee -a ${PKGS_VERSIONS_FILE}'
     # Capture the list of installed packages
-    - 'echo "# salt-call --local pkg.list_pkgs"
+    - 'export CMD_SALT_CALL_PKG_LIST_PKGS="salt-call --local pkg.list_pkgs"'
+    - 'echo "# ${CMD_SALT_CALL_PKG_LIST_PKGS}"
          | tee -a ${PKGS_VERSIONS_FILE}'
-    - 'docker exec "${TESTINFRA_CONTAINER}" salt-call --local pkg.list_pkgs
+    - 'docker exec "${TESTINFRA_CONTAINER}" ${CMD_SALT_CALL_PKG_LIST_PKGS}
          | tee -a ${PKGS_VERSIONS_FILE}'
     # Capture the list of `pip`-installed packages
-    - 'echo "# salt-call --local pip.list"
+    - 'export CMD_SALT_CALL_PIP_LIST="salt-call --local pip.list"'
+    - 'echo "# ${CMD_SALT_CALL_PIP_LIST}"
          | tee -a ${PKGS_VERSIONS_FILE}'
-    - 'docker exec "${TESTINFRA_CONTAINER}" salt-call --local pip.list
+    - 'docker exec "${TESTINFRA_CONTAINER}" ${CMD_SALT_CALL_PIP_LIST}
          | tee -a ${PKGS_VERSIONS_FILE}'
     # Run the integration tests
     # Not using `${SVB}` instead of `${SV}` here since the test file itself handles
