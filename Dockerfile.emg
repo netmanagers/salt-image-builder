@@ -62,6 +62,7 @@ RUN mkdir --parents /etc/portage/repos.conf \
  && rm -rf /var/cache/{salt,binpkgs,distfiles} \
            /lib/systemd/system/systemd*udev* \
            /lib/systemd/system/getty.target \
+           /tmp/* \
  && (find / ! -path "/{proc,sys,dev}" -name "*.pyc"; \
      find / ! -path "/{proc,sys,dev}" -name "__pycache__"; \
      find /var/log -type f) \
