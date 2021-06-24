@@ -43,6 +43,7 @@ RUN pacman --noconfirm -Sy archlinux-keyring \
  && rm -rf /var/cache/{salt,pacman} \
            /usr/lib/systemd/system/systemd*udev* \
            /usr/lib/systemd/system/getty.target \
+           /tmp/* \
  && (find / ! -path "/{proc,sys,dev}" -name "*.pyc"; \
      find / ! -path "/{proc,sys,dev}" -name "__pycache__"; \
      find /var/log -type f) \

@@ -49,6 +49,7 @@ RUN zypper refresh && zypper install --no-recommends -y ${PKGS} && zypper clean 
  && rm -rf /var/cache/{salt,zyp} \
            /usr/lib/systemd/system/systemd*udev* \
            /usr/lib/systemd/system/getty.target \
+           /tmp/* \
  && (find / ! -path "/{proc,sys,dev}" -name "*.pyc"; \
      find / ! -path "/{proc,sys,dev}" -name "__pycache__"; \
      find /var/log -type f) \
