@@ -38,6 +38,91 @@ System Versions:
          system: Linux
         version: Ubuntu 18.04 bionic
  
+# salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
+local:
+    ----------
+    init:
+        unknown
+    kernel:
+        Linux
+    kernelrelease:
+        4.19.78-coreos
+    kernelversion:
+        #1 SMP Mon Oct 14 22:56:39 -00 2019
+    locale_info:
+        ----------
+        defaultencoding:
+            None
+        defaultlanguage:
+            None
+        detectedencoding:
+            ascii
+        timezone:
+            UTC
+    lsb_distrib_codename:
+        bionic
+    lsb_distrib_id:
+        Ubuntu
+    lsb_distrib_release:
+        18.04
+    os:
+        Ubuntu
+    os_family:
+        Debian
+    osarch:
+        amd64
+    osbuild:
+    oscodename:
+        bionic
+    osfinger:
+        Ubuntu-18.04
+    osfullname:
+        Ubuntu
+    osmajorrelease:
+        18
+    osmanufacturer:
+    osrelease:
+        18.04
+    osrelease_info:
+        - 18
+        - 4
+    osversion:
+    pythonexecutable:
+        /usr/bin/python2
+    pythonpath:
+        - /usr/bin
+        - /usr/lib/python2.7
+        - /usr/lib/python2.7/plat-x86_64-linux-gnu
+        - /usr/lib/python2.7/lib-tk
+        - /usr/lib/python2.7/lib-old
+        - /usr/lib/python2.7/lib-dynload
+        - /usr/local/lib/python2.7/dist-packages
+        - /usr/lib/python2.7/dist-packages
+    pythonversion:
+        - 2
+        - 7
+        - 17
+        - final
+        - 0
+    saltpath:
+        /usr/lib/python2.7/dist-packages/salt
+    saltversion:
+        3000.9
+    saltversioninfo:
+        - 3000
+        - 9
+    systemd:
+        ----------
+        features:
+            +PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD -IDN2 +IDN -PCRE2 default-hierarchy=hybrid
+        version:
+            237
+    virtual:
+        gce
+    virtual_subtype:
+        Docker
+    zmqversion:
+        4.2.5
 # salt-call --local pkg.list_pkgs
 local:
     ----------

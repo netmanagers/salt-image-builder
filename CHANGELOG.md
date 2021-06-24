@@ -1,5 +1,16 @@
 # Changelog
 
+# [1.38.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.37.0...v1.38.0) (2021-06-24)
+
+
+### Features
+
+* **dockerfile.*:** clear `/tmp` (Salt installation artifacts) ([90c5d57](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/90c5d575bab51bf040f390beb358d2020846d1c6))
+* **dockerfile.yum:** use `centos` for Alma/Rocky Tiamat builds ([5a4a98f](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/5a4a98ff25adf51f535663d7215cb01bf2c1496a))
+* **gitlab-ci:** add `almalinux` & `rockylinux` ([104355d](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/104355dd02d3c78cc2ffc49f366fed0a62fdddfb))
+* **gitlab-ci:** build latest with `git` where awaiting `stable` updates ([3df8477](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/3df8477ccd61cd5405c2fafc9ca1c260ae427eed))
+* **gitlab-ci:** capture selected `grains.item` to packages' text files ([6735692](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/67356922bbd4aeaa205bd786adc3e4f86d951798))
+
 # [1.37.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.36.0...v1.37.0) (2021-06-23)
 
 
