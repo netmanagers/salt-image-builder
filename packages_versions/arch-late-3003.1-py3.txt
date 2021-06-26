@@ -38,6 +38,82 @@ System Versions:
         system: Linux
        version: Arch Linux  
  
+# salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
+local:
+    ----------
+    init:
+        unknown
+    kernel:
+        Linux
+    kernelrelease:
+        4.19.78-coreos
+    kernelversion:
+        #1 SMP Mon Oct 14 22:56:39 -00 2019
+    locale_info:
+        ----------
+        defaultencoding:
+            UTF-8
+        defaultlanguage:
+            en_US
+        detectedencoding:
+            utf-8
+        timezone:
+            unknown
+    lsb_distrib_codename:
+        Arch Linux
+    lsb_distrib_id:
+        Arch Linux
+    lsb_distrib_release:
+    os:
+        Arch
+    os_family:
+        Arch
+    osarch:
+        x86_64
+    osbuild:
+    oscodename:
+        Arch Linux
+    osfinger:
+    osfullname:
+        Arch Linux
+    osmajorrelease:
+    osmanufacturer:
+    osrelease:
+    osrelease_info:
+    osversion:
+    pythonexecutable:
+        /usr/bin/python
+    pythonpath:
+        - /usr/bin
+        - /usr/lib/python39.zip
+        - /usr/lib/python3.9
+        - /usr/lib/python3.9/lib-dynload
+        - /usr/lib/python3.9/site-packages
+    pythonversion:
+        - 3
+        - 9
+        - 5
+        - final
+        - 0
+    saltpath:
+        /usr/lib/python3.9/site-packages/salt
+    saltversion:
+        3003.1
+    saltversioninfo:
+        - 3003
+        - 1
+    systemd:
+        ----------
+        features:
+            +PAM +AUDIT -SELINUX -APPARMOR -IMA +SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY +P11KIT -QRENCODE +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +XKBCOMMON +UTMP -SYSVINIT default-hierarchy=unified
+        version:
+            248
+    virtual:
+        gce
+    virtual_subtype:
+        Docker
+    zmqversion:
+        4.3.4
 # salt-call --local pkg.list_pkgs
 local:
     ----------
@@ -204,7 +280,7 @@ local:
     libunistring:
         0.9.10-3
     libxcrypt:
-        4.4.22-4
+        4.4.23-1
     libxml2:
         2.9.10-9
     libyaml:
@@ -340,7 +416,7 @@ local:
     readline:
         8.1.001-1
     salt:
-        3003.1-1
+        3003.1-2
     sed:
         4.8-1
     shadow:

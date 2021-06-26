@@ -10,7 +10,7 @@ Dependency Versions:
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
-        Jinja2: 2.11.3
+        Jinja2: 3.0.1
        libgit2: Not Installed
       M2Crypto: Not Installed
           Mako: Not Installed
@@ -38,6 +38,86 @@ System Versions:
         system: Linux
        version: Gentoo 2.7 
  
+# salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
+local:
+    ----------
+    init:
+        unknown
+    kernel:
+        Linux
+    kernelrelease:
+        4.19.78-coreos
+    kernelversion:
+        #1 SMP Mon Oct 14 22:56:39 -00 2019
+    locale_info:
+        ----------
+        defaultencoding:
+            UTF-8
+        defaultlanguage:
+            en_US
+        detectedencoding:
+            utf-8
+        timezone:
+            unknown
+    lsb_distrib_codename:
+        Gentoo/Linux
+    lsb_distrib_id:
+        Gentoo
+    lsb_distrib_release:
+    os:
+        Gentoo
+    os_family:
+        Gentoo
+    osarch:
+        x86_64
+    osbuild:
+    oscodename:
+        Gentoo/Linux
+    osfinger:
+        Gentoo-2
+    osfullname:
+        Gentoo
+    osmajorrelease:
+        2
+    osmanufacturer:
+    osrelease:
+        2.7
+    osrelease_info:
+        - 2
+        - 7
+    osversion:
+    pythonexecutable:
+        /usr/bin/python3.9
+    pythonpath:
+        - /usr/lib/python-exec/python3.9
+        - /usr/lib/python39.zip
+        - /usr/lib/python3.9
+        - /usr/lib/python3.9/lib-dynload
+        - /usr/lib/python3.9/site-packages
+    pythonversion:
+        - 3
+        - 9
+        - 5
+        - final
+        - 0
+    saltpath:
+        /usr/lib/python3.9/site-packages/salt
+    saltversion:
+        3003
+    saltversioninfo:
+        - 3003
+    systemd:
+        ----------
+        features:
+            +PAM -AUDIT -SELINUX -APPARMOR +IMA +SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID -CURL -ELFUTILS -FIDO2 +IDN2 -IDN -IPTC +KMOD -LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY -P11KIT -QRENCODE -BZIP2 +LZ4 -XZ -ZLIB +ZSTD -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified
+        version:
+            248
+    virtual:
+        gce
+    virtual_subtype:
+        Docker
+    zmqversion:
+        4.3.4
 # salt-call --local pkg.list_pkgs
 local:
     ----------
@@ -328,17 +408,17 @@ local:
     dev-python/idna:
         3.1
     dev-python/jinja:
-        2.11.3
+        3.0.1
     dev-python/libnacl:
         1.7.2-r1
     dev-python/lxml:
         4.6.3-r1
     dev-python/markupsafe:
-        1.1.1-r1
+        2.0.1
     dev-python/msgpack:
         1.0.2
     dev-python/pip:
-        21.1.1
+        21.1.2-r1
     dev-python/ply:
         3.11-r1
     dev-python/pycparser:
@@ -384,7 +464,7 @@ local:
     mail-mta/nullmailer:
         2.2-r1
     net-dns/libidn2:
-        2.3.0
+        2.3.1
     net-firewall/iptables:
         1.8.7
     net-libs/gnutls:
@@ -396,15 +476,15 @@ local:
     net-libs/libtirpc:
         1.3.2
     net-libs/nghttp2:
-        1.41.0
+        1.41.0-r2
     net-libs/zeromq:
         4.3.4-r1
     net-misc/curl:
-        7.77.0
+        7.77.0-r1
     net-misc/iputils:
         20210202
     net-misc/openssh:
-        8.6_p1-r1
+        8.6_p1-r2
     net-misc/rsync:
         3.2.3-r4
     net-misc/wget:
@@ -466,7 +546,7 @@ local:
     sys-apps/pciutils:
         3.7.0
     sys-apps/portage:
-        3.0.18
+        3.0.20-r6
     sys-apps/sandbox:
         2.24
     sys-apps/sed:
@@ -474,7 +554,7 @@ local:
     sys-apps/shadow:
         4.8.1-r3
     sys-apps/systemd:
-        248.3
+        248.3-r1
     sys-apps/texinfo:
         6.7
     sys-apps/util-linux:
@@ -661,9 +741,9 @@ local:
     Cython:
         0.29.23
     Jinja2:
-        2.11.3
+        3.0.1
     MarkupSafe:
-        1.1.1
+        2.0.1
     PySocks:
         1.7.1
     PyYAML:
@@ -691,11 +771,11 @@ local:
     msgpack:
         1.0.2
     pip:
-        21.1.1
+        21.1.2
     ply:
         3.11
     portage:
-        3.0.18
+        3.0.20
     pycparser:
         2.20
     pycryptodome:

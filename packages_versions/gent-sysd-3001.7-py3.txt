@@ -397,7 +397,7 @@ local:
     dev-python/markupsafe:
         2.0.1
     dev-python/pip:
-        21.1.1
+        21.1.2-r1
     dev-python/requests:
         2.25.1-r2
     dev-python/setuptools:
@@ -509,7 +509,7 @@ local:
     sys-apps/net-tools:
         2.10
     sys-apps/portage:
-        3.0.20-r4
+        3.0.20-r6
     sys-apps/sandbox:
         2.24
     sys-apps/sed:
@@ -517,7 +517,7 @@ local:
     sys-apps/shadow:
         4.8.1-r3
     sys-apps/systemd:
-        248.3
+        248.3-r1
     sys-apps/texinfo:
         6.7
     sys-apps/util-linux:
@@ -718,7 +718,7 @@ local:
     meson:
         0.57.2
     pip:
-        21.1.1
+        21.1.2
     portage:
         3.0.20
     requests:

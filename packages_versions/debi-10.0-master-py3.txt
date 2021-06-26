@@ -1,7 +1,7 @@
 debi-10.0-master-py3
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003+0na.d89ad40
+          Salt: 3003+0na.15f2c87
  
 Dependency Versions:
           cffi: Not Installed
@@ -38,6 +38,87 @@ System Versions:
         system: Linux
        version: Debian GNU/Linux 10 buster
  
+# salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
+local:
+    ----------
+    init:
+        unknown
+    kernel:
+        Linux
+    kernelrelease:
+        4.19.78-coreos
+    kernelversion:
+        #1 SMP Mon Oct 14 22:56:39 -00 2019
+    locale_info:
+        ----------
+        defaultencoding:
+            UTF-8
+        defaultlanguage:
+            en_US
+        detectedencoding:
+            utf-8
+        timezone:
+            unknown
+    lsb_distrib_codename:
+        buster
+    lsb_distrib_id:
+        Debian
+    lsb_distrib_release:
+        10
+    os:
+        Debian
+    os_family:
+        Debian
+    osarch:
+        amd64
+    osbuild:
+    oscodename:
+        buster
+    osfinger:
+        Debian-10
+    osfullname:
+        Debian
+    osmajorrelease:
+        10
+    osmanufacturer:
+    osrelease:
+        10
+    osrelease_info:
+        - 10
+    osversion:
+    pythonexecutable:
+        /usr/bin/python3
+    pythonpath:
+        - /usr/local/bin
+        - /usr/lib/python37.zip
+        - /usr/lib/python3.7
+        - /usr/lib/python3.7/lib-dynload
+        - /usr/local/lib/python3.7/dist-packages
+        - /usr/lib/python3/dist-packages
+    pythonversion:
+        - 3
+        - 7
+        - 3
+        - final
+        - 0
+    saltpath:
+        /usr/local/lib/python3.7/dist-packages/salt
+    saltversion:
+        3003+0na.15f2c87
+    saltversioninfo:
+        - 3003
+    systemd:
+        ----------
+        features:
+            +PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD -IDN2 +IDN -PCRE2 default-hierarchy=hybrid
+        version:
+            241
+    virtual:
+        container
+    virtual_subtype:
+        Docker
+    zmqversion:
+        4.3.3
 # salt-call --local pkg.list_pkgs
 local:
     ----------
@@ -48,7 +129,7 @@ local:
     apt-transport-https:
         1.8.2.3
     base-files:
-        10.3+deb10u9
+        10.3+deb10u10
     base-passwd:
         3.5.46
     bash:
@@ -224,7 +305,7 @@ local:
     libgcc1:
         1:8.3.0-6
     libgcrypt20:
-        1.8.4-5
+        1.8.4-5+deb10u1
     libgdbm-compat4:
         1.18.1-4
     libgdbm6:
@@ -232,7 +313,7 @@ local:
     libgmp10:
         2:6.1.2+dfsg-4
     libgnutls30:
-        3.6.7-4+deb10u6
+        3.6.7-4+deb10u7
     libgomp1:
         8.3.0-6
     libgpg-error0:
@@ -388,7 +469,7 @@ local:
     libzstd1:
         1.3.8+dfsg-3+deb10u2
     linux-libc-dev:
-        4.19.181-1
+        4.19.194-2
     locales:
         2.28-10
     login:
@@ -523,10 +604,10 @@ local:
     requests:
         2.25.1
     salt:
-        3003+0na.d89ad40
+        3003+0na.15f2c87
     setuptools:
         40.8.0
     urllib3:
-        1.26.5
+        1.26.6
     wheel:
         0.36.2

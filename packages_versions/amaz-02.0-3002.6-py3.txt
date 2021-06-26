@@ -21,7 +21,7 @@ Dependency Versions:
       pycrypto: 2.6.1
   pycryptodome: 3.6.1
         pygit2: Not Installed
-        Python: 3.7.9 (default, Apr 30 2021, 20:11:56)
+        Python: 3.7.10 (default, Jun  3 2021, 00:02:01)
   python-gnupg: Not Installed
         PyYAML: 4.2
          PyZMQ: 17.0.0
@@ -38,6 +38,88 @@ System Versions:
         system: Linux
        version: Amazon Linux 2 
  
+# salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
+local:
+    ----------
+    init:
+        unknown
+    kernel:
+        Linux
+    kernelrelease:
+        4.19.78-coreos
+    kernelversion:
+        #1 SMP Mon Oct 14 22:56:39 -00 2019
+    locale_info:
+        ----------
+        defaultencoding:
+            UTF-8
+        defaultlanguage:
+            en_US
+        detectedencoding:
+            utf-8
+        timezone:
+            unknown
+    lsb_distrib_codename:
+        Amazon Linux 2
+    lsb_distrib_id:
+        Amazon Linux
+    lsb_distrib_release:
+        2
+    os:
+        Amazon
+    os_family:
+        RedHat
+    osarch:
+        x86_64
+    osbuild:
+    oscodename:
+        Amazon Linux 2
+    osfinger:
+        Amazon Linux-2
+    osfullname:
+        Amazon Linux
+    osmajorrelease:
+        2
+    osmanufacturer:
+    osrelease:
+        2
+    osrelease_info:
+        - 2
+    osversion:
+    pythonexecutable:
+        /usr/bin/python3
+    pythonpath:
+        - /usr/bin
+        - /usr/lib64/python37.zip
+        - /usr/lib64/python3.7
+        - /usr/lib64/python3.7/lib-dynload
+        - /usr/lib64/python3.7/site-packages
+        - /usr/lib/python3.7/site-packages
+    pythonversion:
+        - 3
+        - 7
+        - 10
+        - final
+        - 0
+    saltpath:
+        /usr/lib/python3.7/site-packages/salt
+    saltversion:
+        3002.6
+    saltversioninfo:
+        - 3002
+        - 6
+    systemd:
+        ----------
+        features:
+            +PAM +AUDIT +SELINUX +IMA -APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 -SECCOMP +BLKID +ELFUTILS +KMOD +IDN
+        version:
+            219
+    virtual:
+        gce
+    virtual_subtype:
+        Docker
+    zmqversion:
+        4.2.3
 # salt-call --local pkg.list_pkgs
 local:
     ----------
@@ -52,7 +134,7 @@ local:
     bash:
         4.2.46-34.amzn2
     bzip2-libs:
-        1.0.6-13.amzn2.0.2
+        1.0.6-13.amzn2.0.3
     ca-certificates:
         2020.2.41-70.0.amzn2.0.1
     chkconfig:
@@ -68,7 +150,7 @@ local:
     cryptsetup-libs:
         1.7.4-4.amzn2
     curl:
-        7.61.1-12.amzn2.0.2
+        7.61.1-12.amzn2.0.4
     cyrus-sasl-lib:
         2.1.26-23.amzn2
     dbus:
@@ -88,7 +170,7 @@ local:
     elfutils-libs:
         0.176-2.amzn2
     emacs-filesystem:
-        1:25.3-3.amzn2.0.2
+        1:27.1-1.amzn2.0.1
     expat:
         2.1.0-12.amzn2
     file-libs:
@@ -112,15 +194,15 @@ local:
     git-core-doc:
         2.23.4-1.amzn2.0.1
     glib2:
-        2.56.1-7.amzn2.0.1
+        2.56.1-9.amzn2.0.1
     glibc:
-        2.26-45.amzn2
+        2.26-47.amzn2
     glibc-common:
-        2.26-45.amzn2
+        2.26-47.amzn2
     glibc-langpack-en:
-        2.26-45.amzn2
+        2.26-47.amzn2
     glibc-minimal-langpack:
-        2.26-45.amzn2
+        2.26-47.amzn2
     gmp:
         1:6.0.0-15.amzn2.0.2
     gnupg2:
@@ -164,9 +246,9 @@ local:
     libcom_err:
         1.42.9-19.amzn2
     libcrypt:
-        2.26-45.amzn2
+        2.26-47.amzn2
     libcurl:
-        7.61.1-12.amzn2.0.2
+        7.61.1-12.amzn2.0.4
     libdb:
         5.3.21-24.amzn2.0.3
     libdb-utils:
@@ -178,7 +260,7 @@ local:
     libffi:
         3.0.13-18.amzn2.0.2
     libgcc:
-        7.3.1-12.amzn2
+        7.3.1-13.amzn2
     libgcrypt:
         1.5.3-14.amzn2.0.2
     libgpg-error:
@@ -206,7 +288,7 @@ local:
     libssh2:
         1.4.3-12.amzn2.2.3
     libstdc++:
-        7.3.1-12.amzn2
+        7.3.1-13.amzn2
     libtasn1:
         4.10-1.amzn2.0.2
     libtirpc:
@@ -224,9 +306,9 @@ local:
     libverto:
         0.2.5-4.amzn2.0.2
     libxml2:
-        2.9.1-6.amzn2.5.1
+        2.9.1-6.amzn2.5.3
     libxml2-python:
-        2.9.1-6.amzn2.5.1
+        2.9.1-6.amzn2.5.3
     libyaml:
         0.1.4-11.amzn2.0.2
     lua:
@@ -244,7 +326,7 @@ local:
     nspr:
         4.25.0-2.amzn2
     nss:
-        3.53.1-3.amzn2
+        3.53.1-7.amzn2
     nss-pem:
         1.0.3-5.amzn2
     nss-softokn:
@@ -252,13 +334,13 @@ local:
     nss-softokn-freebl:
         3.53.1-6.amzn2
     nss-sysinit:
-        3.53.1-3.amzn2
+        3.53.1-7.amzn2
     nss-tools:
-        3.53.1-3.amzn2
+        3.53.1-7.amzn2
     nss-util:
         3.53.1-1.amzn2
     openldap:
-        2.4.44-23.amzn2
+        2.4.44-23.amzn2.0.1
     openpgm:
         5.2.122-15.amzn2
     openssh:
@@ -356,7 +438,7 @@ local:
     pyliblzma:
         0.5.3-25.amzn2
     python:
-        2.7.18-1.amzn2.0.3
+        2.7.18-1.amzn2.0.4
     python-chardet:
         2.2.1-1.amzn2
     python-iniparse:
@@ -364,7 +446,7 @@ local:
     python-kitchen:
         1.1.1-5.amzn2
     python-libs:
-        2.7.18-1.amzn2.0.3
+        2.7.18-1.amzn2.0.4
     python-pycurl:
         7.19.0-19.amzn2.0.2
     python-urlgrabber:
@@ -372,7 +454,7 @@ local:
     python2-rpm:
         4.11.3-40.amzn2.0.5
     python3:
-        3.7.9-1.amzn2.0.3
+        3.7.10-1.amzn2.0.1
     python3-babel:
         2.6.0-7.amzn2
     python3-chardet:
@@ -386,7 +468,7 @@ local:
     python3-jinja2:
         2.10-8.amzn2
     python3-libs:
-        3.7.9-1.amzn2.0.3
+        3.7.10-1.amzn2.0.1
     python3-m2crypto:
         0.31.0-4.amzn2
     python3-markupsafe:
@@ -394,7 +476,7 @@ local:
     python3-msgpack:
         0.5.6-7.amzn2
     python3-pip:
-        20.2.2-1.amzn2.0.2
+        20.2.2-1.amzn2.0.3
     python3-psutil:
         5.6.7-1.amzn2.0.2
     python3-pycryptodomex:
@@ -452,11 +534,11 @@ local:
     system-release:
         1:2-13.amzn2
     systemd:
-        219-57.amzn2.0.12
+        219-78.amzn2.0.14
     systemd-libs:
-        219-57.amzn2.0.12
+        219-78.amzn2.0.14
     systemd-python:
-        219-57.amzn2.0.12
+        219-78.amzn2.0.14
     tcp_wrappers-libs:
         7.6-77.amzn2.0.2
     tzdata:

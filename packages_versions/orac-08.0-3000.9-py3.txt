@@ -38,6 +38,89 @@ System Versions:
          system: Linux
         version: Oracle Linux Server 8.4 
  
+# salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
+local:
+    ----------
+    init:
+        unknown
+    kernel:
+        Linux
+    kernelrelease:
+        4.19.78-coreos
+    kernelversion:
+        #1 SMP Mon Oct 14 22:56:39 -00 2019
+    locale_info:
+        ----------
+        defaultencoding:
+            UTF-8
+        defaultlanguage:
+            en_US
+        detectedencoding:
+            UTF-8
+        timezone:
+            UTC
+    lsb_distrib_codename:
+        Oracle Linux Server 8.4
+    lsb_distrib_id:
+        Oracle Linux Server
+    lsb_distrib_release:
+        8.4
+    os:
+        OEL
+    os_family:
+        RedHat
+    osarch:
+        x86_64
+    osbuild:
+    oscodename:
+        Oracle Linux Server 8.4
+    osfinger:
+        Oracle Linux Server-8
+    osfullname:
+        Oracle Linux Server
+    osmajorrelease:
+        8
+    osmanufacturer:
+    osrelease:
+        8.4
+    osrelease_info:
+        - 8
+        - 4
+    osversion:
+    pythonexecutable:
+        /usr/bin/python3.6
+    pythonpath:
+        - /usr/bin
+        - /usr/lib64/python36.zip
+        - /usr/lib64/python3.6
+        - /usr/lib64/python3.6/lib-dynload
+        - /usr/lib64/python3.6/site-packages
+        - /usr/lib/python3.6/site-packages
+    pythonversion:
+        - 3
+        - 6
+        - 8
+        - final
+        - 0
+    saltpath:
+        /usr/lib/python3.6/site-packages/salt
+    saltversion:
+        3000.9
+    saltversioninfo:
+        - 3000
+        - 9
+    systemd:
+        ----------
+        features:
+            +PAM +AUDIT +SELINUX +IMA -APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=legacy
+        version:
+            239
+    virtual:
+        gce
+    virtual_subtype:
+        Docker
+    zmqversion:
+        4.3.4
 # salt-call --local pkg.list_pkgs
 local:
     ----------
@@ -114,7 +197,7 @@ local:
     emacs-filesystem:
         1:26.1-5.el8
     epel-release:
-        8-10.el8
+        8-11.el8
     expat:
         2.2.5-4.el8
     file-libs:
@@ -362,7 +445,7 @@ local:
     oraclelinux-release:
         8:8.4-1.0.4.el8
     oraclelinux-release-el8:
-        1.0-18.el8
+        1.0-19.el8
     p11-kit:
         0.23.22-1.el8
     p11-kit-trust:

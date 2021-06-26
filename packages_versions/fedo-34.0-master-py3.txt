@@ -1,7 +1,7 @@
 fedo-34.0-master-py3
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003+0na.d89ad40
+          Salt: 3003+0na.15f2c87
  
 Dependency Versions:
           cffi: Not Installed
@@ -38,6 +38,86 @@ System Versions:
         system: Linux
        version: Fedora 34 
  
+# salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
+local:
+    ----------
+    init:
+        unknown
+    kernel:
+        Linux
+    kernelrelease:
+        4.19.78-coreos
+    kernelversion:
+        #1 SMP Mon Oct 14 22:56:39 -00 2019
+    locale_info:
+        ----------
+        defaultencoding:
+            UTF-8
+        defaultlanguage:
+            en_US
+        detectedencoding:
+            utf-8
+        timezone:
+            unknown
+    lsb_distrib_codename:
+    lsb_distrib_id:
+        Fedora
+    lsb_distrib_release:
+        34
+    os:
+        Fedora
+    os_family:
+        RedHat
+    osarch:
+        x86_64
+    osbuild:
+    oscodename:
+    osfinger:
+        Fedora-34
+    osfullname:
+        Fedora
+    osmajorrelease:
+        34
+    osmanufacturer:
+    osrelease:
+        34
+    osrelease_info:
+        - 34
+    osversion:
+    pythonexecutable:
+        /usr/bin/python3
+    pythonpath:
+        - /usr/bin
+        - /usr/lib64/python39.zip
+        - /usr/lib64/python3.9
+        - /usr/lib64/python3.9/lib-dynload
+        - /usr/local/lib/python3.9/site-packages
+        - /usr/lib64/python3.9/site-packages
+        - /usr/lib/python3.9/site-packages
+    pythonversion:
+        - 3
+        - 9
+        - 5
+        - final
+        - 0
+    saltpath:
+        /usr/lib/python3.9/site-packages/salt
+    saltversion:
+        3003+0na.15f2c87
+    saltversioninfo:
+        - 3003
+    systemd:
+        ----------
+        features:
+            +PAM +AUDIT +SELINUX -APPARMOR +IMA +SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified
+        version:
+            248
+    virtual:
+        container
+    virtual_subtype:
+        Docker
+    zmqversion:
+        4.3.3
 # salt-call --local pkg.list_pkgs
 local:
     ----------
@@ -58,7 +138,7 @@ local:
     bzip2-libs:
         1.0.8-6.fc34
     ca-certificates:
-        2020.2.41-7.fc34
+        2021.2.50-1.0.fc34
     coreutils:
         8.32-27.fc34
     coreutils-common:
@@ -82,7 +162,7 @@ local:
     dbus:
         1:1.12.20-3.fc34
     dbus-broker:
-        28-3.fc34
+        29-1.fc34
     dbus-common:
         1:1.12.20-3.fc34
     dbus-libs:
@@ -102,7 +182,7 @@ local:
     dnf-data:
         4.8.0-1.fc34
     dracut:
-        054-12.git20210521.fc34
+        055-2.fc34
     elfutils-debuginfod-client:
         0.185-2.fc34
     elfutils-default-yama-scope:
@@ -158,19 +238,19 @@ local:
     glib2:
         2.68.2-1.fc34
     glibc:
-        2.33-16.fc34
+        2.33-18.fc34
     glibc-common:
-        2.33-16.fc34
+        2.33-18.fc34
     glibc-devel:
-        2.33-16.fc34
+        2.33-18.fc34
     glibc-doc:
-        2.33-16.fc34
+        2.33-18.fc34
     glibc-headers-x86:
-        2.33-16.fc34
+        2.33-18.fc34
     glibc-langpack-en:
-        2.33-16.fc34
+        2.33-18.fc34
     glibc-minimal-langpack:
-        2.33-16.fc34
+        2.33-18.fc34
     gmp:
         1:6.2.0-6.fc34
     gnupg2:
@@ -302,7 +382,7 @@ local:
     libnsl2:
         1.3.0-2.fc34
     libpcap:
-        14:1.10.0-1.fc34
+        14:1.10.1-1.fc34
     libpkgconf:
         1.7.3-6.fc34
     libpsl:
@@ -356,11 +436,11 @@ local:
     libverto:
         0.3.2-1.fc34
     libxcrypt:
-        4.4.20-2.fc34
+        4.4.22-2.fc34
     libxcrypt-compat:
-        4.4.20-2.fc34
+        4.4.22-2.fc34
     libxcrypt-devel:
-        4.4.20-2.fc34
+        4.4.22-2.fc34
     libxkbcommon:
         1.3.0-1.fc34
     libxml2:
@@ -377,6 +457,8 @@ local:
         1:4.3-5.fc34
     memstrack:
         0.2.2-1.fc34
+    mkpasswd:
+        5.5.10-1.fc34
     mpfr:
         4.1.0-7.fc34
     ncurses:
@@ -388,7 +470,7 @@ local:
     net-tools:
         2.0-0.59.20160912git.fc34
     nettle:
-        3.7.2-1.fc34
+        3.7.3-1.fc34
     npth:
         1.6-6.fc34
     openldap:
@@ -408,7 +490,7 @@ local:
     p11-kit-trust:
         0.23.22-3.fc34
     pam:
-        1.5.1-5.fc34
+        1.5.1-6.fc34
     pcre:
         8.44-3.fc34.1
     pcre2:
@@ -418,45 +500,45 @@ local:
     perl-Carp:
         1.50-458.fc34
     perl-Class-Struct:
-        0.66-475.fc34
+        0.66-476.fc34
     perl-DynaLoader:
-        1.47-475.fc34
+        1.47-476.fc34
     perl-Encode:
         4:3.08-459.fc34
     perl-Errno:
-        1.30-475.fc34
+        1.30-476.fc34
     perl-Error:
         1:0.17029-5.fc34
     perl-Exporter:
         5.74-459.fc34
     perl-Fcntl:
-        1.13-475.fc34
+        1.13-476.fc34
     perl-File-Basename:
-        2.85-475.fc34
+        2.85-476.fc34
     perl-File-Find:
-        1.37-475.fc34
+        1.37-476.fc34
     perl-File-Path:
         2.18-2.fc34
     perl-File-Temp:
         1:0.231.100-2.fc34
     perl-File-stat:
-        1.09-475.fc34
+        1.09-476.fc34
     perl-Getopt-Long:
         1:2.52-2.fc34
     perl-Getopt-Std:
-        1.12-475.fc34
+        1.12-476.fc34
     perl-Git:
         2.31.1-3.fc34
     perl-HTTP-Tiny:
         0.076-458.fc34
     perl-IO:
-        1.43-475.fc34
+        1.43-476.fc34
     perl-IPC-Open3:
-        1.21-475.fc34
+        1.21-476.fc34
     perl-MIME-Base64:
         3.16-2.fc34
     perl-POSIX:
-        1.94-475.fc34
+        1.94-476.fc34
     perl-PathTools:
         3.78-459.fc34
     perl-Pod-Escapes:
@@ -470,13 +552,13 @@ local:
     perl-Scalar-List-Utils:
         4:1.56-459.fc34
     perl-SelectSaver:
-        1.02-475.fc34
+        1.02-476.fc34
     perl-Socket:
         4:2.032-1.fc34
     perl-Storable:
         1:3.21-458.fc34
     perl-Symbol:
-        1.08-475.fc34
+        1.08-476.fc34
     perl-Term-ANSIColor:
         5.01-459.fc34
     perl-Term-Cap:
@@ -492,27 +574,27 @@ local:
     perl-constant:
         1.33-459.fc34
     perl-if:
-        0.60.800-475.fc34
+        0.60.800-476.fc34
     perl-interpreter:
-        4:5.32.1-475.fc34
+        4:5.32.1-476.fc34
     perl-lib:
-        0.65-475.fc34
+        0.65-476.fc34
     perl-libs:
-        4:5.32.1-475.fc34
+        4:5.32.1-476.fc34
     perl-mro:
-        1.23-475.fc34
+        1.23-476.fc34
     perl-overload:
-        1.31-475.fc34
+        1.31-476.fc34
     perl-overloading:
-        0.02-475.fc34
+        0.02-476.fc34
     perl-parent:
         1:0.238-458.fc34
     perl-podlators:
         1:4.14-458.fc34
     perl-subs:
-        1.03-475.fc34
+        1.03-476.fc34
     perl-vars:
-        1.05-475.fc34
+        1.05-476.fc34
     pigz:
         2.5-1.fc34
     pkgconf:
@@ -619,6 +701,8 @@ local:
         2:8.2.2956-2.fc34
     which:
         2.21-26.fc34
+    whois-nls:
+        5.5.10-1.fc34
     xkeyboard-config:
         2.32-3.fc34
     xz:

@@ -312,7 +312,7 @@ local:
     dev-python/markupsafe:
         2.0.1
     dev-python/pip:
-        21.1.1
+        21.1.2-r1
     dev-python/requests:
         2.25.1-r2
     dev-python/setuptools:
@@ -629,7 +629,7 @@ local:
     meson:
         0.57.2
     pip:
-        21.1.1
+        21.1.2
     portage:
         3.0.20
     requests:

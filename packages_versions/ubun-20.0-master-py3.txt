@@ -1,7 +1,7 @@
 ubun-20.0-master-py3
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003+0na.d89ad40
+          Salt: 3003+0na.15f2c87
  
 Dependency Versions:
           cffi: Not Installed
@@ -38,6 +38,88 @@ System Versions:
         system: Linux
        version: Ubuntu 20.04 focal
  
+# salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
+local:
+    ----------
+    init:
+        unknown
+    kernel:
+        Linux
+    kernelrelease:
+        4.19.78-coreos
+    kernelversion:
+        #1 SMP Mon Oct 14 22:56:39 -00 2019
+    locale_info:
+        ----------
+        defaultencoding:
+            UTF-8
+        defaultlanguage:
+            en_US
+        detectedencoding:
+            utf-8
+        timezone:
+            unknown
+    lsb_distrib_codename:
+        focal
+    lsb_distrib_id:
+        Ubuntu
+    lsb_distrib_release:
+        20.04
+    os:
+        Ubuntu
+    os_family:
+        Debian
+    osarch:
+        amd64
+    osbuild:
+    oscodename:
+        focal
+    osfinger:
+        Ubuntu-20.04
+    osfullname:
+        Ubuntu
+    osmajorrelease:
+        20
+    osmanufacturer:
+    osrelease:
+        20.04
+    osrelease_info:
+        - 20
+        - 4
+    osversion:
+    pythonexecutable:
+        /usr/bin/python3
+    pythonpath:
+        - /usr/local/bin
+        - /usr/lib/python38.zip
+        - /usr/lib/python3.8
+        - /usr/lib/python3.8/lib-dynload
+        - /usr/local/lib/python3.8/dist-packages
+        - /usr/lib/python3/dist-packages
+    pythonversion:
+        - 3
+        - 8
+        - 5
+        - final
+        - 0
+    saltpath:
+        /usr/local/lib/python3.8/dist-packages/salt
+    saltversion:
+        3003+0na.15f2c87
+    saltversioninfo:
+        - 3003
+    systemd:
+        ----------
+        features:
+            +PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=hybrid
+        version:
+            245
+    virtual:
+        container
+    virtual_subtype:
+        Docker
+    zmqversion:
+        4.3.3
 # salt-call --local pkg.list_pkgs
 local:
     ----------
@@ -96,7 +178,7 @@ local:
     gcc:
         4:9.3.0-1ubuntu2
     gcc-10-base:
-        10.2.0-5ubuntu1~20.04
+        10.3.0-1ubuntu1~20.04
     gcc-9:
         9.3.0-17ubuntu1~20.04
     gcc-9-base:
@@ -148,7 +230,7 @@ local:
     libassuan0:
         2.5.3-7ubuntu2
     libatomic1:
-        10.2.0-5ubuntu1~20.04
+        10.3.0-1ubuntu1~20.04
     libattr1:
         1:2.4.48-5
     libaudit-common:
@@ -180,7 +262,7 @@ local:
     libcbor0.6:
         0.6.0-0ubuntu1
     libcc1-0:
-        10.2.0-5ubuntu1~20.04
+        10.3.0-1ubuntu1~20.04
     libcom-err2:
         1.45.5-2ubuntu1
     libcrypt-dev:
@@ -222,7 +304,7 @@ local:
     libgcc-9-dev:
         9.3.0-17ubuntu1~20.04
     libgcc-s1:
-        10.2.0-5ubuntu1~20.04
+        10.3.0-1ubuntu1~20.04
     libgcrypt20:
         1.8.5-5ubuntu1
     libgdbm-compat4:
@@ -234,7 +316,7 @@ local:
     libgnutls30:
         3.6.13-2ubuntu1.3
     libgomp1:
-        10.2.0-5ubuntu1~20.04
+        10.3.0-1ubuntu1~20.04
     libgpg-error0:
         1.37-1
     libgssapi-krb5-2:
@@ -258,7 +340,7 @@ local:
     libisl22:
         0.22.1-1
     libitm1:
-        10.2.0-5ubuntu1~20.04
+        10.3.0-1ubuntu1~20.04
     libjson-c4:
         0.13.1+dfsg-7ubuntu0.3
     libk5crypto3:
@@ -280,7 +362,7 @@ local:
     libldap-common:
         2.4.49+dfsg-2ubuntu1.8
     liblsan0:
-        10.2.0-5ubuntu1~20.04
+        10.3.0-1ubuntu1~20.04
     liblz4-1:
         1.9.2-2ubuntu0.20.04.1
     liblzma5:
@@ -336,7 +418,7 @@ local:
     libpython3.8-stdlib:
         3.8.5-1~20.04.3
     libquadmath0:
-        10.2.0-5ubuntu1~20.04
+        10.3.0-1ubuntu1~20.04
     libreadline8:
         8.0-4
     libroken18-heimdal:
@@ -368,7 +450,7 @@ local:
     libssl1.1:
         1.1.1f-1ubuntu2.4
     libstdc++6:
-        10.2.0-5ubuntu1~20.04
+        10.3.0-1ubuntu1~20.04
     libsystemd0:
         245.4-4ubuntu3.7
     libtasn1-6:
@@ -376,9 +458,9 @@ local:
     libtinfo6:
         6.2-0ubuntu2
     libtsan0:
-        10.2.0-5ubuntu1~20.04
+        10.3.0-1ubuntu1~20.04
     libubsan1:
-        10.2.0-5ubuntu1~20.04
+        10.3.0-1ubuntu1~20.04
     libudev1:
         245.4-4ubuntu3.7
     libunistring2:
@@ -392,7 +474,7 @@ local:
     libzstd1:
         1.4.4+dfsg-3ubuntu0.1
     linux-libc-dev:
-        5.4.0-74.83
+        5.4.0-77.86
     locales:
         2.31-0ubuntu9.2
     login:
@@ -531,10 +613,10 @@ local:
     requests:
         2.25.1
     salt:
-        3003+0na.d89ad40
+        3003+0na.15f2c87
     setuptools:
         45.2.0
     urllib3:
-        1.26.5
+        1.26.6
     wheel:
         0.34.2

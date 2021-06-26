@@ -1,7 +1,7 @@
 ubun-18.0-master-py3
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003+0na.d89ad40
+          Salt: 3003+0na.15f2c87
  
 Dependency Versions:
           cffi: Not Installed
@@ -38,6 +38,88 @@ System Versions:
         system: Linux
        version: Ubuntu 18.04 bionic
  
+# salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
+local:
+    ----------
+    init:
+        unknown
+    kernel:
+        Linux
+    kernelrelease:
+        4.19.78-coreos
+    kernelversion:
+        #1 SMP Mon Oct 14 22:56:39 -00 2019
+    locale_info:
+        ----------
+        defaultencoding:
+            None
+        defaultlanguage:
+            None
+        detectedencoding:
+            ANSI_X3.4-1968
+        timezone:
+            unknown
+    lsb_distrib_codename:
+        bionic
+    lsb_distrib_id:
+        Ubuntu
+    lsb_distrib_release:
+        18.04
+    os:
+        Ubuntu
+    os_family:
+        Debian
+    osarch:
+        amd64
+    osbuild:
+    oscodename:
+        bionic
+    osfinger:
+        Ubuntu-18.04
+    osfullname:
+        Ubuntu
+    osmajorrelease:
+        18
+    osmanufacturer:
+    osrelease:
+        18.04
+    osrelease_info:
+        - 18
+        - 4
+    osversion:
+    pythonexecutable:
+        /usr/bin/python3
+    pythonpath:
+        - /usr/local/bin
+        - /usr/lib/python36.zip
+        - /usr/lib/python3.6
+        - /usr/lib/python3.6/lib-dynload
+        - /usr/local/lib/python3.6/dist-packages
+        - /usr/lib/python3/dist-packages
+    pythonversion:
+        - 3
+        - 6
+        - 9
+        - final
+        - 0
+    saltpath:
+        /usr/local/lib/python3.6/dist-packages/salt
+    saltversion:
+        3003+0na.15f2c87
+    saltversioninfo:
+        - 3003
+    systemd:
+        ----------
+        features:
+            +PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD -IDN2 +IDN -PCRE2 default-hierarchy=hybrid
+        version:
+            237
+    virtual:
+        container
+    virtual_subtype:
+        Docker
+    zmqversion:
+        4.3.3
 # salt-call --local pkg.list_pkgs
 local:
     ----------
@@ -386,7 +468,7 @@ local:
     libzstd1:
         1.3.3+dfsg-2ubuntu1.2
     linux-libc-dev:
-        4.15.0-144.148
+        4.15.0-147.151
     locales:
         2.27-3ubuntu1.4
     login:
@@ -517,10 +599,10 @@ local:
     requests:
         2.25.1
     salt:
-        3003+0na.d89ad40
+        3003+0na.15f2c87
     setuptools:
         39.0.1
     urllib3:
-        1.26.5
+        1.26.6
     wheel:
         0.36.2

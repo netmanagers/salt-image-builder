@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.39.1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.39.0...v1.39.1) (2021-06-26)
+
+
+### Bug Fixes
+
+* **gitlab-ci:** use separate dir to ensure packages versions updated ([4196e1e](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/4196e1ef823dc30be54c07ac8c30ab87efa1628f))
+
 # [1.39.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.38.0...v1.39.0) (2021-06-26)
 
 

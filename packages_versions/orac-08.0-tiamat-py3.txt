@@ -38,6 +38,85 @@ System Versions:
         system: Linux
        version: Oracle Linux Server 8.4 
  
+# salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
+local:
+    ----------
+    init:
+        unknown
+    kernel:
+        Linux
+    kernelrelease:
+        4.19.78-coreos
+    kernelversion:
+        #1 SMP Mon Oct 14 22:56:39 -00 2019
+    locale_info:
+        ----------
+        defaultencoding:
+            None
+        defaultlanguage:
+            None
+        detectedencoding:
+            utf-8
+        timezone:
+            UTC
+    lsb_distrib_codename:
+        Oracle Linux Server 8.4
+    lsb_distrib_id:
+        Oracle Linux Server
+    lsb_distrib_release:
+        8.4
+    os:
+        OEL
+    os_family:
+        RedHat
+    osarch:
+        x86_64
+    osbuild:
+    oscodename:
+        Oracle Linux Server 8.4
+    osfinger:
+        Oracle Linux Server-8
+    osfullname:
+        Oracle Linux Server
+    osmajorrelease:
+        8
+    osmanufacturer:
+    osrelease:
+        8.4
+    osrelease_info:
+        - 8
+        - 4
+    osversion:
+    pythonexecutable:
+        /opt/saltstack/salt/run/run
+    pythonpath:
+        - /opt/saltstack/salt/pypath
+        - /opt/saltstack/salt/run/base_library.zip
+        - /opt/saltstack/salt/run
+    pythonversion:
+        - 3
+        - 7
+        - 10
+        - final
+        - 0
+    saltpath:
+        /opt/saltstack/salt/run/salt
+    saltversion:
+        3003rc1+345.ge3c52e5fba
+    saltversioninfo:
+        - 3003
+    systemd:
+        ----------
+        features:
+            +PAM +AUDIT +SELINUX +IMA -APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=legacy
+        version:
+            239
+    virtual:
+        container
+    virtual_subtype:
+        Docker
+    zmqversion:
+        4.3.1
 # salt-call --local pkg.list_pkgs
 local:
     ----------
@@ -100,7 +179,7 @@ local:
     diffutils:
         3.6-6.el8
     dmidecode:
-        1:3.2-8.0.1.el8
+        1:3.2-8.0.2.el8
     dnf:
         4.4.2-11.el8
     dnf-data:

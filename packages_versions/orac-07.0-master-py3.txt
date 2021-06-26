@@ -1,7 +1,7 @@
 orac-07.0-master-py3
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003+0na.d89ad40
+          Salt: 3003+0na.15f2c87
  
 Dependency Versions:
           cffi: Not Installed
@@ -38,6 +38,89 @@ System Versions:
         system: Linux
        version: Oracle Linux Server 7.9 
  
+# salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
+local:
+    ----------
+    init:
+        unknown
+    kernel:
+        Linux
+    kernelrelease:
+        4.19.78-coreos
+    kernelversion:
+        #1 SMP Mon Oct 14 22:56:39 -00 2019
+    locale_info:
+        ----------
+        defaultencoding:
+            UTF-8
+        defaultlanguage:
+            en_US
+        detectedencoding:
+            UTF-8
+        timezone:
+            unknown
+    lsb_distrib_codename:
+        Oracle Linux Server 7.9
+    lsb_distrib_id:
+        Oracle Linux Server
+    lsb_distrib_release:
+        7.9
+    os:
+        OEL
+    os_family:
+        RedHat
+    osarch:
+        x86_64
+    osbuild:
+    oscodename:
+        Oracle Linux Server 7.9
+    osfinger:
+        Oracle Linux Server-7
+    osfullname:
+        Oracle Linux Server
+    osmajorrelease:
+        7
+    osmanufacturer:
+    osrelease:
+        7.9
+    osrelease_info:
+        - 7
+        - 9
+    osversion:
+    pythonexecutable:
+        /usr/bin/python3
+    pythonpath:
+        - /usr/bin
+        - /usr/lib64/python36.zip
+        - /usr/lib64/python3.6
+        - /usr/lib64/python3.6/lib-dynload
+        - /usr/local/lib/python3.6/site-packages
+        - /usr/lib64/python3.6/site-packages
+        - /usr/lib/python3.6/site-packages
+    pythonversion:
+        - 3
+        - 6
+        - 8
+        - final
+        - 0
+    saltpath:
+        /usr/lib/python3.6/site-packages/salt
+    saltversion:
+        3003+0na.15f2c87
+    saltversioninfo:
+        - 3003
+    systemd:
+        ----------
+        features:
+            +PAM +AUDIT +SELINUX +IMA -APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 -SECCOMP +BLKID +ELFUTILS +KMOD +IDN
+        version:
+            219
+    virtual:
+        container
+    virtual_subtype:
+        Docker
+    zmqversion:
+        4.3.3
 # salt-call --local pkg.list_pkgs
 local:
     ----------
@@ -595,10 +678,10 @@ local:
     requests:
         2.25.1
     salt:
-        3003+0na.d89ad40
+        3003+0na.15f2c87
     setuptools:
         39.2.0
     urllib3:
-        1.26.5
+        1.26.6
     wheel:
         0.36.2

@@ -31,18 +31,102 @@ Dependency Versions:
             ZMQ: 4.3.4
  
 System Versions:
-           dist: opensuse-tumbleweed 20210615 
+           dist: opensuse-tumbleweed 20210623 
          locale: utf-8
         machine: x86_64
         release: 4.19.78-coreos
          system: Linux
-        version: openSUSE Tumbleweed 20210615 
+        version: openSUSE Tumbleweed 20210623 
  
+# salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
+local:
+    ----------
+    init:
+        unknown
+    kernel:
+        Linux
+    kernelrelease:
+        4.19.78-coreos
+    kernelversion:
+        #1 SMP Mon Oct 14 22:56:39 -00 2019
+    locale_info:
+        ----------
+        defaultencoding:
+            UTF-8
+        defaultlanguage:
+            en_US
+        detectedencoding:
+            utf-8
+        timezone:
+            unknown
+    lsb_distrib_codename:
+        openSUSE Tumbleweed
+    lsb_distrib_id:
+        openSUSE Tumbleweed
+    lsb_distrib_release:
+        20210623
+    os:
+        SUSE
+    os_family:
+        Suse
+    osarch:
+        x86_64
+    osbuild:
+    oscodename:
+        openSUSE Tumbleweed
+    osfinger:
+        openSUSE Tumbleweed-20210623
+    osfullname:
+        openSUSE Tumbleweed
+    osmajorrelease:
+        20210623
+    osmanufacturer:
+    osrelease:
+        20210623
+    osrelease_info:
+        - 20210623
+    osversion:
+    pythonexecutable:
+        /usr/bin/python3.8
+    pythonpath:
+        - /usr/bin
+        - /usr/lib/python38.zip
+        - /usr/lib64/python3.8
+        - /usr/lib64/python3.8/lib-dynload
+        - /usr/lib64/python3.8/site-packages
+        - /usr/lib64/python3.8/_import_failed
+        - /usr/lib/python3.8/site-packages
+        - /usr/local/lib/python3.8/site-packages
+    pythonversion:
+        - 3
+        - 8
+        - 10
+        - final
+        - 0
+    saltpath:
+        /usr/lib/python3.8/site-packages/salt
+    saltversion:
+        3001.7
+    saltversioninfo:
+        - 3001
+        - 7
+    systemd:
+        ----------
+        features:
+            +PAM +AUDIT +SELINUX -IMA +APPARMOR -SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +ZSTD +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=unified
+        version:
+            246
+    virtual:
+        gce
+    virtual_subtype:
+        Docker
+    zmqversion:
+        4.3.4
 # salt-call --local pkg.list_pkgs
 local:
     ----------
     aaa_base:
-        84.87+git20210601.8cb043f-1.1
+        84.87+git20210616.9cf42ff-2.1
     bash:
         5.1.4-3.1
     boost-license1_76_0:
@@ -54,7 +138,7 @@ local:
     chkstat:
         1550_20210518-28.14
     compat-usrmerge-tools:
-        84.87-2.1
+        84.87-3.1
     coreutils:
         8.32-8.3
     cracklib-dict-small:
@@ -82,11 +166,11 @@ local:
     git-core:
         2.32.0-1.1
     glibc:
-        2.33-8.1
+        2.33-9.1
     glibc-locale:
-        2.33-8.1
+        2.33-9.1
     glibc-locale-base:
-        2.33-8.1
+        2.33-9.1
     gpg2:
         2.2.27-2.1
     grep:
@@ -148,7 +232,7 @@ local:
     libdbus-1-3:
         1.12.20-5.4
     libdevmapper1_03:
-        1.02.173-9.1
+        1.02.177-1.1
     libeconf0:
         0.4.0+git20210413.fdb8025-1.13
     libedit0:
@@ -164,15 +248,15 @@ local:
     libfido2-udev:
         1.7.0-1.2
     libgcc_s1:
-        11.1.1+git121-2.1
+        11.1.1+git340-1.1
     libgcrypt20:
-        1.9.3-1.13
+        1.9.3-2.1
     libgdbm6:
         1.19-1.15
     libgdbm_compat4:
         1.19-1.15
     libglib-2_0-0:
-        2.68.2-1.2
+        2.68.3-1.1
     libgmp10:
         6.2.1-3.13
     libgpg-error0:
@@ -190,7 +274,7 @@ local:
     libkmod2:
         29-2.1
     libksba8:
-        1.5.1-1.2
+        1.6.0-1.1
     libldap-2_4-2:
         2.4.59-67.1
     liblua5_4-5:
@@ -236,7 +320,7 @@ local:
     libpython2_7-1_0:
         2.7.18-5.4
     libpython3_8-1_0:
-        3.8.10-2.1
+        3.8.10-3.1
     libqrencode4:
         4.1.1-1.5
     libreadline8:
@@ -268,7 +352,7 @@ local:
     libssh4:
         0.9.5-1.4
     libstdc++6:
-        11.1.1+git121-2.1
+        11.1.1+git340-1.1
     libsystemd0:
         246.13-2.1
     libtasn1-6:
@@ -314,9 +398,9 @@ local:
     openSUSE-build-key:
         1.0-40.1
     openSUSE-release:
-        20210615-1020.1
+        20210623-1029.1
     openSUSE-release-appliance-docker:
-        20210615-1020.1
+        20210623-1029.1
     openssh:
         8.4p1-5.1
     openssh-clients:
@@ -330,11 +414,11 @@ local:
     p11-kit-tools:
         0.23.22-1.5
     pam:
-        1.5.1-4.13
+        1.5.1-5.1
     pam-config:
         1.3-2.1
     pam_unix:
-        1.5.1-4.13
+        1.5.1-5.1
     perl:
         5.32.1-1.12
     perl-Error:
@@ -364,7 +448,7 @@ local:
     python38-appdirs:
         1.4.4-2.4
     python38-base:
-        3.8.10-2.1
+        3.8.10-3.1
     python38-ordered-set:
         3.1.1-5.4
     python38-packaging:
@@ -388,7 +472,7 @@ local:
     sudo:
         1.9.7-1.2
     suse-module-tools:
-        15.4.1-1.1
+        16.0.4-1.1
     system-group-hardware:
         20170617-21.13
     system-group-kvm:
@@ -412,7 +496,7 @@ local:
     udev:
         246.13-2.1
     update-alternatives:
-        1.19.0.5-8.13
+        1.20.9-1.1
     util-linux:
         2.36.2-2.1
     which:

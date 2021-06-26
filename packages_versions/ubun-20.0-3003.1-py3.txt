@@ -38,6 +38,89 @@ System Versions:
         system: Linux
        version: Ubuntu 20.04 focal
  
+# salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
+local:
+    ----------
+    init:
+        unknown
+    kernel:
+        Linux
+    kernelrelease:
+        4.19.78-coreos
+    kernelversion:
+        #1 SMP Mon Oct 14 22:56:39 -00 2019
+    locale_info:
+        ----------
+        defaultencoding:
+            UTF-8
+        defaultlanguage:
+            en_US
+        detectedencoding:
+            utf-8
+        timezone:
+            UTC
+    lsb_distrib_codename:
+        focal
+    lsb_distrib_id:
+        Ubuntu
+    lsb_distrib_release:
+        20.04
+    os:
+        Ubuntu
+    os_family:
+        Debian
+    osarch:
+        amd64
+    osbuild:
+    oscodename:
+        focal
+    osfinger:
+        Ubuntu-20.04
+    osfullname:
+        Ubuntu
+    osmajorrelease:
+        20
+    osmanufacturer:
+    osrelease:
+        20.04
+    osrelease_info:
+        - 20
+        - 4
+    osversion:
+    pythonexecutable:
+        /usr/bin/python3
+    pythonpath:
+        - /usr/bin
+        - /usr/lib/python38.zip
+        - /usr/lib/python3.8
+        - /usr/lib/python3.8/lib-dynload
+        - /usr/local/lib/python3.8/dist-packages
+        - /usr/lib/python3/dist-packages
+    pythonversion:
+        - 3
+        - 8
+        - 5
+        - final
+        - 0
+    saltpath:
+        /usr/lib/python3/dist-packages/salt
+    saltversion:
+        3003.1
+    saltversioninfo:
+        - 3003
+        - 1
+    systemd:
+        ----------
+        features:
+            +PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=hybrid
+        version:
+            245
+    virtual:
+        gce
+    virtual_subtype:
+        Docker
+    zmqversion:
+        4.3.2
 # salt-call --local pkg.list_pkgs
 local:
     ----------

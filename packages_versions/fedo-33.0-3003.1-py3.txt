@@ -177,7 +177,7 @@ local:
     dnf-data:
         4.7.0-1.fc33
     dracut:
-        050-64.git20200529.fc33
+        055-2.fc33
     elfutils-debuginfod-client:
         0.185-2.fc33
     elfutils-default-yama-scope:
@@ -433,11 +433,11 @@ local:
     libverto:
         0.3.0-10.fc33
     libxcrypt:
-        4.4.20-2.fc33
+        4.4.22-2.fc33
     libxcrypt-compat:
-        4.4.20-2.fc33
+        4.4.22-2.fc33
     libxcrypt-devel:
-        4.4.20-2.fc33
+        4.4.22-2.fc33
     libxkbcommon:
         1.0.1-1.fc33
     libxml2:
@@ -454,6 +454,8 @@ local:
         1:4.3-2.fc33
     memstrack:
         0.1.9-1.fc33
+    mkpasswd:
+        5.5.10-1.fc33
     mpfr:
         4.1.0-7.fc33
     ncurses:
@@ -694,6 +696,8 @@ local:
         2:8.2.2956-2.fc33
     which:
         2.21-20.fc33
+    whois-nls:
+        5.5.10-1.fc33
     xkeyboard-config:
         2.30-3.fc33
     xz:

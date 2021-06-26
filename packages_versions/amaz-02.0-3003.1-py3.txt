@@ -38,6 +38,88 @@ System Versions:
         system: Linux
        version: Amazon Linux 2 
  
+# salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
+local:
+    ----------
+    init:
+        unknown
+    kernel:
+        Linux
+    kernelrelease:
+        4.19.78-coreos
+    kernelversion:
+        #1 SMP Mon Oct 14 22:56:39 -00 2019
+    locale_info:
+        ----------
+        defaultencoding:
+            UTF-8
+        defaultlanguage:
+            en_US
+        detectedencoding:
+            utf-8
+        timezone:
+            unknown
+    lsb_distrib_codename:
+        Amazon Linux 2
+    lsb_distrib_id:
+        Amazon Linux
+    lsb_distrib_release:
+        2
+    os:
+        Amazon
+    os_family:
+        RedHat
+    osarch:
+        x86_64
+    osbuild:
+    oscodename:
+        Amazon Linux 2
+    osfinger:
+        Amazon Linux-2
+    osfullname:
+        Amazon Linux
+    osmajorrelease:
+        2
+    osmanufacturer:
+    osrelease:
+        2
+    osrelease_info:
+        - 2
+    osversion:
+    pythonexecutable:
+        /usr/bin/python3
+    pythonpath:
+        - /usr/bin
+        - /usr/lib64/python37.zip
+        - /usr/lib64/python3.7
+        - /usr/lib64/python3.7/lib-dynload
+        - /usr/lib64/python3.7/site-packages
+        - /usr/lib/python3.7/site-packages
+    pythonversion:
+        - 3
+        - 7
+        - 10
+        - final
+        - 0
+    saltpath:
+        /usr/lib/python3.7/site-packages/salt
+    saltversion:
+        3003.1
+    saltversioninfo:
+        - 3003
+        - 1
+    systemd:
+        ----------
+        features:
+            +PAM +AUDIT +SELINUX +IMA -APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 -SECCOMP +BLKID +ELFUTILS +KMOD +IDN
+        version:
+            219
+    virtual:
+        gce
+    virtual_subtype:
+        Docker
+    zmqversion:
+        4.2.3
 # salt-call --local pkg.list_pkgs
 local:
     ----------

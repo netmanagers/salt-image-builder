@@ -38,6 +38,87 @@ System Versions:
         system: Linux
        version: Fedora 33 
  
+# salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
+local:
+    ----------
+    init:
+        unknown
+    kernel:
+        Linux
+    kernelrelease:
+        4.19.78-coreos
+    kernelversion:
+        #1 SMP Mon Oct 14 22:56:39 -00 2019
+    locale_info:
+        ----------
+        defaultencoding:
+            UTF-8
+        defaultlanguage:
+            en_US
+        detectedencoding:
+            utf-8
+        timezone:
+            unknown
+    lsb_distrib_codename:
+    lsb_distrib_id:
+        Fedora
+    lsb_distrib_release:
+        33
+    os:
+        Fedora
+    os_family:
+        RedHat
+    osarch:
+        x86_64
+    osbuild:
+    oscodename:
+    osfinger:
+        Fedora-33
+    osfullname:
+        Fedora
+    osmajorrelease:
+        33
+    osmanufacturer:
+    osrelease:
+        33
+    osrelease_info:
+        - 33
+    osversion:
+    pythonexecutable:
+        /usr/bin/python3
+    pythonpath:
+        - /usr/bin
+        - /usr/lib64/python39.zip
+        - /usr/lib64/python3.9
+        - /usr/lib64/python3.9/lib-dynload
+        - /usr/local/lib/python3.9/site-packages
+        - /usr/lib64/python3.9/site-packages
+        - /usr/lib/python3.9/site-packages
+    pythonversion:
+        - 3
+        - 9
+        - 5
+        - final
+        - 0
+    saltpath:
+        /usr/lib/python3.9/site-packages/salt
+    saltversion:
+        3002.6
+    saltversioninfo:
+        - 3002
+        - 6
+    systemd:
+        ----------
+        features:
+            +PAM +AUDIT +SELINUX +IMA -APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +ZSTD +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=unified
+        version:
+            246
+    virtual:
+        gce
+    virtual_subtype:
+        Docker
+    zmqversion:
+        4.3.4
 # salt-call --local pkg.list_pkgs
 local:
     ----------
@@ -60,9 +141,9 @@ local:
     ca-certificates:
         2020.2.41-4.fc33
     coreutils:
-        8.32-18.fc33
+        8.32-19.fc33
     coreutils-common:
-        8.32-18.fc33
+        8.32-19.fc33
     cpio:
         2.13-8.fc33
     cpp:
@@ -96,7 +177,7 @@ local:
     dnf-data:
         4.7.0-1.fc33
     dracut:
-        050-64.git20200529.fc33
+        055-2.fc33
     elfutils-debuginfod-client:
         0.185-2.fc33
     elfutils-default-yama-scope:
@@ -106,7 +187,7 @@ local:
     elfutils-libs:
         0.185-2.fc33
     emacs-filesystem:
-        1:27.2-2.fc33
+        1:27.2-3.fc33
     expat:
         2.2.8-3.fc33
     fedora-gpg-keys:
@@ -308,7 +389,7 @@ local:
     librepo:
         1.14.0-1.fc33
     libreport-filesystem:
-        2.14.0-15.fc33
+        2.15.2-2.fc33
     libseccomp:
         2.5.0-3.fc33
     libselinux:
@@ -352,11 +433,11 @@ local:
     libverto:
         0.3.0-10.fc33
     libxcrypt:
-        4.4.20-2.fc33
+        4.4.22-2.fc33
     libxcrypt-compat:
-        4.4.20-2.fc33
+        4.4.22-2.fc33
     libxcrypt-devel:
-        4.4.20-2.fc33
+        4.4.22-2.fc33
     libxkbcommon:
         1.0.1-1.fc33
     libxml2:
@@ -373,6 +454,8 @@ local:
         1:4.3-2.fc33
     memstrack:
         0.1.9-1.fc33
+    mkpasswd:
+        5.5.10-1.fc33
     mpfr:
         4.1.0-7.fc33
     ncurses:
@@ -418,45 +501,45 @@ local:
     perl-Carp:
         1.50-457.fc33
     perl-Class-Struct:
-        0.66-469.fc33
+        0.66-470.fc33
     perl-DynaLoader:
-        1.47-469.fc33
+        1.47-470.fc33
     perl-Encode:
         4:3.08-458.fc33
     perl-Errno:
-        1.30-469.fc33
+        1.30-470.fc33
     perl-Error:
         1:0.17029-4.fc33
     perl-Exporter:
         5.74-458.fc33
     perl-Fcntl:
-        1.13-469.fc33
+        1.13-470.fc33
     perl-File-Basename:
-        2.85-469.fc33
+        2.85-470.fc33
     perl-File-Find:
-        1.37-469.fc33
+        1.37-470.fc33
     perl-File-Path:
         2.18-1.fc33
     perl-File-Temp:
         1:0.231.100-1.fc33
     perl-File-stat:
-        1.09-469.fc33
+        1.09-470.fc33
     perl-Getopt-Long:
         1:2.52-1.fc33
     perl-Getopt-Std:
-        1.12-469.fc33
+        1.12-470.fc33
     perl-Git:
         2.31.1-3.fc33
     perl-HTTP-Tiny:
         0.076-457.fc33
     perl-IO:
-        1.43-469.fc33
+        1.43-470.fc33
     perl-IPC-Open3:
-        1.21-469.fc33
+        1.21-470.fc33
     perl-MIME-Base64:
         3.16-1.fc33
     perl-POSIX:
-        1.94-469.fc33
+        1.94-470.fc33
     perl-PathTools:
         3.78-458.fc33
     perl-Pod-Escapes:
@@ -470,13 +553,13 @@ local:
     perl-Scalar-List-Utils:
         4:1.55-457.fc33
     perl-SelectSaver:
-        1.02-469.fc33
+        1.02-470.fc33
     perl-Socket:
         4:2.031-1.fc33
     perl-Storable:
         1:3.21-457.fc33
     perl-Symbol:
-        1.08-469.fc33
+        1.08-470.fc33
     perl-Term-ANSIColor:
         5.01-458.fc33
     perl-Term-Cap:
@@ -492,29 +575,29 @@ local:
     perl-constant:
         1.33-458.fc33
     perl-if:
-        0.60.800-469.fc33
+        0.60.800-470.fc33
     perl-interpreter:
-        4:5.32.1-469.fc33
+        4:5.32.1-470.fc33
     perl-lib:
-        0.65-469.fc33
+        0.65-470.fc33
     perl-libs:
-        4:5.32.1-469.fc33
+        4:5.32.1-470.fc33
     perl-macros:
-        4:5.32.1-469.fc33
+        4:5.32.1-470.fc33
     perl-mro:
-        1.23-469.fc33
+        1.23-470.fc33
     perl-overload:
-        1.31-469.fc33
+        1.31-470.fc33
     perl-overloading:
-        0.02-469.fc33
+        0.02-470.fc33
     perl-parent:
         1:0.238-457.fc33
     perl-podlators:
         1:4.14-457.fc33
     perl-subs:
-        1.03-469.fc33
+        1.03-470.fc33
     perl-vars:
-        1.05-469.fc33
+        1.05-470.fc33
     pigz:
         2.4-7.fc33
     pkgconf:
@@ -610,9 +693,11 @@ local:
     util-linux:
         2.36.1-1.fc33
     vim-minimal:
-        2:8.2.2875-1.fc33
+        2:8.2.2956-2.fc33
     which:
         2.21-20.fc33
+    whois-nls:
+        5.5.10-1.fc33
     xkeyboard-config:
         2.30-3.fc33
     xz:

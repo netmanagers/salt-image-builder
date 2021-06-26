@@ -38,6 +38,88 @@ System Versions:
         system: Linux
        version: Debian GNU/Linux 10 buster
  
+# salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
+local:
+    ----------
+    init:
+        unknown
+    kernel:
+        Linux
+    kernelrelease:
+        4.19.78-coreos
+    kernelversion:
+        #1 SMP Mon Oct 14 22:56:39 -00 2019
+    locale_info:
+        ----------
+        defaultencoding:
+            UTF-8
+        defaultlanguage:
+            en_US
+        detectedencoding:
+            utf-8
+        timezone:
+            UTC
+    lsb_distrib_codename:
+        buster
+    lsb_distrib_id:
+        Debian
+    lsb_distrib_release:
+        10
+    os:
+        Debian
+    os_family:
+        Debian
+    osarch:
+        amd64
+    osbuild:
+    oscodename:
+        buster
+    osfinger:
+        Debian-10
+    osfullname:
+        Debian
+    osmajorrelease:
+        10
+    osmanufacturer:
+    osrelease:
+        10
+    osrelease_info:
+        - 10
+    osversion:
+    pythonexecutable:
+        /usr/bin/python3
+    pythonpath:
+        - /usr/bin
+        - /usr/lib/python37.zip
+        - /usr/lib/python3.7
+        - /usr/lib/python3.7/lib-dynload
+        - /usr/local/lib/python3.7/dist-packages
+        - /usr/lib/python3/dist-packages
+    pythonversion:
+        - 3
+        - 7
+        - 3
+        - final
+        - 0
+    saltpath:
+        /usr/lib/python3/dist-packages/salt
+    saltversion:
+        3003.1
+    saltversioninfo:
+        - 3003
+        - 1
+    systemd:
+        ----------
+        features:
+            +PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD -IDN2 +IDN -PCRE2 default-hierarchy=hybrid
+        version:
+            241
+    virtual:
+        gce
+    virtual_subtype:
+        Docker
+    zmqversion:
+        4.3.1
 # salt-call --local pkg.list_pkgs
 local:
     ----------

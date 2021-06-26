@@ -1,7 +1,7 @@
 debi-09.0-master-py3
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003+0na.d89ad40
+          Salt: 3003+0na.15f2c87
  
 Dependency Versions:
           cffi: Not Installed
@@ -38,6 +38,89 @@ System Versions:
         system: Linux
        version: Debian GNU/Linux 9 stretch
  
+# salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
+local:
+    ----------
+    init:
+        unknown
+    kernel:
+        Linux
+    kernelrelease:
+        4.19.78-coreos
+    kernelversion:
+        #1 SMP Mon Oct 14 22:56:39 -00 2019
+    locale_info:
+        ----------
+        defaultencoding:
+            None
+        defaultlanguage:
+            None
+        detectedencoding:
+            ANSI_X3.4-1968
+        timezone:
+            unknown
+    lsb_distrib_codename:
+        stretch
+    lsb_distrib_id:
+        Debian
+    lsb_distrib_release:
+        9.13
+    os:
+        Debian
+    os_family:
+        Debian
+    osarch:
+        amd64
+    osbuild:
+    oscodename:
+        stretch
+    osfinger:
+        Debian-9
+    osfullname:
+        Debian
+    osmajorrelease:
+        9
+    osmanufacturer:
+    osrelease:
+        9.13
+    osrelease_info:
+        - 9
+        - 13
+    osversion:
+    pythonexecutable:
+        /usr/bin/python3
+    pythonpath:
+        - /usr/local/bin
+        - /usr/lib/python35.zip
+        - /usr/lib/python3.5
+        - /usr/lib/python3.5/plat-x86_64-linux-gnu
+        - /usr/lib/python3.5/lib-dynload
+        - /usr/local/lib/python3.5/dist-packages
+        - /usr/lib/python3/dist-packages
+    pythonversion:
+        - 3
+        - 5
+        - 3
+        - final
+        - 0
+    saltpath:
+        /usr/local/lib/python3.5/dist-packages/salt
+    saltversion:
+        3003+0na.15f2c87
+    saltversioninfo:
+        - 3003
+    systemd:
+        ----------
+        features:
+            +PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN
+        version:
+            232
+    virtual:
+        container
+    virtual_subtype:
+        Docker
+    zmqversion:
+        4.3.3
 # salt-call --local pkg.list_pkgs
 local:
     ----------
@@ -200,7 +283,7 @@ local:
     libgcc1:
         1:6.3.0-18+deb9u1
     libgcrypt20:
-        1.7.6-2+deb9u3
+        1.7.6-2+deb9u4
     libgdbm3:
         1.8.3-14
     libgmp10:
@@ -358,7 +441,7 @@ local:
     libyaml-0-2:
         0.1.7-2
     linux-libc-dev:
-        4.9.258-1
+        4.9.272-1
     locales:
         2.24-11+deb9u4
     login:
@@ -491,10 +574,10 @@ local:
     requests:
         2.25.1
     salt:
-        3003+0na.d89ad40
+        3003+0na.15f2c87
     setuptools:
         33.1.1
     urllib3:
-        1.26.5
+        1.26.6
     wheel:
         0.36.2

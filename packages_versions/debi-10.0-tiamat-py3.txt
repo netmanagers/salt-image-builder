@@ -38,6 +38,84 @@ System Versions:
         system: Linux
        version: Debian GNU/Linux 10 buster
  
+# salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
+local:
+    ----------
+    init:
+        unknown
+    kernel:
+        Linux
+    kernelrelease:
+        4.19.78-coreos
+    kernelversion:
+        #1 SMP Mon Oct 14 22:56:39 -00 2019
+    locale_info:
+        ----------
+        defaultencoding:
+            None
+        defaultlanguage:
+            None
+        detectedencoding:
+            utf-8
+        timezone:
+            UTC
+    lsb_distrib_codename:
+        buster
+    lsb_distrib_id:
+        Debian GNU/Linux
+    lsb_distrib_release:
+        10
+    os:
+        Debian
+    os_family:
+        Debian
+    osarch:
+        amd64
+    osbuild:
+    oscodename:
+        buster
+    osfinger:
+        Debian-10
+    osfullname:
+        Debian GNU/Linux
+    osmajorrelease:
+        10
+    osmanufacturer:
+    osrelease:
+        10
+    osrelease_info:
+        - 10
+    osversion:
+    pythonexecutable:
+        /opt/saltstack/salt/run/run
+    pythonpath:
+        - /opt/saltstack/salt/pypath
+        - /opt/saltstack/salt/run/base_library.zip
+        - /opt/saltstack/salt/run
+    pythonversion:
+        - 3
+        - 7
+        - 7
+        - final
+        - 0
+    saltpath:
+        /opt/saltstack/salt/run/salt
+    saltversion:
+        3003
+    saltversioninfo:
+        - 3003
+    systemd:
+        ----------
+        features:
+            +PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD -IDN2 +IDN -PCRE2 default-hierarchy=hybrid
+        version:
+            241
+    virtual:
+        gce
+    virtual_subtype:
+        Docker
+    zmqversion:
+        4.3.1
 # salt-call --local pkg.list_pkgs
 local:
     ----------
@@ -48,7 +126,7 @@ local:
     apt-transport-https:
         1.8.2.3
     base-files:
-        10.3+deb10u9
+        10.3+deb10u10
     base-passwd:
         3.5.46
     bash:
@@ -192,7 +270,7 @@ local:
     libgcc1:
         1:8.3.0-6
     libgcrypt20:
-        1.8.4-5
+        1.8.4-5+deb10u1
     libgdbm-compat4:
         1.18.1-4
     libgdbm6:
@@ -200,13 +278,13 @@ local:
     libgmp10:
         2:6.1.2+dfsg-4
     libgnutls30:
-        3.6.7-4+deb10u6
+        3.6.7-4+deb10u7
     libgpg-error0:
         1.35-1
     libgssapi-krb5-2:
         1.17-3+deb10u1
     libhogweed4:
-        3.4.1-1
+        3.4.1-1+deb10u1
     libidn11:
         1.33-2.2
     libidn2-0:
@@ -232,7 +310,7 @@ local:
     libldap-common:
         2.4.47+dfsg-3+deb10u6
     liblz4-1:
-        1.8.3-1
+        1.8.3-1+deb10u1
     liblzma5:
         5.2.4-1
     libmnl0:
@@ -246,7 +324,7 @@ local:
     libncursesw6:
         6.1+20181013-2+deb10u2
     libnettle6:
-        3.4.1-1
+        3.4.1-1+deb10u1
     libnghttp2-14:
         1.36.0-2+deb10u1
     libnpth0:

@@ -21,10 +21,10 @@ Dependency Versions:
        pycrypto: Not Installed
    pycryptodome: 3.10.1
          pygit2: Not Installed
-         Python: 3.9.5 (default, May  4 2021, 00:00:00)
+         Python: 3.9.5 (default, May 14 2021, 00:00:00)
    python-gnupg: Not Installed
          PyYAML: 5.4.1
-          PyZMQ: 22.0.3
+          PyZMQ: 22.1.0
           smmap: Not Installed
         timelib: Not Installed
         Tornado: 4.5.3
@@ -38,6 +38,87 @@ System Versions:
          system: Linux
         version: Fedora 34 
  
+# salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
+local:
+    ----------
+    init:
+        unknown
+    kernel:
+        Linux
+    kernelrelease:
+        4.19.78-coreos
+    kernelversion:
+        #1 SMP Mon Oct 14 22:56:39 -00 2019
+    locale_info:
+        ----------
+        defaultencoding:
+            UTF-8
+        defaultlanguage:
+            en_US
+        detectedencoding:
+            utf-8
+        timezone:
+            unknown
+    lsb_distrib_codename:
+    lsb_distrib_id:
+        Fedora
+    lsb_distrib_release:
+        34
+    os:
+        Fedora
+    os_family:
+        RedHat
+    osarch:
+        x86_64
+    osbuild:
+    oscodename:
+    osfinger:
+        Fedora-34
+    osfullname:
+        Fedora
+    osmajorrelease:
+        34
+    osmanufacturer:
+    osrelease:
+        34
+    osrelease_info:
+        - 34
+    osversion:
+    pythonexecutable:
+        /usr/bin/python3
+    pythonpath:
+        - /usr/bin
+        - /usr/lib64/python39.zip
+        - /usr/lib64/python3.9
+        - /usr/lib64/python3.9/lib-dynload
+        - /usr/local/lib/python3.9/site-packages
+        - /usr/lib64/python3.9/site-packages
+        - /usr/lib/python3.9/site-packages
+    pythonversion:
+        - 3
+        - 9
+        - 5
+        - final
+        - 0
+    saltpath:
+        /usr/lib/python3.9/site-packages/salt
+    saltversion:
+        3001.7
+    saltversioninfo:
+        - 3001
+        - 7
+    systemd:
+        ----------
+        features:
+            +PAM +AUDIT +SELINUX -APPARMOR +IMA +SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified
+        version:
+            248
+    virtual:
+        gce
+    virtual_subtype:
+        Docker
+    zmqversion:
+        4.3.4
 # salt-call --local pkg.list_pkgs
 local:
     ----------
@@ -46,7 +127,7 @@ local:
     alternatives:
         1.15-2.fc34
     audit-libs:
-        3.0.1-2.fc34
+        3.0.2-1.fc34
     basesystem:
         11-11.fc34
     bash:
@@ -58,15 +139,15 @@ local:
     bzip2-libs:
         1.0.8-6.fc34
     ca-certificates:
-        2020.2.41-7.fc34
+        2021.2.50-1.0.fc34
     coreutils:
-        8.32-26.fc34
+        8.32-27.fc34
     coreutils-common:
-        8.32-26.fc34
+        8.32-27.fc34
     cpio:
         2.13-10.fc34
     cpp:
-        11.1.1-1.fc34
+        11.1.1-3.fc34
     cracklib:
         2.9.6-25.fc34
     crypto-policies:
@@ -74,15 +155,15 @@ local:
     crypto-policies-scripts:
         20210213-1.git5c710c0.fc34
     cryptsetup-libs:
-        2.3.5-2.fc34
+        2.3.6-1.fc34
     curl:
-        7.76.1-2.fc34
+        7.76.1-4.fc34
     cyrus-sasl-lib:
         2.1.27-8.fc34
     dbus:
         1:1.12.20-3.fc34
     dbus-broker:
-        28-3.fc34
+        29-1.fc34
     dbus-common:
         1:1.12.20-3.fc34
     dbus-libs:
@@ -95,22 +176,24 @@ local:
         1.02.175-1.fc34
     device-mapper-libs:
         1.02.175-1.fc34
+    diffutils:
+        3.7-8.fc34
     dnf:
-        4.7.0-1.fc34
+        4.8.0-1.fc34
     dnf-data:
-        4.7.0-1.fc34
+        4.8.0-1.fc34
     dracut:
-        053-5.fc34
+        055-2.fc34
     elfutils-debuginfod-client:
-        0.183-1.fc34
+        0.185-2.fc34
     elfutils-default-yama-scope:
-        0.183-1.fc34
+        0.185-2.fc34
     elfutils-libelf:
-        0.183-1.fc34
+        0.185-2.fc34
     elfutils-libs:
-        0.183-1.fc34
+        0.185-2.fc34
     expat:
-        2.2.10-2.fc34
+        2.4.1-1.fc34
     fedora-gpg-keys:
         34-2
     fedora-release-common:
@@ -124,9 +207,9 @@ local:
     fedora-repos-modular:
         34-2
     file:
-        5.39-5.fc34
+        5.39-6.fc34
     file-libs:
-        5.39-5.fc34
+        5.39-6.fc34
     filesystem:
         3.14-5.fc34
     findutils:
@@ -140,7 +223,7 @@ local:
     gc:
         8.0.4-5.fc34
     gcc:
-        11.1.1-1.fc34
+        11.1.1-3.fc34
     gdbm-libs:
         1:1.19-2.fc34
     gettext:
@@ -156,25 +239,25 @@ local:
     glib2:
         2.68.2-1.fc34
     glibc:
-        2.33-8.fc34
+        2.33-18.fc34
     glibc-common:
-        2.33-8.fc34
+        2.33-18.fc34
     glibc-devel:
-        2.33-8.fc34
+        2.33-18.fc34
     glibc-doc:
-        2.33-8.fc34
+        2.33-18.fc34
     glibc-headers-x86:
-        2.33-8.fc34
+        2.33-18.fc34
     glibc-langpack-en:
-        2.33-8.fc34
+        2.33-18.fc34
     glibc-minimal-langpack:
-        2.33-8.fc34
+        2.33-18.fc34
     gmp:
         1:6.2.0-6.fc34
     gnupg2:
         2.2.27-4.fc34
     gnutls:
-        3.7.1-2.fc34
+        3.7.2-1.fc34
     gpg-pubkey.(none):
         45719a39-5f2c0192
     gpgme:
@@ -184,11 +267,11 @@ local:
     groff-base:
         1.22.4-7.fc34
     grub2-common:
-        1:2.06~rc1-4.fc34
+        1:2.06-2.fc34
     grub2-tools:
-        1:2.06~rc1-4.fc34
+        1:2.06-2.fc34
     grub2-tools-minimal:
-        1:2.06~rc1-4.fc34
+        1:2.06-2.fc34
     grubby:
         8.40-51.fc34
     guile22:
@@ -198,7 +281,7 @@ local:
     ima-evm-utils:
         1.3.2-2.fc34
     iptables-legacy-libs:
-        1.8.7-7.fc34
+        1.8.7-8.fc34
     json-c:
         0.14-8.fc34
     kbd:
@@ -206,17 +289,17 @@ local:
     kbd-misc:
         2.4.0-2.fc34
     kernel-headers:
-        5.11.20-300.fc34
+        5.12.9-300.fc34
     keyutils-libs:
         1.6.1-2.fc34
     kmod:
-        28-2.fc34
+        29-2.fc34
     kmod-libs:
-        28-2.fc34
+        29-2.fc34
     kpartx:
         0.8.5-4.fc34
     krb5-libs:
-        1.19.1-3.fc34
+        1.19.1-8.fc34
     langpacks-core-en_GB:
         3.0-14.fc34
     langpacks-core-font-en:
@@ -248,17 +331,17 @@ local:
     libcom_err:
         1.45.6-5.fc34
     libcomps:
-        0.1.15-6.fc34
+        0.1.17-1.fc34
     libcurl:
-        7.76.1-2.fc34
+        7.76.1-4.fc34
     libdb:
         5.3.28-46.fc34
     libdnf:
-        0.62.0-1.fc34
+        0.63.1-1.fc34
     libeconf:
         0.3.8-5.fc34
     libedit:
-        3.1-36.20210419cvs.fc34
+        3.1-37.20210522cvs.fc34
     libevent:
         2.1.12-3.fc34
     libfdisk:
@@ -268,17 +351,17 @@ local:
     libfido2:
         1.6.0-2.fc34
     libgcc:
-        11.1.1-1.fc34
+        11.1.1-3.fc34
     libgcrypt:
         1.9.3-2.fc34
     libgomp:
-        11.1.1-1.fc34
+        11.1.1-3.fc34
     libgpg-error:
         1.42-1.fc34
     libibverbs:
-        34.0-3.fc34
+        35.0-1.fc34
     libidn2:
-        2.3.0-5.fc34
+        2.3.1-1.fc34
     libkcapi:
         1.2.1-1.fc34
     libkcapi-hmaccalc:
@@ -300,7 +383,7 @@ local:
     libnsl2:
         1.3.0-2.fc34
     libpcap:
-        14:1.10.0-1.fc34
+        14:1.10.1-1.fc34
     libpkgconf:
         1.7.3-6.fc34
     libpsl:
@@ -308,9 +391,9 @@ local:
     libpwquality:
         1.4.4-2.fc34
     librepo:
-        1.14.0-1.fc34
+        1.14.1-1.fc34
     libreport-filesystem:
-        2.14.0-17.fc34
+        2.15.2-2.fc34
     libseccomp:
         2.5.0-4.fc34
     libselinux:
@@ -330,17 +413,17 @@ local:
     libssh-config:
         0.9.5-2.fc34
     libsss_idmap:
-        2.4.2-3.fc34
+        2.5.1-1.fc34
     libsss_nss_idmap:
-        2.4.2-3.fc34
+        2.5.1-1.fc34
     libstdc++:
-        11.1.1-1.fc34
+        11.1.1-3.fc34
     libtasn1:
         4.16.0-4.fc34
     libtextstyle:
         0.21-4.fc34
     libtirpc:
-        1.3.1-1.rc2.fc34
+        1.3.2-0.fc34
     libtool-ltdl:
         2.4.6-40.fc34
     libunistring:
@@ -354,13 +437,15 @@ local:
     libverto:
         0.3.2-1.fc34
     libxcrypt:
-        4.4.20-2.fc34
+        4.4.22-2.fc34
     libxcrypt-compat:
-        4.4.20-2.fc34
+        4.4.22-2.fc34
     libxcrypt-devel:
-        4.4.20-2.fc34
+        4.4.22-2.fc34
+    libxkbcommon:
+        1.3.0-1.fc34
     libxml2:
-        2.9.10-12.fc34
+        2.9.12-4.fc34
     libyaml:
         0.2.5-5.fc34
     libzstd:
@@ -373,8 +458,10 @@ local:
         1:4.3-5.fc34
     memstrack:
         0.2.2-1.fc34
+    mkpasswd:
+        5.5.10-1.fc34
     mpfr:
-        4.1.0-6.fc34
+        4.1.0-7.fc34
     ncurses:
         6.2-4.20200222.fc34
     ncurses-base:
@@ -384,17 +471,17 @@ local:
     net-tools:
         2.0-0.59.20160912git.fc34
     nettle:
-        3.7.2-1.fc34
+        3.7.3-1.fc34
     npth:
         1.6-6.fc34
     openldap:
-        2.4.57-3.fc34
+        2.4.57-4.fc34
     openssh:
-        8.5p1-2.fc34
+        8.6p1-3.fc34
     openssh-clients:
-        8.5p1-2.fc34
+        8.6p1-3.fc34
     openssh-server:
-        8.5p1-2.fc34
+        8.6p1-3.fc34
     openssl-libs:
         1:1.1.1k-1.fc34
     os-prober:
@@ -404,7 +491,7 @@ local:
     p11-kit-trust:
         0.23.22-3.fc34
     pam:
-        1.5.1-5.fc34
+        1.5.1-6.fc34
     pcre:
         8.44-3.fc34.1
     pcre2:
@@ -414,45 +501,45 @@ local:
     perl-Carp:
         1.50-458.fc34
     perl-Class-Struct:
-        0.66-474.fc34
+        0.66-476.fc34
     perl-DynaLoader:
-        1.47-474.fc34
+        1.47-476.fc34
     perl-Encode:
         4:3.08-459.fc34
     perl-Errno:
-        1.30-474.fc34
+        1.30-476.fc34
     perl-Error:
         1:0.17029-5.fc34
     perl-Exporter:
         5.74-459.fc34
     perl-Fcntl:
-        1.13-474.fc34
+        1.13-476.fc34
     perl-File-Basename:
-        2.85-474.fc34
+        2.85-476.fc34
     perl-File-Find:
-        1.37-474.fc34
+        1.37-476.fc34
     perl-File-Path:
         2.18-2.fc34
     perl-File-Temp:
         1:0.231.100-2.fc34
     perl-File-stat:
-        1.09-474.fc34
+        1.09-476.fc34
     perl-Getopt-Long:
         1:2.52-2.fc34
     perl-Getopt-Std:
-        1.12-474.fc34
+        1.12-476.fc34
     perl-Git:
         2.31.1-3.fc34
     perl-HTTP-Tiny:
         0.076-458.fc34
     perl-IO:
-        1.43-474.fc34
+        1.43-476.fc34
     perl-IPC-Open3:
-        1.21-474.fc34
+        1.21-476.fc34
     perl-MIME-Base64:
         3.16-2.fc34
     perl-POSIX:
-        1.94-474.fc34
+        1.94-476.fc34
     perl-PathTools:
         3.78-459.fc34
     perl-Pod-Escapes:
@@ -466,13 +553,13 @@ local:
     perl-Scalar-List-Utils:
         4:1.56-459.fc34
     perl-SelectSaver:
-        1.02-474.fc34
+        1.02-476.fc34
     perl-Socket:
-        4:2.031-2.fc34
+        4:2.032-1.fc34
     perl-Storable:
         1:3.21-458.fc34
     perl-Symbol:
-        1.08-474.fc34
+        1.08-476.fc34
     perl-Term-ANSIColor:
         5.01-459.fc34
     perl-Term-Cap:
@@ -488,27 +575,27 @@ local:
     perl-constant:
         1.33-459.fc34
     perl-if:
-        0.60.800-474.fc34
+        0.60.800-476.fc34
     perl-interpreter:
-        4:5.32.1-474.fc34
+        4:5.32.1-476.fc34
     perl-lib:
-        0.65-474.fc34
+        0.65-476.fc34
     perl-libs:
-        4:5.32.1-474.fc34
+        4:5.32.1-476.fc34
     perl-mro:
-        1.23-474.fc34
+        1.23-476.fc34
     perl-overload:
-        1.31-474.fc34
+        1.31-476.fc34
     perl-overloading:
-        0.02-474.fc34
+        0.02-476.fc34
     perl-parent:
         1:0.238-458.fc34
     perl-podlators:
         1:4.14-458.fc34
     perl-subs:
-        1.03-474.fc34
+        1.03-476.fc34
     perl-vars:
-        1.05-474.fc34
+        1.05-476.fc34
     pigz:
         2.5-1.fc34
     pkgconf:
@@ -526,35 +613,37 @@ local:
     publicsuffix-list-dafsa:
         20190417-5.fc34
     python-pip-wheel:
-        21.0.1-2.fc34
+        21.0.1-3.fc34
     python-setuptools-wheel:
         53.0.0-1.fc34
     python-unversioned-command:
-        3.9.5-1.fc34
+        3.9.5-2.fc34
     python3:
-        3.9.5-1.fc34
+        3.9.5-2.fc34
     python3-devel:
-        3.9.5-1.fc34
+        3.9.5-2.fc34
     python3-dnf:
-        4.7.0-1.fc34
+        4.8.0-1.fc34
     python3-gpg:
         1.15.1-2.fc34
     python3-hawkey:
-        0.62.0-1.fc34
+        0.63.1-1.fc34
     python3-libcomps:
-        0.1.15-6.fc34
+        0.1.17-1.fc34
     python3-libdnf:
-        0.62.0-1.fc34
+        0.63.1-1.fc34
     python3-libs:
-        3.9.5-1.fc34
+        3.9.5-2.fc34
     python3-pip:
-        21.0.1-2.fc34
+        21.0.1-3.fc34
     python3-rpm:
         4.16.1.3-1.fc34
     python3-setuptools:
         53.0.0-1.fc34
     python3-unbound:
         1.13.1-1.fc34
+    qrencode-libs:
+        4.0.2-7.fc34
     readline:
         8.1-2.fc34
     rootfiles:
@@ -580,12 +669,14 @@ local:
     sqlite-libs:
         3.34.1-2.fc34
     sssd-client:
-        2.4.2-3.fc34
+        2.5.1-1.fc34
     sudo:
         1.9.5p2-1.fc34
     systemd:
         248.3-1.fc34
     systemd-libs:
+        248.3-1.fc34
+    systemd-networkd:
         248.3-1.fc34
     systemd-pam:
         248.3-1.fc34
@@ -596,7 +687,11 @@ local:
     tar:
         2:1.34-1.fc34
     tpm2-tss:
-        3.0.3-2.fc34
+        3.1.0-1.fc34
+    trousers:
+        0.3.15-2.fc34
+    trousers-lib:
+        0.3.15-2.fc34
     tzdata:
         2021a-1.fc34
     unbound-libs:
@@ -604,17 +699,21 @@ local:
     util-linux:
         2.36.2-1.fc34
     vim-minimal:
-        2:8.2.2846-1.fc34
+        2:8.2.2956-2.fc34
     which:
         2.21-26.fc34
+    whois-nls:
+        5.5.10-1.fc34
+    xkeyboard-config:
+        2.32-3.fc34
     xz:
         5.2.5-5.fc34
     xz-libs:
         5.2.5-5.fc34
     yum:
-        4.7.0-1.fc34
+        4.8.0-1.fc34
     zchunk-libs:
-        1.1.11-1.fc34
+        1.1.15-1.fc34
     zlib:
         1.2.11-26.fc34
 # salt-call --local pip.list
@@ -625,7 +724,7 @@ local:
     gpg:
         1.15.1
     libcomps:
-        0.1.15
+        0.1.17
     pip:
         21.0.1
     rpm:
