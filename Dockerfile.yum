@@ -24,10 +24,6 @@ RUN if [[ "${DISTRO_NAME}" = "centos" ]]; then \
       # Install EPEL repo for `centos`
       yum -y install epel-release; \
     fi \
-    # Workaround: `yum` is no longer available in Oracle Linux 8
- && if [ "${DISTRO_NAME}" = "oraclelinux" ] && [ "${DISTRO_VERSION}" = "8" ]; then \
-      dnf install -y yum && dnf clean all; \
-    fi \
  && yum -y install ${PKGS} \
  && if [ "${SALT_VERSION}" != "tiamat" ]; then \
       # Use workaround for Amazon Linux stable builds until packaging resolved (https://github.com/saltstack/salt/issues/59982)
