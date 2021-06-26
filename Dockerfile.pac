@@ -22,7 +22,9 @@ SHELL ["/bin/bash", "-x", "-o", "pipefail", "-c"]
 RUN pacman --noconfirm -Sy archlinux-keyring \
  && pacman-db-upgrade \
  && pacman --noconfirm -Syu ${PKGS} \
+    # Install Salt using the bootstrap script (removing the 10 seconds delay to cancel the bootstrap)
  && curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
+    sed -e '/^\s\+echowarn "You have 10 seconds to cancel and stop the bootstrap process..."/,+2d' | \
     sh -s -- -XUdfPD -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION \
     # Use temporary workaround of downgrading Jinja2 for images built using `git`
     # See https://github.com/saltstack/salt/issues/60188
