@@ -1,5 +1,18 @@
 # Changelog
 
+# [1.39.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.38.0...v1.39.0) (2021-06-26)
+
+
+### Features
+
+* **dockerfile.*:** remove 10 seconds delay from bootstrap script ([c3b237c](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/c3b237c04b169ba2f0eb8aec02e8f1c7883b8f3c))
+* **gentoo:** build `stable` for `3003.1` instead of `git` ([86ca5b0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/86ca5b0612852609eec8c40a7775c894d14cc6ea))
+
+
+### Reverts
+
+* **dockerfile.yum:** remove Oracle Linux 8 `yum` workaround ([bea75d7](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/bea75d73d18923c908ad05eb7129899625d3356e))
+
 # [1.38.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.37.0...v1.38.0) (2021-06-24)
 
 
