@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.39.2](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.39.1...v1.39.2) (2021-06-29)
+
+
+### Code Refactoring
+
+* **gitlab-ci:** use global variable for `artifacts` [skip ci] ([a44822a](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/a44822aab3e82c8579f69c7a279e7fac07079ee2))
+
+
+### Reverts
+
+* **dockerfile.pac:** install contextvars manually until package fixed ([c0b4f1b](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/c0b4f1bc4d16e51b77389cef8df4320db3fd0a3e))
+
 ## [1.39.1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.39.0...v1.39.1) (2021-06-26)
 
 

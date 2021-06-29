@@ -1,7 +1,7 @@
 fedo-34.0-master-py3
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003+0na.15f2c87
+          Salt: 3003+0na.3a4aa7b
  
 Dependency Versions:
           cffi: Not Installed
@@ -103,7 +103,7 @@ local:
     saltpath:
         /usr/lib/python3.9/site-packages/salt
     saltversion:
-        3003+0na.15f2c87
+        3003+0na.3a4aa7b
     saltversioninfo:
         - 3003
     systemd:
@@ -500,45 +500,45 @@ local:
     perl-Carp:
         1.50-458.fc34
     perl-Class-Struct:
-        0.66-476.fc34
+        0.66-477.fc34
     perl-DynaLoader:
-        1.47-476.fc34
+        1.47-477.fc34
     perl-Encode:
         4:3.08-459.fc34
     perl-Errno:
-        1.30-476.fc34
+        1.30-477.fc34
     perl-Error:
         1:0.17029-5.fc34
     perl-Exporter:
         5.74-459.fc34
     perl-Fcntl:
-        1.13-476.fc34
+        1.13-477.fc34
     perl-File-Basename:
-        2.85-476.fc34
+        2.85-477.fc34
     perl-File-Find:
-        1.37-476.fc34
+        1.37-477.fc34
     perl-File-Path:
         2.18-2.fc34
     perl-File-Temp:
         1:0.231.100-2.fc34
     perl-File-stat:
-        1.09-476.fc34
+        1.09-477.fc34
     perl-Getopt-Long:
         1:2.52-2.fc34
     perl-Getopt-Std:
-        1.12-476.fc34
+        1.12-477.fc34
     perl-Git:
         2.31.1-3.fc34
     perl-HTTP-Tiny:
         0.076-458.fc34
     perl-IO:
-        1.43-476.fc34
+        1.43-477.fc34
     perl-IPC-Open3:
-        1.21-476.fc34
+        1.21-477.fc34
     perl-MIME-Base64:
         3.16-2.fc34
     perl-POSIX:
-        1.94-476.fc34
+        1.94-477.fc34
     perl-PathTools:
         3.78-459.fc34
     perl-Pod-Escapes:
@@ -552,13 +552,13 @@ local:
     perl-Scalar-List-Utils:
         4:1.56-459.fc34
     perl-SelectSaver:
-        1.02-476.fc34
+        1.02-477.fc34
     perl-Socket:
         4:2.032-1.fc34
     perl-Storable:
         1:3.21-458.fc34
     perl-Symbol:
-        1.08-476.fc34
+        1.08-477.fc34
     perl-Term-ANSIColor:
         5.01-459.fc34
     perl-Term-Cap:
@@ -574,27 +574,27 @@ local:
     perl-constant:
         1.33-459.fc34
     perl-if:
-        0.60.800-476.fc34
+        0.60.800-477.fc34
     perl-interpreter:
-        4:5.32.1-476.fc34
+        4:5.32.1-477.fc34
     perl-lib:
-        0.65-476.fc34
+        0.65-477.fc34
     perl-libs:
-        4:5.32.1-476.fc34
+        4:5.32.1-477.fc34
     perl-mro:
-        1.23-476.fc34
+        1.23-477.fc34
     perl-overload:
-        1.31-476.fc34
+        1.31-477.fc34
     perl-overloading:
-        0.02-476.fc34
+        0.02-477.fc34
     perl-parent:
         1:0.238-458.fc34
     perl-podlators:
         1:4.14-458.fc34
     perl-subs:
-        1.03-476.fc34
+        1.03-477.fc34
     perl-vars:
-        1.05-476.fc34
+        1.05-477.fc34
     pigz:
         2.5-1.fc34
     pkgconf:
@@ -698,7 +698,7 @@ local:
     util-linux:
         2.36.2-1.fc34
     vim-minimal:
-        2:8.2.2956-2.fc34
+        2:8.2.3046-1.fc34
     which:
         2.21-26.fc34
     whois-nls:

@@ -1,7 +1,7 @@
 opsu-15.3-master-py3
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003+0na.15f2c87
+          Salt: 3003+0na.3a4aa7b
  
 Dependency Versions:
           cffi: 1.13.2
@@ -106,7 +106,7 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3003+0na.15f2c87
+        3003+0na.3a4aa7b
     saltversioninfo:
         - 3003
     systemd:
@@ -559,7 +559,7 @@ local:
     systemd-presets-branding-MicroOS:
         20200323-lp153.2.14
     systemd-presets-common-SUSE:
-        15-8.6.1
+        15-8.9.1
     sysuser-shadow:
         2.0-4.2.8
     terminfo-base:
@@ -626,7 +626,7 @@ local:
     requests:
         2.25.1
     salt:
-        3003+0na.15f2c87
+        3003+0na.3a4aa7b
     setuptools:
         40.5.0
     six:

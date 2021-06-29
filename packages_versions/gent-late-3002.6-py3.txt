@@ -316,7 +316,7 @@ local:
     dev-python/requests:
         2.25.1-r2
     dev-python/setuptools:
-        56.0.0
+        57.0.0
     dev-python/setuptools_scm:
         6.0.1-r1
     dev-python/toml:
@@ -442,7 +442,7 @@ local:
     sys-auth/pambase:
         20210201.1
     sys-auth/passwdqc:
-        1.4.0-r1
+        1.4.0-r2
     sys-devel/autoconf:
         2.69-r5
     sys-devel/autoconf-archive:
@@ -635,7 +635,7 @@ local:
     requests:
         2.25.1
     setuptools:
-        56.0.0
+        57.0.0
     setuptools-scm:
         6.0.1
     toml:
