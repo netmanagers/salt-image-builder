@@ -26,16 +26,6 @@ RUN if [[ "${DISTRO_NAME}" = "centos" ]]; then \
     fi \
  && yum -y install ${PKGS} \
  && if [ "${SALT_VERSION}" != "tiamat" ]; then \
-      # Use workaround for Amazon Linux stable builds until packaging resolved (https://github.com/saltstack/salt/issues/59982)
-      # Update: Issue has been closed but this workaround will be required for all versions < `3003.1`
-      if [ "${DISTRO_NAME}" = "amazonlinux" ] && [ "${DISTRO_VERSION}" = "2" ] && [ "${SALT_INSTALL_METHOD}" = "stable" ] && [ "${SALT_VERSION}" \< "3003.1" ]; then \
-        SALT_MAJOR_VERSION=$(echo "${SALT_VERSION}" | cut -d. -f1); \
-        rpm --import https://repo.saltproject.io/py3/amazon/2/x86_64/${SALT_MAJOR_VERSION}/SALTSTACK-GPG-KEY.pub; \
-        curl -fsSL https://repo.saltproject.io/py3/amazon/2/x86_64/${SALT_MAJOR_VERSION}.repo | tee /etc/yum.repos.d/saltstack-py3-repo.repo; \
-        yum clean expire-cache; \
-        yum -y install yum-versionlock; \
-        yum versionlock add python3-urllib3-0:1.23-6.amzn2.noarch; \
-      fi; \
       # Install Salt using the bootstrap script (removing the 10 seconds delay to cancel the bootstrap)
       curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
       sed -e '/^\s\+echowarn "You have 10 seconds to cancel and stop the bootstrap process..."/,+2d' | \
