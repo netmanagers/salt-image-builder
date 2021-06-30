@@ -359,9 +359,9 @@ local:
     libpython3-stdlib:
         3.8.2-0ubuntu2
     libpython3.8-minimal:
-        3.8.5-1~20.04.3
+        3.8.10-0ubuntu1~20.04
     libpython3.8-stdlib:
-        3.8.5-1~20.04.3
+        3.8.10-0ubuntu1~20.04
     libreadline8:
         8.0-4
     libroken18-heimdal:
@@ -473,9 +473,9 @@ local:
     python3-wheel:
         0.34.2-1
     python3.8:
-        3.8.5-1~20.04.3
+        3.8.10-0ubuntu1~20.04
     python3.8-minimal:
-        3.8.5-1~20.04.3
+        3.8.10-0ubuntu1~20.04
     readline-common:
         8.0-4
     salt-common:

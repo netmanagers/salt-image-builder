@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.39.3](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.39.2...v1.39.3) (2021-06-30)
+
+
+### Reverts
+
+* **dockerfile.yum:** use Amazon stable builds workaround [skip ci] ([ce6568e](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/ce6568ef28bf15e86b9057fb27629595cc913b2d)), closes [/github.com/saltstack/salt/issues/59982#issuecomment-871528035](https://gitlab.com//github.com/saltstack/salt/issues/59982/issues/issuecomment-871528035)
+
 ## [1.39.2](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.39.1...v1.39.2) (2021-06-29)
 
 

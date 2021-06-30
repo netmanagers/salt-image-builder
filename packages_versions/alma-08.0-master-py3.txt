@@ -1,7 +1,7 @@
 alma-08.0-master-py3
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003+0na.3a4aa7b
+          Salt: 3003+0na.fc352b4
  
 Dependency Versions:
           cffi: Not Installed
@@ -106,7 +106,7 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3003+0na.3a4aa7b
+        3003+0na.fc352b4
     saltversioninfo:
         - 3003
     systemd:
@@ -696,7 +696,7 @@ local:
     rpm:
         4.14.3
     salt:
-        3003+0na.3a4aa7b
+        3003+0na.fc352b4
     setuptools:
         39.2.0
     six:

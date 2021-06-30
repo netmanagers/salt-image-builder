@@ -1,7 +1,7 @@
 arch-late-master-py3
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003+0na.3a4aa7b
+          Salt: 3003+0na.fc352b4
  
 Dependency Versions:
           cffi: 1.14.5
@@ -98,7 +98,7 @@ local:
     saltpath:
         /usr/lib/python3.9/site-packages/salt
     saltversion:
-        3003+0na.3a4aa7b
+        3003+0na.fc352b4
     saltversioninfo:
         - 3003
     systemd:

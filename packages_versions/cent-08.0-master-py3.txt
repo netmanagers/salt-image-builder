@@ -1,7 +1,7 @@
 cent-08.0-master-py3
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003+0na.3a4aa7b
+          Salt: 3003+0na.fc352b4
  
 Dependency Versions:
           cffi: Not Installed
@@ -106,7 +106,7 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3003+0na.3a4aa7b
+        3003+0na.fc352b4
     saltversioninfo:
         - 3003
     systemd:
@@ -267,7 +267,7 @@ local:
     gnutls:
         3.6.14-8.el8_3
     gpg-pubkey.(none):
-        2f86d6a1-5cf7cefb,8483c65d-5ccc5b19,de57bfbe-53a9be98
+        8483c65d-5ccc5b19,de57bfbe-53a9be98
     gpgme:
         1.13.1-7.el8
     grep:
@@ -313,9 +313,9 @@ local:
     kbd-misc:
         2.0.4-10.el8
     kernel-headers:
-        4.18.0-305.3.1.el8
+        4.18.0-305.7.1.el8_4
     kexec-tools:
-        2.0.20-46.el8
+        2.0.20-46.el8_4.1
     keyutils-libs:
         1.5.10-6.el8
     keyutils-libs-devel:
@@ -461,7 +461,7 @@ local:
     libxkbcommon:
         0.9.1-1.el8
     libxml2:
-        2.9.7-9.el8
+        2.9.7-9.el8_4.2
     libyaml:
         0.1.7-5.el8
     libzstd:
@@ -469,7 +469,7 @@ local:
     lua-libs:
         5.3.4-11.el8
     lz4-libs:
-        1.8.3-2.el8
+        1.8.3-3.el8_4
     lzo:
         2.08-14.el8
     memstrack:
@@ -489,7 +489,7 @@ local:
     npth:
         1.5-4.el8
     openldap:
-        2.4.46-16.el8
+        2.4.46-17.el8_4
     openssh:
         8.0p1-6.el8_4.2
     openssh-clients:
@@ -661,7 +661,7 @@ local:
     python3-pip-wheel:
         9.0.3-19.el8
     python3-rpm:
-        4.14.3-13.el8
+        4.14.3-14.el8_4
     python3-rpm-generators:
         5-6.el8
     python3-rpm-macros:
@@ -685,13 +685,13 @@ local:
     rootfiles:
         8.1-22.el8
     rpm:
-        4.14.3-13.el8
+        4.14.3-14.el8_4
     rpm-build-libs:
-        4.14.3-13.el8
+        4.14.3-14.el8_4
     rpm-libs:
-        4.14.3-13.el8
+        4.14.3-14.el8_4
     rpm-plugin-systemd-inhibit:
-        4.14.3-13.el8
+        4.14.3-14.el8_4
     sed:
         4.5-2.el8
     setup:
@@ -711,13 +711,13 @@ local:
     swig:
         3.0.12-19.module_el8.3.0+557+3d058e38
     systemd:
-        239-45.el8
+        239-45.el8_4.1
     systemd-libs:
-        239-45.el8
+        239-45.el8_4.1
     systemd-pam:
-        239-45.el8
+        239-45.el8_4.1
     systemd-udev:
-        239-45.el8
+        239-45.el8_4.1
     tar:
         2:1.30-5.el8
     tpm2-tss:
@@ -790,7 +790,7 @@ local:
     rpm:
         4.14.3
     salt:
-        3003+0na.3a4aa7b
+        3003+0na.fc352b4
     setuptools:
         39.2.0
     six:

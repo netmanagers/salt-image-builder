@@ -303,7 +303,7 @@ local:
     kbd-misc:
         2.0.4-10.el8
     kexec-tools:
-        2.0.20-46.el8
+        2.0.20-46.el8_4.1
     keyutils-libs:
         1.5.10-6.el8
     keyutils-libs-devel:
@@ -449,7 +449,7 @@ local:
     libxkbcommon:
         0.9.1-1.el8
     libxml2:
-        2.9.7-9.el8
+        2.9.7-9.el8_4.2
     libyaml:
         0.1.7-5.el8
     libzstd:
@@ -457,7 +457,7 @@ local:
     lua-libs:
         5.3.4-11.el8
     lz4-libs:
-        1.8.3-2.el8
+        1.8.3-3.el8_4
     lzo:
         2.08-14.el8
     memstrack:
@@ -477,7 +477,7 @@ local:
     npth:
         1.5-4.el8
     openldap:
-        2.4.46-16.el8
+        2.4.46-17.el8_4
     openpgm:
         5.2.122-21.el8
     openssh:
@@ -683,7 +683,7 @@ local:
     python3-requests:
         2.20.0-2.1.el8_1
     python3-rpm:
-        4.14.3-13.el8
+        4.14.3-14.el8_4
     python3-rpm-generators:
         5-6.el8
     python3-rpm-macros:
@@ -711,13 +711,13 @@ local:
     rootfiles:
         8.1-22.el8
     rpm:
-        4.14.3-13.el8
+        4.14.3-14.el8_4
     rpm-build-libs:
-        4.14.3-13.el8
+        4.14.3-14.el8_4
     rpm-libs:
-        4.14.3-13.el8
+        4.14.3-14.el8_4
     rpm-plugin-systemd-inhibit:
-        4.14.3-13.el8
+        4.14.3-14.el8_4
     salt:
         3003.1-1.el8
     salt-minion:
@@ -741,13 +741,13 @@ local:
     swig:
         3.0.12-19.module_el8.3.0+557+3d058e38
     systemd:
-        239-45.el8
+        239-45.el8_4.1
     systemd-libs:
-        239-45.el8
+        239-45.el8_4.1
     systemd-pam:
-        239-45.el8
+        239-45.el8_4.1
     systemd-udev:
-        239-45.el8
+        239-45.el8_4.1
     tar:
         2:1.30-5.el8
     tpm2-tss:

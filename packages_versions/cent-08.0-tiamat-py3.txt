@@ -201,7 +201,7 @@ local:
     emacs-filesystem:
         1:26.1-5.el8
     epel-release:
-        8-8.el8
+        8-11.el8
     ethtool:
         2:5.0-2.el8
     expat:
@@ -637,13 +637,13 @@ local:
     swig:
         3.0.12-19.module_el8.3.0+557+3d058e38
     systemd:
-        239-45.el8
+        239-45.el8_4.1
     systemd-libs:
-        239-45.el8
+        239-45.el8_4.1
     systemd-pam:
-        239-45.el8
+        239-45.el8_4.1
     systemd-udev:
-        239-45.el8
+        239-45.el8_4.1
     tar:
         2:1.30-5.el8
     tzdata:

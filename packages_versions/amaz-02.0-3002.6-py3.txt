@@ -490,7 +490,7 @@ local:
     python3-pyyaml:
         4.2-0.1.b5.amzn2
     python3-requests:
-        2.19.1-5.amzn2
+        2.14.2-2.amzn2.0.2
     python3-rpm:
         4.11.3-40.amzn2.0.5
     python3-setuptools:
@@ -500,7 +500,7 @@ local:
     python3-typing:
         3.5.2.2-5.amzn2
     python3-urllib3:
-        1.23-6.amzn2
+        1.25.6-2.amzn2.0.2
     python3-zmq:
         17.0.0-5.amzn2
     pyxattr:
@@ -561,8 +561,6 @@ local:
         1.1.31-46.amzn2.0.1
     yum-plugin-priorities:
         1.1.31-46.amzn2.0.1
-    yum-plugin-versionlock:
-        1.1.31-46.amzn2.0.1
     yum-utils:
         1.1.31-46.amzn2.0.1
     zeromq:
@@ -607,7 +605,7 @@ local:
     pyzmq:
         17.0.0
     requests:
-        2.19.1
+        2.14.2
     rpm-python:
         4.11.3
     salt:
@@ -617,4 +615,4 @@ local:
     typing:
         3.5.2.2
     urllib3:
-        1.23
+        1.25.6

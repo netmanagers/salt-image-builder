@@ -1,7 +1,7 @@
 ubun-20.0-master-py3
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003+0na.3a4aa7b
+          Salt: 3003+0na.fc352b4
  
 Dependency Versions:
           cffi: Not Installed
@@ -21,7 +21,7 @@ Dependency Versions:
       pycrypto: Not Installed
   pycryptodome: 3.10.1
         pygit2: Not Installed
-        Python: 3.8.5 (default, May 27 2021, 13:30:53)
+        Python: 3.8.10 (default, Jun  2 2021, 10:49:15)
   python-gnupg: Not Installed
         PyYAML: 5.4.1
          PyZMQ: 21.0.2
@@ -99,13 +99,13 @@ local:
     pythonversion:
         - 3
         - 8
-        - 5
+        - 10
         - final
         - 0
     saltpath:
         /usr/local/lib/python3.8/dist-packages/salt
     saltversion:
-        3003+0na.3a4aa7b
+        3003+0na.fc352b4
     saltversioninfo:
         - 3003
     systemd:
@@ -410,13 +410,13 @@ local:
     libpython3-stdlib:
         3.8.2-0ubuntu2
     libpython3.8:
-        3.8.5-1~20.04.3
+        3.8.10-0ubuntu1~20.04
     libpython3.8-dev:
-        3.8.5-1~20.04.3
+        3.8.10-0ubuntu1~20.04
     libpython3.8-minimal:
-        3.8.5-1~20.04.3
+        3.8.10-0ubuntu1~20.04
     libpython3.8-stdlib:
-        3.8.5-1~20.04.3
+        3.8.10-0ubuntu1~20.04
     libquadmath0:
         10.3.0-1ubuntu1~20.04
     libreadline8:
@@ -542,11 +542,11 @@ local:
     python3-wheel:
         0.34.2-1
     python3.8:
-        3.8.5-1~20.04.3
+        3.8.10-0ubuntu1~20.04
     python3.8-dev:
-        3.8.5-1~20.04.3
+        3.8.10-0ubuntu1~20.04
     python3.8-minimal:
-        3.8.5-1~20.04.3
+        3.8.10-0ubuntu1~20.04
     readline-common:
         8.0-4
     sed:
@@ -613,7 +613,7 @@ local:
     requests:
         2.25.1
     salt:
-        3003+0na.3a4aa7b
+        3003+0na.fc352b4
     setuptools:
         45.2.0
     urllib3:

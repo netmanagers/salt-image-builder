@@ -405,7 +405,7 @@ local:
     lua-libs:
         5.3.4-11.el8
     lz4-libs:
-        1.8.3-2.el8
+        1.8.3-3.el8_4
     mpfr:
         3.1.6-1.el8
     ncurses:
@@ -421,7 +421,7 @@ local:
     npth:
         1.5-4.el8
     openldap:
-        2.4.46-16.el8
+        2.4.46-17.el8_4
     openssh:
         8.0p1-6.el8_4.2
     openssh-clients:
@@ -435,7 +435,7 @@ local:
     oraclelinux-release:
         8:8.4-1.0.4.el8
     oraclelinux-release-el8:
-        1.0-18.el8
+        1.0-19.el8
     p11-kit:
         0.23.22-1.el8
     p11-kit-trust:
@@ -577,7 +577,7 @@ local:
     python3-pip-wheel:
         9.0.3-19.el8
     python3-rpm:
-        4.14.3-13.el8
+        4.14.3-14.el8_4
     python3-rpm-generators:
         5-6.el8
     python3-rpm-macros:
@@ -601,13 +601,13 @@ local:
     rootfiles:
         8.1-22.el8
     rpm:
-        4.14.3-13.el8
+        4.14.3-14.el8_4
     rpm-build-libs:
-        4.14.3-13.el8
+        4.14.3-14.el8_4
     rpm-libs:
-        4.14.3-13.el8
+        4.14.3-14.el8_4
     rsyslog:
-        8.1911.0-7.0.1.el8
+        8.1911.0-7.0.1.el8_4.2
     salt:
         3003rc1+345.ge3c52e5fba-1.el8
     salt-minion:
@@ -625,13 +625,13 @@ local:
     swig:
         3.0.12-19.module+el8.3.0+7654+9c81efad
     systemd:
-        239-45.0.2.el8
+        239-45.0.2.el8_4.1
     systemd-libs:
-        239-45.0.2.el8
+        239-45.0.2.el8_4.1
     systemd-pam:
-        239-45.0.2.el8
+        239-45.0.2.el8_4.1
     systemd-udev:
-        239-45.0.2.el8
+        239-45.0.2.el8_4.1
     tpm2-tss:
         2.3.2-3.el8
     tzdata:
