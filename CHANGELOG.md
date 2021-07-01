@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.39.4](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.39.3...v1.39.4) (2021-07-01)
+
+
+### Bug Fixes
+
+* **dockerfile.emg:** install `contextvars` until package fixed [skip ci] ([89935d3](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/89935d32e32cc79b8f1753845fcd79b6ae41e6a2))
+
 ## [1.39.3](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.39.2...v1.39.3) (2021-06-30)
 
 

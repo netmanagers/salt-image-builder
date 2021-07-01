@@ -143,7 +143,7 @@ local:
     app-admin/salt:
         3003-r1
     app-admin/sudo:
-        1.9.6_p1-r1
+        1.9.6_p1-r2
     app-arch/bzip2:
         1.0.8-r1
     app-arch/gzip:

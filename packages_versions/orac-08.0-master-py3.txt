@@ -1,7 +1,7 @@
 orac-08.0-master-py3
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003+0na.fc352b4
+          Salt: 3003+0na.0d71775
  
 Dependency Versions:
           cffi: Not Installed
@@ -106,7 +106,7 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3003+0na.fc352b4
+        3003+0na.0d71775
     saltversioninfo:
         - 3003
     systemd:
@@ -273,7 +273,7 @@ local:
     json-c:
         0.13.1-0.4.el8
     kernel-headers:
-        4.18.0-305.3.1.el8_4
+        4.18.0-305.7.1.el8_4
     keyutils-libs:
         1.5.10-6.el8
     keyutils-libs-devel:
@@ -712,7 +712,7 @@ local:
     rpm:
         4.14.3
     salt:
-        3003+0na.fc352b4
+        3003+0na.0d71775
     setuptools:
         39.2.0
     six:

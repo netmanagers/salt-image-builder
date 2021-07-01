@@ -1,7 +1,7 @@
 opsu-tmbl-master-py3
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003+0na.fc352b4
+          Salt: 3003+0na.0d71775
  
 Dependency Versions:
           cffi: Not Installed
@@ -106,7 +106,7 @@ local:
     saltpath:
         /usr/lib/python3.8/site-packages/salt
     saltversion:
-        3003+0na.fc352b4
+        3003+0na.0d71775
     saltversioninfo:
         - 3003
     systemd:

@@ -1,7 +1,7 @@
 debi-09.0-master-py3
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003+0na.fc352b4
+          Salt: 3003+0na.0d71775
  
 Dependency Versions:
           cffi: Not Installed
@@ -106,7 +106,7 @@ local:
     saltpath:
         /usr/local/lib/python3.5/dist-packages/salt
     saltversion:
-        3003+0na.fc352b4
+        3003+0na.0d71775
     saltversioninfo:
         - 3003
     systemd:
@@ -574,7 +574,7 @@ local:
     requests:
         2.25.1
     salt:
-        3003+0na.fc352b4
+        3003+0na.0d71775
     setuptools:
         33.1.1
     urllib3:
