@@ -10,7 +10,7 @@ Dependency Versions:
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
-        Jinja2: 3.0.1
+        Jinja2: 2.11.3
        libgit2: Not Installed
       M2Crypto: Not Installed
           Mako: Not Installed
@@ -660,7 +660,7 @@ local:
     Cython:
         0.29.23
     Jinja2:
-        3.0.1
+        2.11.3
     MarkupSafe:
         2.0.1
     PySocks:

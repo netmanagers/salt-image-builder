@@ -1,5 +1,17 @@
 # Changelog
 
+# [1.40.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.39.4...v1.40.0) (2021-07-01)
+
+
+### Bug Fixes
+
+* **dockerfile.emg:** fix `hadolint` violation ([cdcd9e2](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/cdcd9e294a325a302077f80b22fbf7c43e8be11e))
+
+
+### Features
+
+* **gentoo:** use Jinja2 downgrade workaround for all images [skip ci] ([49dd979](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/49dd9799e16af7ab14860c1a5108e0c60c58f54b))
+
 ## [1.39.4](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.39.3...v1.39.4) (2021-07-01)
 
 

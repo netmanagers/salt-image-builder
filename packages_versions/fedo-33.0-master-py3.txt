@@ -138,7 +138,7 @@ local:
     bzip2-libs:
         1.0.8-4.fc33
     ca-certificates:
-        2021.2.50-1.0.fc33
+        2020.2.41-4.fc33
     coreutils:
         8.32-19.fc33
     coreutils-common:
@@ -192,7 +192,7 @@ local:
     emacs-filesystem:
         1:27.2-3.fc33
     expat:
-        2.4.1-1.fc33
+        2.2.8-3.fc33
     fedora-gpg-keys:
         33-5
     fedora-release-common:
@@ -258,7 +258,7 @@ local:
     gpgme:
         1.14.0-2.fc33
     grep:
-        3.4-6.fc33
+        3.4-5.fc33
     groff-base:
         1.22.4-4.fc33
     grub2-common:
