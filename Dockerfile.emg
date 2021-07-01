@@ -46,6 +46,11 @@ RUN mkdir --parents /etc/portage/repos.conf \
     fi \
     # Generate locales
  && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen && locale-gen \
+    # Use temporary workaround of installing `contextvars` for latest stable (`3003.1`)
+    # See https://bugs.gentoo.org/799431
+ && if [ "${SALT_INSTALL_METHOD}" = "stable" ] && [ "${SALT_VERSION}" = "3003.1" ]; then \
+      pip3 install --no-cache-dir --prefix=/usr contextvars==2.4; \
+    fi \
     # Enable sshd and disable salt's service as we don't need it running
  && if [ "${DISTRO_VERSION}" = "systemd" ]; then \
       (systemctl enable sshd.service > /dev/null 2>&1; \
