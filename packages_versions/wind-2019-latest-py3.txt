@@ -1,0 +1,1244 @@
+wind-2019-latest-py3
+Salt install method: stable (proxy)
+# salt-call --versions-report
+Salt Version:
+          Salt: 3003.1
+ 
+Dependency Versions:
+          cffi: 1.14.5
+      cherrypy: 18.6.0
+      dateutil: 2.8.1
+     docker-py: Not Installed
+         gitdb: 4.0.5
+     gitpython: 3.1.13
+        Jinja2: 2.11.3
+       libgit2: Not Installed
+      M2Crypto: Not Installed
+          Mako: 1.1.4
+       msgpack: 1.0.2
+  msgpack-pure: Not Installed
+  mysql-python: Not Installed
+     pycparser: 2.20
+      pycrypto: Not Installed
+  pycryptodome: 3.9.8
+        pygit2: Not Installed
+        Python: 3.7.4 (tags/v3.7.4:e09359112e, Jul  8 2019, 20:34:20) [MSC v.1916 64 bit (AMD64)]
+  python-gnupg: 0.4.6
+        PyYAML: 5.4.1
+         PyZMQ: 18.0.1
+         smmap: 3.0.4
+       timelib: 0.2.4
+       Tornado: 4.5.3
+           ZMQ: 4.3.1
+ 
+System Versions:
+          dist: msys_nt-10.0-17763 3.1.7 
+        locale: cp1252
+       machine: AMD64
+       release: 2019Server
+        system: Windows
+       version: 2019Server 10.0.17763 SP0
+
+# salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
+local:
+    ----------
+    init:
+        Windows
+    kernel:
+        Windows
+    kernelrelease:
+        10.0.17763
+    kernelversion:
+        10.0.17763
+    locale_info:
+        ----------
+        defaultencoding:
+            cp1252
+        defaultlanguage:
+            en_US
+        detectedencoding:
+            cp1252
+        timezone:
+            Coordinated Universal Time
+    lsb_distrib_codename:
+    lsb_distrib_id:
+    lsb_distrib_release:
+    os:
+        Windows
+    os_family:
+        Windows
+    osarch:
+    osbuild:
+    oscodename:
+    osfinger:
+        Windows-2019Server
+    osfullname:
+        Microsoft Windows Server 2019 Datacenter
+    osmajorrelease:
+    osmanufacturer:
+        Microsoft Corporation
+    osrelease:
+        2019Server
+    osrelease_info:
+        - 2019
+    osversion:
+        10.0.17763
+    pythonexecutable:
+        C:\salt\bin\python.exe
+    pythonpath:
+        - C:\salt\bin\Scripts
+        - C:\salt\bin\lib\site-packages\git\ext\gitdb
+        - C:\salt\bin\python37.zip
+        - C:\salt\bin\DLLs
+        - C:\salt\bin\lib
+        - C:\salt\bin
+        - C:\salt\bin\lib\site-packages
+        - C:\salt\bin\lib\site-packages\salt-3003.1-py3.7.egg
+        - C:\salt\bin\lib\site-packages\win32
+        - C:\salt\bin\lib\site-packages\win32\lib
+        - C:\salt\bin\lib\site-packages\Pythonwin
+        - C:\Windows\Microsoft.NET\Framework64\v4.0.30319\
+        - C:\salt\bin\lib\site-packages\gitdb\ext\smmap
+    pythonversion:
+        - 3
+        - 7
+        - 4
+        - final
+        - 0
+    saltpath:
+        C:\salt\bin\lib\site-packages\salt-3003.1-py3.7.egg\salt
+    saltversion:
+        3003.1
+    saltversioninfo:
+        - 3003
+        - 1
+    systemd:
+    virtual:
+        VirtualPC
+    virtual_subtype:
+    zmqversion:
+        4.3.1
+# salt-call --local pkg.list_pkgs
+local:
+    ----------
+     Tools for .Net 3.5:
+        3.11.50727
+    7-Zip 19.00 (x64):
+        19.00
+    AWS Command Line Interface v2:
+        2.2.14.0
+    AWS SAM Command Line Interface:
+        1.24.1
+    Active Directory Authentication Library for SQL Server:
+        15.0.1300.359
+    Application Verifier x64 External Package:
+        10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    Azure Cosmos DB Emulator:
+        2.14.1
+    BizTalk Server Project Build Component:
+        3.13.765.0
+    CMake:
+        3.20.5
+    Chef Infra Client v16.10.8:
+        16.10.8.1
+    ClickOnce Bootstrapper Package for Microsoft .NET Framework:
+        4.8.04119
+    ClickOnce Bootstrapper Package for Microsoft .NET Framework 4.8 on Visual Studio 2017:
+        4.8.03928
+    DiagnosticsHub_CollectionService:
+        16.1.28901
+    Entity Framework 6.2.0 Tools  for Visual Studio 2019:
+        6.2.0.0
+    Epic Games Launcher:
+        1.1.91.0
+    Git version 2.32.0:
+        2.32.0
+    GitHub CLI:
+        1.11.0
+    Google Chrome:
+        91.0.4472.124
+    Google Cloud SDK:
+        Not Found
+    IIS 10.0 Express:
+        10.0.04403
+    IIS Express Application Compatibility Database for x64:
+        Not Found
+    IIS Express Application Compatibility Database for x86:
+        Not Found
+    Inno Setup version 6.2.0:
+        6.2.0
+    IntelliTraceProfilerProxy:
+        15.0.18198.01
+    Intellisense Lang Pack Mobile Extension SDK 10.0.14393.0:
+        10.1.14393.795
+    Kits Configuration Installer:
+        10.1.19041.685
+    MSI Development Tools:
+        10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    Mercurial 5.0 (64-bit):
+        5.0
+    Microsoft .NET AppHost Pack - 5.0.7 (x64):
+        40.28.30105
+    Microsoft .NET AppHost Pack - 5.0.7 (x64_arm):
+        40.28.30105
+    Microsoft .NET AppHost Pack - 5.0.7 (x64_arm64):
+        40.28.30105
+    Microsoft .NET AppHost Pack - 5.0.7 (x64_x86):
+        40.28.30105
+    Microsoft .NET Core 3.1 Templates 5.0.301 (x64):
+        12.23.30505
+    Microsoft .NET Core 5.0 Templates 5.0.301 (x64):
+        20.3.63273
+    Microsoft .NET Core AppHost Pack - 3.1.16 (x64):
+        24.64.30112
+    Microsoft .NET Core AppHost Pack - 3.1.16 (x64_arm):
+        24.64.30112
+    Microsoft .NET Core AppHost Pack - 3.1.16 (x64_arm64):
+        24.64.30112
+    Microsoft .NET Core AppHost Pack - 3.1.16 (x64_x86):
+        24.64.30112
+    Microsoft .NET Core Runtime - 3.1.16 (x64):
+        24.64.30112
+    Microsoft .NET Core Runtime - 3.1.16 (x86):
+        24.64.30112
+    Microsoft .NET Core Targeting Pack - 3.1.0 (x64):
+        24.64.28315
+    Microsoft .NET CoreRuntime For CoreCon:
+        1.0.0.0
+    Microsoft .NET CoreRuntime SDK:
+        1.1.27004.0
+    Microsoft .NET Framework 3.5 Targeting Pack (enu):
+        3.5.28329
+    Microsoft .NET Framework 4 Multi-Targeting Pack:
+        4.0.30319
+    Microsoft .NET Framework 4.5 Multi-Targeting Pack:
+        4.5.50710
+    Microsoft .NET Framework 4.5.1 Multi-Targeting Pack:
+        4.5.50932
+    Microsoft .NET Framework 4.5.2 Multi-Targeting Pack:
+        4.5.51651
+    Microsoft .NET Framework 4.6 Targeting Pack:
+        4.6.00081
+    Microsoft .NET Framework 4.6.1 Targeting Pack:
+        4.6.01055
+    Microsoft .NET Framework 4.6.2 Targeting Pack:
+        4.6.01590
+    Microsoft .NET Framework 4.6.2 Targeting Pack (ENU):
+        4.6.01590
+    Microsoft .NET Framework 4.7 Targeting Pack:
+        4.7.02046
+    Microsoft .NET Framework 4.7 Targeting Pack (ENU):
+        4.7.02046
+    Microsoft .NET Framework 4.7.1 Doc Redirected Targeting Pack (ENU):
+        4.7.02558
+    Microsoft .NET Framework 4.7.1 Targeting Pack:
+        4.7.02558
+    Microsoft .NET Framework 4.7.2 SDK:
+        4.7.03081
+    Microsoft .NET Framework 4.7.2 Targeting Pack:
+        4.7.03062
+    Microsoft .NET Framework 4.7.2 Targeting Pack (ENU):
+        4.7.03062
+    Microsoft .NET Framework 4.8 Developer Pack:
+        4.8.3928
+    Microsoft .NET Framework 4.8 SDK:
+        4.8.04084
+    Microsoft .NET Framework 4.8 Targeting Pack:
+        4.8.04084
+    Microsoft .NET Framework 4.8 Targeting Pack (ENU):
+        4.8.03761
+    Microsoft .NET Framework Cumulative Intellisense Pack for Visual Studio (ENU):
+        4.8.03761
+    Microsoft .NET Host - 5.0.7 (x64):
+        40.28.30105
+    Microsoft .NET Host FX Resolver - 5.0.7 (x64):
+        40.28.30105
+    Microsoft .NET Host FX Resolver - 5.0.7 (x86):
+        40.28.30105
+    Microsoft .NET Native SDK:
+        15.0.24211.07
+    Microsoft .NET Runtime - 5.0.7 (x64):
+        40.28.30105
+    Microsoft .NET Runtime - 5.0.7 (x86):
+        40.28.30105
+    Microsoft .NET SDK 5.0.301 (x64) from Visual Studio:
+        5.3.121.27113
+    Microsoft .NET Standard Targeting Pack - 2.1.0 (x64):
+        24.0.28113
+    Microsoft .NET Targeting Pack - 5.0.0 (x64):
+        40.0.29419
+    Microsoft .NET Toolset 5.0.301 (x64):
+        20.3.30505
+    Microsoft AS OLE DB Provider for SQL Server 2016:
+        13.1.4561.14
+    Microsoft ASP.NET Core 3.1.10 Targeting Pack (x64):
+        3.1.10.20520
+    Microsoft ASP.NET Core 3.1.16 Shared Framework (x64):
+        3.1.16.21263
+    Microsoft ASP.NET Core 3.1.16 Shared Framework (x86):
+        3.1.16.21263
+    Microsoft ASP.NET Core 5.0.0 Targeting Pack (x64):
+        5.0.0.20526
+    Microsoft ASP.NET Core 5.0.7 Shared Framework (x64):
+        5.0.7.21263
+    Microsoft ASP.NET Core 5.0.7 Shared Framework (x86):
+        5.0.7.21263
+    Microsoft ASP.NET Core Module V2 for IIS Express:
+        13.1.20087.0
+    Microsoft ASP.NET Core Module for IIS Express:
+        12.2.18292.0
+    Microsoft ASP.NET Diagnostic Pack for Visual Studio:
+        16.10.526.50910
+    Microsoft ASP.NET Web Tools Packages 16.0 - ENU:
+        1.0.21125.0
+    Microsoft Azure Authoring Tools - v2.9.6:
+        2.9.8899.26
+    Microsoft Azure CLI:
+        2.25.0
+    Microsoft Azure Compute Emulator - v2.9.6:
+        2.9.8899.26
+    Microsoft Azure Libraries for .NET – v2.9:
+        3.0.0127.060
+    Microsoft Azure Service Fabric:
+        8.0.521.9590
+    Microsoft Azure Service Fabric SDK:
+        5.0.521.9590
+    Microsoft Azure Storage Emulator - v5.10:
+        5.10.19227.2113
+    Microsoft Azure Storage Tools - v6.2.0:
+        6.2.0.0
+    Microsoft BizTalk Server Setup Support Files:
+        3.13.764.0
+    Microsoft Command Line Utilities 15 for SQL Server:
+        15.0.1300.359
+    Microsoft Edge:
+        91.0.864.59
+    Microsoft Exchange Web Services Managed API 2.1:
+        15.0.847.30
+    Microsoft HTML Help Workshop Package:
+        4.74.8702
+    Microsoft NetStandard SDK:
+        15.0.51105
+    Microsoft ODBC Driver 17 for SQL Server:
+        17.2.0.1
+    Microsoft Portable Library Multi-Targeting Pack:
+        16.0.28329.73
+    Microsoft Portable Library Multi-Targeting Pack Language Pack - enu:
+        16.0.28329.73
+    Microsoft SQL Server 2012 Analysis Management Objects :
+        11.4.7001.0
+    Microsoft SQL Server 2014 Analysis Management Objects :
+        12.2.5626.31
+    Microsoft SQL Server 2016 Analysis Management Objects :
+        13.1.4561.14
+    Microsoft SQL Server 2016 LocalDB :
+        13.1.4001.0
+    Microsoft SQL Server 2016 Management Objects  (x64):
+        13.2.5026.0
+    Microsoft SQL Server Data-Tier Application Framework (x64):
+        15.0.5164.1
+    Microsoft SQL Server Integration Services Projects:
+        15.0.2000.167
+    Microsoft Silverlight:
+        5.1.50918.0
+    Microsoft System CLR Types for SQL Server 2016:
+        13.2.5026.0
+    Microsoft System CLR Types for SQL Server 2019 CTP2.2:
+        15.0.1200.24
+    Microsoft TestPlatform SDK Local Feed:
+        16.9.0.4315479
+    Microsoft UniversalWindowsPlatform SDK:
+        15.9.14
+    Microsoft Visual C++ 2010  x64 Redistributable - 10.0.40219:
+        10.0.40219
+    Microsoft Visual C++ 2010  x86 Redistributable - 10.0.40219:
+        10.0.40219
+    Microsoft Visual C++ 2012 Redistributable (x64) - 11.0.61030:
+        11.0.61030.0
+    Microsoft Visual C++ 2012 x64 Additional Runtime - 11.0.61030:
+        11.0.61030
+    Microsoft Visual C++ 2012 x64 Minimum Runtime - 11.0.61030:
+        11.0.61030
+    Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.30501:
+        12.0.30501.0
+    Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.40664:
+        12.0.40664.0
+    Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.30501:
+        12.0.30501.0
+    Microsoft Visual C++ 2013 x64 Additional Runtime - 12.0.40664:
+        12.0.40664
+    Microsoft Visual C++ 2013 x64 Minimum Runtime - 12.0.40664:
+        12.0.40664
+    Microsoft Visual C++ 2013 x86 Additional Runtime - 12.0.21005:
+        12.0.21005
+    Microsoft Visual C++ 2013 x86 Minimum Runtime - 12.0.21005:
+        12.0.21005
+    Microsoft Visual C++ 2015-2019 Redistributable (x64) - 14.29.30038:
+        14.29.30038.0
+    Microsoft Visual C++ 2015-2019 Redistributable (x86) - 14.29.30038:
+        14.29.30038.0
+    Microsoft Visual C++ 2019 X64 Additional Runtime - 14.29.30038:
+        14.29.30038
+    Microsoft Visual C++ 2019 X64 Debug Runtime - 14.29.30038:
+        14.29.30038
+    Microsoft Visual C++ 2019 X64 Minimum Runtime - 14.29.30038:
+        14.29.30038
+    Microsoft Visual C++ 2019 X86 Additional Runtime - 14.29.30038:
+        14.29.30038
+    Microsoft Visual C++ 2019 X86 Debug Runtime - 14.29.30038:
+        14.29.30038
+    Microsoft Visual C++ 2019 X86 Minimum Runtime - 14.29.30038:
+        14.29.30038
+    Microsoft Visual Studio 2010 Tools for Office Runtime (x64):
+        10.0.50903,10.0.50908
+    Microsoft Visual Studio 2019 Tools for Unity:
+        4.10.3.0
+    Microsoft Visual Studio Installer:
+        2.10.2174.31177
+    Microsoft Visual Studio Setup Configuration:
+        2.7.3111.17308
+    Microsoft Visual Studio Setup WMI Provider:
+        2.7.3111.17308
+    Microsoft Visual Studio Tools for Applications 2019:
+        16.0.31110
+    Microsoft Visual Studio Tools for Applications 2019 x64 Hosting Support:
+        16.0.31110
+    Microsoft Visual Studio Tools for Applications 2019 x86 Hosting Support:
+        16.0.31110
+    Microsoft Web Deploy 4.0:
+        10.0.3802
+    Microsoft Web Platform Installer 5.1:
+        5.1.51515.0
+    Microsoft Windows Communication Foundation Diagnostic Pack for x86:
+        16.0.28329
+    Microsoft Windows Desktop Runtime - 3.1.16 (x64):
+        24.64.30112
+    Microsoft Windows Desktop Runtime - 3.1.16 (x86):
+        24.64.30112
+    Microsoft Windows Desktop Runtime - 5.0.7 (x64):
+        40.28.30113
+    Microsoft Windows Desktop Runtime - 5.0.7 (x86):
+        40.28.30113
+    Microsoft Windows Desktop Targeting Pack - 3.1.0 (x64):
+        24.64.28315
+    Microsoft Windows Desktop Targeting Pack - 5.0.0 (x64):
+        40.0.29420
+    Microsoft Workflow Debugger v1.0 for amd64:
+        16.0.31306
+    Microsoft Workflow Debugger v1.0 for x86:
+        16.0.31306
+    Microsoft Workflow Diagnostic Pack for x64:
+        16.0.28329
+    Miniconda3 py38_4.9.2 (Python 3.8.5 64-bit):
+        py38_4.9.2
+    Minimal WLPC Content:
+        10.1.19041.685
+    MongoDB 4.4.6 2008R2Plus SSL (64 bit):
+        4.4.6
+    Mozilla Firefox 89.0.2 (x64 en-US):
+        89.0.2
+    Mozilla Maintenance Service:
+        89.0.2
+    Node.js:
+        14.17.1
+    Nullsoft Install System:
+        3.06.1
+    OEM Test Certificates:
+        10.1.19041.685
+    Open XML SDK 2.5 for Microsoft Office:
+        2.5.5631
+    OpenSSL 1.1.1 Light (64-bit):
+        Not Found
+    PostgreSQL 13 :
+        13
+    PowerShell 7-x64:
+        7.1.3.0
+    PowerShell Extensions for SQL Server 2016 :
+        13.2.5026.0
+    Python 2.7.18:
+        2.7.18150
+    Python 2.7.18 (64-bit):
+        2.7.18150
+    Python 3.5.4 Core Interpreter (32-bit):
+        3.5.4150.0
+    Python 3.5.4 Core Interpreter (64-bit):
+        3.5.4150.0
+    Python 3.5.4 Development Libraries (32-bit):
+        3.5.4150.0
+    Python 3.5.4 Development Libraries (64-bit):
+        3.5.4150.0
+    Python 3.5.4 Documentation (32-bit):
+        3.5.4150.0
+    Python 3.5.4 Documentation (64-bit):
+        3.5.4150.0
+    Python 3.5.4 Executables (32-bit):
+        3.5.4150.0
+    Python 3.5.4 Executables (64-bit):
+        3.5.4150.0
+    Python 3.5.4 Standard Library (32-bit):
+        3.5.4150.0
+    Python 3.5.4 Standard Library (64-bit):
+        3.5.4150.0
+    Python 3.5.4 Tcl/Tk Support (32-bit):
+        3.5.4150.0
+    Python 3.5.4 Tcl/Tk Support (64-bit):
+        3.5.4150.0
+    Python 3.5.4 Test Suite (32-bit):
+        3.5.4150.0
+    Python 3.5.4 Test Suite (64-bit):
+        3.5.4150.0
+    Python 3.5.4 Utility Scripts (32-bit):
+        3.5.4150.0
+    Python 3.5.4 Utility Scripts (64-bit):
+        3.5.4150.0
+    Python 3.5.4 pip Bootstrap (32-bit):
+        3.5.4150.0
+    Python 3.5.4 pip Bootstrap (64-bit):
+        3.5.4150.0
+    Python 3.6.8 Core Interpreter (32-bit):
+        3.6.8150.0
+    Python 3.6.8 Core Interpreter (64-bit):
+        3.6.8150.0
+    Python 3.6.8 Development Libraries (32-bit):
+        3.6.8150.0
+    Python 3.6.8 Development Libraries (64-bit):
+        3.6.8150.0
+    Python 3.6.8 Documentation (32-bit):
+        3.6.8150.0
+    Python 3.6.8 Documentation (64-bit):
+        3.6.8150.0
+    Python 3.6.8 Executables (32-bit):
+        3.6.8150.0
+    Python 3.6.8 Executables (64-bit):
+        3.6.8150.0
+    Python 3.6.8 Standard Library (32-bit):
+        3.6.8150.0
+    Python 3.6.8 Standard Library (64-bit):
+        3.6.8150.0
+    Python 3.6.8 Tcl/Tk Support (32-bit):
+        3.6.8150.0
+    Python 3.6.8 Tcl/Tk Support (64-bit):
+        3.6.8150.0
+    Python 3.6.8 Test Suite (32-bit):
+        3.6.8150.0
+    Python 3.6.8 Test Suite (64-bit):
+        3.6.8150.0
+    Python 3.6.8 Utility Scripts (32-bit):
+        3.6.8150.0
+    Python 3.6.8 Utility Scripts (64-bit):
+        3.6.8150.0
+    Python 3.6.8 pip Bootstrap (32-bit):
+        3.6.8150.0
+    Python 3.6.8 pip Bootstrap (64-bit):
+        3.6.8150.0
+    Python 3.7.9 Core Interpreter (32-bit):
+        3.7.9150.0
+    Python 3.7.9 Core Interpreter (64-bit):
+        3.7.9150.0
+    Python 3.7.9 Development Libraries (32-bit):
+        3.7.9150.0
+    Python 3.7.9 Development Libraries (64-bit):
+        3.7.9150.0
+    Python 3.7.9 Documentation (32-bit):
+        3.7.9150.0
+    Python 3.7.9 Documentation (64-bit):
+        3.7.9150.0
+    Python 3.7.9 Executables (32-bit):
+        3.7.9150.0
+    Python 3.7.9 Executables (64-bit):
+        3.7.9150.0
+    Python 3.7.9 Standard Library (32-bit):
+        3.7.9150.0
+    Python 3.7.9 Standard Library (64-bit):
+        3.7.9150.0
+    Python 3.7.9 Tcl/Tk Support (32-bit):
+        3.7.9150.0
+    Python 3.7.9 Tcl/Tk Support (64-bit):
+        3.7.9150.0
+    Python 3.7.9 Test Suite (32-bit):
+        3.7.9150.0
+    Python 3.7.9 Test Suite (64-bit):
+        3.7.9150.0
+    Python 3.7.9 Utility Scripts (32-bit):
+        3.7.9150.0
+    Python 3.7.9 Utility Scripts (64-bit):
+        3.7.9150.0
+    Python 3.7.9 pip Bootstrap (32-bit):
+        3.7.9150.0
+    Python 3.7.9 pip Bootstrap (64-bit):
+        3.7.9150.0
+    Python 3.8.10 Core Interpreter (32-bit):
+        3.8.10150.0
+    Python 3.8.10 Core Interpreter (64-bit):
+        3.8.10150.0
+    Python 3.8.10 Development Libraries (32-bit):
+        3.8.10150.0
+    Python 3.8.10 Development Libraries (64-bit):
+        3.8.10150.0
+    Python 3.8.10 Documentation (32-bit):
+        3.8.10150.0
+    Python 3.8.10 Documentation (64-bit):
+        3.8.10150.0
+    Python 3.8.10 Executables (32-bit):
+        3.8.10150.0
+    Python 3.8.10 Executables (64-bit):
+        3.8.10150.0
+    Python 3.8.10 Standard Library (32-bit):
+        3.8.10150.0
+    Python 3.8.10 Standard Library (64-bit):
+        3.8.10150.0
+    Python 3.8.10 Tcl/Tk Support (32-bit):
+        3.8.10150.0
+    Python 3.8.10 Tcl/Tk Support (64-bit):
+        3.8.10150.0
+    Python 3.8.10 Test Suite (32-bit):
+        3.8.10150.0
+    Python 3.8.10 Test Suite (64-bit):
+        3.8.10150.0
+    Python 3.8.10 Utility Scripts (32-bit):
+        3.8.10150.0
+    Python 3.8.10 Utility Scripts (64-bit):
+        3.8.10150.0
+    Python 3.8.10 pip Bootstrap (32-bit):
+        3.8.10150.0
+    Python 3.8.10 pip Bootstrap (64-bit):
+        3.8.10150.0
+    Python 3.9.5 Core Interpreter (32-bit):
+        3.9.5150.0
+    Python 3.9.5 Core Interpreter (64-bit):
+        3.9.5150.0
+    Python 3.9.5 Development Libraries (32-bit):
+        3.9.5150.0
+    Python 3.9.5 Development Libraries (64-bit):
+        3.9.5150.0
+    Python 3.9.5 Documentation (32-bit):
+        3.9.5150.0
+    Python 3.9.5 Documentation (64-bit):
+        3.9.5150.0
+    Python 3.9.5 Executables (32-bit):
+        3.9.5150.0
+    Python 3.9.5 Executables (64-bit):
+        3.9.5150.0
+    Python 3.9.5 Standard Library (32-bit):
+        3.9.5150.0
+    Python 3.9.5 Standard Library (64-bit):
+        3.9.5150.0
+    Python 3.9.5 Tcl/Tk Support (32-bit):
+        3.9.5150.0
+    Python 3.9.5 Tcl/Tk Support (64-bit):
+        3.9.5150.0
+    Python 3.9.5 Test Suite (32-bit):
+        3.9.5150.0
+    Python 3.9.5 Test Suite (64-bit):
+        3.9.5150.0
+    Python 3.9.5 Utility Scripts (32-bit):
+        3.9.5150.0
+    Python 3.9.5 Utility Scripts (64-bit):
+        3.9.5150.0
+    Python 3.9.5 pip Bootstrap (32-bit):
+        3.9.5150.0
+    Python 3.9.5 pip Bootstrap (64-bit):
+        3.9.5150.0
+    Python Launcher:
+        3.9.7427.0
+    R for Windows 4.1.0:
+        4.1.0
+    Rtools 4.0 (4.0.1.0):
+        4.0
+    SDK ARM Additions:
+        10.1.19041.685
+    SDK ARM Additions EULA:
+        10.1.19041.685
+    SDK ARM Redistributables:
+        10.1.19041.685
+    SDK Debuggers:
+        10.1.19041.685
+    SDK Debuggers ARM:
+        10.1.19041.685
+    SQL Server Integration Services 2012:
+        11.4.7001.0
+    SQL Server Integration Services 2014:
+        12.2.5626.31
+    SQL Server Integration Services 2016:
+        13.1.4561.14
+    SQL Server Integration Services Singleton:
+        14.0.3002.1360,15.0.2000.167
+    Salt Minion 3003.1 (Python 3):
+        3003.1
+    Session Manager Plugin:
+        1.2.205.0
+    Strawberry Perl (64-bit):
+        5.32.1001
+    TortoiseSVN 1.14.1.29085 (64 bit):
+        1.14.29085
+    TypeScript SDK:
+        4.2.4.0
+    Unity Hub 2.4.3:
+        2.4.3
+    Universal CRT Extension SDK:
+        10.0.26624,10.1.14393.795,10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    Universal CRT Headers Libraries and Sources:
+        10.0.26624,10.1.14393.795,10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    Universal CRT Redistributable:
+        10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    Universal CRT Tools x64:
+        10.1.19041.685
+    Universal CRT Tools x86:
+        10.1.19041.685
+    Universal General MIDI DLS Extension SDK:
+        10.1.14393.795,10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    VS Immersive Activate Helper:
+        16.0.102.0
+    VS JIT Debugger:
+        16.0.102.0
+    VS Script Debugging Common:
+        16.0.102.0
+    VS WCF Debugging:
+        16.0.102.0
+    Visual C++ CRT Headers Package:
+        14.0.24245
+    Visual C++ Compiler/Tools Premium ARM Base Package:
+        14.0.24245
+    Visual C++ Compiler/Tools Premium ARM Base Resource Package:
+        14.0.24245
+    Visual C++ Compiler/Tools Premium X64 ARM Cross Package:
+        14.0.24245
+    Visual C++ Compiler/Tools Premium X64 ARM Cross Resource Package:
+        14.0.24245
+    Visual C++ Compiler/Tools Premium X64 Base Package:
+        14.0.24245
+    Visual C++ Compiler/Tools Premium X64 Base Resource Package:
+        14.0.24245
+    Visual C++ Compiler/Tools Premium X64 Native Package:
+        14.0.24245
+    Visual C++ Compiler/Tools Premium X64 Native Resource Package:
+        14.0.24245
+    Visual C++ Compiler/Tools Premium X64 X86 Cross Package:
+        14.0.24245
+    Visual C++ Compiler/Tools Premium X64 X86 Cross Resource Package:
+        14.0.24245
+    Visual C++ Compiler/Tools Premium X86 ARM Cross Package:
+        14.0.24245
+    Visual C++ Compiler/Tools Premium X86 ARM Cross Resource Package:
+        14.0.24245
+    Visual C++ Compiler/Tools Premium X86 Base Package:
+        14.0.24245
+    Visual C++ Compiler/Tools Premium X86 Base Resource Package:
+        14.0.24245
+    Visual C++ Compiler/Tools Premium X86 Native Package:
+        14.0.24245
+    Visual C++ Compiler/Tools Premium X86 Native Resource Package:
+        14.0.24245
+    Visual C++ Compiler/Tools Premium X86 X64 Cross Package:
+        14.0.24245
+    Visual C++ Compiler/Tools Premium X86 X64 Cross Resource Package:
+        14.0.24245
+    Visual C++ Compiler/Tools X64 ARM Cross Package:
+        14.0.24245
+    Visual C++ Compiler/Tools X64 ARM Cross Resource Package:
+        14.0.24245
+    Visual C++ Compiler/Tools X64 Base Package:
+        14.0.24245
+    Visual C++ Compiler/Tools X64 Base Resource Package:
+        14.0.24245
+    Visual C++ Compiler/Tools X64 Native Package:
+        14.0.24245
+    Visual C++ Compiler/Tools X64 Native Resource Package:
+        14.0.24245
+    Visual C++ Compiler/Tools X64 X86 Cross Package:
+        14.0.24245
+    Visual C++ Compiler/Tools X64 X86 Cross Resource Package:
+        14.0.24245
+    Visual C++ Compiler/Tools X86 ARM Cross Package:
+        14.0.24245
+    Visual C++ Compiler/Tools X86 ARM Cross Resource Package:
+        14.0.24245
+    Visual C++ Compiler/Tools X86 Base Package:
+        14.0.24245
+    Visual C++ Compiler/Tools X86 Base Resource Package:
+        14.0.24245
+    Visual C++ Compiler/Tools X86 Native Package:
+        14.0.24245
+    Visual C++ Compiler/Tools X86 Native Resource Package:
+        14.0.24245
+    Visual C++ Compiler/Tools X86 X64 Cross Package:
+        14.0.24245
+    Visual C++ Compiler/Tools X86 X64 Cross Resource Package:
+        14.0.24245
+    Visual C++ Extra Files:
+        14.0.24245
+    Visual C++ Extra Resource Files:
+        14.0.24245
+    Visual C++ Library ATL ARM Package:
+        14.0.24245
+    Visual C++ Library ATL Headers Package:
+        14.0.24245
+    Visual C++ Library ATL Source Package:
+        14.0.24245
+    Visual C++ Library ATL X64 Package:
+        14.0.24245
+    Visual C++ Library ATL X86 Package:
+        14.0.24245
+    Visual C++ Library CRT ARM Desktop Package:
+        14.0.24245
+    Visual C++ Library CRT ARM OneCore For Desktop Package:
+        14.0.24245
+    Visual C++ Library CRT ARM Redist Package:
+        14.0.24245
+    Visual C++ Library CRT ARM Store Package:
+        14.0.24245
+    Visual C++ Library CRT ARM64 Appx Package:
+        14.29.30038
+    Visual C++ Library CRT Appx Package:
+        14.29.30038
+    Visual C++ Library CRT Appx Resource Package:
+        14.29.30038
+    Visual C++ Library CRT Desktop Appx Package:
+        14.29.30038
+    Visual C++ Library CRT Redist Resource Package:
+        14.0.24245
+    Visual C++ Library CRT Source Package:
+        14.0.24245
+    Visual C++ Library CRT X64 Desktop Package:
+        14.0.24245
+    Visual C++ Library CRT X64 OneCore For Desktop Package:
+        14.0.24245
+    Visual C++ Library CRT X64 Redist Package:
+        14.0.24245
+    Visual C++ Library CRT X64 Store Package:
+        14.0.24245
+    Visual C++ Library CRT X86 Desktop Package:
+        14.0.24245
+    Visual C++ Library CRT X86 OneCore For Desktop Package:
+        14.0.24245
+    Visual C++ Library CRT X86 Redist Package:
+        14.0.24245
+    Visual C++ Library CRT X86 Store Package:
+        14.0.24245
+    Visual C++ Library MFC Headers Package:
+        14.0.24245
+    Visual C++ Library MFC MBCS Package:
+        14.0.24245
+    Visual C++ Library MFC Source Package:
+        14.0.24245
+    Visual C++ Library MFC X64 Package:
+        14.0.24245
+    Visual C++ Library MFC X86 Package:
+        14.0.24245
+    Visual C++ Library PGO ARM Package:
+        14.0.24245
+    Visual C++ Library PGO Headers Package:
+        14.0.24245
+    Visual C++ Library PGO X64 Package:
+        14.0.24245
+    Visual C++ Library PGO X86 Package:
+        14.0.24245
+    Visual C++ MSBuild ARM Package:
+        14.0.24245
+    Visual C++ MSBuild Base Package:
+        14.0.24245
+    Visual C++ MSBuild Base Resource Package:
+        14.0.24245
+    Visual C++ MSBuild X64 Package:
+        14.0.24245
+    Visual C++ MSBuild X86 Package:
+        14.0.24245
+    Visual Studio Enterprise 2019:
+        16.10.31410.357
+    WPT Redistributables:
+        10.1.19041.685
+    WPTx64:
+        10.1.19041.685
+    WiX Toolset v3.11 Core:
+        3.11.4516
+    WiX Toolset v3.11 Managed SDK:
+        3.11.4516
+    WiX Toolset v3.11 Native 2010 SDK:
+        3.11.4516
+    WiX Toolset v3.11 Native 2012 SDK:
+        3.11.4516
+    WiX Toolset v3.11 Native 2013 SDK:
+        3.11.4516
+    WiX Toolset v3.11 Native 2015 SDK:
+        3.11.4516
+    WiX Toolset v3.11 Native 2017 SDK:
+        3.11.4516
+    WiX Toolset v3.11 X64:
+        3.11.4516
+    WiX Toolset v3.11.2.4516:
+        3.11.2.4516
+    WinAppDeploy:
+        10.1.14393.795,10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    WinRT Intellisense Desktop - Other Languages:
+        10.1.14393.795,10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    WinRT Intellisense Desktop - en-us:
+        10.1.14393.795,10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    WinRT Intellisense IoT - Other Languages:
+        10.1.14393.795,10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    WinRT Intellisense IoT - en-us:
+        10.1.14393.795,10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    WinRT Intellisense Mobile - en-us:
+        10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    WinRT Intellisense PPI - Other Languages:
+        10.1.14393.795,10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    WinRT Intellisense PPI - en-us:
+        10.1.14393.795,10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    WinRT Intellisense UAP - Other Languages:
+        10.1.14393.795,10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    WinRT Intellisense UAP - en-us:
+        10.1.14393.795,10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    Windows 7 WDK Headers and Libs:
+        10.1.19041.685
+    Windows 8 WDK Headers and Libs:
+        10.1.19041.685
+    Windows 8.1 WDK Headers and Libs:
+        10.1.19041.685
+    Windows App Certification Kit Native Components:
+        10.1.19041.685
+    Windows App Certification Kit SupportedApiList x86:
+        10.1.19041.685
+    Windows App Certification Kit x64:
+        10.1.19041.685
+    Windows Application Driver:
+        1.2.1.0
+    Windows Debugging WDK Integration:
+        10.1.19041.685
+    Windows Desktop Extension SDK:
+        10.1.14393.795,10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    Windows Desktop Extension SDK Contracts:
+        10.1.14393.795,10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    Windows Driver Framework ARM Headers and Libs:
+        10.1.19041.685
+    Windows Driver Framework Headers and Libs:
+        10.1.19041.685
+    Windows Driver Kit:
+        10.1.19041.685
+    Windows Driver Kit - Windows 10.0.19041.685:
+        10.1.19041.685
+    Windows Driver Kit ARM Additions:
+        10.1.19041.685
+    Windows Driver Kit ARM Binaries:
+        10.1.19041.685
+    Windows Driver Kit ARM Headers and Libs:
+        10.1.19041.685
+    Windows Driver Kit Binaries:
+        10.1.19041.685
+    Windows Driver Kit Downlevel Dev14 Content:
+        10.1.19041.685
+    Windows Driver Kit Headers and Libs:
+        10.1.19041.685
+    Windows Driver Kit Root Dev16 Content:
+        10.1.19041.685
+    Windows Driver Kit SxS Content:
+        10.1.19041.685
+    Windows Driver Kit Visual Studio Dev16 Content:
+        10.1.19041.685
+    Windows Espc Package:
+        14.0.24245
+    Windows IP Over USB:
+        10.1.19041.685
+    Windows IoT Extension SDK:
+        10.1.14393.795,10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    Windows IoT Extension SDK Contracts:
+        10.1.14393.795,10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    Windows Mobile Connectivity Tools 10.0.14393.0 - Desktop x86:
+        10.1.14393.795
+    Windows Mobile Connectivity Tools 10.0.15254.0 - Desktop x86:
+        10.1.15254.1
+    Windows Mobile Extension SDK:
+        10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    Windows Mobile Extension SDK 10.0.14393.0 - ARM:
+        10.1.14393.795
+    Windows Mobile Extension SDK 10.0.14393.0 - x86:
+        10.1.14393.795
+    Windows Mobile Extension SDK Contracts:
+        10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    Windows Phone SDK 8.0 Assemblies for Visual Studio 2019:
+        16.0.31306
+    Windows SDK:
+        10.1.19041.685
+    Windows SDK ARM Desktop Tools:
+        10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    Windows SDK ARM Headers Libs Metadata:
+        10.1.19041.685
+    Windows SDK AddOn:
+        10.1.0.0
+    Windows SDK Desktop Headers Libs Metadata:
+        10.1.14393.795
+    Windows SDK Desktop Headers arm:
+        10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    Windows SDK Desktop Headers arm64:
+        10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    Windows SDK Desktop Headers x64:
+        10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    Windows SDK Desktop Headers x86:
+        10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    Windows SDK Desktop Libs arm:
+        10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    Windows SDK Desktop Libs arm64:
+        10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    Windows SDK Desktop Libs x64:
+        10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    Windows SDK Desktop Libs x86:
+        10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    Windows SDK Desktop Tools:
+        10.1.14393.795
+    Windows SDK Desktop Tools arm64:
+        10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    Windows SDK Desktop Tools x64:
+        10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    Windows SDK Desktop Tools x86:
+        10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    Windows SDK DirectX x64 Remote:
+        10.1.19041.685
+    Windows SDK DirectX x86 Remote:
+        10.1.19041.685
+    Windows SDK EULA:
+        10.1.14393.795,10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    Windows SDK Facade Windows WinMD Versioned:
+        10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    Windows SDK Modern Non-Versioned Developer Tools:
+        10.1.19041.685
+    Windows SDK Modern Versioned Developer Tools:
+        10.1.14393.795,10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    Windows SDK Redistributables:
+        10.1.19041.685
+    Windows SDK Signing Tools:
+        10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    Windows SDK for Windows Store Apps:
+        10.1.19041.685
+    Windows SDK for Windows Store Apps Contracts:
+        10.1.14393.795,10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    Windows SDK for Windows Store Apps DirectX x64 Remote:
+        10.1.14393.795,10.1.16299.15,10.1.17134.12
+    Windows SDK for Windows Store Apps DirectX x86 Remote:
+        10.1.14393.795,10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    Windows SDK for Windows Store Apps Headers:
+        10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    Windows SDK for Windows Store Apps Headers Libs:
+        10.1.14393.795
+    Windows SDK for Windows Store Apps Libs:
+        10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    Windows SDK for Windows Store Apps Metadata:
+        10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    Windows SDK for Windows Store Apps Tools:
+        10.1.14393.795,10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    Windows SDK for Windows Store Managed Apps Libs:
+        10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    Windows Simulator:
+        16.0.28522
+    Windows Simulator - ENU:
+        16.0.28522
+    Windows Software Development Kit - Windows 10.0.14393.795:
+        10.1.14393.795
+    Windows Software Development Kit - Windows 10.0.16299.15:
+        10.1.16299.15
+    Windows Software Development Kit - Windows 10.0.17134.12:
+        10.1.17134.12
+    Windows Software Development Kit - Windows 10.0.17763.132:
+        10.1.17763.132
+    Windows Software Development Kit - Windows 10.0.18362.1:
+        10.1.18362.1
+    Windows Software Development Kit - Windows 10.0.19041.685:
+        10.1.19041.685
+    Windows Team Extension SDK:
+        10.1.14393.795,10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    Windows Team Extension SDK Contracts:
+        10.1.14393.795,10.1.16299.15,10.1.17134.12,10.1.17763.132,10.1.18362.1,10.1.19041.685
+    Windows XP Targeting with C++:
+        11.0.51106
+    Workflow Manager Client 1.0:
+        2.1.10525.2
+    Workflow Manager Tools 1.0 for Visual Studio:
+        2.1.30411.0
+    Xamarin Offline Packages:
+        16.10.5
+    Xamarin PCL Profiles v1.0.9:
+        1.0.9.0
+    Xamarin Remoted iOS Simulator:
+        16.7.0.0
+    icecap_collection_neutral:
+        16.10.31306
+    icecap_collection_x64:
+        16.10.31306
+    icecap_collectionresources:
+        16.10.31306
+    icecap_collectionresourcesx64:
+        16.10.31306
+    sbt 1.5.3:
+        1.5.3
+    sptools_Microsoft.VisualStudio.OfficeDeveloperTools.Msi:
+        16.0.29931
+    sptools_Microsoft.VisualStudio.Vsto.Msi:
+        16.0.28030
+    sptools_Microsoft.VisualStudio.Vsto.Msi.Resources:
+        16.0.28030
+    sptools_Microsoft.VisualStudio.Vsto.Msi.x64:
+        16.0.28030
+    vcpp_crt.redist.clickonce:
+        14.29.30038
+    vs_BlendMsi:
+        16.0.28329
+    vs_FileTracker_Singleton:
+        16.10.31303
+    vs_Graphics_Singletonx64:
+        16.10.31213
+    vs_Graphics_Singletonx86:
+        16.10.31213
+    vs_SQLClickOnceBootstrappermsi:
+        16.10.31205
+    vs_clickoncebootstrappermsi:
+        16.10.31206
+    vs_clickoncebootstrappermsires:
+        16.0.28329
+    vs_clickoncesigntoolmsi:
+        16.0.28329
+    vs_codecoveragemsi:
+        16.10.31205
+    vs_codeduitestframeworkmsi:
+        16.0.28329
+    vs_communitymsi:
+        16.10.31306
+    vs_communitymsires:
+        16.10.31213
+    vs_cuitcommoncoremsi16:
+        16.5.29521
+    vs_cuitextensionmsi16:
+        16.10.31306
+    vs_cuitextensionmsi16_x64:
+        16.0.28329
+    vs_devenvmsi:
+        16.0.28329
+    vs_filehandler_amd64:
+        16.10.31206
+    vs_filehandler_x86:
+        16.10.31206
+    vs_loadtestexceladdinmsi:
+        16.10.31306
+    vs_minshellinteropmsi:
+        16.10.31306
+    vs_minshellmsi:
+        16.10.31320
+    vs_minshellmsires:
+        16.10.31303
+    vs_networkemulationmsi_x64:
+        16.0.28329
+    vs_tipsmsi:
+        16.0.28329
+    vs_vswebprotocolselectormsi:
+        16.10.31206
+    vs_webtestrecordermsi:
+        16.10.31306
+    vs_webtestrecordermsi_x64:
+        16.0.28329
+    windows_toolscorepkg:
+        16.10.31306
+# salt-call --local pip.list
+local:
+    ----------
+    CherryPy:
+        18.6.0
+    GitPython:
+        3.1.13
+    Jinja2:
+        2.11.3
+    Mako:
+        1.1.4
+    MarkupSafe:
+        1.1.1
+    PyMySQL:
+        1.0.2
+    PyYAML:
+        5.4.1
+    WMI:
+        1.5.1
+    certifi:
+        2020.12.5
+    cffi:
+        1.14.5
+    chardet:
+        3.0.4
+    cheroot:
+        8.3.0
+    contextvars:
+        2.4
+    cryptography:
+        3.4.6
+    distro:
+        1.5.0
+    gitdb:
+        4.0.5
+    idna:
+        2.8
+    immutables:
+        0.15
+    ioloop:
+        0.1a0
+    jaraco.classes:
+        3.2.1
+    jaraco.collections:
+        3.2.0
+    jaraco.functools:
+        2.0
+    jaraco.text:
+        3.5.0
+    libnacl:
+        1.7.2
+    lxml:
+        4.6.3
+    more-itertools:
+        8.2.0
+    msgpack:
+        1.0.2
+    pip:
+        21.1.2
+    portend:
+        2.6
+    psutil:
+        5.8.0
+    pyOpenSSL:
+        20.0.1
+    pyasn1:
+        0.4.8
+    pycparser:
+        2.20
+    pycryptodomex:
+        3.9.8
+    pycurl:
+        7.43.0.5
+    pymssql:
+        2.1.5
+    python-dateutil:
+        2.8.1
+    python-gnupg:
+        0.4.6
+    pythonnet:
+        2.5.2
+    pytz:
+        2020.1
+    pywin32:
+        300
+    pyzmq:
+        18.0.1
+    requests:
+        2.25.1
+    salt:
+        3003.1
+    setproctitle:
+        1.1.10
+    setuptools:
+        57.0.0
+    six:
+        1.16.0
+    smmap:
+        3.0.4
+    tempora:
+        1.14.1
+    timelib:
+        0.2.5
+    urllib3:
+        1.26.4
+    wheel:
+        0.36.2
+    zc.lockfile:
+        2.0

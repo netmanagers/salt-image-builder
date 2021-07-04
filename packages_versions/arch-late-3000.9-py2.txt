@@ -1,4 +1,5 @@
 arch-late-3000.9-py2
+Salt install method: git
 # salt-call --versions-report
 Salt Version:
            Salt: 3000.9

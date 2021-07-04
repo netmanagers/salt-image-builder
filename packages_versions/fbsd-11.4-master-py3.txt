@@ -1,0 +1,279 @@
+fbsd-11.4-master-py3
+Salt install method: git
+# salt-call --versions-report
+Salt Version:
+          Salt: 3003+0na.752b3cc
+ 
+Dependency Versions:
+          cffi: Not Installed
+      cherrypy: Not Installed
+      dateutil: Not Installed
+     docker-py: Not Installed
+         gitdb: Not Installed
+     gitpython: Not Installed
+        Jinja2: 2.11.3
+       libgit2: Not Installed
+      M2Crypto: Not Installed
+          Mako: Not Installed
+       msgpack: 1.0.2
+  msgpack-pure: Not Installed
+  mysql-python: Not Installed
+     pycparser: Not Installed
+      pycrypto: Not Installed
+  pycryptodome: 3.10.1
+        pygit2: Not Installed
+        Python: 3.7.9 (default, Feb 25 2021, 01:19:09)
+  python-gnupg: Not Installed
+        PyYAML: 5.4.1
+         PyZMQ: 22.0.3
+         smmap: Not Installed
+       timelib: Not Installed
+       Tornado: 4.5.3
+           ZMQ: 4.3.1
+ 
+System Versions:
+          dist: freebsd 11.4 
+        locale: utf-8
+       machine: amd64
+       release: 11.4-RELEASE-p3
+        system: FreeBSD
+       version: FreeBSD 11.4 
+ 
+# salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
+local:
+    ----------
+    init:
+    kernel:
+        FreeBSD
+    kernelrelease:
+        11.4-RELEASE-p3
+    kernelversion:
+        FreeBSD 11.4-RELEASE-p3 #0: Tue Sep  1 08:22:33 UTC 2020     root@amd64-builder.daemonology.net:/usr/obj/usr/src/sys/GENERIC
+    locale_info:
+        ----------
+        defaultencoding:
+            None
+        defaultlanguage:
+            None
+        detectedencoding:
+            utf-8
+        timezone:
+            unknown
+    lsb_distrib_codename:
+    lsb_distrib_id:
+    lsb_distrib_release:
+    os:
+        FreeBSD
+    os_family:
+        FreeBSD
+    osarch:
+        amd64
+    osbuild:
+    oscodename:
+    osfinger:
+        FreeBSD-11
+    osfullname:
+        FreeBSD
+    osmajorrelease:
+        11
+    osmanufacturer:
+    osrelease:
+        11.4
+    osrelease_info:
+        - 11
+        - 4
+    osversion:
+    pythonexecutable:
+        /usr/local/bin/python3.7
+    pythonpath:
+        - /usr/local/bin
+        - /usr/local/lib/python37.zip
+        - /usr/local/lib/python3.7
+        - /usr/local/lib/python3.7/lib-dynload
+        - /usr/local/lib/python3.7/site-packages
+    pythonversion:
+        - 3
+        - 7
+        - 9
+        - final
+        - 0
+    saltpath:
+        /usr/local/lib/python3.7/site-packages/salt
+    saltversion:
+        3003+0na.752b3cc
+    saltversioninfo:
+        - 3003
+    systemd:
+    virtual:
+        VirtualBox
+    virtual_subtype:
+    zmqversion:
+        4.3.1
+# salt-call --local pkg.list_pkgs
+local:
+    ----------
+    apr:
+        1.7.0.1.6.1_1
+    bash:
+        5.1.4
+    bash-completion:
+        2.11,2
+    ca_root_nss:
+        3.58
+    curl:
+        7.72.0
+    cvsps:
+        2.1_2
+    db5:
+        5.3.28_7
+    dmidecode:
+        3.2
+    expat:
+        2.2.10
+    gdbm:
+        1.18.1_1
+    gettext-runtime:
+        0.21
+    git:
+        2.30.1
+    glib:
+        2.66.7,1
+    gmp:
+        6.2.1
+    gnupg:
+        2.2.26
+    gnutls:
+        3.6.15
+    indexinfo:
+        0.3.1
+    libassuan:
+        2.5.4
+    libedit:
+        3.1.20191231,1
+    libffi:
+        3.3_1
+    libgcrypt:
+        1.8.7
+    libgpg-error:
+        1.41
+    libiconv:
+        1.16
+    libidn2:
+        2.3.0_1
+    libksba:
+        1.5.0
+    liblz4:
+        1.9.3,1
+    libnghttp2:
+        1.41.0
+    libtasn1:
+        4.16.0
+    libunistring:
+        0.9.10_1
+    libunwind:
+        20200331_1
+    libxml2:
+        2.9.10_2
+    libzmq4:
+        4.3.1_1
+    nettle:
+        3.7.2_1
+    norm:
+        1.5r6_1
+    npth:
+        1.6
+    openpgm:
+        5.2.122_6
+    p11-kit:
+        0.23.22
+    p5-Authen-SASL:
+        2.16_1
+    p5-CGI:
+        4.51
+    p5-Clone:
+        0.45
+    p5-Digest-HMAC:
+        1.03_1
+    p5-Encode-Locale:
+        1.05
+    p5-Error:
+        0.17029
+    p5-GSSAPI:
+        0.28_1
+    p5-HTML-Parser:
+        3.75
+    p5-HTML-Tagset:
+        3.20_1
+    p5-HTTP-Date:
+        6.05
+    p5-HTTP-Message:
+        6.26
+    p5-IO-HTML:
+        1.001_1
+    p5-IO-Socket-INET6:
+        2.72_1
+    p5-IO-Socket-SSL:
+        2.068
+    p5-LWP-MediaTypes:
+        6.04
+    p5-Mozilla-CA:
+        20200520
+    p5-Net-SSLeay:
+        1.88
+    p5-Socket6:
+        0.29
+    p5-Term-ReadKey:
+        2.38_1
+    p5-TimeDate:
+        2.33,1
+    p5-URI:
+        5.05
+    p5-subversion:
+        1.14.1
+    pcre:
+        8.44
+    perl5:
+        5.32.1_1
+    pinentry:
+        1.1.0_7
+    pinentry-tty:
+        1.1.0
+    pkg:
+        1.16.3
+    py37-pip:
+        20.2.3
+    py37-setuptools:
+        44.0.0
+    python:
+        3.7_3,2
+    python3:
+        3_3
+    python37:
+        3.7.9_1
+    readline:
+        8.0.4
+    serf:
+        1.3.9_6
+    sqlite3:
+        3.34.0,1
+    subversion:
+        1.14.1
+    sudo:
+        1.9.3p1
+    tpm-emulator:
+        0.7.4_2
+    trousers:
+        0.3.14_3
+    utf8proc:
+        2.6.1
+    virtualbox-ose-additions-nox11:
+        5.2.44_2
+# salt-call --local pip.list
+local:
+    ----------
+    pip:
+        20.2.3
+    setuptools:
+        44.0.0
+    wheel:
+        0.36.2
