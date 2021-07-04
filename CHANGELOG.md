@@ -1,5 +1,14 @@
 # Changelog
 
+# [1.41.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.40.0...v1.41.0) (2021-07-04)
+
+
+### Features
+
+* **fedora:** build `stable` for `3003.1` instead of `git` ([ac1e63c](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/ac1e63c3c19cd227f27d415bf073ca52c90b29ef))
+* **gitlab-ci:** capture Salt install method to packages' text files ([283f8af](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/283f8af4f0745468cfb7466eebe68afe499c00bf))
+* **packages_versions:** capture text files for Windows & *BSD [skip ci] ([f2cfd86](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/f2cfd863da6a5668fc1973957ff1491784211c0d))
+
 # [1.40.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.39.4...v1.40.0) (2021-07-01)
 
 

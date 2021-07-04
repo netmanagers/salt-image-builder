@@ -197,7 +197,7 @@ local:
     icu:
         69.1-1
     iproute2:
-        5.12.0-1
+        5.13.0-1
     iptables:
         1:1.8.7-1
     iputils:
@@ -239,7 +239,7 @@ local:
     libidn2:
         2.3.1-1
     libksba:
-        1.4.0-2
+        1.6.0-1
     libldap:
         2.4.59-1
     libmnl:
@@ -319,7 +319,7 @@ local:
     pciutils:
         3.7.0-1
     pcre:
-        8.44-1
+        8.45-1
     pcre2:
         10.37-1
     perl:

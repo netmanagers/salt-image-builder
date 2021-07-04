@@ -139,7 +139,7 @@ local:
     bzip2-libs:
         1.0.8-4.fc33
     ca-certificates:
-        2020.2.41-4.fc33
+        2021.2.50-1.0.fc33
     coreutils:
         8.32-19.fc33
     coreutils-common:
@@ -193,7 +193,7 @@ local:
     emacs-filesystem:
         1:27.2-3.fc33
     expat:
-        2.2.8-3.fc33
+        2.4.1-1.fc33
     fedora-gpg-keys:
         33-5
     fedora-release-common:
@@ -259,7 +259,7 @@ local:
     gpgme:
         1.14.0-2.fc33
     grep:
-        3.4-5.fc33
+        3.4-6.fc33
     groff-base:
         1.22.4-4.fc33
     grub2-common:
@@ -385,7 +385,7 @@ local:
     libnsl2:
         1.2.0-8.20180605git4a062cf.fc33
     libpcap:
-        14:1.10.0-1.fc33
+        14:1.10.1-1.fc33
     libpkgconf:
         1.7.3-5.fc33
     libpsl:
@@ -507,45 +507,45 @@ local:
     perl-Carp:
         1.50-457.fc33
     perl-Class-Struct:
-        0.66-470.fc33
+        0.66-471.fc33
     perl-DynaLoader:
-        1.47-470.fc33
+        1.47-471.fc33
     perl-Encode:
         4:3.08-458.fc33
     perl-Errno:
-        1.30-470.fc33
+        1.30-471.fc33
     perl-Error:
         1:0.17029-4.fc33
     perl-Exporter:
         5.74-458.fc33
     perl-Fcntl:
-        1.13-470.fc33
+        1.13-471.fc33
     perl-File-Basename:
-        2.85-470.fc33
+        2.85-471.fc33
     perl-File-Find:
-        1.37-470.fc33
+        1.37-471.fc33
     perl-File-Path:
         2.18-1.fc33
     perl-File-Temp:
         1:0.231.100-1.fc33
     perl-File-stat:
-        1.09-470.fc33
+        1.09-471.fc33
     perl-Getopt-Long:
         1:2.52-1.fc33
     perl-Getopt-Std:
-        1.12-470.fc33
+        1.12-471.fc33
     perl-Git:
         2.31.1-3.fc33
     perl-HTTP-Tiny:
         0.076-457.fc33
     perl-IO:
-        1.43-470.fc33
+        1.43-471.fc33
     perl-IPC-Open3:
-        1.21-470.fc33
+        1.21-471.fc33
     perl-MIME-Base64:
         3.16-1.fc33
     perl-POSIX:
-        1.94-470.fc33
+        1.94-471.fc33
     perl-PathTools:
         3.78-458.fc33
     perl-Pod-Escapes:
@@ -559,13 +559,13 @@ local:
     perl-Scalar-List-Utils:
         4:1.55-457.fc33
     perl-SelectSaver:
-        1.02-470.fc33
+        1.02-471.fc33
     perl-Socket:
         4:2.031-1.fc33
     perl-Storable:
         1:3.21-457.fc33
     perl-Symbol:
-        1.08-470.fc33
+        1.08-471.fc33
     perl-Term-ANSIColor:
         5.01-458.fc33
     perl-Term-Cap:
@@ -581,29 +581,29 @@ local:
     perl-constant:
         1.33-458.fc33
     perl-if:
-        0.60.800-470.fc33
+        0.60.800-471.fc33
     perl-interpreter:
-        4:5.32.1-470.fc33
+        4:5.32.1-471.fc33
     perl-lib:
-        0.65-470.fc33
+        0.65-471.fc33
     perl-libs:
-        4:5.32.1-470.fc33
+        4:5.32.1-471.fc33
     perl-macros:
-        4:5.32.1-470.fc33
+        4:5.32.1-471.fc33
     perl-mro:
-        1.23-470.fc33
+        1.23-471.fc33
     perl-overload:
-        1.31-470.fc33
+        1.31-471.fc33
     perl-overloading:
-        0.02-470.fc33
+        0.02-471.fc33
     perl-parent:
         1:0.238-457.fc33
     perl-podlators:
         1:4.14-457.fc33
     perl-subs:
-        1.03-470.fc33
+        1.03-471.fc33
     perl-vars:
-        1.05-470.fc33
+        1.05-471.fc33
     pigz:
         2.4-7.fc33
     pkgconf:
@@ -707,7 +707,7 @@ local:
     util-linux:
         2.36.1-1.fc33
     vim-minimal:
-        2:8.2.2956-2.fc33
+        2:8.2.3046-1.fc33
     which:
         2.21-20.fc33
     whois-nls:

@@ -187,11 +187,11 @@ local:
     gdbm:
         1:1.13-6.amzn2.0.2
     git:
-        2.23.4-1.amzn2.0.1
+        2.32.0-1.amzn2.0.1
     git-core:
-        2.23.4-1.amzn2.0.1
+        2.32.0-1.amzn2.0.1
     git-core-doc:
-        2.23.4-1.amzn2.0.1
+        2.32.0-1.amzn2.0.1
     glib2:
         2.56.1-9.amzn2.0.1
     glibc:
@@ -274,8 +274,6 @@ local:
         1.41.0-1.amzn2
     libpwquality:
         1.2.3-5.amzn2
-    libsecret:
-        0.18.5-2.amzn2.0.2
     libselinux:
         2.5-12.amzn2.0.2
     libsemanage:
@@ -301,9 +299,9 @@ local:
     libverto:
         0.2.5-4.amzn2.0.2
     libxml2:
-        2.9.1-6.amzn2.5.3
+        2.9.1-6.amzn2.5.4
     libxml2-python:
-        2.9.1-6.amzn2.5.3
+        2.9.1-6.amzn2.5.4
     lua:
         5.1.4-15.amzn2.0.2
     lz4:
@@ -375,7 +373,7 @@ local:
     perl-Getopt-Long:
         2.40-3.amzn2
     perl-Git:
-        2.23.4-1.amzn2.0.1
+        2.32.0-1.amzn2.0.1
     perl-HTTP-Tiny:
         0.033-3.amzn2
     perl-PathTools:

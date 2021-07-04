@@ -141,9 +141,9 @@ local:
     ca-certificates:
         2021.2.50-1.0.fc34
     coreutils:
-        8.32-27.fc34
+        8.32-28.fc34
     coreutils-common:
-        8.32-27.fc34
+        8.32-28.fc34
     cpio:
         2.13-10.fc34
     cpp:

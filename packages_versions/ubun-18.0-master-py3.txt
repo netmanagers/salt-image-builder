@@ -129,7 +129,7 @@ local:
     apt:
         1.6.13
     apt-transport-https:
-        1.6.13
+        1.6.14
     base-files:
         10.1ubuntu2.10
     base-passwd:
@@ -223,7 +223,7 @@ local:
     libapparmor1:
         2.12-4ubuntu5.1
     libapt-inst2.0:
-        1.6.13
+        1.6.14
     libapt-pkg5.0:
         1.6.13
     libargon2-0:

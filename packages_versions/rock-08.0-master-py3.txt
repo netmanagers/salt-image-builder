@@ -126,9 +126,9 @@ local:
 local:
     ----------
     NetworkManager:
-        1:1.30.0-7.el8
+        1:1.30.0-9.el8_4
     NetworkManager-libnm:
-        1:1.30.0-7.el8
+        1:1.30.0-9.el8_4
     acl:
         2.2.53-1.el8.1
     audit-libs:
@@ -179,6 +179,8 @@ local:
         8:1.02.175-5.el8
     device-mapper-libs:
         8:1.02.175-5.el8
+    diffutils:
+        3.6-6.el8
     dnf:
         4.4.2-11.el8
     dnf-data:
@@ -273,10 +275,16 @@ local:
         0.16.1-6.el8
     json-c:
         0.13.1-0.4.el8
+    kbd:
+        2.0.4-10.el8
+    kbd-legacy:
+        2.0.4-10.el8
+    kbd-misc:
+        2.0.4-10.el8
     kernel-headers:
-        4.18.0-305.3.1.el8_4
+        4.18.0-305.7.1.el8_4
     kexec-tools:
-        2.0.20-46.el8
+        2.0.20-46.el8_4.1
     keyutils-libs:
         1.5.10-6.el8
     keyutils-libs-devel:
@@ -372,7 +380,7 @@ local:
     librepo:
         1.12.0-3.el8
     libreport-filesystem:
-        2.9.5-15.el8.rocky.1
+        2.9.5-15.el8.rocky.2
     libseccomp:
         2.5.1-1.el8
     libselinux:
@@ -413,8 +421,10 @@ local:
         4.1.1-4.el8
     libxcrypt-devel:
         4.1.1-4.el8
+    libxkbcommon:
+        0.9.1-1.el8
     libxml2:
-        2.9.7-9.el8
+        2.9.7-9.el8_4.2
     libyaml:
         0.1.7-5.el8
     libzstd:
@@ -422,7 +432,7 @@ local:
     lua-libs:
         5.3.4-11.el8
     lz4-libs:
-        1.8.3-2.el8
+        1.8.3-3.el8_4
     lzo:
         2.08-14.el8
     mpfr:
@@ -440,7 +450,7 @@ local:
     npth:
         1.5-4.el8
     openldap:
-        2.4.46-16.el8
+        2.4.46-17.el8_4
     openssh:
         8.0p1-6.el8_4.2
     openssh-clients:
@@ -606,7 +616,7 @@ local:
     python3-pip-wheel:
         9.0.3-19.el8.rocky
     python3-rpm:
-        4.14.3-13.el8
+        4.14.3-14.el8_4
     python3-rpm-generators:
         5-6.el8
     python3-rpm-macros:
@@ -618,27 +628,27 @@ local:
     python3-six:
         1.11.0-8.el8
     python36:
-        3.6.8-2.module+el8.3.0+120+426d8baf
+        3.6.8-2.module+el8.4.0+597+ddf0ddea
     python36-devel:
-        3.6.8-2.module+el8.3.0+120+426d8baf
+        3.6.8-2.module+el8.4.0+597+ddf0ddea
     rdma-core:
         32.0-4.el8
     readline:
         7.0-10.el8
     rocky-gpg-keys:
-        8.4-26.el8
+        8.4-29.el8
     rocky-release:
-        8.4-26.el8
+        8.4-29.el8
     rocky-repos:
-        8.4-26.el8
+        8.4-29.el8
     rootfiles:
         8.1-22.el8
     rpm:
-        4.14.3-13.el8
+        4.14.3-14.el8_4
     rpm-build-libs:
-        4.14.3-13.el8
+        4.14.3-14.el8_4
     rpm-libs:
-        4.14.3-13.el8
+        4.14.3-14.el8_4
     sed:
         4.5-2.el8
     setup:
@@ -656,13 +666,13 @@ local:
     swig:
         3.0.12-19.module+el8.4.0+385+82b6e804
     systemd:
-        239-45.el8
+        239-45.el8_4.1
     systemd-libs:
-        239-45.el8
+        239-45.el8_4.1
     systemd-pam:
-        239-45.el8
+        239-45.el8_4.1
     systemd-udev:
-        239-45.el8
+        239-45.el8_4.1
     tar:
         2:1.30-5.el8
     tpm2-tss:
@@ -675,6 +685,8 @@ local:
         2:8.0.1763-15.el8
     which:
         2.21-12.el8
+    xkeyboard-config:
+        2.28-1.el8
     xz:
         5.2.4-3.el8.1
     xz-libs:

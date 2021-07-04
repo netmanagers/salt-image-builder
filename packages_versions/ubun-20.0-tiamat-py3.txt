@@ -126,7 +126,7 @@ local:
     apt:
         2.0.5
     apt-transport-https:
-        2.0.5
+        2.0.6
     base-files:
         11ubuntu5.3
     base-passwd:

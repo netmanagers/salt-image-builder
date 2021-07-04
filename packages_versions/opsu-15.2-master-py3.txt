@@ -254,7 +254,7 @@ local:
     libdbus-1-3:
         1.12.2-lp152.5.27
     libdevmapper1_03:
-        1.02.163-lp152.7.24.1
+        1.02.163-lp152.7.27.1
     libdw1:
         0.168-lp152.5.103
     libebl-plugins:
@@ -310,7 +310,7 @@ local:
     liblsan0:
         10.2.1+git583-lp152.4.1
     liblua5_3-5:
-        5.3.4-lp152.4.112
+        5.3.6-lp152.5.3.1
     liblz4-1:
         1.8.0-lp152.5.3.1
     liblzma5:
@@ -346,7 +346,7 @@ local:
     libp11-kit0:
         0.23.2-lp152.6.4
     libpcre1:
-        8.41-lp152.6.104
+        8.41-lp152.7.3.1
     libpcre2-8-0:
         10.31-lp152.3.9
     libpopt0:
@@ -534,7 +534,7 @@ local:
     systemd-presets-branding-MicroOS:
         20200323-lp152.2.1
     systemd-presets-common-SUSE:
-        15-lp152.9.6.1
+        15-lp152.9.9.1
     sysuser-shadow:
         2.0-lp152.5.3.1
     sysvinit-tools:
