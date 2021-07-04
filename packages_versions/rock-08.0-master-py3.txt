@@ -1,4 +1,5 @@
 rock-08.0-master-py3
+Salt install method: git
 # salt-call --versions-report
 Salt Version:
           Salt: 3003+0na.0d71775

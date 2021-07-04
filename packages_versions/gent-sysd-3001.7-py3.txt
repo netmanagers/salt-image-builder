@@ -1,4 +1,5 @@
 gent-sysd-3001.7-py3
+Salt install method: git
 # salt-call --versions-report
 Salt Version:
            Salt: 3001.7

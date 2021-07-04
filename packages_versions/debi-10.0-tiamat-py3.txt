@@ -1,4 +1,5 @@
 debi-10.0-tiamat-py3
+Salt install method: stable
 # salt-call --versions-report
 Salt Version:
           Salt: 3003

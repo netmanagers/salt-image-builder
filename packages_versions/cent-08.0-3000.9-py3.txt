@@ -1,4 +1,5 @@
 cent-08.0-3000.9-py3
+Salt install method: stable
 # salt-call --versions-report
 Salt Version:
            Salt: 3000.9

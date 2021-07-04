@@ -1,4 +1,5 @@
 amaz-02.0-3003.1-py3
+Salt install method: stable
 # salt-call --versions-report
 Salt Version:
           Salt: 3003.1

@@ -160,6 +160,9 @@ commitlint:
     # Capture the image name (first `tee` used without `-a`)
     - 'echo "${DOCKER_ENV_CI_JOB_NAME}"
          | tee ${PKGS_VERSIONS_FILE}'
+    # Capture the Salt install method
+    - 'echo "Salt install method: ${SIM}"
+         | tee -a ${PKGS_VERSIONS_FILE}'
     # Capture the Salt versions report
     - 'echo "# ${CMD_SALT_CALL_VERSIONS_REPORT}"
          | tee -a ${PKGS_VERSIONS_FILE}'
