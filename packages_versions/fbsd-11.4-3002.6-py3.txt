@@ -1,0 +1,199 @@
+fbsd-11.4-3002.6-py3
+Salt install method: stable
+# salt-call --versions-report
+Salt Version:
+          Salt: 3002.6
+ 
+Dependency Versions:
+          cffi: 1.14.4
+      cherrypy: Not Installed
+      dateutil: Not Installed
+     docker-py: Not Installed
+         gitdb: Not Installed
+     gitpython: Not Installed
+        Jinja2: 2.11.2
+       libgit2: Not Installed
+      M2Crypto: Not Installed
+          Mako: Not Installed
+       msgpack: 1.0.2
+  msgpack-pure: Not Installed
+  mysql-python: Not Installed
+     pycparser: 2.20
+      pycrypto: Not Installed
+  pycryptodome: 3.9.8
+        pygit2: Not Installed
+        Python: 3.7.9 (default, Feb 25 2021, 01:19:09)
+  python-gnupg: Not Installed
+        PyYAML: 5.3.1
+         PyZMQ: 19.0.2
+         smmap: Not Installed
+       timelib: Not Installed
+       Tornado: 4.5.3
+           ZMQ: 4.3.1
+ 
+System Versions:
+          dist: freebsd 11.4 
+        locale: utf-8
+       machine: amd64
+       release: 11.4-RELEASE-p3
+        system: FreeBSD
+       version: FreeBSD 11.4 
+ 
+# salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
+local:
+    ----------
+    init:
+    kernel:
+        FreeBSD
+    kernelrelease:
+        11.4-RELEASE-p3
+    kernelversion:
+        FreeBSD 11.4-RELEASE-p3 #0: Tue Sep  1 08:22:33 UTC 2020     root@amd64-builder.daemonology.net:/usr/obj/usr/src/sys/GENERIC
+    locale_info:
+        ----------
+        defaultencoding:
+            None
+        defaultlanguage:
+            None
+        detectedencoding:
+            utf-8
+        timezone:
+            unknown
+    lsb_distrib_codename:
+    lsb_distrib_id:
+    lsb_distrib_release:
+    os:
+        FreeBSD
+    os_family:
+        FreeBSD
+    osarch:
+        amd64
+    osbuild:
+    oscodename:
+    osfinger:
+        FreeBSD-11
+    osfullname:
+        FreeBSD
+    osmajorrelease:
+        11
+    osmanufacturer:
+    osrelease:
+        11.4
+    osrelease_info:
+        - 11
+        - 4
+    osversion:
+    pythonexecutable:
+        /usr/local/bin/python3.7
+    pythonpath:
+        - /usr/local/bin
+        - /usr/local/lib/python37.zip
+        - /usr/local/lib/python3.7
+        - /usr/local/lib/python3.7/lib-dynload
+        - /usr/local/lib/python3.7/site-packages
+    pythonversion:
+        - 3
+        - 7
+        - 9
+        - final
+        - 0
+    saltpath:
+        /usr/local/lib/python3.7/site-packages/salt
+    saltversion:
+        3002.6
+    saltversioninfo:
+        - 3002
+        - 6
+    systemd:
+    virtual:
+        VirtualBox
+    virtual_subtype:
+    zmqversion:
+        4.3.1
+# salt-call --local pkg.list_pkgs
+local:
+    ----------
+    ca_root_nss:
+        3.58
+    curl:
+        7.72.0
+    dmidecode:
+        3.2
+    gettext-runtime:
+        0.21
+    indexinfo:
+        0.3.1
+    libffi:
+        3.3_1
+    libinotify:
+        20180201_2
+    libnghttp2:
+        1.41.0
+    libzmq4:
+        4.3.1_1
+    norm:
+        1.5r6_1
+    openpgm:
+        5.2.122_6
+    pkg:
+        1.16.3
+    py37-Babel:
+        2.8.0
+    py37-Jinja2:
+        2.11.2_1
+    py37-certifi:
+        2020.12.5
+    py37-cffi:
+        1.14.4
+    py37-chardet:
+        3.0.4_3
+    py37-cryptography:
+        2.9.2
+    py37-distro:
+        1.5.0
+    py37-idna:
+        2.10
+    py37-libcloud:
+        3.2.0
+    py37-markupsafe:
+        1.1.1
+    py37-msgpack:
+        1.0.2
+    py37-openssl:
+        19.1.0
+    py37-progressbar:
+        2.5
+    py37-psutil:
+        5.8.0
+    py37-pycparser:
+        2.20
+    py37-pycryptodomex:
+        3.9.8
+    py37-pyinotify:
+        0.9.6
+    py37-pysocks:
+        1.7.1
+    py37-pytz:
+        2020.1,1
+    py37-pyzmq:
+        19.0.2
+    py37-requests:
+        2.22.0_2
+    py37-salt:
+        3002.6
+    py37-setuptools:
+        44.0.0
+    py37-six:
+        1.15.0
+    py37-urllib3:
+        1.25.11,1
+    py37-yaml:
+        5.3.1
+    python37:
+        3.7.9_1
+    readline:
+        8.0.4
+    sudo:
+        1.9.3p1
+    virtualbox-ose-additions-nox11:
+        5.2.44_2

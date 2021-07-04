@@ -1,0 +1,242 @@
+wind-08.1-latest-py3
+Salt install method: stable
+# salt-call --versions-report
+Salt Version:
+          Salt: 3003
+ 
+Dependency Versions:
+          cffi: 1.14.5
+      cherrypy: 18.6.0
+      dateutil: 2.8.1
+     docker-py: Not Installed
+         gitdb: 4.0.5
+     gitpython: 3.1.13
+        Jinja2: 2.10.1
+       libgit2: Not Installed
+      M2Crypto: Not Installed
+          Mako: 1.1.4
+       msgpack: 1.0.2
+  msgpack-pure: Not Installed
+  mysql-python: Not Installed
+     pycparser: 2.20
+      pycrypto: Not Installed
+  pycryptodome: 3.9.8
+        pygit2: Not Installed
+        Python: 3.7.4 (tags/v3.7.4:e09359112e, Jul  8 2019, 20:34:20) [MSC v.1916 64 bit (AMD64)]
+  python-gnupg: 0.4.6
+        PyYAML: 5.3.1
+         PyZMQ: 18.0.1
+         smmap: 3.0.4
+       timelib: 0.2.4
+       Tornado: 4.5.3
+           ZMQ: 4.3.1
+ 
+System Versions:
+          dist:   
+        locale: cp1252
+       machine: AMD64
+       release: 8.1
+        system: Windows
+       version: 8.1 6.3.9600 SP0
+
+# salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
+local:
+    ----------
+    init:
+        Windows
+    kernel:
+        Windows
+    kernelrelease:
+        6.3.9600
+    kernelversion:
+        6.3.9600
+    locale_info:
+        ----------
+        defaultencoding:
+            cp1252
+        defaultlanguage:
+            en_GB
+        detectedencoding:
+            cp1252
+        timezone:
+            GMT Summer Time
+    lsb_distrib_codename:
+    lsb_distrib_id:
+    lsb_distrib_release:
+    os:
+        Windows
+    os_family:
+        Windows
+    osarch:
+    osbuild:
+    oscodename:
+    osfinger:
+        Windows-8.1
+    osfullname:
+        Microsoft Windows 8.1 Pro
+    osmajorrelease:
+    osmanufacturer:
+        Microsoft Corporation
+    osrelease:
+        8.1
+    osrelease_info:
+        - 8
+        - 1
+    osversion:
+        6.3.9600
+    pythonexecutable:
+        C:\salt\bin\python.exe
+    pythonpath:
+        - C:\salt\bin\Scripts
+        - C:\salt\bin\lib\site-packages\git\ext\gitdb
+        - C:\salt\bin\python37.zip
+        - C:\salt\bin\DLLs
+        - C:\salt\bin\lib
+        - C:\salt\bin
+        - C:\salt\bin\lib\site-packages
+        - C:\salt\bin\lib\site-packages\salt-3003-py3.7.egg
+        - C:\salt\bin\lib\site-packages\win32
+        - C:\salt\bin\lib\site-packages\win32\lib
+        - C:\salt\bin\lib\site-packages\Pythonwin
+        - C:\Windows\Microsoft.NET\Framework64\v4.0.30319\
+        - C:\salt\bin\lib\site-packages\gitdb\ext\smmap
+    pythonversion:
+        - 3
+        - 7
+        - 4
+        - final
+        - 0
+    saltpath:
+        C:\salt\bin\lib\site-packages\salt-3003-py3.7.egg\salt
+    saltversion:
+        3003
+    saltversioninfo:
+        - 3003
+    systemd:
+    virtual:
+        VirtualBox
+    virtual_subtype:
+    zmqversion:
+        4.3.1
+# salt-call --local pkg.list_pkgs
+local:
+    ----------
+    Git version 2.28.0:
+        2.28.0
+    Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.40664:
+        12.0.40664.0
+    Microsoft Visual C++ 2013 x64 Additional Runtime - 12.0.40664:
+        12.0.40664
+    Microsoft Visual C++ 2013 x64 Minimum Runtime - 12.0.40664:
+        12.0.40664
+    Oracle VM VirtualBox Guest Additions 6.1.18:
+        6.1.18.0
+    Package Management Preview - x64:
+        10.0.10586.117
+    Salt Minion 3003 (Python 3):
+        3003
+# salt-call --local pip.list
+local:
+    ----------
+    CherryPy:
+        18.6.0
+    GitPython:
+        3.1.13
+    Jinja2:
+        2.10.1
+    Mako:
+        1.1.4
+    MarkupSafe:
+        1.1.1
+    PyMySQL:
+        1.0.2
+    PyYAML:
+        5.3.1
+    WMI:
+        1.5.1
+    certifi:
+        2020.12.5
+    cffi:
+        1.14.5
+    chardet:
+        3.0.4
+    cheroot:
+        8.3.0
+    cryptography:
+        3.4.6
+    distro:
+        1.5.0
+    gitdb:
+        4.0.5
+    idna:
+        2.8
+    ioloop:
+        0.1a0
+    jaraco.classes:
+        3.2.1
+    jaraco.collections:
+        3.2.0
+    jaraco.functools:
+        2.0
+    jaraco.text:
+        3.5.0
+    libnacl:
+        1.7.2
+    lxml:
+        4.6.2
+    more-itertools:
+        8.2.0
+    msgpack:
+        1.0.2
+    pip:
+        21.0.1
+    portend:
+        2.6
+    psutil:
+        5.8.0
+    pyOpenSSL:
+        20.0.1
+    pyasn1:
+        0.4.8
+    pycparser:
+        2.20
+    pycryptodomex:
+        3.9.8
+    pycurl:
+        7.43.0.5
+    pymssql:
+        2.1.5
+    python-dateutil:
+        2.8.1
+    python-gnupg:
+        0.4.6
+    pythonnet:
+        2.5.2
+    pytz:
+        2020.1
+    pywin32:
+        300
+    pyzmq:
+        18.0.1
+    requests:
+        2.25.1
+    salt:
+        3003
+    setproctitle:
+        1.1.10
+    setuptools:
+        54.2.0
+    six:
+        1.15.0
+    smmap:
+        3.0.4
+    tempora:
+        1.14.1
+    timelib:
+        0.2.5
+    urllib3:
+        1.24.3
+    wheel:
+        0.36.2
+    zc.lockfile:
+        2.0

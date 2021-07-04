@@ -1,0 +1,197 @@
+obsd-06.8-3001-1-py3
+Salt install method: stable
+# salt-call --versions-report
+Salt Version:
+           Salt: 3001.1
+ 
+Dependency Versions:
+           cffi: Not Installed
+       cherrypy: Not Installed
+       dateutil: Not Installed
+      docker-py: Not Installed
+          gitdb: Not Installed
+      gitpython: Not Installed
+         Jinja2: 2.11.2
+        libgit2: Not Installed
+       M2Crypto: 0.36.0
+           Mako: Not Installed
+   msgpack-pure: Not Installed
+ msgpack-python: 0.6.2
+   mysql-python: Not Installed
+      pycparser: Not Installed
+       pycrypto: 3.9.8
+   pycryptodome: Not Installed
+         pygit2: Not Installed
+         Python: 3.8.6 (default, Feb 16 2021, 22:53:11)
+   python-gnupg: Not Installed
+         PyYAML: 5.3.1
+          PyZMQ: 18.0.1
+          smmap: Not Installed
+        timelib: Not Installed
+        Tornado: 4.5.3
+            ZMQ: 4.3.3
+ 
+System Versions:
+           dist: openbsd 6.8 
+         locale: utf-8
+        machine: amd64
+        release: 6.8
+         system: OpenBSD
+        version: OpenBSD 6.8 
+ 
+# salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
+local:
+    ----------
+    init:
+    kernel:
+        OpenBSD
+    kernelrelease:
+        6.8
+    kernelversion:
+        GENERIC.MP#98
+    locale_info:
+        ----------
+        defaultencoding:
+            UTF-8
+        defaultlanguage:
+            en_US
+        detectedencoding:
+            utf-8
+        timezone:
+            unknown
+    lsb_distrib_codename:
+    lsb_distrib_id:
+    lsb_distrib_release:
+    os:
+        OpenBSD
+    os_family:
+        OpenBSD
+    osarch:
+        amd64
+    osbuild:
+    oscodename:
+    osfinger:
+        OpenBSD-6
+    osfullname:
+    osmajorrelease:
+        6
+    osmanufacturer:
+    osrelease:
+        6.8
+    osrelease_info:
+        - 6
+        - 8
+    osversion:
+    pythonexecutable:
+        /usr/local/bin/python3.8
+    pythonpath:
+        - /usr/local/bin
+        - /usr/local/lib/python38.zip
+        - /usr/local/lib/python3.8
+        - /usr/local/lib/python3.8/lib-dynload
+        - /usr/local/lib/python3.8/site-packages
+    pythonversion:
+        - 3
+        - 8
+        - 6
+        - final
+        - 0
+    saltpath:
+        /usr/local/lib/python3.8/site-packages/salt
+    saltversion:
+        3001.1
+    saltversioninfo:
+        - 3001
+        - 1
+    systemd:
+    virtual:
+        VirtualBox
+    virtual_subtype:
+    zmqversion:
+        4.3.3
+# salt-call --local pkg.list_pkgs
+local:
+    ----------
+    bash:
+        5.0.18
+    bzip2:
+        1.0.8
+    curl:
+        7.72.0p0
+    dmidecode:
+        3.1
+    gettext-runtime:
+        0.21
+    gmp:
+        6.2.0
+    intel-firmware:
+        20200616v0
+    libffi:
+        3.3
+    libiconv:
+        1.16p0
+    libidn2:
+        2.3.0p0
+    libpsl:
+        0.20.2p1
+    libsodium:
+        1.0.18p1
+    libunistring:
+        0.9.7
+    libyaml:
+        0.2.2
+    nghttp2:
+        1.41.0p1
+    pcre2:
+        10.35
+    py3-M2Crypto:
+        0.36.0
+    py3-MarkupSafe:
+        1.1.1p0
+    py3-certifi:
+        2020.4.5.1p0
+    py3-chardet:
+        3.0.4p2
+    py3-cryptodome:
+        3.9.8
+    py3-distro:
+        1.4.0p1
+    py3-idna:
+        2.8p0
+    py3-jinja2:
+        2.11.2p1
+    py3-msgpack:
+        0.6.2p0v0
+    py3-progressbar:
+        2.5p1
+    py3-psutil:
+        5.4.3p3
+    py3-requests:
+        2.22.0p1
+    py3-setuptools:
+        41.6.0p0v0
+    py3-urllib3:
+        1.25.9p0
+    py3-yaml:
+        5.3.1p0
+    py3-zmq:
+        18.0.1p0v0
+    python:
+        3.8.6p1
+    quirks:
+        3.442
+    salt:
+        3001.1p0
+    sqlite3:
+        3.31.1p0
+    sudo:
+        1.9.5.2p0
+    vim--no_x11:
+        8.2.1805
+    wget:
+        1.20.3p3
+    xz:
+        5.2.5
+    zeromq:
+        4.3.3
+# salt-call --local pip.list
