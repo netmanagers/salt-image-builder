@@ -129,6 +129,11 @@ commitlint:
         if [ "${DN}" = "opensuse/tumbleweed" ]; then
           export CMD_DOCKER_BUILD="${CMD_DOCKER_BUILD} --build-arg=security-opt='seccomp=unconfined'"
         fi
+    # Use workaround for Debian Bullseye (tag `11` isn't currently available)
+    - |
+        if [ "${DN}" = "debian" ] && [ "${DV}" = "11" ]; then
+          export DV=bullseye
+        fi
     # yamllint enable rule:line-length
     # Use `SVB` for passing through to the bootstrap
     # This covers the previous situation of dealing with `.0` releases,
@@ -258,6 +263,10 @@ cent-07.0-3001.7-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 cent-07.0-3000.9-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'centos'               , DV: '7'      , PI: 'yum', SIM: 'stable', SV: '3000.9', SVB: ''      , PV: '3', EP: 'gcc-g++ openssl-devel python3 python3-devel swig zeromq zeromq-devel'}}
 
 # DEBIAN
+debi-11.0-tiamat-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'               , DV: '11'     , PI: 'apt', SIM: 'stable', SV: 'tiamat', SVB: ''      , PV: '3', EP: 'python3-pip'}}
+debi-11.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'               , DV: '11'     , PI: 'apt', SIM: 'git'   , SV: 'master', SVB: ''      , PV: '3', EP: 'python3-apt python3-pip'}}
+debi-11.0-3003.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'               , DV: '11'     , PI: 'apt', SIM: 'stable', SV: '3003.1', SVB: ''      , PV: '3', EP: 'python3-pip'}}
+debi-11.0-3002.6-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'               , DV: '11'     , PI: 'apt', SIM: 'stable', SV: '3002.6', SVB: ''      , PV: '3', EP: 'python3-pip'}}
 debi-10.0-tiamat-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'               , DV: '10'     , PI: 'apt', SIM: 'stable', SV: 'tiamat', SVB: ''      , PV: '3', EP: 'python3-pip'}}
 debi-10.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'               , DV: '10'     , PI: 'apt', SIM: 'git'   , SV: 'master', SVB: ''      , PV: '3', EP: 'python3-apt python3-pip'}}
 debi-10.0-3003.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'               , DV: '10'     , PI: 'apt', SIM: 'stable', SV: '3003.1', SVB: ''      , PV: '3', EP: 'python3-pip'}}
