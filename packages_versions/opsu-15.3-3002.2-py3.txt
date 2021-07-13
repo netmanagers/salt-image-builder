@@ -237,7 +237,7 @@ local:
     libdbus-1-3:
         1.12.2-8.3.1
     libdevmapper1_03:
-        1.02.163-8.30.1
+        1.02.163-8.33.1
     libdw1:
         0.168-4.5.3
     libebl-plugins:
@@ -281,11 +281,11 @@ local:
     libksba8:
         1.3.5-2.14
     libldap-2_4-2:
-        2.4.46-9.53.1
+        2.4.46-9.56.1
     libldap-data:
-        2.4.46-9.53.1
+        2.4.46-9.56.1
     liblua5_3-5:
-        5.3.4-3.3.2
+        5.3.6-3.6.1
     liblz4-1:
         1.9.2-3.3.1
     liblzma5:
@@ -313,7 +313,7 @@ local:
     libp11-kit0:
         0.23.2-4.8.3
     libpcre1:
-        8.41-4.20
+        8.41-6.4.2
     libpcre2-8-0:
         10.31-1.14
     libpgm-5_2-0:
@@ -399,7 +399,7 @@ local:
     libzstd1:
         1.4.4-1.6.1
     libzypp:
-        17.26.0-9.1
+        17.27.0-12.1
     login_defs:
         4.8.1-2.43
     logrotate:
@@ -557,7 +557,7 @@ local:
     systemd-presets-branding-MicroOS:
         20200323-lp153.2.14
     systemd-presets-common-SUSE:
-        15-8.6.1
+        15-8.9.1
     sysuser-shadow:
         2.0-4.2.8
     terminfo-base:
@@ -575,7 +575,7 @@ local:
     xz:
         5.2.3-4.3.1
     zypper:
-        1.14.45-10.1
+        1.14.46-13.1
 # salt-call --local pip.list
 local:
     ----------

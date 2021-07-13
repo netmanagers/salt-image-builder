@@ -22,7 +22,7 @@ Dependency Versions:
       pycrypto: 3.10.1
   pycryptodome: 3.10.1
         pygit2: Not Installed
-        Python: 3.9.5 (default, Jun 13 2021, 22:27:38)
+        Python: 3.9.5 (default, Jul 11 2021, 18:36:49)
   python-gnupg: Not Installed
         PyYAML: 5.4.1
          PyZMQ: 20.0.0
@@ -146,6 +146,8 @@ local:
         0-r1
     acct-group/nobody:
         0
+    acct-group/nullmail:
+        0
     acct-group/portage:
         0
     acct-group/render:
@@ -187,6 +189,8 @@ local:
     acct-user/messagebus:
         0-r1
     acct-user/nobody:
+        0
+    acct-user/nullmail:
         0
     acct-user/portage:
         0
@@ -287,7 +291,7 @@ local:
     app-text/xmlto:
         0.0.28-r6
     dev-db/sqlite:
-        3.34.1
+        3.35.5
     dev-lang/perl:
         5.32.1
     dev-lang/python:
@@ -388,8 +392,6 @@ local:
         2.330.0
     dev-perl/Unicode-LineBreak:
         2019.1.0
-    dev-perl/XML-Parser:
-        2.440.0
     dev-perl/YAML-Tiny:
         1.730.0
     dev-python/PySocks:
@@ -407,7 +409,7 @@ local:
     dev-python/distro:
         1.5.0-r1
     dev-python/idna:
-        3.1
+        3.2
     dev-python/jinja:
         3.0.1
     dev-python/libnacl:
@@ -439,7 +441,7 @@ local:
     dev-python/toml:
         0.10.2
     dev-python/urllib3:
-        1.26.4
+        1.26.5
     dev-python/watchdog:
         2.1.2
     dev-util/cmake:
@@ -448,8 +450,6 @@ local:
         3.1
     dev-util/gtk-doc-am:
         1.33.2
-    dev-util/intltool:
-        0.51.0-r2
     dev-util/meson:
         0.57.2
     dev-util/meson-format-array:
@@ -463,7 +463,7 @@ local:
     dev-vcs/git:
         2.31.1
     mail-mta/nullmailer:
-        2.2-r1
+        2.2-r2
     net-dns/libidn2:
         2.3.1
     net-firewall/iptables:
@@ -509,7 +509,7 @@ local:
     sys-apps/diffutils:
         3.7-r1
     sys-apps/file:
-        5.40-r2
+        5.40-r3
     sys-apps/findutils:
         4.8.0
     sys-apps/gawk:
@@ -585,7 +585,7 @@ local:
     sys-devel/flex:
         2.6.4-r1
     sys-devel/gcc:
-        10.3.0
+        10.3.0-r1
     sys-devel/gcc-config:
         2.4
     sys-devel/gettext:
@@ -608,14 +608,12 @@ local:
         3
     sys-kernel/linux-headers:
         5.10
-    sys-libs/db:
-        5.3.28-r8
     sys-libs/e2fsprogs-libs:
         1.46.2
     sys-libs/gdbm:
         1.19
     sys-libs/glibc:
-        2.33
+        2.33-r1
     sys-libs/libcap:
         2.49
     sys-libs/libseccomp:
@@ -627,7 +625,7 @@ local:
     sys-libs/readline:
         8.1_p1
     sys-libs/timezone-data:
-        2021a
+        2021a-r1
     sys-libs/zlib:
         1.2.11-r4
     sys-process/procps:
@@ -762,7 +760,7 @@ local:
     gemato:
         16.2
     idna:
-        3.1
+        3.2
     libnacl:
         1.7.2
     lxml:
@@ -794,6 +792,6 @@ local:
     toml:
         0.10.2
     urllib3:
-        1.26.4
+        1.26.5
     watchdog:
         2.1.2

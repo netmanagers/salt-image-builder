@@ -2,7 +2,7 @@ orac-07.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003+0na.0d71775
+          Salt: 3004+0na.22fe53c
  
 Dependency Versions:
           cffi: Not Installed
@@ -107,9 +107,9 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3003+0na.0d71775
+        3004+0na.22fe53c
     saltversioninfo:
-        - 3003
+        - 3004
     systemd:
         ----------
         features:
@@ -360,9 +360,9 @@ local:
     libverto-devel:
         0.2.5-4.el7
     libxml2:
-        2.9.1-6.0.1.el7.5
+        2.9.1-6.0.3.el7.5
     libxml2-python:
-        2.9.1-6.0.1.el7.5
+        2.9.1-6.0.3.el7.5
     logrotate:
         3.8.6-19.el7
     lua:
@@ -679,7 +679,7 @@ local:
     requests:
         2.25.1
     salt:
-        3003+0na.0d71775
+        3004+0na.22fe53c
     setuptools:
         39.2.0
     urllib3:

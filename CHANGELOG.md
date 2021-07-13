@@ -1,5 +1,17 @@
 # Changelog
 
+# [1.42.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.41.0...v1.42.0) (2021-07-13)
+
+
+### Features
+
+* **gitlab-ci:** add Debian Bullseye (11) ([1525304](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/152530453c63d2e4ba80c75aff1160e012b5899d))
+
+
+### Tests
+
+* **salt_version:** improve master/tiamat version `3***` check [skip ci] ([d3e0c17](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/d3e0c17932af08a913489f1987ecf317479ff9f4))
+
 # [1.41.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.40.0...v1.41.0) (2021-07-04)
 
 

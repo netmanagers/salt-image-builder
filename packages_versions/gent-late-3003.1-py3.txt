@@ -124,6 +124,8 @@ local:
         0-r1
     acct-group/man:
         0-r1
+    acct-group/nullmail:
+        0
     acct-group/portage:
         0
     acct-group/render:
@@ -132,6 +134,8 @@ local:
         0-r1
     acct-user/man:
         1-r1
+    acct-user/nullmail:
+        0
     acct-user/portage:
         0
     acct-user/sshd:
@@ -379,7 +383,7 @@ local:
     dev-vcs/git:
         2.31.1
     mail-mta/nullmailer:
-        2.2-r1
+        2.2-r2
     net-dns/libidn2:
         2.3.1
     net-firewall/iptables:

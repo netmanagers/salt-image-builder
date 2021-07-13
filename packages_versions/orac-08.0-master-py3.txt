@@ -2,7 +2,7 @@ orac-08.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003+0na.0d71775
+          Salt: 3004+0na.22fe53c
  
 Dependency Versions:
           cffi: Not Installed
@@ -107,9 +107,9 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3003+0na.0d71775
+        3004+0na.22fe53c
     saltversioninfo:
-        - 3003
+        - 3004
     systemd:
         ----------
         features:
@@ -420,7 +420,7 @@ local:
     libxcrypt-devel:
         4.1.1-4.el8
     libxml2:
-        2.9.7-9.0.1.el8_4.2
+        2.9.7-9.0.2.el8_4.2
     libyaml:
         0.1.7-5.el8
     libzstd:
@@ -713,7 +713,7 @@ local:
     rpm:
         4.14.3
     salt:
-        3003+0na.0d71775
+        3004+0na.22fe53c
     setuptools:
         39.2.0
     six:

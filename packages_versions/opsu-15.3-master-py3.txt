@@ -2,7 +2,7 @@ opsu-15.3-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003+0na.0d71775
+          Salt: 3004+0na.22fe53c
  
 Dependency Versions:
           cffi: 1.13.2
@@ -107,9 +107,9 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3003+0na.0d71775
+        3004+0na.22fe53c
     saltversioninfo:
-        - 3003
+        - 3004
     systemd:
         ----------
         features:
@@ -152,7 +152,7 @@ local:
     curl:
         7.66.0-4.17.1
     dbus-1:
-        1.12.2-8.3.1
+        1.12.2-8.6.1
     diffutils:
         3.6-4.3.1
     file:
@@ -254,7 +254,7 @@ local:
     libcurl4:
         7.66.0-4.17.1
     libdbus-1-3:
-        1.12.2-8.3.1
+        1.12.2-8.6.1
     libdevmapper1_03:
         1.02.163-8.33.1
     libdw1:
@@ -428,7 +428,7 @@ local:
     libzstd1:
         1.4.4-1.6.1
     libzypp:
-        17.26.0-9.1
+        17.27.0-12.1
     linux-glibc-devel:
         5.3-1.75
     login_defs:
@@ -574,7 +574,7 @@ local:
     which:
         2.21-2.20
     zypper:
-        1.14.45-10.1
+        1.14.46-13.1
 # salt-call --local pip.list
 local:
     ----------
@@ -627,7 +627,7 @@ local:
     requests:
         2.25.1
     salt:
-        3003+0na.0d71775
+        3004+0na.22fe53c
     setuptools:
         40.5.0
     six:

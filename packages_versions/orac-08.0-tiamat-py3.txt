@@ -396,7 +396,7 @@ local:
     libxcrypt:
         4.1.1-4.el8
     libxml2:
-        2.9.7-9.0.1.el8
+        2.9.7-9.0.2.el8_4.2
     libyaml:
         0.1.7-5.el8
     libzstd:

@@ -2,7 +2,7 @@ gent-late-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003+0na.0d71775
+          Salt: 3004+0na.22fe53c
  
 Dependency Versions:
           cffi: Not Installed
@@ -104,9 +104,9 @@ local:
     saltpath:
         /usr/lib/python3.9/site-packages/salt
     saltversion:
-        3003+0na.0d71775
+        3004+0na.22fe53c
     saltversioninfo:
-        - 3003
+        - 3004
     systemd:
     virtual:
         container
@@ -123,6 +123,8 @@ local:
         0-r1
     acct-group/man:
         0-r1
+    acct-group/nullmail:
+        0
     acct-group/portage:
         0
     acct-group/render:
@@ -131,6 +133,8 @@ local:
         0-r1
     acct-user/man:
         1-r1
+    acct-user/nullmail:
+        0
     acct-user/portage:
         0
     acct-user/sshd:
@@ -342,7 +346,7 @@ local:
     dev-vcs/git:
         2.31.1
     mail-mta/nullmailer:
-        2.2-r1
+        2.2-r2
     net-dns/libidn2:
         2.3.1
     net-firewall/iptables:
