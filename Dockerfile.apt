@@ -34,6 +34,10 @@ RUN apt-get update \
       sh -s -- -XUdfPD -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION; \
     else \
       CODENAME=$(grep VERSION_CODENAME /etc/os-release | cut -d= -f2); \
+      # Use `buster` packages for `bullseye` until specific Tiamat package available
+      if [ "${DISTRO_VERSION}" = "bullseye" ]; then \
+        CODENAME="buster"; \
+      fi; \
       # Output the `CODENAME` for debugging purposes
       echo "${CODENAME}"; \
       wget --progress=dot:giga -O - https://archive.repo.saltproject.io/artifactory/api/gpg/key/public | apt-key add -; \
