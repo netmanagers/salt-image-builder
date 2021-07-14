@@ -566,11 +566,13 @@ local:
     certifi:
         2021.5.30
     chardet:
-        4.0.0
+        3.0.4
+    charset-normalizer:
+        2.0.1
     distro:
         1.5.0
     idna:
-        2.10
+        3.2
     msgpack:
         1.0.2
     packaging:
@@ -586,7 +588,7 @@ local:
     pyzmq:
         22.1.0
     requests:
-        2.25.1
+        2.26.0
     salt:
         3001.7
     setuptools:

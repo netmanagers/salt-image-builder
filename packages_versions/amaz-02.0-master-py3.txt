@@ -2,7 +2,7 @@ amaz-02.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.22fe53c
+          Salt: 3004+0na.c1a39c5
  
 Dependency Versions:
           cffi: Not Installed
@@ -106,7 +106,7 @@ local:
     saltpath:
         /usr/lib/python3.7/site-packages/salt
     saltversion:
-        3004+0na.22fe53c
+        3004+0na.c1a39c5
     saltversioninfo:
         - 3004
     systemd:

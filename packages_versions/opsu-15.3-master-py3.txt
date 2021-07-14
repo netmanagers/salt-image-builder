@@ -2,7 +2,7 @@ opsu-15.3-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.22fe53c
+          Salt: 3004+0na.f5e8e98
  
 Dependency Versions:
           cffi: 1.13.2
@@ -107,7 +107,7 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3004+0na.22fe53c
+        3004+0na.f5e8e98
     saltversioninfo:
         - 3004
     systemd:
@@ -384,13 +384,13 @@ local:
     libsolv-tools:
         0.7.19-6.1
     libsqlite3-0:
-        3.28.0-3.9.2
+        3.36.0-3.12.1
     libssh4:
         0.8.7-10.12.1
     libstdc++6:
         10.3.0+git1587-1.6.4
     libsystemd0:
-        246.13-5.1
+        246.13-7.5.1
     libtasn1:
         4.13-4.5.1
     libtasn1-6:
@@ -404,7 +404,7 @@ local:
     libubsan0:
         7.5.0+r278197-4.25.1
     libudev1:
-        246.13-5.1
+        246.13-7.5.1
     libunistring2:
         0.9.10-1.1
     libusb-1_0-0:
@@ -552,7 +552,7 @@ local:
     system-user-root:
         20190513-3.3.1
     systemd:
-        246.13-5.1
+        246.13-7.5.1
     systemd-default-settings:
         0.7-1.1
     systemd-default-settings-branding-SLE:
@@ -566,7 +566,7 @@ local:
     terminfo-base:
         6.1-5.6.2
     udev:
-        246.13-5.1
+        246.13-7.5.1
     update-alternatives:
         1.19.0.4-2.48
     util-linux:
@@ -593,7 +593,9 @@ local:
     cffi:
         1.13.2
     chardet:
-        4.0.0
+        3.0.4
+    charset-normalizer:
+        2.0.1
     contextvars:
         2.4
     cryptography:
@@ -601,7 +603,7 @@ local:
     distro:
         1.5.0
     idna:
-        2.10
+        3.2
     immutables:
         0.15
     msgpack:
@@ -625,9 +627,9 @@ local:
     pyzmq:
         21.0.2
     requests:
-        2.25.1
+        2.26.0
     salt:
-        3004+0na.22fe53c
+        3004+0na.f5e8e98
     setuptools:
         40.5.0
     six:

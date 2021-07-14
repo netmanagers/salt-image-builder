@@ -720,8 +720,6 @@ local:
         21.1.2
     portage:
         3.0.20
-    requests:
-        2.25.1
     setuptools:
         57.0.0
     setuptools-scm:

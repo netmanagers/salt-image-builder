@@ -32,12 +32,12 @@ Dependency Versions:
             ZMQ: 4.3.4
  
 System Versions:
-           dist: opensuse-tumbleweed 20210711 
+           dist: opensuse-tumbleweed 20210712 
          locale: utf-8
         machine: x86_64
         release: 4.19.78-coreos
          system: Linux
-        version: openSUSE Tumbleweed 20210711 
+        version: openSUSE Tumbleweed 20210712 
  
 # salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
 local:
@@ -65,7 +65,7 @@ local:
     lsb_distrib_id:
         openSUSE Tumbleweed
     lsb_distrib_release:
-        20210711
+        20210712
     os:
         SUSE
     os_family:
@@ -76,16 +76,16 @@ local:
     oscodename:
         openSUSE Tumbleweed
     osfinger:
-        openSUSE Tumbleweed-20210711
+        openSUSE Tumbleweed-20210712
     osfullname:
         openSUSE Tumbleweed
     osmajorrelease:
-        20210711
+        20210712
     osmanufacturer:
     osrelease:
-        20210711
+        20210712
     osrelease_info:
-        - 20210711
+        - 20210712
     osversion:
     pythonexecutable:
         /usr/bin/python3.8
@@ -249,7 +249,7 @@ local:
     libfido2-udev:
         1.7.0-1.2
     libgcc_s1:
-        11.1.1+git400-1.2
+        11.1.1+git400-1.3
     libgcrypt20:
         1.9.3-2.1
     libgdbm6:
@@ -351,7 +351,7 @@ local:
     libssh4:
         0.9.5-1.4
     libstdc++6:
-        11.1.1+git400-1.2
+        11.1.1+git400-1.3
     libsystemd0:
         248.3-2.1
     libtasn1-6:
@@ -397,9 +397,9 @@ local:
     openSUSE-build-key:
         1.0-40.1
     openSUSE-release:
-        20210711-1057.1
+        20210712-1059.1
     openSUSE-release-appliance-docker:
-        20210711-1057.1
+        20210712-1059.1
     openssh:
         8.4p1-6.1
     openssh-clients:

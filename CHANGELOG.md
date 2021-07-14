@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.43.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.42.0...v1.43.0) (2021-07-14)
+
+
+### Features
+
+* **dockerfile.zyp:** downgrade Jinja2 for Tumbleweed `stable` [skip ci] ([5be7177](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/5be717743332e5b838f3677b2433456d843b67a9))
+
 # [1.42.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.41.0...v1.42.0) (2021-07-13)
 
 
