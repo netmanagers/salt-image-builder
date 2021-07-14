@@ -124,6 +124,7 @@ commitlint:
           docker pull ${CACHE_FROM} || true
         fi
     # Use workaround for openSUSE Tumbleweed
+    # (to allow Test Kitchen to access the container using an `ssh-rsa` public key)
     # yamllint disable rule:line-length
     - |
         if [ "${DN}" = "opensuse/tumbleweed" ]; then
@@ -152,8 +153,8 @@ commitlint:
          --build-arg SALT_VERSION="${SVB}"
          --build-arg PYTHON_VERSION="${PV}"
          --build-arg EXTRA_PACKAGES="${EP}"'
-    - 'export TESTINFRA_CONTAINER=testinfra-${TAG}-${PI}-${PV}-${SIM}-${SV}'
     # Run the test container
+    - 'export TESTINFRA_CONTAINER=testinfra-${TAG}-${PI}-${PV}-${SIM}-${SV}'
     - 'docker run
          --detach=true
          --name "${TESTINFRA_CONTAINER}"
