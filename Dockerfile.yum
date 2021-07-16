@@ -31,30 +31,17 @@ RUN if [[ "${DISTRO_NAME}" = "centos" ]]; then \
       sed -e '/^\s\+echowarn "You have 10 seconds to cancel and stop the bootstrap process..."/,+2d' | \
       sh -s -- -XUdfPD -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION; \
     else \
-      # TODO: Use `TIAMAT_DISTRO_NAME` for this section, to deal with trimming
-      #       `linux` from the end of the name as well, as required below
-      # Use `centos` packages for `oraclelinux`
-      if [ "${DISTRO_NAME}" = "oraclelinux" ] || [ "${DISTRO_NAME}" = "almalinux" ] || [ "${DISTRO_NAME}" = "rockylinux/rockylinux" ]; then \
-        DISTRO_NAME="centos"; \
+      # Prepare the `TIAMAT_DISTRO_NAME`
+      if [ "${DISTRO_NAME}" = "amazonlinux" ]; then \
+        TIAMAT_DISTRO_NAME="amazon"; \
+      else \
+        TIAMAT_DISTRO_NAME="redhat"; \
       fi; \
-      rpm --import https://archive.repo.saltproject.io/artifactory/api/gpg/key/public; \
-      # Only need this because building on top of an existing image (`--cache-from`)
-      rm -rf /etc/yum.repos.d/saltstack.repo; \
-      { \
-        echo '[saltstack-repo]'; \
-        echo 'name=SaltStack Tiamat Release Channel for RHEL/CentOS $releasever'; \
-        # Need to remove `linux` from the end of the `DISTRO_NAME` where present
-        echo 'baseurl=https://archive.repo.saltproject.io/artifactory/open-rpm-staging/'"${DISTRO_NAME/linux/}/${DISTRO_VERSION}"'/$basearch/'; \
-        echo 'skip_if_unavailable=True'; \
-        # Using `repo_gpgcheck=1` instead
-        echo 'gpgcheck=0'; \
-        echo 'gpgkey=https://archive.repo.saltproject.io/artifactory/api/gpg/key/public'; \
-        echo 'enabled=1'; \
-        echo 'enabled_metadata=1'; \
-        echo 'repo_gpgcheck=1'; \
-      } >> /etc/yum.repos.d/saltstack.repo; \
-      # Output the file for debugging purposes
-      cat /etc/yum.repos.d/saltstack.repo; \
+      echo "${TIAMAT_DISTRO_NAME}"; \
+      # Prepare the repo
+      rpm --import https://repo.saltproject.io/salt-dev/py3/${TIAMAT_DISTRO_NAME}/${DISTRO_VERSION}/x86_64/SALTSTACK-GPG-KEY.pub; \
+      curl -fsSL https://repo.saltproject.io/salt-dev/py3/${TIAMAT_DISTRO_NAME}/${DISTRO_VERSION}/x86_64/dev.repo | tee /etc/yum.repos.d/salt-dev.repo; \
+      # Install the package
       yum clean expire-cache; \
       yum -y install salt-minion; \
     fi \

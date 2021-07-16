@@ -24,7 +24,7 @@ COPY files/dpkg-nodoc /etc/dpkg/dpkg.cfg.d/01_nodoc
 COPY files/apt-no-recommends /etc/apt/apt.conf.d/99synaptic
 
 SHELL ["/bin/bash", "-x", "-o", "pipefail", "-c"]
-# hadolint ignore=DL3008,DL4001
+# hadolint ignore=SC1075,DL3008,DL4001
 RUN apt-get update \
  && apt-get install --yes --no-install-recommends $PKGS \
  && if [ "${SALT_VERSION}" != "tiamat" ]; then \
@@ -33,17 +33,15 @@ RUN apt-get update \
       sed -e '/^\s\+echowarn "You have 10 seconds to cancel and stop the bootstrap process..."/,+2d' | \
       sh -s -- -XUdfPD -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION; \
     else \
-      CODENAME=$(grep VERSION_CODENAME /etc/os-release | cut -d= -f2); \
       # Use `buster` packages for `bullseye` until specific Tiamat package available
       if [ "${DISTRO_VERSION}" = "bullseye" ]; then \
-        CODENAME="buster"; \
+        DISTRO_VERSION="10"; \
       fi; \
-      # Output the `CODENAME` for debugging purposes
-      echo "${CODENAME}"; \
-      wget --progress=dot:giga -O - https://archive.repo.saltproject.io/artifactory/api/gpg/key/public | apt-key add -; \
-      echo 'deb https://archive.repo.saltproject.io/artifactory/open-debian-staging '"${CODENAME}"' main' > /etc/apt/sources.list.d/saltstack.list; \
-      # Output the file for debugging purposes
-      cat /etc/apt/sources.list.d/saltstack.list; \
+      echo "${DISTRO_VERSION}"; \
+      # Prepare the repo
+      curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg https://repo.saltproject.io/salt-dev/py3/${DISTRO_NAME}/${DISTRO_VERSION}/amd64/salt-archive-keyring.gpg; \
+      echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg] https://repo.saltproject.io/salt-dev/py3/${DISTRO_NAME}/${DISTRO_VERSION}/amd64 stable main" | tee /etc/apt/sources.list.d/salt-dev.list; \
+      # Install the package
       apt-get update; \
       apt-get install --yes --no-install-recommends salt-minion; \
     fi \
