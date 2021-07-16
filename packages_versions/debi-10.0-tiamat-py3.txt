@@ -2,7 +2,7 @@ debi-10.0-tiamat-py3
 Salt install method: stable
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003
+          Salt: 3003rc1+516.gd71eb246c9
  
 Dependency Versions:
           cffi: 1.14.4
@@ -11,7 +11,7 @@ Dependency Versions:
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
-        Jinja2: 2.10.1
+        Jinja2: 2.11.3
        libgit2: Not Installed
       M2Crypto: Not Installed
           Mako: Not Installed
@@ -22,9 +22,9 @@ Dependency Versions:
       pycrypto: Not Installed
   pycryptodome: 3.9.8
         pygit2: Not Installed
-        Python: 3.7.7 (default, Feb 23 2021, 22:00:09)
+        Python: 3.7.10 (default, May 20 2021, 20:31:16)
   python-gnupg: 0.4.4
-        PyYAML: 5.3.1
+        PyYAML: 5.4.1
          PyZMQ: 18.0.1
          smmap: Not Installed
        timelib: 0.2.4
@@ -96,13 +96,13 @@ local:
     pythonversion:
         - 3
         - 7
-        - 7
+        - 10
         - final
         - 0
     saltpath:
         /opt/saltstack/salt/run/salt
     saltversion:
-        3003
+        3003rc1+516.gd71eb246c9
     saltversioninfo:
         - 3003
     systemd:
@@ -112,7 +112,7 @@ local:
         version:
             241
     virtual:
-        gce
+        container
     virtual_subtype:
         Docker
     zmqversion:
@@ -463,9 +463,9 @@ local:
     readline-common:
         7.0-5
     salt-common:
-        3003+ds-4
+        3003~rc1+516.gd71eb246c9+ds-1
     salt-minion:
-        3003+ds-4
+        3003~rc1+516.gd71eb246c9+ds-1
     sed:
         4.7-1
     sensible-utils:
@@ -496,4 +496,4 @@ local:
 local:
     ----------
     pip:
-        21.0.1
+        21.1.3

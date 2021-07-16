@@ -2,7 +2,7 @@ debi-11.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.c1a39c5
+          Salt: 3004+0na.d71eb24
  
 Dependency Versions:
           cffi: Not Installed
@@ -105,7 +105,7 @@ local:
     saltpath:
         /usr/local/lib/python3.9/dist-packages/salt
     saltversion:
-        3004+0na.c1a39c5
+        3004+0na.d71eb24
     saltversioninfo:
         - 3004
     systemd:
@@ -156,7 +156,7 @@ local:
     dash:
         0.5.11+git20200708+dd9ef66-5
     debconf:
-        1.5.75
+        1.5.77
     debian-archive-keyring:
         2021.1.1
     debianutils:
@@ -552,7 +552,7 @@ local:
     python3-wheel:
         0.34.2-1
     python3-yaml:
-        5.3.1-4
+        5.3.1-5
     python3.9:
         3.9.2-1
     python3.9-dev:

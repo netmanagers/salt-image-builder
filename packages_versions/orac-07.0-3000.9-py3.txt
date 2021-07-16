@@ -352,9 +352,9 @@ local:
     libverto-devel:
         0.2.5-4.el7
     libxml2:
-        2.9.1-6.0.1.el7.5
+        2.9.1-6.0.3.el7.5
     libxml2-python:
-        2.9.1-6.0.1.el7.5
+        2.9.1-6.0.3.el7.5
     libyaml:
         0.1.4-11.el7_0
     logrotate:

@@ -2,7 +2,7 @@ cent-08.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.c1a39c5
+          Salt: 3004+0na.d71eb24
  
 Dependency Versions:
           cffi: Not Installed
@@ -107,7 +107,7 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3004+0na.c1a39c5
+        3004+0na.d71eb24
     saltversioninfo:
         - 3004
     systemd:
@@ -763,7 +763,7 @@ local:
     certifi:
         2021.5.30
     charset-normalizer:
-        2.0.1
+        2.0.3
     contextvars:
         2.4
     dbus-python:
@@ -791,7 +791,7 @@ local:
     rpm:
         4.14.3
     salt:
-        3004+0na.c1a39c5
+        3004+0na.d71eb24
     setuptools:
         39.2.0
     six:

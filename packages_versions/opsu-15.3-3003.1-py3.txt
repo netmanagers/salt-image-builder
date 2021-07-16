@@ -596,7 +596,7 @@ local:
     chardet:
         3.0.4
     charset-normalizer:
-        2.0.1
+        2.0.3
     contextvars:
         2.4
     cryptography:

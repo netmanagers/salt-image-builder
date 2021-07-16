@@ -153,7 +153,7 @@ local:
     dctrl-tools:
         2.24-3+b1
     debconf:
-        1.5.75
+        1.5.77
     debian-archive-keyring:
         2021.1.1
     debianutils:
@@ -523,7 +523,7 @@ local:
     python3-wheel:
         0.34.2-1
     python3-yaml:
-        5.3.1-4
+        5.3.1-5
     python3-zmq:
         20.0.0-1+b1
     python3.9:

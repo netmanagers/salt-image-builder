@@ -2,7 +2,7 @@ opsu-15.3-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.f5e8e98
+          Salt: 3004+0na.d71eb24
  
 Dependency Versions:
           cffi: 1.13.2
@@ -107,7 +107,7 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3004+0na.f5e8e98
+        3004+0na.d71eb24
     saltversioninfo:
         - 3004
     systemd:
@@ -595,7 +595,7 @@ local:
     chardet:
         3.0.4
     charset-normalizer:
-        2.0.1
+        2.0.3
     contextvars:
         2.4
     cryptography:
@@ -629,7 +629,7 @@ local:
     requests:
         2.26.0
     salt:
-        3004+0na.f5e8e98
+        3004+0na.d71eb24
     setuptools:
         40.5.0
     six:

@@ -314,7 +314,7 @@ local:
     p11-kit:
         0.24.0-1
     pacman:
-        6.0.0-3
+        6.0.0-5
     pacman-mirrorlist:
         20210509-1
     pam:
@@ -360,7 +360,7 @@ local:
     python-pyparsing:
         2.4.7-3
     python-setuptools:
-        1:57.1.0-1
+        1:57.2.0-1
     python-six:
         1.16.0-1
     python2:

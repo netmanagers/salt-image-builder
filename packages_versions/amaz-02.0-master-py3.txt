@@ -2,7 +2,7 @@ amaz-02.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.c1a39c5
+          Salt: 3004+0na.d71eb24
  
 Dependency Versions:
           cffi: Not Installed
@@ -106,7 +106,7 @@ local:
     saltpath:
         /usr/lib/python3.7/site-packages/salt
     saltversion:
-        3004+0na.c1a39c5
+        3004+0na.d71eb24
     saltversioninfo:
         - 3004
     systemd:
@@ -233,7 +233,7 @@ local:
     info:
         5.1-5.amzn2
     kernel-headers:
-        4.14.232-177.418.amzn2
+        4.14.238-182.421.amzn2
     keyutils-libs:
         1.5.8-3.amzn2.0.2
     kmod:
@@ -371,7 +371,7 @@ local:
     openssh-server:
         7.4p1-21.amzn2.0.3
     openssl-libs:
-        1:1.0.2k-19.amzn2.0.6
+        1:1.0.2k-19.amzn2.0.7
     p11-kit:
         0.23.22-1.amzn2.0.1
     p11-kit-trust:
@@ -477,7 +477,7 @@ local:
     python-urlgrabber:
         3.10-9.amzn2.0.1
     python2-rpm:
-        4.11.3-40.amzn2.0.5
+        4.11.3-40.amzn2.0.6
     python3:
         3.7.10-1.amzn2.0.1
     python3-devel:
@@ -497,11 +497,11 @@ local:
     readline:
         6.2-10.amzn2.0.2
     rpm:
-        4.11.3-40.amzn2.0.5
+        4.11.3-40.amzn2.0.6
     rpm-build-libs:
-        4.11.3-40.amzn2.0.5
+        4.11.3-40.amzn2.0.6
     rpm-libs:
-        4.11.3-40.amzn2.0.5
+        4.11.3-40.amzn2.0.6
     sed:
         4.2.2-5.amzn2.0.2
     setup:

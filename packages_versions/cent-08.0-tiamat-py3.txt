@@ -2,7 +2,7 @@ cent-08.0-tiamat-py3
 Salt install method: stable
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003rc1+345.ge3c52e5fba
+          Salt: 3003rc1+516.gd71eb246c9
  
 Dependency Versions:
           cffi: 1.14.4
@@ -103,7 +103,7 @@ local:
     saltpath:
         /opt/saltstack/salt/run/salt
     saltversion:
-        3003rc1+345.ge3c52e5fba
+        3003rc1+516.gd71eb246c9
     saltversioninfo:
         - 3003
     systemd:
@@ -242,7 +242,7 @@ local:
     gnutls:
         3.6.14-6.el8
     gpg-pubkey.(none):
-        8483c65d-5ccc5b19
+        8483c65d-5ccc5b19,de57bfbe-53a9be98
     gpgme:
         1.13.1-3.el8
     grep:
@@ -618,9 +618,9 @@ local:
     rpm-libs:
         4.14.3-4.el8
     salt:
-        3003rc1+345.ge3c52e5fba-1.el8
+        3003rc1+516.gd71eb246c9-1.el8
     salt-minion:
-        3003rc1+345.ge3c52e5fba-1.el8
+        3003rc1+516.gd71eb246c9-1.el8
     sed:
         4.5-2.el8
     setup:
@@ -671,4 +671,4 @@ local:
 local:
     ----------
     pip:
-        21.1.2
+        21.1.3

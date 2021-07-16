@@ -568,7 +568,7 @@ local:
     chardet:
         3.0.4
     charset-normalizer:
-        2.0.1
+        2.0.3
     idna:
         3.2
     msgpack:
