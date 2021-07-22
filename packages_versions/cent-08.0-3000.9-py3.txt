@@ -35,7 +35,7 @@ System Versions:
            dist: centos 8.4.2105 
          locale: UTF-8
         machine: x86_64
-        release: 4.19.78-coreos
+        release: 5.4.109+
          system: Linux
         version: CentOS Linux 8.4.2105 
  
@@ -47,9 +47,9 @@ local:
     kernel:
         Linux
     kernelrelease:
-        4.19.78-coreos
+        5.4.109+
     kernelversion:
-        #1 SMP Mon Oct 14 22:56:39 -00 2019
+        #1 SMP Wed Jun 16 20:00:10 PDT 2021
     locale_info:
         ----------
         defaultencoding:

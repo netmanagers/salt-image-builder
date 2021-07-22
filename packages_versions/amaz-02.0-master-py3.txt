@@ -2,7 +2,7 @@ amaz-02.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.d71eb24
+          Salt: 3004+0na.68e3e43
  
 Dependency Versions:
           cffi: Not Installed
@@ -35,7 +35,7 @@ System Versions:
           dist: amzn 2 
         locale: utf-8
        machine: x86_64
-       release: 4.19.78-coreos
+       release: 5.4.109+
         system: Linux
        version: Amazon Linux 2 
  
@@ -47,9 +47,9 @@ local:
     kernel:
         Linux
     kernelrelease:
-        4.19.78-coreos
+        5.4.109+
     kernelversion:
-        #1 SMP Mon Oct 14 22:56:39 -00 2019
+        #1 SMP Wed Jun 16 20:00:10 PDT 2021
     locale_info:
         ----------
         defaultencoding:
@@ -106,7 +106,7 @@ local:
     saltpath:
         /usr/lib/python3.7/site-packages/salt
     saltversion:
-        3004+0na.d71eb24
+        3004+0na.68e3e43
     saltversioninfo:
         - 3004
     systemd:
@@ -233,7 +233,7 @@ local:
     info:
         5.1-5.amzn2
     kernel-headers:
-        4.14.238-182.421.amzn2
+        4.14.238-182.422.amzn2
     keyutils-libs:
         1.5.8-3.amzn2.0.2
     kmod:

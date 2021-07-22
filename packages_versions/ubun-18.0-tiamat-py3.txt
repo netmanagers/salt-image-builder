@@ -2,7 +2,7 @@ ubun-18.0-tiamat-py3
 Salt install method: stable
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003rc1+516.gd71eb246c9
+          Salt: 3003rc1+553.g13a04c4558
  
 Dependency Versions:
           cffi: 1.14.4
@@ -35,7 +35,7 @@ System Versions:
           dist: ubuntu 18.04 bionic
         locale: utf-8
        machine: x86_64
-       release: 4.19.78-coreos
+       release: 5.4.109+
         system: Linux
        version: Ubuntu 18.04 bionic
  
@@ -47,9 +47,9 @@ local:
     kernel:
         Linux
     kernelrelease:
-        4.19.78-coreos
+        5.4.109+
     kernelversion:
-        #1 SMP Mon Oct 14 22:56:39 -00 2019
+        #1 SMP Wed Jun 16 20:00:10 PDT 2021
     locale_info:
         ----------
         defaultencoding:
@@ -103,7 +103,7 @@ local:
     saltpath:
         /opt/saltstack/salt/run/salt
     saltversion:
-        3003rc1+516.gd71eb246c9
+        3003rc1+553.g13a04c4558
     saltversioninfo:
         - 3003
     systemd:
@@ -388,13 +388,13 @@ local:
     libstdc++6:
         8.4.0-1ubuntu1~18.04
     libsystemd0:
-        237-3ubuntu10.48
+        237-3ubuntu10.50
     libtasn1-6:
         4.13-2
     libtinfo5:
         6.1-1ubuntu1.18.04
     libudev1:
-        237-3ubuntu10.48
+        237-3ubuntu10.50
     libunistring2:
         0.9.9-0ubuntu2
     libuuid1:
@@ -464,9 +464,9 @@ local:
     readline-common:
         7.0-3
     salt-common:
-        3003~rc1+516.gd71eb246c9+ds-1
+        3003~rc1+553.g13a04c4558+ds-1
     salt-minion:
-        3003~rc1+516.gd71eb246c9+ds-1
+        3003~rc1+553.g13a04c4558+ds-1
     sed:
         4.4-2
     sensible-utils:
@@ -474,9 +474,9 @@ local:
     sudo:
         1.8.21p2-3ubuntu1.4
     systemd:
-        237-3ubuntu10.48
+        237-3ubuntu10.50
     systemd-sysv:
-        237-3ubuntu10.48
+        237-3ubuntu10.50
     sysvinit-utils:
         2.88dsf-59.10ubuntu1
     tar:
@@ -486,7 +486,7 @@ local:
     ucf:
         3.0038
     udev:
-        237-3ubuntu10.48
+        237-3ubuntu10.50
     util-linux:
         2.31.1-0.4ubuntu3.7
     wget:

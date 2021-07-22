@@ -2,7 +2,7 @@ fedo-34.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.d71eb24
+          Salt: 3004+0na.68e3e43
  
 Dependency Versions:
           cffi: Not Installed
@@ -22,7 +22,7 @@ Dependency Versions:
       pycrypto: Not Installed
   pycryptodome: 3.10.1
         pygit2: Not Installed
-        Python: 3.9.6 (default, Jun 29 2021, 00:00:00)
+        Python: 3.9.6 (default, Jul 16 2021, 00:00:00)
   python-gnupg: Not Installed
         PyYAML: 5.4.1
          PyZMQ: 21.0.2
@@ -35,7 +35,7 @@ System Versions:
           dist: fedora 34 
         locale: utf-8
        machine: x86_64
-       release: 4.19.78-coreos
+       release: 5.4.109+
         system: Linux
        version: Fedora 34 
  
@@ -47,9 +47,9 @@ local:
     kernel:
         Linux
     kernelrelease:
-        4.19.78-coreos
+        5.4.109+
     kernelversion:
-        #1 SMP Mon Oct 14 22:56:39 -00 2019
+        #1 SMP Wed Jun 16 20:00:10 PDT 2021
     locale_info:
         ----------
         defaultencoding:
@@ -104,7 +104,7 @@ local:
     saltpath:
         /usr/lib/python3.9/site-packages/salt
     saltversion:
-        3004+0na.d71eb24
+        3004+0na.68e3e43
     saltversioninfo:
         - 3004
     systemd:
@@ -289,7 +289,7 @@ local:
     kbd-misc:
         2.4.0-2.fc34
     kernel-headers:
-        5.12.13-300.fc34
+        5.13.3-200.fc34
     keyutils-libs:
         1.6.1-2.fc34
     kmod:
@@ -341,7 +341,7 @@ local:
     libeconf:
         0.4.0-1.fc34
     libedit:
-        3.1-37.20210522cvs.fc34
+        3.1-38.20210714cvs.fc34
     libevent:
         2.1.12-3.fc34
     libfdisk:
@@ -617,11 +617,11 @@ local:
     python-setuptools-wheel:
         53.0.0-2.fc34
     python-unversioned-command:
-        3.9.6-1.fc34
+        3.9.6-2.fc34
     python3:
-        3.9.6-1.fc34
+        3.9.6-2.fc34
     python3-devel:
-        3.9.6-1.fc34
+        3.9.6-2.fc34
     python3-dnf:
         4.8.0-1.fc34
     python3-gpg:
@@ -633,7 +633,7 @@ local:
     python3-libdnf:
         0.63.1-1.fc34
     python3-libs:
-        3.9.6-1.fc34
+        3.9.6-2.fc34
     python3-pip:
         21.0.1-3.fc34
     python3-rpm:
@@ -673,17 +673,17 @@ local:
     sudo:
         1.9.5p2-1.fc34
     systemd:
-        248.4-1.fc34
+        248.5-1.fc34
     systemd-libs:
-        248.4-1.fc34
+        248.5-1.fc34
     systemd-networkd:
-        248.4-1.fc34
+        248.5-1.fc34
     systemd-pam:
-        248.4-1.fc34
+        248.5-1.fc34
     systemd-rpm-macros:
-        248.4-1.fc34
+        248.5-1.fc34
     systemd-udev:
-        248.4-1.fc34
+        248.5-1.fc34
     tar:
         2:1.34-1.fc34
     tpm2-tss:
@@ -699,7 +699,7 @@ local:
     util-linux:
         2.36.2-1.fc34
     vim-minimal:
-        2:8.2.3154-1.fc34
+        2:8.2.3182-1.fc34
     which:
         2.21-26.fc34
     whois-nls:

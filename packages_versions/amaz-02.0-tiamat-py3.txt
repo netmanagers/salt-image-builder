@@ -2,7 +2,7 @@ amaz-02.0-tiamat-py3
 Salt install method: stable
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003rc1+516.gd71eb246c9
+          Salt: 3003rc1+553.g13a04c4558
  
 Dependency Versions:
           cffi: 1.14.4
@@ -35,7 +35,7 @@ System Versions:
           dist: amzn 2 
         locale: utf-8
        machine: x86_64
-       release: 4.19.78-coreos
+       release: 5.4.109+
         system: Linux
        version: Amazon Linux 2 
  
@@ -47,9 +47,9 @@ local:
     kernel:
         Linux
     kernelrelease:
-        4.19.78-coreos
+        5.4.109+
     kernelversion:
-        #1 SMP Mon Oct 14 22:56:39 -00 2019
+        #1 SMP Wed Jun 16 20:00:10 PDT 2021
     locale_info:
         ----------
         defaultencoding:
@@ -102,7 +102,7 @@ local:
     saltpath:
         /opt/saltstack/salt/run/salt
     saltversion:
-        3003rc1+516.gd71eb246c9
+        3003rc1+553.g13a04c4558
     saltversioninfo:
         - 3003
     systemd:
@@ -463,9 +463,9 @@ local:
     rpm-libs:
         4.11.3-40.amzn2.0.5
     salt:
-        3003rc1+516.gd71eb246c9-1.amzn2
+        3003rc1+553.g13a04c4558-1.amzn2
     salt-minion:
-        3003rc1+516.gd71eb246c9-1.amzn2
+        3003rc1+553.g13a04c4558-1.amzn2
     sed:
         4.2.2-5.amzn2.0.2
     setup:

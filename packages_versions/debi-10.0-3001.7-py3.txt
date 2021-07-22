@@ -403,13 +403,13 @@ local:
     libstdc++6:
         8.3.0-6
     libsystemd0:
-        241-7~deb10u7
+        241-7~deb10u8
     libtasn1-6:
         4.13-3
     libtinfo6:
         6.1+20181013-2+deb10u2
     libudev1:
-        241-7~deb10u7
+        241-7~deb10u8
     libunistring2:
         0.9.10-1
     libuuid1:
@@ -533,9 +533,9 @@ local:
     sudo:
         1.8.27-1+deb10u3
     systemd:
-        241-7~deb10u7
+        241-7~deb10u8
     systemd-sysv:
-        241-7~deb10u7
+        241-7~deb10u8
     sysvinit-utils:
         2.93-8
     tar:
@@ -545,7 +545,7 @@ local:
     ucf:
         3.0038+nmu1
     udev:
-        241-7~deb10u7
+        241-7~deb10u8
     util-linux:
         2.33.1-0.1
     wget:

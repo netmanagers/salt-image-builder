@@ -2,7 +2,7 @@ orac-08.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.d71eb24
+          Salt: 3004+0na.68e3e43
  
 Dependency Versions:
           cffi: Not Installed
@@ -35,7 +35,7 @@ System Versions:
           dist: oracle 8.4 
         locale: UTF-8
        machine: x86_64
-       release: 4.19.78-coreos
+       release: 5.4.109+
         system: Linux
        version: Oracle Linux Server 8.4 
  
@@ -47,9 +47,9 @@ local:
     kernel:
         Linux
     kernelrelease:
-        4.19.78-coreos
+        5.4.109+
     kernelversion:
-        #1 SMP Mon Oct 14 22:56:39 -00 2019
+        #1 SMP Wed Jun 16 20:00:10 PDT 2021
     locale_info:
         ----------
         defaultencoding:
@@ -107,7 +107,7 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3004+0na.d71eb24
+        3004+0na.68e3e43
     saltversioninfo:
         - 3004
     systemd:
@@ -274,7 +274,7 @@ local:
     json-c:
         0.13.1-0.4.el8
     kernel-headers:
-        4.18.0-305.7.1.el8_4
+        4.18.0-305.10.2.el8_4
     keyutils-libs:
         1.5.10-6.el8
     keyutils-libs-devel:
@@ -646,13 +646,13 @@ local:
     swig:
         3.0.12-19.module+el8.3.0+7654+9c81efad
     systemd:
-        239-45.0.2.el8_4.1
+        239-45.0.2.el8_4.2
     systemd-libs:
-        239-45.0.2.el8_4.1
+        239-45.0.2.el8_4.2
     systemd-pam:
-        239-45.0.2.el8_4.1
+        239-45.0.2.el8_4.2
     systemd-udev:
-        239-45.0.2.el8_4.1
+        239-45.0.2.el8_4.2
     tpm2-tss:
         2.3.2-3.el8
     tzdata:
@@ -713,7 +713,7 @@ local:
     rpm:
         4.14.3
     salt:
-        3004+0na.d71eb24
+        3004+0na.68e3e43
     setuptools:
         39.2.0
     six:

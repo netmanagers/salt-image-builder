@@ -2,7 +2,7 @@ debi-09.0-tiamat-py3
 Salt install method: stable
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003rc1+516.gd71eb246c9
+          Salt: 3003rc1+553.g13a04c4558
  
 Dependency Versions:
           cffi: 1.14.4
@@ -35,7 +35,7 @@ System Versions:
           dist: debian 9 stretch
         locale: utf-8
        machine: x86_64
-       release: 4.19.78-coreos
+       release: 5.4.109+
         system: Linux
        version: Debian GNU/Linux 9 stretch
  
@@ -47,9 +47,9 @@ local:
     kernel:
         Linux
     kernelrelease:
-        4.19.78-coreos
+        5.4.109+
     kernelversion:
-        #1 SMP Mon Oct 14 22:56:39 -00 2019
+        #1 SMP Wed Jun 16 20:00:10 PDT 2021
     locale_info:
         ----------
         defaultencoding:
@@ -102,7 +102,7 @@ local:
     saltpath:
         /opt/saltstack/salt/run/salt
     saltversion:
-        3003rc1+516.gd71eb246c9
+        3003rc1+553.g13a04c4558
     saltversioninfo:
         - 3003
     systemd:
@@ -253,7 +253,7 @@ local:
     libgcc1:
         1:6.3.0-18+deb9u1
     libgcrypt20:
-        1.7.6-2+deb9u3
+        1.7.6-2+deb9u4
     libgdbm3:
         1.8.3-14
     libgmp10:
@@ -365,13 +365,13 @@ local:
     libstdc++6:
         6.3.0-18+deb9u1
     libsystemd0:
-        232-25+deb9u12
+        232-25+deb9u13
     libtasn1-6:
         4.10-1.1+deb9u1
     libtinfo5:
         6.0+20161126-1+deb9u2
     libudev1:
-        232-25+deb9u12
+        232-25+deb9u13
     libunistring0:
         0.9.6+really0.9.3-0.1
     libustr-1.0-1:
@@ -437,9 +437,9 @@ local:
     readline-common:
         7.0-3
     salt-common:
-        3003~rc1+516.gd71eb246c9+ds-1
+        3003~rc1+553.g13a04c4558+ds-1
     salt-minion:
-        3003~rc1+516.gd71eb246c9+ds-1
+        3003~rc1+553.g13a04c4558+ds-1
     sed:
         4.4-1
     sensible-utils:
@@ -447,9 +447,9 @@ local:
     sudo:
         1.8.19p1-2.1+deb9u3
     systemd:
-        232-25+deb9u12
+        232-25+deb9u13
     systemd-sysv:
-        232-25+deb9u12
+        232-25+deb9u13
     sysvinit-utils:
         2.88dsf-59.9
     tar:
@@ -459,7 +459,7 @@ local:
     ucf:
         3.0036
     udev:
-        232-25+deb9u12
+        232-25+deb9u13
     util-linux:
         2.29.2-1+deb9u1
     wget:

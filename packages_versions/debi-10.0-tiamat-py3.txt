@@ -2,7 +2,7 @@ debi-10.0-tiamat-py3
 Salt install method: stable
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003rc1+516.gd71eb246c9
+          Salt: 3003rc1+553.g13a04c4558
  
 Dependency Versions:
           cffi: 1.14.4
@@ -35,7 +35,7 @@ System Versions:
           dist: debian 10 buster
         locale: utf-8
        machine: x86_64
-       release: 4.19.78-coreos
+       release: 5.4.109+
         system: Linux
        version: Debian GNU/Linux 10 buster
  
@@ -47,9 +47,9 @@ local:
     kernel:
         Linux
     kernelrelease:
-        4.19.78-coreos
+        5.4.109+
     kernelversion:
-        #1 SMP Mon Oct 14 22:56:39 -00 2019
+        #1 SMP Wed Jun 16 20:00:10 PDT 2021
     locale_info:
         ----------
         defaultencoding:
@@ -102,7 +102,7 @@ local:
     saltpath:
         /opt/saltstack/salt/run/salt
     saltversion:
-        3003rc1+516.gd71eb246c9
+        3003rc1+553.g13a04c4558
     saltversioninfo:
         - 3003
     systemd:
@@ -387,13 +387,13 @@ local:
     libstdc++6:
         8.3.0-6
     libsystemd0:
-        241-7~deb10u7
+        241-7~deb10u8
     libtasn1-6:
         4.13-3
     libtinfo6:
         6.1+20181013-2+deb10u2
     libudev1:
-        241-7~deb10u7
+        241-7~deb10u8
     libunistring2:
         0.9.10-1
     libuuid1:
@@ -463,9 +463,9 @@ local:
     readline-common:
         7.0-5
     salt-common:
-        3003~rc1+516.gd71eb246c9+ds-1
+        3003~rc1+553.g13a04c4558+ds-1
     salt-minion:
-        3003~rc1+516.gd71eb246c9+ds-1
+        3003~rc1+553.g13a04c4558+ds-1
     sed:
         4.7-1
     sensible-utils:
@@ -473,9 +473,9 @@ local:
     sudo:
         1.8.27-1+deb10u3
     systemd:
-        241-7~deb10u7
+        241-7~deb10u8
     systemd-sysv:
-        241-7~deb10u7
+        241-7~deb10u8
     sysvinit-utils:
         2.93-8
     tar:
@@ -485,7 +485,7 @@ local:
     ucf:
         3.0038+nmu1
     udev:
-        241-7~deb10u7
+        241-7~deb10u8
     util-linux:
         2.33.1-0.1
     wget:

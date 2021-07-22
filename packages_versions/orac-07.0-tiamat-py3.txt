@@ -2,7 +2,7 @@ orac-07.0-tiamat-py3
 Salt install method: stable
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003rc1+516.gd71eb24
+          Salt: 3003rc1+553.g13a04c4
  
 Dependency Versions:
           cffi: 1.14.4
@@ -35,7 +35,7 @@ System Versions:
           dist: oracle 7.9 
         locale: utf-8
        machine: x86_64
-       release: 4.19.78-coreos
+       release: 5.4.109+
         system: Linux
        version: Oracle Linux Server 7.9 
  
@@ -47,9 +47,9 @@ local:
     kernel:
         Linux
     kernelrelease:
-        4.19.78-coreos
+        5.4.109+
     kernelversion:
-        #1 SMP Mon Oct 14 22:56:39 -00 2019
+        #1 SMP Wed Jun 16 20:00:10 PDT 2021
     locale_info:
         ----------
         defaultencoding:
@@ -103,7 +103,7 @@ local:
     saltpath:
         /opt/saltstack/salt/run/salt
     saltversion:
-        3003rc1+516.gd71eb24
+        3003rc1+553.g13a04c4
     saltversioninfo:
         - 3003
     systemd:
@@ -572,9 +572,9 @@ local:
     rsyslog:
         8.24.0-57.0.1.el7_9.1
     salt:
-        3003rc1+516.gd71eb24-1.el7
+        3003rc1+553.g13a04c4-1.el7
     salt-minion:
-        3003rc1+516.gd71eb24-1.el7
+        3003rc1+553.g13a04c4-1.el7
     sed:
         4.2.2-7.el7
     setup:

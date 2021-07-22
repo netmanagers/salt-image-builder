@@ -2,7 +2,7 @@ cent-08.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.d71eb24
+          Salt: 3004+0na.68e3e43
  
 Dependency Versions:
           cffi: Not Installed
@@ -35,7 +35,7 @@ System Versions:
           dist: centos 8 
         locale: UTF-8
        machine: x86_64
-       release: 4.19.78-coreos
+       release: 5.4.109+
         system: Linux
        version: CentOS Linux 8 
  
@@ -47,9 +47,9 @@ local:
     kernel:
         Linux
     kernelrelease:
-        4.19.78-coreos
+        5.4.109+
     kernelversion:
-        #1 SMP Mon Oct 14 22:56:39 -00 2019
+        #1 SMP Wed Jun 16 20:00:10 PDT 2021
     locale_info:
         ----------
         defaultencoding:
@@ -107,7 +107,7 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3004+0na.d71eb24
+        3004+0na.68e3e43
     saltversioninfo:
         - 3004
     systemd:
@@ -314,7 +314,7 @@ local:
     kbd-misc:
         2.0.4-10.el8
     kernel-headers:
-        4.18.0-305.7.1.el8_4
+        4.18.0-305.10.2.el8_4
     kexec-tools:
         2.0.20-46.el8_4.1
     keyutils-libs:
@@ -712,13 +712,13 @@ local:
     swig:
         3.0.12-19.module_el8.3.0+557+3d058e38
     systemd:
-        239-45.el8_4.1
+        239-45.el8_4.2
     systemd-libs:
-        239-45.el8_4.1
+        239-45.el8_4.2
     systemd-pam:
-        239-45.el8_4.1
+        239-45.el8_4.2
     systemd-udev:
-        239-45.el8_4.1
+        239-45.el8_4.2
     tar:
         2:1.30-5.el8
     tpm2-tss:
@@ -791,7 +791,7 @@ local:
     rpm:
         4.14.3
     salt:
-        3004+0na.d71eb24
+        3004+0na.68e3e43
     setuptools:
         39.2.0
     six:
