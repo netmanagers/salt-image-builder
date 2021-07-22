@@ -1,31 +1,31 @@
-fbsd-12.2-master-py3
-Salt install method: git
+fbsd-12.2-3003.1-py3
+Salt install method: stable
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.d66cd3c
+          Salt: 3003.1
 
 Dependency Versions:
-          cffi: Not Installed
+          cffi: 1.14.6
       cherrypy: Not Installed
       dateutil: Not Installed
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
-        Jinja2: 3.0.1
+        Jinja2: 2.11.2
        libgit2: Not Installed
       M2Crypto: Not Installed
           Mako: Not Installed
        msgpack: 1.0.2
   msgpack-pure: Not Installed
   mysql-python: Not Installed
-     pycparser: Not Installed
+     pycparser: 2.20
       pycrypto: Not Installed
   pycryptodome: 3.10.1
         pygit2: Not Installed
         Python: 3.8.10 (default, Jul  3 2021, 01:17:15)
   python-gnupg: Not Installed
         PyYAML: 5.4.1
-         PyZMQ: 21.0.2
+         PyZMQ: 22.1.0
          smmap: Not Installed
        timelib: Not Installed
        Tornado: 4.5.3
@@ -100,9 +100,10 @@ local:
     saltpath:
         /usr/local/lib/python3.8/site-packages/salt
     saltversion:
-        3004+0na.d66cd3c
+        3003.1
     saltversioninfo:
-        - 3004
+        - 3003
+        - 1
     systemd:
     virtual:
         VirtualBox
@@ -116,24 +117,20 @@ local:
         3.63
     curl:
         7.76.0
-    cvsps:
-        2.1_2
     dmidecode:
         3.3
-    expat:
-        2.4.1
     gettext-runtime:
         0.21
-    git:
-        2.32.0_1
     indexinfo:
         0.3.1
     libffi:
         3.3_1
+    libinotify:
+        20180201_2
     libnghttp2:
         1.43.0
-    libunwind:
-        20201110
+    libyaml:
+        0.2.5
     libzmq4:
         4.3.4
     mpdecimal:
@@ -142,60 +139,60 @@ local:
         1.5r6_1
     openpgm:
         5.2.122_6
-    p5-Authen-SASL:
-        2.16_1
-    p5-CGI:
-        4.53
-    p5-Clone:
-        0.45
-    p5-Digest-HMAC:
-        1.04
-    p5-Encode-Locale:
-        1.05
-    p5-Error:
-        0.17029
-    p5-GSSAPI:
-        0.28_1
-    p5-HTML-Parser:
-        3.76
-    p5-HTML-Tagset:
-        3.20_1
-    p5-HTTP-Date:
-        6.05
-    p5-HTTP-Message:
-        6.33
-    p5-IO-HTML:
-        1.001_1
-    p5-IO-Socket-INET6:
-        2.72_1
-    p5-IO-Socket-SSL:
-        2.071
-    p5-LWP-MediaTypes:
-        6.04
-    p5-Mozilla-CA:
-        20200520
-    p5-Net-SSLeay:
-        1.90
-    p5-Socket6:
-        0.29
-    p5-TimeDate:
-        2.33,1
-    p5-URI:
-        5.09
-    pcre2:
-        10.37
-    perl5:
-        5.32.1_1
     pkg:
         1.16.3
-    py38-pip:
-        20.3.4
+    py38-Babel:
+        2.9.1
+    py38-Jinja2:
+        2.11.2_1
+    py38-certifi:
+        2021.5.30
+    py38-cffi:
+        1.14.6
+    py38-chardet:
+        4.0.0,1
+    py38-cryptography:
+        3.3.2
+    py38-distro:
+        1.5.0
+    py38-idna:
+        2.10
+    py38-libcloud:
+        3.3.1
+    py38-markupsafe:
+        1.1.1_1
+    py38-msgpack:
+        1.0.2
+    py38-openssl:
+        20.0.1
+    py38-progressbar:
+        2.5
+    py38-psutil:
+        5.8.0
+    py38-pycparser:
+        2.20
+    py38-pycryptodomex:
+        3.10.1
+    py38-pyinotify:
+        0.9.6
+    py38-pysocks:
+        1.7.1
+    py38-pytz:
+        2021.1,1
+    py38-pyzmq:
+        22.1.0
+    py38-requests:
+        2.25.1
+    py38-salt:
+        3003.1_1
     py38-setuptools:
         57.0.0
-    python:
-        3.8_3,2
-    python3:
-        3_3
+    py38-six:
+        1.16.0
+    py38-urllib3:
+        1.25.11,1
+    py38-yaml:
+        5.4.1
     python38:
         3.8.10
     readline:
@@ -205,11 +202,3 @@ local:
     virtualbox-ose-additions-nox11:
         6.1.18_1
 # salt-call --local pip.list
-local:
-    ----------
-    pip:
-        20.3.4
-    setuptools:
-        57.0.0
-    wheel:
-        0.36.2
