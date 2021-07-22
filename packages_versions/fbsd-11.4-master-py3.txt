@@ -2,7 +2,7 @@ fbsd-11.4-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.d66cd3c
+          Salt: 3004+0na.68e3e43
 
 Dependency Versions:
           cffi: Not Installed
@@ -11,7 +11,7 @@ Dependency Versions:
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
-        Jinja2: 3.0.1
+        Jinja2: 2.11.3
        libgit2: Not Installed
       M2Crypto: Not Installed
           Mako: Not Installed
@@ -22,7 +22,7 @@ Dependency Versions:
       pycrypto: Not Installed
   pycryptodome: 3.10.1
         pygit2: Not Installed
-        Python: 3.8.10 (default, Jul  1 2021, 01:16:45)
+        Python: 3.8.11 (default, Jul 20 2021, 01:10:18)
   python-gnupg: Not Installed
         PyYAML: 5.4.1
          PyZMQ: 21.0.2
@@ -94,13 +94,13 @@ local:
     pythonversion:
         - 3
         - 8
-        - 10
+        - 11
         - final
         - 0
     saltpath:
         /usr/local/lib/python3.8/site-packages/salt
     saltversion:
-        3004+0na.d66cd3c
+        3004+0na.68e3e43
     saltversioninfo:
         - 3004
     systemd:
@@ -197,7 +197,7 @@ local:
     python3:
         3_3
     python38:
-        3.8.10
+        3.8.11
     readline:
         8.1.1
     sudo:
@@ -207,6 +207,8 @@ local:
 # salt-call --local pip.list
 local:
     ----------
+    Jinja2:
+        2.11.3
     pip:
         20.3.4
     setuptools:
