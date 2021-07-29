@@ -35,7 +35,7 @@ System Versions:
           dist: oracle 8.4 
         locale: UTF-8
        machine: x86_64
-       release: 4.19.78-coreos
+       release: 5.4.109+
         system: Linux
        version: Oracle Linux Server 8.4 
  
@@ -47,9 +47,9 @@ local:
     kernel:
         Linux
     kernelrelease:
-        4.19.78-coreos
+        5.4.109+
     kernelversion:
-        #1 SMP Mon Oct 14 22:56:39 -00 2019
+        #1 SMP Wed Jun 16 20:00:10 PDT 2021
     locale_info:
         ----------
         defaultencoding:
@@ -672,13 +672,13 @@ local:
     swig:
         3.0.12-19.module+el8.3.0+7654+9c81efad
     systemd:
-        239-45.0.2.el8_4.1
+        239-45.0.2.el8_4.2
     systemd-libs:
-        239-45.0.2.el8_4.1
+        239-45.0.2.el8_4.2
     systemd-pam:
-        239-45.0.2.el8_4.1
+        239-45.0.2.el8_4.2
     systemd-udev:
-        239-45.0.2.el8_4.1
+        239-45.0.2.el8_4.2
     tpm2-tss:
         2.3.2-3.el8
     tzdata:

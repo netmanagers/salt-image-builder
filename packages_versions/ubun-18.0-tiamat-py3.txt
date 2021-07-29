@@ -144,7 +144,7 @@ local:
     coreutils:
         8.28-1ubuntu1
     curl:
-        7.58.0-2ubuntu3.13
+        7.58.0-2ubuntu3.14
     dash:
         0.5.8-2.10
     dctrl-tools:
@@ -196,7 +196,7 @@ local:
     grep:
         3.1-2build1
     gzip:
-        1.6-5ubuntu1
+        1.6-5ubuntu1.1
     hostname:
         3.20
     init-system-helpers:
@@ -238,9 +238,9 @@ local:
     libcryptsetup12:
         2:2.0.2-1ubuntu1.2
     libcurl3-gnutls:
-        7.58.0-2ubuntu3.13
+        7.58.0-2ubuntu3.14
     libcurl4:
-        7.58.0-2ubuntu3.13
+        7.58.0-2ubuntu3.14
     libdb5.3:
         5.3.28-13.1ubuntu1.1
     libdebconfclient0:

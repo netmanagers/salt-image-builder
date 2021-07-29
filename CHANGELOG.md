@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.46.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.45.0...v1.46.0) (2021-07-29)
+
+
+### Features
+
+* **packages_versions:** add/update text files for FreeBSD [skip ci] ([b829115](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/b82911517e68a70b84c97abef01cf192192e129f))
+
 # [1.45.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.44.0...v1.45.0) (2021-07-22)
 
 

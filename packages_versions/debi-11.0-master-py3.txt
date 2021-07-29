@@ -2,7 +2,7 @@ debi-11.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.68e3e43
+          Salt: 3004+0na.ec7203d
  
 Dependency Versions:
           cffi: Not Installed
@@ -35,7 +35,7 @@ System Versions:
           dist: debian 11 bullseye
         locale: utf-8
        machine: x86_64
-       release: 4.19.78-coreos
+       release: 5.4.109+
         system: Linux
        version: Debian GNU/Linux 11 bullseye
  
@@ -47,9 +47,9 @@ local:
     kernel:
         Linux
     kernelrelease:
-        4.19.78-coreos
+        5.4.109+
     kernelversion:
-        #1 SMP Mon Oct 14 22:56:39 -00 2019
+        #1 SMP Wed Jun 16 20:00:10 PDT 2021
     locale_info:
         ----------
         defaultencoding:
@@ -105,7 +105,7 @@ local:
     saltpath:
         /usr/local/lib/python3.9/dist-packages/salt
     saltversion:
-        3004+0na.68e3e43
+        3004+0na.ec7203d
     saltversioninfo:
         - 3004
     systemd:
@@ -166,7 +166,7 @@ local:
     dirmngr:
         2.2.27-2
     distro-info-data:
-        0.50
+        0.51
     dmsetup:
         2:1.02.175-2.1
     dpkg:
@@ -248,15 +248,15 @@ local:
     libbz2-1.0:
         1.0.8-4
     libc-bin:
-        2.31-12
+        2.31-13
     libc-dev-bin:
-        2.31-12
+        2.31-13
     libc-l10n:
-        2.31-12
+        2.31-13
     libc6:
-        2.31-12
+        2.31-13
     libc6-dev:
-        2.31-12
+        2.31-13
     libcap-ng0:
         0.7.9-2.2+b1
     libcap2:
@@ -284,7 +284,7 @@ local:
     libdb5.3:
         5.3.28+dfsg1-0.8
     libdebconfclient0:
-        0.259
+        0.260
     libdevmapper1.02.1:
         2:1.02.175-2.1
     libedit2:
@@ -320,7 +320,7 @@ local:
     libgpg-error0:
         1.38-2
     libgssapi-krb5-2:
-        1.18.3-5
+        1.18.3-6
     libhogweed6:
         3.7.3-1
     libidn2-0:
@@ -340,15 +340,15 @@ local:
     libjson-c5:
         0.15-2
     libk5crypto3:
-        1.18.3-5
+        1.18.3-6
     libkeyutils1:
         1.6.1-2
     libkmod2:
         28-1
     libkrb5-3:
-        1.18.3-5
+        1.18.3-6
     libkrb5support0:
-        1.18.3-5
+        1.18.3-6
     libksba8:
         1.5.0-3
     libldap-2.4-2:
@@ -482,7 +482,7 @@ local:
     linux-libc-dev:
         5.10.46-2
     locales:
-        2.31-12
+        2.31-13
     login:
         1:4.8.1-1
     logsave:

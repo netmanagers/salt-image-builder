@@ -144,7 +144,7 @@ local:
     coreutils:
         8.30-3ubuntu2
     curl:
-        7.68.0-1ubuntu2.5
+        7.68.0-1ubuntu2.6
     dash:
         0.5.10.2-6
     dctrl-tools:
@@ -244,9 +244,9 @@ local:
     libcryptsetup12:
         2:2.2.2-3ubuntu2.3
     libcurl3-gnutls:
-        7.68.0-1ubuntu2.5
+        7.68.0-1ubuntu2.6
     libcurl4:
-        7.68.0-1ubuntu2.5
+        7.68.0-1ubuntu2.6
     libdb5.3:
         5.3.28+dfsg1-0.6ubuntu2
     libdebconfclient0:

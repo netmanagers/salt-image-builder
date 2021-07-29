@@ -159,7 +159,7 @@ local:
     dirmngr:
         2.2.27-2
     distro-info-data:
-        0.50
+        0.51
     dmsetup:
         2:1.02.175-2.1
     dpkg:
@@ -231,7 +231,7 @@ local:
     libc-bin:
         2.31-12
     libc-l10n:
-        2.31-12
+        2.31-13
     libc6:
         2.31-12
     libcap-ng0:
@@ -407,7 +407,7 @@ local:
     libzstd1:
         1.4.8+dfsg-2.1
     locales:
-        2.31-12
+        2.31-13
     login:
         1:4.8.1-1
     logsave:

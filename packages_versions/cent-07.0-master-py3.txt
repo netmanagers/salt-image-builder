@@ -2,7 +2,7 @@ cent-07.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.68e3e43
+          Salt: 3004+0na.ec7203d
  
 Dependency Versions:
           cffi: Not Installed
@@ -35,7 +35,7 @@ System Versions:
           dist: centos 7 Core
         locale: ANSI_X3.4-1968
        machine: x86_64
-       release: 4.19.78-coreos
+       release: 5.4.109+
         system: Linux
        version: CentOS Linux 7 Core
  
@@ -47,9 +47,9 @@ local:
     kernel:
         Linux
     kernelrelease:
-        4.19.78-coreos
+        5.4.109+
     kernelversion:
-        #1 SMP Mon Oct 14 22:56:39 -00 2019
+        #1 SMP Wed Jun 16 20:00:10 PDT 2021
     locale_info:
         ----------
         defaultencoding:
@@ -107,7 +107,7 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3004+0na.68e3e43
+        3004+0na.ec7203d
     saltversioninfo:
         - 3004
     systemd:
@@ -619,7 +619,7 @@ local:
     requests:
         2.26.0
     salt:
-        3004+0na.68e3e43
+        3004+0na.ec7203d
     setuptools:
         39.2.0
     urllib3:

@@ -2,7 +2,7 @@ ubun-18.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.68e3e43
+          Salt: 3004+0na.ec7203d
  
 Dependency Versions:
           cffi: Not Installed
@@ -35,7 +35,7 @@ System Versions:
           dist: ubuntu 18.04 bionic
         locale: ANSI_X3.4-1968
        machine: x86_64
-       release: 4.19.78-coreos
+       release: 5.4.109+
         system: Linux
        version: Ubuntu 18.04 bionic
  
@@ -47,9 +47,9 @@ local:
     kernel:
         Linux
     kernelrelease:
-        4.19.78-coreos
+        5.4.109+
     kernelversion:
-        #1 SMP Mon Oct 14 22:56:39 -00 2019
+        #1 SMP Wed Jun 16 20:00:10 PDT 2021
     locale_info:
         ----------
         defaultencoding:
@@ -106,7 +106,7 @@ local:
     saltpath:
         /usr/local/lib/python3.6/dist-packages/salt
     saltversion:
-        3004+0na.68e3e43
+        3004+0na.ec7203d
     saltversioninfo:
         - 3004
     systemd:
@@ -155,7 +155,7 @@ local:
     cpp-7:
         7.5.0-3ubuntu1~18.04
     curl:
-        7.58.0-2ubuntu3.13
+        7.58.0-2ubuntu3.14
     dash:
         0.5.8-2.10
     debconf:
@@ -213,7 +213,7 @@ local:
     grep:
         3.1-2build1
     gzip:
-        1.6-5ubuntu1
+        1.6-5ubuntu1.1
     hostname:
         3.20
     init-system-helpers:
@@ -271,9 +271,9 @@ local:
     libcryptsetup12:
         2:2.0.2-1ubuntu1.2
     libcurl3-gnutls:
-        7.58.0-2ubuntu3.13
+        7.58.0-2ubuntu3.14
     libcurl4:
-        7.58.0-2ubuntu3.13
+        7.58.0-2ubuntu3.14
     libdb5.3:
         5.3.28-13.1ubuntu1.1
     libdebconfclient0:
@@ -600,7 +600,7 @@ local:
     requests:
         2.26.0
     salt:
-        3004+0na.68e3e43
+        3004+0na.ec7203d
     setuptools:
         39.0.1
     urllib3:
