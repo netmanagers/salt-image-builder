@@ -2,7 +2,7 @@ opsu-15.3-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.ec7203d
+          Salt: 3004+0na.af294dc
  
 Dependency Versions:
           cffi: 1.13.2
@@ -107,7 +107,7 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3004+0na.ec7203d
+        3004+0na.af294dc
     saltversioninfo:
         - 3004
     systemd:
@@ -236,7 +236,7 @@ local:
     libcap2:
         2.26-4.6.1
     libcbor0:
-        0.5.0-2.38
+        0.5.0-4.3.1
     libcilkrts5:
         7.5.0+r278197-4.25.1
     libcom_err2:
@@ -550,9 +550,9 @@ local:
     systemd:
         246.13-7.8.1
     systemd-default-settings:
-        0.7-1.1
+        0.7-3.2.1
     systemd-default-settings-branding-SLE:
-        0.7-1.1
+        0.7-3.2.1
     systemd-presets-branding-MicroOS:
         20200323-lp153.2.14
     systemd-presets-common-SUSE:
@@ -591,17 +591,17 @@ local:
     chardet:
         3.0.4
     charset-normalizer:
-        2.0.3
+        2.0.4
     contextvars:
         2.4
     cryptography:
         2.8
     distro:
-        1.5.0
+        1.6.0
     idna:
         3.2
     immutables:
-        0.15
+        0.16
     msgpack:
         1.0.2
     packaging:
@@ -625,12 +625,14 @@ local:
     requests:
         2.26.0
     salt:
-        3004+0na.ec7203d
+        3004+0na.af294dc
     setuptools:
         40.5.0
     six:
         1.14.0
+    typing-extensions:
+        3.10.0.0
     urllib3:
         1.26.6
     wheel:
-        0.36.2
+        0.37.0

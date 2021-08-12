@@ -2,7 +2,7 @@ fedo-33.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.ec7203d
+          Salt: 3004+0na.af294dc
  
 Dependency Versions:
           cffi: Not Installed
@@ -104,7 +104,7 @@ local:
     saltpath:
         /usr/lib/python3.9/site-packages/salt
     saltversion:
-        3004+0na.ec7203d
+        3004+0na.af294dc
     saltversioninfo:
         - 3004
     systemd:
@@ -127,7 +127,7 @@ local:
     alternatives:
         1.14-3.fc33
     audit-libs:
-        3.0.2-1.fc33
+        3.0.3-1.fc33
     basesystem:
         11-10.fc33
     bash:
@@ -157,7 +157,7 @@ local:
     cryptsetup-libs:
         2.3.6-1.fc33
     curl:
-        7.71.1-9.fc33
+        7.71.1-10.fc33
     cyrus-sasl-lib:
         2.1.27-6.fc33
     dbus:
@@ -323,7 +323,7 @@ local:
     libcomps:
         0.1.17-1.fc33
     libcurl:
-        7.71.1-9.fc33
+        7.71.1-10.fc33
     libdb:
         5.3.28-45.fc33
     libdnf:
@@ -331,7 +331,7 @@ local:
     libeconf:
         0.4.0-1.fc33
     libedit:
-        3.1-37.20210522cvs.fc33
+        3.1-38.20210714cvs.fc33
     libfdisk:
         2.36.1-1.fc33
     libffi:
@@ -349,7 +349,7 @@ local:
     libibverbs:
         35.0-1.fc33
     libidn2:
-        2.3.1-1.fc33
+        2.3.2-1.fc33
     libkcapi:
         1.2.1-1.fc33
     libkcapi-hmaccalc:
@@ -706,4 +706,4 @@ local:
     setuptools:
         49.1.3
     wheel:
-        0.36.2
+        0.37.0

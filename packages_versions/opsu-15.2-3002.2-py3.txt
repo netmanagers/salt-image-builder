@@ -25,7 +25,7 @@ Dependency Versions:
         Python: 3.6.12 (default, Dec 02 2020, 09:44:23) [GCC]
   python-gnupg: Not Installed
         PyYAML: 5.3.1
-         PyZMQ: 17.0.0
+         PyZMQ: 17.1.2
          smmap: Not Installed
        timelib: Not Installed
        Tornado: 4.5.3
@@ -493,7 +493,7 @@ local:
     python3-pytz:
         2019.1-lp152.3.3.1
     python3-pyzmq:
-        17.0.0-lp152.3.5
+        17.1.2-lp152.4.3.1
     python3-requests:
         2.24.0-lp152.3.3.1
     python3-rpm:
@@ -539,7 +539,7 @@ local:
     terminfo-base:
         6.1-lp152.7.67
     timezone:
-        2021a-lp152.14.1
+        2021a-lp152.17.1
     udev:
         234-lp152.31.31.1
     update-alternatives:
@@ -590,7 +590,7 @@ local:
     pytz:
         2019.1
     pyzmq:
-        17.0.0
+        17.1.2
     requests:
         2.24.0
     rpm:

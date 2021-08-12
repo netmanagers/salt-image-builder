@@ -25,7 +25,7 @@ Dependency Versions:
          Python: 3.6.13 (default, Mar 10 2021, 18:30:35) [GCC]
    python-gnupg: Not Installed
          PyYAML: 5.4.1
-          PyZMQ: 22.1.0
+          PyZMQ: 22.2.1
           smmap: Not Installed
         timelib: Not Installed
         Tornado: 4.5.3
@@ -237,7 +237,7 @@ local:
     libcap2:
         2.26-4.6.1
     libcbor0:
-        0.5.0-2.38
+        0.5.0-4.3.1
     libcilkrts5:
         7.5.0+r278197-4.25.1
     libcom_err2:
@@ -551,9 +551,9 @@ local:
     systemd:
         246.13-7.8.1
     systemd-default-settings:
-        0.7-1.1
+        0.7-3.2.1
     systemd-default-settings-branding-SLE:
-        0.7-1.1
+        0.7-3.2.1
     systemd-presets-branding-MicroOS:
         20200323-lp153.2.14
     systemd-presets-common-SUSE:
@@ -592,7 +592,7 @@ local:
     chardet:
         3.0.4
     charset-normalizer:
-        2.0.3
+        2.0.4
     cryptography:
         2.8
     idna:
@@ -616,7 +616,7 @@ local:
     pyparsing:
         2.4.7
     pyzmq:
-        22.1.0
+        22.2.1
     requests:
         2.26.0
     salt:
@@ -628,4 +628,4 @@ local:
     urllib3:
         1.26.6
     wheel:
-        0.36.2
+        0.37.0

@@ -2,7 +2,7 @@ cent-07.0-tiamat-py3
 Salt install method: stable
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003rc1+553.g13a04c4
+          Salt: 3003rc1+711.ga4149f6
  
 Dependency Versions:
           cffi: 1.14.4
@@ -93,6 +93,7 @@ local:
     pythonpath:
         - /opt/saltstack/salt/pypath
         - /opt/saltstack/salt/run/base_library.zip
+        - /opt/saltstack/salt/run/lib-dynload
         - /opt/saltstack/salt/run
     pythonversion:
         - 3
@@ -103,7 +104,7 @@ local:
     saltpath:
         /opt/saltstack/salt/run/salt
     saltversion:
-        3003rc1+553.g13a04c4
+        3003rc1+711.ga4149f6
     saltversioninfo:
         - 3003
     systemd:
@@ -520,9 +521,9 @@ local:
     rsync:
         3.1.2-10.el7
     salt:
-        3003rc1+553.g13a04c4-1.el7
+        3003rc1+711.ga4149f6-1.el7
     salt-minion:
-        3003rc1+553.g13a04c4-1.el7
+        3003rc1+711.ga4149f6-1.el7
     sed:
         4.2.2-7.el7
     setup:
@@ -583,4 +584,4 @@ local:
 local:
     ----------
     pip:
-        21.1.3
+        21.2.3

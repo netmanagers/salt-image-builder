@@ -2,7 +2,7 @@ alma-08.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.ec7203d
+          Salt: 3004+0na.af294dc
  
 Dependency Versions:
           cffi: Not Installed
@@ -107,7 +107,7 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3004+0na.ec7203d
+        3004+0na.af294dc
     saltversioninfo:
         - 3004
     systemd:
@@ -128,7 +128,7 @@ local:
     acl:
         2.2.53-1.el8
     almalinux-release:
-        8.4-2.el8
+        8.4-3.el8
     audit-libs:
         3.0-0.17.20191104git1c2f876.el8
     basesystem:
@@ -216,7 +216,7 @@ local:
     git-core-doc:
         2.27.0-1.el8
     glib2:
-        2.56.4-10.el8_4
+        2.56.4-10.el8_4.1
     glibc:
         2.28-151.el8
     glibc-common:
@@ -270,7 +270,7 @@ local:
     kbd-misc:
         2.0.4-10.el8
     kernel-headers:
-        4.18.0-305.10.2.el8_4
+        4.18.0-305.12.1.el8_4
     keyutils-libs:
         1.5.10-6.el8
     keyutils-libs-devel:
@@ -627,6 +627,8 @@ local:
         2.12.2-6.el8
     shadow-utils:
         2:4.6-12.el8
+    shared-mime-info:
+        1.9-3.el8
     sqlite-libs:
         3.26.0-13.el8
     sudo:
@@ -634,13 +636,13 @@ local:
     swig:
         3.0.12-19.module_el8.3.0+6167+838326ab
     systemd:
-        239-45.el8_4.2
+        239-45.el8_4.3
     systemd-libs:
-        239-45.el8_4.2
+        239-45.el8_4.3
     systemd-pam:
-        239-45.el8_4.2
+        239-45.el8_4.3
     systemd-udev:
-        239-45.el8_4.2
+        239-45.el8_4.3
     tar:
         2:1.30-5.el8
     tpm2-tss:
@@ -679,19 +681,19 @@ local:
     certifi:
         2021.5.30
     charset-normalizer:
-        2.0.3
+        2.0.4
     contextvars:
         2.4
     dbus-python:
         1.2.4
     distro:
-        1.5.0
+        1.6.0
     gpg:
         1.13.1
     idna:
         3.2
     immutables:
-        0.15
+        0.16
     msgpack:
         1.0.2
     pip:
@@ -707,12 +709,14 @@ local:
     rpm:
         4.14.3
     salt:
-        3004+0na.ec7203d
+        3004+0na.af294dc
     setuptools:
         39.2.0
     six:
         1.11.0
+    typing-extensions:
+        3.10.0.0
     urllib3:
         1.26.6
     wheel:
-        0.36.2
+        0.37.0

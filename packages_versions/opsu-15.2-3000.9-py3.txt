@@ -25,7 +25,7 @@ Dependency Versions:
          Python: 3.6.12 (default, Dec 02 2020, 09:44:23) [GCC]
    python-gnupg: Not Installed
          PyYAML: 5.4.1
-          PyZMQ: 22.1.0
+          PyZMQ: 22.2.1
           smmap: Not Installed
         timelib: Not Installed
         Tornado: 4.5.3
@@ -566,7 +566,7 @@ local:
     chardet:
         3.0.4
     charset-normalizer:
-        2.0.3
+        2.0.4
     idna:
         3.2
     msgpack:
@@ -582,7 +582,7 @@ local:
     pyparsing:
         2.2.0
     pyzmq:
-        22.1.0
+        22.2.1
     requests:
         2.26.0
     salt:
@@ -594,4 +594,4 @@ local:
     urllib3:
         1.26.6
     wheel:
-        0.36.2
+        0.37.0

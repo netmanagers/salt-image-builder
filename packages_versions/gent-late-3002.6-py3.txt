@@ -25,7 +25,7 @@ Dependency Versions:
         Python: 3.9.5 (default, Jun 13 2021, 22:27:38)
   python-gnupg: Not Installed
         PyYAML: 5.4.1
-         PyZMQ: 22.1.0
+         PyZMQ: 22.2.1
          smmap: Not Installed
        timelib: Not Installed
        Tornado: 4.5.3
@@ -269,19 +269,19 @@ local:
     dev-perl/Authen-SASL:
         2.160.0-r2
     dev-perl/Digest-HMAC:
-        1.30.0-r2
+        1.40.0
     dev-perl/Error:
         0.170.290
     dev-perl/IO-Socket-SSL:
-        2.66.0
+        2.71.0
     dev-perl/Locale-gettext:
         1.70.0
     dev-perl/MIME-Charset:
         1.12.2
     dev-perl/MailTools:
-        2.190.0
+        2.210.0
     dev-perl/Module-Build:
-        0.422.400
+        0.423.100
     dev-perl/Mozilla-CA:
         20999999
     dev-perl/Net-SSLeay:
@@ -317,7 +317,7 @@ local:
     dev-python/markupsafe:
         2.0.1
     dev-python/pip:
-        21.1.2-r1
+        21.1.3
     dev-python/requests:
         2.25.1-r2
     dev-python/setuptools:
@@ -376,6 +376,8 @@ local:
         1.21.1
     perl-core/File-Temp:
         0.231.100
+    perl-core/Scalar-List-Utils:
+        1.560.0
     sys-apps/acl:
         2.3.1
     sys-apps/attr:
@@ -593,7 +595,7 @@ local:
     virtual/perl-Pod-Parser:
         1.630.0-r8
     virtual/perl-Scalar-List-Utils:
-        1.550.0-r1
+        1.560.0
     virtual/perl-Test-Harness:
         3.430.0
     virtual/perl-Text-ParseWords:
@@ -632,7 +634,7 @@ local:
     meson:
         0.57.2
     pip:
-        21.1.2
+        21.1.3
     portage:
         3.0.20
     setuptools:
@@ -642,4 +644,4 @@ local:
     toml:
         0.10.2
     wheel:
-        0.36.2
+        0.37.0

@@ -2,7 +2,7 @@ orac-08.0-tiamat-py3
 Salt install method: stable
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003rc1+553.g13a04c4558
+          Salt: 3003rc1+711.ga4149f66e8
  
 Dependency Versions:
           cffi: 1.14.4
@@ -93,6 +93,7 @@ local:
     pythonpath:
         - /opt/saltstack/salt/pypath
         - /opt/saltstack/salt/run/base_library.zip
+        - /opt/saltstack/salt/run/lib-dynload
         - /opt/saltstack/salt/run
     pythonversion:
         - 3
@@ -103,7 +104,7 @@ local:
     saltpath:
         /opt/saltstack/salt/run/salt
     saltversion:
-        3003rc1+553.g13a04c4558
+        3003rc1+711.ga4149f66e8
     saltversioninfo:
         - 3003
     systemd:
@@ -464,7 +465,7 @@ local:
     perl-Encode:
         4:2.97-3.el8
     perl-Errno:
-        1.28-419.el8
+        1.28-419.el8_4.1
     perl-Error:
         1:0.17025-2.el8
     perl-Exporter:
@@ -480,7 +481,7 @@ local:
     perl-HTTP-Tiny:
         0.074-1.el8
     perl-IO:
-        1.38-419.el8
+        1.38-419.el8_4.1
     perl-MIME-Base64:
         3.15-396.el8
     perl-PathTools:
@@ -516,11 +517,11 @@ local:
     perl-constant:
         1.33-396.el8
     perl-interpreter:
-        4:5.26.3-419.el8
+        4:5.26.3-419.el8_4.1
     perl-libs:
-        4:5.26.3-419.el8
+        4:5.26.3-419.el8_4.1
     perl-macros:
-        4:5.26.3-419.el8
+        4:5.26.3-419.el8_4.1
     perl-parent:
         1:0.237-1.el8
     perl-podlators:
@@ -610,9 +611,9 @@ local:
     rsyslog:
         8.1911.0-7.0.1.el8_4.2
     salt:
-        3003rc1+553.g13a04c4558-1.el8
+        3003rc1+711.ga4149f66e8-1.el8
     salt-minion:
-        3003rc1+553.g13a04c4558-1.el8
+        3003rc1+711.ga4149f66e8-1.el8
     sed:
         4.5-2.el8
     setup:
@@ -626,13 +627,13 @@ local:
     swig:
         3.0.12-19.module+el8.3.0+7654+9c81efad
     systemd:
-        239-45.0.2.el8_4.2
+        239-45.0.2.el8_4.3
     systemd-libs:
-        239-45.0.2.el8_4.2
+        239-45.0.2.el8_4.3
     systemd-pam:
-        239-45.0.2.el8_4.2
+        239-45.0.2.el8_4.3
     systemd-udev:
-        239-45.0.2.el8_4.2
+        239-45.0.2.el8_4.3
     tpm2-tss:
         2.3.2-3.el8
     tzdata:
@@ -657,4 +658,4 @@ local:
 local:
     ----------
     pip:
-        21.1.3
+        21.2.3
