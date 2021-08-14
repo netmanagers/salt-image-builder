@@ -1,8 +1,8 @@
-cent-07.0-master-py3
-Salt install method: git
+cent-07.0-3003.2-py3
+Salt install method: stable
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.b343990
+          Salt: 3003.2
  
 Dependency Versions:
           cffi: Not Installed
@@ -11,25 +11,25 @@ Dependency Versions:
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
-        Jinja2: 2.11.3
+        Jinja2: 2.11.1
        libgit2: Not Installed
-      M2Crypto: Not Installed
+      M2Crypto: 0.35.2
           Mako: Not Installed
-       msgpack: 1.0.2
+       msgpack: 0.6.2
   msgpack-pure: Not Installed
   mysql-python: Not Installed
      pycparser: Not Installed
       pycrypto: Not Installed
-  pycryptodome: 3.10.1
+  pycryptodome: Not Installed
         pygit2: Not Installed
         Python: 3.6.8 (default, Nov 16 2020, 16:55:22)
   python-gnupg: Not Installed
-        PyYAML: 5.4.1
-         PyZMQ: 21.0.2
+        PyYAML: 3.13
+         PyZMQ: 17.0.0
          smmap: Not Installed
        timelib: Not Installed
        Tornado: 4.5.3
-           ZMQ: 4.3.3
+           ZMQ: 4.1.4
  
 System Versions:
           dist: centos 7 Core
@@ -95,7 +95,6 @@ local:
         - /usr/lib64/python36.zip
         - /usr/lib64/python3.6
         - /usr/lib64/python3.6/lib-dynload
-        - /usr/local/lib/python3.6/site-packages
         - /usr/lib64/python3.6/site-packages
         - /usr/lib/python3.6/site-packages
     pythonversion:
@@ -107,9 +106,10 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3004+0na.b343990
+        3003.2
     saltversioninfo:
-        - 3004
+        - 3003
+        - 2
     systemd:
         ----------
         features:
@@ -117,11 +117,11 @@ local:
         version:
             219
     virtual:
-        container
+        gce
     virtual_subtype:
         Docker
     zmqversion:
-        4.3.3
+        4.1.4
 # salt-call --local pkg.list_pkgs
 local:
     ----------
@@ -151,8 +151,6 @@ local:
         8.22-24.el7_9.2
     cpio:
         2.11-28.el7
-    cpp:
-        4.8.5-44.el7
     cracklib:
         2.9.0-11.el7
     cracklib-dicts:
@@ -203,8 +201,6 @@ local:
         1.4.1-6.el7
     gawk:
         4.0.2-4.el7_3.1
-    gcc:
-        4.8.5-44.el7
     gdbm:
         1.10-8.el7
     geoipupdate:
@@ -216,10 +212,6 @@ local:
     glibc:
         2.17-324.el7_9
     glibc-common:
-        2.17-324.el7_9
-    glibc-devel:
-        2.17-324.el7_9
-    glibc-headers:
         2.17-324.el7_9
     gmp:
         1:6.0.0-15.el7
@@ -241,14 +233,14 @@ local:
         1:1.0-19.el7
     hostname:
         3.13-3.el7_7.1
+    hwdata:
+        0.252-9.7.el7
     info:
         5.1-5.el7
     iputils:
         20160308-10.el7
     json-c:
         0.11-4.el7_0
-    kernel-headers:
-        3.10.0-1160.36.2.el7
     keyutils-libs:
         1.5.8-3.el7
     keyutils-libs-devel:
@@ -295,8 +287,6 @@ local:
         4.8.5-44.el7
     libgcrypt:
         1.5.3-14.el7
-    libgomp:
-        4.8.5-44.el7
     libgpg-error:
         1.12-3.el7
     libidn:
@@ -305,8 +295,6 @@ local:
         1.15.1-50.el7
     libmount:
         2.23.2-65.el7_9.1
-    libmpc:
-        1.0.1-3.el7
     libpwquality:
         1.2.3-5.el7
     libselinux:
@@ -345,12 +333,12 @@ local:
         2.9.1-6.el7.5
     libxml2-python:
         2.9.1-6.el7.5
+    libyaml:
+        0.1.4-11.el7_0
     lua:
         5.1.4-15.el7
     lz4:
         1.8.3-1.el7
-    mpfr:
-        3.1.1-4.el7
     ncurses:
         5.9-14.20130511.el7_4
     ncurses-base:
@@ -397,6 +385,10 @@ local:
         1.1.8-23.el7
     passwd:
         0.79-6.el7
+    pciutils:
+        3.5.1-3.el7
+    pciutils-libs:
+        3.5.1-3.el7
     pcre:
         8.32-17.el7
     pcre-devel:
@@ -511,6 +503,42 @@ local:
         3-34.el7
     python3-setuptools:
         39.2.0-10.el7
+    python36-PyYAML:
+        3.13-1.el7
+    python36-chardet:
+        3.0.4-12.el7
+    python36-contextvars:
+        2.4-1.el7
+    python36-distro:
+        1.2.0-4.el7
+    python36-idna:
+        2.10-1.el7
+    python36-immutables:
+        0.14-1.el7
+    python36-jinja2:
+        2.11.1-1.el7
+    python36-m2crypto:
+        0.35.2-5.el7
+    python36-markupsafe:
+        0.23-4.el7
+    python36-msgpack:
+        0.6.2-2.el7
+    python36-psutil:
+        5.6.7-1.el7
+    python36-pycurl:
+        7.43.0-8.el7
+    python36-pysocks:
+        1.6.8-7.el7
+    python36-requests:
+        2.14.2-2.el7
+    python36-rpm:
+        4.11.3-9.el7
+    python36-six:
+        1.14.0-3.el7
+    python36-urllib3:
+        1.25.6-2.el7
+    python36-zmq:
+        17.0.0-5.el7
     pyxattr:
         0.5.1-5.el7
     qrencode-libs:
@@ -531,6 +559,10 @@ local:
         4.11.3-45.el7
     rsync:
         3.1.2-10.el7
+    salt:
+        3003.2-1.el7
+    salt-minion:
+        3003.2-1.el7
     sed:
         4.2.2-7.el7
     setup:
@@ -591,40 +623,44 @@ local:
 local:
     ----------
     Jinja2:
-        2.11.3
+        2.11.1
+    M2Crypto:
+        0.35.2
     MarkupSafe:
-        2.0.1
+        0.23
+    PySocks:
+        1.6.8
     PyYAML:
-        5.4.1
-    certifi:
-        2021.5.30
-    charset-normalizer:
-        2.0.4
+        3.13
+    chardet:
+        3.0.4
     contextvars:
         2.4
     distro:
-        1.6.0
+        1.2.0
     idna:
-        3.2
+        2.10
     immutables:
-        0.16
+        0.14
     msgpack:
-        1.0.2
+        0.6.2
     pip:
         9.0.3
-    pycryptodomex:
-        3.10.1
+    psutil:
+        5.6.7
+    pycurl:
+        7.43.0
     pyzmq:
-        21.0.2
+        17.0.0
     requests:
-        2.26.0
+        2.14.2
+    rpm:
+        4.11.3
     salt:
-        3004+0na.b343990
+        3003.2
     setuptools:
         39.2.0
-    typing-extensions:
-        3.10.0.0
+    six:
+        1.14.0
     urllib3:
-        1.26.6
-    wheel:
-        0.37.0
+        1.25.6

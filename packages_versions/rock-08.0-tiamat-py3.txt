@@ -2,7 +2,7 @@ rock-08.0-tiamat-py3
 Salt install method: stable
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003rc1+711.ga4149f66e8
+          Salt: 3003rc1+727.gb34399044d
  
 Dependency Versions:
           cffi: 1.14.4
@@ -104,7 +104,7 @@ local:
     saltpath:
         /opt/saltstack/salt/run/salt
     saltversion:
-        3003rc1+711.ga4149f66e8
+        3003rc1+727.gb34399044d
     saltversioninfo:
         - 3003
     systemd:
@@ -469,7 +469,7 @@ local:
     perl-Encode:
         4:2.97-3.el8
     perl-Errno:
-        1.28-419.el8
+        1.28-419.el8_4.1
     perl-Error:
         1:0.17025-2.el8
     perl-Exporter:
@@ -485,7 +485,7 @@ local:
     perl-HTTP-Tiny:
         0.074-1.el8
     perl-IO:
-        1.38-419.el8
+        1.38-419.el8_4.1
     perl-IO-Socket-IP:
         0.39-5.el8
     perl-IO-Socket-SSL:
@@ -531,13 +531,13 @@ local:
     perl-constant:
         1.33-396.el8
     perl-interpreter:
-        4:5.26.3-419.el8
+        4:5.26.3-419.el8_4.1
     perl-libnet:
         3.11-3.el8
     perl-libs:
-        4:5.26.3-419.el8
+        4:5.26.3-419.el8_4.1
     perl-macros:
-        4:5.26.3-419.el8
+        4:5.26.3-419.el8_4.1
     perl-parent:
         1:0.237-1.el8
     perl-podlators:
@@ -617,9 +617,9 @@ local:
     rpm-libs:
         4.14.3-13.el8
     salt:
-        3003rc1+711.ga4149f66e8-1.el8
+        3003rc1+727.gb34399044d-1.el8
     salt-minion:
-        3003rc1+711.ga4149f66e8-1.el8
+        3003rc1+727.gb34399044d-1.el8
     sed:
         4.5-2.el8
     setup:
@@ -637,13 +637,13 @@ local:
     swig:
         3.0.12-19.module+el8.4.0+385+82b6e804
     systemd:
-        239-45.el8_4.2
+        239-45.el8_4.3
     systemd-libs:
-        239-45.el8_4.2
+        239-45.el8_4.3
     systemd-pam:
-        239-45.el8_4.2
+        239-45.el8_4.3
     systemd-udev:
-        239-45.el8_4.2
+        239-45.el8_4.3
     tar:
         2:1.30-5.el8
     tpm2-tss:
@@ -672,4 +672,4 @@ local:
 local:
     ----------
     pip:
-        21.2.3
+        21.2.4

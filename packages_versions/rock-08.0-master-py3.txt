@@ -2,7 +2,7 @@ rock-08.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.af294dc
+          Salt: 3004+0na.b343990
  
 Dependency Versions:
           cffi: Not Installed
@@ -107,7 +107,7 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3004+0na.af294dc
+        3004+0na.b343990
     saltversioninfo:
         - 3004
     systemd:
@@ -126,9 +126,9 @@ local:
 local:
     ----------
     NetworkManager:
-        1:1.30.0-9.el8_4
+        1:1.30.0-10.el8_4
     NetworkManager-libnm:
-        1:1.30.0-9.el8_4
+        1:1.30.0-10.el8_4
     acl:
         2.2.53-1.el8.1
     audit-libs:
@@ -193,12 +193,14 @@ local:
         049-135.git20210121.el8
     dracut-squash:
         049-135.git20210121.el8
+    elfutils-debuginfod-client:
+        0.182-3.el8_4
     elfutils-default-yama-scope:
-        0.182-3.el8
+        0.182-3.el8_4
     elfutils-libelf:
-        0.182-3.el8
+        0.182-3.el8_4
     elfutils-libs:
-        0.182-3.el8
+        0.182-3.el8_4
     emacs-filesystem:
         1:26.1-5.el8
     epel-release:
@@ -228,7 +230,7 @@ local:
     git-core-doc:
         2.27.0-1.el8
     glib2:
-        2.56.4-10.el8_4
+        2.56.4-10.el8_4.1
     glibc:
         2.28-151.el8
     glibc-common:
@@ -282,9 +284,9 @@ local:
     kbd-misc:
         2.0.4-10.el8
     kernel-headers:
-        4.18.0-305.10.2.el8_4
+        4.18.0-305.12.1.el8_4
     kexec-tools:
-        2.0.20-46.el8_4.1
+        2.0.20-46.el8_4.2
     keyutils-libs:
         1.5.10-6.el8
     keyutils-libs-devel:
@@ -494,7 +496,7 @@ local:
     perl-Encode:
         4:2.97-3.el8
     perl-Errno:
-        1.28-419.el8
+        1.28-419.el8_4.1
     perl-Error:
         1:0.17025-2.el8
     perl-Exporter:
@@ -510,7 +512,7 @@ local:
     perl-HTTP-Tiny:
         0.074-1.el8
     perl-IO:
-        1.38-419.el8
+        1.38-419.el8_4.1
     perl-IO-Socket-IP:
         0.39-5.el8
     perl-IO-Socket-SSL:
@@ -556,13 +558,13 @@ local:
     perl-constant:
         1.33-396.el8
     perl-interpreter:
-        4:5.26.3-419.el8
+        4:5.26.3-419.el8_4.1
     perl-libnet:
         3.11-3.el8
     perl-libs:
-        4:5.26.3-419.el8
+        4:5.26.3-419.el8_4.1
     perl-macros:
-        4:5.26.3-419.el8
+        4:5.26.3-419.el8_4.1
     perl-parent:
         1:0.237-1.el8
     perl-podlators:
@@ -655,6 +657,8 @@ local:
         2.12.2-6.el8
     shadow-utils:
         2:4.6-12.el8
+    shared-mime-info:
+        1.9-3.el8
     snappy:
         1.1.8-3.el8
     sqlite-libs:
@@ -666,13 +670,13 @@ local:
     swig:
         3.0.12-19.module+el8.4.0+385+82b6e804
     systemd:
-        239-45.el8_4.2
+        239-45.el8_4.3
     systemd-libs:
-        239-45.el8_4.2
+        239-45.el8_4.3
     systemd-pam:
-        239-45.el8_4.2
+        239-45.el8_4.3
     systemd-udev:
-        239-45.el8_4.2
+        239-45.el8_4.3
     tar:
         2:1.30-5.el8
     tpm2-tss:
@@ -739,7 +743,7 @@ local:
     rpm:
         4.14.3
     salt:
-        3004+0na.af294dc
+        3004+0na.b343990
     setuptools:
         39.2.0
     six:

@@ -2,7 +2,7 @@ debi-09.0-tiamat-py3
 Salt install method: stable
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003rc1+711.ga4149f66e8
+          Salt: 3003rc1+727.gb34399044d
  
 Dependency Versions:
           cffi: 1.14.4
@@ -103,7 +103,7 @@ local:
     saltpath:
         /opt/saltstack/salt/run/salt
     saltversion:
-        3003rc1+711.ga4149f66e8
+        3003rc1+727.gb34399044d
     saltversioninfo:
         - 3003
     systemd:
@@ -142,7 +142,7 @@ local:
     coreutils:
         8.26-3
     curl:
-        7.52.1-5+deb9u14
+        7.52.1-5+deb9u15
     dash:
         0.5.8-2.4
     dctrl-tools:
@@ -230,9 +230,9 @@ local:
     libcryptsetup4:
         2:1.7.3-4
     libcurl3:
-        7.52.1-5+deb9u14
+        7.52.1-5+deb9u15
     libcurl3-gnutls:
-        7.52.1-5+deb9u14
+        7.52.1-5+deb9u15
     libdb5.3:
         5.3.28-12+deb9u1
     libdebconfclient0:
@@ -438,9 +438,9 @@ local:
     readline-common:
         7.0-3
     salt-common:
-        3003~rc1+711.ga4149f66e8+ds-1
+        3003~rc1+727.gb34399044d+ds-1
     salt-minion:
-        3003~rc1+711.ga4149f66e8+ds-1
+        3003~rc1+727.gb34399044d+ds-1
     sed:
         4.4-1
     sensible-utils:
@@ -471,4 +471,4 @@ local:
 local:
     ----------
     pip:
-        21.2.3
+        21.2.4

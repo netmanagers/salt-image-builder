@@ -1,8 +1,8 @@
-opsu-15.3-master-py3
+opsu-15.3-3003.2-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.b343990
+          Salt: 3003.2
  
 Dependency Versions:
           cffi: 1.13.2
@@ -25,11 +25,11 @@ Dependency Versions:
         Python: 3.6.13 (default, Mar 10 2021, 18:30:35) [GCC]
   python-gnupg: Not Installed
         PyYAML: 5.4.1
-         PyZMQ: 21.0.2
+         PyZMQ: 22.2.1
          smmap: Not Installed
        timelib: Not Installed
        Tornado: 4.5.3
-           ZMQ: 4.3.3
+           ZMQ: 4.3.4
  
 System Versions:
           dist: opensuse-leap 15.3 
@@ -107,9 +107,10 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3004+0na.b343990
+        3003.2
     saltversioninfo:
-        - 3004
+        - 3003
+        - 2
     systemd:
         ----------
         features:
@@ -117,11 +118,11 @@ local:
         version:
             246
     virtual:
-        container
+        gce
     virtual_subtype:
         Docker
     zmqversion:
-        4.3.3
+        4.3.4
 # salt-call --local pkg.list_pkgs
 local:
     ----------
@@ -621,11 +622,11 @@ local:
     pyparsing:
         2.4.7
     pyzmq:
-        21.0.2
+        22.2.1
     requests:
         2.26.0
     salt:
-        3004+0na.b343990
+        3003.2
     setuptools:
         40.5.0
     six:

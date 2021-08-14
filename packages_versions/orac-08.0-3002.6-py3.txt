@@ -7,7 +7,7 @@ Salt Version:
 Dependency Versions:
           cffi: Not Installed
       cherrypy: Not Installed
-      dateutil: 2.7.5
+      dateutil: 2.6.1
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
@@ -220,7 +220,7 @@ local:
     git-core-doc:
         2.27.0-1.el8
     glib2:
-        2.56.4-10.el8_4
+        2.56.4-10.el8_4.1
     glibc:
         2.28-151.0.1.el8
     glibc-common:
@@ -474,7 +474,7 @@ local:
     perl-Encode:
         4:2.97-3.el8
     perl-Errno:
-        1.28-419.el8
+        1.28-419.el8_4.1
     perl-Error:
         1:0.17025-2.el8
     perl-Exporter:
@@ -490,7 +490,7 @@ local:
     perl-HTTP-Tiny:
         0.074-1.el8
     perl-IO:
-        1.38-419.el8
+        1.38-419.el8_4.1
     perl-MIME-Base64:
         3.15-396.el8
     perl-PathTools:
@@ -526,11 +526,11 @@ local:
     perl-constant:
         1.33-396.el8
     perl-interpreter:
-        4:5.26.3-419.el8
+        4:5.26.3-419.el8_4.1
     perl-libs:
-        4:5.26.3-419.el8
+        4:5.26.3-419.el8_4.1
     perl-macros:
-        4:5.26.3-419.el8
+        4:5.26.3-419.el8_4.1
     perl-parent:
         1:0.237-1.el8
     perl-podlators:
@@ -570,7 +570,7 @@ local:
     python3-chardet:
         3.0.4-7.el8
     python3-dateutil:
-        1:2.7.5-1.0.1.el8
+        1:2.6.1-6.el8
     python3-dbus:
         1.2.4-15.el8
     python3-distro:
@@ -668,13 +668,13 @@ local:
     swig:
         3.0.12-19.module+el8.3.0+7654+9c81efad
     systemd:
-        239-45.0.2.el8_4.2
+        239-45.0.2.el8_4.3
     systemd-libs:
-        239-45.0.2.el8_4.2
+        239-45.0.2.el8_4.3
     systemd-pam:
-        239-45.0.2.el8_4.2
+        239-45.0.2.el8_4.3
     systemd-udev:
-        239-45.0.2.el8_4.2
+        239-45.0.2.el8_4.3
     tpm2-tss:
         2.3.2-3.el8
     tzdata:
@@ -731,7 +731,7 @@ local:
     pycurl:
         7.43.0.2
     python-dateutil:
-        2.7.5
+        2.6.1
     pytz:
         2017.2
     pyzmq:

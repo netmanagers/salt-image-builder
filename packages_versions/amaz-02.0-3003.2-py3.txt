@@ -1,35 +1,35 @@
-amaz-02.0-tiamat-py3
+amaz-02.0-3003.2-py3
 Salt install method: stable
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003rc1+727.gb34399044d
+          Salt: 3003.2
  
 Dependency Versions:
-          cffi: 1.14.4
-      cherrypy: 17.4.1
-      dateutil: 2.8.1
+          cffi: Not Installed
+      cherrypy: Not Installed
+      dateutil: Not Installed
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
-        Jinja2: 2.11.3
+        Jinja2: 2.10
        libgit2: Not Installed
-      M2Crypto: Not Installed
+      M2Crypto: 0.31.0
           Mako: Not Installed
-       msgpack: 1.0.2
+       msgpack: 0.5.6
   msgpack-pure: Not Installed
   mysql-python: Not Installed
-     pycparser: 2.17
-      pycrypto: Not Installed
-  pycryptodome: 3.9.8
+     pycparser: Not Installed
+      pycrypto: 2.6.1
+  pycryptodome: 3.6.1
         pygit2: Not Installed
-        Python: 3.7.10 (default, May 20 2021, 20:26:51)
-  python-gnupg: 0.4.4
-        PyYAML: 5.4.1
-         PyZMQ: 18.0.1
+        Python: 3.7.10 (default, Jun  3 2021, 00:02:01)
+  python-gnupg: Not Installed
+        PyYAML: 4.2
+         PyZMQ: 17.0.0
          smmap: Not Installed
-       timelib: 0.2.4
+       timelib: Not Installed
        Tornado: 4.5.3
-           ZMQ: 4.3.1
+           ZMQ: 4.2.3
  
 System Versions:
           dist: amzn 2 
@@ -53,13 +53,13 @@ local:
     locale_info:
         ----------
         defaultencoding:
-            None
+            UTF-8
         defaultlanguage:
-            None
+            en_US
         detectedencoding:
             utf-8
         timezone:
-            UTC
+            unknown
     lsb_distrib_codename:
         Amazon Linux 2
     lsb_distrib_id:
@@ -88,12 +88,14 @@ local:
         - 2
     osversion:
     pythonexecutable:
-        /opt/saltstack/salt/run/run
+        /usr/bin/python3
     pythonpath:
-        - /opt/saltstack/salt/pypath
-        - /opt/saltstack/salt/run/base_library.zip
-        - /opt/saltstack/salt/run/lib-dynload
-        - /opt/saltstack/salt/run
+        - /usr/bin
+        - /usr/lib64/python37.zip
+        - /usr/lib64/python3.7
+        - /usr/lib64/python3.7/lib-dynload
+        - /usr/lib64/python3.7/site-packages
+        - /usr/lib/python3.7/site-packages
     pythonversion:
         - 3
         - 7
@@ -101,11 +103,12 @@ local:
         - final
         - 0
     saltpath:
-        /opt/saltstack/salt/run/salt
+        /usr/lib/python3.7/site-packages/salt
     saltversion:
-        3003rc1+727.gb34399044d
+        3003.2
     saltversioninfo:
         - 3003
+        - 2
     systemd:
         ----------
         features:
@@ -113,11 +116,11 @@ local:
         version:
             219
     virtual:
-        container
+        gce
     virtual_subtype:
         Docker
     zmqversion:
-        4.3.1
+        4.2.3
 # salt-call --local pkg.list_pkgs
 local:
     ----------
@@ -161,8 +164,6 @@ local:
         7:1.02.146-4.amzn2.0.2
     diffutils:
         3.3-5.amzn2
-    dmidecode:
-        1:3.0-5.amzn2.0.2
     elfutils-default-yama-scope:
         0.176-2.amzn2
     elfutils-libelf:
@@ -291,6 +292,10 @@ local:
         4.10-1.amzn2.0.2
     libtirpc:
         0.2.4-0.16.amzn2
+    libtomcrypt:
+        1.17-27.amzn2
+    libtommath:
+        0.42.0-7.amzn2
     libunistring:
         0.9.3-9.amzn2.0.2
     libutempter:
@@ -303,6 +308,8 @@ local:
         2.9.1-6.amzn2.5.4
     libxml2-python:
         2.9.1-6.amzn2.5.4
+    libyaml:
+        0.1.4-11.amzn2.0.2
     lua:
         5.1.4-15.amzn2.0.2
     lz4:
@@ -333,6 +340,8 @@ local:
         3.53.1-1.amzn2
     openldap:
         2.4.44-23.amzn2.0.1
+    openpgm:
+        5.2.122-15.amzn2
     openssh:
         7.4p1-21.amzn2.0.3
     openssh-clients:
@@ -445,12 +454,58 @@ local:
         4.11.3-40.amzn2.0.6
     python3:
         3.7.10-1.amzn2.0.1
+    python3-babel:
+        2.6.0-7.amzn2
+    python3-chardet:
+        3.0.4-1.amzn2.0.2
+    python3-contextvars:
+        2.4-1.amzn2
+    python3-crypto:
+        2.6.1-26.amzn2
+    python3-distro:
+        1.2.0-5.amzn2
+    python3-idna:
+        2.7-2.amzn2.0.2
+    python3-immutables:
+        0.14-1.amzn2
+    python3-jinja2:
+        2.10-8.amzn2
     python3-libs:
         3.7.10-1.amzn2.0.1
+    python3-m2crypto:
+        0.31.0-4.amzn2
+    python3-markupsafe:
+        1.0-3.amzn2
+    python3-msgpack:
+        0.5.6-7.amzn2
     python3-pip:
         20.2.2-1.amzn2.0.3
+    python3-psutil:
+        5.6.7-1.amzn2.0.2
+    python3-pycryptodomex:
+        3.6.1-5.amzn2
+    python3-pycurl:
+        7.43.0.2-5.amzn2
+    python3-pysocks:
+        1.7.1-7.amzn2.0.2
+    python3-pytz:
+        2018.5-3.amzn2
+    python3-pyyaml:
+        4.2-0.1.b5.amzn2
+    python3-requests:
+        2.14.2-2.amzn2.0.2
+    python3-rpm:
+        4.11.3-40.amzn2.0.6
     python3-setuptools:
         49.1.3-1.amzn2.0.2
+    python3-six:
+        1.14.0-2.amzn2.0.3
+    python3-typing:
+        3.5.2.2-5.amzn2
+    python3-urllib3:
+        1.25.6-2.amzn2.0.2
+    python3-zmq:
+        17.0.0-5.amzn2
     pyxattr:
         0.5.1-5.amzn2.0.2
     qrencode-libs:
@@ -464,9 +519,9 @@ local:
     rpm-libs:
         4.11.3-40.amzn2.0.6
     salt:
-        3003rc1+727.gb34399044d-1.amzn2
+        3003.2-1.amzn2
     salt-minion:
-        3003rc1+727.gb34399044d-1.amzn2
+        3003.2-1.amzn2
     sed:
         4.2.2-5.amzn2.0.2
     setup:
@@ -484,6 +539,8 @@ local:
     systemd:
         219-78.amzn2.0.14
     systemd-libs:
+        219-78.amzn2.0.14
+    systemd-python:
         219-78.amzn2.0.14
     tcp_wrappers-libs:
         7.6-77.amzn2.0.2
@@ -509,10 +566,60 @@ local:
         1.1.31-46.amzn2.0.1
     yum-utils:
         1.1.31-46.amzn2.0.1
+    zeromq:
+        4.2.3-1.amzn2
     zlib:
         1.2.7-18.amzn2
 # salt-call --local pip.list
 local:
     ----------
+    Babel:
+        2.6.0
+    Jinja2:
+        2.10
+    M2Crypto:
+        0.31.0
+    MarkupSafe:
+        1.0
+    PySocks:
+        1.7.1
+    PyYAML:
+        4.2b4
+    chardet:
+        3.0.4
+    contextvars:
+        2.4
+    distro:
+        1.2.0
+    idna:
+        2.7
+    immutables:
+        0.14
+    msgpack:
+        0.5.6
     pip:
-        21.2.4
+        20.2.2
+    psutil:
+        5.6.7
+    pycrypto:
+        2.6.1
+    pycryptodomex:
+        3.6.1
+    pycurl:
+        7.43.0.2
+    pytz:
+        2018.5
+    pyzmq:
+        17.0.0
+    requests:
+        2.14.2
+    rpm-python:
+        4.11.3
+    salt:
+        3003.2
+    six:
+        1.14.0
+    typing:
+        3.5.2.2
+    urllib3:
+        1.25.6

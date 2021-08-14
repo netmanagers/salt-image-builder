@@ -1,5 +1,17 @@
 # Changelog
 
+# [1.47.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.46.1...v1.47.0) (2021-08-14)
+
+
+### Features
+
+* **gitlab-ci:** add `3003.2` ([000453f](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/000453f11b1e3d1f2c0f104eab0a1e3ea222afc2))
+
+
+### Reverts
+
+* **gentoo:** install `contextvars` until package fixed [skip ci] ([5c3e091](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/5c3e09132f685bc163990d898afab667fb9c58cd))
+
 ## [1.46.1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.46.0...v1.46.1) (2021-08-12)
 
 

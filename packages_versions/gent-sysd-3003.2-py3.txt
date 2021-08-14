@@ -1,11 +1,11 @@
-gent-sysd-3003.1-py3
-Salt install method: stable
+gent-sysd-3003.2-py3
+Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003.1
+          Salt: 3003.2
  
 Dependency Versions:
-          cffi: 1.14.5
+          cffi: Not Installed
       cherrypy: Not Installed
       dateutil: Not Installed
      docker-py: Not Installed
@@ -18,14 +18,14 @@ Dependency Versions:
        msgpack: 1.0.2
   msgpack-pure: Not Installed
   mysql-python: Not Installed
-     pycparser: 2.20
-      pycrypto: 3.10.1
+     pycparser: Not Installed
+      pycrypto: Not Installed
   pycryptodome: 3.10.1
         pygit2: Not Installed
         Python: 3.9.6 (default, Aug  8 2021, 17:26:32)
   python-gnupg: Not Installed
         PyYAML: 5.4.1
-         PyZMQ: 20.0.0
+         PyZMQ: 22.2.1
          smmap: Not Installed
        timelib: Not Installed
        Tornado: 4.5.3
@@ -90,7 +90,7 @@ local:
     pythonexecutable:
         /usr/bin/python3.9
     pythonpath:
-        - /usr/lib/python-exec/python3.9
+        - /usr/bin
         - /usr/lib/python39.zip
         - /usr/lib/python3.9
         - /usr/lib/python3.9/lib-dynload
@@ -104,10 +104,10 @@ local:
     saltpath:
         /usr/lib/python3.9/site-packages/salt
     saltversion:
-        3003.1
+        3003.2
     saltversioninfo:
         - 3003
-        - 1
+        - 2
     systemd:
         ----------
         features:
@@ -215,8 +215,6 @@ local:
         1.4.17
     app-admin/perl-cleaner:
         2.30
-    app-admin/salt:
-        3003.1-r1
     app-admin/sudo:
         1.9.6_p1-r2
     app-arch/bzip2:
@@ -309,8 +307,6 @@ local:
         1.9.4
     dev-libs/libassuan:
         2.5.5
-    dev-libs/libbsd:
-        0.10.0
     dev-libs/libffi:
         3.3-r2
     dev-libs/libgcrypt:
@@ -327,14 +323,8 @@ local:
         10.36-r1
     dev-libs/libpipeline:
         1.5.3
-    dev-libs/libsodium:
-        1.0.18_p20210617
     dev-libs/libtasn1:
         4.16.0
-    dev-libs/libtomcrypt:
-        1.18.2-r2
-    dev-libs/libtommath:
-        1.2.0
     dev-libs/libunistring:
         0.9.10-r1
     dev-libs/libuv:
@@ -343,8 +333,6 @@ local:
         2.9.12-r3
     dev-libs/libxslt:
         1.1.34-r1
-    dev-libs/libyaml:
-        0.2.5
     dev-libs/mpc:
         1.2.1
     dev-libs/mpfr:
@@ -395,42 +383,22 @@ local:
         1.730.0
     dev-python/PySocks:
         1.7.1-r1
-    dev-python/argh:
-        0.26.2-r2
     dev-python/certifi:
         10001-r1
-    dev-python/cffi:
-        1.14.5
     dev-python/chardet:
         4.0.0
     dev-python/cython:
         0.29.23
-    dev-python/distro:
-        1.5.0-r1
     dev-python/idna:
         3.2
     dev-python/jinja:
         3.0.1
-    dev-python/libnacl:
-        1.7.2-r1
     dev-python/lxml:
         4.6.3-r1
     dev-python/markupsafe:
         2.0.1
-    dev-python/msgpack:
-        1.0.2
     dev-python/pip:
         21.1.3
-    dev-python/ply:
-        3.11-r1
-    dev-python/pycparser:
-        2.20-r1
-    dev-python/pycryptodome:
-        3.10.1
-    dev-python/pyyaml:
-        5.4.1
-    dev-python/pyzmq:
-        20.0.0
     dev-python/requests:
         2.25.1-r2
     dev-python/setuptools:
@@ -441,8 +409,6 @@ local:
         0.10.2
     dev-python/urllib3:
         1.26.6
-    dev-python/watchdog:
-        2.1.2
     dev-util/cmake:
         3.20.5
     dev-util/gperf:
@@ -477,8 +443,6 @@ local:
         1.3.2
     net-libs/nghttp2:
         1.43.0-r2
-    net-libs/zeromq:
-        4.3.4-r1
     net-misc/curl:
         7.77.0-r1
     net-misc/iputils:
@@ -545,8 +509,6 @@ local:
         2017a
     sys-apps/net-tools:
         2.10
-    sys-apps/pciutils:
-        3.7.0
     sys-apps/portage:
         3.0.20-r6
     sys-apps/sandbox:
@@ -721,8 +683,6 @@ local:
         0.992.800
     virtual/pkgconfig:
         2
-    virtual/python-cffi:
-        1
     virtual/service-manager:
         1
     virtual/ssh:
@@ -738,52 +698,26 @@ local:
     ----------
     Cython:
         0.29.23
-    Jinja2:
-        2.11.3
     MarkupSafe:
         2.0.1
     PySocks:
         1.7.1
-    PyYAML:
-        5.4.1
-    argh:
-        0.26.2
     certifi:
         10001
-    cffi:
-        1.14.5
     chardet:
         4.0.0
-    distro:
-        1.5.0
     gemato:
         16.2
     idna:
         3.2
-    libnacl:
-        1.7.2
     lxml:
         4.6.3
     meson:
         0.58.1
-    msgpack:
-        1.0.2
     pip:
         21.1.3
-    ply:
-        3.11
     portage:
         3.0.20
-    pycparser:
-        2.20
-    pycryptodome:
-        3.10.1
-    pyzmq:
-        20.0.0
-    requests:
-        2.25.1
-    salt:
-        3003.1
     setuptools:
         57.4.0
     setuptools-scm:
@@ -792,5 +726,5 @@ local:
         0.10.2
     urllib3:
         1.26.6
-    watchdog:
-        2.1.2
+    wheel:
+        0.37.0

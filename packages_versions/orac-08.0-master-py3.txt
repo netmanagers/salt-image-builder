@@ -2,12 +2,12 @@ orac-08.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.af294dc
+          Salt: 3004+0na.b343990
  
 Dependency Versions:
           cffi: Not Installed
       cherrypy: Not Installed
-      dateutil: 2.7.5
+      dateutil: 2.6.1
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
@@ -107,7 +107,7 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3004+0na.af294dc
+        3004+0na.b343990
     saltversioninfo:
         - 3004
     systemd:
@@ -580,7 +580,7 @@ local:
     python-srpm-macros:
         3-41.el8
     python3-dateutil:
-        1:2.7.5-1.0.1.el8
+        1:2.6.1-6.el8
     python3-dbus:
         1.2.4-15.el8
     python3-dnf:
@@ -705,7 +705,7 @@ local:
     pycryptodomex:
         3.10.1
     python-dateutil:
-        2.7.5
+        2.6.1
     pyzmq:
         21.0.2
     requests:
@@ -713,7 +713,7 @@ local:
     rpm:
         4.14.3
     salt:
-        3004+0na.af294dc
+        3004+0na.b343990
     setuptools:
         39.2.0
     six:
