@@ -433,7 +433,7 @@ local:
     pam:
         1.3.0-lp152.11.12.1
     pam-config:
-        1.1-lp152.1.5
+        1.1-lp152.2.3.1
     perl:
         5.26.1-lp152.11.1
     perl-Error:

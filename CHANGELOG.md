@@ -1,5 +1,17 @@
 # Changelog
 
+# [1.48.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.47.0...v1.48.0) (2021-08-16)
+
+
+### Bug Fixes
+
+* **gitlab-ci:** add all `stable` builds for `almalinux` [skip ci] ([be0bced](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/be0bced50df8222b346e5c2dfca88e604addd3cf))
+
+
+### Features
+
+* **gitlab-ci:** add all `stable` builds for `almalinux` [skip ci] ([add477c](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/add477c331235029356bcb50bb3d556afc16d942))
+
 # [1.47.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.46.1...v1.47.0) (2021-08-14)
 
 

@@ -268,7 +268,7 @@ local:
     app-portage/gemato:
         16.2
     app-portage/portage-utils:
-        0.90
+        0.92
     app-shells/bash:
         5.1_p8
     app-text/build-docbook-catalog:
@@ -320,11 +320,11 @@ local:
     dev-libs/libpcre:
         8.45
     dev-libs/libpcre2:
-        10.36-r1
+        10.37-r2
     dev-libs/libpipeline:
         1.5.3
     dev-libs/libtasn1:
-        4.16.0
+        4.17.0
     dev-libs/libunistring:
         0.9.10-r1
     dev-libs/libuv:
@@ -338,7 +338,7 @@ local:
     dev-libs/mpfr:
         4.1.0
     dev-libs/nettle:
-        3.7.2
+        3.7.3
     dev-libs/npth:
         1.6-r1
     dev-libs/openssl:
@@ -434,17 +434,17 @@ local:
     net-firewall/iptables:
         1.8.7
     net-libs/gnutls:
-        3.7.1
+        3.7.2
     net-libs/libmnl:
         1.0.4
     net-libs/libnsl:
-        1.3.0-r1
+        1.3.0-r2
     net-libs/libtirpc:
         1.3.2
     net-libs/nghttp2:
         1.43.0-r2
     net-misc/curl:
-        7.77.0-r1
+        7.78.0-r1
     net-misc/iputils:
         20210202
     net-misc/openssh:
@@ -494,11 +494,11 @@ local:
     sys-apps/install-xattr:
         0.8
     sys-apps/iproute2:
-        5.10.0-r1
+        5.13.0-r1
     sys-apps/kbd:
         2.4.0
     sys-apps/kmod:
-        28
+        29
     sys-apps/less:
         581.2
     sys-apps/man-db:
@@ -534,7 +534,7 @@ local:
     sys-devel/autoconf-archive:
         2021.02.19
     sys-devel/autoconf-wrapper:
-        13-r1
+        15
     sys-devel/automake:
         1.16.3-r1
     sys-devel/automake-wrapper:
@@ -558,7 +558,7 @@ local:
     sys-devel/libtool:
         2.4.6-r6
     sys-devel/m4:
-        1.4.18-r2
+        1.4.19
     sys-devel/make:
         4.3
     sys-devel/patch:
@@ -574,7 +574,7 @@ local:
     sys-libs/e2fsprogs-libs:
         1.46.2
     sys-libs/gdbm:
-        1.19
+        1.20
     sys-libs/glibc:
         2.33-r1
     sys-libs/libcap:
@@ -612,7 +612,7 @@ local:
     virtual/libintl:
         0-r2
     virtual/libudev:
-        232-r3
+        232-r4
     virtual/logger:
         0-r1
     virtual/man:
@@ -690,7 +690,7 @@ local:
     virtual/tmpfiles:
         0-r1
     virtual/udev:
-        217-r2
+        217-r3
     virtual/yacc:
         0
 # salt-call --local pip.list

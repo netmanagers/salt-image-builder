@@ -2,7 +2,7 @@ arch-late-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.b343990
+          Salt: 3004+0na.28ebe0b
  
 Dependency Versions:
           cffi: 1.14.6
@@ -99,7 +99,7 @@ local:
     saltpath:
         /usr/lib/python3.9/site-packages/salt
     saltversion:
-        3004+0na.b343990
+        3004+0na.28ebe0b
     saltversioninfo:
         - 3004
     systemd:
@@ -152,7 +152,7 @@ local:
     dbus:
         1.12.20-1
     device-mapper:
-        2.03.12-1
+        2.03.13-1
     dnssec-anchors:
         20190629-3
     e2fsprogs:

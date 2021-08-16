@@ -577,7 +577,7 @@ local:
     virtual/libintl:
         0-r2
     virtual/libudev:
-        232-r3
+        232-r4
     virtual/logger:
         0-r1
     virtual/man:

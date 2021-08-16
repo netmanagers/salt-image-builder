@@ -2,7 +2,7 @@ debi-09.0-tiamat-py3
 Salt install method: stable
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003rc1+727.gb34399044d
+          Salt: 3003rc1+728.g28ebe0b9ed
  
 Dependency Versions:
           cffi: 1.14.4
@@ -103,7 +103,7 @@ local:
     saltpath:
         /opt/saltstack/salt/run/salt
     saltversion:
-        3003rc1+727.gb34399044d
+        3003rc1+728.g28ebe0b9ed
     saltversioninfo:
         - 3003
     systemd:
@@ -438,9 +438,9 @@ local:
     readline-common:
         7.0-3
     salt-common:
-        3003~rc1+727.gb34399044d+ds-1
+        3003~rc1+728.g28ebe0b9ed+ds-1
     salt-minion:
-        3003~rc1+727.gb34399044d+ds-1
+        3003~rc1+728.g28ebe0b9ed+ds-1
     sed:
         4.4-1
     sensible-utils:

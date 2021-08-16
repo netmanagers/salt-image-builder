@@ -2,7 +2,7 @@ cent-07.0-tiamat-py3
 Salt install method: stable
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003rc1+727.gb343990
+          Salt: 3003rc1+728.g28ebe0b
  
 Dependency Versions:
           cffi: 1.14.4
@@ -104,7 +104,7 @@ local:
     saltpath:
         /opt/saltstack/salt/run/salt
     saltversion:
-        3003rc1+727.gb343990
+        3003rc1+728.g28ebe0b
     saltversioninfo:
         - 3003
     systemd:
@@ -521,9 +521,9 @@ local:
     rsync:
         3.1.2-10.el7
     salt:
-        3003rc1+727.gb343990-1.el7
+        3003rc1+728.g28ebe0b-1.el7
     salt-minion:
-        3003rc1+727.gb343990-1.el7
+        3003rc1+728.g28ebe0b-1.el7
     sed:
         4.2.2-7.el7
     setup:
