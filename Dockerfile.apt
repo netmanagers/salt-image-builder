@@ -33,8 +33,13 @@ RUN apt-get update \
       sed -e '/^\s\+echowarn "You have 10 seconds to cancel and stop the bootstrap process..."/,+2d' | \
       sh -s -- -XUdfPD -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION; \
     else \
+      # Use `buster` packages for `bookworm` until specific Tiamat package available
+      if [ "${DISTRO_VERSION}" = "bookworm" ]; then \
+        DISTRO_VERSION="10"; \
       # Use `buster` packages for `bullseye` until specific Tiamat package available
-      if [ "${DISTRO_VERSION}" = "bullseye" ]; then \
+      # Using this as a separate conditional since this will eventually be adjusted
+      # separately from `bookworm` above
+      elif [ "${DISTRO_VERSION}" = "11" ]; then \
         DISTRO_VERSION="10"; \
       fi; \
       echo "${DISTRO_VERSION}"; \
