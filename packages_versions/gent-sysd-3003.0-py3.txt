@@ -240,6 +240,8 @@ local:
         1.15.1
     app-crypt/libb2:
         0.98.1-r2
+    app-crypt/libmd:
+        1.0.3-r2
     app-crypt/openpgp-keys-gentoo-release:
         20200704
     app-crypt/pinentry:
@@ -309,7 +311,7 @@ local:
     dev-libs/libassuan:
         2.5.5
     dev-libs/libbsd:
-        0.10.0
+        0.11.3
     dev-libs/libffi:
         3.3-r2
     dev-libs/libgcrypt:

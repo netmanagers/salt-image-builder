@@ -147,7 +147,7 @@ local:
     coreutils:
         8.26-3
     curl:
-        7.52.1-5+deb9u14
+        7.52.1-5+deb9u15
     dash:
         0.5.8-2.4
     dctrl-tools:
@@ -239,9 +239,9 @@ local:
     libcryptsetup4:
         2:1.7.3-4
     libcurl3:
-        7.52.1-5+deb9u14
+        7.52.1-5+deb9u15
     libcurl3-gnutls:
-        7.52.1-5+deb9u14
+        7.52.1-5+deb9u15
     libdb5.3:
         5.3.28-12+deb9u1
     libdebconfclient0:

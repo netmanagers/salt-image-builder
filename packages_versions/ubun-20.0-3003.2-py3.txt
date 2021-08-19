@@ -132,7 +132,7 @@ local:
     apt-transport-https:
         2.0.6
     base-files:
-        11ubuntu5.3
+        11ubuntu5.4
     base-passwd:
         3.5.47
     bash:
@@ -170,7 +170,7 @@ local:
     dirmngr:
         2.2.19-3ubuntu2.1
     distro-info-data:
-        0.43ubuntu1.5
+        0.43ubuntu1.6
     dpkg:
         1.19.7ubuntu3
     e2fsprogs:

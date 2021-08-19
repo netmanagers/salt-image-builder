@@ -2,7 +2,7 @@ ubun-18.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.28ebe0b
+          Salt: 3004+0na.09efe72
  
 Dependency Versions:
           cffi: Not Installed
@@ -129,7 +129,7 @@ local:
     saltpath:
         /usr/local/lib/python3.6/dist-packages/salt
     saltversion:
-        3004+0na.28ebe0b
+        3004+0na.09efe72
     saltversioninfo:
         - 3004
     systemd:
@@ -192,7 +192,7 @@ local:
     dirmngr:
         2.2.4-1ubuntu1.4
     distro-info-data:
-        0.37ubuntu0.10
+        0.37ubuntu0.11
     dpkg:
         1.19.0.5ubuntu2.3
     e2fsprogs:
@@ -470,7 +470,7 @@ local:
     libstdc++6:
         8.4.0-1ubuntu1~18.04
     libsystemd0:
-        237-3ubuntu10.50
+        237-3ubuntu10.51
     libtasn1-6:
         4.13-2
     libtinfo5:
@@ -480,7 +480,7 @@ local:
     libubsan0:
         7.5.0-3ubuntu1~18.04
     libudev1:
-        237-3ubuntu10.50
+        237-3ubuntu10.51
     libunistring2:
         0.9.9-0ubuntu2
     libuuid1:
@@ -492,7 +492,7 @@ local:
     libzstd1:
         1.3.3+dfsg-2ubuntu1.2
     linux-libc-dev:
-        4.15.0-153.160
+        4.15.0-154.161
     locales:
         2.27-3ubuntu1.4
     login:
@@ -570,9 +570,9 @@ local:
     sudo:
         1.8.21p2-3ubuntu1.4
     systemd:
-        237-3ubuntu10.50
+        237-3ubuntu10.51
     systemd-sysv:
-        237-3ubuntu10.50
+        237-3ubuntu10.51
     sysvinit-utils:
         2.88dsf-59.10ubuntu1
     tar:
@@ -582,7 +582,7 @@ local:
     ucf:
         3.0038
     udev:
-        237-3ubuntu10.50
+        237-3ubuntu10.51
     util-linux:
         2.31.1-0.4ubuntu3.7
     wget:
@@ -623,7 +623,7 @@ local:
     requests:
         2.26.0
     salt:
-        3004+0na.28ebe0b
+        3004+0na.09efe72
     setuptools:
         39.0.1
     typing-extensions:

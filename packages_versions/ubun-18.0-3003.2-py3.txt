@@ -185,7 +185,7 @@ local:
     dirmngr:
         2.2.4-1ubuntu1.4
     distro-info-data:
-        0.37ubuntu0.10
+        0.37ubuntu0.11
     dpkg:
         1.19.0.5ubuntu2.3
     e2fsprogs:
@@ -435,13 +435,13 @@ local:
     libstdc++6:
         8.4.0-1ubuntu1~18.04
     libsystemd0:
-        237-3ubuntu10.50
+        237-3ubuntu10.51
     libtasn1-6:
         4.13-2
     libtinfo5:
         6.1-1ubuntu1.18.04
     libudev1:
-        237-3ubuntu10.50
+        237-3ubuntu10.51
     libunistring2:
         0.9.9-0ubuntu2
     libuuid1:
@@ -579,9 +579,9 @@ local:
     sudo:
         1.8.21p2-3ubuntu1.4
     systemd:
-        237-3ubuntu10.50
+        237-3ubuntu10.51
     systemd-sysv:
-        237-3ubuntu10.50
+        237-3ubuntu10.51
     sysvinit-utils:
         2.88dsf-59.10ubuntu1
     tar:
@@ -593,7 +593,7 @@ local:
     ucf:
         3.0038
     udev:
-        237-3ubuntu10.50
+        237-3ubuntu10.51
     util-linux:
         2.31.1-0.4ubuntu3.7
     wget:

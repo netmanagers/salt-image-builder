@@ -132,7 +132,7 @@ local:
     apt-transport-https:
         2.0.6
     base-files:
-        11ubuntu5.3
+        11ubuntu5.4
     base-passwd:
         3.5.47
     bash:
@@ -170,7 +170,7 @@ local:
     dirmngr:
         2.2.19-3ubuntu2.1
     distro-info-data:
-        0.43ubuntu1.5
+        0.43ubuntu1.6
     dpkg:
         1.19.7ubuntu3
     e2fsprogs:
@@ -322,7 +322,7 @@ local:
     libgmp10:
         2:6.2.0+dfsg-4
     libgnutls30:
-        3.6.13-2ubuntu1.3
+        3.6.13-2ubuntu1.6
     libgpg-error0:
         1.37-1
     libgssapi-krb5-2:
@@ -462,7 +462,7 @@ local:
     libssh-4:
         0.9.3-2ubuntu2.1
     libssl1.1:
-        1.1.1f-1ubuntu2.4
+        1.1.1f-1ubuntu2.5
     libstdc++6:
         10.3.0-1ubuntu1~20.04
     libstemmer0d:
@@ -494,7 +494,7 @@ local:
     locales:
         2.31-0ubuntu9.2
     login:
-        1:4.8.1-1ubuntu5.20.04
+        1:4.8.1-1ubuntu5.20.04.1
     logsave:
         1.45.5-2ubuntu1
     lsb-base:
@@ -514,17 +514,17 @@ local:
     net-tools:
         1.60+git20180626.aebd88e-1ubuntu1
     openssh-client:
-        1:8.2p1-4ubuntu0.2
+        1:8.2p1-4ubuntu0.3
     openssh-server:
-        1:8.2p1-4ubuntu0.2
+        1:8.2p1-4ubuntu0.3
     openssh-sftp-server:
-        1:8.2p1-4ubuntu0.2
+        1:8.2p1-4ubuntu0.3
     openssl:
-        1.1.1f-1ubuntu2.4
+        1.1.1f-1ubuntu2.5
     packagekit:
         1.1.13-2ubuntu1.1
     passwd:
-        1:4.8.1-1ubuntu5.20.04
+        1:4.8.1-1ubuntu5.20.04.1
     pci.ids:
         0.0~2020.03.20-1
     pciutils:

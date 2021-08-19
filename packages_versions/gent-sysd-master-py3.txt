@@ -2,7 +2,7 @@ gent-sysd-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.28ebe0b
+          Salt: 3004+0na.09efe72
  
 Dependency Versions:
           cffi: Not Installed
@@ -104,7 +104,7 @@ local:
     saltpath:
         /usr/lib/python3.9/site-packages/salt
     saltversion:
-        3004+0na.28ebe0b
+        3004+0na.09efe72
     saltversioninfo:
         - 3004
     systemd:

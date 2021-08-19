@@ -1,5 +1,17 @@
 # Changelog
 
+# [1.49.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.48.0...v1.49.0) (2021-08-19)
+
+
+### Continuous Integration
+
+* **gitlab-ci:** remove `3003.0` & `3003.1` for AlmaLinux [skip ci] ([dda500b](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/dda500ba9da7001e3401d6e389bec06d6e110fce))
+
+
+### Features
+
+* **gitlab-ci:** add Debian Bookworm (12) [skip ci] ([416eb19](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/416eb19f31d309859d5686f881c1e7f227bc0ed1))
+
 # [1.48.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.47.0...v1.48.0) (2021-08-16)
 
 
