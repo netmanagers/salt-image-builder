@@ -2,7 +2,7 @@ ubun-18.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.7275ecf
+          Salt: 3004+0na.c3d2e9d
  
 Dependency Versions:
           cffi: Not Installed
@@ -129,7 +129,7 @@ local:
     saltpath:
         /usr/local/lib/python3.6/dist-packages/salt
     saltversion:
-        3004+0na.7275ecf
+        3004+0na.c3d2e9d
     saltversioninfo:
         - 3004
     systemd:
@@ -623,7 +623,7 @@ local:
     requests:
         2.26.0
     salt:
-        3004+0na.7275ecf
+        3004+0na.c3d2e9d
     setuptools:
         39.0.1
     typing-extensions:

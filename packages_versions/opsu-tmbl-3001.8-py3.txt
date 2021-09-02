@@ -1,0 +1,541 @@
+opsu-tmbl-3001.8-py3
+Salt install method: git
+# salt-call --versions-report
+Salt Version:
+           Salt: 3001.8
+ 
+Dependency Versions:
+           cffi: Not Installed
+       cherrypy: Not Installed
+       dateutil: Not Installed
+      docker-py: Not Installed
+          gitdb: Not Installed
+      gitpython: Not Installed
+         Jinja2: 2.11.3
+        libgit2: Not Installed
+       M2Crypto: Not Installed
+           Mako: Not Installed
+   msgpack-pure: Not Installed
+ msgpack-python: 1.0.2
+   mysql-python: Not Installed
+      pycparser: Not Installed
+       pycrypto: Not Installed
+   pycryptodome: 3.10.1
+         pygit2: Not Installed
+         Python: 3.8.11 (default, Aug 10 2021, 00:29:46) [GCC]
+   python-gnupg: Not Installed
+         PyYAML: 5.4.1
+          PyZMQ: 22.2.1
+          smmap: Not Installed
+        timelib: Not Installed
+        Tornado: 4.5.3
+            ZMQ: 4.3.4
+ 
+System Versions:
+           dist: opensuse-tumbleweed 20210901 
+         locale: utf-8
+        machine: x86_64
+        release: 5.4.109+
+         system: Linux
+        version: openSUSE Tumbleweed 20210901 
+ 
+# salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
+local:
+    ----------
+    init:
+        unknown
+    kernel:
+        Linux
+    kernelrelease:
+        5.4.109+
+    kernelversion:
+        #1 SMP Wed Jun 16 20:00:10 PDT 2021
+    locale_info:
+        ----------
+        defaultencoding:
+            UTF-8
+        defaultlanguage:
+            en_US
+        detectedencoding:
+            utf-8
+        timezone:
+            unknown
+    lsb_distrib_codename:
+        openSUSE Tumbleweed
+    lsb_distrib_id:
+        openSUSE Tumbleweed
+    lsb_distrib_release:
+        20210901
+    os:
+        SUSE
+    os_family:
+        Suse
+    osarch:
+        x86_64
+    osbuild:
+    oscodename:
+        openSUSE Tumbleweed
+    osfinger:
+        openSUSE Tumbleweed-20210901
+    osfullname:
+        openSUSE Tumbleweed
+    osmajorrelease:
+        20210901
+    osmanufacturer:
+    osrelease:
+        20210901
+    osrelease_info:
+        - 20210901
+    osversion:
+    pythonexecutable:
+        /usr/bin/python3.8
+    pythonpath:
+        - /usr/bin
+        - /usr/lib/python38.zip
+        - /usr/lib64/python3.8
+        - /usr/lib64/python3.8/lib-dynload
+        - /usr/lib64/python3.8/site-packages
+        - /usr/lib64/python3.8/_import_failed
+        - /usr/lib/python3.8/site-packages
+        - /usr/local/lib/python3.8/site-packages
+    pythonversion:
+        - 3
+        - 8
+        - 11
+        - final
+        - 0
+    saltpath:
+        /usr/lib/python3.8/site-packages/salt
+    saltversion:
+        3001.8
+    saltversioninfo:
+        - 3001
+        - 8
+    systemd:
+        ----------
+        features:
+            +PAM +AUDIT +SELINUX +APPARMOR -IMA -SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN -IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified
+        version:
+            248
+    virtual:
+        gce
+    virtual_subtype:
+        Docker
+    zmqversion:
+        4.3.4
+# salt-call --local pkg.list_pkgs
+local:
+    ----------
+    aaa_base:
+        84.87+git20210823.4c98889-1.1
+    bash:
+        5.1.8-1.1
+    boost-license1_76_0:
+        1.76.0-4.1
+    ca-certificates:
+        2+git20210723.27a0476-1.1
+    ca-certificates-mozilla:
+        2.50-1.1
+    chkstat:
+        1550_20210518-28.14
+    compat-usrmerge-tools:
+        84.87-3.1
+    coreutils:
+        8.32-8.4
+    cracklib-dict-small:
+        2.9.7-2.1
+    crypto-policies:
+        20210225.05203d2-1.15
+    curl:
+        7.78.0-1.1
+    dbus-1:
+        1.12.20-5.4
+    diffutils:
+        3.8-1.1
+    file:
+        5.40-1.13
+    file-magic:
+        5.40-1.13
+    filesystem:
+        84.87-2.1
+    fillup:
+        1.42-276.6
+    findutils:
+        4.8.0-2.14
+    gawk:
+        5.1.0-2.18
+    git:
+        2.33.0-1.1
+    git-core:
+        2.33.0-1.1
+    glibc:
+        2.33-9.1
+    glibc-locale:
+        2.33-9.1
+    glibc-locale-base:
+        2.33-9.1
+    gpg2:
+        2.2.27-2.1
+    grep:
+        3.7-1.1
+    gzip:
+        1.10-9.1
+    hostname:
+        3.23-2.6
+    kbd:
+        2.4.0-2.1
+    kbd-legacy:
+        2.4.0-2.1
+    kmod:
+        29-4.1
+    krb5:
+        1.19.2-1.1
+    less:
+        590-2.1
+    libacl1:
+        2.3.1-1.13
+    libapparmor1:
+        3.0.3-2.1
+    libargon2-1:
+        0.0+git20190520.62358ba-1.6
+    libassuan0:
+        2.5.5-1.2
+    libattr1:
+        2.5.1-1.12
+    libaudit1:
+        3.0.3-2.1
+    libaugeas0:
+        1.12.0-4.1
+    libblkid1:
+        2.36.2-2.1
+    libboost_thread1_76_0:
+        1.76.0-4.1
+    libbrotlicommon1:
+        1.0.9-1.4
+    libbrotlidec1:
+        1.0.9-1.4
+    libbz2-1:
+        1.0.8-3.1
+    libcap-ng0:
+        0.7.10-1.29
+    libcap2:
+        2.51-1.1
+    libcbor0_8:
+        0.8.0-1.4
+    libcom_err2:
+        1.46.3-1.1
+    libcrypt1:
+        4.4.25-1.1
+    libcryptsetup12:
+        2.3.6-1.1
+    libcryptsetup12-hmac:
+        2.3.6-1.1
+    libcurl4:
+        7.78.0-1.1
+    libdb-4_8:
+        4.8.30-38.37
+    libdbus-1-3:
+        1.12.20-5.4
+    libdevmapper1_03:
+        1.02.177-3.1
+    libeconf0:
+        0.4.1+git20210709.cf671f2-1.1
+    libedit0:
+        3.1.snap20180525-4.5
+    libexpat1:
+        2.4.1-1.1
+    libfdisk1:
+        2.36.2-2.1
+    libffi8:
+        3.3.git30-1.27
+    libfido2-1:
+        1.7.0-1.2
+    libfido2-udev:
+        1.7.0-1.2
+    libgcc_s1:
+        11.2.1+git610-1.1
+    libgcrypt20:
+        1.9.4-1.1
+    libgcrypt20-hmac:
+        1.9.4-1.1
+    libgdbm6:
+        1.20-1.1
+    libgdbm_compat4:
+        1.20-1.1
+    libglib-2_0-0:
+        2.68.4-1.1
+    libgmp10:
+        6.2.1-3.13
+    libgpg-error0:
+        1.42-2.1
+    libgpgme11:
+        1.16.0-2.1
+    libhidapi-hidraw0:
+        0.10.1-2.1
+    libidn2-0:
+        2.3.2-1.1
+    libjson-c5:
+        0.15-2.2
+    libkeyutils1:
+        1.6.3-3.1
+    libkmod2:
+        29-4.1
+    libksba8:
+        1.6.0-1.1
+    libldap-2_4-2:
+        2.4.59-67.1
+    liblua5_4-5:
+        5.4.3-4.1
+    liblz4-1:
+        1.9.3-1.4
+    liblzma5:
+        5.2.5-2.1
+    libmagic1:
+        5.40-1.13
+    libmount1:
+        2.36.2-2.1
+    libncurses6:
+        6.2.20210814-25.1
+    libnghttp2-14:
+        1.43.0-1.4
+    libnpth0:
+        1.6-2.4
+    libnsl3:
+        2.0.0-1.1
+    libnss_usrfiles2:
+        2.27-2.8
+    libopenssl1_1:
+        1.1.1l-1.1
+    libopenssl1_1-hmac:
+        1.1.1l-1.1
+    libp11-kit0:
+        0.23.22-2.1
+    libpcre1:
+        8.45-1.1
+    libpcre2-8-0:
+        10.37-1.1
+    libpkgconf3:
+        1.8.0-1.1
+    libpopt0:
+        1.18-2.16
+    libprocps8:
+        3.3.17-5.1
+    libprotobuf-lite28:
+        3.17.3-2.1
+    libproxy1:
+        0.4.17-2.1
+    libpsl5:
+        0.21.1-1.5
+    libpython2_7-1_0:
+        2.7.18-7.1
+    libpython3_8-1_0:
+        3.8.11-1.2
+    libreadline8:
+        8.1-2.13
+    libsasl2-3:
+        2.1.27-5.4
+    libseccomp2:
+        2.5.1-1.1
+    libselinux1:
+        3.2-3.1
+    libsemanage-conf:
+        3.2-2.1
+    libsemanage2:
+        3.2-2.1
+    libsepol2:
+        3.2-3.1
+    libsha1detectcoll1:
+        1.0.3-4.11
+    libsigc-2_0-0:
+        2.10.7-1.1
+    libsmartcols1:
+        2.36.2-2.1
+    libsolv-tools:
+        0.7.19-1.2
+    libsqlite3-0:
+        3.36.0-1.1
+    libssh-config:
+        0.9.6-1.1
+    libssh4:
+        0.9.6-1.1
+    libstdc++6:
+        11.2.1+git610-1.1
+    libsystemd0:
+        248.6-2.1
+    libtasn1-6:
+        4.17.0-1.1
+    libtirpc-netconfig:
+        1.3.2-1.3
+    libtirpc3:
+        1.3.2-1.3
+    libudev1:
+        248.6-2.1
+    libunistring2:
+        0.9.10-2.11
+    libusb-1_0-0:
+        1.0.24-2.3
+    libutempter0:
+        1.2.0-3.14
+    libuuid1:
+        2.36.2-2.1
+    libverto1:
+        0.3.1-1.16
+    libxml2-2:
+        2.9.12-1.1
+    libyaml-cpp0_6:
+        0.6.3-1.7
+    libz1:
+        1.2.11-18.16
+    libzck1:
+        1.1.16-1.1
+    libzstd1:
+        1.5.0-1.12
+    libzypp:
+        17.28.1-1.1
+    login_defs:
+        4.8.1-7.1
+    ncurses-utils:
+        6.2.20210814-25.1
+    net-tools:
+        2.10-1.6
+    net-tools-deprecated:
+        2.10-1.6
+    netcfg:
+        11.6-9.1
+    openSUSE-build-key:
+        1.0-40.1
+    openSUSE-release:
+        20210901-1134.1
+    openSUSE-release-appliance-docker:
+        20210901-1134.1
+    openssh:
+        8.4p1-7.1
+    openssh-clients:
+        8.4p1-7.1
+    openssh-common:
+        8.4p1-7.1
+    openssh-fips:
+        8.4p1-7.1
+    openssh-server:
+        8.4p1-7.1
+    p11-kit:
+        0.23.22-2.1
+    p11-kit-tools:
+        0.23.22-2.1
+    pam:
+        1.5.1-8.1
+    pam-config:
+        1.3-2.1
+    pam_unix:
+        1.5.1-8.1
+    patterns-base-fips:
+        20200505-22.1
+    perl:
+        5.32.1-1.12
+    perl-Error:
+        0.17029-1.6
+    perl-Git:
+        2.33.0-1.1
+    perl-base:
+        5.32.1-1.12
+    permissions:
+        20210518.1550-28.14
+    permissions-config:
+        1550_20210518-28.14
+    pinentry:
+        1.1.1-2.4
+    pkgconf:
+        1.8.0-1.1
+    pkgconf-m4:
+        1.8.0-1.1
+    pkgconf-pkg-config:
+        1.8.0-1.1
+    procps:
+        3.3.17-5.1
+    python-base:
+        2.7.18-7.1
+    python-xml:
+        2.7.18-7.1
+    python38-appdirs:
+        1.4.4-3.1
+    python38-base:
+        3.8.11-1.2
+    python38-ordered-set:
+        3.1.1-6.1
+    python38-packaging:
+        20.9-2.1
+    python38-pip:
+        20.2.4-1.7
+    python38-pyparsing:
+        2.4.7-3.1
+    python38-setuptools:
+        57.4.0-1.1
+    python38-six:
+        1.16.0-2.1
+    rpm:
+        4.16.1.3-3.1
+    rpm-config-SUSE:
+        0.g83-1.1
+    sed:
+        4.8-3.7
+    shadow:
+        4.8.1-7.1
+    sudo:
+        1.9.7p2-1.1
+    suse-module-tools:
+        16.0.8+1-1.1
+    system-group-hardware:
+        20170617-22.1
+    system-group-kvm:
+        20170617-22.1
+    system-user-root:
+        20190513-1.35
+    systemd:
+        248.6-2.1
+    systemd-default-settings:
+        0.7-1.2
+    systemd-default-settings-branding-SLE:
+        0.7-1.2
+    systemd-presets-branding-MicroOS:
+        20200323-2.4
+    systemd-presets-common-SUSE:
+        15-19.1
+    systemd-rpm-macros:
+        13-1.1
+    sysuser-shadow:
+        3.1-2.1
+    terminfo-base:
+        6.2.20210814-25.1
+    udev:
+        248.6-2.1
+    update-alternatives:
+        1.20.9-1.1
+    util-linux:
+        2.36.2-2.1
+    which:
+        2.21-4.44
+    xz:
+        5.2.5-2.1
+    zypper:
+        1.14.48-1.1
+# salt-call --local pip.list
+local:
+    ----------
+    Jinja2:
+        2.11.3
+    appdirs:
+        1.4.4
+    ordered-set:
+        3.1.1
+    packaging:
+        20.9
+    pip:
+        20.2.4
+    pyparsing:
+        2.4.7
+    setuptools:
+        57.4.0
+    six:
+        1.16.0
+    wheel:
+        0.37.0

@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.51.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.50.0...v1.51.0) (2021-09-02)
+
+
+### Features
+
+* **gitlab-ci:** build CVE `3003.3`, `3002.7` & `3001.8` images ([c5cd399](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/c5cd3999344a3b3064c2a18ab5582b4bc2834929))
+
 # [1.50.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.49.0...v1.50.0) (2021-09-02)
 
 

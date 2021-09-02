@@ -1,0 +1,509 @@
+arch-late-3001.8-py3
+Salt install method: git
+# salt-call --versions-report
+Salt Version:
+           Salt: 3001.8
+ 
+Dependency Versions:
+           cffi: 1.14.6
+       cherrypy: Not Installed
+       dateutil: Not Installed
+      docker-py: Not Installed
+          gitdb: Not Installed
+      gitpython: Not Installed
+         Jinja2: 2.11.3
+        libgit2: Not Installed
+       M2Crypto: Not Installed
+           Mako: Not Installed
+   msgpack-pure: Not Installed
+ msgpack-python: 1.0.2
+   mysql-python: Not Installed
+      pycparser: 2.20
+       pycrypto: Not Installed
+   pycryptodome: 3.10.1
+         pygit2: Not Installed
+         Python: 3.9.6 (default, Jun 30 2021, 10:22:16)
+   python-gnupg: Not Installed
+         PyYAML: 5.4.1
+          PyZMQ: 22.2.1
+          smmap: Not Installed
+        timelib: Not Installed
+        Tornado: 4.5.3
+            ZMQ: 4.3.4
+ 
+System Versions:
+           dist: arch  
+         locale: utf-8
+        machine: x86_64
+        release: 5.4.109+
+         system: Linux
+        version: Arch Linux  
+ 
+# salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
+local:
+    ----------
+    init:
+        unknown
+    kernel:
+        Linux
+    kernelrelease:
+        5.4.109+
+    kernelversion:
+        #1 SMP Wed Jun 16 20:00:10 PDT 2021
+    locale_info:
+        ----------
+        defaultencoding:
+            UTF-8
+        defaultlanguage:
+            en_US
+        detectedencoding:
+            utf-8
+        timezone:
+            unknown
+    lsb_distrib_codename:
+        Arch Linux
+    lsb_distrib_id:
+        Arch Linux
+    lsb_distrib_release:
+    os:
+        Arch
+    os_family:
+        Arch
+    osarch:
+        x86_64
+    osbuild:
+    oscodename:
+        Arch Linux
+    osfinger:
+    osfullname:
+        Arch Linux
+    osmajorrelease:
+    osmanufacturer:
+    osrelease:
+    osrelease_info:
+    osversion:
+    pythonexecutable:
+        /usr/bin/python
+    pythonpath:
+        - /usr/bin
+        - /usr/lib/python39.zip
+        - /usr/lib/python3.9
+        - /usr/lib/python3.9/lib-dynload
+        - /usr/lib/python3.9/site-packages
+    pythonversion:
+        - 3
+        - 9
+        - 6
+        - final
+        - 0
+    saltpath:
+        /usr/lib/python3.9/site-packages/salt
+    saltversion:
+        3001.8
+    saltversioninfo:
+        - 3001
+        - 8
+    systemd:
+        ----------
+        features:
+            +PAM +AUDIT -SELINUX -APPARMOR -IMA +SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY +P11KIT -QRENCODE +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +XKBCOMMON +UTMP -SYSVINIT default-hierarchy=unified
+        version:
+            249
+    virtual:
+        gce
+    virtual_subtype:
+        Docker
+    zmqversion:
+        4.3.4
+# salt-call --local pkg.list_pkgs
+local:
+    ----------
+    acl:
+        2.3.1-1
+    archlinux-keyring:
+        20210820-1
+    argon2:
+        20190702-3
+    attr:
+        2.5.1-1
+    audit:
+        3.0.4-1
+    base:
+        2-2
+    bash:
+        5.1.008-1
+    binutils:
+        2.36.1-3
+    bzip2:
+        1.0.8-4
+    ca-certificates:
+        20210603-1
+    ca-certificates-mozilla:
+        3.69.1-1
+    ca-certificates-utils:
+        20210603-1
+    coreutils:
+        8.32-1
+    cryptsetup:
+        2.4.0-1
+    curl:
+        7.78.0-1
+    db:
+        5.3.28-5
+    dbus:
+        1.12.20-1
+    device-mapper:
+        2.03.13-1
+    dnssec-anchors:
+        20190629-3
+    e2fsprogs:
+        1.46.4-1
+    elfutils:
+        0.185-1
+    expat:
+        2.4.1-1
+    file:
+        5.40-5
+    filesystem:
+        2021.05.31-1
+    findutils:
+        4.8.0-1
+    gawk:
+        5.1.0-1
+    gcc:
+        11.1.0-1
+    gcc-libs:
+        11.1.0-1
+    gdbm:
+        1.20-1
+    gettext:
+        0.21-1
+    git:
+        2.33.0-1
+    glib2:
+        2.68.4-1
+    glibc:
+        2.33-5
+    gmp:
+        6.2.1-1
+    gnupg:
+        2.2.29-1
+    gnutls:
+        3.7.2-2
+    gpgme:
+        1.16.0-1
+    grep:
+        3.6-1
+    gzip:
+        1.10-3
+    hwids:
+        20210613-1
+    iana-etc:
+        20210728-1
+    icu:
+        69.1-1
+    iproute2:
+        5.14.0-1
+    iptables:
+        1:1.8.7-1
+    iputils:
+        20210722-1
+    json-c:
+        0.15-1
+    kbd:
+        2.4.0-2
+    keyutils:
+        1.6.3-1
+    kmod:
+        29-1
+    krb5:
+        1.19.1-1
+    ldns:
+        1.7.1-2
+    less:
+        1:590-1
+    libarchive:
+        3.5.2-1
+    libassuan:
+        2.5.5-1
+    libcap:
+        2.53-1
+    libcap-ng:
+        0.8.2-3
+    libcroco:
+        0.6.13-2
+    libedit:
+        20210522_3.1-1
+    libelf:
+        0.185-1
+    libffi:
+        3.3-4
+    libgcrypt:
+        1.9.4-1
+    libgpg-error:
+        1.42-1
+    libidn2:
+        2.3.2-1
+    libksba:
+        1.6.0-1
+    libldap:
+        2.4.59-2
+    libmnl:
+        1.0.4-3
+    libmpc:
+        1.2.1-1
+    libnetfilter_conntrack:
+        1.0.8-1
+    libnfnetlink:
+        1.0.1-4
+    libnftnl:
+        1.2.0-1
+    libnghttp2:
+        1.44.0-1
+    libnl:
+        3.5.0-3
+    libnsl:
+        1.3.0-2
+    libp11-kit:
+        0.24.0-1
+    libpcap:
+        1.10.1-1
+    libpsl:
+        0.21.1-1
+    libsasl:
+        2.1.27-3
+    libseccomp:
+        2.5.1-2
+    libsecret:
+        0.20.4-1
+    libssh2:
+        1.9.0-3
+    libtasn1:
+        4.17.0-1
+    libtirpc:
+        1.3.2-1
+    libunistring:
+        0.9.10-3
+    libxcrypt:
+        4.4.25-1
+    libxml2:
+        2.9.10-9
+    libyaml:
+        0.2.5-1
+    licenses:
+        20200427-1
+    linux-api-headers:
+        5.12.3-1
+    lz4:
+        1:1.9.3-2
+    mpfr:
+        4.1.0.p13-1
+    ncurses:
+        6.2-2
+    net-tools:
+        2.10-1
+    nettle:
+        3.7.3-1
+    npth:
+        1.6-3
+    openssh:
+        8.7p1-1
+    openssl:
+        1.1.1.l-1
+    p11-kit:
+        0.24.0-1
+    pacman:
+        6.0.0-5
+    pacman-mirrorlist:
+        20210822-1
+    pam:
+        1.5.1-1
+    pambase:
+        20210605-2
+    pciutils:
+        3.7.0-1
+    pcre:
+        8.45-1
+    pcre2:
+        10.37-1
+    perl:
+        5.34.0-2
+    perl-error:
+        0.17029-3
+    perl-mailtools:
+        2.21-5
+    perl-timedate:
+        2.33-3
+    pinentry:
+        1.1.1-1
+    popt:
+        1.18-1
+    procps-ng:
+        3.3.17-1
+    psmisc:
+        23.4-1
+    python:
+        3.9.6-1
+    python-appdirs:
+        1.4.4-3
+    python-cachecontrol:
+        0.12.6-3
+    python-cffi:
+        1.14.6-1
+    python-chardet:
+        4.0.0-2
+    python-colorama:
+        0.4.4-3
+    python-contextlib2:
+        0.6.0.post1-3
+    python-cryptography:
+        3.4.8-1
+    python-distlib:
+        0.3.2-1
+    python-distro:
+        1.5.0-3
+    python-html5lib:
+        1.1-6
+    python-idna:
+        3.2-1
+    python-more-itertools:
+        8.8.0-1
+    python-msgpack:
+        1.0.2-2
+    python-ordered-set:
+        4.0.2-3
+    python-packaging:
+        20.9-1
+    python-pep517:
+        0.11.0-1
+    python-pip:
+        20.3.4-1
+    python-ply:
+        3.11-7
+    python-progress:
+        1.5-5
+    python-pycparser:
+        2.20-3
+    python-pyopenssl:
+        20.0.1-1
+    python-pyparsing:
+        2.4.7-3
+    python-requests:
+        2.26.0-1
+    python-resolvelib:
+        0.5.5-1
+    python-retrying:
+        1.3.3-9
+    python-setuptools:
+        1:57.4.0-1
+    python-six:
+        1.16.0-1
+    python-toml:
+        0.10.2-3
+    python-tomli:
+        1.2.1-1
+    python-urllib3:
+        1.26.6-1
+    python-webencodings:
+        0.5.1-6
+    python-yaml:
+        5.4.1.1-2
+    readline:
+        8.1.001-1
+    sed:
+        4.8-1
+    shadow:
+        4.8.1-4
+    sqlite:
+        3.36.0-1
+    sudo:
+        1.9.7.p2-1
+    systemd:
+        249.4-1
+    systemd-libs:
+        249.4-1
+    systemd-sysvcompat:
+        249.4-1
+    tar:
+        1.34-1
+    tzdata:
+        2021a-2
+    util-linux:
+        2.37.2-1
+    util-linux-libs:
+        2.37.2-1
+    xz:
+        5.2.5-1
+    zlib:
+        1:1.2.11-4
+    zstd:
+        1.5.0-1
+# salt-call --local pip.list
+local:
+    ----------
+    CacheControl:
+        0.12.6
+    Jinja2:
+        2.11.3
+    PyYAML:
+        5.4.1
+    appdirs:
+        1.4.4
+    cffi:
+        1.14.6
+    chardet:
+        4.0.0
+    colorama:
+        0.4.4
+    contextlib2:
+        0.6.0.post1
+    cryptography:
+        3.4.8
+    distlib:
+        0.3.2
+    html5lib:
+        1.1
+    idna:
+        3.2
+    more-itertools:
+        8.8.0
+    msgpack:
+        1.0.2
+    ordered-set:
+        4.0.2
+    packaging:
+        20.9
+    pep517:
+        0.11.0
+    pip:
+        20.3.4
+    ply:
+        3.11
+    progress:
+        1.5
+    pyOpenSSL:
+        20.0.1
+    pycparser:
+        2.20
+    pyparsing:
+        2.4.7
+    requests:
+        2.26.0
+    resolvelib:
+        0.5.5
+    retrying:
+        1.3.3
+    setuptools:
+        57.4.0
+    six:
+        1.16.0
+    toml:
+        0.10.2
+    tomli:
+        1.2.1
+    urllib3:
+        1.26.6
+    webencodings:
+        0.5.1
+    wheel:
+        0.37.0
