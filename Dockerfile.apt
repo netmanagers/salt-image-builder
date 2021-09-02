@@ -50,11 +50,6 @@ RUN apt-get update \
       apt-get update; \
       apt-get install --yes --no-install-recommends salt-minion; \
     fi \
-    # Use temporary workaround of downgrading Jinja2 for images built using `git`
-    # See https://github.com/saltstack/salt/issues/60188
- && if [ "${SALT_INSTALL_METHOD}" = "git" ] && [ "${PYTHON_VERSION}" = "3" ]; then \
-      pip3 install --no-cache-dir Jinja2==2.11.3; \
-    fi \
     # Disable salt's service as we don't need it running
  && systemctl disable salt-minion.service > /dev/null 2>&1 \
     # Remove unnecessary getty and udev targets that result in high CPU usage when using
