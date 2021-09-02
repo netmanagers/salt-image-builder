@@ -2,7 +2,7 @@ debi-10.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.09efe72
+          Salt: 3004+0na.7275ecf
  
 Dependency Versions:
           cffi: Not Installed
@@ -11,7 +11,7 @@ Dependency Versions:
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
-        Jinja2: 2.11.3
+        Jinja2: 3.0.1
        libgit2: Not Installed
       M2Crypto: Not Installed
           Mako: Not Installed
@@ -129,7 +129,7 @@ local:
     saltpath:
         /usr/local/lib/python3.7/dist-packages/salt
     saltversion:
-        3004+0na.09efe72
+        3004+0na.7275ecf
     saltversioninfo:
         - 3004
     systemd:
@@ -466,7 +466,7 @@ local:
     libssh2-1:
         1.8.0-2.1
     libssl1.1:
-        1.1.1d-0+deb10u6
+        1.1.1d-0+deb10u7
     libstdc++6:
         8.3.0-6
     libsystemd0:
@@ -522,7 +522,7 @@ local:
     openssh-sftp-server:
         1:7.9p1-10+deb10u2
     openssl:
-        1.1.1d-0+deb10u6
+        1.1.1d-0+deb10u7
     passwd:
         1:4.5-1.1
     pciutils:
@@ -599,7 +599,7 @@ local:
 local:
     ----------
     Jinja2:
-        2.11.3
+        3.0.1
     MarkupSafe:
         2.0.1
     PyYAML:
@@ -629,11 +629,11 @@ local:
     requests:
         2.26.0
     salt:
-        3004+0na.09efe72
+        3004+0na.7275ecf
     setuptools:
         40.8.0
     typing-extensions:
-        3.10.0.0
+        3.10.0.2
     urllib3:
         1.26.6
     wheel:

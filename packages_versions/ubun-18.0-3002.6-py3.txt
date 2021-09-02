@@ -406,9 +406,9 @@ local:
     libss2:
         1.44.1-1ubuntu1.3
     libssl1.0.0:
-        1.0.2n-1ubuntu5.6
+        1.0.2n-1ubuntu5.7
     libssl1.1:
-        1.1.1-1ubuntu2.1~18.04.10
+        1.1.1-1ubuntu2.1~18.04.13
     libstdc++6:
         8.4.0-1ubuntu1~18.04
     libsystemd0:
@@ -460,7 +460,7 @@ local:
     openssh-sftp-server:
         1:7.6p1-4ubuntu0.5
     openssl:
-        1.1.1-1ubuntu2.1~18.04.10
+        1.1.1-1ubuntu2.1~18.04.13
     passwd:
         1:4.5-1ubuntu2
     pciutils:

@@ -2,7 +2,7 @@ orac-08.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.09efe72
+          Salt: 3004+0na.7275ecf
  
 Dependency Versions:
           cffi: Not Installed
@@ -11,7 +11,7 @@ Dependency Versions:
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
-        Jinja2: 2.11.3
+        Jinja2: 3.0.1
        libgit2: Not Installed
       M2Crypto: Not Installed
           Mako: Not Installed
@@ -95,7 +95,6 @@ local:
         - /usr/lib64/python36.zip
         - /usr/lib64/python3.6
         - /usr/lib64/python3.6/lib-dynload
-        - /usr/local/lib/python3.6/site-packages
         - /usr/lib64/python3.6/site-packages
         - /usr/lib/python3.6/site-packages
     pythonversion:
@@ -107,7 +106,7 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3004+0na.09efe72
+        3004+0na.7275ecf
     saltversioninfo:
         - 3004
     systemd:
@@ -136,7 +135,7 @@ local:
     bind-export-libs:
         32:9.11.26-4.el8_4
     binutils:
-        2.30-93.0.2.el8
+        2.30-93.0.3.el8
     brotli:
         1.0.6-3.el8
     bzip2-libs:
@@ -150,7 +149,7 @@ local:
     coreutils-common:
         8.30-8.0.1.el8
     cpp:
-        8.4.1-1.0.1.el8
+        8.4.1-1.0.3.el8
     cracklib:
         2.9.6-15.el8
     cracklib-dicts:
@@ -214,7 +213,7 @@ local:
     gawk:
         4.2.1-2.el8
     gcc:
-        8.4.1-1.0.1.el8
+        8.4.1-1.0.3.el8
     gdbm:
         1:1.18-1.el8
     gdbm-libs:
@@ -328,11 +327,11 @@ local:
     libffi:
         3.1-22.el8
     libgcc:
-        8.4.1-1.0.1.el8
+        8.4.1-1.0.3.el8
     libgcrypt:
         1.8.5-4.el8
     libgomp:
-        8.4.1-1.0.1.el8
+        8.4.1-1.0.3.el8
     libgpg-error:
         1.31-1.el8
     libibverbs:
@@ -396,7 +395,7 @@ local:
     libssh-config:
         0.9.4-2.el8
     libstdc++:
-        8.4.1-1.0.1.el8
+        8.4.1-1.0.3.el8
     libtasn1:
         4.13-3.el8
     libtirpc:
@@ -677,7 +676,7 @@ local:
 local:
     ----------
     Jinja2:
-        2.11.3
+        3.0.1
     MarkupSafe:
         2.0.1
     PyYAML:
@@ -713,13 +712,13 @@ local:
     rpm:
         4.14.3
     salt:
-        3004+0na.09efe72
+        3004+0na.7275ecf
     setuptools:
         39.2.0
     six:
         1.11.0
     typing-extensions:
-        3.10.0.0
+        3.10.0.2
     urllib3:
         1.26.6
     wheel:

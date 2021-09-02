@@ -136,7 +136,7 @@ local:
     bc:
         1.06.95-13.el7
     bind-export-libs:
-        32:9.11.4-26.P2.el7_9.5
+        32:9.11.4-26.P2.el7_9.7
     binutils:
         2.27-44.base.0.3.el7
     bzip2-libs:
@@ -256,7 +256,7 @@ local:
     kmod-libs:
         20-28.0.3.el7
     kpartx:
-        0.4.9-134.0.3.el7_9
+        0.4.9-135.0.1.el7_9
     krb5-devel:
         1.15.1-50.0.1.el7
     krb5-libs:
@@ -390,7 +390,7 @@ local:
     nss-util:
         3.53.1-1.el7_9
     openldap:
-        2.4.44-23.el7_9
+        2.4.44-24.el7_9
     openpgm:
         5.2.122-2.el7
     openssh:

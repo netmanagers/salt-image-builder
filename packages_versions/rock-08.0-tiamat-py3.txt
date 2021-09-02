@@ -2,7 +2,7 @@ rock-08.0-tiamat-py3
 Salt install method: stable
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003rc1+756.g6417cd7f83
+          Salt: 3003rc1+910.gc7a1d471f9
  
 Dependency Versions:
           cffi: 1.14.4
@@ -104,7 +104,7 @@ local:
     saltpath:
         /opt/saltstack/salt/run/salt
     saltversion:
-        3003rc1+756.g6417cd7f83
+        3003rc1+910.gc7a1d471f9
     saltversioninfo:
         - 3003
     systemd:
@@ -617,9 +617,9 @@ local:
     rpm-libs:
         4.14.3-13.el8
     salt:
-        3003rc1+756.g6417cd7f83-1.el8
+        3003rc1+910.gc7a1d471f9-1.el8
     salt-minion:
-        3003rc1+756.g6417cd7f83-1.el8
+        3003rc1+910.gc7a1d471f9-1.el8
     sed:
         4.5-2.el8
     setup:

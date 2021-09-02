@@ -1,5 +1,17 @@
 # Changelog
 
+# [1.50.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.49.0...v1.50.0) (2021-09-02)
+
+
+### Continuous Integration
+
+* **gitlab-ci:** deprecate `3000.9` ([3529c9b](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/3529c9b8b8ddd37643d372bc8316599ebaa3d8a4))
+
+
+### Features
+
+* **dockerfile.*:** remove Jinja2 downgrade workaround where possible ([07a0d03](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/07a0d0393b91b4cc4ac76c137178d7794151a890)), closes [/github.com/saltstack/salt/pull/60811#issuecomment-911772632](https://gitlab.com//github.com/saltstack/salt/pull/60811/issues/issuecomment-911772632)
+
 # [1.49.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.48.0...v1.49.0) (2021-08-19)
 
 

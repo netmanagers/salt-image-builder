@@ -395,7 +395,7 @@ local:
     libssh2-1:
         1.9.0-2
     libssl1.1:
-        1.1.1k-1
+        1.1.1k-1+deb11u1
     libstdc++6:
         10.2.1-6
     libsystemd0:
@@ -455,7 +455,7 @@ local:
     openssh-sftp-server:
         1:8.4p1-5
     openssl:
-        1.1.1k-1
+        1.1.1k-1+deb11u1
     passwd:
         1:4.8.1-1
     pci.ids:

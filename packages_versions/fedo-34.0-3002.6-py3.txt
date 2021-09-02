@@ -25,7 +25,7 @@ Dependency Versions:
         Python: 3.9.6 (default, Jul 16 2021, 00:00:00)
   python-gnupg: Not Installed
         PyYAML: 5.4.1
-         PyZMQ: 22.1.0
+         PyZMQ: 22.2.1
          smmap: Not Installed
        timelib: Not Installed
        Tornado: 4.5.3
@@ -128,15 +128,15 @@ local:
     alternatives:
         1.15-2.fc34
     audit-libs:
-        3.0.3-1.fc34
+        3.0.5-1.fc34
     basesystem:
         11-11.fc34
     bash:
         5.1.0-2.fc34
     binutils:
-        2.35.1-41.fc34
+        2.35.2-5.fc34
     binutils-gold:
-        2.35.1-41.fc34
+        2.35.2-5.fc34
     bzip2-libs:
         1.0.8-6.fc34
     ca-certificates:
@@ -148,7 +148,7 @@ local:
     cpio:
         2.13-10.fc34
     cpp:
-        11.1.1-3.fc34
+        11.2.1-1.fc34
     cracklib:
         2.9.6-25.fc34
     crypto-policies:
@@ -164,7 +164,7 @@ local:
     dbus:
         1:1.12.20-3.fc34
     dbus-broker:
-        29-1.fc34
+        29-2.fc34
     dbus-common:
         1:1.12.20-3.fc34
     dejavu-sans-fonts:
@@ -192,11 +192,11 @@ local:
     fedora-gpg-keys:
         34-2
     fedora-release-common:
-        34-1
+        34-36
     fedora-release-container:
-        34-1
+        34-36
     fedora-release-identity-container:
-        34-1
+        34-36
     fedora-repos:
         34-2
     fedora-repos-modular:
@@ -218,7 +218,7 @@ local:
     gc:
         8.0.4-5.fc34
     gcc:
-        11.1.1-3.fc34
+        11.2.1-1.fc34
     gdbm-libs:
         1:1.19-2.fc34
     gettext:
@@ -232,7 +232,7 @@ local:
     git-core-doc:
         2.31.1-3.fc34
     glib2:
-        2.68.2-1.fc34
+        2.68.4-1.fc34
     glibc:
         2.33-20.fc34
     glibc-common:
@@ -292,7 +292,7 @@ local:
     kpartx:
         0.8.5-4.fc34
     krb5-libs:
-        1.19.1-14.fc34
+        1.19.2-2.fc34
     langpacks-core-en_GB:
         3.0-14.fc34
     langpacks-core-font-en:
@@ -304,7 +304,7 @@ local:
     libacl:
         2.3.1-1.fc34
     libarchive:
-        3.5.1-2.fc34
+        3.5.2-2.fc34
     libargon2:
         20171227-6.fc34
     libassuan:
@@ -342,15 +342,15 @@ local:
     libfido2:
         1.6.0-2.fc34
     libgcc:
-        11.1.1-3.fc34
+        11.2.1-1.fc34
     libgcrypt:
         1.9.3-3.fc34
     libgomp:
-        11.1.1-3.fc34
+        11.2.1-1.fc34
     libgpg-error:
         1.42-1.fc34
     libibverbs:
-        35.0-1.fc34
+        36.0-1.fc34
     libidn2:
         2.3.2-1.fc34
     libkcapi:
@@ -380,7 +380,7 @@ local:
     libpsl:
         0.21.1-3.fc34
     libpwquality:
-        1.4.4-2.fc34
+        1.4.4-6.fc34
     librepo:
         1.14.1-1.fc34
     libreport-filesystem:
@@ -404,11 +404,11 @@ local:
     libssh-config:
         0.9.5-2.fc34
     libsss_idmap:
-        2.5.2-1.fc34
+        2.5.2-2.fc34
     libsss_nss_idmap:
-        2.5.2-1.fc34
+        2.5.2-2.fc34
     libstdc++:
-        11.1.1-3.fc34
+        11.2.1-1.fc34
     libtasn1:
         4.16.0-4.fc34
     libtextstyle:
@@ -428,9 +428,9 @@ local:
     libverto:
         0.3.2-1.fc34
     libxcrypt:
-        4.4.23-1.fc34
+        4.4.25-1.fc34
     libxcrypt-devel:
-        4.4.23-1.fc34
+        4.4.25-1.fc34
     libxml2:
         2.9.12-4.fc34
     libyaml:
@@ -445,6 +445,8 @@ local:
         1:4.3-5.fc34
     memstrack:
         0.2.2-1.fc34
+    mkpasswd:
+        5.5.10-1.fc34
     mpfr:
         4.1.0-7.fc34
     ncurses:
@@ -468,7 +470,9 @@ local:
     openssh-server:
         8.6p1-3.fc34
     openssl-libs:
-        1:1.1.1k-1.fc34
+        1:1.1.1l-1.fc34
+    openssl-pkcs11:
+        0.4.11-2.fc34
     os-prober:
         1.77-7.fc34
     p11-kit:
@@ -490,7 +494,7 @@ local:
     perl-DynaLoader:
         1.47-477.fc34
     perl-Encode:
-        4:3.08-459.fc34
+        4:3.12-460.fc34
     perl-Errno:
         1.30-477.fc34
     perl-Error:
@@ -516,7 +520,7 @@ local:
     perl-Git:
         2.31.1-3.fc34
     perl-HTTP-Tiny:
-        0.076-458.fc34
+        0.078-1.fc34
     perl-IO:
         1.43-477.fc34
     perl-IPC-Open3:
@@ -554,7 +558,7 @@ local:
     perl-Text-ParseWords:
         3.30-458.fc34
     perl-Text-Tabs+Wrap:
-        2013.0523-458.fc34
+        2021.0726-1.fc34
     perl-Time-Local:
         2:1.300-5.fc34
     perl-constant:
@@ -638,23 +642,25 @@ local:
     setup:
         2.13.7-3.fc34
     shadow-utils:
-        2:4.8.1-8.fc34
+        2:4.8.1-9.fc34
+    shared-mime-info:
+        2.1-2.fc34
     sqlite-libs:
         3.34.1-2.fc34
     sssd-client:
-        2.5.2-1.fc34
+        2.5.2-2.fc34
     sudo:
         1.9.5p2-1.fc34
     systemd:
-        248.6-1.fc34
+        248.7-1.fc34
     systemd-libs:
-        248.6-1.fc34
+        248.7-1.fc34
     systemd-pam:
-        248.6-1.fc34
+        248.7-1.fc34
     systemd-rpm-macros:
-        248.6-1.fc34
+        248.7-1.fc34
     systemd-udev:
-        248.6-1.fc34
+        248.7-1.fc34
     tar:
         2:1.34-1.fc34
     tpm2-tss:
@@ -664,9 +670,11 @@ local:
     util-linux:
         2.36.2-1.fc34
     vim-minimal:
-        2:8.2.3223-1.fc34
+        2:8.2.3367-1.fc34
     which:
         2.21-26.fc34
+    whois-nls:
+        5.5.10-1.fc34
     xz:
         5.2.5-5.fc34
     xz-libs:
@@ -693,4 +701,4 @@ local:
     setuptools:
         53.0.0
     wheel:
-        0.36.2
+        0.37.0

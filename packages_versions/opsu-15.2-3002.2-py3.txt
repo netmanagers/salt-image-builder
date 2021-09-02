@@ -141,7 +141,7 @@ local:
     coreutils:
         8.29-lp152.4.7
     cpio:
-        2.12-lp152.4.67
+        2.12-lp152.5.5.1
     cracklib:
         2.9.7-lp152.1.1
     cracklib-dict-small:
@@ -149,7 +149,7 @@ local:
     curl:
         7.66.0-lp152.3.21.1
     dbus-1:
-        1.12.2-lp152.6.3.1
+        1.12.2-lp152.6.6.1
     diffutils:
         3.6-lp152.5.3.1
     file:
@@ -191,7 +191,7 @@ local:
     kmod:
         25-lp152.7.6
     krb5:
-        1.16.3-lp152.5.16.1
+        1.16.3-lp152.5.19.1
     kubic-locale-archive:
         2.26-lp152.5.2
     less:
@@ -233,7 +233,7 @@ local:
     libdb-4_8:
         4.8.30-lp152.8.73
     libdbus-1-3:
-        1.12.2-lp152.6.3.1
+        1.12.2-lp152.6.6.1
     libdevmapper1_03:
         1.02.163-lp152.7.27.1
     libdw1:
@@ -307,7 +307,7 @@ local:
     libnsl2:
         1.2.0-lp152.4.105
     libopenssl1_1:
-        1.1.1d-lp152.7.18.1
+        1.1.1d-lp152.7.21.1
     libp11-kit0:
         0.23.2-lp152.6.4
     libpcre1:
@@ -425,7 +425,7 @@ local:
     openssl:
         1.1.1d-lp152.1.1
     openssl-1_1:
-        1.1.1d-lp152.7.18.1
+        1.1.1d-lp152.7.21.1
     p11-kit:
         0.23.2-lp152.6.4
     p11-kit-tools:

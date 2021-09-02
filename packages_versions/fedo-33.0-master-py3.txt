@@ -2,7 +2,7 @@ fedo-33.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.09efe72
+          Salt: 3004+0na.7275ecf
  
 Dependency Versions:
           cffi: Not Installed
@@ -11,7 +11,7 @@ Dependency Versions:
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
-        Jinja2: 2.11.3
+        Jinja2: 3.0.1
        libgit2: Not Installed
       M2Crypto: Not Installed
           Mako: Not Installed
@@ -92,7 +92,6 @@ local:
         - /usr/lib64/python39.zip
         - /usr/lib64/python3.9
         - /usr/lib64/python3.9/lib-dynload
-        - /usr/local/lib/python3.9/site-packages
         - /usr/lib64/python3.9/site-packages
         - /usr/lib/python3.9/site-packages
     pythonversion:
@@ -104,7 +103,7 @@ local:
     saltpath:
         /usr/lib/python3.9/site-packages/salt
     saltversion:
-        3004+0na.09efe72
+        3004+0na.7275ecf
     saltversioninfo:
         - 3004
     systemd:
@@ -127,7 +126,7 @@ local:
     alternatives:
         1.14-3.fc33
     audit-libs:
-        3.0.3-1.fc33
+        3.0.5-1.fc33
     basesystem:
         11-10.fc33
     bash:
@@ -295,7 +294,7 @@ local:
     kpartx:
         0.8.4-7.fc33
     krb5-libs:
-        1.18.2-30.fc33
+        1.18.2-31.fc33
     less:
         551-4.fc33
     libacl:
@@ -407,9 +406,9 @@ local:
     libssh-config:
         0.9.5-1.fc33
     libsss_idmap:
-        2.5.1-1.fc33
+        2.5.1-2.fc33
     libsss_nss_idmap:
-        2.5.1-1.fc33
+        2.5.1-2.fc33
     libstdc++:
         10.3.1-1.fc33
     libtasn1:
@@ -431,9 +430,9 @@ local:
     libverto:
         0.3.0-10.fc33
     libxcrypt:
-        4.4.23-1.fc33
+        4.4.25-1.fc33
     libxcrypt-devel:
-        4.4.23-1.fc33
+        4.4.25-1.fc33
     libxml2:
         2.9.12-4.fc33
     libyaml:
@@ -448,6 +447,8 @@ local:
         1:4.3-2.fc33
     memstrack:
         0.1.9-1.fc33
+    mkpasswd:
+        5.5.10-1.fc33
     mpfr:
         4.1.0-7.fc33
     ncurses:
@@ -497,7 +498,7 @@ local:
     perl-DynaLoader:
         1.47-471.fc33
     perl-Encode:
-        4:3.08-458.fc33
+        4:3.08-459.fc33
     perl-Errno:
         1.30-471.fc33
     perl-Error:
@@ -651,11 +652,11 @@ local:
     setup:
         2.13.7-2.fc33
     shadow-utils:
-        2:4.8.1-6.fc33
+        2:4.8.1-7.fc33
     sqlite-libs:
         3.34.1-1.fc33
     sssd-client:
-        2.5.1-1.fc33
+        2.5.1-2.fc33
     sudo:
         1.9.5p2-1.fc33
     systemd:
@@ -677,9 +678,11 @@ local:
     util-linux:
         2.36.1-1.fc33
     vim-minimal:
-        2:8.2.3290-1.fc33
+        2:8.2.3367-1.fc33
     which:
         2.21-20.fc33
+    whois-nls:
+        5.5.10-1.fc33
     xz:
         5.2.5-4.fc33
     xz-libs:
@@ -693,8 +696,6 @@ local:
 # salt-call --local pip.list
 local:
     ----------
-    Jinja2:
-        2.11.3
     gpg:
         1.14.0
     libcomps:

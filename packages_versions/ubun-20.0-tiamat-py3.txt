@@ -2,7 +2,7 @@ ubun-20.0-tiamat-py3
 Salt install method: stable
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003rc1+756.g6417cd7f83
+          Salt: 3003rc1+910.gc7a1d471f9
  
 Dependency Versions:
           cffi: 1.14.4
@@ -104,7 +104,7 @@ local:
     saltpath:
         /opt/saltstack/salt/run/salt
     saltversion:
-        3003rc1+756.g6417cd7f83
+        3003rc1+910.gc7a1d471f9
     saltversioninfo:
         - 3003
     systemd:
@@ -129,7 +129,7 @@ local:
     apt-transport-https:
         2.0.6
     base-files:
-        11ubuntu5.3
+        11ubuntu5.4
     base-passwd:
         3.5.47
     bash:
@@ -279,7 +279,7 @@ local:
     libgmp10:
         2:6.2.0+dfsg-4
     libgnutls30:
-        3.6.13-2ubuntu1.3
+        3.6.13-2ubuntu1.6
     libgpg-error0:
         1.37-1
     libgssapi-krb5-2:
@@ -391,9 +391,9 @@ local:
     libss2:
         1.45.5-2ubuntu1
     libssh-4:
-        0.9.3-2ubuntu2.1
+        0.9.3-2ubuntu2.2
     libssl1.1:
-        1.1.1f-1ubuntu2.5
+        1.1.1f-1ubuntu2.8
     libstdc++6:
         10.3.0-1ubuntu1~20.04
     libsystemd0:
@@ -417,7 +417,7 @@ local:
     locales:
         2.31-0ubuntu9.2
     login:
-        1:4.8.1-1ubuntu5.20.04
+        1:4.8.1-1ubuntu5.20.04.1
     logsave:
         1.45.5-2ubuntu1
     lsb-base:
@@ -443,9 +443,9 @@ local:
     openssh-sftp-server:
         1:8.2p1-4ubuntu0.3
     openssl:
-        1.1.1f-1ubuntu2.5
+        1.1.1f-1ubuntu2.8
     passwd:
-        1:4.8.1-1ubuntu5.20.04
+        1:4.8.1-1ubuntu5.20.04.1
     perl:
         5.30.0-9ubuntu0.2
     perl-base:
@@ -481,9 +481,9 @@ local:
     readline-common:
         8.0-4
     salt-common:
-        3003~rc1+756.g6417cd7f83+ds-1
+        3003~rc1+910.gc7a1d471f9+ds-1
     salt-minion:
-        3003~rc1+756.g6417cd7f83+ds-1
+        3003~rc1+910.gc7a1d471f9+ds-1
     sed:
         4.7-1
     sensible-utils:

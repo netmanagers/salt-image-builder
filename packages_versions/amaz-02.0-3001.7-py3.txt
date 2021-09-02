@@ -151,7 +151,7 @@ local:
     cryptsetup-libs:
         1.7.4-4.amzn2
     curl:
-        7.61.1-12.amzn2.0.4
+        7.76.1-4.amzn2.0.1
     cyrus-sasl-lib:
         2.1.26-23.amzn2
     dbus:
@@ -171,7 +171,7 @@ local:
     elfutils-libs:
         0.176-2.amzn2
     emacs-filesystem:
-        1:27.1-1.amzn2.0.1
+        1:27.2-4.amzn2.0.1
     expat:
         2.1.0-12.amzn2
     file-libs:
@@ -249,7 +249,7 @@ local:
     libcrypt:
         2.26-48.amzn2
     libcurl:
-        7.61.1-12.amzn2.0.4
+        7.76.1-4.amzn2.0.1
     libdb:
         5.3.21-24.amzn2.0.3
     libdb-utils:

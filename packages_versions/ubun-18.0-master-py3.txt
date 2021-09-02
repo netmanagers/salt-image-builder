@@ -2,7 +2,7 @@ ubun-18.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.09efe72
+          Salt: 3004+0na.7275ecf
  
 Dependency Versions:
           cffi: Not Installed
@@ -11,7 +11,7 @@ Dependency Versions:
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
-        Jinja2: 2.11.3
+        Jinja2: 3.0.1
        libgit2: Not Installed
       M2Crypto: Not Installed
           Mako: Not Installed
@@ -129,7 +129,7 @@ local:
     saltpath:
         /usr/local/lib/python3.6/dist-packages/salt
     saltversion:
-        3004+0na.09efe72
+        3004+0na.7275ecf
     saltversioninfo:
         - 3004
     systemd:
@@ -464,9 +464,9 @@ local:
     libss2:
         1.44.1-1ubuntu1.3
     libssl1.0.0:
-        1.0.2n-1ubuntu5.6
+        1.0.2n-1ubuntu5.7
     libssl1.1:
-        1.1.1-1ubuntu2.1~18.04.10
+        1.1.1-1ubuntu2.1~18.04.13
     libstdc++6:
         8.4.0-1ubuntu1~18.04
     libsystemd0:
@@ -520,7 +520,7 @@ local:
     openssh-sftp-server:
         1:7.6p1-4ubuntu0.5
     openssl:
-        1.1.1-1ubuntu2.1~18.04.10
+        1.1.1-1ubuntu2.1~18.04.13
     passwd:
         1:4.5-1ubuntu2
     perl:
@@ -593,7 +593,7 @@ local:
 local:
     ----------
     Jinja2:
-        2.11.3
+        3.0.1
     MarkupSafe:
         2.0.1
     PyYAML:
@@ -623,11 +623,11 @@ local:
     requests:
         2.26.0
     salt:
-        3004+0na.09efe72
+        3004+0na.7275ecf
     setuptools:
         39.0.1
     typing-extensions:
-        3.10.0.0
+        3.10.0.2
     urllib3:
         1.26.6
     wheel:

@@ -129,7 +129,7 @@ local:
     aaa_base:
         84.87+git20180409.04c9dae-3.45.1
     bash:
-        4.4-19.3.1
+        4.4-19.6.1
     binutils:
         2.35.1-7.18.1
     boost-license1_66_0:
@@ -141,7 +141,7 @@ local:
     coreutils:
         8.32-1.2
     cpio:
-        2.12-3.3.1
+        2.12-3.9.1
     cpp:
         7-3.6.1
     cpp7:
@@ -153,7 +153,7 @@ local:
     curl:
         7.66.0-4.22.1
     dbus-1:
-        1.12.2-8.6.1
+        1.12.2-8.11.2
     diffutils:
         3.6-4.3.1
     file:
@@ -201,7 +201,7 @@ local:
     kmod:
         28-2.1
     krb5:
-        1.16.3-3.18.1
+        1.16.3-3.21.1
     kubic-locale-archive:
         2.31-bp153.1.13
     less:
@@ -255,7 +255,7 @@ local:
     libcurl4:
         7.66.0-4.22.1
     libdbus-1-3:
-        1.12.2-8.6.1
+        1.12.2-8.11.2
     libdevmapper1_03:
         1.02.163-8.33.1
     libdw1:
@@ -341,7 +341,7 @@ local:
     libnsl2:
         1.2.0-2.44
     libopenssl1_1:
-        1.1.1d-11.23.1
+        1.1.1d-11.27.1
     libp11-kit0:
         0.23.2-4.8.3
     libpcre1:
@@ -363,7 +363,7 @@ local:
     libqrencode4:
         4.0.0-1.17
     libreadline7:
-        7.0-19.3.1
+        7.0-19.6.1
     libsasl2-3:
         2.1.27-2.2
     libseccomp2:
@@ -389,7 +389,7 @@ local:
     libstdc++6:
         10.3.0+git1587-1.6.4
     libsystemd0:
-        246.13-7.8.1
+        246.15-7.11.1
     libtasn1:
         4.13-4.5.1
     libtasn1-6:
@@ -403,7 +403,7 @@ local:
     libubsan0:
         7.5.0+r278197-4.25.1
     libudev1:
-        246.13-7.8.1
+        246.15-7.11.1
     libunistring2:
         0.9.10-1.1
     libusb-1_0-0:
@@ -455,7 +455,7 @@ local:
     openssh-server:
         8.4p1-3.3.1
     openssl-1_1:
-        1.1.1d-11.23.1
+        1.1.1d-11.27.1
     p11-kit:
         0.23.2-4.8.3
     p11-kit-tools:
@@ -493,17 +493,17 @@ local:
     python3-appdirs:
         1.4.3-1.21
     python3-asn1crypto:
-        0.24.0-1.20
+        0.24.0-3.2.1
     python3-base:
         3.6.13-3.84.1
     python3-certifi:
         2018.1.18-1.18
     python3-cffi:
-        1.13.2-1.25
+        1.13.2-3.2.5
     python3-chardet:
         3.0.4-3.23
     python3-cryptography:
-        2.8-3.6.1
+        2.8-10.1
     python3-devel:
         3.6.13-3.84.1
     python3-idna:
@@ -517,9 +517,9 @@ local:
     python3-pyOpenSSL:
         19.0.0-1.31
     python3-pyasn1:
-        0.4.2-1.20
+        0.4.2-3.2.1
     python3-pycparser:
-        2.17-1.24
+        2.17-3.2.1
     python3-pyparsing:
         2.4.7-1.24
     python3-requests:
@@ -531,7 +531,7 @@ local:
     python3-urllib3:
         1.25.10-4.3.1
     rpm:
-        4.14.1-29.46
+        4.14.3-37.2
     rpm-config-SUSE:
         1-3.61
     sed:
@@ -549,7 +549,7 @@ local:
     system-user-root:
         20190513-3.3.1
     systemd:
-        246.13-7.8.1
+        246.15-7.11.1
     systemd-default-settings:
         0.7-3.2.1
     systemd-default-settings-branding-SLE:
@@ -563,7 +563,7 @@ local:
     terminfo-base:
         6.1-5.6.2
     udev:
-        246.13-7.8.1
+        246.15-7.11.1
     update-alternatives:
         1.19.0.4-2.48
     util-linux:
@@ -632,7 +632,7 @@ local:
     six:
         1.14.0
     typing-extensions:
-        3.10.0.0
+        3.10.0.2
     urllib3:
         1.26.6
     wheel:

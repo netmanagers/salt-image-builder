@@ -2,7 +2,7 @@ amaz-02.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.09efe72
+          Salt: 3004+0na.7275ecf
  
 Dependency Versions:
           cffi: Not Installed
@@ -11,7 +11,7 @@ Dependency Versions:
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
-        Jinja2: 2.11.3
+        Jinja2: 3.0.1
        libgit2: Not Installed
       M2Crypto: Not Installed
           Mako: Not Installed
@@ -94,7 +94,6 @@ local:
         - /usr/lib64/python37.zip
         - /usr/lib64/python3.7
         - /usr/lib64/python3.7/lib-dynload
-        - /usr/local/lib/python3.7/site-packages
         - /usr/lib64/python3.7/site-packages
         - /usr/lib/python3.7/site-packages
     pythonversion:
@@ -106,7 +105,7 @@ local:
     saltpath:
         /usr/lib/python3.7/site-packages/salt
     saltversion:
-        3004+0na.09efe72
+        3004+0na.7275ecf
     saltversioninfo:
         - 3004
     systemd:
@@ -553,8 +552,6 @@ local:
 # salt-call --local pip.list
 local:
     ----------
-    Jinja2:
-        2.11.3
     pip:
         20.2.2
     wheel:
