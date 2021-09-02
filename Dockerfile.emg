@@ -42,8 +42,10 @@ RUN mkdir --parents /etc/portage/repos.conf \
     # Use temporary workaround of downgrading Jinja2 for images built using `git`
     # See https://github.com/saltstack/salt/issues/60188
     # Now required on most `stable` images as well and already at `2.11.3` on the rest,
-    # so install without a conditional
- && pip3 install --no-cache-dir --prefix=/usr Jinja2==2.11.3 \
+    # so install for all except `master` builds
+ && if [ "${SALT_VERSION}" != "master" ]; then \
+      pip3 install --no-cache-dir --prefix=/usr Jinja2==2.11.3; \
+    fi \
     # Generate locales
  && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen && locale-gen \
     # Enable sshd and disable salt's service as we don't need it running
