@@ -244,9 +244,7 @@ amaz-02.0-3001.8-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 # ARCHLINUX
 # Latest stable release (can flag out-of-date from this page): https://archlinux.org/packages/community/any/salt/
 arch-late-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'archlinux/archlinux'  , DV: 'latest' , PI: 'pac', SIM: 'git'   , SV: 'master', SVB: ''      , PV: '3', EP: 'python-pip'}}
-# arch-late-3003.3-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'archlinux/archlinux'  , DV: 'latest' , PI: 'pac', SIM: 'stable', SV: '3003.3', SVB: 'latest', PV: '3', EP: 'python-pip'}}
-arch-late-3003.3-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'archlinux/archlinux'  , DV: 'latest' , PI: 'pac', SIM: 'git'   , SV: '3003.3', SVB: ''      , PV: '3', EP: 'python-pip'}}
-arch-late-3003.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'archlinux/archlinux'  , DV: 'latest' , PI: 'pac', SIM: 'stable', SV: '3003.1', SVB: 'latest', PV: '3', EP: 'python-pip'}}
+arch-late-3003.3-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'archlinux/archlinux'  , DV: 'latest' , PI: 'pac', SIM: 'stable', SV: '3003.3', SVB: 'latest', PV: '3', EP: 'python-pip'}}
 arch-late-3002.7-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'archlinux/archlinux'  , DV: 'latest' , PI: 'pac', SIM: 'git'   , SV: '3002.7', SVB: ''      , PV: '3', EP: 'python-pip'}}
 arch-late-3001.8-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'archlinux/archlinux'  , DV: 'latest' , PI: 'pac', SIM: 'git'   , SV: '3001.8', SVB: ''      , PV: '3', EP: 'python-pip'}}
 
@@ -264,8 +262,8 @@ cent-07.0-3001.8-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 
 # DEBIAN
 debi-12.0-tiamat-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'               , DV: '12'     , PI: 'apt', SIM: 'stable', SV: 'tiamat', SVB: ''      , PV: '3', EP: 'python3-pip'}}
-debi-12.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'               , DV: '12'     , PI: 'apt', SIM: 'git'   , SV: 'master', SVB: ''      , PV: '3', EP: 'python3-apt python3-pip'}}
-debi-12.0-3003.3-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'               , DV: '12'     , PI: 'apt', SIM: 'stable', SV: '3003.3', SVB: ''      , PV: '3', EP: 'python3-pip'}}
+# debi-12.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'               , DV: '12'     , PI: 'apt', SIM: 'git'   , SV: 'master', SVB: ''      , PV: '3', EP: 'python3-apt python3-pip'}}
+# debi-12.0-3003.3-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'               , DV: '12'     , PI: 'apt', SIM: 'stable', SV: '3003.3', SVB: ''      , PV: '3', EP: 'python3-pip'}}
 debi-11.0-tiamat-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'               , DV: '11'     , PI: 'apt', SIM: 'stable', SV: 'tiamat', SVB: ''      , PV: '3', EP: 'python3-pip'}}
 debi-11.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'               , DV: '11'     , PI: 'apt', SIM: 'git'   , SV: 'master', SVB: ''      , PV: '3', EP: 'python3-apt python3-pip'}}
 debi-11.0-3003.3-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'               , DV: '11'     , PI: 'apt', SIM: 'stable', SV: '3003.3', SVB: ''      , PV: '3', EP: 'python3-pip'}}
