@@ -1,5 +1,13 @@
 # Changelog
 
+# [1.52.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.51.0...v1.52.0) (2021-09-05)
+
+
+### Features
+
+* **gitlab-ci:** build Debian Bookworm (12) Tiamat only [skip ci] ([73def94](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/73def94031c313bcb47f6de961e0b55677e4b7f7))
+* **gitlab-ci:** build stable `3003.3` for Arch Linux ([f2d1acd](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/f2d1acd2084cc6f17787c964c549f888a10954dd))
+
 # [1.51.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.50.0...v1.51.0) (2021-09-02)
 
 

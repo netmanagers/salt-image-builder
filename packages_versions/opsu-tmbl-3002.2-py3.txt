@@ -32,12 +32,12 @@ Dependency Versions:
            ZMQ: 4.3.4
  
 System Versions:
-          dist: opensuse-tumbleweed 20210901 
+          dist: opensuse-tumbleweed 20210902 
         locale: utf-8
        machine: x86_64
        release: 5.4.109+
         system: Linux
-       version: openSUSE Tumbleweed 20210901 
+       version: openSUSE Tumbleweed 20210902 
  
 # salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
 local:
@@ -65,7 +65,7 @@ local:
     lsb_distrib_id:
         openSUSE Tumbleweed
     lsb_distrib_release:
-        20210901
+        20210902
     os:
         SUSE
     os_family:
@@ -76,16 +76,16 @@ local:
     oscodename:
         openSUSE Tumbleweed
     osfinger:
-        openSUSE Tumbleweed-20210901
+        openSUSE Tumbleweed-20210902
     osfullname:
         openSUSE Tumbleweed
     osmajorrelease:
-        20210901
+        20210902
     osmanufacturer:
     osrelease:
-        20210901
+        20210902
     osrelease_info:
-        - 20210901
+        - 20210902
     osversion:
     pythonexecutable:
         /usr/bin/python3
@@ -228,9 +228,9 @@ local:
     libcrypt1:
         4.4.25-1.1
     libcryptsetup12:
-        2.3.6-1.1
+        2.4.0-1.1
     libcryptsetup12-hmac:
-        2.3.6-1.1
+        2.4.0-1.1
     libcurl4:
         7.78.0-1.1
     libdb-4_8:
@@ -258,7 +258,7 @@ local:
     libfido2-udev:
         1.7.0-1.2
     libgcc_s1:
-        11.2.1+git610-1.1
+        11.2.1+git610-1.2
     libgcrypt20:
         1.9.4-1.1
     libgcrypt20-hmac:
@@ -272,7 +272,7 @@ local:
     libgmp10:
         6.2.1-3.13
     libgomp1:
-        11.2.1+git610-1.1
+        11.2.1+git610-1.2
     libgpg-error0:
         1.42-2.1
     libgpgme11:
@@ -374,7 +374,7 @@ local:
     libssh4:
         0.9.6-1.1
     libstdc++6:
-        11.2.1+git610-1.1
+        11.2.1+git610-1.2
     libsystemd0:
         248.6-2.1
     libtasn1-6:
@@ -412,7 +412,7 @@ local:
     libzstd1:
         1.5.0-1.12
     libzypp:
-        17.28.1-1.1
+        17.28.2-1.1
     login_defs:
         4.8.1-7.1
     logrotate:
@@ -428,9 +428,9 @@ local:
     openSUSE-build-key:
         1.0-40.1
     openSUSE-release:
-        20210901-1134.1
+        20210902-1136.1
     openSUSE-release-appliance-docker:
-        20210901-1134.1
+        20210902-1136.1
     openssh:
         8.4p1-7.1
     openssh-clients:
@@ -480,7 +480,7 @@ local:
     python-xml:
         2.7.18-7.1
     python3-salt:
-        3002.2-10.11
+        3002.2-10.12
     python38:
         3.8.11-1.3
     python38-Babel:
@@ -556,9 +556,9 @@ local:
     rpm-config-SUSE:
         0.g83-1.1
     salt:
-        3002.2-10.11
+        3002.2-10.12
     salt-minion:
-        3002.2-10.11
+        3002.2-10.12
     sed:
         4.8-3.7
     shadow:

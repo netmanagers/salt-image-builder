@@ -2,7 +2,7 @@ debi-12.0-tiamat-py3
 Salt install method: stable
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003rc1+911.g7275ecf073
+          Salt: 3003rc1+914.g8ce39ddb25
  
 Dependency Versions:
           cffi: 1.14.4
@@ -32,12 +32,12 @@ Dependency Versions:
            ZMQ: 4.3.1
  
 System Versions:
-          dist: debian 11 bullseye
+          dist: debian testing/unstable n/a
         locale: utf-8
        machine: x86_64
        release: 5.4.109+
         system: Linux
-       version: Debian GNU/Linux 11 bullseye
+       version: Debian GNU/Linux testing/unstable n/a
  
 # salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
 local:
@@ -61,11 +61,10 @@ local:
         timezone:
             UTC
     lsb_distrib_codename:
-        bullseye
+        Debian GNU/Linux bookworm/sid
     lsb_distrib_id:
         Debian GNU/Linux
     lsb_distrib_release:
-        11
     os:
         Debian
     os_family:
@@ -74,18 +73,17 @@ local:
         amd64
     osbuild:
     oscodename:
-        bullseye
+        Debian GNU/Linux bookworm/sid
     osfinger:
-        Debian-11
+        Debian-testing/unstable
     osfullname:
         Debian GNU/Linux
     osmajorrelease:
-        11
     osmanufacturer:
     osrelease:
-        11
+        testing/unstable
     osrelease_info:
-        - 11
+        - testing/unstable
     osversion:
     pythonexecutable:
         /opt/saltstack/salt/run/run
@@ -103,7 +101,7 @@ local:
     saltpath:
         /opt/saltstack/salt/run/salt
     saltversion:
-        3003rc1+911.g7275ecf073
+        3003rc1+914.g8ce39ddb25
     saltversioninfo:
         - 3003
     systemd:
@@ -124,21 +122,21 @@ local:
     adduser:
         3.118
     apt:
-        2.2.4
+        2.3.8
     apt-transport-https:
         2.3.8
     base-files:
-        11.1
+        12
     base-passwd:
         3.5.51
     bash:
-        5.1-2+b3
+        5.1-3+b1
     bsdextrautils:
         2.37.2-1
     bsdmainutils:
         12.1.7+nmu3
     bsdutils:
-        1:2.36.1-8
+        1:2.37.2-1
     ca-certificates:
         20210119
     coreutils:
@@ -146,7 +144,7 @@ local:
     curl:
         7.74.0-1.3+b1
     dash:
-        0.5.11+git20200708+dd9ef66-5
+        0.5.11+git20210120+802ebd4-1
     dctrl-tools:
         2.24-3+b1
     debconf:
@@ -166,13 +164,15 @@ local:
     dpkg:
         1.20.9
     e2fsprogs:
-        1.46.2-2
+        1.46.4-1
     findutils:
         4.8.0-1
     gcc-10-base:
         10.2.1-6
+    gcc-11-base:
+        11.2.0-3
     gcc-9-base:
-        9.3.0-22
+        9.4.0-2
     git:
         1:2.33.0-1
     git-man:
@@ -206,11 +206,11 @@ local:
     init-system-helpers:
         1.60
     libacl1:
-        2.2.53-10
+        2.3.1-1
     libapparmor1:
-        2.13.6-10
+        3.0.3-2
     libapt-pkg6.0:
-        2.2.4
+        2.3.8
     libargon2-1:
         0~20171227-0.2
     libassuan0:
@@ -218,11 +218,11 @@ local:
     libattr1:
         1:2.4.48-6
     libaudit-common:
-        1:3.0-2
+        1:3.0.5-1
     libaudit1:
-        1:3.0-2
+        1:3.0.5-1
     libblkid1:
-        2.36.1-8
+        2.37.2-1
     libbrotli1:
         1.0.9-2+b2
     libbsd0:
@@ -230,11 +230,11 @@ local:
     libbz2-1.0:
         1.0.8-4
     libc-bin:
-        2.31-13
+        2.31-17
     libc-l10n:
         2.31-17
     libc6:
-        2.31-13
+        2.31-17
     libcap-ng0:
         0.7.9-2.2+b1
     libcap2:
@@ -242,7 +242,7 @@ local:
     libcbor0:
         0.5.0+dfsg-2
     libcom-err2:
-        1.46.2-2
+        1.46.4-1
     libcrypt1:
         1:4.4.18-4
     libcryptsetup12:
@@ -264,13 +264,13 @@ local:
     libexpat1:
         2.2.10-2
     libext2fs2:
-        1.46.2-2
+        1.46.4-1
     libffi7:
         3.3-6
     libfido2-1:
         1.8.0-1
     libgcc-s1:
-        10.2.1-6
+        11.2.0-3
     libgcrypt20:
         1.8.7-6
     libgdbm-compat4:
@@ -282,27 +282,27 @@ local:
     libgnutls30:
         3.7.2-2
     libgpg-error0:
-        1.38-2
+        1.42-3
     libgssapi-krb5-2:
-        1.18.3-6
+        1.18.3-7
     libhogweed6:
         3.7.3-1
     libidn2-0:
-        2.3.0-5
+        2.3.2-2
     libip4tc2:
         1.8.7-1
     libjson-c5:
         0.15-2
     libk5crypto3:
-        1.18.3-6
+        1.18.3-7
     libkeyutils1:
         1.6.1-2
     libkmod2:
         29-1
     libkrb5-3:
-        1.18.3-6
+        1.18.3-7
     libkrb5support0:
-        1.18.3-6
+        1.18.3-7
     libksba8:
         1.5.0-3
     libldap-2.4-2:
@@ -314,13 +314,13 @@ local:
     libmd0:
         1.0.3-3
     libmount1:
-        2.36.1-8
+        2.37.2-1
     libmpdec3:
         2.5.1-2
     libncurses6:
-        6.2+20201114-2
+        6.2+20201114-4
     libncursesw6:
-        6.2+20201114-2
+        6.2+20201114-4
     libnettle8:
         3.7.3-1
     libnghttp2-14:
@@ -352,9 +352,9 @@ local:
     libpython3-stdlib:
         3.9.2-3
     libpython3.9-minimal:
-        3.9.2-1
+        3.9.7-2
     libpython3.9-stdlib:
-        3.9.2-1
+        3.9.7-2
     libreadline8:
         8.1-2
     librtmp1:
@@ -374,33 +374,33 @@ local:
     libsepol1:
         3.1-1
     libsmartcols1:
-        2.36.1-8
+        2.37.2-1
     libsqlite3-0:
         3.36.0-2
     libss2:
-        1.46.2-2
+        1.46.4-1
     libssh2-1:
         1.9.0-3
     libssl1.1:
-        1.1.1k-1
+        1.1.1l-1
     libstdc++6:
-        10.2.1-6
+        11.2.0-3
     libsystemd0:
         247.9-1
     libtasn1-6:
         4.16.0-2
     libtinfo6:
-        6.2+20201114-2
+        6.2+20201114-4
     libtirpc-common:
-        1.3.1-1
+        1.3.2-2
     libtirpc3:
-        1.3.1-1
+        1.3.2-2
     libudev1:
         247.9-1
     libunistring2:
-        0.9.10-4
+        0.9.10-6
     libuuid1:
-        2.36.1-8
+        2.37.2-1
     libwrap0:
         7.6.q-31
     libxxhash0:
@@ -412,7 +412,7 @@ local:
     login:
         1:4.8.1-1
     logsave:
-        1.46.2-2
+        1.46.4-1
     lsb-base:
         11.1.0
     lsb-release:
@@ -422,7 +422,7 @@ local:
     media-types:
         4.0.0
     mount:
-        2.36.1-8
+        2.37.2-1
     ncal:
         12.1.7+nmu3
     ncurses-base:
@@ -470,17 +470,17 @@ local:
     python3-wheel:
         0.34.2-1
     python3.9:
-        3.9.2-1
+        3.9.7-2
     python3.9-minimal:
-        3.9.2-1
+        3.9.7-2
     readline-common:
         8.1-2
     runit-helper:
         2.10.3
     salt-common:
-        3003~rc1+911.g7275ecf073+ds-1
+        3003~rc1+914.g8ce39ddb25+ds-1
     salt-minion:
-        3003~rc1+911.g7275ecf073+ds-1
+        3003~rc1+914.g8ce39ddb25+ds-1
     sed:
         4.7-1
     sensible-utils:
@@ -504,7 +504,7 @@ local:
     udev:
         247.9-1
     util-linux:
-        2.36.1-8
+        2.37.2-1
     wget:
         1.21-1+b1
     zlib1g:
