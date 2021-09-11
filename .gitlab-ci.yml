@@ -302,27 +302,13 @@ fedo-33.0-3001.8-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 # GENTOO
 # Available versions: https://packages.gentoo.org/packages/app-admin/salt
 gent-late-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'latest' , PI: 'emg', SIM: 'git'   , SV: 'master', SVB: ''      , PV: '3', EP: ''}}
-# gent-late-3003.3-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'latest' , PI: 'emg', SIM: 'stable', SV: '3003.3', SVB: ''      , PV: '3', EP: ''}}
-gent-late-3003.3-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'latest' , PI: 'emg', SIM: 'git'   , SV: '3003.3', SVB: ''      , PV: '3', EP: ''}}
-gent-late-3003.1-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'latest' , PI: 'emg', SIM: 'stable', SV: '3003.1', SVB: ''      , PV: '3', EP: ''}}
-gent-late-3003.0-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'latest' , PI: 'emg', SIM: 'stable', SV: '3003.0', SVB: ''      , PV: '3', EP: ''}}
-# gent-late-3002.7-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'latest' , PI: 'emg', SIM: 'stable', SV: '3002.7', SVB: ''      , PV: '3', EP: ''}}
-gent-late-3002.7-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'latest' , PI: 'emg', SIM: 'git'   , SV: '3002.7', SVB: ''      , PV: '3', EP: ''}}
-gent-late-3002.5-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'latest' , PI: 'emg', SIM: 'stable', SV: '3002.5', SVB: ''      , PV: '3', EP: ''}}
-# gent-late-3001.8-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'latest' , PI: 'emg', SIM: 'stable', SV: '3001.8', SVB: ''      , PV: '3', EP: ''}}
-gent-late-3001.8-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'latest' , PI: 'emg', SIM: 'git'   , SV: '3001.8', SVB: ''      , PV: '3', EP: ''}}
-gent-late-3001.6-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'latest' , PI: 'emg', SIM: 'stable', SV: '3001.6', SVB: ''      , PV: '3', EP: ''}}
+gent-late-3003.3-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'latest' , PI: 'emg', SIM: 'stable', SV: '3003.3', SVB: ''      , PV: '3', EP: ''}}
+gent-late-3002.7-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'latest' , PI: 'emg', SIM: 'stable', SV: '3002.7', SVB: ''      , PV: '3', EP: ''}}
+gent-late-3001.8-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'latest' , PI: 'emg', SIM: 'stable', SV: '3001.8', SVB: ''      , PV: '3', EP: ''}}
 gent-sysd-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'systemd', PI: 'emg', SIM: 'git'   , SV: 'master', SVB: ''      , PV: '3', EP: ''}}
-# gent-sysd-3003.3-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'systemd', PI: 'emg', SIM: 'stable', SV: '3003.3', SVB: ''      , PV: '3', EP: ''}}
-gent-sysd-3003.3-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'systemd', PI: 'emg', SIM: 'git'   , SV: '3003.3', SVB: ''      , PV: '3', EP: ''}}
-gent-sysd-3003.1-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'systemd', PI: 'emg', SIM: 'stable', SV: '3003.1', SVB: ''      , PV: '3', EP: ''}}
-gent-sysd-3003.0-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'systemd', PI: 'emg', SIM: 'stable', SV: '3003.0', SVB: ''      , PV: '3', EP: ''}}
-# gent-sysd-3002.7-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'systemd', PI: 'emg', SIM: 'stable', SV: '3002.7', SVB: ''      , PV: '3', EP: ''}}
-gent-sysd-3002.7-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'systemd', PI: 'emg', SIM: 'git'   , SV: '3002.7', SVB: ''      , PV: '3', EP: ''}}
-gent-sysd-3002.5-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'systemd', PI: 'emg', SIM: 'stable', SV: '3002.5', SVB: ''      , PV: '3', EP: ''}}
-# gent-sysd-3001.8-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'systemd', PI: 'emg', SIM: 'stable', SV: '3001.8', SVB: ''      , PV: '3', EP: ''}}
-gent-sysd-3001.8-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'systemd', PI: 'emg', SIM: 'git'   , SV: '3001.8', SVB: ''      , PV: '3', EP: ''}}
-gent-sysd-3001.6-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'systemd', PI: 'emg', SIM: 'stable', SV: '3001.6', SVB: ''      , PV: '3', EP: ''}}
+gent-sysd-3003.3-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'systemd', PI: 'emg', SIM: 'stable', SV: '3003.3', SVB: ''      , PV: '3', EP: ''}}
+gent-sysd-3002.7-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'systemd', PI: 'emg', SIM: 'stable', SV: '3002.7', SVB: ''      , PV: '3', EP: ''}}
+gent-sysd-3001.8-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'systemd', PI: 'emg', SIM: 'stable', SV: '3001.8', SVB: ''      , PV: '3', EP: ''}}
 
 # OPENSUSE
 # For openSUSE, the bootstrap script only allows `latest` to be built using `stable`
