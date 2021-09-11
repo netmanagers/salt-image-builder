@@ -22,7 +22,7 @@ Dependency Versions:
       pycrypto: Not Installed
   pycryptodome: 3.10.1
         pygit2: Not Installed
-        Python: 3.9.6 (default, Jun 30 2021, 10:22:16)
+        Python: 3.9.7 (default, Aug 31 2021, 13:28:12)
   python-gnupg: Not Installed
         PyYAML: 5.4.1
          PyZMQ: 22.2.1
@@ -93,7 +93,7 @@ local:
     pythonversion:
         - 3
         - 9
-        - 6
+        - 7
         - final
         - 0
     saltpath:
@@ -139,7 +139,7 @@ local:
     ca-certificates:
         20210603-1
     ca-certificates-mozilla:
-        3.69.1-1
+        3.70-1
     ca-certificates-utils:
         20210603-1
     coreutils:
@@ -175,7 +175,7 @@ local:
     gcc-libs:
         11.1.0-1
     gdbm:
-        1.20-1
+        1.21-1
     gettext:
         0.21-1
     git:
@@ -217,7 +217,7 @@ local:
     kmod:
         29-1
     krb5:
-        1.19.1-1
+        1.19.2-1
     ldns:
         1.7.1-2
     less:
@@ -227,13 +227,13 @@ local:
     libassuan:
         2.5.5-1
     libcap:
-        2.53-1
+        2.56-1
     libcap-ng:
         0.8.2-3
     libcroco:
         0.6.13-2
     libedit:
-        20210522_3.1-1
+        20210714_3.1-1
     libelf:
         0.185-1
     libffi:
@@ -263,7 +263,7 @@ local:
     libnl:
         3.5.0-3
     libnsl:
-        1.3.0-2
+        2.0.0-1
     libp11-kit:
         0.24.0-1
     libpcap:
@@ -287,7 +287,7 @@ local:
     libxcrypt:
         4.4.25-1
     libxml2:
-        2.9.10-9
+        2.9.12-2
     libyaml:
         0.2.5-1
     licenses:
@@ -313,7 +313,7 @@ local:
     p11-kit:
         0.24.0-1
     pacman:
-        6.0.0-5
+        6.0.1-1
     pacman-mirrorlist:
         20210822-1
     pam:
@@ -343,7 +343,7 @@ local:
     psmisc:
         23.4-1
     python:
-        3.9.6-1
+        3.9.7-1
     python-appdirs:
         1.4.4-3
     python-cachecontrol:
@@ -357,11 +357,11 @@ local:
     python-contextlib2:
         0.6.0.post1-3
     python-cryptography:
-        3.4.8-1
+        3.4.8-2
     python-distlib:
         0.3.2-1
     python-distro:
-        1.5.0-3
+        1.6.0-1
     python-html5lib:
         1.1-6
     python-idna:
@@ -373,7 +373,7 @@ local:
     python-ordered-set:
         4.0.2-3
     python-packaging:
-        20.9-1
+        20.9-2
     python-pep517:
         0.11.0-1
     python-pip:
@@ -395,7 +395,7 @@ local:
     python-retrying:
         1.3.3-9
     python-setuptools:
-        1:57.4.0-1
+        1:57.4.0-2
     python-six:
         1.16.0-1
     python-toml:
@@ -461,6 +461,8 @@ local:
         3.4.8
     distlib:
         0.3.2
+    distro:
+        1.6.0
     html5lib:
         1.1
     idna:

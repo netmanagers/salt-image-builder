@@ -2,7 +2,7 @@ fedo-34.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.8ce39dd
+          Salt: 3004+0na.407a8aa
  
 Dependency Versions:
           cffi: Not Installed
@@ -22,7 +22,7 @@ Dependency Versions:
       pycrypto: Not Installed
   pycryptodome: 3.10.1
         pygit2: Not Installed
-        Python: 3.9.6 (default, Jul 16 2021, 00:00:00)
+        Python: 3.9.7 (default, Aug 30 2021, 00:00:00)
   python-gnupg: Not Installed
         PyYAML: 5.4.1
          PyZMQ: 21.0.2
@@ -97,13 +97,13 @@ local:
     pythonversion:
         - 3
         - 9
-        - 6
+        - 7
         - final
         - 0
     saltpath:
         /usr/lib/python3.9/site-packages/salt
     saltversion:
-        3004+0na.8ce39dd
+        3004+0na.407a8aa
     saltversioninfo:
         - 3004
     systemd:
@@ -148,7 +148,7 @@ local:
     cpp:
         11.2.1-1.fc34
     cracklib:
-        2.9.6-25.fc34
+        2.9.6-27.fc34
     crypto-policies:
         20210213-1.git5c710c0.fc34
     crypto-policies-scripts:
@@ -427,6 +427,8 @@ local:
         0.3.2-1.fc34
     libxcrypt:
         4.4.25-1.fc34
+    libxcrypt-compat:
+        4.4.25-1.fc34
     libxcrypt-devel:
         4.4.25-1.fc34
     libxml2:
@@ -601,10 +603,12 @@ local:
         21.0.1-3.fc34
     python-setuptools-wheel:
         53.0.0-2.fc34
+    python-unversioned-command:
+        3.9.7-1.fc34
     python3:
-        3.9.6-2.fc34
+        3.9.7-1.fc34
     python3-devel:
-        3.9.6-2.fc34
+        3.9.7-1.fc34
     python3-dnf:
         4.8.0-1.fc34
     python3-gpg:
@@ -616,7 +620,7 @@ local:
     python3-libdnf:
         0.63.1-1.fc34
     python3-libs:
-        3.9.6-2.fc34
+        3.9.7-1.fc34
     python3-pip:
         21.0.1-3.fc34
     python3-rpm:
@@ -668,7 +672,7 @@ local:
     util-linux:
         2.36.2-1.fc34
     vim-minimal:
-        2:8.2.3391-1.fc34
+        2:8.2.3404-1.fc34
     which:
         2.21-26.fc34
     whois-nls:

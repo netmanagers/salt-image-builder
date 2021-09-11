@@ -2,7 +2,7 @@ debi-12.0-tiamat-py3
 Salt install method: stable
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003rc1+914.g8ce39ddb25
+          Salt: 3003rc1+927.g407a8aa446
  
 Dependency Versions:
           cffi: 1.14.4
@@ -22,7 +22,7 @@ Dependency Versions:
       pycrypto: Not Installed
   pycryptodome: 3.9.8
         pygit2: Not Installed
-        Python: 3.7.10 (default, May 20 2021, 20:31:16)
+        Python: 3.7.12 (default, Sep  8 2021, 17:09:52)
   python-gnupg: 0.4.4
         PyYAML: 5.4.1
          PyZMQ: 18.0.1
@@ -95,13 +95,13 @@ local:
     pythonversion:
         - 3
         - 7
-        - 10
+        - 12
         - final
         - 0
     saltpath:
         /opt/saltstack/salt/run/salt
     saltversion:
-        3003rc1+914.g8ce39ddb25
+        3003rc1+927.g407a8aa446
     saltversioninfo:
         - 3003
     systemd:
@@ -124,7 +124,7 @@ local:
     apt:
         2.3.8
     apt-transport-https:
-        2.3.8
+        2.3.9
     base-files:
         12
     base-passwd:
@@ -304,7 +304,7 @@ local:
     libkrb5support0:
         1.18.3-7
     libksba8:
-        1.5.0-3
+        1.6.0-2
     libldap-2.4-2:
         2.4.59+dfsg-1
     liblz4-1:
@@ -432,11 +432,11 @@ local:
     net-tools:
         1.60+git20181103.0eebece-1
     openssh-client:
-        1:8.4p1-5
+        1:8.4p1-6
     openssh-server:
-        1:8.4p1-5
+        1:8.4p1-6
     openssh-sftp-server:
-        1:8.4p1-5
+        1:8.4p1-6
     openssl:
         1.1.1l-1
     passwd:
@@ -456,9 +456,9 @@ local:
     python3:
         3.9.2-3
     python3-distutils:
-        3.9.2-1
+        3.9.7-1
     python3-lib2to3:
-        3.9.2-1
+        3.9.7-1
     python3-minimal:
         3.9.2-3
     python3-pip:
@@ -478,9 +478,9 @@ local:
     runit-helper:
         2.10.3
     salt-common:
-        3003~rc1+914.g8ce39ddb25+ds-1
+        3003~rc1+927.g407a8aa446+ds-1
     salt-minion:
-        3003~rc1+914.g8ce39ddb25+ds-1
+        3003~rc1+927.g407a8aa446+ds-1
     sed:
         4.7-1
     sensible-utils:

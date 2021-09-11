@@ -2,7 +2,7 @@ gent-late-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.8ce39dd
+          Salt: 3004+0na.407a8aa
  
 Dependency Versions:
           cffi: Not Installed
@@ -104,7 +104,7 @@ local:
     saltpath:
         /usr/lib/python3.9/site-packages/salt
     saltversion:
-        3004+0na.8ce39dd
+        3004+0na.407a8aa
     saltversioninfo:
         - 3004
     systemd:
@@ -352,7 +352,7 @@ local:
     dev-util/ninja:
         1.10.1
     dev-util/pkgconf:
-        1.7.4
+        1.7.4-r1
     dev-util/re2c:
         2.1.1-r1
     dev-vcs/git:
@@ -360,7 +360,7 @@ local:
     mail-mta/nullmailer:
         2.2-r2
     net-dns/libidn2:
-        2.3.1
+        2.3.2
     net-firewall/iptables:
         1.8.7
     net-libs/gnutls:
@@ -428,7 +428,7 @@ local:
     sys-apps/kmod:
         29
     sys-apps/less:
-        581.2
+        590
     sys-apps/man-db:
         2.9.4-r1
     sys-apps/man-pages:
@@ -448,13 +448,13 @@ local:
     sys-apps/shadow:
         4.8.1-r4
     sys-apps/systemd-tmpfiles:
-        246
+        249.2
     sys-apps/sysvinit:
         2.99
     sys-apps/texinfo:
         6.7
     sys-apps/util-linux:
-        2.36.2-r1
+        2.37.2
     sys-apps/which:
         2.21
     sys-auth/pambase:
@@ -514,11 +514,11 @@ local:
     sys-libs/libcap:
         2.49-r1
     sys-libs/libseccomp:
-        2.5.1
+        2.5.1-r1
     sys-libs/ncurses:
         6.2-r1
     sys-libs/pam:
-        1.5.1-r1
+        1.5.1_p20210622-r1
     sys-libs/readline:
         8.1_p1-r1
     sys-libs/timezone-data:
@@ -614,7 +614,7 @@ local:
     virtual/perl-version:
         0.992.800
     virtual/pkgconfig:
-        2
+        2-r1
     virtual/service-manager:
         1
     virtual/ssh:

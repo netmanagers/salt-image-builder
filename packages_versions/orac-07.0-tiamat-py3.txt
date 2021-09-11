@@ -2,7 +2,7 @@ orac-07.0-tiamat-py3
 Salt install method: stable
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003rc1+914.g8ce39dd
+          Salt: 3003rc1+927.g407a8aa
  
 Dependency Versions:
           cffi: 1.14.4
@@ -22,7 +22,7 @@ Dependency Versions:
       pycrypto: Not Installed
   pycryptodome: 3.9.8
         pygit2: Not Installed
-        Python: 3.7.10 (default, May 20 2021, 20:26:50)
+        Python: 3.7.12 (default, Sep  8 2021, 17:08:30)
   python-gnupg: 0.4.4
         PyYAML: 5.4.1
          PyZMQ: 18.0.1
@@ -98,13 +98,13 @@ local:
     pythonversion:
         - 3
         - 7
-        - 10
+        - 12
         - final
         - 0
     saltpath:
         /opt/saltstack/salt/run/salt
     saltversion:
-        3003rc1+914.g8ce39dd
+        3003rc1+927.g407a8aa
     saltversioninfo:
         - 3003
     systemd:
@@ -573,9 +573,9 @@ local:
     rsyslog:
         8.24.0-57.0.1.el7_9.1
     salt:
-        3003rc1+914.g8ce39dd-1.el7
+        3003rc1+927.g407a8aa-1.el7
     salt-minion:
-        3003rc1+914.g8ce39dd-1.el7
+        3003rc1+927.g407a8aa-1.el7
     sed:
         4.2.2-7.el7
     setup:

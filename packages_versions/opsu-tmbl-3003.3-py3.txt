@@ -32,12 +32,12 @@ Dependency Versions:
            ZMQ: 4.3.4
  
 System Versions:
-          dist: opensuse-tumbleweed 20210902 
+          dist: opensuse-tumbleweed 20210908 
         locale: utf-8
        machine: x86_64
        release: 5.4.109+
         system: Linux
-       version: openSUSE Tumbleweed 20210902 
+       version: openSUSE Tumbleweed 20210908 
  
 # salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
 local:
@@ -65,7 +65,7 @@ local:
     lsb_distrib_id:
         openSUSE Tumbleweed
     lsb_distrib_release:
-        20210902
+        20210908
     os:
         SUSE
     os_family:
@@ -76,16 +76,16 @@ local:
     oscodename:
         openSUSE Tumbleweed
     osfinger:
-        openSUSE Tumbleweed-20210902
+        openSUSE Tumbleweed-20210908
     osfullname:
         openSUSE Tumbleweed
     osmajorrelease:
-        20210902
+        20210908
     osmanufacturer:
     osrelease:
-        20210902
+        20210908
     osrelease_info:
-        - 20210902
+        - 20210908
     osversion:
     pythonexecutable:
         /usr/bin/python3.8
@@ -116,7 +116,7 @@ local:
         features:
             +PAM +AUDIT +SELINUX +APPARMOR -IMA -SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN -IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified
         version:
-            248
+            249
     virtual:
         gce
     virtual_subtype:
@@ -137,7 +137,7 @@ local:
     ca-certificates-mozilla:
         2.50-1.1
     chkstat:
-        1550_20210518-28.14
+        1550_20210901-29.1
     compat-usrmerge-tools:
         84.87-3.1
     coreutils:
@@ -147,7 +147,7 @@ local:
     crypto-policies:
         20210225.05203d2-1.15
     curl:
-        7.78.0-1.1
+        7.78.0-1.3
     dbus-1:
         1.12.20-5.4
     diffutils:
@@ -175,7 +175,7 @@ local:
     glibc-locale-base:
         2.33-9.1
     gpg2:
-        2.2.27-2.1
+        2.2.27-2.3
     grep:
         3.7-1.1
     gzip:
@@ -189,7 +189,7 @@ local:
     kmod:
         29-4.1
     krb5:
-        1.19.2-1.1
+        1.19.2-1.3
     less:
         590-2.1
     libacl1:
@@ -231,7 +231,7 @@ local:
     libcryptsetup12-hmac:
         2.4.0-1.1
     libcurl4:
-        7.78.0-1.1
+        7.78.0-1.3
     libdb-4_8:
         4.8.30-38.37
     libdbus-1-3:
@@ -253,7 +253,7 @@ local:
     libfido2-udev:
         1.7.0-1.2
     libgcc_s1:
-        11.2.1+git610-1.2
+        11.2.1+git610-1.4
     libgcrypt20:
         1.9.4-1.1
     libgcrypt20-hmac:
@@ -283,7 +283,7 @@ local:
     libksba8:
         1.6.0-1.1
     libldap-2_4-2:
-        2.4.59-67.1
+        2.4.59-69.1
     liblua5_4-5:
         5.4.3-4.1
     liblz4-1:
@@ -333,7 +333,7 @@ local:
     libreadline8:
         8.1-2.13
     libsasl2-3:
-        2.1.27-5.4
+        2.1.27-5.6
     libseccomp2:
         2.5.1-1.1
     libselinux1:
@@ -359,9 +359,9 @@ local:
     libssh4:
         0.9.6-1.1
     libstdc++6:
-        11.2.1+git610-1.2
+        11.2.1+git610-1.4
     libsystemd0:
-        248.6-2.1
+        249.4-1.1
     libtasn1-6:
         4.17.0-1.1
     libtirpc-netconfig:
@@ -369,7 +369,7 @@ local:
     libtirpc3:
         1.3.2-1.3
     libudev1:
-        248.6-2.1
+        249.4-1.1
     libunistring2:
         0.9.10-2.11
     libusb-1_0-0:
@@ -391,7 +391,7 @@ local:
     libzstd1:
         1.5.0-1.12
     libzypp:
-        17.28.2-1.1
+        17.28.3-1.1
     login_defs:
         4.8.1-7.1
     ncurses-utils:
@@ -405,19 +405,19 @@ local:
     openSUSE-build-key:
         1.0-40.1
     openSUSE-release:
-        20210902-1136.1
+        20210908-1147.1
     openSUSE-release-appliance-docker:
-        20210902-1136.1
+        20210908-1147.1
     openssh:
-        8.4p1-7.1
+        8.4p1-7.3
     openssh-clients:
-        8.4p1-7.1
+        8.4p1-7.3
     openssh-common:
-        8.4p1-7.1
+        8.4p1-7.3
     openssh-fips:
-        8.4p1-7.1
+        8.4p1-7.3
     openssh-server:
-        8.4p1-7.1
+        8.4p1-7.3
     p11-kit:
         0.23.22-2.1
     p11-kit-tools:
@@ -439,11 +439,11 @@ local:
     perl-base:
         5.32.1-1.12
     permissions:
-        20210518.1550-28.14
+        20210901.1550-29.1
     permissions-config:
-        1550_20210518-28.14
+        1550_20210901-29.1
     pinentry:
-        1.1.1-2.4
+        1.2.0-1.1
     pkgconf:
         1.8.0-1.1
     pkgconf-m4:
@@ -481,9 +481,9 @@ local:
     shadow:
         4.8.1-7.1
     sudo:
-        1.9.7p2-1.1
+        1.9.7p2-1.3
     suse-module-tools:
-        16.0.8+1-1.1
+        16.0.9-1.1
     system-group-hardware:
         20170617-22.1
     system-group-kvm:
@@ -491,7 +491,7 @@ local:
     system-user-root:
         20190513-1.35
     systemd:
-        248.6-2.1
+        249.4-1.1
     systemd-default-settings:
         0.7-1.2
     systemd-default-settings-branding-SLE:
@@ -507,7 +507,7 @@ local:
     terminfo-base:
         6.2.20210814-25.1
     udev:
-        248.6-2.1
+        249.4-1.1
     update-alternatives:
         1.20.9-1.1
     util-linux:
@@ -517,7 +517,7 @@ local:
     xz:
         5.2.5-2.1
     zypper:
-        1.14.48-1.1
+        1.14.49-1.1
 # salt-call --local pip.list
 local:
     ----------
