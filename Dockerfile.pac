@@ -35,6 +35,9 @@ RUN pacman --noconfirm -Sy archlinux-keyring \
     fi \
  && systemctl enable sshd \
  && systemctl disable salt-minion.service > /dev/null 2>&1 \
+    # Similar to Fedora, enable the `ssh-rsa` keypair type since Kitchen
+    # testing currently relies on this
+ && echo "PubkeyAcceptedAlgorithms +ssh-rsa" | tee -a /etc/ssh/sshd_config \
     # Remove unnecessary getty and udev targets that result in high CPU usage when using
     # multiple containers with Molecule or Kitchen (https://github.com/ansible/molecule/issues/1104)
  && rm -rf /var/cache/{salt,pacman} \
