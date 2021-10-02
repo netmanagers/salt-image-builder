@@ -2,7 +2,7 @@ debi-09.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.407a8aa
+          Salt: 3004+0na.b011a4e
  
 Dependency Versions:
           cffi: Not Installed
@@ -20,7 +20,7 @@ Dependency Versions:
   mysql-python: Not Installed
      pycparser: Not Installed
       pycrypto: Not Installed
-  pycryptodome: 3.10.1
+  pycryptodome: 3.10.4
         pygit2: Not Installed
         Python: 3.5.3 (default, Apr  5 2021, 09:00:41)
   python-gnupg: Not Installed
@@ -128,7 +128,7 @@ local:
     saltpath:
         /usr/local/lib/python3.5/dist-packages/salt
     saltversion:
-        3004+0na.407a8aa
+        3004+0na.b011a4e
     saltversioninfo:
         - 3004
     systemd:
@@ -171,7 +171,7 @@ local:
     cpp-6:
         6.3.0-18+deb9u1
     curl:
-        7.52.1-5+deb9u15
+        7.52.1-5+deb9u16
     dash:
         0.5.8-2.4
     debconf:
@@ -277,9 +277,9 @@ local:
     libcryptsetup4:
         2:1.7.3-4
     libcurl3:
-        7.52.1-5+deb9u15
+        7.52.1-5+deb9u16
     libcurl3-gnutls:
-        7.52.1-5+deb9u15
+        7.52.1-5+deb9u16
     libdb5.3:
         5.3.28-12+deb9u1
     libdebconfclient0:
@@ -311,15 +311,15 @@ local:
     libgmp10:
         2:6.1.2+dfsg-1
     libgnutls30:
-        3.5.8-5+deb9u5
+        3.5.8-5+deb9u6
     libgomp1:
         6.3.0-18+deb9u1
     libgpg-error0:
         1.26-2
     libgssapi-krb5-2:
-        1.15-1+deb9u2
+        1.15-1+deb9u3
     libhogweed4:
-        3.3-1+b2
+        3.3-1+deb9u1
     libidn11:
         1.33-1+deb9u1
     libidn2-0:
@@ -331,15 +331,15 @@ local:
     libitm1:
         6.3.0-18+deb9u1
     libk5crypto3:
-        1.15-1+deb9u2
+        1.15-1+deb9u3
     libkeyutils1:
         1.5.9-9
     libkmod2:
         23-2
     libkrb5-3:
-        1.15-1+deb9u2
+        1.15-1+deb9u3
     libkrb5support0:
-        1.15-1+deb9u2
+        1.15-1+deb9u3
     libksba8:
         1.3.5-2
     libldap-2.4-2:
@@ -369,7 +369,7 @@ local:
     libncursesw5:
         6.0+20161126-1+deb9u2
     libnettle6:
-        3.3-1+b2
+        3.3-1+deb9u1
     libnghttp2-14:
         1.18.1-1+deb9u1
     libnpth0:
@@ -435,9 +435,9 @@ local:
     libssh2-1:
         1.7.0-1+deb9u1
     libssl1.0.2:
-        1.0.2u-1~deb9u4
+        1.0.2u-1~deb9u6
     libssl1.1:
-        1.1.0l-1~deb9u3
+        1.1.0l-1~deb9u4
     libstdc++6:
         6.3.0-18+deb9u1
     libsystemd0:
@@ -493,7 +493,7 @@ local:
     openssh-sftp-server:
         1:7.4p1-10+deb9u7
     openssl:
-        1.1.0l-1~deb9u3
+        1.1.0l-1~deb9u4
     passwd:
         1:4.4-4.1+deb9u1
     pciutils:
@@ -587,8 +587,10 @@ local:
         1.0.2
     pip:
         9.0.1
+    psutil:
+        5.8.0
     pycryptodomex:
-        3.10.1
+        3.10.4
     python-apt:
         1.4.3
     pyzmq:
@@ -596,10 +598,10 @@ local:
     requests:
         2.25.1
     salt:
-        3004+0na.407a8aa
+        3004+0na.b011a4e
     setuptools:
         33.1.1
     urllib3:
-        1.26.6
+        1.26.7
     wheel:
         0.37.0

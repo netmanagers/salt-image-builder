@@ -143,7 +143,7 @@ local:
     cpio:
         2.13-8.fc33
     cracklib:
-        2.9.6-24.fc33
+        2.9.6-27.fc33
     crypto-policies:
         20200918-1.git85dccc5.fc33
     crypto-policies-scripts:
@@ -151,7 +151,7 @@ local:
     cryptsetup-libs:
         2.3.6-1.fc33
     curl:
-        7.71.1-10.fc33
+        7.71.1-11.fc33
     cyrus-sasl-lib:
         2.1.27-6.fc33
     dbus:
@@ -257,7 +257,7 @@ local:
     gzip:
         1.10-3.fc33
     hwdata:
-        0.350-1.fc33
+        0.351-1.fc33
     ima-evm-utils:
         1.3.2-1.fc33
     iptables-libs:
@@ -309,7 +309,7 @@ local:
     libcomps:
         0.1.17-1.fc33
     libcurl:
-        7.71.1-10.fc33
+        7.71.1-11.fc33
     libdb:
         5.3.28-45.fc33
     libdnf:
@@ -342,12 +342,10 @@ local:
         1.2.1-1.fc33
     libksba:
         1.3.5-13.fc33
-    libmetalink:
-        0.1.3-13.fc33
     libmnl:
         1.0.4-12.fc33
     libmodulemd:
-        2.13.0-1.fc33
+        2.13.0-2.fc33
     libmount:
         2.36.1-1.fc33
     libnetfilter_conntrack:
@@ -419,9 +417,7 @@ local:
     libverto:
         0.3.0-10.fc33
     libxcrypt:
-        4.4.25-1.fc33
-    libxcrypt-compat:
-        4.4.25-1.fc33
+        4.4.26-2.fc33
     libxml2:
         2.9.12-4.fc33
     libyaml:
@@ -434,8 +430,6 @@ local:
         1.9.1-3.fc33
     memstrack:
         0.1.9-1.fc33
-    mkpasswd:
-        5.5.10-1.fc33
     mpfr:
         4.1.0-7.fc33
     ncurses:
@@ -461,7 +455,7 @@ local:
     openssh-server:
         8.4p1-7.fc33
     openssl-libs:
-        1:1.1.1k-1.fc33
+        1:1.1.1l-2.fc33
     os-prober:
         1.77-6.fc33
     p11-kit:
@@ -593,9 +587,7 @@ local:
     python-setuptools-wheel:
         49.1.3-2.fc33
     python-systemd-doc:
-        234-14.fc33
-    python-unversioned-command:
-        3.9.7-1.fc33
+        234-19.fc33
     python3:
         3.9.7-1.fc33
     python3-babel:
@@ -659,7 +651,7 @@ local:
     python3-six:
         1.15.0-2.fc33
     python3-systemd:
-        234-14.fc33
+        234-19.fc33
     python3-urllib3:
         1.25.8-5.fc33
     python3-zmq:
@@ -711,17 +703,15 @@ local:
     tpm2-tss:
         3.0.4-1.fc33
     tzdata:
-        2021a-1.fc33
+        2021b-1.fc33
     util-linux:
         2.36.1-1.fc33
     vim-minimal:
-        2:8.2.3367-1.fc33
+        2:8.2.3404-1.fc33
     web-assets-filesystem:
         5-12.fc33
     which:
         2.21-20.fc33
-    whois-nls:
-        5.5.10-1.fc33
     xz:
         5.2.5-4.fc33
     xz-libs:

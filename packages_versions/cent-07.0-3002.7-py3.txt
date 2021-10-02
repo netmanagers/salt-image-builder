@@ -186,7 +186,7 @@ local:
     elfutils-libs:
         0.176-5.el7
     epel-release:
-        7-13
+        7-14
     expat:
         2.1.0-12.el7
     file-libs:

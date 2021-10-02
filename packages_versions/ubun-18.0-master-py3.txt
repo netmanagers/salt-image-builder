@@ -2,7 +2,7 @@ ubun-18.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.407a8aa
+          Salt: 3004+0na.b011a4e
  
 Dependency Versions:
           cffi: Not Installed
@@ -20,7 +20,7 @@ Dependency Versions:
   mysql-python: Not Installed
      pycparser: Not Installed
       pycrypto: Not Installed
-  pycryptodome: 3.10.1
+  pycryptodome: 3.10.4
         pygit2: Not Installed
         Python: 3.6.9 (default, Jan 26 2021, 15:33:00)
   python-gnupg: Not Installed
@@ -129,7 +129,7 @@ local:
     saltpath:
         /usr/local/lib/python3.6/dist-packages/salt
     saltversion:
-        3004+0na.407a8aa
+        3004+0na.b011a4e
     saltversioninfo:
         - 3004
     systemd:
@@ -154,7 +154,7 @@ local:
     apt-transport-https:
         1.6.14
     base-files:
-        10.1ubuntu2.10
+        10.1ubuntu2.11
     base-passwd:
         3.5.44
     bash:
@@ -170,7 +170,7 @@ local:
     bzip2:
         1.0.6-8.1ubuntu0.2
     ca-certificates:
-        20210119~18.04.1
+        20210119~18.04.2
     coreutils:
         8.28-1ubuntu1
     cpp:
@@ -178,7 +178,7 @@ local:
     cpp-7:
         7.5.0-3ubuntu1~18.04
     curl:
-        7.58.0-2ubuntu3.14
+        7.58.0-2ubuntu3.16
     dash:
         0.5.8-2.10
     debconf:
@@ -210,9 +210,9 @@ local:
     gcc-8-base:
         8.4.0-1ubuntu1~18.04
     git:
-        1:2.17.1-1ubuntu0.8
+        1:2.17.1-1ubuntu0.9
     git-man:
-        1:2.17.1-1ubuntu0.8
+        1:2.17.1-1ubuntu0.9
     gnupg:
         2.2.4-1ubuntu1.4
     gnupg-l10n:
@@ -294,9 +294,9 @@ local:
     libcryptsetup12:
         2:2.0.2-1ubuntu1.2
     libcurl3-gnutls:
-        7.58.0-2ubuntu3.14
+        7.58.0-2ubuntu3.16
     libcurl4:
-        7.58.0-2ubuntu3.14
+        7.58.0-2ubuntu3.16
     libdb5.3:
         5.3.28-13.1ubuntu1.1
     libdebconfclient0:
@@ -322,7 +322,7 @@ local:
     libgcc1:
         1:8.4.0-1ubuntu1~18.04
     libgcrypt20:
-        1.8.1-4ubuntu1.2
+        1.8.1-4ubuntu1.3
     libgdbm-compat4:
         1.14.1-6
     libgdbm5:
@@ -330,7 +330,7 @@ local:
     libgmp10:
         2:6.1.2+dfsg-2
     libgnutls30:
-        3.5.18-1ubuntu1.4
+        3.5.18-1ubuntu1.5
     libgomp1:
         8.4.0-1ubuntu1~18.04
     libgpg-error0:
@@ -470,7 +470,7 @@ local:
     libstdc++6:
         8.4.0-1ubuntu1~18.04
     libsystemd0:
-        237-3ubuntu10.51
+        237-3ubuntu10.52
     libtasn1-6:
         4.13-2
     libtinfo5:
@@ -480,7 +480,7 @@ local:
     libubsan0:
         7.5.0-3ubuntu1~18.04
     libudev1:
-        237-3ubuntu10.51
+        237-3ubuntu10.52
     libunistring2:
         0.9.9-0ubuntu2
     libuuid1:
@@ -492,7 +492,7 @@ local:
     libzstd1:
         1.3.3+dfsg-2ubuntu1.2
     linux-libc-dev:
-        4.15.0-156.163
+        4.15.0-159.167
     locales:
         2.27-3ubuntu1.4
     login:
@@ -534,13 +534,13 @@ local:
     procps:
         2:3.3.12-3ubuntu1.2
     python-apt-common:
-        1.6.5ubuntu0.6
+        1.6.5ubuntu0.7
     python-pip-whl:
         9.0.1-2.3~ubuntu1.18.04.5
     python3:
         3.6.7-1~18.04
     python3-apt:
-        1.6.5ubuntu0.6
+        1.6.5ubuntu0.7
     python3-dev:
         3.6.7-1~18.04
     python3-distutils:
@@ -570,9 +570,9 @@ local:
     sudo:
         1.8.21p2-3ubuntu1.4
     systemd:
-        237-3ubuntu10.51
+        237-3ubuntu10.52
     systemd-sysv:
-        237-3ubuntu10.51
+        237-3ubuntu10.52
     sysvinit-utils:
         2.88dsf-59.10ubuntu1
     tar:
@@ -582,7 +582,7 @@ local:
     ucf:
         3.0038
     udev:
-        237-3ubuntu10.51
+        237-3ubuntu10.52
     util-linux:
         2.31.1-0.4ubuntu3.7
     wget:
@@ -601,7 +601,7 @@ local:
     certifi:
         2021.5.30
     charset-normalizer:
-        2.0.4
+        2.0.6
     contextvars:
         2.4
     distro:
@@ -614,21 +614,23 @@ local:
         1.0.2
     pip:
         9.0.1
+    psutil:
+        5.8.0
     pycryptodomex:
-        3.10.1
+        3.10.4
     python-apt:
-        1.6.5+ubuntu0.6
+        1.6.5+ubuntu0.7
     pyzmq:
         21.0.2
     requests:
         2.26.0
     salt:
-        3004+0na.407a8aa
+        3004+0na.b011a4e
     setuptools:
         39.0.1
     typing-extensions:
         3.10.0.2
     urllib3:
-        1.26.6
+        1.26.7
     wheel:
         0.37.0

@@ -2,11 +2,11 @@ orac-07.0-tiamat-py3
 Salt install method: stable
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003rc1+927.g407a8aa
+          Salt: 3003rc1+1108.gb011a4ed6b
  
 Dependency Versions:
-          cffi: 1.14.4
-      cherrypy: 17.4.1
+          cffi: 1.14.6
+      cherrypy: 18.6.1
       dateutil: 2.8.1
      docker-py: Not Installed
          gitdb: Not Installed
@@ -22,7 +22,7 @@ Dependency Versions:
       pycrypto: Not Installed
   pycryptodome: 3.9.8
         pygit2: Not Installed
-        Python: 3.7.12 (default, Sep  8 2021, 17:08:30)
+        Python: 3.7.12 (default, Sep 15 2021, 16:36:33)
   python-gnupg: 0.4.4
         PyYAML: 5.4.1
          PyZMQ: 18.0.1
@@ -104,7 +104,7 @@ local:
     saltpath:
         /opt/saltstack/salt/run/salt
     saltversion:
-        3003rc1+927.g407a8aa
+        3003rc1+1108.gb011a4ed6b
     saltversioninfo:
         - 3003
     systemd:
@@ -139,7 +139,7 @@ local:
     bzip2-libs:
         1.0.6-13.el7
     ca-certificates:
-        2020.2.41-70.0.el7_8
+        2021.2.50-72.el7_9
     chkconfig:
         1.7.6-1.el7
     coreutils:
@@ -297,7 +297,7 @@ local:
     libgpg-error:
         1.12-3.el7
     libgudev1:
-        219-78.0.5.el7_9.3
+        219-78.0.7.el7_9.3
     libidn:
         1.28-4.el7
     libkadm5:
@@ -573,9 +573,9 @@ local:
     rsyslog:
         8.24.0-57.0.1.el7_9.1
     salt:
-        3003rc1+927.g407a8aa-1.el7
+        3003rc1+1108.gb011a4ed6b-1.el7
     salt-minion:
-        3003rc1+927.g407a8aa-1.el7
+        3003rc1+1108.gb011a4ed6b-1.el7
     sed:
         4.2.2-7.el7
     setup:
@@ -593,9 +593,9 @@ local:
     swig:
         2.0.10-5.el7
     systemd:
-        219-78.0.5.el7_9.3
+        219-78.0.7.el7_9.3
     systemd-libs:
-        219-78.0.5.el7_9.3
+        219-78.0.7.el7_9.3
     sysvinit-tools:
         2.88-14.dsf.el7
     tar:

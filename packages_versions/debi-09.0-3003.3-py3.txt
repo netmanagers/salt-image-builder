@@ -168,7 +168,7 @@ local:
     coreutils:
         8.26-3
     curl:
-        7.52.1-5+deb9u15
+        7.52.1-5+deb9u16
     dash:
         0.5.8-2.4
     dctrl-tools:
@@ -260,9 +260,9 @@ local:
     libcryptsetup4:
         2:1.7.3-4
     libcurl3:
-        7.52.1-5+deb9u15
+        7.52.1-5+deb9u16
     libcurl3-gnutls:
-        7.52.1-5+deb9u15
+        7.52.1-5+deb9u16
     libdb5.3:
         5.3.28-12+deb9u1
     libdebconfclient0:
@@ -290,13 +290,13 @@ local:
     libgmp10:
         2:6.1.2+dfsg-1
     libgnutls30:
-        3.5.8-5+deb9u5
+        3.5.8-5+deb9u6
     libgpg-error0:
         1.26-2
     libgssapi-krb5-2:
         1.15-1+deb9u2
     libhogweed4:
-        3.3-1+b2
+        3.3-1+deb9u1
     libidn11:
         1.33-1+deb9u1
     libidn2-0:
@@ -334,7 +334,7 @@ local:
     libncursesw5:
         6.0+20161126-1+deb9u2
     libnettle6:
-        3.3-1+b2
+        3.3-1+deb9u1
     libnghttp2-14:
         1.18.1-1+deb9u1
     libnpth0:
@@ -396,9 +396,9 @@ local:
     libssh2-1:
         1.7.0-1+deb9u1
     libssl1.0.2:
-        1.0.2u-1~deb9u4
+        1.0.2u-1~deb9u6
     libssl1.1:
-        1.1.0l-1~deb9u3
+        1.1.0l-1~deb9u4
     libstdc++6:
         6.3.0-18+deb9u1
     libsystemd0:
@@ -450,7 +450,7 @@ local:
     openssh-sftp-server:
         1:7.4p1-10+deb9u7
     openssl:
-        1.1.0l-1~deb9u3
+        1.1.0l-1~deb9u4
     passwd:
         1:4.4-4.1+deb9u1
     pciutils:

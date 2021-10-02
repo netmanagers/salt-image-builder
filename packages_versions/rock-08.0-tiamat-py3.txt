@@ -2,11 +2,11 @@ rock-08.0-tiamat-py3
 Salt install method: stable
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003rc1+927.g407a8aa446
+          Salt: 3003rc1+1108.gb011a4ed6b
  
 Dependency Versions:
-          cffi: 1.14.4
-      cherrypy: 17.4.1
+          cffi: 1.14.6
+      cherrypy: 18.6.1
       dateutil: 2.8.1
      docker-py: Not Installed
          gitdb: Not Installed
@@ -104,7 +104,7 @@ local:
     saltpath:
         /opt/saltstack/salt/run/salt
     saltversion:
-        3003rc1+927.g407a8aa446
+        3003rc1+1108.gb011a4ed6b
     saltversioninfo:
         - 3003
     systemd:
@@ -155,7 +155,7 @@ local:
     cryptsetup-libs:
         2.3.3-4.el8
     curl:
-        7.61.1-18.el8
+        7.61.1-18.el8_4.1
     cyrus-sasl-lib:
         2.1.27-5.el8
     dbus:
@@ -301,7 +301,7 @@ local:
     libcomps:
         0.1.11-5.el8
     libcurl-minimal:
-        7.61.1-18.el8
+        7.61.1-18.el8_4.1
     libdb:
         5.3.28-40.el8
     libdb-utils:
@@ -617,9 +617,9 @@ local:
     rpm-libs:
         4.14.3-13.el8
     salt:
-        3003rc1+927.g407a8aa446-1.el8
+        3003rc1+1108.gb011a4ed6b-1.el8
     salt-minion:
-        3003rc1+927.g407a8aa446-1.el8
+        3003rc1+1108.gb011a4ed6b-1.el8
     sed:
         4.5-2.el8
     setup:

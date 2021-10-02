@@ -2,7 +2,7 @@ opsu-15.2-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.407a8aa
+          Salt: 3004+0na.b011a4e
  
 Dependency Versions:
           cffi: Not Installed
@@ -20,7 +20,7 @@ Dependency Versions:
   mysql-python: Not Installed
      pycparser: Not Installed
       pycrypto: Not Installed
-  pycryptodome: 3.10.1
+  pycryptodome: 3.10.4
         pygit2: Not Installed
         Python: 3.6.12 (default, Dec 02 2020, 09:44:23) [GCC]
   python-gnupg: Not Installed
@@ -107,7 +107,7 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3004+0na.407a8aa
+        3004+0na.b011a4e
     saltversioninfo:
         - 3004
     systemd:
@@ -144,7 +144,7 @@ local:
     cpio:
         2.12-lp152.5.5.1
     cpp:
-        7-lp152.5.3.1
+        7-lp152.5.6.1
     cpp7:
         7.5.0+r278197-lp152.3.9.1
     cracklib:
@@ -158,9 +158,9 @@ local:
     diffutils:
         3.6-lp152.5.3.1
     file:
-        5.32-lp152.10.3.1
+        5.32-lp152.10.6.1
     file-magic:
-        5.32-lp152.10.3.1
+        5.32-lp152.10.6.1
     filesystem:
         15.0-lp152.11.3.1
     fillup:
@@ -170,7 +170,7 @@ local:
     gawk:
         4.2.1-lp152.3.114
     gcc:
-        7-lp152.5.3.1
+        7-lp152.5.6.1
     gcc7:
         7.5.0+r278197-lp152.3.9.1
     git:
@@ -316,7 +316,7 @@ local:
     liblzma5:
         5.2.3-lp152.5.100
     libmagic1:
-        5.32-lp152.10.3.1
+        5.32-lp152.10.6.1
     libmodman1:
         2.0.1-lp152.3.5
     libmount1:
@@ -340,7 +340,7 @@ local:
     libnsl2:
         1.2.0-lp152.4.105
     libopenssl1_1:
-        1.1.1d-lp152.7.21.1
+        1.1.1d-lp152.7.24.1
     libp11-kit0:
         0.23.2-lp152.6.4
     libpcre1:
@@ -356,7 +356,7 @@ local:
     libpsl5:
         0.20.1-lp152.3.7
     libpython2_7-1_0:
-        2.7.18-lp152.3.15.1
+        2.7.18-lp152.3.18.1
     libpython3_6m1_0:
         3.6.12-lp152.4.17.1
     libqrencode4:
@@ -422,7 +422,7 @@ local:
     libz1:
         1.2.11-lp152.8.9.1
     libzck1:
-        1.1.5-lp152.1.4
+        1.1.5-lp152.2.3.1
     libzio1:
         1.06-lp152.4.113
     libzstd1:
@@ -438,7 +438,7 @@ local:
     net-tools-deprecated:
         2.0+git20170221.479bb4a-lp152.5.5
     netcfg:
-        11.6-lp152.3.4
+        11.6-lp152.4.3.1
     openSUSE-build-key:
         1.0-lp152.5.3.1
     openSUSE-release:
@@ -452,7 +452,7 @@ local:
     openssl:
         1.1.1d-lp152.1.1
     openssl-1_1:
-        1.1.1d-lp152.7.21.1
+        1.1.1d-lp152.7.24.1
     p11-kit:
         0.23.2-lp152.6.4
     p11-kit-tools:
@@ -476,11 +476,11 @@ local:
     procps:
         3.3.15-lp152.3.9.1
     python-base:
-        2.7.18-lp152.3.15.1
+        2.7.18-lp152.3.18.1
     python-rpm-macros:
         20200207.5feb6c1-lp152.1.1
     python-xml:
-        2.7.18-lp152.3.15.1
+        2.7.18-lp152.3.18.1
     python3:
         3.6.12-lp152.4.17.1
     python3-PyYAML:
@@ -565,7 +565,7 @@ local:
     chardet:
         3.0.4
     charset-normalizer:
-        2.0.4
+        2.0.6
     contextvars:
         2.4
     distro:
@@ -580,10 +580,12 @@ local:
         20.3
     pip:
         10.0.1
+    psutil:
+        5.8.0
     py:
         1.8.1
     pycryptodomex:
-        3.10.1
+        3.10.4
     pyparsing:
         2.2.0
     pyzmq:
@@ -591,7 +593,7 @@ local:
     requests:
         2.26.0
     salt:
-        3004+0na.407a8aa
+        3004+0na.b011a4e
     setuptools:
         40.5.0
     six:
@@ -599,6 +601,6 @@ local:
     typing-extensions:
         3.10.0.2
     urllib3:
-        1.26.6
+        1.26.7
     wheel:
         0.37.0

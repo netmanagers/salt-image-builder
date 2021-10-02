@@ -20,12 +20,12 @@ Dependency Versions:
    mysql-python: Not Installed
       pycparser: 2.17
        pycrypto: Not Installed
-   pycryptodome: 3.10.1
+   pycryptodome: 3.10.4
          pygit2: Not Installed
          Python: 3.6.13 (default, Mar 10 2021, 18:30:35) [GCC]
    python-gnupg: Not Installed
          PyYAML: 5.4.1
-          PyZMQ: 22.2.1
+          PyZMQ: 22.3.0
           smmap: Not Installed
         timelib: Not Installed
         Tornado: 4.5.3
@@ -137,7 +137,7 @@ local:
     ca-certificates:
         2+git20210309.21162a6-2.1
     ca-certificates-mozilla:
-        2.44-9.6.1
+        2.44-18.1
     coreutils:
         8.32-1.2
     cpio:
@@ -157,9 +157,9 @@ local:
     diffutils:
         3.6-4.3.1
     file:
-        5.32-7.11.2
+        5.32-7.14.1
     file-magic:
-        5.32-7.11.2
+        5.32-7.14.1
     filesystem:
         15.0-11.3.2
     fillup:
@@ -199,7 +199,7 @@ local:
     kbd-legacy:
         2.0.4-14.38
     kmod:
-        28-2.1
+        29-4.9.1
     krb5:
         1.16.3-3.21.1
     kubic-locale-archive:
@@ -303,7 +303,7 @@ local:
     libkeyutils1:
         1.5.10-5.3.1
     libkmod2:
-        28-2.1
+        29-4.9.1
     libksba8:
         1.3.5-2.14
     libldap-2_4-2:
@@ -319,7 +319,7 @@ local:
     liblzma5:
         5.2.3-4.3.1
     libmagic1:
-        5.32-7.11.2
+        5.32-7.14.1
     libmodman1:
         2.0.1-1.27
     libmount1:
@@ -441,11 +441,11 @@ local:
     netcfg:
         11.6-3.3.1
     openSUSE-build-key:
-        1.0-lp153.3.1
+        1.0-lp153.4.2.1
     openSUSE-release:
-        15.3-lp153.146.1
+        15.3-lp153.149.1
     openSUSE-release-appliance-docker:
-        15.3-lp153.146.1
+        15.3-lp153.149.1
     openssh:
         8.4p1-3.3.1
     openssh-clients:
@@ -592,7 +592,7 @@ local:
     chardet:
         3.0.4
     charset-normalizer:
-        2.0.4
+        2.0.6
     cryptography:
         2.8
     distro:
@@ -614,11 +614,11 @@ local:
     pycparser:
         2.17
     pycryptodomex:
-        3.10.1
+        3.10.4
     pyparsing:
         2.4.7
     pyzmq:
-        22.2.1
+        22.3.0
     requests:
         2.26.0
     salt:
@@ -628,6 +628,6 @@ local:
     six:
         1.14.0
     urllib3:
-        1.26.6
+        1.26.7
     wheel:
         0.37.0

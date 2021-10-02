@@ -2,7 +2,7 @@ debi-10.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.407a8aa
+          Salt: 3004+0na.b011a4e
  
 Dependency Versions:
           cffi: Not Installed
@@ -20,7 +20,7 @@ Dependency Versions:
   mysql-python: Not Installed
      pycparser: Not Installed
       pycrypto: Not Installed
-  pycryptodome: 3.10.1
+  pycryptodome: 3.10.4
         pygit2: Not Installed
         Python: 3.7.3 (default, Jan 22 2021, 20:04:44)
   python-gnupg: Not Installed
@@ -129,7 +129,7 @@ local:
     saltpath:
         /usr/local/lib/python3.7/dist-packages/salt
     saltversion:
-        3004+0na.407a8aa
+        3004+0na.b011a4e
     saltversioninfo:
         - 3004
     systemd:
@@ -584,7 +584,7 @@ local:
     tar:
         1.30+dfsg-6
     tzdata:
-        2021a-0+deb10u1
+        2021a-0+deb10u2
     ucf:
         3.0038+nmu1
     udev:
@@ -607,7 +607,7 @@ local:
     certifi:
         2021.5.30
     charset-normalizer:
-        2.0.4
+        2.0.6
     contextvars:
         2.4
     distro:
@@ -620,8 +620,10 @@ local:
         1.0.2
     pip:
         18.1
+    psutil:
+        5.8.0
     pycryptodomex:
-        3.10.1
+        3.10.4
     python-apt:
         1.8.4.3
     pyzmq:
@@ -629,12 +631,12 @@ local:
     requests:
         2.26.0
     salt:
-        3004+0na.407a8aa
+        3004+0na.b011a4e
     setuptools:
         40.8.0
     typing-extensions:
         3.10.0.2
     urllib3:
-        1.26.6
+        1.26.7
     wheel:
         0.37.0

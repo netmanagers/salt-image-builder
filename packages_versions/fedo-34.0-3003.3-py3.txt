@@ -151,7 +151,7 @@ local:
     cryptsetup-libs:
         2.3.6-1.fc34
     curl:
-        7.76.1-7.fc34
+        7.76.1-12.fc34
     cyrus-sasl-lib:
         2.1.27-8.fc34
     dbus:
@@ -169,13 +169,13 @@ local:
     device-mapper-libs:
         1.02.175-1.fc34
     dnf:
-        4.8.0-1.fc34
+        4.9.0-1.fc34
     dnf-data:
-        4.8.0-1.fc34
+        4.9.0-1.fc34
     dnf-plugins-core:
-        4.0.22-1.fc34
+        4.0.23-1.fc34
     dnf-utils:
-        4.0.22-1.fc34
+        4.0.23-1.fc34
     dracut:
         055-3.fc34
     elfutils-default-yama-scope:
@@ -189,19 +189,19 @@ local:
     fedora-gpg-keys:
         34-2
     fedora-release-common:
-        34-36
+        34-37
     fedora-release-container:
-        34-36
+        34-37
     fedora-release-identity-container:
-        34-36
+        34-37
     fedora-repos:
         34-2
     fedora-repos-modular:
         34-2
     file:
-        5.39-6.fc34
+        5.39-7.fc34
     file-libs:
-        5.39-6.fc34
+        5.39-7.fc34
     filesystem:
         3.14-5.fc34
     findutils:
@@ -313,13 +313,13 @@ local:
     libcom_err:
         1.45.6-5.fc34
     libcomps:
-        0.1.17-1.fc34
+        0.1.18-1.fc34
     libcurl:
-        7.76.1-7.fc34
+        7.76.1-12.fc34
     libdb:
         5.3.28-46.fc34
     libdnf:
-        0.63.1-1.fc34
+        0.64.0-1.fc34
     libeconf:
         0.4.0-1.fc34
     libedit:
@@ -348,10 +348,8 @@ local:
         1.2.1-1.fc34
     libksba:
         1.5.0-2.fc34
-    libmetalink:
-        0.1.3-14.fc34
     libmodulemd:
-        2.13.0-1.fc34
+        2.13.0-2.fc34
     libmount:
         2.36.2-1.fc34
     libnghttp2:
@@ -367,7 +365,7 @@ local:
     libpwquality:
         1.4.4-6.fc34
     librepo:
-        1.14.1-1.fc34
+        1.14.2-1.fc34
     libreport-filesystem:
         2.15.2-2.fc34
     libseccomp:
@@ -387,9 +385,9 @@ local:
     libsolv:
         0.7.17-3.fc34
     libssh:
-        0.9.5-2.fc34
+        0.9.6-1.fc34
     libssh-config:
-        0.9.5-2.fc34
+        0.9.6-1.fc34
     libsss_idmap:
         2.5.2-2.fc34
     libsss_nss_idmap:
@@ -419,9 +417,7 @@ local:
     libverto:
         0.3.2-1.fc34
     libxcrypt:
-        4.4.25-1.fc34
-    libxcrypt-compat:
-        4.4.25-1.fc34
+        4.4.26-2.fc34
     libxml2:
         2.9.12-4.fc34
     libyaml:
@@ -434,8 +430,6 @@ local:
         1.9.3-2.fc34
     memstrack:
         0.2.2-1.fc34
-    mkpasswd:
-        5.5.10-1.fc34
     mpfr:
         4.1.0-7.fc34
     ncurses:
@@ -455,15 +449,13 @@ local:
     openpgm:
         5.2.122-26.fc34
     openssh:
-        8.6p1-3.fc34
+        8.6p1-5.fc34
     openssh-clients:
-        8.6p1-3.fc34
+        8.6p1-5.fc34
     openssh-server:
-        8.6p1-3.fc34
+        8.6p1-5.fc34
     openssl-libs:
-        1:1.1.1l-1.fc34
-    openssl-pkcs11:
-        0.4.11-2.fc34
+        1:1.1.1l-2.fc34
     os-prober:
         1.77-7.fc34
     p11-kit:
@@ -593,9 +585,7 @@ local:
     python-setuptools-wheel:
         53.0.0-2.fc34
     python-systemd-doc:
-        234-16.fc34
-    python-unversioned-command:
-        3.9.7-1.fc34
+        234-19.fc34
     python3:
         3.9.7-1.fc34
     python3-babel:
@@ -611,21 +601,21 @@ local:
     python3-distro:
         1.5.0-5.fc34
     python3-dnf:
-        4.8.0-1.fc34
+        4.9.0-1.fc34
     python3-dnf-plugins-core:
-        4.0.22-1.fc34
+        4.0.23-1.fc34
     python3-gpg:
         1.15.1-2.fc34
     python3-hawkey:
-        0.63.1-1.fc34
+        0.64.0-1.fc34
     python3-idna:
         2.10-3.fc34
     python3-jinja2:
         2.11.3-1.fc34
     python3-libcomps:
-        0.1.17-1.fc34
+        0.1.18-1.fc34
     python3-libdnf:
-        0.63.1-1.fc34
+        0.64.0-1.fc34
     python3-libs:
         3.9.7-1.fc34
     python3-m2crypto:
@@ -659,7 +649,7 @@ local:
     python3-six:
         1.15.0-5.fc34
     python3-systemd:
-        234-16.fc34
+        234-19.fc34
     python3-urllib3:
         1.25.10-5.fc34
     python3-zmq:
@@ -686,8 +676,6 @@ local:
         2.13.7-3.fc34
     shadow-utils:
         2:4.8.1-9.fc34
-    shared-mime-info:
-        2.1-2.fc34
     sqlite-libs:
         3.34.1-2.fc34
     sssd-client:
@@ -709,7 +697,7 @@ local:
     tpm2-tss:
         3.1.0-1.fc34
     tzdata:
-        2021a-1.fc34
+        2021b-1.fc34
     util-linux:
         2.36.2-1.fc34
     vim-minimal:
@@ -718,14 +706,12 @@ local:
         5-13.fc34
     which:
         2.21-26.fc34
-    whois-nls:
-        5.5.10-1.fc34
     xz:
         5.2.5-5.fc34
     xz-libs:
         5.2.5-5.fc34
     yum:
-        4.8.0-1.fc34
+        4.9.0-1.fc34
     zchunk-libs:
         1.1.15-1.fc34
     zeromq:
@@ -758,7 +744,7 @@ local:
     idna:
         2.10
     libcomps:
-        0.1.17
+        0.1.18
     msgpack:
         1.0.2
     parameterized:

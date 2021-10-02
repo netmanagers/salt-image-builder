@@ -22,7 +22,7 @@ Dependency Versions:
       pycrypto: 3.10.1
   pycryptodome: 3.10.1
         pygit2: Not Installed
-        Python: 3.9.6 (default, Aug  8 2021, 17:26:32)
+        Python: 3.9.6 (default, Sep 12 2021, 17:24:12)
   python-gnupg: Not Installed
         PyYAML: 5.4.1
          PyZMQ: 22.1.0
@@ -236,7 +236,7 @@ local:
     app-arch/zstd:
         1.5.0
     app-crypt/gnupg:
-        2.2.27
+        2.2.29
     app-crypt/gpgme:
         1.15.1
     app-crypt/libb2:
@@ -266,7 +266,7 @@ local:
     app-misc/mime-types:
         9
     app-misc/pax-utils:
-        1.3.2
+        1.3.3
     app-portage/elt-patches:
         20201205
     app-portage/gemato:
@@ -294,15 +294,15 @@ local:
     dev-db/sqlite:
         3.35.5
     dev-lang/perl:
-        5.34.0
+        5.34.0-r2
     dev-lang/python:
-        3.9.6_p1
+        3.9.6_p2
     dev-lang/python-exec:
         2.4.8
     dev-lang/python-exec-conf:
         2.4.6
     dev-lang/tcl:
-        8.6.8
+        8.6.11
     dev-libs/expat:
         2.4.1
     dev-libs/gmp:
@@ -316,7 +316,7 @@ local:
     dev-libs/libffi:
         3.3-r2
     dev-libs/libgcrypt:
-        1.8.7
+        1.8.8
     dev-libs/libgpg-error:
         1.42
     dev-libs/libksba:
@@ -340,7 +340,7 @@ local:
     dev-libs/libunistring:
         0.9.10-r1
     dev-libs/libuv:
-        1.41.1
+        1.42.0
     dev-libs/libxml2:
         2.9.12-r5
     dev-libs/libxslt:
@@ -386,11 +386,11 @@ local:
     dev-perl/TermReadKey:
         2.370.0
     dev-perl/Text-CharWidth:
-        0.40.0-r1
+        0.40.0-r2
     dev-perl/Text-WrapI18N:
         0.60.0-r1
     dev-perl/TimeDate:
-        2.330.0
+        2.330.0-r1
     dev-perl/Unicode-LineBreak:
         2019.1.0
     dev-perl/YAML-Tiny:
@@ -403,8 +403,8 @@ local:
         10001-r1
     dev-python/cffi:
         1.14.6
-    dev-python/chardet:
-        4.0.0
+    dev-python/charset_normalizer:
+        2.0.4
     dev-python/cython:
         0.29.23
     dev-python/distro:
@@ -434,7 +434,7 @@ local:
     dev-python/pyzmq:
         22.1.0
     dev-python/requests:
-        2.25.1-r2
+        2.26.0
     dev-python/setuptools:
         57.4.0-r2
     dev-python/setuptools_scm:
@@ -444,7 +444,7 @@ local:
     dev-python/urllib3:
         1.26.6
     dev-python/watchdog:
-        2.1.2
+        2.1.5
     dev-util/cmake:
         3.20.5
     dev-util/gperf:
@@ -478,19 +478,21 @@ local:
     net-libs/libtirpc:
         1.3.2
     net-libs/nghttp2:
-        1.43.0-r2
+        1.44.0-r1
     net-libs/zeromq:
         4.3.4-r1
     net-misc/curl:
-        7.78.0-r1
+        7.79.1
     net-misc/iputils:
-        20210202
+        20210722
     net-misc/openssh:
         8.6_p1-r2
     net-misc/rsync:
         3.2.3-r4
     net-misc/wget:
         1.21.1
+    perl-core/Encode:
+        3.120.0
     perl-core/File-Temp:
         0.231.100
     perl-core/Scalar-List-Utils:
@@ -501,8 +503,6 @@ local:
         2.5.1
     sys-apps/baselayout:
         2.7
-    sys-apps/busybox:
-        1.32.1-r1
     sys-apps/coreutils:
         8.32-r1
     sys-apps/dbus:
@@ -510,7 +510,7 @@ local:
     sys-apps/debianutils:
         4.11.2
     sys-apps/diffutils:
-        3.7-r1
+        3.8
     sys-apps/file:
         5.40-r3
     sys-apps/findutils:
@@ -522,13 +522,13 @@ local:
     sys-apps/gentoo-systemd-integration:
         8
     sys-apps/grep:
-        3.5
+        3.7
     sys-apps/groff:
         1.22.4
     sys-apps/help2man:
         1.48.3
     sys-apps/hwids:
-        20201207
+        20210613-r1
     sys-apps/install-xattr:
         0.8
     sys-apps/iproute2:
@@ -556,13 +556,13 @@ local:
     sys-apps/sed:
         4.8
     sys-apps/shadow:
-        4.8.1-r4
+        4.9-r2
     sys-apps/systemd:
-        249.2
+        249.4-r4
     sys-apps/texinfo:
-        6.7
+        6.8
     sys-apps/util-linux:
-        2.37.2
+        2.37.2-r1
     sys-apps/which:
         2.21
     sys-auth/pambase:
@@ -576,11 +576,11 @@ local:
     sys-devel/autoconf-wrapper:
         15
     sys-devel/automake:
-        1.16.3-r1
+        1.16.4
     sys-devel/automake-wrapper:
         11
     sys-devel/binutils:
-        2.36.1-r2
+        2.37_p1
     sys-devel/binutils-config:
         5.4
     sys-devel/bison:
@@ -604,7 +604,7 @@ local:
     sys-devel/patch:
         2.7.6-r4
     sys-fs/e2fsprogs:
-        1.46.2
+        1.46.4
     sys-fs/udev-init-scripts:
         34
     sys-kernel/installkernel-gentoo:
@@ -612,7 +612,7 @@ local:
     sys-kernel/linux-headers:
         5.10
     sys-libs/e2fsprogs-libs:
-        1.46.2
+        1.46.4
     sys-libs/gdbm:
         1.20
     sys-libs/glibc:
@@ -652,7 +652,7 @@ local:
     virtual/libintl:
         0-r2
     virtual/libudev:
-        232-r4
+        232-r5
     virtual/logger:
         0-r1
     virtual/man:
@@ -678,7 +678,7 @@ local:
     virtual/perl-Digest-SHA:
         6.20.0-r2
     virtual/perl-Encode:
-        3.80.0
+        3.120.0
     virtual/perl-Exporter:
         5.760.0
     virtual/perl-ExtUtils-CBuilder:
@@ -754,8 +754,8 @@ local:
         10001
     cffi:
         1.14.6
-    chardet:
-        4.0.0
+    charset-normalizer:
+        2.0.4
     distro:
         1.6.0
     gemato:
@@ -783,7 +783,7 @@ local:
     pyzmq:
         22.1.0
     requests:
-        2.25.1
+        2.26.0
     salt:
         3003.3
     setuptools:
@@ -795,4 +795,4 @@ local:
     urllib3:
         1.26.6
     watchdog:
-        2.1.2
+        2.1.5

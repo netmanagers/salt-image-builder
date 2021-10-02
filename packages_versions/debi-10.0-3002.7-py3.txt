@@ -541,7 +541,7 @@ local:
     tar:
         1.30+dfsg-6
     tzdata:
-        2021a-0+deb10u1
+        2021a-0+deb10u2
     ucf:
         3.0038+nmu1
     udev:

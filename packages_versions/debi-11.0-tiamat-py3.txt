@@ -2,11 +2,11 @@ debi-11.0-tiamat-py3
 Salt install method: stable
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003rc1+927.g407a8aa446
+          Salt: 3003rc1+1108.gb011a4ed6b
  
 Dependency Versions:
-          cffi: 1.14.4
-      cherrypy: 17.4.1
+          cffi: 1.14.6
+      cherrypy: 18.6.1
       dateutil: 2.8.1
      docker-py: Not Installed
          gitdb: Not Installed
@@ -103,7 +103,7 @@ local:
     saltpath:
         /opt/saltstack/salt/run/salt
     saltversion:
-        3003rc1+927.g407a8aa446
+        3003rc1+1108.gb011a4ed6b
     saltversioninfo:
         - 3003
     systemd:
@@ -478,9 +478,9 @@ local:
     runit-helper:
         2.10.3
     salt-common:
-        3003~rc1+927.g407a8aa446+ds-1
+        3003~rc1+1108.gb011a4ed6b+ds-1
     salt-minion:
-        3003~rc1+927.g407a8aa446+ds-1
+        3003~rc1+1108.gb011a4ed6b+ds-1
     sed:
         4.7-1
     sensible-utils:

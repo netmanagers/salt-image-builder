@@ -2,7 +2,7 @@ amaz-02.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.407a8aa
+          Salt: 3004+0na.b011a4e
  
 Dependency Versions:
           cffi: Not Installed
@@ -20,7 +20,7 @@ Dependency Versions:
   mysql-python: Not Installed
      pycparser: Not Installed
       pycrypto: Not Installed
-  pycryptodome: 3.10.1
+  pycryptodome: 3.10.4
         pygit2: Not Installed
         Python: 3.7.10 (default, Jun  3 2021, 00:02:01)
   python-gnupg: Not Installed
@@ -105,7 +105,7 @@ local:
     saltpath:
         /usr/lib/python3.7/site-packages/salt
     saltversion:
-        3004+0na.407a8aa
+        3004+0na.b011a4e
     saltversioninfo:
         - 3004
     systemd:
@@ -138,7 +138,7 @@ local:
     bzip2-libs:
         1.0.6-13.amzn2.0.3
     ca-certificates:
-        2020.2.41-70.0.amzn2.0.1
+        2021.2.50-72.amzn2.0.1
     chkconfig:
         1.7.4-1.amzn2.0.2
     coreutils:
@@ -154,7 +154,7 @@ local:
     cryptsetup-libs:
         1.7.4-4.amzn2
     curl:
-        7.76.1-4.amzn2.0.1
+        7.76.1-7.amzn2.0.2
     cyrus-sasl-lib:
         2.1.26-23.amzn2
     dbus:
@@ -162,9 +162,9 @@ local:
     dbus-libs:
         1:1.10.24-7.amzn2
     device-mapper:
-        7:1.02.146-4.amzn2.0.2
+        7:1.02.170-6.amzn2.5
     device-mapper-libs:
-        7:1.02.146-4.amzn2.0.2
+        7:1.02.170-6.amzn2.5
     diffutils:
         3.3-5.amzn2
     dwz:
@@ -204,17 +204,17 @@ local:
     glib2:
         2.56.1-9.amzn2.0.1
     glibc:
-        2.26-48.amzn2
+        2.26-54.amzn2
     glibc-common:
-        2.26-48.amzn2
+        2.26-54.amzn2
     glibc-devel:
-        2.26-48.amzn2
+        2.26-54.amzn2
     glibc-headers:
-        2.26-48.amzn2
+        2.26-54.amzn2
     glibc-langpack-en:
-        2.26-48.amzn2
+        2.26-54.amzn2
     glibc-minimal-langpack:
-        2.26-48.amzn2
+        2.26-54.amzn2
     gmp:
         1:6.0.0-15.amzn2.0.2
     gnupg2:
@@ -232,7 +232,7 @@ local:
     info:
         5.1-5.amzn2
     kernel-headers:
-        4.14.243-185.433.amzn2
+        4.14.246-187.474.amzn2
     keyutils-libs:
         1.5.8-3.amzn2.0.2
     kmod:
@@ -252,7 +252,7 @@ local:
     libattr:
         2.4.46-12.amzn2.0.2
     libblkid:
-        2.30.2-2.amzn2.0.4
+        2.30.2-2.amzn2.0.5
     libcap:
         2.22-9.amzn2.0.2
     libcap-ng:
@@ -262,9 +262,9 @@ local:
     libcom_err:
         1.42.9-19.amzn2
     libcrypt:
-        2.26-48.amzn2
+        2.26-54.amzn2
     libcurl:
-        7.76.1-4.amzn2.0.1
+        7.76.1-7.amzn2.0.2
     libdb:
         5.3.21-24.amzn2.0.3
     libdb-utils:
@@ -272,7 +272,7 @@ local:
     libedit:
         3.0-12.20121213cvs.amzn2.0.2
     libfdisk:
-        2.30.2-2.amzn2.0.4
+        2.30.2-2.amzn2.0.5
     libffi:
         3.0.13-18.amzn2.0.2
     libgcc:
@@ -290,7 +290,7 @@ local:
     libmetalink:
         0.1.3-13.amzn2
     libmount:
-        2.30.2-2.amzn2.0.4
+        2.30.2-2.amzn2.0.5
     libmpc:
         1.0.1-3.amzn2.0.2
     libmpx:
@@ -310,7 +310,7 @@ local:
     libsepol:
         2.5-8.1.amzn2.0.2
     libsmartcols:
-        2.30.2-2.amzn2.0.4
+        2.30.2-2.amzn2.0.5
     libssh2:
         1.4.3-12.amzn2.2.3
     libstdc++:
@@ -324,7 +324,7 @@ local:
     libutempter:
         1.1.6-4.amzn2.0.2
     libuuid:
-        2.30.2-2.amzn2.0.4
+        2.30.2-2.amzn2.0.5
     libverto:
         0.2.5-4.amzn2.0.2
     libxml2:
@@ -362,7 +362,7 @@ local:
     nss-util:
         3.53.1-1.amzn2
     openldap:
-        2.4.44-23.amzn2.0.1
+        2.4.44-23.amzn2.0.2
     openssh:
         7.4p1-21.amzn2.0.3
     openssh-clients:
@@ -518,9 +518,9 @@ local:
     system-rpm-config:
         9.1.0-76.amzn2.0.10
     systemd:
-        219-78.amzn2.0.14
+        219-78.amzn2.0.15
     systemd-libs:
-        219-78.amzn2.0.14
+        219-78.amzn2.0.15
     tcp_wrappers-libs:
         7.6-77.amzn2.0.2
     tzdata:
@@ -528,7 +528,7 @@ local:
     ustr:
         1.0.4-16.amzn2.0.3
     util-linux:
-        2.30.2-2.amzn2.0.4
+        2.30.2-2.amzn2.0.5
     vim-minimal:
         2:8.1.1602-1.amzn2
     which:

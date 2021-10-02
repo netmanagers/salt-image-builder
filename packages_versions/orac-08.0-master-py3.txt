@@ -2,7 +2,7 @@ orac-08.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.407a8aa
+          Salt: 3004+0na.b011a4e
  
 Dependency Versions:
           cffi: Not Installed
@@ -20,9 +20,9 @@ Dependency Versions:
   mysql-python: Not Installed
      pycparser: Not Installed
       pycrypto: Not Installed
-  pycryptodome: 3.10.1
+  pycryptodome: 3.10.4
         pygit2: Not Installed
-        Python: 3.6.8 (default, May 19 2021, 10:00:09)
+        Python: 3.6.8 (default, Sep 21 2021, 10:09:35)
   python-gnupg: Not Installed
         PyYAML: 5.4.1
          PyZMQ: 21.0.2
@@ -106,7 +106,7 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3004+0na.407a8aa
+        3004+0na.b011a4e
     saltversioninfo:
         - 3004
     systemd:
@@ -141,7 +141,7 @@ local:
     bzip2-libs:
         1.0.6-26.el8
     ca-certificates:
-        2020.2.41-80.0.el8_2
+        2021.2.50-80.0.el8_4
     chkconfig:
         1.13-2.0.1.el8
     coreutils:
@@ -159,7 +159,7 @@ local:
     cryptsetup-libs:
         2.3.3-4.el8
     curl:
-        7.61.1-18.el8
+        7.61.1-18.el8_4.1
     cyrus-sasl-lib:
         2.1.27-5.el8
     dbus:
@@ -191,7 +191,7 @@ local:
     dnf-data:
         4.4.2-11.el8
     dnf-plugins-core:
-        4.0.18-4.el8
+        4.0.18-4.0.1.el8
     elfutils-default-yama-scope:
         0.182-3.el8
     elfutils-libelf:
@@ -201,7 +201,7 @@ local:
     emacs-filesystem:
         1:26.1-5.el8
     epel-release:
-        8-11.el8
+        8-13.el8
     expat:
         2.2.5-4.el8
     file-libs:
@@ -273,7 +273,7 @@ local:
     json-c:
         0.13.1-0.4.el8
     kernel-headers:
-        4.18.0-305.17.1.el8_4
+        4.18.0-305.19.1.el8_4
     keyutils-libs:
         1.5.10-6.el8
     keyutils-libs-devel:
@@ -283,9 +283,9 @@ local:
     kmod-libs:
         25-17.0.1.el8
     krb5-devel:
-        1.18.2-8.el8
+        1.18.2-8.3.el8_4
     krb5-libs:
-        1.18.2-8.el8
+        1.18.2-8.3.el8_4
     less:
         530-1.el8
     libacl:
@@ -309,11 +309,11 @@ local:
     libcomps:
         0.1.11-5.el8
     libcurl:
-        7.61.1-18.el8
+        7.61.1-18.el8_4.1
     libdb:
-        5.3.28-40.el8
+        5.3.28-42.el8_4
     libdb-utils:
-        5.3.28-40.el8
+        5.3.28-42.el8_4
     libdnf:
         0.55.0-7.0.1.el8
     libedit:
@@ -339,11 +339,9 @@ local:
     libidn2:
         2.2.0-1.el8
     libkadm5:
-        1.18.2-8.el8
+        1.18.2-8.3.el8_4
     libksba:
         1.3.5-7.el8
-    libmetalink:
-        0.1.3-7.el8
     libmnl:
         1.0.4-6.el8
     libmodulemd:
@@ -399,7 +397,7 @@ local:
     libtasn1:
         4.13-3.el8
     libtirpc:
-        1.1.4-4.el8
+        1.1.4-4.0.1.el8
     libunistring:
         0.9.9-3.el8
     libusbx:
@@ -559,9 +557,9 @@ local:
     pkgconf-pkg-config:
         1.4.2-1.el8
     platform-python:
-        3.6.8-37.0.1.el8
+        3.6.8-38.0.1.el8_4
     platform-python-devel:
-        3.6.8-37.0.1.el8
+        3.6.8-38.0.1.el8_4
     platform-python-pip:
         9.0.3-19.el8
     platform-python-setuptools:
@@ -585,7 +583,7 @@ local:
     python3-dnf:
         4.4.2-11.el8
     python3-dnf-plugins-core:
-        4.0.18-4.el8
+        4.0.18-4.0.1.el8
     python3-gpg:
         1.13.1-7.el8
     python3-hawkey:
@@ -595,7 +593,7 @@ local:
     python3-libdnf:
         0.55.0-7.0.1.el8
     python3-libs:
-        3.6.8-37.0.1.el8
+        3.6.8-38.0.1.el8_4
     python3-pip:
         9.0.3-19.el8
     python3-pip-wheel:
@@ -667,7 +665,7 @@ local:
     yum:
         4.4.2-11.el8
     yum-utils:
-        4.0.18-4.el8
+        4.0.18-4.0.1.el8
     zlib:
         1.2.11-17.el8
     zlib-devel:
@@ -684,7 +682,7 @@ local:
     certifi:
         2021.5.30
     charset-normalizer:
-        2.0.4
+        2.0.6
     contextvars:
         2.4
     dbus-python:
@@ -701,8 +699,10 @@ local:
         1.0.2
     pip:
         9.0.3
+    psutil:
+        5.8.0
     pycryptodomex:
-        3.10.1
+        3.10.4
     python-dateutil:
         2.6.1
     pyzmq:
@@ -712,7 +712,7 @@ local:
     rpm:
         4.14.3
     salt:
-        3004+0na.407a8aa
+        3004+0na.b011a4e
     setuptools:
         39.2.0
     six:
@@ -720,6 +720,6 @@ local:
     typing-extensions:
         3.10.0.2
     urllib3:
-        1.26.6
+        1.26.7
     wheel:
         0.37.0

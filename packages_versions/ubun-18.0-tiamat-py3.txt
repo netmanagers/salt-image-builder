@@ -2,11 +2,11 @@ ubun-18.0-tiamat-py3
 Salt install method: stable
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003rc1+927.g407a8aa446
+          Salt: 3003rc1+1108.gb011a4ed6b
  
 Dependency Versions:
-          cffi: 1.14.4
-      cherrypy: 17.4.1
+          cffi: 1.14.6
+      cherrypy: 18.6.1
       dateutil: 2.8.1
      docker-py: Not Installed
          gitdb: Not Installed
@@ -104,7 +104,7 @@ local:
     saltpath:
         /opt/saltstack/salt/run/salt
     saltversion:
-        3003rc1+927.g407a8aa446
+        3003rc1+1108.gb011a4ed6b
     saltversioninfo:
         - 3003
     systemd:
@@ -129,7 +129,7 @@ local:
     apt-transport-https:
         1.6.14
     base-files:
-        10.1ubuntu2.10
+        10.1ubuntu2.11
     base-passwd:
         3.5.44
     bash:
@@ -141,11 +141,11 @@ local:
     bzip2:
         1.0.6-8.1ubuntu0.2
     ca-certificates:
-        20210119~18.04.1
+        20210119~18.04.2
     coreutils:
         8.28-1ubuntu1
     curl:
-        7.58.0-2ubuntu3.14
+        7.58.0-2ubuntu3.16
     dash:
         0.5.8-2.10
     dctrl-tools:
@@ -171,9 +171,9 @@ local:
     gcc-8-base:
         8.4.0-1ubuntu1~18.04
     git:
-        1:2.17.1-1ubuntu0.8
+        1:2.17.1-1ubuntu0.9
     git-man:
-        1:2.17.1-1ubuntu0.8
+        1:2.17.1-1ubuntu0.9
     gnupg:
         2.2.4-1ubuntu1.4
     gnupg-l10n:
@@ -239,9 +239,9 @@ local:
     libcryptsetup12:
         2:2.0.2-1ubuntu1.2
     libcurl3-gnutls:
-        7.58.0-2ubuntu3.14
+        7.58.0-2ubuntu3.16
     libcurl4:
-        7.58.0-2ubuntu3.14
+        7.58.0-2ubuntu3.16
     libdb5.3:
         5.3.28-13.1ubuntu1.1
     libdebconfclient0:
@@ -263,7 +263,7 @@ local:
     libgcc1:
         1:8.4.0-1ubuntu1~18.04
     libgcrypt20:
-        1.8.1-4ubuntu1.2
+        1.8.1-4ubuntu1.3
     libgdbm-compat4:
         1.14.1-6
     libgdbm5:
@@ -271,7 +271,7 @@ local:
     libgmp10:
         2:6.1.2+dfsg-2
     libgnutls30:
-        3.5.18-1ubuntu1.4
+        3.5.18-1ubuntu1.5
     libgpg-error0:
         1.27-6
     libgssapi-krb5-2:
@@ -389,13 +389,13 @@ local:
     libstdc++6:
         8.4.0-1ubuntu1~18.04
     libsystemd0:
-        237-3ubuntu10.51
+        237-3ubuntu10.52
     libtasn1-6:
         4.13-2
     libtinfo5:
         6.1-1ubuntu1.18.04
     libudev1:
-        237-3ubuntu10.51
+        237-3ubuntu10.52
     libunistring2:
         0.9.9-0ubuntu2
     libuuid1:
@@ -465,9 +465,9 @@ local:
     readline-common:
         7.0-3
     salt-common:
-        3003~rc1+927.g407a8aa446+ds-1
+        3003~rc1+1108.gb011a4ed6b+ds-1
     salt-minion:
-        3003~rc1+927.g407a8aa446+ds-1
+        3003~rc1+1108.gb011a4ed6b+ds-1
     sed:
         4.4-2
     sensible-utils:
@@ -475,9 +475,9 @@ local:
     sudo:
         1.8.21p2-3ubuntu1.4
     systemd:
-        237-3ubuntu10.51
+        237-3ubuntu10.52
     systemd-sysv:
-        237-3ubuntu10.51
+        237-3ubuntu10.52
     sysvinit-utils:
         2.88dsf-59.10ubuntu1
     tar:
@@ -487,7 +487,7 @@ local:
     ucf:
         3.0038
     udev:
-        237-3ubuntu10.51
+        237-3ubuntu10.52
     util-linux:
         2.31.1-0.4ubuntu3.7
     wget:

@@ -1,8 +1,8 @@
-opsu-15.3-master-py3
+opsu-15.3-3002.7-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.b011a4e
+          Salt: 3002.7
  
 Dependency Versions:
           cffi: 1.13.2
@@ -11,7 +11,7 @@ Dependency Versions:
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
-        Jinja2: 3.0.1
+        Jinja2: 2.11.3
        libgit2: Not Installed
       M2Crypto: Not Installed
           Mako: Not Installed
@@ -25,11 +25,11 @@ Dependency Versions:
         Python: 3.6.13 (default, Mar 10 2021, 18:30:35) [GCC]
   python-gnupg: Not Installed
         PyYAML: 5.4.1
-         PyZMQ: 21.0.2
+         PyZMQ: 22.3.0
          smmap: Not Installed
        timelib: Not Installed
        Tornado: 4.5.3
-           ZMQ: 4.3.3
+           ZMQ: 4.3.4
  
 System Versions:
           dist: opensuse-leap 15.3 
@@ -107,9 +107,10 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3004+0na.b011a4e
+        3002.7
     saltversioninfo:
-        - 3004
+        - 3002
+        - 7
     systemd:
         ----------
         features:
@@ -117,11 +118,11 @@ local:
         version:
             246
     virtual:
-        container
+        gce
     virtual_subtype:
         Docker
     zmqversion:
-        4.3.3
+        4.3.4
 # salt-call --local pkg.list_pkgs
 local:
     ----------
@@ -575,7 +576,7 @@ local:
 local:
     ----------
     Jinja2:
-        3.0.1
+        2.11.3
     MarkupSafe:
         2.0.1
     PyYAML:
@@ -592,24 +593,18 @@ local:
         3.0.4
     charset-normalizer:
         2.0.6
-    contextvars:
-        2.4
     cryptography:
         2.8
     distro:
         1.6.0
     idna:
         3.2
-    immutables:
-        0.16
     msgpack:
         1.0.2
     packaging:
         20.3
     pip:
         20.0.2
-    psutil:
-        5.8.0
     py:
         1.8.1
     pyOpenSSL:
@@ -623,17 +618,15 @@ local:
     pyparsing:
         2.4.7
     pyzmq:
-        21.0.2
+        22.3.0
     requests:
         2.26.0
     salt:
-        3004+0na.b011a4e
+        3002.7
     setuptools:
         40.5.0
     six:
         1.14.0
-    typing-extensions:
-        3.10.0.2
     urllib3:
         1.26.7
     wheel:

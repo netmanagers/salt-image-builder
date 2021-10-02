@@ -132,7 +132,7 @@ local:
     apt-transport-https:
         1.6.14
     base-files:
-        10.1ubuntu2.10
+        10.1ubuntu2.11
     base-passwd:
         3.5.44
     bash:
@@ -144,11 +144,11 @@ local:
     bzip2:
         1.0.6-8.1ubuntu0.2
     ca-certificates:
-        20210119~18.04.1
+        20210119~18.04.2
     coreutils:
         8.28-1ubuntu1
     curl:
-        7.58.0-2ubuntu3.14
+        7.58.0-2ubuntu3.16
     dash:
         0.5.8-2.10
     dctrl-tools:
@@ -176,9 +176,9 @@ local:
     gir1.2-glib-2.0:
         1.56.1-1
     git:
-        1:2.17.1-1ubuntu0.8
+        1:2.17.1-1ubuntu0.9
     git-man:
-        1:2.17.1-1ubuntu0.8
+        1:2.17.1-1ubuntu0.9
     gnupg:
         2.2.4-1ubuntu1.4
     gnupg-l10n:
@@ -248,9 +248,9 @@ local:
     libcryptsetup12:
         2:2.0.2-1ubuntu1.2
     libcurl3-gnutls:
-        7.58.0-2ubuntu3.14
+        7.58.0-2ubuntu3.16
     libcurl4:
-        7.58.0-2ubuntu3.14
+        7.58.0-2ubuntu3.16
     libdb5.3:
         5.3.28-13.1ubuntu1.1
     libdbus-1-3:
@@ -274,7 +274,7 @@ local:
     libgcc1:
         1:8.4.0-1ubuntu1~18.04
     libgcrypt20:
-        1.8.1-4ubuntu1.2
+        1.8.1-4ubuntu1.3
     libgdbm-compat4:
         1.14.1-6
     libgdbm5:
@@ -286,7 +286,7 @@ local:
     libgmp10:
         2:6.1.2+dfsg-2
     libgnutls30:
-        3.5.18-1ubuntu1.4
+        3.5.18-1ubuntu1.5
     libgpg-error0:
         1.27-6
     libgssapi-krb5-2:
@@ -412,13 +412,13 @@ local:
     libstdc++6:
         8.4.0-1ubuntu1~18.04
     libsystemd0:
-        237-3ubuntu10.51
+        237-3ubuntu10.52
     libtasn1-6:
         4.13-2
     libtinfo5:
         6.1-1ubuntu1.18.04
     libudev1:
-        237-3ubuntu10.51
+        237-3ubuntu10.52
     libunistring2:
         0.9.9-0ubuntu2
     libuuid1:
@@ -476,13 +476,13 @@ local:
     procps:
         2:3.3.12-3ubuntu1.2
     python-apt-common:
-        1.6.5ubuntu0.6
+        1.6.5ubuntu0.7
     python-pip-whl:
         9.0.1-2.3~ubuntu1.18.04.5
     python3:
         3.6.7-1~18.04
     python3-apt:
-        1.6.5ubuntu0.6
+        1.6.5ubuntu0.7
     python3-certifi:
         2018.1.18-2
     python3-chardet:
@@ -552,9 +552,9 @@ local:
     sudo:
         1.8.21p2-3ubuntu1.4
     systemd:
-        237-3ubuntu10.51
+        237-3ubuntu10.52
     systemd-sysv:
-        237-3ubuntu10.51
+        237-3ubuntu10.52
     sysvinit-utils:
         2.88dsf-59.10ubuntu1
     tar:
@@ -566,7 +566,7 @@ local:
     ucf:
         3.0038
     udev:
-        237-3ubuntu10.51
+        237-3ubuntu10.52
     util-linux:
         2.31.1-0.4ubuntu3.7
     wget:
@@ -601,7 +601,7 @@ local:
     pygobject:
         3.26.1
     python-apt:
-        1.6.5+ubuntu0.6
+        1.6.5+ubuntu0.7
     python-dateutil:
         2.6.1
     python-gnupg:

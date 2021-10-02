@@ -1,5 +1,18 @@
 # Changelog
 
+# [1.55.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.54.0...v1.55.0) (2021-10-02)
+
+
+### Continuous Integration
+
+* **tumbleweed:** permit failure until upstream bug is resolved ([039a7d2](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/039a7d26f44aeef6519de8f33b1d250c4d6cfc37))
+
+
+### Features
+
+* **dockerfile.pac:** workaround `ssh-rsa` Kitchen issue on Arch Linux ([cb6781a](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/cb6781a2bba90384881a4deb9fec92db8e1d50e8))
+* **opensuse:** build stable `3003.3` & git `3002.7` [skip ci] ([9a32f4a](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/9a32f4ab03e57c275aa06a31f15aa6d8e07a0584))
+
 # [1.54.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.53.0...v1.54.0) (2021-09-11)
 
 

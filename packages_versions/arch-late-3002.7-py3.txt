@@ -20,12 +20,12 @@ Dependency Versions:
   mysql-python: Not Installed
      pycparser: 2.20
       pycrypto: Not Installed
-  pycryptodome: 3.10.1
+  pycryptodome: 3.10.4
         pygit2: Not Installed
         Python: 3.9.7 (default, Aug 31 2021, 13:28:12)
   python-gnupg: Not Installed
         PyYAML: 5.4.1
-         PyZMQ: 22.2.1
+         PyZMQ: 22.3.0
          smmap: Not Installed
        timelib: Not Installed
        Tornado: 4.5.3
@@ -127,13 +127,15 @@ local:
     attr:
         2.5.1-1
     audit:
-        3.0.4-1
+        3.0.5-1
     base:
         2-2
     bash:
         5.1.008-1
     binutils:
         2.36.1-3
+    brotli:
+        1.0.9-4
     bzip2:
         1.0.8-4
     ca-certificates:
@@ -143,11 +145,11 @@ local:
     ca-certificates-utils:
         20210603-1
     coreutils:
-        8.32-1
+        9.0-1
     cryptsetup:
-        2.4.0-1
+        2.4.1-1
     curl:
-        7.78.0-1
+        7.79.1-1
     db:
         5.3.28-5
     dbus:
@@ -163,7 +165,7 @@ local:
     expat:
         2.4.1-1
     file:
-        5.40-5
+        5.40-6
     filesystem:
         2021.05.31-1
     findutils:
@@ -181,7 +183,7 @@ local:
     git:
         2.33.0-1
     glib2:
-        2.68.4-1
+        2.70.0-1
     glibc:
         2.33-5
     gmp:
@@ -193,13 +195,13 @@ local:
     gpgme:
         1.16.0-1
     grep:
-        3.6-1
+        3.7-1
     gzip:
         1.11-1
     hwids:
         20210613-1
     iana-etc:
-        20210728-1
+        20210903-1
     icu:
         69.1-1
     iproute2:
@@ -227,13 +229,13 @@ local:
     libassuan:
         2.5.5-1
     libcap:
-        2.56-1
+        2.58-1
     libcap-ng:
         0.8.2-3
     libcroco:
         0.6.13-2
     libedit:
-        20210714_3.1-1
+        20210910_3.1-1
     libelf:
         0.185-1
     libffi:
@@ -259,7 +261,7 @@ local:
     libnftnl:
         1.2.0-1
     libnghttp2:
-        1.44.0-1
+        1.45.0-1
     libnl:
         3.5.0-3
     libnsl:
@@ -285,7 +287,7 @@ local:
     libunistring:
         0.9.10-3
     libxcrypt:
-        4.4.25-1
+        4.4.26-1
     libxml2:
         2.9.12-2
     libyaml:
@@ -307,17 +309,17 @@ local:
     npth:
         1.6-3
     openssh:
-        8.7p1-1
+        8.8p1-1
     openssl:
         1.1.1.l-1
     p11-kit:
         0.24.0-1
     pacman:
-        6.0.1-1
+        6.0.1-2
     pacman-mirrorlist:
         20210822-1
     pam:
-        1.5.1-1
+        1.5.2-1
     pambase:
         20210605-2
     pciutils:
@@ -359,7 +361,7 @@ local:
     python-cryptography:
         3.4.8-2
     python-distlib:
-        0.3.2-1
+        0.3.3-1
     python-distro:
         1.6.0-1
     python-html5lib:
@@ -367,7 +369,7 @@ local:
     python-idna:
         3.2-1
     python-more-itertools:
-        8.8.0-1
+        8.10.0-1
     python-msgpack:
         1.0.2-2
     python-ordered-set:
@@ -417,7 +419,7 @@ local:
     sqlite:
         3.36.0-1
     sudo:
-        1.9.7.p2-1
+        1.9.8.p2-1
     systemd:
         249.4-1
     systemd-libs:
@@ -427,13 +429,13 @@ local:
     tar:
         1.34-1
     tzdata:
-        2021a-2
+        2021b-1
     util-linux:
         2.37.2-1
     util-linux-libs:
         2.37.2-1
     xz:
-        5.2.5-1
+        5.2.5-2
     zlib:
         1:1.2.11-4
     zstd:
@@ -460,7 +462,7 @@ local:
     cryptography:
         3.4.8
     distlib:
-        0.3.2
+        0.3.3
     distro:
         1.6.0
     html5lib:
@@ -468,7 +470,7 @@ local:
     idna:
         3.2
     more-itertools:
-        8.8.0
+        8.10.0
     msgpack:
         1.0.2
     ordered-set:
@@ -503,8 +505,6 @@ local:
         0.10.2
     tomli:
         1.2.1
-    urllib3:
-        1.26.6
     webencodings:
         0.5.1
     wheel:

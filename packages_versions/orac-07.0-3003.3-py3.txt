@@ -142,7 +142,7 @@ local:
     bzip2-libs:
         1.0.6-13.el7
     ca-certificates:
-        2020.2.41-70.0.el7_8
+        2021.2.50-72.el7_9
     chkconfig:
         1.7.6-1.el7
     coreutils:
@@ -190,7 +190,7 @@ local:
     elfutils-libs:
         0.176-5.el7
     epel-release:
-        7-13
+        7-14
     expat:
         2.1.0-12.el7
     file-libs:
@@ -300,7 +300,7 @@ local:
     libgpg-error:
         1.12-3.el7
     libgudev1:
-        219-78.0.5.el7_9.3
+        219-78.0.7.el7_9.3
     libidn:
         1.28-4.el7
     libkadm5:
@@ -638,9 +638,9 @@ local:
     swig:
         2.0.10-5.el7
     systemd:
-        219-78.0.5.el7_9.3
+        219-78.0.7.el7_9.3
     systemd-libs:
-        219-78.0.5.el7_9.3
+        219-78.0.7.el7_9.3
     sysvinit-tools:
         2.88-14.dsf.el7
     tar:

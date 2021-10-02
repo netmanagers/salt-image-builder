@@ -2,7 +2,7 @@ ubun-20.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.407a8aa
+          Salt: 3004+0na.b011a4e
  
 Dependency Versions:
           cffi: Not Installed
@@ -20,7 +20,7 @@ Dependency Versions:
   mysql-python: Not Installed
      pycparser: Not Installed
       pycrypto: Not Installed
-  pycryptodome: 3.10.1
+  pycryptodome: 3.10.4
         pygit2: Not Installed
         Python: 3.8.10 (default, Jun  2 2021, 10:49:15)
   python-gnupg: Not Installed
@@ -106,7 +106,7 @@ local:
     saltpath:
         /usr/local/lib/python3.8/dist-packages/salt
     saltversion:
-        3004+0na.407a8aa
+        3004+0na.b011a4e
     saltversioninfo:
         - 3004
     systemd:
@@ -147,7 +147,7 @@ local:
     bzip2:
         1.0.8-2
     ca-certificates:
-        20210119~20.04.1
+        20210119~20.04.2
     coreutils:
         8.30-3ubuntu2
     cpp:
@@ -155,7 +155,7 @@ local:
     cpp-9:
         9.3.0-17ubuntu1~20.04
     curl:
-        7.68.0-1ubuntu2.6
+        7.68.0-1ubuntu2.7
     dash:
         0.5.10.2-6
     debconf:
@@ -185,9 +185,9 @@ local:
     gcc-9-base:
         9.3.0-17ubuntu1~20.04
     git:
-        1:2.25.1-1ubuntu3.1
+        1:2.25.1-1ubuntu3.2
     git-man:
-        1:2.25.1-1ubuntu3.1
+        1:2.25.1-1ubuntu3.2
     gnupg:
         2.2.19-3ubuntu2.1
     gnupg-l10n:
@@ -277,9 +277,9 @@ local:
     libctf0:
         2.34-6ubuntu1.1
     libcurl3-gnutls:
-        7.68.0-1ubuntu2.6
+        7.68.0-1ubuntu2.7
     libcurl4:
-        7.68.0-1ubuntu2.6
+        7.68.0-1ubuntu2.7
     libdb5.3:
         5.3.28+dfsg1-0.6ubuntu2
     libdebconfclient0:
@@ -307,7 +307,7 @@ local:
     libgcc-s1:
         10.3.0-1ubuntu1~20.04
     libgcrypt20:
-        1.8.5-5ubuntu1
+        1.8.5-5ubuntu1.1
     libgdbm-compat4:
         1.18.1-5
     libgdbm6:
@@ -403,7 +403,7 @@ local:
     libperl5.30:
         5.30.0-9ubuntu0.2
     libprocps8:
-        2:3.3.16-1ubuntu2.2
+        2:3.3.16-1ubuntu2.3
     libpsl5:
         0.21.0-1ubuntu1
     libpython3-dev:
@@ -453,7 +453,7 @@ local:
     libstdc++6:
         10.3.0-1ubuntu1~20.04
     libsystemd0:
-        245.4-4ubuntu3.11
+        245.4-4ubuntu3.13
     libtasn1-6:
         4.16.0-2
     libtinfo6:
@@ -463,7 +463,7 @@ local:
     libubsan1:
         10.3.0-1ubuntu1~20.04
     libudev1:
-        245.4-4ubuntu3.11
+        245.4-4ubuntu3.13
     libunistring2:
         0.9.10-2
     libuuid1:
@@ -475,7 +475,7 @@ local:
     libzstd1:
         1.4.4+dfsg-3ubuntu0.1
     linux-libc-dev:
-        5.4.0-84.94
+        5.4.0-88.99
     locales:
         2.31-0ubuntu9.2
     login:
@@ -517,7 +517,7 @@ local:
     pinentry-curses:
         1.1.0-3build1
     procps:
-        2:3.3.16-1ubuntu2.2
+        2:3.3.16-1ubuntu2.3
     python-apt-common:
         2.0.0ubuntu0.20.04.6
     python-pip-whl:
@@ -557,11 +557,11 @@ local:
     sudo:
         1.8.31-1ubuntu1.2
     systemd:
-        245.4-4ubuntu3.11
+        245.4-4ubuntu3.13
     systemd-sysv:
-        245.4-4ubuntu3.11
+        245.4-4ubuntu3.13
     systemd-timesyncd:
-        245.4-4ubuntu3.11
+        245.4-4ubuntu3.13
     sysvinit-utils:
         2.96-2.1ubuntu1
     tar:
@@ -571,7 +571,7 @@ local:
     ucf:
         3.0038+nmu1
     udev:
-        245.4-4ubuntu3.11
+        245.4-4ubuntu3.13
     util-linux:
         2.34-0.1ubuntu9.1
     wget:
@@ -592,7 +592,7 @@ local:
     certifi:
         2021.5.30
     charset-normalizer:
-        2.0.4
+        2.0.6
     contextvars:
         2.4
     distro:
@@ -605,8 +605,10 @@ local:
         1.0.2
     pip:
         20.0.2
+    psutil:
+        5.8.0
     pycryptodomex:
-        3.10.1
+        3.10.4
     python-apt:
         2.0.0+ubuntu0.20.4.6
     pyzmq:
@@ -614,10 +616,10 @@ local:
     requests:
         2.26.0
     salt:
-        3004+0na.407a8aa
+        3004+0na.b011a4e
     setuptools:
         45.2.0
     urllib3:
-        1.26.6
+        1.26.7
     wheel:
         0.34.2
