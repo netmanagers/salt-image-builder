@@ -38,12 +38,19 @@ RUN if [[ "${DISTRO_NAME}" = "centos" ]]; then \
         TIAMAT_DISTRO_NAME="redhat"; \
       fi; \
       echo "${TIAMAT_DISTRO_NAME}"; \
+      # Prepare the `EPEL_PACKAGE_NAME`
+      if [ "${DISTRO_NAME}" = "oraclelinux" ]; then \
+        EPEL_PACKAGE_NAME="oracle-epel-release-el${DISTRO_VERSION}"; \
+      else \
+        EPEL_PACKAGE_NAME="epel-release"; \
+      fi; \
+      echo "${EPEL_PACKAGE_NAME}"; \
       # Prepare the repo
       rpm --import https://repo.saltproject.io/salt-dev/py3/${TIAMAT_DISTRO_NAME}/${DISTRO_VERSION}/x86_64/SALTSTACK-GPG-KEY.pub; \
       curl -fsSL https://repo.saltproject.io/salt-dev/py3/${TIAMAT_DISTRO_NAME}/${DISTRO_VERSION}/x86_64/dev.repo | tee /etc/yum.repos.d/salt-dev.repo; \
       # Install the package
       yum clean expire-cache; \
-      yum -y install salt-minion; \
+      yum -y install "${EPEL_PACKAGE_NAME}" salt-minion; \
     fi \
  && if command -v systemctl; then \
       systemctl disable salt-minion.service > /dev/null 2>&1; \
