@@ -2,7 +2,7 @@ arch-late-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.b011a4e
+          Salt: 3004+0na.4998b6c
  
 Dependency Versions:
           cffi: 1.14.6
@@ -11,7 +11,7 @@ Dependency Versions:
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
-        Jinja2: 3.0.1
+        Jinja2: 3.0.2
        libgit2: Not Installed
       M2Crypto: Not Installed
           Mako: Not Installed
@@ -20,7 +20,7 @@ Dependency Versions:
   mysql-python: Not Installed
      pycparser: 2.20
       pycrypto: Not Installed
-  pycryptodome: 3.10.4
+  pycryptodome: 3.11.0
         pygit2: Not Installed
         Python: 3.9.7 (default, Aug 31 2021, 13:28:12)
   python-gnupg: Not Installed
@@ -99,7 +99,7 @@ local:
     saltpath:
         /usr/lib/python3.9/site-packages/salt
     saltversion:
-        3004+0na.b011a4e
+        3004+0na.4998b6c
     saltversioninfo:
         - 3004
     systemd:
@@ -140,11 +140,11 @@ local:
     ca-certificates:
         20210603-1
     ca-certificates-mozilla:
-        3.70-1
+        3.71-1
     ca-certificates-utils:
         20210603-1
     coreutils:
-        9.0-1
+        9.0-2
     cryptsetup:
         2.4.1-1
     curl:
@@ -278,7 +278,7 @@ local:
     libsecret:
         0.20.4-1
     libssh2:
-        1.9.0-3
+        1.10.0-1
     libtasn1:
         4.17.0-1
     libtirpc:
@@ -420,15 +420,15 @@ local:
     sudo:
         1.9.8.p2-1
     systemd:
-        249.4-1
+        249.4-2
     systemd-libs:
-        249.4-1
+        249.4-2
     systemd-sysvcompat:
-        249.4-1
+        249.4-2
     tar:
         1.34-1
     tzdata:
-        2021b-1
+        2021c-1
     util-linux:
         2.37.2-1
     util-linux-libs:

@@ -20,7 +20,7 @@ Dependency Versions:
    mysql-python: Not Installed
       pycparser: Not Installed
        pycrypto: Not Installed
-   pycryptodome: 3.10.4
+   pycryptodome: 3.11.0
          pygit2: Not Installed
          Python: 3.6.12 (default, Dec 02 2020, 09:44:23) [GCC]
    python-gnupg: Not Installed
@@ -139,7 +139,7 @@ local:
     ca-certificates:
         2+git20170807.10b2785-lp152.8.2
     ca-certificates-mozilla:
-        2.44-lp152.2.7.1
+        2.44-lp152.2.10.1
     coreutils:
         8.29-lp152.4.7
     cpio:
@@ -423,7 +423,7 @@ local:
     libz1:
         1.2.11-lp152.8.9.1
     libzck1:
-        1.1.5-lp152.1.4
+        1.1.5-lp152.2.3.1
     libzio1:
         1.06-lp152.4.113
     libzstd1:
@@ -562,7 +562,7 @@ local:
     appdirs:
         1.4.3
     certifi:
-        2021.5.30
+        2021.10.8
     chardet:
         3.0.4
     charset-normalizer:
@@ -580,7 +580,7 @@ local:
     py:
         1.8.1
     pycryptodomex:
-        3.10.4
+        3.11.0
     pyparsing:
         2.2.0
     pyzmq:

@@ -2,7 +2,7 @@ ubun-18.0-tiamat-py3
 Salt install method: stable
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003rc1+1108.gb011a4ed6b
+          Salt: 3004rc1
  
 Dependency Versions:
           cffi: 1.14.6
@@ -104,9 +104,9 @@ local:
     saltpath:
         /opt/saltstack/salt/run/salt
     saltversion:
-        3003rc1+1108.gb011a4ed6b
+        3004rc1
     saltversioninfo:
-        - 3003
+        - 3004
     systemd:
         ----------
         features:
@@ -159,7 +159,7 @@ local:
     dirmngr:
         2.2.4-1ubuntu1.4
     distro-info-data:
-        0.37ubuntu0.11
+        0.37ubuntu0.12
     dpkg:
         1.19.0.5ubuntu2.3
     e2fsprogs:
@@ -465,9 +465,9 @@ local:
     readline-common:
         7.0-3
     salt-common:
-        3003~rc1+1108.gb011a4ed6b+ds-1
+        3004~rc1+ds-1
     salt-minion:
-        3003~rc1+1108.gb011a4ed6b+ds-1
+        3004~rc1+ds-1
     sed:
         4.4-2
     sensible-utils:

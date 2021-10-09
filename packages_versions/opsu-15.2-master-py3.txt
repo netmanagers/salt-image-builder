@@ -2,7 +2,7 @@ opsu-15.2-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.b011a4e
+          Salt: 3004+0na.4998b6c
  
 Dependency Versions:
           cffi: Not Installed
@@ -11,7 +11,7 @@ Dependency Versions:
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
-        Jinja2: 3.0.1
+        Jinja2: 3.0.2
        libgit2: Not Installed
       M2Crypto: Not Installed
           Mako: Not Installed
@@ -20,7 +20,7 @@ Dependency Versions:
   mysql-python: Not Installed
      pycparser: Not Installed
       pycrypto: Not Installed
-  pycryptodome: 3.10.4
+  pycryptodome: 3.11.0
         pygit2: Not Installed
         Python: 3.6.12 (default, Dec 02 2020, 09:44:23) [GCC]
   python-gnupg: Not Installed
@@ -107,7 +107,7 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3004+0na.b011a4e
+        3004+0na.4998b6c
     saltversioninfo:
         - 3004
     systemd:
@@ -138,7 +138,7 @@ local:
     ca-certificates:
         2+git20170807.10b2785-lp152.8.2
     ca-certificates-mozilla:
-        2.44-lp152.2.7.1
+        2.44-lp152.2.10.1
     coreutils:
         8.29-lp152.4.7
     cpio:
@@ -553,7 +553,7 @@ local:
 local:
     ----------
     Jinja2:
-        3.0.1
+        3.0.2
     MarkupSafe:
         2.0.1
     PyYAML:
@@ -561,7 +561,7 @@ local:
     appdirs:
         1.4.3
     certifi:
-        2021.5.30
+        2021.10.8
     chardet:
         3.0.4
     charset-normalizer:
@@ -585,7 +585,7 @@ local:
     py:
         1.8.1
     pycryptodomex:
-        3.10.4
+        3.11.0
     pyparsing:
         2.2.0
     pyzmq:
@@ -593,7 +593,7 @@ local:
     requests:
         2.26.0
     salt:
-        3004+0na.b011a4e
+        3004+0na.4998b6c
     setuptools:
         40.5.0
     six:

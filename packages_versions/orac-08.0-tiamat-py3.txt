@@ -2,7 +2,7 @@ orac-08.0-tiamat-py3
 Salt install method: stable
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003rc1+1108.gb011a4ed6b
+          Salt: 3004rc1
  
 Dependency Versions:
           cffi: 1.14.6
@@ -104,9 +104,9 @@ local:
     saltpath:
         /opt/saltstack/salt/run/salt
     saltversion:
-        3003rc1+1108.gb011a4ed6b
+        3004rc1
     saltversioninfo:
-        - 3003
+        - 3004
     systemd:
         ----------
         features:
@@ -432,6 +432,8 @@ local:
         1:1.1.1g-15.el8_3
     openssl-libs:
         1:1.1.1g-15.el8_3
+    oracle-epel-release-el8:
+        1.0-3.el8
     oraclelinux-release:
         8:8.4-1.0.4.el8
     oraclelinux-release-el8:
@@ -609,9 +611,9 @@ local:
     rsyslog:
         8.1911.0-7.0.1.el8_4.2
     salt:
-        3003rc1+1108.gb011a4ed6b-1.el8
+        3004rc1-1.el8
     salt-minion:
-        3003rc1+1108.gb011a4ed6b-1.el8
+        3004rc1-1.el8
     sed:
         4.5-2.el8
     setup:

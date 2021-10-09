@@ -454,7 +454,7 @@ local:
     perl-Encode:
         4:2.97-3.el8
     perl-Errno:
-        1.28-419.el8
+        1.28-419.el8_4.1
     perl-Error:
         1:0.17025-2.el8
     perl-Exporter:
@@ -470,7 +470,7 @@ local:
     perl-HTTP-Tiny:
         0.074-1.el8
     perl-IO:
-        1.38-419.el8
+        1.38-419.el8_4.1
     perl-IO-Socket-IP:
         0.39-5.el8
     perl-IO-Socket-SSL:
@@ -516,13 +516,13 @@ local:
     perl-constant:
         1.33-396.el8
     perl-interpreter:
-        4:5.26.3-419.el8
+        4:5.26.3-419.el8_4.1
     perl-libnet:
         3.11-3.el8
     perl-libs:
-        4:5.26.3-419.el8
+        4:5.26.3-419.el8_4.1
     perl-macros:
-        4:5.26.3-419.el8
+        4:5.26.3-419.el8_4.1
     perl-parent:
         1:0.237-1.el8
     perl-podlators:

@@ -2,7 +2,7 @@ debi-10.0-tiamat-py3
 Salt install method: stable
 # salt-call --versions-report
 Salt Version:
-          Salt: 3003rc1+1108.gb011a4ed6b
+          Salt: 3004rc1
  
 Dependency Versions:
           cffi: 1.14.6
@@ -103,9 +103,9 @@ local:
     saltpath:
         /opt/saltstack/salt/run/salt
     saltversion:
-        3003rc1+1108.gb011a4ed6b
+        3004rc1
     saltversioninfo:
-        - 3003
+        - 3004
     systemd:
         ----------
         features:
@@ -158,7 +158,7 @@ local:
     dirmngr:
         2.2.12-1+deb10u1
     distro-info-data:
-        0.41+deb10u3
+        0.41+deb10u4
     dmsetup:
         2:1.02.155-3
     dpkg:
@@ -284,7 +284,7 @@ local:
     libgpg-error0:
         1.35-1
     libgssapi-krb5-2:
-        1.17-3+deb10u2
+        1.17-3+deb10u3
     libhogweed4:
         3.4.1-1+deb10u1
     libidn11:
@@ -296,15 +296,15 @@ local:
     libjson-c3:
         0.12.1+ds-2+deb10u1
     libk5crypto3:
-        1.17-3+deb10u2
+        1.17-3+deb10u3
     libkeyutils1:
         1.6-6
     libkmod2:
         26-1
     libkrb5-3:
-        1.17-3+deb10u2
+        1.17-3+deb10u3
     libkrb5support0:
-        1.17-3+deb10u2
+        1.17-3+deb10u3
     libksba8:
         1.3.5-2
     libldap-2.4-2:
@@ -464,9 +464,9 @@ local:
     readline-common:
         7.0-5
     salt-common:
-        3003~rc1+1108.gb011a4ed6b+ds-1
+        3004~rc1+ds-1
     salt-minion:
-        3003~rc1+1108.gb011a4ed6b+ds-1
+        3004~rc1+ds-1
     sed:
         4.7-1
     sensible-utils:

@@ -137,7 +137,7 @@ local:
     ca-certificates:
         2+git20170807.10b2785-lp152.8.2
     ca-certificates-mozilla:
-        2.44-lp152.2.7.1
+        2.44-lp152.2.10.1
     coreutils:
         8.29-lp152.4.7
     cpio:

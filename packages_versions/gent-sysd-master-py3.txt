@@ -2,7 +2,7 @@ gent-sysd-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.b011a4e
+          Salt: 3004+0na.4998b6c
  
 Dependency Versions:
           cffi: Not Installed
@@ -11,7 +11,7 @@ Dependency Versions:
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
-        Jinja2: 3.0.1
+        Jinja2: 3.0.2
        libgit2: Not Installed
       M2Crypto: Not Installed
           Mako: Not Installed
@@ -20,7 +20,7 @@ Dependency Versions:
   mysql-python: Not Installed
      pycparser: Not Installed
       pycrypto: Not Installed
-  pycryptodome: 3.10.4
+  pycryptodome: 3.11.0
         pygit2: Not Installed
         Python: 3.9.6 (default, Sep 12 2021, 17:24:12)
   python-gnupg: Not Installed
@@ -104,7 +104,7 @@ local:
     saltpath:
         /usr/lib/python3.9/site-packages/salt
     saltversion:
-        3004+0na.b011a4e
+        3004+0na.4998b6c
     saltversioninfo:
         - 3004
     systemd:
@@ -281,7 +281,7 @@ local:
     app-text/opensp:
         1.5.2-r3
     app-text/po4a:
-        0.57-r1
+        0.63-r1
     app-text/sgml-common:
         0.6.3-r7
     app-text/xmlto:
@@ -373,7 +373,7 @@ local:
     dev-perl/Text-CharWidth:
         0.40.0-r2
     dev-perl/Text-WrapI18N:
-        0.60.0-r1
+        0.60.0-r2
     dev-perl/TimeDate:
         2.330.0-r1
     dev-perl/Unicode-LineBreak:
@@ -415,7 +415,7 @@ local:
     dev-util/gtk-doc-am:
         1.33.2
     dev-util/meson:
-        0.58.2-r1
+        0.59.1-r1
     dev-util/meson-format-array:
         0
     dev-util/ninja:
@@ -529,7 +529,7 @@ local:
     sys-auth/passwdqc:
         1.4.0-r2
     sys-devel/autoconf:
-        2.69-r5
+        2.71-r1
     sys-devel/autoconf-archive:
         2021.02.19
     sys-devel/autoconf-wrapper:
@@ -697,8 +697,6 @@ local:
     ----------
     Cython:
         0.29.23
-    Jinja2:
-        3.0.1
     MarkupSafe:
         2.0.1
     PySocks:
@@ -712,7 +710,7 @@ local:
     lxml:
         4.6.3
     meson:
-        0.58.2
+        0.59.1
     pip:
         21.2.4
     portage:

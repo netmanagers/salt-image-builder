@@ -142,7 +142,7 @@ local:
     bzip2-libs:
         1.0.6-13.el7
     ca-certificates:
-        2020.2.41-70.0.el7_8
+        2021.2.50-72.el7_9
     centos-release:
         7-9.2009.1.el7.centos
     chkconfig:

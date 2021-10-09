@@ -286,7 +286,7 @@ local:
     app-text/opensp:
         1.5.2-r3
     app-text/po4a:
-        0.57-r1
+        0.63-r1
     app-text/sgml-common:
         0.6.3-r7
     app-text/xmlto:
@@ -388,7 +388,7 @@ local:
     dev-perl/Text-CharWidth:
         0.40.0-r2
     dev-perl/Text-WrapI18N:
-        0.60.0-r1
+        0.60.0-r2
     dev-perl/TimeDate:
         2.330.0-r1
     dev-perl/Unicode-LineBreak:
@@ -452,7 +452,7 @@ local:
     dev-util/gtk-doc-am:
         1.33.2
     dev-util/meson:
-        0.58.2-r1
+        0.59.1-r1
     dev-util/meson-format-array:
         0
     dev-util/ninja:
@@ -570,7 +570,7 @@ local:
     sys-auth/passwdqc:
         1.4.0-r2
     sys-devel/autoconf:
-        2.69-r5
+        2.71-r1
     sys-devel/autoconf-archive:
         2021.02.19
     sys-devel/autoconf-wrapper:
@@ -767,7 +767,7 @@ local:
     lxml:
         4.6.3
     meson:
-        0.58.2
+        0.59.1
     msgpack:
         1.0.2
     pip:

@@ -2,7 +2,7 @@ ubun-20.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.b011a4e
+          Salt: 3004+0na.4998b6c
  
 Dependency Versions:
           cffi: Not Installed
@@ -11,7 +11,7 @@ Dependency Versions:
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
-        Jinja2: 3.0.1
+        Jinja2: 3.0.2
        libgit2: Not Installed
       M2Crypto: Not Installed
           Mako: Not Installed
@@ -20,9 +20,9 @@ Dependency Versions:
   mysql-python: Not Installed
      pycparser: Not Installed
       pycrypto: Not Installed
-  pycryptodome: 3.10.4
+  pycryptodome: 3.11.0
         pygit2: Not Installed
-        Python: 3.8.10 (default, Jun  2 2021, 10:49:15)
+        Python: 3.8.10 (default, Sep 28 2021, 16:10:42)
   python-gnupg: Not Installed
         PyYAML: 5.4.1
          PyZMQ: 21.0.2
@@ -106,7 +106,7 @@ local:
     saltpath:
         /usr/local/lib/python3.8/dist-packages/salt
     saltversion:
-        3004+0na.b011a4e
+        3004+0na.4998b6c
     saltversioninfo:
         - 3004
     systemd:
@@ -167,7 +167,7 @@ local:
     dirmngr:
         2.2.19-3ubuntu2.1
     distro-info-data:
-        0.43ubuntu1.6
+        0.43ubuntu1.8
     dpkg:
         1.19.7ubuntu3
     e2fsprogs:
@@ -411,13 +411,13 @@ local:
     libpython3-stdlib:
         3.8.2-0ubuntu2
     libpython3.8:
-        3.8.10-0ubuntu1~20.04
+        3.8.10-0ubuntu1~20.04.1
     libpython3.8-dev:
-        3.8.10-0ubuntu1~20.04
+        3.8.10-0ubuntu1~20.04.1
     libpython3.8-minimal:
-        3.8.10-0ubuntu1~20.04
+        3.8.10-0ubuntu1~20.04.1
     libpython3.8-stdlib:
-        3.8.10-0ubuntu1~20.04
+        3.8.10-0ubuntu1~20.04.1
     libquadmath0:
         10.3.0-1ubuntu1~20.04
     libreadline8:
@@ -543,11 +543,11 @@ local:
     python3-wheel:
         0.34.2-1
     python3.8:
-        3.8.10-0ubuntu1~20.04
+        3.8.10-0ubuntu1~20.04.1
     python3.8-dev:
-        3.8.10-0ubuntu1~20.04
+        3.8.10-0ubuntu1~20.04.1
     python3.8-minimal:
-        3.8.10-0ubuntu1~20.04
+        3.8.10-0ubuntu1~20.04.1
     readline-common:
         8.0-4
     sed:
@@ -584,13 +584,13 @@ local:
 local:
     ----------
     Jinja2:
-        3.0.1
+        3.0.2
     MarkupSafe:
         2.0.1
     PyYAML:
         5.4.1
     certifi:
-        2021.5.30
+        2021.10.8
     charset-normalizer:
         2.0.6
     contextvars:
@@ -608,7 +608,7 @@ local:
     psutil:
         5.8.0
     pycryptodomex:
-        3.10.4
+        3.11.0
     python-apt:
         2.0.0+ubuntu0.20.4.6
     pyzmq:
@@ -616,7 +616,7 @@ local:
     requests:
         2.26.0
     salt:
-        3004+0na.b011a4e
+        3004+0na.4998b6c
     setuptools:
         45.2.0
     urllib3:

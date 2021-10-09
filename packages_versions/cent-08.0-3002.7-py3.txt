@@ -22,7 +22,7 @@ Dependency Versions:
       pycrypto: Not Installed
   pycryptodome: Not Installed
         pygit2: Not Installed
-        Python: 3.6.8 (default, Mar 19 2021, 05:13:41)
+        Python: 3.6.8 (default, Sep 21 2021, 20:17:36)
   python-gnupg: Not Installed
         PyYAML: 3.12
          PyZMQ: 19.0.0
@@ -140,7 +140,7 @@ local:
     bzip2-libs:
         1.0.6-26.el8
     ca-certificates:
-        2020.2.41-80.0.el8_2
+        2021.2.50-80.0.el8_4
     centos-gpg-keys:
         1:8-3.el8
     centos-linux-release:
@@ -162,7 +162,7 @@ local:
     cryptsetup-libs:
         2.3.3-4.el8
     curl:
-        7.61.1-18.el8
+        7.61.1-18.el8_4.1
     cyrus-sasl-lib:
         2.1.27-5.el8
     dbus:
@@ -294,9 +294,9 @@ local:
     kmod-libs:
         25-17.el8
     krb5-devel:
-        1.18.2-8.el8
+        1.18.2-8.3.el8_4
     krb5-libs:
-        1.18.2-8.el8
+        1.18.2-8.3.el8_4
     langpacks-en:
         1.0-12.el8
     less:
@@ -322,11 +322,11 @@ local:
     libcomps:
         0.1.11-5.el8
     libcurl-minimal:
-        7.61.1-18.el8
+        7.61.1-18.el8_4.1
     libdb:
-        5.3.28-40.el8
+        5.3.28-42.el8_4
     libdb-utils:
-        5.3.28-40.el8
+        5.3.28-42.el8_4
     libdnf:
         0.55.0-7.el8
     libedit:
@@ -346,7 +346,7 @@ local:
     libidn2:
         2.2.0-1.el8
     libkadm5:
-        1.18.2-8.el8
+        1.18.2-8.3.el8_4
     libkcapi:
         1.2.0-2.el8
     libkcapi-hmaccalc:
@@ -578,9 +578,9 @@ local:
     pkgconf-pkg-config:
         1.4.2-1.el8
     platform-python:
-        3.6.8-37.el8
+        3.6.8-38.el8_4
     platform-python-devel:
-        3.6.8-37.el8
+        3.6.8-38.el8_4
     platform-python-pip:
         9.0.3-19.el8
     platform-python-setuptools:
@@ -620,7 +620,7 @@ local:
     python3-libdnf:
         0.55.0-7.el8
     python3-libs:
-        3.6.8-37.el8
+        3.6.8-38.el8_4
     python3-m2crypto:
         0.35.2-5.el8
     python3-markupsafe:

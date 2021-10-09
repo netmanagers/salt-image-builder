@@ -2,7 +2,7 @@ debi-11.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.b011a4e
+          Salt: 3004+0na.4998b6c
  
 Dependency Versions:
           cffi: Not Installed
@@ -11,7 +11,7 @@ Dependency Versions:
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
-        Jinja2: 3.0.1
+        Jinja2: 3.0.2
        libgit2: Not Installed
       M2Crypto: Not Installed
           Mako: Not Installed
@@ -20,7 +20,7 @@ Dependency Versions:
   mysql-python: Not Installed
      pycparser: Not Installed
       pycrypto: Not Installed
-  pycryptodome: 3.10.4
+  pycryptodome: 3.11.0
         pygit2: Not Installed
         Python: 3.9.2 (default, Feb 28 2021, 17:03:44)
   python-gnupg: Not Installed
@@ -105,7 +105,7 @@ local:
     saltpath:
         /usr/local/lib/python3.9/dist-packages/salt
     saltversion:
-        3004+0na.b011a4e
+        3004+0na.4998b6c
     saltversioninfo:
         - 3004
     systemd:
@@ -130,7 +130,7 @@ local:
     apt-transport-https:
         2.2.4
     base-files:
-        11.1
+        11.1+deb11u1
     base-passwd:
         3.5.51
     bash:
@@ -248,15 +248,15 @@ local:
     libbz2-1.0:
         1.0.8-4
     libc-bin:
-        2.31-13
+        2.31-13+deb11u2
     libc-dev-bin:
-        2.31-13
+        2.31-13+deb11u2
     libc-l10n:
-        2.31-13
+        2.31-13+deb11u2
     libc6:
-        2.31-13
+        2.31-13+deb11u2
     libc6-dev:
-        2.31-13
+        2.31-13+deb11u2
     libcap-ng0:
         0.7.9-2.2+b1
     libcap2:
@@ -320,7 +320,7 @@ local:
     libgpg-error0:
         1.38-2
     libgssapi-krb5-2:
-        1.18.3-6
+        1.18.3-6+deb11u1
     libhogweed6:
         3.7.3-1
     libidn2-0:
@@ -340,15 +340,15 @@ local:
     libjson-c5:
         0.15-2
     libk5crypto3:
-        1.18.3-6
+        1.18.3-6+deb11u1
     libkeyutils1:
         1.6.1-2
     libkmod2:
         28-1
     libkrb5-3:
-        1.18.3-6
+        1.18.3-6+deb11u1
     libkrb5support0:
-        1.18.3-6
+        1.18.3-6+deb11u1
     libksba8:
         1.5.0-3
     libldap-2.4-2:
@@ -386,13 +386,13 @@ local:
     libp11-kit0:
         0.23.22-1
     libpam-modules:
-        1.4.0-9
+        1.4.0-9+deb11u1
     libpam-modules-bin:
-        1.4.0-9
+        1.4.0-9+deb11u1
     libpam-runtime:
-        1.4.0-9
+        1.4.0-9+deb11u1
     libpam0g:
-        1.4.0-9
+        1.4.0-9+deb11u1
     libpci3:
         1:3.7.0-5
     libpcre2-8-0:
@@ -400,7 +400,7 @@ local:
     libpcre3:
         2:8.39-13
     libperl5.32:
-        5.32.1-4+deb11u1
+        5.32.1-4+deb11u2
     libprocps8:
         2:3.3.17-5
     libpsl5:
@@ -480,9 +480,9 @@ local:
     libzstd1:
         1.4.8+dfsg-2.1
     linux-libc-dev:
-        5.10.46-5
+        5.10.70-1
     locales:
-        2.31-13
+        2.31-13+deb11u2
     login:
         1:4.8.1-1
     logsave:
@@ -518,11 +518,11 @@ local:
     pciutils:
         1:3.7.0-5
     perl:
-        5.32.1-4+deb11u1
+        5.32.1-4+deb11u2
     perl-base:
-        5.32.1-4+deb11u1
+        5.32.1-4+deb11u2
     perl-modules-5.32:
-        5.32.1-4+deb11u1
+        5.32.1-4+deb11u2
     pinentry-curses:
         1.1.0-4
     procps:

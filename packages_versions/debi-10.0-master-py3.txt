@@ -2,7 +2,7 @@ debi-10.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.b011a4e
+          Salt: 3004+0na.4998b6c
  
 Dependency Versions:
           cffi: Not Installed
@@ -11,7 +11,7 @@ Dependency Versions:
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
-        Jinja2: 3.0.1
+        Jinja2: 3.0.2
        libgit2: Not Installed
       M2Crypto: Not Installed
           Mako: Not Installed
@@ -20,7 +20,7 @@ Dependency Versions:
   mysql-python: Not Installed
      pycparser: Not Installed
       pycrypto: Not Installed
-  pycryptodome: 3.10.4
+  pycryptodome: 3.11.0
         pygit2: Not Installed
         Python: 3.7.3 (default, Jan 22 2021, 20:04:44)
   python-gnupg: Not Installed
@@ -129,7 +129,7 @@ local:
     saltpath:
         /usr/local/lib/python3.7/dist-packages/salt
     saltversion:
-        3004+0na.b011a4e
+        3004+0na.4998b6c
     saltversioninfo:
         - 3004
     systemd:
@@ -154,7 +154,7 @@ local:
     apt-transport-https:
         1.8.2.3
     base-files:
-        10.3+deb10u10
+        10.3+deb10u11
     base-passwd:
         3.5.46
     bash:
@@ -180,7 +180,7 @@ local:
     dash:
         0.5.10.2-5
     debconf:
-        1.5.71
+        1.5.71+deb10u1
     debian-archive-keyring:
         2019.1+deb10u1
     debianutils:
@@ -192,7 +192,7 @@ local:
     dirmngr:
         2.2.12-1+deb10u1
     distro-info-data:
-        0.41+deb10u3
+        0.41+deb10u4
     dmsetup:
         2:1.02.155-3
     dpkg:
@@ -344,7 +344,7 @@ local:
     libgpg-error0:
         1.35-1
     libgssapi-krb5-2:
-        1.17-3+deb10u2
+        1.17-3+deb10u3
     libhogweed4:
         3.4.1-1+deb10u1
     libidn11:
@@ -360,15 +360,15 @@ local:
     libjson-c3:
         0.12.1+ds-2+deb10u1
     libk5crypto3:
-        1.17-3+deb10u2
+        1.17-3+deb10u3
     libkeyutils1:
         1.6-6
     libkmod2:
         26-1
     libkrb5-3:
-        1.17-3+deb10u2
+        1.17-3+deb10u3
     libkrb5support0:
-        1.17-3+deb10u2
+        1.17-3+deb10u3
     libksba8:
         1.3.5-2
     libldap-2.4-2:
@@ -494,7 +494,7 @@ local:
     libzstd1:
         1.3.8+dfsg-3+deb10u2
     linux-libc-dev:
-        4.19.194-3
+        4.19.208-1
     locales:
         2.28-10
     login:
@@ -599,13 +599,13 @@ local:
 local:
     ----------
     Jinja2:
-        3.0.1
+        3.0.2
     MarkupSafe:
         2.0.1
     PyYAML:
         5.4.1
     certifi:
-        2021.5.30
+        2021.10.8
     charset-normalizer:
         2.0.6
     contextvars:
@@ -623,7 +623,7 @@ local:
     psutil:
         5.8.0
     pycryptodomex:
-        3.10.4
+        3.11.0
     python-apt:
         1.8.4.3
     pyzmq:
@@ -631,7 +631,7 @@ local:
     requests:
         2.26.0
     salt:
-        3004+0na.b011a4e
+        3004+0na.4998b6c
     setuptools:
         40.8.0
     typing-extensions:

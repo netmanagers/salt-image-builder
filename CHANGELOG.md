@@ -1,5 +1,13 @@
 # Changelog
 
+# [1.56.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.55.0...v1.56.0) (2021-10-09)
+
+
+### Features
+
+* **centos:** add `centos:stream8` [skip ci] ([8ac00bf](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/8ac00bfcdde68cad4dfb6565df3558c17b3db52e))
+* **dockerfile.yum:** install EPEL for all Tiamat builds ([697ceff](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/697cefff18356a16bbda8fda635dd806d49d3272))
+
 # [1.55.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.54.0...v1.55.0) (2021-10-02)
 
 
