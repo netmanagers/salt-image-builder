@@ -109,6 +109,8 @@ commitlint:
           export TAG=arch-base-latest
         elif [ "${DN}" = "rockylinux/rockylinux" ]; then
           export TAG=rockylinux-${DV}
+        elif [ "${DN}" = "quay.io/centos/centos" ]; then
+          export TAG=centos-${DV}
         else
           export TAG=$(echo ${DN} | sed "s#/#-#g")-${DV}
         fi
@@ -218,8 +220,9 @@ commitlint:
 # `build` stage: `...`
 ###############################################################################
 # VARS:
-# DN:  distro name (almalinux, amazonlinux, archlinux,   centos,      debian, fedora,
-#                   gentoo,    opensuse,    oraclelinux, rockylinux,  ubuntu)
+# DN:  distro name (almalinux,       amazonlinux, archlinux,  centos,
+#                   centos (stream), debian,      fedora,     gentoo,
+#                   opensuse,        oraclelinux, rockylinux, ubuntu)
 # DV:  distro version
 # PI:  packages installer, used as dockerfile extension (apt, dnf, emg, pac, yum, zyp)
 # SIM: salt install method (git, stable)
@@ -259,6 +262,11 @@ cent-07.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 cent-07.0-3003.3-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'centos'               , DV: '7'      , PI: 'yum', SIM: 'stable', SV: '3003.3', SVB: ''      , PV: '3', EP: 'gcc-g++ openssl-devel python3 python3-devel swig zeromq zeromq-devel'}}
 cent-07.0-3002.7-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'centos'               , DV: '7'      , PI: 'yum', SIM: 'stable', SV: '3002.7', SVB: ''      , PV: '3', EP: 'gcc-g++ openssl-devel python3 python3-devel swig zeromq zeromq-devel'}}
 cent-07.0-3001.8-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'centos'               , DV: '7'      , PI: 'yum', SIM: 'stable', SV: '3001.8', SVB: ''      , PV: '3', EP: 'gcc-g++ openssl-devel python3 python3-devel swig zeromq zeromq-devel'}}
+
+# CENTOS (STREAM)
+cstr-08.0-tiamat-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'quay.io/centos/centos', DV: 'stream8', PI: 'yum', SIM: 'stable', SV: 'tiamat', SVB: ''      , PV: '3', EP: 'glibc-langpack-en openssl-devel procps-ng python3 python3-devel swig'}}
+cstr-08.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'quay.io/centos/centos', DV: 'stream8', PI: 'yum', SIM: 'git'   , SV: 'master', SVB: ''      , PV: '3', EP: 'glibc-langpack-en openssl-devel procps-ng python3 python3-devel swig'}}
+cstr-08.0-3003.3-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'quay.io/centos/centos', DV: 'stream8', PI: 'yum', SIM: 'stable', SV: '3003.3', SVB: ''      , PV: '3', EP: 'glibc-langpack-en openssl-devel procps-ng python3 python3-devel swig'}}
 
 # DEBIAN
 debi-12.0-tiamat-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'               , DV: '12'     , PI: 'apt', SIM: 'stable', SV: 'tiamat', SVB: ''      , PV: '3', EP: 'python3-pip'}}
