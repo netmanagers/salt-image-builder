@@ -22,7 +22,7 @@ Dependency Versions:
       pycrypto: Not Installed
   pycryptodome: 3.10.1
         pygit2: Not Installed
-        Python: 3.9.7 (default, Aug 31 2021, 13:28:12)
+        Python: 3.9.7 (default, Oct 10 2021, 15:13:22)
   python-gnupg: Not Installed
         PyYAML: 5.4.1
          PyZMQ: 22.2.1
@@ -161,7 +161,7 @@ local:
     expat:
         2.4.1-1
     file:
-        5.40-6
+        5.41-1
     filesystem:
         2021.05.31-1
     findutils:
@@ -175,9 +175,9 @@ local:
     gettext:
         0.21-1
     git:
-        2.33.0-1
+        2.33.1-1
     glib2:
-        2.70.0-1
+        2.70.0-2
     glibc:
         2.33-5
     gmp:
@@ -223,7 +223,7 @@ local:
     libassuan:
         2.5.5-1
     libcap:
-        2.58-1
+        2.59-1
     libcap-ng:
         0.8.2-3
     libcroco:
@@ -233,7 +233,7 @@ local:
     libelf:
         0.185-1
     libffi:
-        3.3-4
+        3.4.2-4
     libgcrypt:
         1.9.4-1
     libgpg-error:
@@ -253,13 +253,13 @@ local:
     libnftnl:
         1.2.0-1
     libnghttp2:
-        1.45.0-1
+        1.45.1-1
     libnl:
         3.5.0-3
     libnsl:
         2.0.0-1
     libp11-kit:
-        0.24.0-1
+        0.24.0-2
     libpcap:
         1.10.1-1
     libpgm:
@@ -309,7 +309,7 @@ local:
     openssl:
         1.1.1.l-1
     p11-kit:
-        0.24.0-1
+        0.24.0-2
     pacman:
         6.0.1-2
     pacman-mirrorlist:
@@ -341,13 +341,13 @@ local:
     psmisc:
         23.4-1
     python:
-        3.9.7-1
+        3.9.7-2
     python-appdirs:
         1.4.4-3
     python-cachecontrol:
         0.12.6-3
     python-cffi:
-        1.14.6-1
+        1.14.6-2
     python-chardet:
         4.0.0-2
     python-colorama:
@@ -355,7 +355,7 @@ local:
     python-contextlib2:
         0.6.0.post1-3
     python-cryptography:
-        3.4.8-2
+        35.0.0-1
     python-distlib:
         0.3.3-1
     python-distro:
@@ -385,7 +385,7 @@ local:
     python-ply:
         3.11-7
     python-progress:
-        1.5-5
+        1.6-1
     python-pycparser:
         2.20-3
     python-pycryptodomex:
@@ -413,7 +413,7 @@ local:
     python-tomli:
         1.2.1-1
     python-urllib3:
-        1.26.6-1
+        1.26.7-1
     python-webencodings:
         0.5.1-6
     python-yaml:
@@ -431,15 +431,15 @@ local:
     sudo:
         1.9.8.p2-1
     systemd:
-        249.4-2
+        249.5-1
     systemd-libs:
-        249.4-2
+        249.5-1
     systemd-sysvcompat:
-        249.4-2
+        249.5-1
     tar:
         1.34-1
     tzdata:
-        2021c-1
+        2021d-1
     util-linux:
         2.37.2-1
     util-linux-libs:
@@ -476,7 +476,7 @@ local:
     contextlib2:
         0.6.0.post1
     cryptography:
-        3.4.8
+        35.0.0
     distlib:
         0.3.3
     distro:
@@ -500,7 +500,7 @@ local:
     ply:
         3.11
     progress:
-        1.5
+        1.6
     pyOpenSSL:
         20.0.1
     pycparser:
@@ -530,6 +530,6 @@ local:
     tomli:
         1.2.1
     urllib3:
-        1.26.6
+        1.26.7
     webencodings:
         0.5.1

@@ -2,7 +2,7 @@ ubun-18.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.4998b6c
+          Salt: 3004+0na.9058331
  
 Dependency Versions:
           cffi: Not Installed
@@ -24,7 +24,7 @@ Dependency Versions:
         pygit2: Not Installed
         Python: 3.6.9 (default, Jan 26 2021, 15:33:00)
   python-gnupg: Not Installed
-        PyYAML: 5.4.1
+        PyYAML: 6.0
          PyZMQ: 21.0.2
          smmap: Not Installed
        timelib: Not Installed
@@ -129,7 +129,7 @@ local:
     saltpath:
         /usr/local/lib/python3.6/dist-packages/salt
     saltversion:
-        3004+0na.4998b6c
+        3004+0na.9058331
     saltversioninfo:
         - 3004
     systemd:
@@ -192,7 +192,7 @@ local:
     dirmngr:
         2.2.4-1ubuntu1.4
     distro-info-data:
-        0.37ubuntu0.12
+        0.37ubuntu0.13
     dpkg:
         1.19.0.5ubuntu2.3
     e2fsprogs:
@@ -492,7 +492,7 @@ local:
     libzstd1:
         1.3.3+dfsg-2ubuntu1.2
     linux-libc-dev:
-        4.15.0-159.167
+        4.15.0-161.169
     locales:
         2.27-3ubuntu1.4
     login:
@@ -597,17 +597,17 @@ local:
     MarkupSafe:
         2.0.1
     PyYAML:
-        5.4.1
+        6.0
     certifi:
         2021.10.8
     charset-normalizer:
-        2.0.6
+        2.0.7
     contextvars:
         2.4
     distro:
         1.6.0
     idna:
-        3.2
+        3.3
     immutables:
         0.16
     msgpack:
@@ -625,7 +625,7 @@ local:
     requests:
         2.26.0
     salt:
-        3004+0na.4998b6c
+        3004+0na.9058331
     setuptools:
         39.0.1
     typing-extensions:

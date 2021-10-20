@@ -314,7 +314,7 @@ local:
     libffi:
         3.1-22.el8
     libgcc:
-        8.4.1-1.0.3.el8
+        8.4.1-1.0.4.el8
     libgcrypt:
         1.8.5-4.el8
     libgpg-error:
@@ -378,7 +378,7 @@ local:
     libssh-config:
         0.9.4-2.el8
     libstdc++:
-        8.4.1-1.0.3.el8
+        8.4.1-1.0.4.el8
     libtasn1:
         4.13-3.el8
     libtirpc:
@@ -680,7 +680,7 @@ local:
     tpm2-tss:
         2.3.2-3.el8
     tzdata:
-        2021a-1.el8
+        2021c-1.el8
     util-linux:
         2.32.1-27.el8
     vim-minimal:

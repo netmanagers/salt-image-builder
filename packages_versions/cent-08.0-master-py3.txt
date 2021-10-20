@@ -2,7 +2,7 @@ cent-08.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.4998b6c
+          Salt: 3004+0na.9058331
  
 Dependency Versions:
           cffi: Not Installed
@@ -24,7 +24,7 @@ Dependency Versions:
         pygit2: Not Installed
         Python: 3.6.8 (default, Sep 21 2021, 20:17:36)
   python-gnupg: Not Installed
-        PyYAML: 5.4.1
+        PyYAML: 6.0
          PyZMQ: 21.0.2
          smmap: Not Installed
        timelib: Not Installed
@@ -106,7 +106,7 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3004+0na.4998b6c
+        3004+0na.9058331
     saltversioninfo:
         - 3004
     systemd:
@@ -689,7 +689,7 @@ local:
     trousers-lib:
         0.3.15-1.el8
     tzdata:
-        2021a-1.el8
+        2021c-1.el8
     util-linux:
         2.32.1-27.el8
     vim-minimal:
@@ -718,11 +718,11 @@ local:
     MarkupSafe:
         2.0.1
     PyYAML:
-        5.4.1
+        6.0
     certifi:
         2021.10.8
     charset-normalizer:
-        2.0.6
+        2.0.7
     contextvars:
         2.4
     dbus-python:
@@ -732,7 +732,7 @@ local:
     gpg:
         1.13.1
     idna:
-        3.2
+        3.3
     immutables:
         0.16
     msgpack:
@@ -752,7 +752,7 @@ local:
     rpm:
         4.14.3
     salt:
-        3004+0na.4998b6c
+        3004+0na.9058331
     setuptools:
         39.2.0
     six:

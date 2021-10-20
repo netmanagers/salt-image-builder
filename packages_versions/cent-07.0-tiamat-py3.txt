@@ -371,9 +371,9 @@ local:
     openssh-server:
         7.4p1-21.el7
     openssl-devel:
-        1:1.0.2k-21.el7_9
+        1:1.0.2k-22.el7_9
     openssl-libs:
-        1:1.0.2k-21.el7_9
+        1:1.0.2k-22.el7_9
     p11-kit:
         0.23.5-3.el7
     p11-kit-trust:
@@ -535,7 +535,7 @@ local:
     sqlite:
         3.7.17-8.el7_7.1
     sudo:
-        1.8.23-10.el7_9.1
+        1.8.23-10.el7_9.2
     swig:
         2.0.10-5.el7
     systemd:

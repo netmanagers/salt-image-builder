@@ -128,7 +128,7 @@ local:
     basesystem:
         11-5.el8
     bash:
-        4.4.20-2.el8
+        4.4.20-3.el8
     brotli:
         1.0.6-3.el8
     bzip2-libs:
@@ -136,11 +136,11 @@ local:
     ca-certificates:
         2021.2.50-82.el8
     centos-gpg-keys:
-        1:8-2.el8
+        1:8-3.el8
     centos-stream-release:
-        8.5-3.el8
+        8.6-1.el8
     centos-stream-repos:
-        8-2.el8
+        8-3.el8
     chkconfig:
         1.19.1-1.el8
     coreutils-single:
@@ -172,17 +172,15 @@ local:
     dbus-tools:
         1:1.12.8-14.el8
     device-mapper:
-        8:1.02.177-6.el8
+        8:1.02.177-10.el8
     device-mapper-libs:
-        8:1.02.177-6.el8
-    diffutils:
-        3.6-6.el8
+        8:1.02.177-10.el8
     dmidecode:
         1:3.2-10.el8
     dnf:
-        4.7.0-3.el8
+        4.7.0-4.el8
     dnf-data:
-        4.7.0-3.el8
+        4.7.0-4.el8
     elfutils-default-yama-scope:
         0.185-1.el8
     elfutils-libelf:
@@ -302,11 +300,11 @@ local:
     libcurl:
         7.61.1-21.el8
     libdb:
-        5.3.28-40.el8
+        5.3.28-42.el8_4
     libdb-utils:
-        5.3.28-40.el8
+        5.3.28-42.el8_4
     libdnf:
-        0.63.0-2.el8
+        0.63.0-3.el8
     libedit:
         3.1-23.20170329cvs.el8
     libfdisk:
@@ -327,8 +325,6 @@ local:
         1.18.2-14.el8
     libksba:
         1.3.5-7.el8
-    libmetalink:
-        0.1.3-7.el8
     libmodulemd:
         2.13.0-1.el8
     libmount:
@@ -397,8 +393,6 @@ local:
         0.3.0-5.el8
     libxcrypt:
         4.1.1-6.el8
-    libxkbcommon:
-        0.9.1-1.el8
     libxml2:
         2.9.7-11.el8
     libyaml:
@@ -554,9 +548,9 @@ local:
     pkgconf-pkg-config:
         1.4.2-1.el8
     platform-python:
-        3.6.8-40.el8
+        3.6.8-42.el8
     platform-python-devel:
-        3.6.8-40.el8
+        3.6.8-42.el8
     platform-python-pip:
         9.0.3-20.el8
     platform-python-setuptools:
@@ -574,7 +568,7 @@ local:
     python3-chardet:
         3.0.4-7.el8
     python3-cloud-what:
-        1.28.21-2.el8
+        1.28.21-3.el8
     python3-dateutil:
         1:2.6.1-6.el8
     python3-dbus:
@@ -584,9 +578,9 @@ local:
     python3-dmidecode:
         3.12.2-15.el8
     python3-dnf:
-        4.7.0-3.el8
+        4.7.0-4.el8
     python3-dnf-plugins-core:
-        4.0.21-2.el8
+        4.0.21-3.el8
     python3-ethtool:
         0.14-3.el8
     python3-gobject-base:
@@ -594,7 +588,7 @@ local:
     python3-gpg:
         1.13.1-9.el8
     python3-hawkey:
-        0.63.0-2.el8
+        0.63.0-3.el8
     python3-idna:
         2.5-5.el8
     python3-iniparse:
@@ -604,11 +598,11 @@ local:
     python3-libcomps:
         0.1.16-2.el8
     python3-libdnf:
-        0.63.0-2.el8
+        0.63.0-3.el8
     python3-librepo:
         1.14.0-2.el8
     python3-libs:
-        3.6.8-40.el8
+        3.6.8-42.el8
     python3-libxml2:
         2.9.7-11.el8
     python3-pip:
@@ -632,9 +626,9 @@ local:
     python3-six:
         1.11.0-8.el8
     python3-subscription-manager-rhsm:
-        1.28.21-2.el8
+        1.28.21-3.el8
     python3-syspurpose:
-        1.28.21-2.el8
+        1.28.21-3.el8
     python3-urllib3:
         1.24.2-5.el8
     python36:
@@ -666,7 +660,7 @@ local:
     sqlite-libs:
         3.26.0-15.el8
     subscription-manager-rhsm-certificates:
-        1.28.21-2.el8
+        1.28.21-3.el8
     sudo:
         1.8.29-7.el8
     swig:
@@ -684,23 +678,21 @@ local:
     tpm2-tss:
         2.3.2-4.el8
     tzdata:
-        2021a-1.el8
+        2021c-1.el8
     usermode:
         1.113-2.el8
     util-linux:
         2.32.1-28.el8
     vim-minimal:
-        2:8.0.1763-15.el8
+        2:8.0.1763-16.el8
     virt-what:
         1.18-12.el8
     which:
         2.21-16.el8
-    xkeyboard-config:
-        2.28-1.el8
     xz-libs:
         5.2.4-3.el8
     yum:
-        4.7.0-3.el8
+        4.7.0-4.el8
     zlib:
         1.2.11-17.el8
     zlib-devel:

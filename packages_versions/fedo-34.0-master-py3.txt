@@ -2,7 +2,7 @@ fedo-34.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.4998b6c
+          Salt: 3004+0na.9058331
  
 Dependency Versions:
           cffi: Not Installed
@@ -24,7 +24,7 @@ Dependency Versions:
         pygit2: Not Installed
         Python: 3.9.7 (default, Aug 30 2021, 00:00:00)
   python-gnupg: Not Installed
-        PyYAML: 5.4.1
+        PyYAML: 6.0
          PyZMQ: 21.0.2
          smmap: Not Installed
        timelib: Not Installed
@@ -103,7 +103,7 @@ local:
     saltpath:
         /usr/lib/python3.9/site-packages/salt
     saltversion:
-        3004+0na.4998b6c
+        3004+0na.9058331
     saltversioninfo:
         - 3004
     systemd:
@@ -348,7 +348,7 @@ local:
     libgpg-error:
         1.42-1.fc34
     libibverbs:
-        36.0-1.fc34
+        37.0-1.fc34
     libidn2:
         2.3.2-1.fc34
     libkcapi:
@@ -456,7 +456,7 @@ local:
     npth:
         1.6-6.fc34
     openldap:
-        2.4.57-5.fc34
+        2.4.57-6.fc34
     openssh:
         8.6p1-5.fc34
     openssh-clients:
@@ -642,25 +642,25 @@ local:
     sudo:
         1.9.5p2-1.fc34
     systemd:
-        248.7-1.fc34
+        248.9-1.fc34
     systemd-libs:
-        248.7-1.fc34
+        248.9-1.fc34
     systemd-pam:
-        248.7-1.fc34
+        248.9-1.fc34
     systemd-rpm-macros:
-        248.7-1.fc34
+        248.9-1.fc34
     systemd-udev:
-        248.7-1.fc34
+        248.9-1.fc34
     tar:
         2:1.34-1.fc34
     tpm2-tss:
         3.1.0-1.fc34
     tzdata:
-        2021b-1.fc34
+        2021c-1.fc34
     util-linux:
         2.36.2-1.fc34
     vim-minimal:
-        2:8.2.3404-1.fc34
+        2:8.2.3512-1.fc34
     which:
         2.21-26.fc34
     xz:

@@ -22,7 +22,7 @@ Dependency Versions:
       pycrypto: 3.10.1
   pycryptodome: 3.10.1
         pygit2: Not Installed
-        Python: 3.9.6 (default, Sep 12 2021, 17:24:12)
+        Python: 3.9.7 (default, Oct 17 2021, 18:28:04)
   python-gnupg: Not Installed
         PyYAML: 5.4.1
          PyZMQ: 22.1.0
@@ -98,7 +98,7 @@ local:
     pythonversion:
         - 3
         - 9
-        - 6
+        - 7
         - final
         - 0
     saltpath:
@@ -236,7 +236,7 @@ local:
     app-arch/zstd:
         1.5.0
     app-crypt/gnupg:
-        2.2.29
+        2.2.32
     app-crypt/gpgme:
         1.15.1
     app-crypt/libb2:
@@ -246,11 +246,11 @@ local:
     app-crypt/openpgp-keys-gentoo-release:
         20200704
     app-crypt/pinentry:
-        1.1.1-r1
+        1.2.0
     app-crypt/rhash:
         1.3.6-r1
     app-editors/nano:
-        5.6.1-r2
+        5.8-r2
     app-eselect/eselect-iptables:
         20200508
     app-eselect/eselect-lib-bin-symlink:
@@ -294,9 +294,9 @@ local:
     dev-db/sqlite:
         3.35.5
     dev-lang/perl:
-        5.34.0-r2
+        5.34.0-r3
     dev-lang/python:
-        3.9.6_p2
+        3.9.7_p1
     dev-lang/python-exec:
         2.4.8
     dev-lang/python-exec-conf:
@@ -384,7 +384,7 @@ local:
     dev-perl/SGMLSpm:
         1.1-r2
     dev-perl/TermReadKey:
-        2.370.0
+        2.380.0
     dev-perl/Text-CharWidth:
         0.40.0-r2
     dev-perl/Text-WrapI18N:
@@ -394,7 +394,7 @@ local:
     dev-perl/Unicode-LineBreak:
         2019.1.0
     dev-perl/YAML-Tiny:
-        1.730.0
+        1.730.0-r1
     dev-python/PySocks:
         1.7.1-r1
     dev-python/argh:
@@ -404,9 +404,9 @@ local:
     dev-python/cffi:
         1.14.6
     dev-python/charset_normalizer:
-        2.0.4
+        2.0.6
     dev-python/cython:
-        0.29.23
+        0.29.24-r1
     dev-python/distro:
         1.6.0
     dev-python/idna:
@@ -421,6 +421,8 @@ local:
         2.0.1
     dev-python/msgpack:
         1.0.2
+    dev-python/packaging:
+        21.0
     dev-python/pip:
         21.2.4
     dev-python/ply:
@@ -429,6 +431,8 @@ local:
         2.20-r1
     dev-python/pycryptodome:
         3.10.1
+    dev-python/pyparsing:
+        2.4.7-r1
     dev-python/pyyaml:
         5.4.1
     dev-python/pyzmq:
@@ -436,11 +440,13 @@ local:
     dev-python/requests:
         2.26.0
     dev-python/setuptools:
-        57.4.0-r2
+        57.5.0
     dev-python/setuptools_scm:
-        6.0.1-r1
+        6.3.2
     dev-python/toml:
         0.10.2
+    dev-python/tomli:
+        1.2.1
     dev-python/urllib3:
         1.26.6
     dev-python/watchdog:
@@ -588,7 +594,7 @@ local:
     sys-devel/flex:
         2.6.4-r1
     sys-devel/gcc:
-        10.3.0-r2
+        11.2.0
     sys-devel/gcc-config:
         2.4
     sys-devel/gettext:
@@ -739,7 +745,7 @@ local:
 local:
     ----------
     Cython:
-        0.29.23
+        0.29.24
     Jinja2:
         2.11.3
     MarkupSafe:
@@ -755,7 +761,7 @@ local:
     cffi:
         1.14.6
     charset-normalizer:
-        2.0.4
+        2.0.6
     distro:
         1.6.0
     gemato:
@@ -770,6 +776,8 @@ local:
         0.59.1
     msgpack:
         1.0.2
+    packaging:
+        21.0
     pip:
         21.2.4
     ply:
@@ -780,6 +788,8 @@ local:
         2.20
     pycryptodome:
         3.10.1
+    pyparsing:
+        2.4.7
     pyzmq:
         22.1.0
     requests:
@@ -787,11 +797,13 @@ local:
     salt:
         3002.7
     setuptools:
-        57.4.0
+        57.5.0
     setuptools-scm:
-        6.0.1
+        6.3.2
     toml:
         0.10.2
+    tomli:
+        1.2.1
     urllib3:
         1.26.6
     watchdog:

@@ -2,7 +2,7 @@ opsu-15.2-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.4998b6c
+          Salt: 3004+0na.9058331
  
 Dependency Versions:
           cffi: Not Installed
@@ -24,7 +24,7 @@ Dependency Versions:
         pygit2: Not Installed
         Python: 3.6.12 (default, Dec 02 2020, 09:44:23) [GCC]
   python-gnupg: Not Installed
-        PyYAML: 5.4.1
+        PyYAML: 6.0
          PyZMQ: 21.0.2
          smmap: Not Installed
        timelib: Not Installed
@@ -107,7 +107,7 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3004+0na.4998b6c
+        3004+0na.9058331
     saltversioninfo:
         - 3004
     systemd:
@@ -138,7 +138,7 @@ local:
     ca-certificates:
         2+git20170807.10b2785-lp152.8.2
     ca-certificates-mozilla:
-        2.44-lp152.2.10.1
+        2.44-lp152.2.13.1
     coreutils:
         8.29-lp152.4.7
     cpio:
@@ -152,7 +152,7 @@ local:
     cracklib-dict-small:
         2.9.7-lp152.1.1
     curl:
-        7.66.0-lp152.3.21.1
+        7.66.0-lp152.3.24.1
     dbus-1:
         1.12.2-lp152.6.6.1
     diffutils:
@@ -174,17 +174,17 @@ local:
     gcc7:
         7.5.0+r278197-lp152.3.9.1
     git:
-        2.26.2-lp152.2.9.1
+        2.26.2-lp152.2.12.1
     git-core:
-        2.26.2-lp152.2.9.1
+        2.26.2-lp152.2.12.1
     glibc:
-        2.26-lp152.26.6.1
+        2.26-lp152.26.9.1
     glibc-devel:
-        2.26-lp152.26.6.1
+        2.26-lp152.26.9.1
     glibc-locale:
-        2.26-lp152.26.6.1
+        2.26-lp152.26.9.1
     glibc-locale-base:
-        2.26-lp152.26.6.1
+        2.26-lp152.26.9.1
     gpg2:
         2.2.5-lp152.9.3.1
     grep:
@@ -198,7 +198,7 @@ local:
     kbd-legacy:
         2.0.4-lp152.10.3
     kmod:
-        25-lp152.7.6
+        25-lp152.8.3.1
     krb5:
         1.16.3-lp152.5.19.1
     kubic-locale-archive:
@@ -248,13 +248,13 @@ local:
     libctf0:
         2.35.1-lp152.4.6.1
     libcurl4:
-        7.66.0-lp152.3.21.1
+        7.66.0-lp152.3.24.1
     libdb-4_8:
         4.8.30-lp152.8.73
     libdbus-1-3:
         1.12.2-lp152.6.6.1
     libdevmapper1_03:
-        1.02.163-lp152.7.27.1
+        1.02.163-lp152.7.30.1
     libdw1:
         0.168-lp152.5.103
     libebl-plugins:
@@ -300,7 +300,7 @@ local:
     libkeyutils1:
         1.5.10-lp152.6.3.1
     libkmod2:
-        25-lp152.7.6
+        25-lp152.8.3.1
     libksba8:
         1.3.5-lp152.4.6
     libldap-2_4-2:
@@ -388,7 +388,7 @@ local:
     libstdc++6:
         10.2.1+git583-lp152.4.1
     libsystemd0:
-        234-lp152.31.31.1
+        234-lp152.31.34.1
     libtasn1:
         4.13-lp152.5.5
     libtasn1-6:
@@ -402,7 +402,7 @@ local:
     libubsan0:
         7.5.0+r278197-lp152.3.9.1
     libudev1:
-        234-lp152.31.31.1
+        234-lp152.31.34.1
     libunistring2:
         0.9.9-lp152.3.4
     libusb-1_0-0:
@@ -514,21 +514,21 @@ local:
     python3-urllib3:
         1.24-lp152.5.3.1
     rpm:
-        4.14.1-lp152.17.5
+        4.14.1-lp152.18.3.1
     rsync:
-        3.1.3-lp152.5.7
+        3.1.3-lp152.6.3.1
     sed:
         4.4-lp152.5.3.1
     shadow:
         4.6-lp152.3.80
     sudo:
-        1.8.22-lp152.8.9.1
+        1.8.27-lp152.8.12.1
     system-group-hardware:
         20170617-lp152.5.114
     system-user-root:
         20190513-lp152.1.100
     systemd:
-        234-lp152.31.31.1
+        234-lp152.31.34.1
     systemd-presets-branding-MicroOS:
         20200323-lp152.2.1
     systemd-presets-common-SUSE:
@@ -540,7 +540,7 @@ local:
     terminfo-base:
         6.1-lp152.7.67
     udev:
-        234-lp152.31.31.1
+        234-lp152.31.34.1
     update-alternatives:
         1.19.0.4-lp152.4.104
     util-linux:
@@ -557,7 +557,7 @@ local:
     MarkupSafe:
         2.0.1
     PyYAML:
-        5.4.1
+        6.0
     appdirs:
         1.4.3
     certifi:
@@ -565,13 +565,13 @@ local:
     chardet:
         3.0.4
     charset-normalizer:
-        2.0.6
+        2.0.7
     contextvars:
         2.4
     distro:
         1.6.0
     idna:
-        3.2
+        3.3
     immutables:
         0.16
     msgpack:
@@ -593,7 +593,7 @@ local:
     requests:
         2.26.0
     salt:
-        3004+0na.4998b6c
+        3004+0na.9058331
     setuptools:
         40.5.0
     six:

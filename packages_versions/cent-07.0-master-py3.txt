@@ -2,7 +2,7 @@ cent-07.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.4998b6c
+          Salt: 3004+0na.9058331
  
 Dependency Versions:
           cffi: Not Installed
@@ -24,7 +24,7 @@ Dependency Versions:
         pygit2: Not Installed
         Python: 3.6.8 (default, Nov 16 2020, 16:55:22)
   python-gnupg: Not Installed
-        PyYAML: 5.4.1
+        PyYAML: 6.0
          PyZMQ: 21.0.2
          smmap: Not Installed
        timelib: Not Installed
@@ -106,7 +106,7 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3004+0na.4998b6c
+        3004+0na.9058331
     saltversioninfo:
         - 3004
     systemd:
@@ -213,13 +213,13 @@ local:
     glib2:
         2.56.1-9.el7_9
     glibc:
-        2.17-324.el7_9
+        2.17-325.el7_9
     glibc-common:
-        2.17-324.el7_9
+        2.17-325.el7_9
     glibc-devel:
-        2.17-324.el7_9
+        2.17-325.el7_9
     glibc-headers:
-        2.17-324.el7_9
+        2.17-325.el7_9
     gmp:
         1:6.0.0-15.el7
     gnupg2:
@@ -247,7 +247,7 @@ local:
     json-c:
         0.11-4.el7_0
     kernel-headers:
-        3.10.0-1160.42.2.el7
+        3.10.0-1160.45.1.el7
     keyutils-libs:
         1.5.8-3.el7
     keyutils-libs-devel:
@@ -359,21 +359,21 @@ local:
     net-tools:
         2.0-0.25.20131004git.el7
     nspr:
-        4.25.0-2.el7_9
+        4.32.0-1.el7_9
     nss:
-        3.53.1-7.el7_9
+        3.67.0-3.el7_9
     nss-pem:
         1.0.3-7.el7
     nss-softokn:
-        3.53.1-6.el7_9
+        3.67.0-3.el7_9
     nss-softokn-freebl:
-        3.53.1-6.el7_9
+        3.67.0-3.el7_9
     nss-sysinit:
-        3.53.1-7.el7_9
+        3.67.0-3.el7_9
     nss-tools:
-        3.53.1-7.el7_9
+        3.67.0-3.el7_9
     nss-util:
-        3.53.1-1.el7_9
+        3.67.0-1.el7_9
     openldap:
         2.4.44-24.el7_9
     openpgm:
@@ -385,9 +385,9 @@ local:
     openssh-server:
         7.4p1-21.el7
     openssl-devel:
-        1:1.0.2k-21.el7_9
+        1:1.0.2k-22.el7_9
     openssl-libs:
-        1:1.0.2k-21.el7_9
+        1:1.0.2k-22.el7_9
     p11-kit:
         0.23.5-3.el7
     p11-kit-trust:
@@ -521,13 +521,13 @@ local:
     rootfiles:
         8.1-11.el7
     rpm:
-        4.11.3-45.el7
+        4.11.3-46.el7_9
     rpm-build-libs:
-        4.11.3-45.el7
+        4.11.3-46.el7_9
     rpm-libs:
-        4.11.3-45.el7
+        4.11.3-46.el7_9
     rpm-python:
-        4.11.3-45.el7
+        4.11.3-46.el7_9
     rsync:
         3.1.2-10.el7
     sed:
@@ -541,7 +541,7 @@ local:
     sqlite:
         3.7.17-8.el7_7.1
     sudo:
-        1.8.23-10.el7_9.1
+        1.8.23-10.el7_9.2
     swig:
         2.0.10-5.el7
     systemd:
@@ -553,7 +553,7 @@ local:
     tcp_wrappers-libs:
         7.6-77.el7
     tzdata:
-        2021a-1.el7
+        2021c-1.el7
     ustr:
         1.0.4-16.el7
     util-linux:
@@ -594,17 +594,17 @@ local:
     MarkupSafe:
         2.0.1
     PyYAML:
-        5.4.1
+        6.0
     certifi:
         2021.10.8
     charset-normalizer:
-        2.0.6
+        2.0.7
     contextvars:
         2.4
     distro:
         1.6.0
     idna:
-        3.2
+        3.3
     immutables:
         0.16
     msgpack:
@@ -620,7 +620,7 @@ local:
     requests:
         2.26.0
     salt:
-        3004+0na.4998b6c
+        3004+0na.9058331
     setuptools:
         39.2.0
     typing-extensions:

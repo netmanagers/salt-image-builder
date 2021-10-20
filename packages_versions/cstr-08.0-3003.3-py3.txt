@@ -178,8 +178,6 @@ local:
         8:1.02.177-10.el8
     device-mapper-libs:
         8:1.02.177-10.el8
-    diffutils:
-        3.6-6.el8
     dmidecode:
         1:3.2-10.el8
     dnf:
@@ -312,8 +310,6 @@ local:
         0.63.0-3.el8
     libedit:
         3.1-23.20170329cvs.el8
-    libevent:
-        2.1.8-5.el8
     libfdisk:
         2.32.1-28.el8
     libffi:
@@ -332,8 +328,6 @@ local:
         1.18.2-14.el8
     libksba:
         1.3.5-7.el8
-    libmetalink:
-        0.1.3-7.el8
     libmodulemd:
         2.13.0-1.el8
     libmount:
@@ -406,8 +400,6 @@ local:
         0.3.0-5.el8
     libxcrypt:
         4.1.1-6.el8
-    libxkbcommon:
-        0.9.1-1.el8
     libxml2:
         2.9.7-11.el8
     libyaml:
@@ -670,8 +662,6 @@ local:
         1.28.21-3.el8
     python3-syspurpose:
         1.28.21-3.el8
-    python3-unbound:
-        1.7.3-17.el8
     python3-urllib3:
         1.24.2-5.el8
     python3-zmq:
@@ -691,8 +681,6 @@ local:
     rpm-build-libs:
         4.14.3-18.el8
     rpm-libs:
-        4.14.3-18.el8
-    rpm-plugin-systemd-inhibit:
         4.14.3-18.el8
     salt:
         3003.3-1.el8
@@ -725,9 +713,7 @@ local:
     tpm2-tss:
         2.3.2-4.el8
     tzdata:
-        2021b-1.el8
-    unbound-libs:
-        1.7.3-17.el8
+        2021c-1.el8
     usermode:
         1.113-2.el8
     util-linux:
@@ -738,8 +724,6 @@ local:
         1.18-12.el8
     which:
         2.21-16.el8
-    xkeyboard-config:
-        2.28-1.el8
     xz-libs:
         5.2.4-3.el8
     yum:

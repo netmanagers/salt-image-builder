@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.57.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.56.0...v1.57.0) (2021-10-20)
+
+
+### Features
+
+* **silicon:** add `3004.0` [skip ci] ([5c06c79](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/5c06c7955afca5c41311a91130f6f63ec208468b))
+
 # [1.56.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.55.0...v1.56.0) (2021-10-09)
 
 

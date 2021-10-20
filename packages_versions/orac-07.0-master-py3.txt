@@ -2,7 +2,7 @@ orac-07.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.4998b6c
+          Salt: 3004+0na.9058331
  
 Dependency Versions:
           cffi: Not Installed
@@ -24,7 +24,7 @@ Dependency Versions:
         pygit2: Not Installed
         Python: 3.6.8 (default, Mar  9 2021, 15:08:44)
   python-gnupg: Not Installed
-        PyYAML: 5.4.1
+        PyYAML: 6.0
          PyZMQ: 21.0.2
          smmap: Not Installed
        timelib: Not Installed
@@ -106,7 +106,7 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3004+0na.4998b6c
+        3004+0na.9058331
     saltversioninfo:
         - 3004
     systemd:
@@ -159,7 +159,7 @@ local:
     curl:
         7.29.0-59.0.3.el7_9.1
     cyrus-sasl-lib:
-        2.1.26-23.el7
+        2.1.26-23.0.1.el7
     dbus:
         1:1.10.24-15.0.1.el7
     dbus-glib:
@@ -215,19 +215,19 @@ local:
     glib2:
         2.56.1-9.el7_9
     glibc:
-        2.17-324.0.1.el7_9
+        2.17-325.0.1.el7_9
     glibc-common:
-        2.17-324.0.1.el7_9
+        2.17-325.0.1.el7_9
     glibc-devel:
-        2.17-324.0.1.el7_9
+        2.17-325.0.1.el7_9
     glibc-headers:
-        2.17-324.0.1.el7_9
+        2.17-325.0.1.el7_9
     gmp:
         1:6.0.0-15.el7
     gnupg2:
         2.0.22-5.el7_5
     gpg-pubkey.(none):
-        de57bfbe-53a9be98,ec551f03-53619141
+        de57bfbe-53a9be98,ec551f03-53619141,f4a80eb5-53a7ff4b
     gpgme:
         1.3.2-5.el7
     grep:
@@ -255,7 +255,7 @@ local:
     kernel-container:
         3.10.0-0.0.0.2.el7
     kernel-headers:
-        3.10.0-1160.42.2.el7
+        3.10.0-1160.45.1.el7
     keyutils-libs:
         1.5.8-3.el7
     keyutils-libs-devel:
@@ -359,9 +359,9 @@ local:
     libverto-devel:
         0.2.5-4.el7
     libxml2:
-        2.9.1-6.0.3.el7.5
+        2.9.1-6.0.3.el7_9.6
     libxml2-python:
-        2.9.1-6.0.3.el7.5
+        2.9.1-6.0.3.el7_9.6
     logrotate:
         3.8.6-19.el7
     lua:
@@ -385,21 +385,21 @@ local:
     newt-python:
         0.52.15-4.el7
     nspr:
-        4.25.0-2.el7_9
+        4.32.0-1.el7_9
     nss:
-        3.53.1-7.el7_9
+        3.67.0-3.el7_9
     nss-pem:
         1.0.3-7.el7
     nss-softokn:
-        3.53.1-6.0.1.el7_9
+        3.67.0-3.0.1.el7_9
     nss-softokn-freebl:
-        3.53.1-6.0.1.el7_9
+        3.67.0-3.0.1.el7_9
     nss-sysinit:
-        3.53.1-7.el7_9
+        3.67.0-3.el7_9
     nss-tools:
-        3.53.1-7.el7_9
+        3.67.0-3.el7_9
     nss-util:
-        3.53.1-1.el7_9
+        3.67.0-1.el7_9
     openldap:
         2.4.44-24.el7_9
     openssh:
@@ -409,9 +409,9 @@ local:
     openssh-server:
         7.4p1-21.0.1.el7
     openssl-devel:
-        1:1.0.2k-21.0.3.el7_9
+        1:1.0.2k-22.el7_9
     openssl-libs:
-        1:1.0.2k-21.0.3.el7_9
+        1:1.0.2k-22.el7_9
     oracle-logos:
         70.7.0-1.0.7.el7
     oraclelinux-release:
@@ -575,13 +575,13 @@ local:
     rootfiles:
         8.1-11.el7
     rpm:
-        4.11.3-45.el7
+        4.11.3-46.el7_9
     rpm-build-libs:
-        4.11.3-45.el7
+        4.11.3-46.el7_9
     rpm-libs:
-        4.11.3-45.el7
+        4.11.3-46.el7_9
     rpm-python:
-        4.11.3-45.el7
+        4.11.3-46.el7_9
     rsync:
         3.1.2-10.el7
     rsyslog:
@@ -599,7 +599,7 @@ local:
     sqlite:
         3.7.17-8.el7_7.1
     sudo:
-        1.8.23-10.el7_9.1
+        1.8.23-10.el7_9.2
     swig:
         2.0.10-5.el7
     systemd:
@@ -613,7 +613,7 @@ local:
     tcp_wrappers-libs:
         7.6-77.el7
     tzdata:
-        2021a-1.el7
+        2021c-1.el7
     usermode:
         1.111-6.el7
     ustr:
@@ -654,17 +654,17 @@ local:
     MarkupSafe:
         2.0.1
     PyYAML:
-        5.4.1
+        6.0
     certifi:
         2021.10.8
     charset-normalizer:
-        2.0.6
+        2.0.7
     contextvars:
         2.4
     distro:
         1.6.0
     idna:
-        3.2
+        3.3
     immutables:
         0.16
     msgpack:
@@ -680,7 +680,7 @@ local:
     requests:
         2.26.0
     salt:
-        3004+0na.4998b6c
+        3004+0na.9058331
     setuptools:
         39.2.0
     typing-extensions:

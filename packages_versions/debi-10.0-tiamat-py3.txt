@@ -128,7 +128,7 @@ local:
     apt-transport-https:
         1.8.2.3
     base-files:
-        10.3+deb10u10
+        10.3+deb10u11
     base-passwd:
         3.5.46
     bash:
@@ -148,7 +148,7 @@ local:
     dctrl-tools:
         2.24-3
     debconf:
-        1.5.71
+        1.5.71+deb10u1
     debian-archive-keyring:
         2019.1+deb10u1
     debianutils:
@@ -482,7 +482,7 @@ local:
     tar:
         1.30+dfsg-6
     tzdata:
-        2021a-0+deb10u1
+        2021a-0+deb10u2
     ucf:
         3.0038+nmu1
     udev:

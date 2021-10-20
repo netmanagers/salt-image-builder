@@ -343,9 +343,9 @@ local:
     libverto-devel:
         0.2.5-4.el7
     libxml2:
-        2.9.1-6.0.3.el7.5
+        2.9.1-6.0.3.el7_9.6
     libxml2-python:
-        2.9.1-6.0.3.el7.5
+        2.9.1-6.0.3.el7_9.6
     logrotate:
         3.8.6-19.el7
     lua:
@@ -391,9 +391,9 @@ local:
     openssh-server:
         7.4p1-21.0.1.el7
     openssl-devel:
-        1:1.0.2k-21.0.3.el7_9
+        1:1.0.2k-22.el7_9
     openssl-libs:
-        1:1.0.2k-21.0.3.el7_9
+        1:1.0.2k-22.el7_9
     oracle-epel-release-el7:
         1.0-4.el7
     oracle-logos:
@@ -563,13 +563,13 @@ local:
     rootfiles:
         8.1-11.el7
     rpm:
-        4.11.3-45.el7
+        4.11.3-46.el7_9
     rpm-build-libs:
-        4.11.3-45.el7
+        4.11.3-46.el7_9
     rpm-libs:
-        4.11.3-45.el7
+        4.11.3-46.el7_9
     rpm-python:
-        4.11.3-45.el7
+        4.11.3-46.el7_9
     rsync:
         3.1.2-10.el7
     rsyslog:
@@ -591,7 +591,7 @@ local:
     sqlite:
         3.7.17-8.el7_7.1
     sudo:
-        1.8.23-10.el7_9.1
+        1.8.23-10.el7_9.2
     swig:
         2.0.10-5.el7
     systemd:
@@ -605,7 +605,7 @@ local:
     tcp_wrappers-libs:
         7.6-77.el7
     tzdata:
-        2021a-1.el7
+        2021c-1.el7
     usermode:
         1.111-6.el7
     ustr:

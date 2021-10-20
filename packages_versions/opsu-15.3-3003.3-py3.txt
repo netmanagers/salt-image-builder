@@ -135,9 +135,9 @@ local:
     ca-certificates:
         2+git20210309.21162a6-2.1
     ca-certificates-mozilla:
-        2.44-18.1
+        2.44-21.1
     coreutils:
-        8.32-1.2
+        8.32-3.2.1
     cpio:
         2.12-3.9.1
     cracklib:
@@ -191,7 +191,7 @@ local:
     kmod:
         29-4.9.1
     krb5:
-        1.16.3-3.21.1
+        1.16.3-3.24.1
     kubic-locale-archive:
         2.31-bp153.1.13
     less:
@@ -209,9 +209,9 @@ local:
     libaudit1:
         2.8.5-3.43
     libaugeas0:
-        1.10.1-1.11
+        1.10.1-3.3.1
     libblkid1:
-        2.36.2-2.29
+        2.36.2-4.5.1
     libboost_system1_66_0:
         1.66.0-10.1
     libboost_thread1_66_0:
@@ -237,7 +237,7 @@ local:
     libdbus-1-3:
         1.12.2-8.11.2
     libdevmapper1_03:
-        1.02.163-8.33.1
+        1.02.163-8.36.1
     libdw1:
         0.168-4.5.3
     libebl-plugins:
@@ -249,7 +249,7 @@ local:
     libexpat1:
         2.2.5-3.6.1
     libfdisk1:
-        2.36.2-2.29
+        2.36.2-4.5.1
     libffi7:
         3.2.1.git259-10.8
     libfido2-1:
@@ -297,7 +297,7 @@ local:
     libmodman1:
         2.0.1-1.27
     libmount1:
-        2.36.2-2.29
+        2.36.2-4.5.1
     libncurses6:
         6.1-5.6.2
     libnghttp2-14:
@@ -347,7 +347,7 @@ local:
     libsigc-2_0-0:
         2.10.2-1.18
     libsmartcols1:
-        2.36.2-2.29
+        2.36.2-4.5.1
     libsodium23:
         1.0.16-4.3.18
     libsolv-tools:
@@ -379,7 +379,7 @@ local:
     libutempter0:
         1.1.6-3.42
     libuuid1:
-        2.36.2-2.29
+        2.36.2-4.5.1
     libverto1:
         0.2.6-3.20
     libxml2-2:
@@ -515,9 +515,9 @@ local:
     python3-requests:
         2.24.0-1.24
     python3-rpm:
-        4.14.3-37.2
+        4.14.3-40.1
     python3-salt:
-        3003.3-lp153.2.1
+        3003.3-lp153.3.1
     python3-setuptools:
         40.5.0-6.3.1
     python3-six:
@@ -527,13 +527,13 @@ local:
     python3-zypp-plugin:
         0.6.3-2.18
     rpm:
-        4.14.3-37.2
+        4.14.3-40.1
     rpm-config-SUSE:
         1-3.61
     salt:
-        3003.3-lp153.2.1
+        3003.3-lp153.3.1
     salt-minion:
-        3003.3-lp153.2.1
+        3003.3-lp153.3.1
     sed:
         4.4-11.6
     shadow:
@@ -541,7 +541,7 @@ local:
     sudo:
         1.9.5p2-1.5
     suse-module-tools:
-        15.3.8-3.5.1
+        15.3.10-3.8.1
     system-group-hardware:
         20170617-15.86
     system-group-kvm:
@@ -569,7 +569,7 @@ local:
     update-alternatives:
         1.19.0.4-2.48
     util-linux:
-        2.36.2-2.29
+        2.36.2-4.5.1
     which:
         2.21-2.20
     xz:
