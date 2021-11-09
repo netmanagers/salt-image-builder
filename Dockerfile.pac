@@ -33,6 +33,12 @@ RUN pacman --noconfirm -Sy archlinux-keyring \
     elif [ "${SALT_INSTALL_METHOD}" = "stable" ]; then \
       pacman --noconfirm -U https://archive.archlinux.org/packages/p/python-jinja/python-jinja-2.11.3-2-any.pkg.tar.zst; \
     fi \
+    # Fix `pyzmq` requirements (only required for `3004`, remove once `3004.1` is available), see:
+    # https://github.com/saltstack/salt/commit/070597e525bb7d56ffadede1aede325dfb1b73a4
+    # https://github.com/saltstack/salt/pull/61163
+ && if [ "${SALT_INSTALL_METHOD}" = "stable" ] && [ "${SALT_VERSION}" = "latest" ]; then \
+      sed -i -e '/,<22.0.0/s///' /usr/lib/python3.9/site-packages/salt-3004-py3.9.egg-info/requires.txt; \
+    fi \
  && systemctl enable sshd \
  && systemctl disable salt-minion.service > /dev/null 2>&1 \
     # Similar to Fedora, enable the `ssh-rsa` keypair type since Kitchen
