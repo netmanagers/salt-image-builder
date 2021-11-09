@@ -32,7 +32,7 @@ Dependency Versions:
             ZMQ: 4.1.4
  
 System Versions:
-           dist: ol 7.9 
+           dist: oracle 7.9 
          locale: UTF-8
         machine: x86_64
         release: 5.4.109+
@@ -138,7 +138,7 @@ local:
     bind-export-libs:
         32:9.11.4-26.P2.el7_9.7
     binutils:
-        2.27-44.base.0.3.el7
+        2.27-44.base.0.3.el7_9.1
     bzip2-libs:
         1.0.6-13.el7
     ca-certificates:
@@ -158,7 +158,7 @@ local:
     curl:
         7.29.0-59.0.3.el7_9.1
     cyrus-sasl-lib:
-        2.1.26-23.el7
+        2.1.26-23.0.1.el7
     dbus:
         1:1.10.24-15.0.1.el7
     dbus-glib:
@@ -212,9 +212,9 @@ local:
     glib2:
         2.56.1-9.el7_9
     glibc:
-        2.17-324.0.1.el7_9
+        2.17-325.0.1.el7_9
     glibc-common:
-        2.17-324.0.1.el7_9
+        2.17-325.0.1.el7_9
     gmp:
         1:6.0.0-15.el7
     gnupg2:
@@ -552,7 +552,7 @@ local:
     python36-chardet:
         3.0.4-12.el7
     python36-distro:
-        1.2.0-4.el7
+        1.5.0-1.el7
     python36-idna:
         2.10-1.el7
     python36-jinja2:
@@ -642,7 +642,7 @@ local:
     tcp_wrappers-libs:
         7.6-77.el7
     tzdata:
-        2021c-1.el7
+        2021e-1.el7
     usermode:
         1.111-6.el7
     ustr:
@@ -693,7 +693,7 @@ local:
     chardet:
         3.0.4
     distro:
-        1.2.0
+        1.5.0
     idna:
         2.10
     msgpack:

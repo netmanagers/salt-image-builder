@@ -2,7 +2,7 @@ ubun-20.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.9058331
+          Salt: 3004+0na.03f82cb
  
 Dependency Versions:
           cffi: Not Installed
@@ -11,7 +11,7 @@ Dependency Versions:
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
-        Jinja2: 3.0.2
+        Jinja2: 3.0.3
        libgit2: Not Installed
       M2Crypto: Not Installed
           Mako: Not Installed
@@ -25,11 +25,11 @@ Dependency Versions:
         Python: 3.8.10 (default, Sep 28 2021, 16:10:42)
   python-gnupg: Not Installed
         PyYAML: 6.0
-         PyZMQ: 21.0.2
+         PyZMQ: 22.3.0
          smmap: Not Installed
        timelib: Not Installed
        Tornado: 4.5.3
-           ZMQ: 4.3.3
+           ZMQ: 4.3.4
  
 System Versions:
           dist: ubuntu 20.04 focal
@@ -106,7 +106,7 @@ local:
     saltpath:
         /usr/local/lib/python3.8/dist-packages/salt
     saltversion:
-        3004+0na.9058331
+        3004+0na.03f82cb
     saltversioninfo:
         - 3004
     systemd:
@@ -120,7 +120,7 @@ local:
     virtual_subtype:
         Docker
     zmqversion:
-        4.3.3
+        4.3.4
 # salt-call --local pkg.list_pkgs
 local:
     ----------
@@ -137,11 +137,11 @@ local:
     bash:
         5.0-6ubuntu1.1
     binutils:
-        2.34-6ubuntu1.1
+        2.34-6ubuntu1.3
     binutils-common:
-        2.34-6ubuntu1.1
+        2.34-6ubuntu1.3
     binutils-x86-64-linux-gnu:
-        2.34-6ubuntu1.1
+        2.34-6ubuntu1.3
     bsdutils:
         1:2.34-0.1ubuntu9.1
     bzip2:
@@ -239,7 +239,7 @@ local:
     libaudit1:
         1:2.8.5-2ubuntu6
     libbinutils:
-        2.34-6ubuntu1.1
+        2.34-6ubuntu1.3
     libblkid1:
         2.34-0.1ubuntu9.1
     libbrotli1:
@@ -273,9 +273,9 @@ local:
     libcryptsetup12:
         2:2.2.2-3ubuntu2.3
     libctf-nobfd0:
-        2.34-6ubuntu1.1
+        2.34-6ubuntu1.3
     libctf0:
-        2.34-6ubuntu1.1
+        2.34-6ubuntu1.3
     libcurl3-gnutls:
         7.68.0-1ubuntu2.7
     libcurl4:
@@ -475,7 +475,7 @@ local:
     libzstd1:
         1.4.4+dfsg-3ubuntu0.1
     linux-libc-dev:
-        5.4.0-89.100
+        5.4.0-90.101
     locales:
         2.31-0ubuntu9.2
     login:
@@ -584,7 +584,7 @@ local:
 local:
     ----------
     Jinja2:
-        3.0.2
+        3.0.3
     MarkupSafe:
         2.0.1
     PyYAML:
@@ -612,11 +612,11 @@ local:
     python-apt:
         2.0.0+ubuntu0.20.4.6
     pyzmq:
-        21.0.2
+        22.3.0
     requests:
         2.26.0
     salt:
-        3004+0na.9058331
+        3004+0na.03f82cb
     setuptools:
         45.2.0
     urllib3:

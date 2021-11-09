@@ -155,7 +155,7 @@ local:
     cryptsetup-libs:
         2.3.3-4.el8
     curl:
-        7.61.1-18.el8_4.1
+        7.61.1-18.el8_4.2
     cyrus-sasl-lib:
         2.1.27-5.el8
     dbus:
@@ -303,7 +303,7 @@ local:
     libcomps:
         0.1.11-5.el8
     libcurl-minimal:
-        7.61.1-18.el8_4.1
+        7.61.1-18.el8_4.2
     libdb:
         5.3.28-40.el8
     libdb-utils:
@@ -635,7 +635,7 @@ local:
     squashfs-tools:
         4.3-20.el8
     sudo:
-        1.8.29-7.el8
+        1.8.29-7.el8_4.1
     swig:
         3.0.12-19.module+el8.4.0+385+82b6e804
     systemd:

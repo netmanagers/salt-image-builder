@@ -24,7 +24,7 @@ Dependency Versions:
         pygit2: Not Installed
         Python: 3.6.12 (default, Dec 02 2020, 09:44:23) [GCC]
   python-gnupg: Not Installed
-        PyYAML: 5.4.1
+        PyYAML: 6.0
          PyZMQ: 22.3.0
          smmap: Not Installed
        timelib: Not Installed
@@ -139,7 +139,7 @@ local:
     ca-certificates:
         2+git20170807.10b2785-lp152.8.2
     ca-certificates-mozilla:
-        2.44-lp152.2.10.1
+        2.44-lp152.2.13.1
     coreutils:
         8.29-lp152.4.7
     cpio:
@@ -153,7 +153,7 @@ local:
     cracklib-dict-small:
         2.9.7-lp152.1.1
     curl:
-        7.66.0-lp152.3.21.1
+        7.66.0-lp152.3.24.1
     dbus-1:
         1.12.2-lp152.6.6.1
     diffutils:
@@ -175,17 +175,17 @@ local:
     gcc7:
         7.5.0+r278197-lp152.3.9.1
     git:
-        2.26.2-lp152.2.9.1
+        2.26.2-lp152.2.12.1
     git-core:
-        2.26.2-lp152.2.9.1
+        2.26.2-lp152.2.12.1
     glibc:
-        2.26-lp152.26.6.1
+        2.26-lp152.26.9.1
     glibc-devel:
-        2.26-lp152.26.6.1
+        2.26-lp152.26.9.1
     glibc-locale:
-        2.26-lp152.26.6.1
+        2.26-lp152.26.9.1
     glibc-locale-base:
-        2.26-lp152.26.6.1
+        2.26-lp152.26.9.1
     gpg2:
         2.2.5-lp152.9.3.1
     grep:
@@ -199,17 +199,17 @@ local:
     kbd-legacy:
         2.0.4-lp152.10.3
     kmod:
-        25-lp152.7.6
+        25-lp152.8.3.1
     krb5:
-        1.16.3-lp152.5.19.1
+        1.16.3-lp152.5.22.1
     kubic-locale-archive:
         2.26-lp152.5.2
     less:
-        530-lp152.3.58
+        530-lp152.4.3.1
     libacl1:
         2.2.52-lp152.5.106
     libapparmor1:
-        2.13.4-lp152.2.3.1
+        2.13.4-lp152.2.6.1
     libargon2-1:
         0.0+git20171227.670229c-lp152.4.5
     libasan4:
@@ -223,9 +223,9 @@ local:
     libaudit1:
         2.8.1-lp152.7.3.1
     libaugeas0:
-        1.10.1-lp152.3.7
+        1.10.1-lp152.4.3.1
     libblkid1:
-        2.33.1-lp152.5.6.1
+        2.33.2-lp152.5.9.1
     libboost_system1_66_0:
         1.66.0-lp152.6.2
     libboost_thread1_66_0:
@@ -249,13 +249,13 @@ local:
     libctf0:
         2.35.1-lp152.4.6.1
     libcurl4:
-        7.66.0-lp152.3.21.1
+        7.66.0-lp152.3.24.1
     libdb-4_8:
         4.8.30-lp152.8.73
     libdbus-1-3:
         1.12.2-lp152.6.6.1
     libdevmapper1_03:
-        1.02.163-lp152.7.27.1
+        1.02.163-lp152.7.30.1
     libdw1:
         0.168-lp152.5.103
     libebl-plugins:
@@ -267,7 +267,7 @@ local:
     libexpat1:
         2.2.5-lp152.5.5
     libfdisk1:
-        2.33.1-lp152.5.6.1
+        2.33.2-lp152.5.9.1
     libffi7:
         3.2.1.git259-lp152.6.5
     libgcc_s1:
@@ -301,7 +301,7 @@ local:
     libkeyutils1:
         1.5.10-lp152.6.3.1
     libkmod2:
-        25-lp152.7.6
+        25-lp152.8.3.1
     libksba8:
         1.3.5-lp152.4.6
     libldap-2_4-2:
@@ -321,7 +321,7 @@ local:
     libmodman1:
         2.0.1-lp152.3.5
     libmount1:
-        2.33.1-lp152.5.6.1
+        2.33.2-lp152.5.9.1
     libmpc3:
         1.1.0-lp152.3.114
     libmpfr6:
@@ -331,7 +331,7 @@ local:
     libmpxwrappers2:
         8.2.1+r264010-lp152.2.126
     libncurses6:
-        6.1-lp152.7.67
+        6.1-lp152.8.3.1
     libnettle6:
         3.4.1-lp152.4.6.1
     libnghttp2-14:
@@ -345,7 +345,7 @@ local:
     libp11-kit0:
         0.23.2-lp152.6.4
     libpcre1:
-        8.41-lp152.7.3.1
+        8.45-lp152.7.6.1
     libpcre2-8-0:
         10.31-lp152.4.3.1
     libpopt0:
@@ -357,7 +357,7 @@ local:
     libpsl5:
         0.20.1-lp152.3.7
     libpython2_7-1_0:
-        2.7.18-lp152.3.18.1
+        2.7.18-lp152.3.21.1
     libpython3_6m1_0:
         3.6.12-lp152.4.17.1
     libqrencode4:
@@ -379,7 +379,7 @@ local:
     libsigc-2_0-0:
         2.10.2-lp152.1.3
     libsmartcols1:
-        2.33.1-lp152.5.6.1
+        2.33.2-lp152.5.9.1
     libsolv-tools:
         0.7.19-lp152.2.25.1
     libsqlite3-0:
@@ -389,7 +389,7 @@ local:
     libstdc++6:
         10.2.1+git583-lp152.4.1
     libsystemd0:
-        234-lp152.31.31.1
+        234-lp152.31.34.1
     libtasn1:
         4.13-lp152.5.5
     libtasn1-6:
@@ -403,7 +403,7 @@ local:
     libubsan0:
         7.5.0+r278197-lp152.3.9.1
     libudev1:
-        234-lp152.31.31.1
+        234-lp152.31.34.1
     libunistring2:
         0.9.9-lp152.3.4
     libusb-1_0-0:
@@ -411,7 +411,7 @@ local:
     libutempter0:
         1.1.6-lp152.5.114
     libuuid1:
-        2.33.1-lp152.5.6.1
+        2.33.2-lp152.5.9.1
     libverto1:
         0.2.6-lp152.5.115
     libxml2-2:
@@ -433,7 +433,7 @@ local:
     linux-glibc-devel:
         5.3-lp152.1.1
     ncurses-utils:
-        6.1-lp152.7.67
+        6.1-lp152.8.3.1
     net-tools:
         2.0+git20170221.479bb4a-lp152.5.5
     net-tools-deprecated:
@@ -459,7 +459,7 @@ local:
     p11-kit-tools:
         0.23.2-lp152.6.4
     pam:
-        1.3.0-lp152.11.12.1
+        1.3.0-lp152.11.16.1
     pam-config:
         1.1-lp152.2.3.1
     perl:
@@ -477,11 +477,11 @@ local:
     procps:
         3.3.15-lp152.3.9.1
     python-base:
-        2.7.18-lp152.3.18.1
+        2.7.18-lp152.3.21.1
     python-rpm-macros:
         20200207.5feb6c1-lp152.1.1
     python-xml:
-        2.7.18-lp152.3.18.1
+        2.7.18-lp152.3.21.1
     python3:
         3.6.12-lp152.4.17.1
     python3-PyYAML:
@@ -515,21 +515,21 @@ local:
     python3-urllib3:
         1.24-lp152.5.3.1
     rpm:
-        4.14.1-lp152.17.5
+        4.14.1-lp152.18.3.1
     rsync:
-        3.1.3-lp152.5.7
+        3.1.3-lp152.6.3.1
     sed:
         4.4-lp152.5.3.1
     shadow:
         4.6-lp152.3.80
     sudo:
-        1.8.22-lp152.8.9.1
+        1.8.27-lp152.8.12.1
     system-group-hardware:
         20170617-lp152.5.114
     system-user-root:
         20190513-lp152.1.100
     systemd:
-        234-lp152.31.31.1
+        234-lp152.31.34.1
     systemd-presets-branding-MicroOS:
         20200323-lp152.2.1
     systemd-presets-common-SUSE:
@@ -539,13 +539,13 @@ local:
     sysvinit-tools:
         2.88+-lp152.3.5
     terminfo-base:
-        6.1-lp152.7.67
+        6.1-lp152.8.3.1
     udev:
-        234-lp152.31.31.1
+        234-lp152.31.34.1
     update-alternatives:
         1.19.0.4-lp152.4.104
     util-linux:
-        2.33.1-lp152.5.6.1
+        2.33.2-lp152.5.9.1
     which:
         2.21-lp152.4.114
     zypper:
@@ -558,7 +558,7 @@ local:
     MarkupSafe:
         2.0.1
     PyYAML:
-        5.4.1
+        6.0
     appdirs:
         1.4.3
     certifi:
@@ -566,11 +566,11 @@ local:
     chardet:
         3.0.4
     charset-normalizer:
-        2.0.6
+        2.0.7
     distro:
         1.6.0
     idna:
-        3.2
+        3.3
     msgpack:
         1.0.2
     packaging:

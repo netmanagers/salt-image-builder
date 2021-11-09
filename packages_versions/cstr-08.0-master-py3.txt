@@ -2,7 +2,7 @@ cstr-08.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.9058331
+          Salt: 3004+0na.03f82cb
  
 Dependency Versions:
           cffi: Not Installed
@@ -11,7 +11,7 @@ Dependency Versions:
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
-        Jinja2: 3.0.2
+        Jinja2: 3.0.3
        libgit2: Not Installed
       M2Crypto: Not Installed
           Mako: Not Installed
@@ -22,14 +22,14 @@ Dependency Versions:
       pycrypto: Not Installed
   pycryptodome: 3.11.0
         pygit2: Not Installed
-        Python: 3.6.8 (default, Sep 22 2021, 11:16:51)
+        Python: 3.6.8 (default, Oct 19 2021, 05:14:06)
   python-gnupg: Not Installed
         PyYAML: 6.0
-         PyZMQ: 21.0.2
+         PyZMQ: 22.3.0
          smmap: Not Installed
        timelib: Not Installed
        Tornado: 4.5.3
-           ZMQ: 4.3.3
+           ZMQ: 4.3.4
  
 System Versions:
           dist: centos 8 
@@ -105,7 +105,7 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3004+0na.9058331
+        3004+0na.03f82cb
     saltversioninfo:
         - 3004
     systemd:
@@ -119,7 +119,7 @@ local:
     virtual_subtype:
         Docker
     zmqversion:
-        4.3.3
+        4.3.4
 # salt-call --local pkg.list_pkgs
 local:
     ----------
@@ -132,7 +132,7 @@ local:
     bash:
         4.4.20-3.el8
     binutils:
-        2.30-108.el8
+        2.30-110.el8
     brotli:
         1.0.6-3.el8
     bzip2-libs:
@@ -162,7 +162,7 @@ local:
     cryptsetup-libs:
         2.3.3-4.el8
     curl:
-        7.61.1-21.el8
+        7.61.1-22.el8
     cyrus-sasl-lib:
         2.1.27-5.el8
     dbus:
@@ -212,7 +212,7 @@ local:
     gcc:
         8.5.0-3.el8
     gdb-gdbserver:
-        8.2-16.el8
+        8.2-17.el8
     gdbm:
         1:1.18-1.el8
     gdbm-libs:
@@ -224,19 +224,21 @@ local:
     git-core-doc:
         2.27.0-1.el8
     glib2:
-        2.56.4-156.el8
+        2.56.4-157.el8
     glibc:
-        2.28-164.el8
+        2.28-167.el8
     glibc-common:
-        2.28-164.el8
+        2.28-167.el8
     glibc-devel:
-        2.28-164.el8
+        2.28-167.el8
+    glibc-gconv-extra:
+        2.28-167.el8
     glibc-headers:
-        2.28-164.el8
+        2.28-167.el8
     glibc-langpack-en:
-        2.28-164.el8
+        2.28-167.el8
     glibc-minimal-langpack:
-        2.28-164.el8
+        2.28-167.el8
     gmp:
         1:6.1.2-10.el8
     gnupg2:
@@ -262,7 +264,7 @@ local:
     info:
         6.5-6.el8
     iptables-libs:
-        1.8.4-20.el8
+        1.8.4-21.el8
     isl:
         0.16.1-6.el8
     json-c:
@@ -276,7 +278,7 @@ local:
     kbd-misc:
         2.0.4-10.el8
     kernel-headers:
-        4.18.0-338.el8
+        4.18.0-348.el8
     keyutils-libs:
         1.5.10-9.el8
     keyutils-libs-devel:
@@ -314,7 +316,7 @@ local:
     libcomps:
         0.1.16-2.el8
     libcurl:
-        7.61.1-21.el8
+        7.61.1-22.el8
     libdb:
         5.3.28-42.el8_4
     libdb-utils:
@@ -442,11 +444,11 @@ local:
     openldap:
         2.4.46-18.el8
     openssh:
-        8.0p1-9.el8
+        8.0p1-12.el8
     openssh-clients:
-        8.0p1-9.el8
+        8.0p1-12.el8
     openssh-server:
-        8.0p1-9.el8
+        8.0p1-12.el8
     openssl:
         1:1.1.1k-4.el8
     openssl-devel:
@@ -486,7 +488,7 @@ local:
     perl-Encode:
         4:2.97-3.el8
     perl-Errno:
-        1.28-420.el8
+        1.28-421.el8
     perl-Error:
         1:0.17025-2.el8
     perl-Exporter:
@@ -502,7 +504,7 @@ local:
     perl-HTTP-Tiny:
         0.074-1.el8
     perl-IO:
-        1.38-420.el8
+        1.38-421.el8
     perl-IO-Socket-IP:
         0.39-5.el8
     perl-IO-Socket-SSL:
@@ -548,13 +550,13 @@ local:
     perl-constant:
         1.33-396.el8
     perl-interpreter:
-        4:5.26.3-420.el8
+        4:5.26.3-421.el8
     perl-libnet:
         3.11-3.el8
     perl-libs:
-        4:5.26.3-420.el8
+        4:5.26.3-421.el8
     perl-macros:
-        4:5.26.3-420.el8
+        4:5.26.3-421.el8
     perl-parent:
         1:0.237-1.el8
     perl-podlators:
@@ -570,11 +572,11 @@ local:
     pkgconf-pkg-config:
         1.4.2-1.el8
     platform-python:
-        3.6.8-42.el8
+        3.6.8-44.el8
     platform-python-devel:
-        3.6.8-42.el8
+        3.6.8-44.el8
     platform-python-pip:
-        9.0.3-20.el8
+        9.0.3-22.el8
     platform-python-setuptools:
         39.2.0-6.el8
     popt:
@@ -624,19 +626,19 @@ local:
     python3-librepo:
         1.14.0-2.el8
     python3-libs:
-        3.6.8-42.el8
+        3.6.8-44.el8
     python3-libxml2:
         2.9.7-11.el8
     python3-pip:
-        9.0.3-20.el8
+        9.0.3-22.el8
     python3-pip-wheel:
-        9.0.3-20.el8
+        9.0.3-22.el8
     python3-pysocks:
         1.6.8-3.el8
     python3-requests:
         2.20.0-2.1.el8_1
     python3-rpm:
-        4.14.3-18.el8
+        4.14.3-19.el8
     python3-rpm-generators:
         5-7.el8
     python3-rpm-macros:
@@ -664,23 +666,23 @@ local:
     rootfiles:
         8.1-22.el8
     rpm:
-        4.14.3-18.el8
+        4.14.3-19.el8
     rpm-build-libs:
-        4.14.3-18.el8
+        4.14.3-19.el8
     rpm-libs:
-        4.14.3-18.el8
+        4.14.3-19.el8
     sed:
-        4.5-2.el8
+        4.5-5.el8
     setup:
         2.12.2-6.el8
     shadow-utils:
-        2:4.6-14.el8
+        2:4.6-15.el8
     sqlite-libs:
         3.26.0-15.el8
     subscription-manager-rhsm-certificates:
         1.28.21-3.el8
     sudo:
-        1.8.29-7.el8
+        1.8.29-7.el8_4.1
     swig:
         3.0.12-19.module_el8.3.0+386+5db24358
     systemd:
@@ -696,7 +698,7 @@ local:
     tpm2-tss:
         2.3.2-4.el8
     tzdata:
-        2021c-1.el8
+        2021e-1.el8
     usermode:
         1.113-2.el8
     util-linux:
@@ -721,7 +723,7 @@ local:
 local:
     ----------
     Jinja2:
-        3.0.2
+        3.0.3
     MarkupSafe:
         2.0.1
     PySocks:
@@ -771,13 +773,13 @@ local:
     python-dmidecode:
         3.12.2
     pyzmq:
-        21.0.2
+        22.3.0
     requests:
         2.26.0
     rpm:
         4.14.3
     salt:
-        3004+0na.9058331
+        3004+0na.03f82cb
     setuptools:
         39.2.0
     six:

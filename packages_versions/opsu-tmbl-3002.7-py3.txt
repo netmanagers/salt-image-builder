@@ -1,8 +1,8 @@
-opsu-tmbl-master-py3
+opsu-tmbl-3002.7-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.03f82cb
+          Salt: 3002.7
  
 Dependency Versions:
           cffi: Not Installed
@@ -11,7 +11,7 @@ Dependency Versions:
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
-        Jinja2: 3.0.3
+        Jinja2: 2.11.3
        libgit2: Not Installed
       M2Crypto: Not Installed
           Mako: Not Installed
@@ -97,6 +97,7 @@ local:
         - /usr/lib64/python3.8/site-packages
         - /usr/lib64/python3.8/_import_failed
         - /usr/lib/python3.8/site-packages
+        - /usr/local/lib/python3.8/site-packages
     pythonversion:
         - 3
         - 8
@@ -106,9 +107,10 @@ local:
     saltpath:
         /usr/lib/python3.8/site-packages/salt
     saltversion:
-        3004+0na.03f82cb
+        3002.7
     saltversioninfo:
-        - 3004
+        - 3002
+        - 7
     systemd:
         ----------
         features:
@@ -116,7 +118,7 @@ local:
         version:
             249
     virtual:
-        container
+        gce
     virtual_subtype:
         Docker
     zmqversion:
@@ -523,6 +525,8 @@ local:
 # salt-call --local pip.list
 local:
     ----------
+    Jinja2:
+        2.11.3
     appdirs:
         1.4.4
     ordered-set:

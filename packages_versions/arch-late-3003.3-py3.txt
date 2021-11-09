@@ -1,5 +1,5 @@
 arch-late-3003.3-py3
-Salt install method: stable
+Salt install method: git
 # salt-call --versions-report
 Salt Version:
           Salt: 3003.3
@@ -13,19 +13,19 @@ Dependency Versions:
      gitpython: Not Installed
         Jinja2: 2.11.3
        libgit2: Not Installed
-      M2Crypto: 0.38.0
+      M2Crypto: Not Installed
           Mako: Not Installed
        msgpack: 1.0.2
   msgpack-pure: Not Installed
   mysql-python: Not Installed
      pycparser: 2.20
       pycrypto: Not Installed
-  pycryptodome: 3.10.1
+  pycryptodome: 3.11.0
         pygit2: Not Installed
         Python: 3.9.7 (default, Oct 10 2021, 15:13:22)
   python-gnupg: Not Installed
-        PyYAML: 5.4.1
-         PyZMQ: 22.2.1
+        PyYAML: 6.0
+         PyZMQ: 22.3.0
          smmap: Not Installed
        timelib: Not Installed
        Tornado: 4.5.3
@@ -121,7 +121,7 @@ local:
     acl:
         2.3.1-1
     archlinux-keyring:
-        20210902-1
+        20211028-1
     argon2:
         20190702-3
     attr:
@@ -132,6 +132,8 @@ local:
         2-2
     bash:
         5.1.008-1
+    binutils:
+        2.36.1-3
     brotli:
         1.0.9-4
     bzip2:
@@ -139,13 +141,13 @@ local:
     ca-certificates:
         20210603-1
     ca-certificates-mozilla:
-        3.71-1
+        3.72-1
     ca-certificates-utils:
         20210603-1
     coreutils:
         9.0-2
     cryptsetup:
-        2.4.1-1
+        2.4.1-3
     curl:
         7.79.1-1
     db:
@@ -153,11 +155,13 @@ local:
     dbus:
         1.12.20-1
     device-mapper:
-        2.03.13-1
+        2.03.14-1
     dnssec-anchors:
         20190629-3
     e2fsprogs:
         1.46.4-1
+    elfutils:
+        0.185-1
     expat:
         2.4.1-1
     file:
@@ -167,23 +171,25 @@ local:
     findutils:
         4.8.0-1
     gawk:
-        5.1.0-1
+        5.1.1-1
+    gcc:
+        11.1.0-1
     gcc-libs:
         11.1.0-1
     gdbm:
-        1.21-1
+        1.22-1
     gettext:
         0.21-1
     git:
         2.33.1-1
     glib2:
-        2.70.0-2
+        2.70.1-1
     glibc:
         2.33-5
     gmp:
         6.2.1-1
     gnupg:
-        2.2.29-1
+        2.2.32-1
     gnutls:
         3.7.2-2
     gpgme:
@@ -195,11 +201,11 @@ local:
     hwids:
         20210613-1
     iana-etc:
-        20210903-1
+        20211025-1
     icu:
         69.1-1
     iproute2:
-        5.14.0-1
+        5.15.0-1
     iptables:
         1:1.8.7-1
     iputils:
@@ -223,7 +229,7 @@ local:
     libassuan:
         2.5.5-1
     libcap:
-        2.59-1
+        2.60-1
     libcap-ng:
         0.8.2-3
     libcroco:
@@ -237,7 +243,7 @@ local:
     libgcrypt:
         1.9.4-1
     libgpg-error:
-        1.42-1
+        1.43-1
     libidn2:
         2.3.2-1
     libksba:
@@ -246,6 +252,8 @@ local:
         2.4.59-2
     libmnl:
         1.0.4-3
+    libmpc:
+        1.2.1-1
     libnetfilter_conntrack:
         1.0.8-1
     libnfnetlink:
@@ -253,7 +261,7 @@ local:
     libnftnl:
         1.2.0-1
     libnghttp2:
-        1.45.1-1
+        1.46.0-1
     libnl:
         3.5.0-3
     libnsl:
@@ -262,8 +270,6 @@ local:
         0.24.0-2
     libpcap:
         1.10.1-1
-    libpgm:
-        5.3.128-1
     libpsl:
         0.21.1-1
     libsasl:
@@ -272,8 +278,6 @@ local:
         2.5.2-1
     libsecret:
         0.20.4-1
-    libsodium:
-        1.0.18-2
     libssh2:
         1.10.0-1
     libtasn1:
@@ -297,7 +301,7 @@ local:
     mpfr:
         4.1.0.p13-1
     ncurses:
-        6.2-2
+        6.3-1
     net-tools:
         2.10-1
     nettle:
@@ -333,7 +337,7 @@ local:
     perl-timedate:
         2.33-3
     pinentry:
-        1.1.1-1
+        1.2.0-1
     popt:
         1.18-1
     procps-ng:
@@ -345,7 +349,7 @@ local:
     python-appdirs:
         1.4.4-3
     python-cachecontrol:
-        0.12.6-3
+        0.12.6-5
     python-cffi:
         1.14.6-2
     python-chardet:
@@ -363,13 +367,7 @@ local:
     python-html5lib:
         1.1-6
     python-idna:
-        3.2-1
-    python-jinja:
-        2.11.3-2
-    python-m2crypto:
-        0.38.0-1
-    python-markupsafe:
-        2.0.1-1
+        3.3-1
     python-more-itertools:
         8.10.0-1
     python-msgpack:
@@ -388,14 +386,10 @@ local:
         1.6-1
     python-pycparser:
         2.20-3
-    python-pycryptodomex:
-        3.10.1-1
     python-pyopenssl:
         20.0.1-1
     python-pyparsing:
         2.4.7-3
-    python-pyzmq:
-        22.2.1-1
     python-requests:
         2.26.0-1
     python-resolvelib:
@@ -406,8 +400,6 @@ local:
         1:57.4.0-2
     python-six:
         1.16.0-1
-    python-systemd:
-        234-8
     python-toml:
         0.10.2-3
     python-tomli:
@@ -420,8 +412,6 @@ local:
         5.4.1.1-2
     readline:
         8.1.001-1
-    salt:
-        3003.3-1
     sed:
         4.8-1
     shadow:
@@ -431,23 +421,21 @@ local:
     sudo:
         1.9.8.p2-1
     systemd:
-        249.5-1
+        249.5-3
     systemd-libs:
-        249.5-1
+        249.5-3
     systemd-sysvcompat:
-        249.5-1
+        249.5-3
     tar:
         1.34-1
     tzdata:
-        2021d-1
+        2021e-1
     util-linux:
         2.37.2-1
     util-linux-libs:
         2.37.2-1
     xz:
         5.2.5-2
-    zeromq:
-        4.3.4-2
     zlib:
         1:1.2.11-4
     zstd:
@@ -459,12 +447,6 @@ local:
         0.12.6
     Jinja2:
         2.11.3
-    M2Crypto:
-        0.38.0
-    MarkupSafe:
-        2.0.1
-    PyYAML:
-        5.4.1
     appdirs:
         1.4.4
     cffi:
@@ -484,7 +466,7 @@ local:
     html5lib:
         1.1
     idna:
-        3.2
+        3.3
     more-itertools:
         8.10.0
     msgpack:
@@ -505,26 +487,18 @@ local:
         20.0.1
     pycparser:
         2.20
-    pycryptodomex:
-        3.10.1
     pyparsing:
         2.4.7
-    pyzmq:
-        22.2.1
     requests:
         2.26.0
     resolvelib:
         0.5.5
     retrying:
         1.3.3
-    salt:
-        3003.3
     setuptools:
         57.4.0
     six:
         1.16.0
-    systemd-python:
-        234
     toml:
         0.10.2
     tomli:
@@ -533,3 +507,5 @@ local:
         1.26.7
     webencodings:
         0.5.1
+    wheel:
+        0.37.0

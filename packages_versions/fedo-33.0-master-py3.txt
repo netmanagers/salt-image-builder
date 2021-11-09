@@ -2,7 +2,7 @@ fedo-33.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.9058331
+          Salt: 3004+0na.03f82cb
  
 Dependency Versions:
           cffi: Not Installed
@@ -11,7 +11,7 @@ Dependency Versions:
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
-        Jinja2: 3.0.2
+        Jinja2: 3.0.3
        libgit2: Not Installed
       M2Crypto: Not Installed
           Mako: Not Installed
@@ -25,11 +25,11 @@ Dependency Versions:
         Python: 3.9.7 (default, Aug 30 2021, 00:00:00)
   python-gnupg: Not Installed
         PyYAML: 6.0
-         PyZMQ: 21.0.2
+         PyZMQ: 22.3.0
          smmap: Not Installed
        timelib: Not Installed
        Tornado: 4.5.3
-           ZMQ: 4.3.3
+           ZMQ: 4.3.4
  
 System Versions:
           dist: fedora 33 
@@ -103,7 +103,7 @@ local:
     saltpath:
         /usr/lib/python3.9/site-packages/salt
     saltversion:
-        3004+0na.9058331
+        3004+0na.03f82cb
     saltversioninfo:
         - 3004
     systemd:
@@ -117,7 +117,7 @@ local:
     virtual_subtype:
         Docker
     zmqversion:
-        4.3.3
+        4.3.4
 # salt-call --local pkg.list_pkgs
 local:
     ----------
@@ -435,6 +435,8 @@ local:
         0.3.0-10.fc33
     libxcrypt:
         4.4.26-2.fc33
+    libxcrypt-compat:
+        4.4.26-2.fc33
     libxcrypt-devel:
         4.4.26-2.fc33
     libxml2:
@@ -500,7 +502,7 @@ local:
     perl-DynaLoader:
         1.47-471.fc33
     perl-Encode:
-        4:3.08-459.fc33
+        4:3.08-461.fc33
     perl-Errno:
         1.30-471.fc33
     perl-Error:
@@ -610,7 +612,7 @@ local:
     publicsuffix-list-dafsa:
         20190417-4.fc33
     python-pip-wheel:
-        20.2.2-3.fc33
+        20.2.2-4.fc33
     python-setuptools-wheel:
         49.1.3-2.fc33
     python3:
@@ -630,7 +632,7 @@ local:
     python3-libs:
         3.9.7-1.fc33
     python3-pip:
-        20.2.2-3.fc33
+        20.2.2-4.fc33
     python3-rpm:
         4.16.1.3-1.fc33
     python3-setuptools:
@@ -682,13 +684,13 @@ local:
     tpm2-tss:
         3.0.4-1.fc33
     tzdata:
-        2021b-1.fc33
+        2021c-1.fc33
     unbound-libs:
         1.13.1-1.fc33
     util-linux:
         2.36.1-1.fc33
     vim-minimal:
-        2:8.2.3404-1.fc33
+        2:8.2.3512-1.fc33
     which:
         2.21-20.fc33
     xz:

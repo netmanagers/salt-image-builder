@@ -2,7 +2,7 @@ orac-08.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.9058331
+          Salt: 3004+0na.03f82cb
  
 Dependency Versions:
           cffi: Not Installed
@@ -11,7 +11,7 @@ Dependency Versions:
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
-        Jinja2: 3.0.2
+        Jinja2: 3.0.3
        libgit2: Not Installed
       M2Crypto: Not Installed
           Mako: Not Installed
@@ -22,14 +22,14 @@ Dependency Versions:
       pycrypto: Not Installed
   pycryptodome: 3.11.0
         pygit2: Not Installed
-        Python: 3.6.8 (default, Sep 21 2021, 10:09:35)
+        Python: 3.6.8 (default, Nov  2 2021, 05:39:45)
   python-gnupg: Not Installed
         PyYAML: 6.0
-         PyZMQ: 21.0.2
+         PyZMQ: 22.3.0
          smmap: Not Installed
        timelib: Not Installed
        Tornado: 4.5.3
-           ZMQ: 4.3.3
+           ZMQ: 4.3.4
  
 System Versions:
           dist: oracle 8.4 
@@ -106,7 +106,7 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3004+0na.9058331
+        3004+0na.03f82cb
     saltversioninfo:
         - 3004
     systemd:
@@ -120,7 +120,7 @@ local:
     virtual_subtype:
         Docker
     zmqversion:
-        4.3.3
+        4.3.4
 # salt-call --local pkg.list_pkgs
 local:
     ----------
@@ -159,7 +159,7 @@ local:
     cryptsetup-libs:
         2.3.3-4.el8
     curl:
-        7.61.1-18.el8_4.1
+        7.61.1-18.el8_4.2
     cyrus-sasl-lib:
         2.1.27-5.el8
     dbus:
@@ -265,7 +265,7 @@ local:
     iproute:
         5.9.0-4.el8
     iptables-libs:
-        1.8.4-17.0.1.el8
+        1.8.4-17.0.1.el8_4.1
     iputils:
         20180629-7.el8
     isl:
@@ -273,7 +273,7 @@ local:
     json-c:
         0.13.1-0.4.el8
     kernel-headers:
-        4.18.0-305.19.1.el8_4
+        4.18.0-305.25.1.el8_4
     keyutils-libs:
         1.5.10-6.el8
     keyutils-libs-devel:
@@ -309,7 +309,7 @@ local:
     libcomps:
         0.1.11-5.el8
     libcurl:
-        7.61.1-18.el8_4.1
+        7.61.1-18.el8_4.2
     libdb:
         5.3.28-42.el8_4
     libdb-utils:
@@ -387,7 +387,7 @@ local:
     libsmartcols:
         2.32.1-27.el8
     libsolv:
-        0.7.16-2.el8
+        0.7.16-3.el8_4
     libssh:
         0.9.4-2.el8
     libssh-config:
@@ -557,9 +557,9 @@ local:
     pkgconf-pkg-config:
         1.4.2-1.el8
     platform-python:
-        3.6.8-38.0.1.el8_4
+        3.6.8-39.0.1.el8_4
     platform-python-devel:
-        3.6.8-38.0.1.el8_4
+        3.6.8-39.0.1.el8_4
     platform-python-pip:
         9.0.3-19.el8
     platform-python-setuptools:
@@ -593,7 +593,7 @@ local:
     python3-libdnf:
         0.55.0-7.0.1.el8
     python3-libs:
-        3.6.8-38.0.1.el8_4
+        3.6.8-39.0.1.el8_4
     python3-pip:
         9.0.3-19.el8
     python3-pip-wheel:
@@ -639,7 +639,7 @@ local:
     sqlite-libs:
         3.26.0-13.el8
     sudo:
-        1.8.29-7.el8
+        1.8.29-7.el8_4.1
     swig:
         3.0.12-19.module+el8.3.0+7654+9c81efad
     systemd:
@@ -653,7 +653,7 @@ local:
     tpm2-tss:
         2.3.2-3.el8
     tzdata:
-        2021c-1.el8
+        2021e-1.el8
     util-linux:
         2.32.1-27.el8
     vim-minimal:
@@ -674,7 +674,7 @@ local:
 local:
     ----------
     Jinja2:
-        3.0.2
+        3.0.3
     MarkupSafe:
         2.0.1
     PyYAML:
@@ -706,13 +706,13 @@ local:
     python-dateutil:
         2.6.1
     pyzmq:
-        21.0.2
+        22.3.0
     requests:
         2.26.0
     rpm:
         4.14.3
     salt:
-        3004+0na.9058331
+        3004+0na.03f82cb
     setuptools:
         39.2.0
     six:

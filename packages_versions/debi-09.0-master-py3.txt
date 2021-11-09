@@ -2,7 +2,7 @@ debi-09.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.9058331
+          Salt: 3004+0na.03f82cb
  
 Dependency Versions:
           cffi: Not Installed
@@ -22,7 +22,7 @@ Dependency Versions:
       pycrypto: Not Installed
   pycryptodome: 3.11.0
         pygit2: Not Installed
-        Python: 3.5.3 (default, Apr  5 2021, 09:00:41)
+        Python: 3.5.3 (default, Nov  4 2021, 15:29:10)
   python-gnupg: Not Installed
         PyYAML: 5.3.1
          PyZMQ: 20.0.0
@@ -128,7 +128,7 @@ local:
     saltpath:
         /usr/local/lib/python3.5/dist-packages/salt
     saltversion:
-        3004+0na.9058331
+        3004+0na.03f82cb
     saltversioninfo:
         - 3004
     systemd:
@@ -289,7 +289,7 @@ local:
     libedit2:
         3.1-20160903-3
     libelf1:
-        0.168-1
+        0.168-1+deb9u1
     liberror-perl:
         0.17024-1
     libexpat1:
@@ -399,13 +399,13 @@ local:
     libpython3-stdlib:
         3.5.3-1
     libpython3.5:
-        3.5.3-1+deb9u4
+        3.5.3-1+deb9u5
     libpython3.5-dev:
-        3.5.3-1+deb9u4
+        3.5.3-1+deb9u5
     libpython3.5-minimal:
-        3.5.3-1+deb9u4
+        3.5.3-1+deb9u5
     libpython3.5-stdlib:
-        3.5.3-1+deb9u4
+        3.5.3-1+deb9u5
     libquadmath0:
         6.3.0-18+deb9u1
     libreadline7:
@@ -529,11 +529,11 @@ local:
     python3-yaml:
         3.12-1
     python3.5:
-        3.5.3-1+deb9u4
+        3.5.3-1+deb9u5
     python3.5-dev:
-        3.5.3-1+deb9u4
+        3.5.3-1+deb9u5
     python3.5-minimal:
-        3.5.3-1+deb9u4
+        3.5.3-1+deb9u5
     readline-common:
         7.0-3
     sed:
@@ -551,7 +551,7 @@ local:
     tar:
         1.29b-1.1
     tzdata:
-        2021a-0+deb9u1
+        2021a-0+deb9u2
     ucf:
         3.0036
     udev:
@@ -598,7 +598,7 @@ local:
     requests:
         2.25.1
     salt:
-        3004+0na.9058331
+        3004+0na.03f82cb
     setuptools:
         33.1.1
     urllib3:

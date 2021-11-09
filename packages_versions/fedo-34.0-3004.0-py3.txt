@@ -177,7 +177,7 @@ local:
     dnf-data:
         4.9.0-1.fc34
     dracut:
-        055-3.fc34
+        055-5.fc34
     elfutils-debuginfod-client:
         0.185-2.fc34
     elfutils-default-yama-scope:
@@ -473,7 +473,7 @@ local:
     p11-kit-trust:
         0.23.22-3.fc34
     pam:
-        1.5.1-6.fc34
+        1.5.1-7.fc34
     pcre:
         8.44-3.fc34.1
     pcre2:
@@ -487,7 +487,7 @@ local:
     perl-DynaLoader:
         1.47-477.fc34
     perl-Encode:
-        4:3.12-460.fc34
+        4:3.15-462.fc34
     perl-Errno:
         1.30-477.fc34
     perl-Error:
@@ -593,7 +593,7 @@ local:
     publicsuffix-list-dafsa:
         20190417-5.fc34
     python-pip-wheel:
-        21.0.1-3.fc34
+        21.0.1-4.fc34
     python-setuptools-wheel:
         53.0.0-2.fc34
     python3:
@@ -613,7 +613,7 @@ local:
     python3-libs:
         3.9.7-1.fc34
     python3-pip:
-        21.0.1-3.fc34
+        21.0.1-4.fc34
     python3-rpm:
         4.16.1.3-1.fc34
     python3-setuptools:

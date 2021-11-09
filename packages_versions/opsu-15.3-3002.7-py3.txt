@@ -131,7 +131,7 @@ local:
     bash:
         4.4-19.6.1
     binutils:
-        2.35.1-7.18.1
+        2.37-7.26.1
     boost-license1_66_0:
         1.66.0-10.1
     ca-certificates:
@@ -205,11 +205,11 @@ local:
     kubic-locale-archive:
         2.31-bp153.1.13
     less:
-        530-1.6
+        530-3.3.2
     libacl1:
         2.2.52-4.3.1
     libapparmor1:
-        2.13.6-1.24
+        2.13.6-3.3.1
     libargon2-1:
         0.0+git20171227.670229c-2.14
     libasan4:
@@ -249,9 +249,9 @@ local:
     libcryptsetup12:
         2.3.4-1.34
     libctf-nobfd0:
-        2.35.1-7.18.1
+        2.37-7.26.1
     libctf0:
-        2.35.1-7.18.1
+        2.37-7.26.1
     libcurl4:
         7.66.0-4.27.1
     libdbus-1-3:
@@ -333,7 +333,7 @@ local:
     libmpxwrappers2:
         8.2.1+r264010-1.3.7
     libncurses6:
-        6.1-5.6.2
+        6.1-5.9.1
     libnghttp2-14:
         1.40.0-6.1
     libnpth0:
@@ -345,19 +345,21 @@ local:
     libp11-kit0:
         0.23.2-4.8.3
     libpcre1:
-        8.41-6.4.2
+        8.45-20.10.1
     libpcre2-8-0:
         10.31-3.3.1
     libpopt0:
         1.16-3.22
     libprocps7:
         3.3.15-7.19.1
+    libprotobuf-lite20:
+        3.9.2-4.9.1
     libproxy1:
         0.4.15-12.41
     libpsl5:
         0.20.1-1.20
     libpython2_7-1_0:
-        2.7.18-7.58.1
+        2.7.18-33.1
     libpython3_6m1_0:
         3.6.13-10.3.1
     libqrencode4:
@@ -381,7 +383,7 @@ local:
     libsmartcols1:
         2.36.2-4.5.1
     libsolv-tools:
-        0.7.19-6.1
+        0.7.20-9.2
     libsqlite3-0:
         3.36.0-3.12.1
     libssh4:
@@ -427,13 +429,13 @@ local:
     libzstd1:
         1.4.4-1.6.1
     libzypp:
-        17.27.0-12.1
+        17.28.5-15.2
     linux-glibc-devel:
         5.3-1.75
     login_defs:
         4.8.1-2.43
     ncurses-utils:
-        6.1-5.6.2
+        6.1-5.9.1
     net-tools:
         2.0+git20170221.479bb4a-3.11
     net-tools-deprecated:
@@ -443,9 +445,9 @@ local:
     openSUSE-build-key:
         1.0-lp153.4.2.1
     openSUSE-release:
-        15.3-lp153.149.1
+        15.3-lp1532.157.1
     openSUSE-release-appliance-docker:
-        15.3-lp153.149.1
+        15.3-lp1532.157.1
     openssh:
         8.4p1-3.3.1
     openssh-clients:
@@ -461,7 +463,7 @@ local:
     p11-kit-tools:
         0.23.2-4.8.3
     pam:
-        1.3.0-6.38.1
+        1.3.0-6.50.1
     pam-config:
         1.1-3.3.1
     perl:
@@ -481,11 +483,11 @@ local:
     procps:
         3.3.15-7.19.1
     python-base:
-        2.7.18-7.58.1
+        2.7.18-33.1
     python-rpm-macros:
         20200207.5feb6c1-3.11.1
     python-xml:
-        2.7.18-7.58.1
+        2.7.18-33.1
     python3:
         3.6.13-10.3.1
     python3-PyYAML:
@@ -533,7 +535,7 @@ local:
     rpm:
         4.14.3-40.1
     rpm-config-SUSE:
-        1-3.61
+        1-5.3.1
     sed:
         4.4-11.6
     shadow:
@@ -541,7 +543,7 @@ local:
     sudo:
         1.9.5p2-1.5
     suse-module-tools:
-        15.3.10-3.8.1
+        15.3.13-3.11.1
     system-group-hardware:
         20170617-15.86
     system-group-kvm:
@@ -561,7 +563,7 @@ local:
     sysuser-shadow:
         2.0-4.2.8
     terminfo-base:
-        6.1-5.6.2
+        6.1-5.9.1
     udev:
         246.16-7.14.1
     update-alternatives:
@@ -571,7 +573,7 @@ local:
     which:
         2.21-2.20
     zypper:
-        1.14.46-13.1
+        1.14.49-16.1
 # salt-call --local pip.list
 local:
     ----------

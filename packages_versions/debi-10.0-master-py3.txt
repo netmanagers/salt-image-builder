@@ -2,7 +2,7 @@ debi-10.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.9058331
+          Salt: 3004+0na.03f82cb
  
 Dependency Versions:
           cffi: Not Installed
@@ -11,7 +11,7 @@ Dependency Versions:
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
-        Jinja2: 3.0.2
+        Jinja2: 3.0.3
        libgit2: Not Installed
       M2Crypto: Not Installed
           Mako: Not Installed
@@ -25,11 +25,11 @@ Dependency Versions:
         Python: 3.7.3 (default, Jan 22 2021, 20:04:44)
   python-gnupg: Not Installed
         PyYAML: 6.0
-         PyZMQ: 21.0.2
+         PyZMQ: 22.3.0
          smmap: Not Installed
        timelib: Not Installed
        Tornado: 4.5.3
-           ZMQ: 4.3.3
+           ZMQ: 4.3.4
  
 System Versions:
           dist: debian 10 buster
@@ -129,7 +129,7 @@ local:
     saltpath:
         /usr/local/lib/python3.7/dist-packages/salt
     saltversion:
-        3004+0na.9058331
+        3004+0na.03f82cb
     saltversioninfo:
         - 3004
     systemd:
@@ -143,7 +143,7 @@ local:
     virtual_subtype:
         Docker
     zmqversion:
-        4.3.3
+        4.3.4
 # salt-call --local pkg.list_pkgs
 local:
     ----------
@@ -584,7 +584,7 @@ local:
     tar:
         1.30+dfsg-6
     tzdata:
-        2021a-0+deb10u2
+        2021a-0+deb10u3
     ucf:
         3.0038+nmu1
     udev:
@@ -599,7 +599,7 @@ local:
 local:
     ----------
     Jinja2:
-        3.0.2
+        3.0.3
     MarkupSafe:
         2.0.1
     PyYAML:
@@ -627,11 +627,11 @@ local:
     python-apt:
         1.8.4.3
     pyzmq:
-        21.0.2
+        22.3.0
     requests:
         2.26.0
     salt:
-        3004+0na.9058331
+        3004+0na.03f82cb
     setuptools:
         40.8.0
     typing-extensions:

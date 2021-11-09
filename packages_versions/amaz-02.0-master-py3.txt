@@ -2,7 +2,7 @@ amaz-02.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.9058331
+          Salt: 3004+0na.03f82cb
  
 Dependency Versions:
           cffi: Not Installed
@@ -11,7 +11,7 @@ Dependency Versions:
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
-        Jinja2: 3.0.2
+        Jinja2: 3.0.3
        libgit2: Not Installed
       M2Crypto: Not Installed
           Mako: Not Installed
@@ -25,11 +25,11 @@ Dependency Versions:
         Python: 3.7.10 (default, Jun  3 2021, 00:02:01)
   python-gnupg: Not Installed
         PyYAML: 6.0
-         PyZMQ: 21.0.2
+         PyZMQ: 22.3.0
          smmap: Not Installed
        timelib: Not Installed
        Tornado: 4.5.3
-           ZMQ: 4.3.3
+           ZMQ: 4.3.4
  
 System Versions:
           dist: amzn 2 
@@ -105,7 +105,7 @@ local:
     saltpath:
         /usr/lib/python3.7/site-packages/salt
     saltversion:
-        3004+0na.9058331
+        3004+0na.03f82cb
     saltversioninfo:
         - 3004
     systemd:
@@ -119,7 +119,7 @@ local:
     virtual_subtype:
         Docker
     zmqversion:
-        4.3.3
+        4.3.4
 # salt-call --local pkg.list_pkgs
 local:
     ----------
@@ -204,17 +204,17 @@ local:
     glib2:
         2.56.1-9.amzn2.0.2
     glibc:
-        2.26-55.amzn2
+        2.26-56.amzn2
     glibc-common:
-        2.26-55.amzn2
+        2.26-56.amzn2
     glibc-devel:
-        2.26-55.amzn2
+        2.26-56.amzn2
     glibc-headers:
-        2.26-55.amzn2
+        2.26-56.amzn2
     glibc-langpack-en:
-        2.26-55.amzn2
+        2.26-56.amzn2
     glibc-minimal-langpack:
-        2.26-55.amzn2
+        2.26-56.amzn2
     gmp:
         1:6.0.0-15.amzn2.0.2
     gnupg2:
@@ -232,7 +232,7 @@ local:
     info:
         5.1-5.amzn2
     kernel-headers:
-        4.14.248-189.473.amzn2
+        4.14.252-195.483.amzn2
     keyutils-libs:
         1.5.8-3.amzn2.0.2
     kmod:
@@ -262,7 +262,7 @@ local:
     libcom_err:
         1.42.9-19.amzn2
     libcrypt:
-        2.26-55.amzn2
+        2.26-56.amzn2
     libcurl:
         7.76.1-7.amzn2.0.2
     libdb:
@@ -370,7 +370,7 @@ local:
     openssh-server:
         7.4p1-21.amzn2.0.3
     openssl-libs:
-        1:1.0.2k-19.amzn2.0.8
+        1:1.0.2k-19.amzn2.0.10
     p11-kit:
         0.23.22-1.amzn2.0.1
     p11-kit-trust:
@@ -514,7 +514,7 @@ local:
     sudo:
         1.8.23-10.amzn2.1
     system-release:
-        1:2-13.amzn2
+        1:2-14.amzn2
     system-rpm-config:
         9.1.0-76.amzn2.0.10
     systemd:

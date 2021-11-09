@@ -2,7 +2,7 @@ fedo-34.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.9058331
+          Salt: 3004+0na.03f82cb
  
 Dependency Versions:
           cffi: Not Installed
@@ -11,7 +11,7 @@ Dependency Versions:
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
-        Jinja2: 3.0.2
+        Jinja2: 3.0.3
        libgit2: Not Installed
       M2Crypto: Not Installed
           Mako: Not Installed
@@ -25,11 +25,11 @@ Dependency Versions:
         Python: 3.9.7 (default, Aug 30 2021, 00:00:00)
   python-gnupg: Not Installed
         PyYAML: 6.0
-         PyZMQ: 21.0.2
+         PyZMQ: 22.3.0
          smmap: Not Installed
        timelib: Not Installed
        Tornado: 4.5.3
-           ZMQ: 4.3.3
+           ZMQ: 4.3.4
  
 System Versions:
           dist: fedora 34 
@@ -103,7 +103,7 @@ local:
     saltpath:
         /usr/lib/python3.9/site-packages/salt
     saltversion:
-        3004+0na.9058331
+        3004+0na.03f82cb
     saltversioninfo:
         - 3004
     systemd:
@@ -117,7 +117,7 @@ local:
     virtual_subtype:
         Docker
     zmqversion:
-        4.3.3
+        4.3.4
 # salt-call --local pkg.list_pkgs
 local:
     ----------
@@ -176,7 +176,7 @@ local:
     dnf-data:
         4.9.0-1.fc34
     dracut:
-        055-3.fc34
+        055-6.fc34
     elfutils-debuginfod-client:
         0.185-2.fc34
     elfutils-default-yama-scope:
@@ -472,7 +472,7 @@ local:
     p11-kit-trust:
         0.23.22-3.fc34
     pam:
-        1.5.1-6.fc34
+        1.5.1-7.fc34
     pcre:
         8.44-3.fc34.1
     pcre2:
@@ -486,7 +486,7 @@ local:
     perl-DynaLoader:
         1.47-477.fc34
     perl-Encode:
-        4:3.12-460.fc34
+        4:3.15-462.fc34
     perl-Errno:
         1.30-477.fc34
     perl-Error:
@@ -592,7 +592,7 @@ local:
     publicsuffix-list-dafsa:
         20190417-5.fc34
     python-pip-wheel:
-        21.0.1-3.fc34
+        21.0.1-4.fc34
     python-setuptools-wheel:
         53.0.0-2.fc34
     python3:
@@ -612,7 +612,7 @@ local:
     python3-libs:
         3.9.7-1.fc34
     python3-pip:
-        21.0.1-3.fc34
+        21.0.1-4.fc34
     python3-rpm:
         4.16.1.3-1.fc34
     python3-setuptools:

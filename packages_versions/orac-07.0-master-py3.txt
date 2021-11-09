@@ -2,7 +2,7 @@ orac-07.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.9058331
+          Salt: 3004+0na.03f82cb
  
 Dependency Versions:
           cffi: Not Installed
@@ -11,7 +11,7 @@ Dependency Versions:
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
-        Jinja2: 3.0.2
+        Jinja2: 3.0.3
        libgit2: Not Installed
       M2Crypto: Not Installed
           Mako: Not Installed
@@ -25,11 +25,11 @@ Dependency Versions:
         Python: 3.6.8 (default, Mar  9 2021, 15:08:44)
   python-gnupg: Not Installed
         PyYAML: 6.0
-         PyZMQ: 21.0.2
+         PyZMQ: 22.3.0
          smmap: Not Installed
        timelib: Not Installed
        Tornado: 4.5.3
-           ZMQ: 4.3.3
+           ZMQ: 4.3.4
  
 System Versions:
           dist: oracle 7.9 
@@ -106,7 +106,7 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3004+0na.9058331
+        3004+0na.03f82cb
     saltversioninfo:
         - 3004
     systemd:
@@ -120,7 +120,7 @@ local:
     virtual_subtype:
         Docker
     zmqversion:
-        4.3.3
+        4.3.4
 # salt-call --local pkg.list_pkgs
 local:
     ----------
@@ -137,7 +137,7 @@ local:
     bind-export-libs:
         32:9.11.4-26.P2.el7_9.7
     binutils:
-        2.27-44.base.0.3.el7
+        2.27-44.base.0.3.el7_9.1
     bzip2-libs:
         1.0.6-13.el7
     ca-certificates:
@@ -613,7 +613,7 @@ local:
     tcp_wrappers-libs:
         7.6-77.el7
     tzdata:
-        2021c-1.el7
+        2021e-1.el7
     usermode:
         1.111-6.el7
     ustr:
@@ -650,7 +650,7 @@ local:
 local:
     ----------
     Jinja2:
-        3.0.2
+        3.0.3
     MarkupSafe:
         2.0.1
     PyYAML:
@@ -676,11 +676,11 @@ local:
     pycryptodomex:
         3.11.0
     pyzmq:
-        21.0.2
+        22.3.0
     requests:
         2.26.0
     salt:
-        3004+0na.9058331
+        3004+0na.03f82cb
     setuptools:
         39.2.0
     typing-extensions:

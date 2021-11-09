@@ -137,7 +137,7 @@ local:
     bind-export-libs:
         32:9.11.4-26.P2.el7_9.7
     binutils:
-        2.27-44.base.0.3.el7
+        2.27-44.base.0.3.el7_9.1
     bzip2-libs:
         1.0.6-13.el7
     ca-certificates:
@@ -647,7 +647,7 @@ local:
     tcp_wrappers-libs:
         7.6-77.el7
     tzdata:
-        2021c-1.el7
+        2021e-1.el7
     usermode:
         1.111-6.el7
     ustr:

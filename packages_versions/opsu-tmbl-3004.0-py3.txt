@@ -1,8 +1,8 @@
-opsu-tmbl-master-py3
+opsu-tmbl-3004.0-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.03f82cb
+          Salt: 3004
  
 Dependency Versions:
           cffi: Not Installed
@@ -11,7 +11,7 @@ Dependency Versions:
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
-        Jinja2: 3.0.3
+        Jinja2: 2.11.3
        libgit2: Not Installed
       M2Crypto: Not Installed
           Mako: Not Installed
@@ -25,11 +25,11 @@ Dependency Versions:
         Python: 3.8.12 (default, Aug 31 2021, 01:23:42) [GCC]
   python-gnupg: Not Installed
         PyYAML: 6.0
-         PyZMQ: 22.3.0
+         PyZMQ: 21.0.2
          smmap: Not Installed
        timelib: Not Installed
        Tornado: 4.5.3
-           ZMQ: 4.3.4
+           ZMQ: 4.3.3
  
 System Versions:
           dist: opensuse-tumbleweed 20211107 
@@ -97,6 +97,7 @@ local:
         - /usr/lib64/python3.8/site-packages
         - /usr/lib64/python3.8/_import_failed
         - /usr/lib/python3.8/site-packages
+        - /usr/local/lib/python3.8/site-packages
     pythonversion:
         - 3
         - 8
@@ -106,7 +107,7 @@ local:
     saltpath:
         /usr/lib/python3.8/site-packages/salt
     saltversion:
-        3004+0na.03f82cb
+        3004
     saltversioninfo:
         - 3004
     systemd:
@@ -120,7 +121,7 @@ local:
     virtual_subtype:
         Docker
     zmqversion:
-        4.3.4
+        4.3.3
 # salt-call --local pkg.list_pkgs
 local:
     ----------
@@ -132,6 +133,10 @@ local:
         5.1.8-2.1
     boost-license1_77_0:
         1.77.0-3.1
+    busybox:
+        1.34.1-2.1
+    busybox-gzip:
+        1.34.1-19.5
     ca-certificates:
         2+git20211004.3efbea9-1.1
     ca-certificates-mozilla:
@@ -178,8 +183,6 @@ local:
         2.2.27-3.1
     grep:
         3.7-1.2
-    gzip:
-        1.11-1.1
     hostname:
         3.23-2.7
     kbd:
@@ -340,10 +343,6 @@ local:
         2.5.2-2.1
     libselinux1:
         3.2-3.2
-    libsemanage-conf:
-        3.2-2.2
-    libsemanage2:
-        3.2-2.2
     libsepol2:
         3.2-3.2
     libsha1detectcoll1:
@@ -480,8 +479,6 @@ local:
         0.g89-1.1
     sed:
         4.8-3.8
-    shadow:
-        4.9-1.1
     sudo:
         1.9.7p2-1.6
     suse-module-tools:
@@ -523,6 +520,8 @@ local:
 # salt-call --local pip.list
 local:
     ----------
+    Jinja2:
+        2.11.3
     appdirs:
         1.4.4
     ordered-set:

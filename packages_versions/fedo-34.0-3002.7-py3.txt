@@ -20,11 +20,11 @@ Dependency Versions:
   mysql-python: Not Installed
      pycparser: Not Installed
       pycrypto: Not Installed
-  pycryptodome: 3.10.4
+  pycryptodome: 3.11.0
         pygit2: Not Installed
         Python: 3.9.7 (default, Aug 30 2021, 00:00:00)
   python-gnupg: Not Installed
-        PyYAML: 5.4.1
+        PyYAML: 6.0
          PyZMQ: 22.3.0
          smmap: Not Installed
        timelib: Not Installed
@@ -128,7 +128,7 @@ local:
     alternatives:
         1.15-2.fc34
     audit-libs:
-        3.0.5-1.fc34
+        3.0.6-1.fc34
     basesystem:
         11-11.fc34
     bash:
@@ -178,7 +178,7 @@ local:
     dnf-data:
         4.9.0-1.fc34
     dracut:
-        055-3.fc34
+        055-5.fc34
     elfutils-debuginfod-client:
         0.185-2.fc34
     elfutils-default-yama-scope:
@@ -260,11 +260,11 @@ local:
     groff-base:
         1.22.4-7.fc34
     grub2-common:
-        1:2.06-2.fc34
+        1:2.06-6.fc34b
     grub2-tools:
-        1:2.06-2.fc34
+        1:2.06-6.fc34b
     grub2-tools-minimal:
-        1:2.06-2.fc34
+        1:2.06-6.fc34b
     grubby:
         8.40-51.fc34
     guile22:
@@ -328,7 +328,7 @@ local:
     libcurl:
         7.76.1-12.fc34
     libdb:
-        5.3.28-46.fc34
+        5.3.28-49.fc34
     libdnf:
         0.64.0-1.fc34
     libeconf:
@@ -350,7 +350,7 @@ local:
     libgpg-error:
         1.42-1.fc34
     libibverbs:
-        36.0-1.fc34
+        37.0-1.fc34
     libidn2:
         2.3.2-1.fc34
     libkcapi:
@@ -458,7 +458,7 @@ local:
     npth:
         1.6-6.fc34
     openldap:
-        2.4.57-5.fc34
+        2.4.57-6.fc34
     openssh:
         8.6p1-5.fc34
     openssh-clients:
@@ -474,7 +474,7 @@ local:
     p11-kit-trust:
         0.23.22-3.fc34
     pam:
-        1.5.1-6.fc34
+        1.5.1-7.fc34
     pcre:
         8.44-3.fc34.1
     pcre2:
@@ -488,7 +488,7 @@ local:
     perl-DynaLoader:
         1.47-477.fc34
     perl-Encode:
-        4:3.12-460.fc34
+        4:3.15-462.fc34
     perl-Errno:
         1.30-477.fc34
     perl-Error:
@@ -594,7 +594,7 @@ local:
     publicsuffix-list-dafsa:
         20190417-5.fc34
     python-pip-wheel:
-        21.0.1-3.fc34
+        21.0.1-4.fc34
     python-setuptools-wheel:
         53.0.0-2.fc34
     python3:
@@ -614,7 +614,7 @@ local:
     python3-libs:
         3.9.7-1.fc34
     python3-pip:
-        21.0.1-3.fc34
+        21.0.1-4.fc34
     python3-rpm:
         4.16.1.3-1.fc34
     python3-setuptools:
@@ -644,25 +644,25 @@ local:
     sudo:
         1.9.5p2-1.fc34
     systemd:
-        248.7-1.fc34
+        248.9-1.fc34
     systemd-libs:
-        248.7-1.fc34
+        248.9-1.fc34
     systemd-pam:
-        248.7-1.fc34
+        248.9-1.fc34
     systemd-rpm-macros:
-        248.7-1.fc34
+        248.9-1.fc34
     systemd-udev:
-        248.7-1.fc34
+        248.9-1.fc34
     tar:
         2:1.34-1.fc34
     tpm2-tss:
         3.1.0-1.fc34
     tzdata:
-        2021b-1.fc34
+        2021c-1.fc34
     util-linux:
         2.36.2-1.fc34
     vim-minimal:
-        2:8.2.3404-1.fc34
+        2:8.2.3512-1.fc34
     which:
         2.21-26.fc34
     xz:

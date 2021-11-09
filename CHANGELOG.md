@@ -1,5 +1,28 @@
 # Changelog
 
+# [1.58.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.57.0...v1.58.0) (2021-11-09)
+
+
+### Bug Fixes
+
+* **dockerfile.pac:** fix `pyzmq` requirements (only required for `3004`) ([9bb438c](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/9bb438cb5d31bed849535355a1ee06d6a0513b7c))
+
+
+### Code Refactoring
+
+* **archlinux:** centralise extra packages (remove duplicate entry) ([b27d0eb](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/b27d0eb3845602c97acb62c717669c41624d990d))
+
+
+### Continuous Integration
+
+* **gitlab-ci:** add `python-psutil` extra package for `stable` Arch Linux ([f64bc65](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/f64bc65d309d4a215b15a828b0ba920092cb8278))
+
+
+### Features
+
+* **dockerfile.zyp:** workaround `ssh-rsa` Kitchen issue [skip ci] ([e7498b6](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/e7498b619a449d840fddc895bbb27789f89bd409))
+* **gitlab-ci:** build stable `3004.0` for Arch Linux ([6acd5ac](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/6acd5acea29aa711ea3c0292b941b1a6888a4e83))
+
 # [1.57.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.56.0...v1.57.0) (2021-10-20)
 
 
