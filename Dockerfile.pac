@@ -16,7 +16,7 @@ ARG EXTRA_PACKAGES=""
 # These are now expected by the `ssf` customised `kitchen-docker` being used:
 # - https://gitlab.com/saltstack-formulas/infrastructure/kitchen-docker/-/compare/master...ssf
 ARG KITCHEN_DOCKER_PACKAGES="curl openssh openssl sudo"
-ARG PKGS="${KITCHEN_DOCKER_PACKAGES} awk git net-tools procps systemd udev ${EXTRA_PACKAGES}"
+ARG PKGS="${KITCHEN_DOCKER_PACKAGES} awk git net-tools procps-ng python-pip systemd udev ${EXTRA_PACKAGES}"
 
 SHELL ["/bin/bash", "-x", "-o", "pipefail", "-c"]
 RUN pacman --noconfirm -Sy archlinux-keyring \
