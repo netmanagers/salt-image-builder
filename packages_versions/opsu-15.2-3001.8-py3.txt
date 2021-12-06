@@ -16,7 +16,7 @@ Dependency Versions:
        M2Crypto: Not Installed
            Mako: Not Installed
    msgpack-pure: Not Installed
- msgpack-python: 1.0.2
+ msgpack-python: 1.0.3
    mysql-python: Not Installed
       pycparser: Not Installed
        pycrypto: Not Installed
@@ -131,7 +131,7 @@ local:
     bash:
         4.4-lp152.12.3.1
     binutils:
-        2.35.1-lp152.4.6.1
+        2.37-lp152.4.9.1
     blog:
         2.18-lp152.6.6
     boost-license1_66_0:
@@ -147,7 +147,7 @@ local:
     cpp:
         7-lp152.5.6.1
     cpp7:
-        7.5.0+r278197-lp152.3.9.1
+        7.5.0+r278197-lp152.3.12.1
     cracklib:
         2.9.7-lp152.1.1
     cracklib-dict-small:
@@ -173,7 +173,7 @@ local:
     gcc:
         7-lp152.5.6.1
     gcc7:
-        7.5.0+r278197-lp152.3.9.1
+        7.5.0+r278197-lp152.3.12.1
     git:
         2.26.2-lp152.2.12.1
     git-core:
@@ -213,7 +213,7 @@ local:
     libargon2-1:
         0.0+git20171227.670229c-lp152.4.5
     libasan4:
-        7.5.0+r278197-lp152.3.9.1
+        7.5.0+r278197-lp152.3.12.1
     libassuan0:
         2.5.1-lp152.4.6
     libatomic1:
@@ -237,7 +237,7 @@ local:
     libcap2:
         2.26-lp152.5.6.1
     libcilkrts5:
-        7.5.0+r278197-lp152.3.9.1
+        7.5.0+r278197-lp152.3.12.1
     libcom_err2:
         1.43.8-lp152.11.6.1
     libcrack2:
@@ -245,9 +245,9 @@ local:
     libcryptsetup12:
         2.0.6-lp152.4.3.1
     libctf-nobfd0:
-        2.35.1-lp152.4.6.1
+        2.37-lp152.4.9.1
     libctf0:
-        2.35.1-lp152.4.6.1
+        2.37-lp152.4.9.1
     libcurl4:
         7.66.0-lp152.3.24.1
     libdb-4_8:
@@ -389,7 +389,7 @@ local:
     libstdc++6:
         10.2.1+git583-lp152.4.1
     libsystemd0:
-        234-lp152.31.34.1
+        234-lp152.31.37.1
     libtasn1:
         4.13-lp152.5.5
     libtasn1-6:
@@ -401,9 +401,9 @@ local:
     libtsan0:
         10.2.1+git583-lp152.4.1
     libubsan0:
-        7.5.0+r278197-lp152.3.9.1
+        7.5.0+r278197-lp152.3.12.1
     libudev1:
-        234-lp152.31.34.1
+        234-lp152.31.37.1
     libunistring2:
         0.9.9-lp152.3.4
     libusb-1_0-0:
@@ -529,7 +529,7 @@ local:
     system-user-root:
         20190513-lp152.1.100
     systemd:
-        234-lp152.31.34.1
+        234-lp152.31.37.1
     systemd-presets-branding-MicroOS:
         20200323-lp152.2.1
     systemd-presets-common-SUSE:
@@ -541,7 +541,7 @@ local:
     terminfo-base:
         6.1-lp152.8.3.1
     udev:
-        234-lp152.31.34.1
+        234-lp152.31.37.1
     update-alternatives:
         1.19.0.4-lp152.4.104
     util-linux:
@@ -566,13 +566,13 @@ local:
     chardet:
         3.0.4
     charset-normalizer:
-        2.0.7
+        2.0.8
     distro:
         1.6.0
     idna:
         3.3
     msgpack:
-        1.0.2
+        1.0.3
     packaging:
         20.3
     pip:

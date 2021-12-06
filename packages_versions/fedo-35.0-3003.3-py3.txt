@@ -149,7 +149,7 @@ local:
     crypto-policies-scripts:
         20210819-1.gitd0fdcfb.fc35
     cryptsetup-libs:
-        2.4.1-1.fc35
+        2.4.2-1.fc35
     curl:
         7.79.1-1.fc35
     cyrus-sasl-lib:
@@ -178,22 +178,24 @@ local:
         4.0.24-1.fc35
     dracut:
         055-6.fc35
+    elfutils-debuginfod-client:
+        0.186-1.fc35
     elfutils-default-yama-scope:
-        0.185-5.fc35
+        0.186-1.fc35
     elfutils-libelf:
-        0.185-5.fc35
+        0.186-1.fc35
     elfutils-libs:
-        0.185-5.fc35
+        0.186-1.fc35
     expat:
         2.4.1-2.fc35
     fedora-gpg-keys:
         35-1
     fedora-release-common:
-        35-33
+        35-36
     fedora-release-container:
-        35-33
+        35-36
     fedora-release-identity-container:
-        35-33
+        35-36
     fedora-repos:
         35-1
     fedora-repos-modular:
@@ -217,26 +219,24 @@ local:
     gettext-libs:
         0.21-8.fc35
     git:
-        2.33.1-1.fc35
+        2.33.1-2.fc35
     git-core:
-        2.33.1-1.fc35
+        2.33.1-2.fc35
     git-core-doc:
-        2.33.1-1.fc35
+        2.33.1-2.fc35
     glib2:
         2.70.1-1.fc35
     glibc:
-        2.34-7.fc35
+        2.34-8.fc35
     glibc-common:
-        2.34-7.fc35
+        2.34-8.fc35
     glibc-langpack-en:
-        2.34-7.fc35
+        2.34-8.fc35
     glibc-minimal-langpack:
-        2.34-7.fc35
+        2.34-8.fc35
     gmp:
         1:6.2.0-7.fc35
     gnupg2:
-        2.3.3-1.fc35
-    gnupg2-smime:
         2.3.3-1.fc35
     gnutls:
         3.7.2-2.fc35
@@ -249,17 +249,17 @@ local:
     groff-base:
         1.22.4-8.fc35
     grub2-common:
-        1:2.06-6.fc35
+        1:2.06-8.fc35
     grub2-tools:
-        1:2.06-6.fc35
+        1:2.06-8.fc35
     grub2-tools-minimal:
-        1:2.06-6.fc35
+        1:2.06-8.fc35
     grubby:
         8.40-55.fc35
     gzip:
         1.10-5.fc35
     hwdata:
-        0.352-1.fc35
+        0.353-1.fc35
     ima-evm-utils:
         1.3.2-3.fc35
     iptables-legacy-libs:
@@ -333,9 +333,9 @@ local:
     libgomp:
         11.2.1-1.fc35
     libgpg-error:
-        1.42-3.fc35
+        1.43-1.fc35
     libibverbs:
-        37.0-1.fc35
+        38.0-1.fc35
     libidn2:
         2.3.2-3.fc35
     libkcapi:
@@ -365,15 +365,13 @@ local:
     libreport-filesystem:
         2.15.2-6.fc35
     libseccomp:
-        2.5.0-5.fc35
-    libsecret:
-        0.20.4-3.fc35
+        2.5.3-1.fc35
     libselinux:
         3.3-1.fc35
     libsemanage:
         3.3-1.fc35
     libsepol:
-        3.3-1.fc35
+        3.3-2.fc35
     libsigsegv:
         2.13-3.fc35
     libsmartcols:
@@ -395,13 +393,11 @@ local:
     libtomcrypt:
         1.18.2-13.fc35
     libtommath:
-        1.2.0-3.fc34
+        1.2.0-5.fc35
     libunistring:
         0.9.10-14.fc35
     libunwind:
         1.5.0-1.fc35
-    libusb1:
-        1.0.24-4.fc35
     libutempter:
         1.2.1-5.fc35
     libuuid:
@@ -409,8 +405,6 @@ local:
     libverto:
         0.3.2-2.fc35
     libxcrypt:
-        4.4.26-4.fc35
-    libxcrypt-compat:
         4.4.26-4.fc35
     libxkbcommon:
         1.3.1-1.fc35
@@ -426,8 +420,6 @@ local:
         1.9.3-3.fc35
     memstrack:
         0.2.3-2.fc35
-    mozjs78:
-        78.15.0-1.fc35
     mpdecimal:
         2.5.1-2.fc35
     mpfr:
@@ -449,11 +441,11 @@ local:
     openpgm:
         5.2.122-27.fc35
     openssh:
-        8.7p1-2.fc35
+        8.7p1-3.fc35
     openssh-clients:
-        8.7p1-2.fc35
+        8.7p1-3.fc35
     openssh-server:
-        8.7p1-2.fc35
+        8.7p1-3.fc35
     openssl-libs:
         1:1.1.1l-2.fc35
     os-prober:
@@ -474,12 +466,6 @@ local:
         10.37-4.fc35
     pcre2-syntax:
         10.37-4.fc35
-    pcsc-lite:
-        1.9.4-1.fc35
-    pcsc-lite-ccid:
-        1.4.36-2.fc35
-    pcsc-lite-libs:
-        1.9.4-1.fc35
     perl-Carp:
         1.52-478.fc35
     perl-Class-Struct:
@@ -511,9 +497,9 @@ local:
     perl-Getopt-Std:
         1.13-482.fc35
     perl-Git:
-        2.33.1-1.fc35
+        2.33.1-2.fc35
     perl-HTTP-Tiny:
-        0.078-1.fc35
+        0.080-1.fc35
     perl-IO:
         1.46-482.fc35
     perl-IPC-Open3:
@@ -580,14 +566,6 @@ local:
         1.05-482.fc35
     pigz:
         2.5-2.fc35
-    pinentry:
-        1.2.0-1.fc35
-    polkit:
-        0.120-1.fc35
-    polkit-libs:
-        0.120-1.fc35
-    polkit-pkla-compat:
-        0.1-20.fc35
     popt:
         1.18-6.fc35
     procps-ng:
@@ -595,7 +573,7 @@ local:
     publicsuffix-list-dafsa:
         20210518-2.fc35
     python-pip-wheel:
-        21.2.3-3.fc35
+        21.2.3-4.fc35
     python-setuptools-wheel:
         57.4.0-1.fc35
     python-systemd-doc:
@@ -639,7 +617,7 @@ local:
     python3-msgpack:
         1.0.2-4.fc35
     python3-pip:
-        21.2.3-3.fc35
+        21.2.3-4.fc35
     python3-psutil:
         5.8.0-12.fc35
     python3-pycryptodomex:
@@ -667,7 +645,7 @@ local:
     python3-zmq:
         22.2.1-1.fc35
     qrencode-libs:
-        4.0.2-8.fc35
+        4.1.1-1.fc35
     readline:
         8.1-3.fc35
     rootfiles:
@@ -689,23 +667,23 @@ local:
     setup:
         2.13.9.1-2.fc35
     shadow-utils:
-        2:4.9-3.fc35
+        2:4.9-8.fc35
     sqlite-libs:
         3.36.0-3.fc35
     sudo:
         1.9.7p2-2.fc35
     systemd:
-        249.4-2.fc35
+        249.7-2.fc35
     systemd-libs:
-        249.4-2.fc35
+        249.7-2.fc35
     systemd-networkd:
-        249.4-2.fc35
+        249.7-2.fc35
     systemd-pam:
-        249.4-2.fc35
+        249.7-2.fc35
     systemd-resolved:
-        249.4-2.fc35
+        249.7-2.fc35
     systemd-udev:
-        249.4-2.fc35
+        249.7-2.fc35
     tar:
         2:1.34-2.fc35
     tpm2-tss:
@@ -716,8 +694,10 @@ local:
         2.37.2-1.fc35
     util-linux-core:
         2.37.2-1.fc35
+    vim-data:
+        2:8.2.3642-2.fc35
     vim-minimal:
-        2:8.2.3568-1.fc35
+        2:8.2.3642-2.fc35
     web-assets-filesystem:
         5-14.fc35
     which:

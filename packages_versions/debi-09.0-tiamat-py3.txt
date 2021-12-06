@@ -242,7 +242,7 @@ local:
     libedit2:
         3.1-20160903-3
     libelf1:
-        0.168-1
+        0.168-1+deb9u1
     liberror-perl:
         0.17024-1
     libexpat1:
@@ -258,7 +258,7 @@ local:
     libgdbm3:
         1.8.3-14
     libgmp10:
-        2:6.1.2+dfsg-1
+        2:6.1.2+dfsg-1+deb9u1
     libgnutls30:
         3.5.8-5+deb9u6
     libgpg-error0:
@@ -454,9 +454,9 @@ local:
     sysvinit-utils:
         2.88dsf-59.9
     tar:
-        1.29b-1.1
+        1.29b-1.1+deb9u1
     tzdata:
-        2021a-0+deb9u1
+        2021a-0+deb9u2
     ucf:
         3.0036
     udev:

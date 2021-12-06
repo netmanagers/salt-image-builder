@@ -2,7 +2,7 @@ ubun-20.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.03f82cb
+          Salt: 3004+0na.b66e04d
  
 Dependency Versions:
           cffi: Not Installed
@@ -15,12 +15,12 @@ Dependency Versions:
        libgit2: Not Installed
       M2Crypto: Not Installed
           Mako: Not Installed
-       msgpack: 1.0.2
+       msgpack: 1.0.3
   msgpack-pure: Not Installed
   mysql-python: Not Installed
      pycparser: Not Installed
       pycrypto: Not Installed
-  pycryptodome: 3.11.0
+  pycryptodome: 3.12.0
         pygit2: Not Installed
         Python: 3.8.10 (default, Sep 28 2021, 16:10:42)
   python-gnupg: Not Installed
@@ -106,7 +106,7 @@ local:
     saltpath:
         /usr/local/lib/python3.8/dist-packages/salt
     saltversion:
-        3004+0na.03f82cb
+        3004+0na.b66e04d
     saltversioninfo:
         - 3004
     systemd:
@@ -449,7 +449,7 @@ local:
     libssh-4:
         0.9.3-2ubuntu2.2
     libssl1.1:
-        1.1.1f-1ubuntu2.8
+        1.1.1f-1ubuntu2.9
     libstdc++6:
         10.3.0-1ubuntu1~20.04
     libsystemd0:
@@ -475,7 +475,7 @@ local:
     libzstd1:
         1.4.4+dfsg-3ubuntu0.1
     linux-libc-dev:
-        5.4.0-90.101
+        5.4.0-91.102
     locales:
         2.31-0ubuntu9.2
     login:
@@ -505,7 +505,7 @@ local:
     openssh-sftp-server:
         1:8.2p1-4ubuntu0.3
     openssl:
-        1.1.1f-1ubuntu2.8
+        1.1.1f-1ubuntu2.9
     passwd:
         1:4.8.1-1ubuntu5.20.04.1
     perl:
@@ -575,7 +575,7 @@ local:
     util-linux:
         2.34-0.1ubuntu9.1
     wget:
-        1.20.3-1ubuntu1
+        1.20.3-1ubuntu2
     zlib1g:
         1:1.2.11.dfsg-2ubuntu1.2
     zlib1g-dev:
@@ -592,7 +592,7 @@ local:
     certifi:
         2021.10.8
     charset-normalizer:
-        2.0.7
+        2.0.9
     contextvars:
         2.4
     distro:
@@ -602,13 +602,13 @@ local:
     immutables:
         0.16
     msgpack:
-        1.0.2
+        1.0.3
     pip:
         20.0.2
     psutil:
         5.8.0
     pycryptodomex:
-        3.11.0
+        3.12.0
     python-apt:
         2.0.0+ubuntu0.20.4.6
     pyzmq:
@@ -616,7 +616,7 @@ local:
     requests:
         2.26.0
     salt:
-        3004+0na.03f82cb
+        3004+0na.b66e04d
     setuptools:
         45.2.0
     urllib3:

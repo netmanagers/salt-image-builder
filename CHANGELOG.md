@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.59.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.58.0...v1.59.0) (2021-12-06)
+
+
+### Features
+
+* **rockylinux:** update extra packages required [skip ci] ([59edb6e](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/59edb6e658e295b7c8641837d4ac52508924d2ce))
+
 # [1.58.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.57.0...v1.58.0) (2021-11-09)
 
 

@@ -197,13 +197,13 @@ local:
     glib2:
         2.56.1-9.amzn2.0.2
     glibc:
-        2.26-55.amzn2
+        2.26-56.amzn2
     glibc-common:
-        2.26-55.amzn2
+        2.26-56.amzn2
     glibc-langpack-en:
-        2.26-55.amzn2
+        2.26-56.amzn2
     glibc-minimal-langpack:
-        2.26-55.amzn2
+        2.26-56.amzn2
     gmp:
         1:6.0.0-15.amzn2.0.2
     gnupg2:
@@ -247,7 +247,7 @@ local:
     libcom_err:
         1.42.9-19.amzn2
     libcrypt:
-        2.26-55.amzn2
+        2.26-56.amzn2
     libcurl:
         7.76.1-7.amzn2.0.2
     libdb:
@@ -323,21 +323,21 @@ local:
     net-tools:
         2.0-0.22.20131004git.amzn2.0.2
     nspr:
-        4.25.0-2.amzn2
+        4.32.0-1.amzn2
     nss:
-        3.53.1-7.amzn2
+        3.67.0-4.amzn2.0.1
     nss-pem:
         1.0.3-5.amzn2
     nss-softokn:
-        3.53.1-6.amzn2
+        3.67.0-3.amzn2
     nss-softokn-freebl:
-        3.53.1-6.amzn2
+        3.67.0-3.amzn2
     nss-sysinit:
-        3.53.1-7.amzn2
+        3.67.0-4.amzn2.0.1
     nss-tools:
-        3.53.1-7.amzn2
+        3.67.0-4.amzn2.0.1
     nss-util:
-        3.53.1-1.amzn2
+        3.67.0-1.amzn2
     openldap:
         2.4.44-23.amzn2.0.2
     openpgm:
@@ -349,7 +349,7 @@ local:
     openssh-server:
         7.4p1-21.amzn2.0.3
     openssl-libs:
-        1:1.0.2k-19.amzn2.0.8
+        1:1.0.2k-19.amzn2.0.10
     p11-kit:
         0.23.22-1.amzn2.0.1
     p11-kit-trust:
@@ -535,7 +535,7 @@ local:
     sudo:
         1.8.23-10.amzn2.1
     system-release:
-        1:2-13.amzn2
+        1:2-14.amzn2
     systemd:
         219-78.amzn2.0.15
     systemd-libs:

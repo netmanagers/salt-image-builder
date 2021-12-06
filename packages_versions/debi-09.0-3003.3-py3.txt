@@ -22,7 +22,7 @@ Dependency Versions:
       pycrypto: Not Installed
   pycryptodome: 3.6.1
         pygit2: Not Installed
-        Python: 3.5.3 (default, Apr  5 2021, 09:00:41)
+        Python: 3.5.3 (default, Nov  4 2021, 15:29:10)
   python-gnupg: Not Installed
         PyYAML: 3.12
          PyZMQ: 17.1.2
@@ -272,7 +272,7 @@ local:
     libedit2:
         3.1-20160903-3
     libelf1:
-        0.168-1
+        0.168-1+deb9u1
     liberror-perl:
         0.17024-1
     libexpat1:
@@ -336,7 +336,7 @@ local:
     libnettle6:
         3.3-1+deb9u1
     libnghttp2-14:
-        1.18.1-1+deb9u1
+        1.18.1-1+deb9u2
     libnpth0:
         1.3-1
     libp11-kit0:
@@ -364,9 +364,9 @@ local:
     libpython3-stdlib:
         3.5.3-1
     libpython3.5-minimal:
-        3.5.3-1+deb9u4
+        3.5.3-1+deb9u5
     libpython3.5-stdlib:
-        3.5.3-1+deb9u4
+        3.5.3-1+deb9u5
     libreadline7:
         7.0-3
     librtmp1:
@@ -512,9 +512,9 @@ local:
     python3-zmq:
         17.1.2-2
     python3.5:
-        3.5.3-1+deb9u4
+        3.5.3-1+deb9u5
     python3.5-minimal:
-        3.5.3-1+deb9u4
+        3.5.3-1+deb9u5
     readline-common:
         7.0-3
     salt-common:
@@ -534,9 +534,9 @@ local:
     sysvinit-utils:
         2.88dsf-59.9
     tar:
-        1.29b-1.1
+        1.29b-1.1+deb9u1
     tzdata:
-        2021a-0+deb9u1
+        2021a-0+deb9u2
     ucf:
         3.0036
     udev:

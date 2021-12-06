@@ -16,15 +16,15 @@ Dependency Versions:
        M2Crypto: Not Installed
            Mako: Not Installed
    msgpack-pure: Not Installed
- msgpack-python: 1.0.2
+ msgpack-python: 1.0.3
    mysql-python: Not Installed
       pycparser: Not Installed
        pycrypto: Not Installed
-   pycryptodome: 3.10.4
+   pycryptodome: 3.11.0
          pygit2: Not Installed
-         Python: 3.9.7 (default, Aug 30 2021, 00:00:00)
+         Python: 3.9.9 (main, Nov 19 2021, 00:00:00)
    python-gnupg: Not Installed
-         PyYAML: 5.4.1
+         PyYAML: 6.0
           PyZMQ: 22.3.0
           smmap: Not Installed
         timelib: Not Installed
@@ -98,7 +98,7 @@ local:
     pythonversion:
         - 3
         - 9
-        - 7
+        - 9
         - final
         - 0
     saltpath:
@@ -128,7 +128,7 @@ local:
     alternatives:
         1.14-3.fc33
     audit-libs:
-        3.0.5-1.fc33
+        3.0.6-1.fc33
     basesystem:
         11-10.fc33
     bash:
@@ -172,9 +172,9 @@ local:
     device-mapper-libs:
         1.02.173-1.fc33
     dnf:
-        4.8.0-1.fc33
+        4.9.0-1.fc33
     dnf-data:
-        4.8.0-1.fc33
+        4.9.0-1.fc33
     dracut:
         055-3.fc33
     elfutils-debuginfod-client:
@@ -270,7 +270,7 @@ local:
     gzip:
         1.10-3.fc33
     hwdata:
-        0.351-1.fc33
+        0.353-1.fc33
     ima-evm-utils:
         1.3.2-1.fc33
     iptables-libs:
@@ -286,7 +286,7 @@ local:
     kbd-misc:
         2.3.0-2.fc33
     kernel-headers:
-        5.13.3-100.fc33
+        5.14.9-100.fc33
     keyutils-libs:
         1.6.1-1.fc33
     kmod:
@@ -322,13 +322,13 @@ local:
     libcom_err:
         1.45.6-4.fc33
     libcomps:
-        0.1.17-1.fc33
+        0.1.18-1.fc33
     libcurl:
         7.71.1-11.fc33
     libdb:
         5.3.28-45.fc33
     libdnf:
-        0.63.1-1.fc33
+        0.64.0-1.fc33
     libeconf:
         0.4.0-1.fc33
     libedit:
@@ -384,11 +384,11 @@ local:
     libpwquality:
         1.4.4-2.fc33
     librepo:
-        1.14.1-1.fc33
+        1.14.2-1.fc33
     libreport-filesystem:
         2.15.2-2.fc33
     libseccomp:
-        2.5.0-3.fc33
+        2.5.3-1.fc33
     libselinux:
         3.1-2.fc33
     libsemanage:
@@ -402,9 +402,9 @@ local:
     libsolv:
         0.7.17-1.fc33
     libssh:
-        0.9.5-1.fc33
+        0.9.6-1.fc33
     libssh-config:
-        0.9.5-1.fc33
+        0.9.6-1.fc33
     libsss_idmap:
         2.5.1-2.fc33
     libsss_nss_idmap:
@@ -430,6 +430,8 @@ local:
     libverto:
         0.3.0-10.fc33
     libxcrypt:
+        4.4.26-2.fc33
+    libxcrypt-compat:
         4.4.26-2.fc33
     libxcrypt-devel:
         4.4.26-2.fc33
@@ -464,11 +466,11 @@ local:
     openldap:
         2.4.50-5.fc33
     openssh:
-        8.4p1-7.fc33
+        8.4p1-8.fc33
     openssh-clients:
-        8.4p1-7.fc33
+        8.4p1-8.fc33
     openssh-server:
-        8.4p1-7.fc33
+        8.4p1-8.fc33
     openssl-libs:
         1:1.1.1l-2.fc33
     os-prober:
@@ -496,7 +498,7 @@ local:
     perl-DynaLoader:
         1.47-471.fc33
     perl-Encode:
-        4:3.08-459.fc33
+        4:3.08-461.fc33
     perl-Errno:
         1.30-471.fc33
     perl-Error:
@@ -604,27 +606,29 @@ local:
     publicsuffix-list-dafsa:
         20190417-4.fc33
     python-pip-wheel:
-        20.2.2-3.fc33
+        20.2.2-4.fc33
     python-setuptools-wheel:
         49.1.3-2.fc33
+    python-unversioned-command:
+        3.9.9-2.fc33
     python3:
-        3.9.7-1.fc33
+        3.9.9-2.fc33
     python3-devel:
-        3.9.7-1.fc33
+        3.9.9-2.fc33
     python3-dnf:
-        4.8.0-1.fc33
+        4.9.0-1.fc33
     python3-gpg:
         1.14.0-2.fc33
     python3-hawkey:
-        0.63.1-1.fc33
+        0.64.0-1.fc33
     python3-libcomps:
-        0.1.17-1.fc33
+        0.1.18-1.fc33
     python3-libdnf:
-        0.63.1-1.fc33
+        0.64.0-1.fc33
     python3-libs:
-        3.9.7-1.fc33
+        3.9.9-2.fc33
     python3-pip:
-        20.2.2-3.fc33
+        20.2.2-4.fc33
     python3-rpm:
         4.16.1.3-1.fc33
     python3-setuptools:
@@ -672,11 +676,11 @@ local:
     tpm2-tss:
         3.0.4-1.fc33
     tzdata:
-        2021b-1.fc33
+        2021e-1.fc33
     util-linux:
         2.36.1-1.fc33
     vim-minimal:
-        2:8.2.3404-1.fc33
+        2:8.2.3582-1.fc33
     which:
         2.21-20.fc33
     xz:
@@ -684,7 +688,7 @@ local:
     xz-libs:
         5.2.5-4.fc33
     yum:
-        4.8.0-1.fc33
+        4.9.0-1.fc33
     zchunk-libs:
         1.1.15-1.fc33
     zlib:
@@ -697,7 +701,7 @@ local:
     gpg:
         1.14.0
     libcomps:
-        0.1.17
+        0.1.18
     pip:
         20.2.2
     rpm:

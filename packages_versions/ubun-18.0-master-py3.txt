@@ -2,7 +2,7 @@ ubun-18.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.03f82cb
+          Salt: 3004+0na.b66e04d
  
 Dependency Versions:
           cffi: Not Installed
@@ -15,12 +15,12 @@ Dependency Versions:
        libgit2: Not Installed
       M2Crypto: Not Installed
           Mako: Not Installed
-       msgpack: 1.0.2
+       msgpack: 1.0.3
   msgpack-pure: Not Installed
   mysql-python: Not Installed
      pycparser: Not Installed
       pycrypto: Not Installed
-  pycryptodome: 3.11.0
+  pycryptodome: 3.12.0
         pygit2: Not Installed
         Python: 3.6.9 (default, Jan 26 2021, 15:33:00)
   python-gnupg: Not Installed
@@ -129,7 +129,7 @@ local:
     saltpath:
         /usr/local/lib/python3.6/dist-packages/salt
     saltversion:
-        3004+0na.03f82cb
+        3004+0na.b66e04d
     saltversioninfo:
         - 3004
     systemd:
@@ -492,7 +492,7 @@ local:
     libzstd1:
         1.3.3+dfsg-2ubuntu1.2
     linux-libc-dev:
-        4.15.0-162.170
+        4.15.0-163.171
     locales:
         2.27-3ubuntu1.4
     login:
@@ -601,7 +601,7 @@ local:
     certifi:
         2021.10.8
     charset-normalizer:
-        2.0.7
+        2.0.9
     contextvars:
         2.4
     distro:
@@ -611,13 +611,13 @@ local:
     immutables:
         0.16
     msgpack:
-        1.0.2
+        1.0.3
     pip:
         9.0.1
     psutil:
         5.8.0
     pycryptodomex:
-        3.11.0
+        3.12.0
     python-apt:
         1.6.5+ubuntu0.7
     pyzmq:
@@ -625,11 +625,11 @@ local:
     requests:
         2.26.0
     salt:
-        3004+0na.03f82cb
+        3004+0na.b66e04d
     setuptools:
         39.0.1
     typing-extensions:
-        3.10.0.2
+        4.0.1
     urllib3:
         1.26.7
     wheel:

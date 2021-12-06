@@ -145,7 +145,7 @@ local:
     centos-linux-repos:
         8-2.el8
     chkconfig:
-        1.13-2.el8
+        1.19.1-1.el8
     coreutils-single:
         8.30-8.el8
     cpio:
@@ -159,7 +159,7 @@ local:
     cryptsetup-libs:
         2.3.3-4.el8
     curl:
-        7.61.1-18.el8_4.2
+        7.61.1-22.el8
     cyrus-sasl-lib:
         2.1.27-5.el8
     dbus:
@@ -185,7 +185,7 @@ local:
     diffutils:
         3.6-6.el8
     dmidecode:
-        1:3.2-8.el8
+        1:3.2-10.el8
     dnf:
         4.4.2-11.el8
     dnf-data:
@@ -203,7 +203,7 @@ local:
     elfutils-libs:
         0.182-3.el8
     emacs-filesystem:
-        1:26.1-5.el8
+        1:26.1-7.el8
     epel-release:
         8-13.el8
     ethtool:
@@ -231,13 +231,13 @@ local:
     glib2:
         2.56.4-9.el8
     glibc:
-        2.28-151.el8
+        2.28-164.el8
     glibc-common:
-        2.28-151.el8
+        2.28-164.el8
     glibc-langpack-en:
-        2.28-151.el8
+        2.28-164.el8
     glibc-minimal-langpack:
-        2.28-151.el8
+        2.28-164.el8
     gmp:
         1:6.1.2-10.el8
     gnupg2:
@@ -281,17 +281,17 @@ local:
     kexec-tools:
         2.0.20-46.el8
     keyutils-libs:
-        1.5.10-6.el8
+        1.5.10-9.el8
     keyutils-libs-devel:
-        1.5.10-6.el8
+        1.5.10-9.el8
     kmod:
         25-17.el8
     kmod-libs:
         25-17.el8
     krb5-devel:
-        1.18.2-8.el8
+        1.18.2-14.el8
     krb5-libs:
-        1.18.2-8.el8
+        1.18.2-14.el8
     langpacks-en:
         1.0-12.el8
     less:
@@ -311,13 +311,13 @@ local:
     libcap-ng:
         0.7.9-5.el8
     libcom_err:
-        1.45.6-1.el8
+        1.45.6-2.el8
     libcom_err-devel:
-        1.45.6-1.el8
+        1.45.6-2.el8
     libcomps:
         0.1.11-5.el8
     libcurl-minimal:
-        7.61.1-18.el8_4.2
+        7.61.1-22.el8
     libdb:
         5.3.28-40.el8
     libdb-utils:
@@ -341,7 +341,7 @@ local:
     libidn2:
         2.2.0-1.el8
     libkadm5:
-        1.18.2-8.el8
+        1.18.2-14.el8
     libkcapi:
         1.2.0-2.el8
     libkcapi-hmaccalc:
@@ -381,9 +381,9 @@ local:
     libsemanage:
         2.9-6.el8
     libsepol:
-        2.9-2.el8
+        2.9-3.el8
     libsepol-devel:
-        2.9-2.el8
+        2.9-3.el8
     libsigsegv:
         2.11-5.el8
     libsmartcols:
@@ -427,11 +427,11 @@ local:
     mpfr:
         3.1.6-1.el8
     ncurses:
-        6.1-7.20180224.el8
+        6.1-9.20180224.el8
     ncurses-base:
-        6.1-7.20180224.el8
+        6.1-9.20180224.el8
     ncurses-libs:
-        6.1-7.20180224.el8
+        6.1-9.20180224.el8
     net-tools:
         2.0-0.52.20160912git.el8
     nettle:
@@ -441,17 +441,19 @@ local:
     openldap:
         2.4.46-16.el8
     openssh:
-        8.0p1-6.el8_4.2
+        8.0p1-10.el8
     openssh-clients:
-        8.0p1-6.el8_4.2
+        8.0p1-10.el8
     openssh-server:
-        8.0p1-6.el8_4.2
+        8.0p1-10.el8
     openssl:
-        1:1.1.1g-15.el8_3
+        1:1.1.1k-4.el8
     openssl-devel:
-        1:1.1.1g-15.el8_3
+        1:1.1.1k-4.el8
     openssl-libs:
-        1:1.1.1g-15.el8_3
+        1:1.1.1k-4.el8
+    openssl-pkcs11:
+        0.4.10-2.el8
     p11-kit:
         0.23.22-1.el8
     p11-kit-trust:
@@ -483,7 +485,7 @@ local:
     perl-Encode:
         4:2.97-3.el8
     perl-Errno:
-        1.28-419.el8_4.1
+        1.28-420.el8
     perl-Error:
         1:0.17025-2.el8
     perl-Exporter:
@@ -499,7 +501,7 @@ local:
     perl-HTTP-Tiny:
         0.074-1.el8
     perl-IO:
-        1.38-419.el8_4.1
+        1.38-420.el8
     perl-IO-Socket-IP:
         0.39-5.el8
     perl-IO-Socket-SSL:
@@ -545,13 +547,13 @@ local:
     perl-constant:
         1.33-396.el8
     perl-interpreter:
-        4:5.26.3-419.el8_4.1
+        4:5.26.3-420.el8
     perl-libnet:
         3.11-3.el8
     perl-libs:
-        4:5.26.3-419.el8_4.1
+        4:5.26.3-420.el8
     perl-macros:
-        4:5.26.3-419.el8_4.1
+        4:5.26.3-420.el8
     perl-parent:
         1:0.237-1.el8
     perl-podlators:
@@ -567,11 +569,11 @@ local:
     pkgconf-pkg-config:
         1.4.2-1.el8
     platform-python:
-        3.6.8-37.el8
+        3.6.8-41.el8
     platform-python-devel:
-        3.6.8-37.el8
+        3.6.8-41.el8
     platform-python-pip:
-        9.0.3-19.el8
+        9.0.3-20.el8
     platform-python-setuptools:
         39.2.0-6.el8
     popt:
@@ -593,15 +595,15 @@ local:
     python3-libdnf:
         0.55.0-7.el8
     python3-libs:
-        3.6.8-37.el8
+        3.6.8-41.el8
     python3-pip:
-        9.0.3-19.el8
+        9.0.3-20.el8
     python3-pip-wheel:
         9.0.3-19.el8
     python3-rpm:
         4.14.3-13.el8
     python3-rpm-generators:
-        5-6.el8
+        5-7.el8
     python3-rpm-macros:
         3-41.el8
     python3-setuptools:
@@ -609,9 +611,9 @@ local:
     python3-setuptools-wheel:
         39.2.0-6.el8
     python36:
-        3.6.8-2.module_el8.4.0+790+083e3d81
+        3.6.8-38.module_el8.5.0+895+a459eca8
     python36-devel:
-        3.6.8-2.module_el8.4.0+790+083e3d81
+        3.6.8-38.module_el8.5.0+895+a459eca8
     rdma-core:
         32.0-4.el8
     readline:
@@ -645,13 +647,13 @@ local:
     swig:
         3.0.12-19.module_el8.3.0+557+3d058e38
     systemd:
-        239-45.el8_4.3
+        239-51.el8
     systemd-libs:
-        239-45.el8_4.3
+        239-51.el8
     systemd-pam:
-        239-45.el8_4.3
+        239-51.el8
     systemd-udev:
-        239-45.el8_4.3
+        239-51.el8
     tar:
         2:1.30-5.el8
     tpm2-tss:
@@ -663,7 +665,7 @@ local:
     vim-minimal:
         2:8.0.1763-15.el8
     which:
-        2.21-12.el8
+        2.21-16.el8
     xkeyboard-config:
         2.28-1.el8
     xz:

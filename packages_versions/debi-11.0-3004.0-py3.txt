@@ -554,7 +554,7 @@ local:
     tar:
         1.34+dfsg-1
     tzdata:
-        2021a-1+deb11u1
+        2021a-1+deb11u2
     ucf:
         3.0043
     udev:

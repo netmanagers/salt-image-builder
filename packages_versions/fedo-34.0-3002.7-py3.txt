@@ -15,7 +15,7 @@ Dependency Versions:
        libgit2: Not Installed
       M2Crypto: Not Installed
           Mako: Not Installed
-       msgpack: 1.0.2
+       msgpack: 1.0.3
   msgpack-pure: Not Installed
   mysql-python: Not Installed
      pycparser: Not Installed
@@ -178,7 +178,7 @@ local:
     dnf-data:
         4.9.0-1.fc34
     dracut:
-        055-5.fc34
+        055-6.fc34
     elfutils-debuginfod-client:
         0.185-2.fc34
     elfutils-default-yama-scope:
@@ -260,11 +260,11 @@ local:
     groff-base:
         1.22.4-7.fc34
     grub2-common:
-        1:2.06-6.fc34b
+        1:2.06-7.fc34
     grub2-tools:
-        1:2.06-6.fc34b
+        1:2.06-7.fc34
     grub2-tools-minimal:
-        1:2.06-6.fc34b
+        1:2.06-7.fc34
     grubby:
         8.40-51.fc34
     guile22:
@@ -282,7 +282,7 @@ local:
     kbd-misc:
         2.4.0-2.fc34
     kernel-headers:
-        5.14.9-200.fc34
+        5.15.4-100.fc34
     keyutils-libs:
         1.6.1-2.fc34
     kmod:
@@ -300,7 +300,7 @@ local:
     langpacks-en_GB:
         3.0-14.fc34
     less:
-        581.2-1.fc34
+        590-2.fc34
     libacl:
         2.3.1-1.fc34
     libarchive:
@@ -384,13 +384,13 @@ local:
     libreport-filesystem:
         2.15.2-2.fc34
     libseccomp:
-        2.5.0-4.fc34
+        2.5.3-1.fc34
     libselinux:
         3.2-1.fc34
     libsemanage:
         3.2-1.fc34
     libsepol:
-        3.2-1.fc34
+        3.2-2.fc34
     libsigsegv:
         2.13-2.fc34
     libsmartcols:
@@ -658,7 +658,7 @@ local:
     tpm2-tss:
         3.1.0-1.fc34
     tzdata:
-        2021c-1.fc34
+        2021e-1.fc34
     util-linux:
         2.36.2-1.fc34
     vim-minimal:

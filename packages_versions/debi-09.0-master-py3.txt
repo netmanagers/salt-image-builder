@@ -2,7 +2,7 @@ debi-09.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.03f82cb
+          Salt: 3004+0na.b66e04d
  
 Dependency Versions:
           cffi: Not Installed
@@ -15,12 +15,12 @@ Dependency Versions:
        libgit2: Not Installed
       M2Crypto: Not Installed
           Mako: Not Installed
-       msgpack: 1.0.2
+       msgpack: 1.0.3
   msgpack-pure: Not Installed
   mysql-python: Not Installed
      pycparser: Not Installed
       pycrypto: Not Installed
-  pycryptodome: 3.11.0
+  pycryptodome: 3.12.0
         pygit2: Not Installed
         Python: 3.5.3 (default, Nov  4 2021, 15:29:10)
   python-gnupg: Not Installed
@@ -128,7 +128,7 @@ local:
     saltpath:
         /usr/local/lib/python3.5/dist-packages/salt
     saltversion:
-        3004+0na.03f82cb
+        3004+0na.b66e04d
     saltversioninfo:
         - 3004
     systemd:
@@ -309,7 +309,7 @@ local:
     libgdbm3:
         1.8.3-14
     libgmp10:
-        2:6.1.2+dfsg-1
+        2:6.1.2+dfsg-1+deb9u1
     libgnutls30:
         3.5.8-5+deb9u6
     libgomp1:
@@ -549,7 +549,7 @@ local:
     sysvinit-utils:
         2.88dsf-59.9
     tar:
-        1.29b-1.1
+        1.29b-1.1+deb9u1
     tzdata:
         2021a-0+deb9u2
     ucf:
@@ -584,13 +584,13 @@ local:
     immutables:
         0.15
     msgpack:
-        1.0.2
+        1.0.3
     pip:
         9.0.1
     psutil:
         5.8.0
     pycryptodomex:
-        3.11.0
+        3.12.0
     python-apt:
         1.4.3
     pyzmq:
@@ -598,7 +598,7 @@ local:
     requests:
         2.25.1
     salt:
-        3004+0na.03f82cb
+        3004+0na.b66e04d
     setuptools:
         33.1.1
     urllib3:

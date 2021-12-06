@@ -2,7 +2,7 @@ amaz-02.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.03f82cb
+          Salt: 3004+0na.b66e04d
  
 Dependency Versions:
           cffi: Not Installed
@@ -15,12 +15,12 @@ Dependency Versions:
        libgit2: Not Installed
       M2Crypto: Not Installed
           Mako: Not Installed
-       msgpack: 1.0.2
+       msgpack: 1.0.3
   msgpack-pure: Not Installed
   mysql-python: Not Installed
      pycparser: Not Installed
       pycrypto: Not Installed
-  pycryptodome: 3.11.0
+  pycryptodome: 3.12.0
         pygit2: Not Installed
         Python: 3.7.10 (default, Jun  3 2021, 00:02:01)
   python-gnupg: Not Installed
@@ -105,7 +105,7 @@ local:
     saltpath:
         /usr/lib/python3.7/site-packages/salt
     saltversion:
-        3004+0na.03f82cb
+        3004+0na.b66e04d
     saltversioninfo:
         - 3004
     systemd:
@@ -346,21 +346,21 @@ local:
     net-tools:
         2.0-0.22.20131004git.amzn2.0.2
     nspr:
-        4.25.0-2.amzn2
+        4.32.0-1.amzn2
     nss:
-        3.53.1-7.amzn2
+        3.67.0-4.amzn2.0.1
     nss-pem:
         1.0.3-5.amzn2
     nss-softokn:
-        3.53.1-6.amzn2
+        3.67.0-3.amzn2
     nss-softokn-freebl:
-        3.53.1-6.amzn2
+        3.67.0-3.amzn2
     nss-sysinit:
-        3.53.1-7.amzn2
+        3.67.0-4.amzn2.0.1
     nss-tools:
-        3.53.1-7.amzn2
+        3.67.0-4.amzn2.0.1
     nss-util:
-        3.53.1-1.amzn2
+        3.67.0-1.amzn2
     openldap:
         2.4.44-23.amzn2.0.2
     openssh:
