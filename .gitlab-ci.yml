@@ -389,9 +389,9 @@ orac-07.0-3002.7-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 orac-07.0-3001.8-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'oraclelinux'          , DV: '7'      , PI: 'yum', SIM: 'stable', SV: '3001.8', SVB: ''      , PV: '3', EP: 'gcc-g++ openssl-devel python3 python3-devel swig zeromq zeromq-devel'}}
 
 # ROCKYLINUX
-rock-08.0-tiamat-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'rockylinux/rockylinux', DV: '8'      , PI: 'yum', SIM: 'stable', SV: 'tiamat', SVB: ''      , PV: '3', EP: 'glibc-langpack-en openssl-devel python3 python3-devel swig'}}
-rock-08.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'rockylinux/rockylinux', DV: '8'      , PI: 'yum', SIM: 'git'   , SV: 'master', SVB: ''      , PV: '3', EP: 'glibc-langpack-en openssl-devel python3 python3-devel swig'}}
-rock-08.0-3004.0-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'rockylinux/rockylinux', DV: '8'      , PI: 'yum', SIM: 'stable', SV: '3004.0', SVB: ''      , PV: '3', EP: 'glibc-langpack-en openssl-devel python3 python3-devel swig'}}
+rock-08.0-tiamat-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'rockylinux/rockylinux', DV: '8'      , PI: 'yum', SIM: 'stable', SV: 'tiamat', SVB: ''      , PV: '3', EP: 'findutils glibc-langpack-en openssl-devel procps-ng python3 python3-devel swig'}}
+rock-08.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'rockylinux/rockylinux', DV: '8'      , PI: 'yum', SIM: 'git'   , SV: 'master', SVB: ''      , PV: '3', EP: 'findutils glibc-langpack-en openssl-devel procps-ng python3 python3-devel swig'}}
+rock-08.0-3004.0-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'rockylinux/rockylinux', DV: '8'      , PI: 'yum', SIM: 'stable', SV: '3004.0', SVB: ''      , PV: '3', EP: 'findutils glibc-langpack-en openssl-devel procps-ng python3 python3-devel swig'}}
 
 # UBUNTU
 ubun-20.0-tiamat-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'               , DV: '20.04'  , PI: 'apt', SIM: 'stable', SV: 'tiamat', SVB: ''      , PV: '3', EP: 'python3-pip'}}
