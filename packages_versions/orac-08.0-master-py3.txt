@@ -2,7 +2,7 @@ orac-08.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.b66e04d
+          Salt: 3004+0na.420d967
  
 Dependency Versions:
           cffi: Not Installed
@@ -106,7 +106,7 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3004+0na.b66e04d
+        3004+0na.420d967
     saltversioninfo:
         - 3004
     systemd:
@@ -629,13 +629,13 @@ local:
     swig:
         3.0.12-19.module+el8.3.0+7654+9c81efad
     systemd:
-        239-51.0.1.el8
+        239-51.0.1.el8_5.3
     systemd-libs:
-        239-51.0.1.el8
+        239-51.0.1.el8_5.3
     systemd-pam:
-        239-51.0.1.el8
+        239-51.0.1.el8_5.3
     systemd-udev:
-        239-51.0.1.el8
+        239-51.0.1.el8_5.3
     tpm2-tss:
         2.3.2-4.el8
     tzdata:
@@ -700,7 +700,7 @@ local:
     rpm:
         4.14.3
     salt:
-        3004+0na.b66e04d
+        3004+0na.420d967
     setuptools:
         39.2.0
     six:

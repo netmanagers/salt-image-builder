@@ -2,7 +2,7 @@ cstr-08.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.b66e04d
+          Salt: 3004+0na.420d967
  
 Dependency Versions:
           cffi: Not Installed
@@ -105,7 +105,7 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3004+0na.b66e04d
+        3004+0na.420d967
     saltversioninfo:
         - 3004
     systemd:
@@ -152,7 +152,7 @@ local:
     cpio:
         2.12-11.el8
     cpp:
-        8.5.0-4.el8_5
+        8.5.0-6.el8
     cracklib:
         2.9.6-15.el8
     cracklib-dicts:
@@ -168,17 +168,17 @@ local:
     cyrus-sasl-lib:
         2.1.27-5.el8
     dbus:
-        1:1.12.8-14.el8
+        1:1.12.8-18.el8
     dbus-common:
-        1:1.12.8-14.el8
+        1:1.12.8-18.el8
     dbus-daemon:
-        1:1.12.8-14.el8
+        1:1.12.8-18.el8
     dbus-glib:
         0.110-2.el8
     dbus-libs:
-        1:1.12.8-14.el8
+        1:1.12.8-18.el8
     dbus-tools:
-        1:1.12.8-14.el8
+        1:1.12.8-18.el8
     device-mapper:
         8:1.02.181-1.el8
     device-mapper-libs:
@@ -190,7 +190,7 @@ local:
     dnf-data:
         4.7.0-5.el8
     dnf-plugins-core:
-        4.0.21-6.el8
+        4.0.21-7.el8
     dracut:
         049-191.git20210920.el8
     elfutils-debuginfod-client:
@@ -218,7 +218,7 @@ local:
     gawk:
         4.2.1-2.el8
     gcc:
-        8.5.0-4.el8_5
+        8.5.0-6.el8
     gdb-gdbserver:
         8.2-17.el8
     gdbm:
@@ -236,21 +236,21 @@ local:
     git-core-doc:
         2.31.1-2.el8
     glib2:
-        2.56.4-157.el8
+        2.56.4-158.el8
     glibc:
-        2.28-170.el8
+        2.28-174.el8
     glibc-common:
-        2.28-170.el8
+        2.28-174.el8
     glibc-devel:
-        2.28-170.el8
+        2.28-174.el8
     glibc-gconv-extra:
-        2.28-170.el8
+        2.28-174.el8
     glibc-headers:
-        2.28-170.el8
+        2.28-174.el8
     glibc-langpack-en:
-        2.28-170.el8
+        2.28-174.el8
     glibc-minimal-langpack:
-        2.28-170.el8
+        2.28-174.el8
     gmp:
         1:6.1.2-10.el8
     gnupg2:
@@ -348,7 +348,7 @@ local:
     libdb-utils:
         5.3.28-42.el8_4
     libdnf:
-        0.63.0-4.el8
+        0.63.0-5.el8
     libedit:
         3.1-23.20170329cvs.el8
     libevent:
@@ -358,11 +358,11 @@ local:
     libffi:
         3.1-23.el8
     libgcc:
-        8.5.0-4.el8_5
+        8.5.0-6.el8
     libgcrypt:
         1.8.5-6.el8
     libgomp:
-        8.5.0-4.el8_5
+        8.5.0-6.el8
     libgpg-error:
         1.31-1.el8
     libibverbs:
@@ -426,11 +426,11 @@ local:
     libssh-config:
         0.9.6-3.el8
     libstdc++:
-        8.5.0-4.el8_5
+        8.5.0-6.el8
     libtasn1:
         4.13-3.el8
     libtirpc:
-        1.1.4-5.el8
+        1.1.4-6.el8
     libunistring:
         0.9.9-3.el8
     libusbx:
@@ -644,7 +644,7 @@ local:
     python3-dnf:
         4.7.0-5.el8
     python3-dnf-plugins-core:
-        4.0.21-6.el8
+        4.0.21-7.el8
     python3-ethtool:
         0.14-3.el8
     python3-gobject-base:
@@ -652,7 +652,7 @@ local:
     python3-gpg:
         1.13.1-9.el8
     python3-hawkey:
-        0.63.0-4.el8
+        0.63.0-5.el8
     python3-idna:
         2.5-5.el8
     python3-iniparse:
@@ -662,7 +662,7 @@ local:
     python3-libcomps:
         0.1.18-1.el8
     python3-libdnf:
-        0.63.0-4.el8
+        0.63.0-5.el8
     python3-librepo:
         1.14.2-1.el8
     python3-libs:
@@ -720,13 +720,15 @@ local:
     setup:
         2.12.2-6.el8
     shadow-utils:
-        2:4.6-15.el8
+        2:4.6-16.el8
+    shared-mime-info:
+        1.9-3.el8
     sqlite-libs:
         3.26.0-15.el8
     subscription-manager-rhsm-certificates:
         1.28.21-3.el8
     sudo:
-        1.8.29-7.el8_4.1
+        1.8.29-8.el8
     swig:
         3.0.12-19.module_el8.3.0+386+5db24358
     systemd:
@@ -754,7 +756,7 @@ local:
     virt-what:
         1.18-12.el8
     which:
-        2.21-16.el8
+        2.21-17.el8
     xz:
         5.2.4-3.el8
     xz-libs:
@@ -762,7 +764,7 @@ local:
     yum:
         4.7.0-5.el8
     yum-utils:
-        4.0.21-6.el8
+        4.0.21-7.el8
     zlib:
         1.2.11-17.el8
     zlib-devel:
@@ -827,7 +829,7 @@ local:
     rpm:
         4.14.3
     salt:
-        3004+0na.b66e04d
+        3004+0na.420d967
     setuptools:
         39.2.0
     six:

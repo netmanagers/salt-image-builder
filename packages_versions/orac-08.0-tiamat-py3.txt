@@ -619,13 +619,13 @@ local:
     swig:
         3.0.12-19.module+el8.3.0+7654+9c81efad
     systemd:
-        239-51.0.1.el8
+        239-51.0.1.el8_5.3
     systemd-libs:
-        239-51.0.1.el8
+        239-51.0.1.el8_5.3
     systemd-pam:
-        239-51.0.1.el8
+        239-51.0.1.el8_5.3
     systemd-udev:
-        239-51.0.1.el8
+        239-51.0.1.el8_5.3
     tpm2-tss:
         2.3.2-4.el8
     tzdata:

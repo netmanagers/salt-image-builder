@@ -218,15 +218,15 @@ local:
     glib2:
         2.56.4-157.el8
     glibc:
-        2.28-170.el8
+        2.28-174.el8
     glibc-common:
-        2.28-170.el8
+        2.28-174.el8
     glibc-gconv-extra:
-        2.28-170.el8
+        2.28-174.el8
     glibc-langpack-en:
-        2.28-170.el8
+        2.28-174.el8
     glibc-minimal-langpack:
-        2.28-170.el8
+        2.28-174.el8
     gmp:
         1:6.1.2-10.el8
     gnupg2:
@@ -666,7 +666,7 @@ local:
     subscription-manager-rhsm-certificates:
         1.28.21-3.el8
     sudo:
-        1.8.29-7.el8_4.1
+        1.8.29-8.el8
     swig:
         3.0.12-19.module_el8.3.0+386+5db24358
     systemd:
@@ -692,7 +692,7 @@ local:
     virt-what:
         1.18-12.el8
     which:
-        2.21-16.el8
+        2.21-17.el8
     xz-libs:
         5.2.4-3.el8
     yum:

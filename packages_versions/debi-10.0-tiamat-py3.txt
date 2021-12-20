@@ -2,7 +2,7 @@ debi-10.0-tiamat-py3
 Salt install method: stable
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004rc1
+          Salt: 3004
  
 Dependency Versions:
           cffi: 1.14.6
@@ -22,7 +22,7 @@ Dependency Versions:
       pycrypto: Not Installed
   pycryptodome: 3.9.8
         pygit2: Not Installed
-        Python: 3.7.12 (default, Sep  8 2021, 17:09:52)
+        Python: 3.7.12 (default, Oct 22 2021, 15:26:33)
   python-gnupg: 0.4.4
         PyYAML: 5.4.1
          PyZMQ: 18.0.1
@@ -90,7 +90,7 @@ local:
     pythonexecutable:
         /opt/saltstack/salt/run/run
     pythonpath:
-        - /opt/saltstack/salt/pypath
+        - /opt/saltstack/salt/pypath/lib/python3.7/site-packages
         - /opt/saltstack/salt/run/base_library.zip
         - /opt/saltstack/salt/run/lib-dynload
         - /opt/saltstack/salt/run
@@ -103,7 +103,7 @@ local:
     saltpath:
         /opt/saltstack/salt/run/salt
     saltversion:
-        3004rc1
+        3004
     saltversioninfo:
         - 3004
     systemd:
@@ -464,9 +464,9 @@ local:
     readline-common:
         7.0-5
     salt-common:
-        3004~rc1+ds-1
+        3004+ds-1
     salt-minion:
-        3004~rc1+ds-1
+        3004+ds-1
     sed:
         4.7-1
     sensible-utils:
@@ -497,4 +497,4 @@ local:
 local:
     ----------
     pip:
-        21.2.4
+        20.3.4

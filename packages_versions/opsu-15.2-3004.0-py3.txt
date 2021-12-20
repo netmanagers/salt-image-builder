@@ -20,7 +20,7 @@ Dependency Versions:
   mysql-python: Not Installed
      pycparser: Not Installed
       pycrypto: Not Installed
-  pycryptodome: 3.11.0
+  pycryptodome: 3.12.0
         pygit2: Not Installed
         Python: 3.6.12 (default, Dec 02 2020, 09:44:23) [GCC]
   python-gnupg: Not Installed
@@ -126,7 +126,7 @@ local:
 local:
     ----------
     aaa_base:
-        84.87+git20180409.04c9dae-lp152.14.7.1
+        84.87+git20180409.04c9dae-lp152.14.10.1
     bash:
         4.4-lp152.12.3.1
     binutils:
@@ -148,9 +148,9 @@ local:
     cpp7:
         7.5.0+r278197-lp152.3.12.1
     cracklib:
-        2.9.7-lp152.1.1
+        2.9.7-lp152.2.3.1
     cracklib-dict-small:
-        2.9.7-lp152.1.1
+        2.9.7-lp152.2.3.1
     curl:
         7.66.0-lp152.3.24.1
     dbus-1:
@@ -178,13 +178,13 @@ local:
     git-core:
         2.26.2-lp152.2.12.1
     glibc:
-        2.26-lp152.26.9.1
+        2.26-lp152.26.12.1
     glibc-devel:
-        2.26-lp152.26.9.1
+        2.26-lp152.26.12.1
     glibc-locale:
-        2.26-lp152.26.9.1
+        2.26-lp152.26.12.1
     glibc-locale-base:
-        2.26-lp152.26.9.1
+        2.26-lp152.26.12.1
     gpg2:
         2.2.5-lp152.9.3.1
     grep:
@@ -240,7 +240,7 @@ local:
     libcom_err2:
         1.43.8-lp152.11.6.1
     libcrack2:
-        2.9.7-lp152.1.1
+        2.9.7-lp152.2.3.1
     libcryptsetup12:
         2.0.6-lp152.4.3.1
     libctf-nobfd0:
@@ -278,7 +278,7 @@ local:
     libglib-2_0-0:
         2.62.6-lp152.2.6.1
     libgmp10:
-        6.1.2-lp152.6.3.1
+        6.1.2-lp152.6.6.1
     libgnutls30:
         3.6.7-lp152.9.12.1
     libgomp1:
@@ -298,7 +298,7 @@ local:
     libjson-c3:
         0.13-lp152.3.4
     libkeyutils1:
-        1.5.10-lp152.6.3.1
+        1.6.3-lp152.6.6.1
     libkmod2:
         25-lp152.8.3.1
     libksba8:
@@ -351,6 +351,8 @@ local:
         1.16-lp152.4.105
     libprocps7:
         3.3.15-lp152.3.9.1
+    libprotobuf-lite20:
+        3.9.2-lp152.2.3.1
     libproxy1:
         0.4.15-lp152.5.3.1
     libpsl5:
@@ -428,7 +430,7 @@ local:
     libzstd1:
         1.4.4-lp152.2.3.1
     libzypp:
-        17.27.0-lp152.2.37.1
+        17.28.8-lp152.2.41.1
     linux-glibc-devel:
         5.3-lp152.1.1
     ncurses-utils:
@@ -516,7 +518,7 @@ local:
     rpm:
         4.14.1-lp152.18.3.1
     rsync:
-        3.1.3-lp152.6.3.1
+        3.1.3-lp152.6.6.1
     sed:
         4.4-lp152.5.3.1
     shadow:
@@ -548,7 +550,7 @@ local:
     which:
         2.21-lp152.4.114
     zypper:
-        1.14.46-lp152.2.27.1
+        1.14.50-lp152.2.31.1
 # salt-call --local pip.list
 local:
     ----------
@@ -565,7 +567,7 @@ local:
     chardet:
         3.0.4
     charset-normalizer:
-        2.0.8
+        2.0.9
     contextvars:
         2.4
     distro:
@@ -585,7 +587,7 @@ local:
     py:
         1.8.1
     pycryptodomex:
-        3.11.0
+        3.12.0
     pyparsing:
         2.2.0
     pyzmq:

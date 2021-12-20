@@ -1,5 +1,17 @@
 # Changelog
 
+# [1.60.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.59.0...v1.60.0) (2021-12-20)
+
+
+### Features
+
+* **archlinux:** build Salt `3004`+ images only due to Python 3.10 ([4cef893](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/4cef893e8e322909584d87000b860ec126233718))
+
+
+### Reverts
+
+* **dockerfile.pac:** fix `pyzmq` requirements [skip ci] ([38593aa](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/38593aa1196b886af0e0b703f0646cae8f1e37e7))
+
 # [1.59.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.58.0...v1.59.0) (2021-12-06)
 
 

@@ -2,7 +2,7 @@ gent-late-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.b66e04d
+          Salt: 3004+0na.420d967
  
 Dependency Versions:
           cffi: Not Installed
@@ -22,7 +22,7 @@ Dependency Versions:
       pycrypto: Not Installed
   pycryptodome: 3.12.0
         pygit2: Not Installed
-        Python: 3.9.8 (main, Nov 21 2021, 17:25:03)
+        Python: 3.9.9 (main, Dec  5 2021, 17:25:39)
   python-gnupg: Not Installed
         PyYAML: 6.0
          PyZMQ: 22.3.0
@@ -98,13 +98,13 @@ local:
     pythonversion:
         - 3
         - 9
-        - 8
+        - 9
         - final
         - 0
     saltpath:
         /usr/lib/python3.9/site-packages/salt
     saltversion:
-        3004+0na.b66e04d
+        3004+0na.420d967
     saltversioninfo:
         - 3004
     systemd:
@@ -141,6 +141,8 @@ local:
         0
     acct-group/render:
         0-r1
+    acct-group/sgx:
+        0
     acct-group/sshd:
         0-r1
     acct-group/tape:
@@ -168,7 +170,7 @@ local:
     app-arch/bzip2:
         1.0.8-r1
     app-arch/gzip:
-        1.10
+        1.11
     app-arch/tar:
         1.34
     app-arch/unzip:
@@ -178,19 +180,17 @@ local:
     app-arch/zstd:
         1.5.0
     app-crypt/gnupg:
-        2.2.32
+        2.2.32-r1
     app-crypt/gpgme:
         1.16.0
     app-crypt/libb2:
         0.98.1-r2
-    app-crypt/openpgp-keys-gentoo-release:
-        20200704
     app-crypt/pinentry:
         1.2.0
     app-editors/nano:
-        5.8-r2
+        5.9
     app-eselect/eselect-iptables:
-        20200508
+        20211203
     app-eselect/eselect-lib-bin-symlink:
         0.1.1-r1
     app-eselect/eselect-pinentry:
@@ -214,7 +214,7 @@ local:
     app-shells/bash:
         5.1_p8
     app-text/build-docbook-catalog:
-        1.21
+        2.1
     app-text/docbook-xml-dtd:
         4.1.2-r7,4.2-r3,4.5-r2
     app-text/docbook-xsl-stylesheets:
@@ -224,7 +224,7 @@ local:
     app-text/opensp:
         1.5.2-r6
     app-text/po4a:
-        0.63-r1
+        0.64
     app-text/sgml-common:
         0.6.3-r7
     dev-db/sqlite:
@@ -232,7 +232,7 @@ local:
     dev-lang/perl:
         5.34.0-r3
     dev-lang/python:
-        3.9.8
+        3.10.0_p1,3.9.9
     dev-lang/python-exec:
         2.4.8
     dev-lang/python-exec-conf:
@@ -242,7 +242,7 @@ local:
     dev-libs/expat:
         2.4.1
     dev-libs/gmp:
-        6.2.1-r1
+        6.2.1-r2
     dev-libs/libassuan:
         2.5.5
     dev-libs/libffi:
@@ -258,9 +258,9 @@ local:
     dev-libs/libpcre:
         8.45
     dev-libs/libpcre2:
-        10.37-r2
+        10.39
     dev-libs/libpipeline:
-        1.5.3
+        1.5.4
     dev-libs/libtasn1:
         4.17.0
     dev-libs/libunistring:
@@ -278,7 +278,7 @@ local:
     dev-libs/npth:
         1.6-r1
     dev-libs/openssl:
-        1.1.1l
+        1.1.1l-r1
     dev-libs/popt:
         1.18
     dev-perl/Authen-SASL:
@@ -320,13 +320,13 @@ local:
     dev-python/PySocks:
         1.7.1-r1
     dev-python/certifi:
-        2999
+        3021.3.16
     dev-python/charset_normalizer:
-        2.0.6
+        2.0.7
     dev-python/idna:
         3.3
     dev-python/jinja:
-        3.0.2
+        3.0.3
     dev-python/markupsafe:
         2.0.1
     dev-python/packaging:
@@ -338,7 +338,7 @@ local:
     dev-python/requests:
         2.26.0
     dev-python/setuptools:
-        57.5.0
+        59.2.0
     dev-python/setuptools_scm:
         6.3.2
     dev-python/tomli:
@@ -356,7 +356,7 @@ local:
     dev-util/ninja:
         1.10.2-r1
     dev-util/pkgconf:
-        1.7.4-r1
+        1.8.0-r1
     dev-util/re2c:
         2.1.1-r1
     dev-vcs/git:
@@ -384,7 +384,7 @@ local:
     net-misc/netifrc:
         0.7.3
     net-misc/openssh:
-        8.6_p1-r2
+        8.7_p1-r3
     net-misc/rsync:
         3.2.3-r5
     net-misc/wget:
@@ -395,6 +395,8 @@ local:
         0.231.100
     perl-core/Scalar-List-Utils:
         1.560.0
+    sec-keys/openpgp-keys-gentoo-release:
+        20200704
     sys-apps/acl:
         2.3.1
     sys-apps/attr:
@@ -404,13 +406,13 @@ local:
     sys-apps/coreutils:
         8.32-r1
     sys-apps/debianutils:
-        4.11.2
+        5.5
     sys-apps/diffutils:
         3.8
     sys-apps/file:
-        5.40-r3
+        5.41
     sys-apps/findutils:
-        4.8.0
+        4.8.0-r1
     sys-apps/gawk:
         5.1.0
     sys-apps/gentoo-functions:
@@ -420,9 +422,7 @@ local:
     sys-apps/groff:
         1.22.4
     sys-apps/help2man:
-        1.48.3
-    sys-apps/hwids:
-        20210613-r2
+        1.48.5
     sys-apps/install-xattr:
         0.8
     sys-apps/iproute2:
@@ -442,7 +442,7 @@ local:
     sys-apps/net-tools:
         2.10
     sys-apps/openrc:
-        0.44.8
+        0.44.9
     sys-apps/portage:
         3.0.28-r1
     sys-apps/sandbox:
@@ -452,9 +452,9 @@ local:
     sys-apps/shadow:
         4.9-r3
     sys-apps/systemd-tmpfiles:
-        249.2
+        249.5
     sys-apps/sysvinit:
-        2.99
+        2.99-r1
     sys-apps/texinfo:
         6.8
     sys-apps/util-linux:
@@ -480,7 +480,7 @@ local:
     sys-devel/binutils-config:
         5.4
     sys-devel/bison:
-        3.7.6
+        3.8.2
     sys-devel/flex:
         2.6.4-r1
     sys-devel/gcc:
@@ -502,7 +502,7 @@ local:
     sys-fs/e2fsprogs:
         1.46.4
     sys-fs/udev:
-        249-r3
+        249.6-r2
     sys-fs/udev-init-scripts:
         34
     sys-kernel/installkernel-gentoo:
@@ -512,7 +512,7 @@ local:
     sys-libs/e2fsprogs-libs:
         1.46.4
     sys-libs/gdbm:
-        1.20
+        1.22
     sys-libs/glibc:
         2.33-r7
     sys-libs/libcap:
@@ -634,12 +634,14 @@ local:
 # salt-call --local pip.list
 local:
     ----------
+    Jinja2:
+        3.0.3
     MarkupSafe:
         2.0.1
     PySocks:
         1.7.1
-    certifi:
-        10001
+    certifi-system-store:
+        3021.3.16
     gemato:
         16.2
     idna:
@@ -657,7 +659,7 @@ local:
     requests:
         2.26.0
     setuptools:
-        57.5.0
+        59.2.0
     setuptools-scm:
         6.3.2
     tomli:

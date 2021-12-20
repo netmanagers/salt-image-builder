@@ -2,7 +2,7 @@ opsu-15.2-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.b66e04d
+          Salt: 3004+0na.420d967
  
 Dependency Versions:
           cffi: Not Installed
@@ -107,7 +107,7 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3004+0na.b66e04d
+        3004+0na.420d967
     saltversioninfo:
         - 3004
     systemd:
@@ -126,7 +126,7 @@ local:
 local:
     ----------
     aaa_base:
-        84.87+git20180409.04c9dae-lp152.14.7.1
+        84.87+git20180409.04c9dae-lp152.14.10.1
     bash:
         4.4-lp152.12.3.1
     binutils:
@@ -178,13 +178,13 @@ local:
     git-core:
         2.26.2-lp152.2.12.1
     glibc:
-        2.26-lp152.26.9.1
+        2.26-lp152.26.12.1
     glibc-devel:
-        2.26-lp152.26.9.1
+        2.26-lp152.26.12.1
     glibc-locale:
-        2.26-lp152.26.9.1
+        2.26-lp152.26.12.1
     glibc-locale-base:
-        2.26-lp152.26.9.1
+        2.26-lp152.26.12.1
     gpg2:
         2.2.5-lp152.9.3.1
     grep:
@@ -208,7 +208,7 @@ local:
     libacl1:
         2.2.52-lp152.5.106
     libapparmor1:
-        2.13.4-lp152.2.6.1
+        2.13.4-lp152.2.9.1
     libargon2-1:
         0.0+git20171227.670229c-lp152.4.5
     libasan4:
@@ -278,7 +278,7 @@ local:
     libglib-2_0-0:
         2.62.6-lp152.2.6.1
     libgmp10:
-        6.1.2-lp152.6.3.1
+        6.1.2-lp152.6.6.1
     libgnutls30:
         3.6.7-lp152.9.12.1
     libgomp1:
@@ -298,7 +298,7 @@ local:
     libjson-c3:
         0.13-lp152.3.4
     libkeyutils1:
-        1.5.10-lp152.6.3.1
+        1.6.3-lp152.6.6.1
     libkmod2:
         25-lp152.8.3.1
     libksba8:
@@ -351,6 +351,8 @@ local:
         1.16-lp152.4.105
     libprocps7:
         3.3.15-lp152.3.9.1
+    libprotobuf-lite20:
+        3.9.2-lp152.2.3.1
     libproxy1:
         0.4.15-lp152.5.3.1
     libpsl5:
@@ -428,7 +430,7 @@ local:
     libzstd1:
         1.4.4-lp152.2.3.1
     libzypp:
-        17.27.0-lp152.2.37.1
+        17.28.8-lp152.2.41.1
     linux-glibc-devel:
         5.3-lp152.1.1
     ncurses-utils:
@@ -500,7 +502,7 @@ local:
     python3-packaging:
         20.3-lp152.1.1
     python3-pip:
-        10.0.1-lp152.4.6.1
+        10.0.1-lp152.4.9.1
     python3-py:
         1.8.1-lp152.2.6.1
     python3-pyparsing:
@@ -516,7 +518,7 @@ local:
     rpm:
         4.14.1-lp152.18.3.1
     rsync:
-        3.1.3-lp152.6.3.1
+        3.1.3-lp152.6.6.1
     sed:
         4.4-lp152.5.3.1
     shadow:
@@ -548,7 +550,7 @@ local:
     which:
         2.21-lp152.4.114
     zypper:
-        1.14.46-lp152.2.27.1
+        1.14.50-lp152.2.31.1
 # salt-call --local pip.list
 local:
     ----------
@@ -593,7 +595,7 @@ local:
     requests:
         2.26.0
     salt:
-        3004+0na.b66e04d
+        3004+0na.420d967
     setuptools:
         40.5.0
     six:

@@ -2,7 +2,7 @@ ubun-18.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.b66e04d
+          Salt: 3004+0na.420d967
  
 Dependency Versions:
           cffi: Not Installed
@@ -22,7 +22,7 @@ Dependency Versions:
       pycrypto: Not Installed
   pycryptodome: 3.12.0
         pygit2: Not Installed
-        Python: 3.6.9 (default, Jan 26 2021, 15:33:00)
+        Python: 3.6.9 (default, Dec  8 2021, 21:08:43)
   python-gnupg: Not Installed
         PyYAML: 6.0
          PyZMQ: 22.3.0
@@ -129,7 +129,7 @@ local:
     saltpath:
         /usr/local/lib/python3.6/dist-packages/salt
     saltversion:
-        3004+0na.b66e04d
+        3004+0na.420d967
     saltversioninfo:
         - 3004
     systemd:
@@ -428,13 +428,13 @@ local:
     libpython3-stdlib:
         3.6.7-1~18.04
     libpython3.6:
-        3.6.9-1~18.04ubuntu1.4
+        3.6.9-1~18.04ubuntu1.6
     libpython3.6-dev:
-        3.6.9-1~18.04ubuntu1.4
+        3.6.9-1~18.04ubuntu1.6
     libpython3.6-minimal:
-        3.6.9-1~18.04ubuntu1.4
+        3.6.9-1~18.04ubuntu1.6
     libpython3.6-stdlib:
-        3.6.9-1~18.04ubuntu1.4
+        3.6.9-1~18.04ubuntu1.6
     libquadmath0:
         8.4.0-1ubuntu1~18.04
     libreadline7:
@@ -466,7 +466,7 @@ local:
     libssl1.0.0:
         1.0.2n-1ubuntu5.7
     libssl1.1:
-        1.1.1-1ubuntu2.1~18.04.13
+        1.1.1-1ubuntu2.1~18.04.14
     libstdc++6:
         8.4.0-1ubuntu1~18.04
     libsystemd0:
@@ -520,7 +520,7 @@ local:
     openssh-sftp-server:
         1:7.6p1-4ubuntu0.5
     openssl:
-        1.1.1-1ubuntu2.1~18.04.13
+        1.1.1-1ubuntu2.1~18.04.14
     passwd:
         1:4.5-1ubuntu2
     perl:
@@ -556,11 +556,11 @@ local:
     python3-setuptools:
         39.0.1-2
     python3.6:
-        3.6.9-1~18.04ubuntu1.4
+        3.6.9-1~18.04ubuntu1.6
     python3.6-dev:
-        3.6.9-1~18.04ubuntu1.4
+        3.6.9-1~18.04ubuntu1.6
     python3.6-minimal:
-        3.6.9-1~18.04ubuntu1.4
+        3.6.9-1~18.04ubuntu1.6
     readline-common:
         7.0-3
     sed:
@@ -625,7 +625,7 @@ local:
     requests:
         2.26.0
     salt:
-        3004+0na.b66e04d
+        3004+0na.420d967
     setuptools:
         39.0.1
     typing-extensions:

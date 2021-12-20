@@ -2,7 +2,7 @@ debi-11.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.b66e04d
+          Salt: 3004+0na.420d967
  
 Dependency Versions:
           cffi: Not Installed
@@ -105,7 +105,7 @@ local:
     saltpath:
         /usr/local/lib/python3.9/dist-packages/salt
     saltversion:
-        3004+0na.b66e04d
+        3004+0na.420d967
     saltversioninfo:
         - 3004
     systemd:
@@ -130,7 +130,7 @@ local:
     apt-transport-https:
         2.2.4
     base-files:
-        11.1+deb11u1
+        11.1+deb11u2
     base-passwd:
         3.5.51
     bash:
@@ -152,7 +152,7 @@ local:
     cpp-10:
         10.2.1-6
     curl:
-        7.74.0-1.3+b1
+        7.74.0-1.3+deb11u1
     dash:
         0.5.11+git20200708+dd9ef66-5
     debconf:
@@ -166,7 +166,7 @@ local:
     dirmngr:
         2.2.27-2
     distro-info-data:
-        0.51
+        0.51+deb11u1
     dmsetup:
         2:1.02.175-2.1
     dpkg:
@@ -278,9 +278,9 @@ local:
     libctf0:
         2.35.2-2
     libcurl3-gnutls:
-        7.74.0-1.3+b1
+        7.74.0-1.3+deb11u1
     libcurl4:
-        7.74.0-1.3+b1
+        7.74.0-1.3+deb11u1
     libdb5.3:
         5.3.28+dfsg1-0.8
     libdebconfclient0:
@@ -312,7 +312,7 @@ local:
     libgdbm6:
         1.19-2
     libgmp10:
-        2:6.2.1+dfsg-1
+        2:6.2.1+dfsg-1+deb11u1
     libgnutls30:
         3.7.1-5
     libgomp1:
@@ -428,7 +428,7 @@ local:
     libsasl2-modules-db:
         2.1.27+dfsg-2.1
     libseccomp2:
-        2.5.1-1
+        2.5.1-1+deb11u1
     libselinux1:
         3.1-3
     libsemanage-common:
@@ -480,7 +480,7 @@ local:
     libzstd1:
         1.4.8+dfsg-2.1
     linux-libc-dev:
-        5.10.70-1
+        5.10.84-1
     locales:
         2.31-13+deb11u2
     login:
@@ -588,7 +588,7 @@ local:
     util-linux:
         2.36.1-8
     wget:
-        1.21-1+b1
+        1.21-1+deb11u1
     zlib1g:
         1:1.2.11.dfsg-2
     zlib1g-dev:

@@ -148,7 +148,7 @@ local:
     cryptsetup-libs:
         1.7.4-4.amzn2
     curl:
-        7.76.1-7.amzn2.0.2
+        7.79.1-1.amzn2.0.1
     cyrus-sasl-lib:
         2.1.26-23.amzn2
     dbus:
@@ -248,7 +248,7 @@ local:
     libcrypt:
         2.26-56.amzn2
     libcurl:
-        7.76.1-7.amzn2.0.2
+        7.79.1-1.amzn2.0.1
     libdb:
         5.3.21-24.amzn2.0.3
     libdb-utils:

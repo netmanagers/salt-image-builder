@@ -2,7 +2,7 @@ amaz-02.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.b66e04d
+          Salt: 3004+0na.420d967
  
 Dependency Versions:
           cffi: Not Installed
@@ -105,7 +105,7 @@ local:
     saltpath:
         /usr/lib/python3.7/site-packages/salt
     saltversion:
-        3004+0na.b66e04d
+        3004+0na.420d967
     saltversioninfo:
         - 3004
     systemd:
@@ -154,7 +154,7 @@ local:
     cryptsetup-libs:
         1.7.4-4.amzn2
     curl:
-        7.76.1-7.amzn2.0.2
+        7.79.1-1.amzn2.0.1
     cyrus-sasl-lib:
         2.1.26-23.amzn2
     dbus:
@@ -232,7 +232,7 @@ local:
     info:
         5.1-5.amzn2
     kernel-headers:
-        4.14.252-195.483.amzn2
+        4.14.256-197.484.amzn2
     keyutils-libs:
         1.5.8-3.amzn2.0.2
     kmod:
@@ -264,7 +264,7 @@ local:
     libcrypt:
         2.26-56.amzn2
     libcurl:
-        7.76.1-7.amzn2.0.2
+        7.79.1-1.amzn2.0.1
     libdb:
         5.3.21-24.amzn2.0.3
     libdb-utils:
@@ -346,21 +346,21 @@ local:
     net-tools:
         2.0-0.22.20131004git.amzn2.0.2
     nspr:
-        4.32.0-1.amzn2
+        4.32.0-1.amzn2.0.1
     nss:
-        3.67.0-4.amzn2.0.1
+        3.67.0-4.amzn2.0.2
     nss-pem:
         1.0.3-5.amzn2
     nss-softokn:
-        3.67.0-3.amzn2
+        3.67.0-3.amzn2.0.1
     nss-softokn-freebl:
-        3.67.0-3.amzn2
+        3.67.0-3.amzn2.0.1
     nss-sysinit:
-        3.67.0-4.amzn2.0.1
+        3.67.0-4.amzn2.0.2
     nss-tools:
-        3.67.0-4.amzn2.0.1
+        3.67.0-4.amzn2.0.2
     nss-util:
-        3.67.0-1.amzn2
+        3.67.0-1.amzn2.0.1
     openldap:
         2.4.44-23.amzn2.0.2
     openssh:
@@ -530,7 +530,7 @@ local:
     util-linux:
         2.30.2-2.amzn2.0.5
     vim-minimal:
-        2:8.1.1602-1.amzn2
+        2:8.2.3642-1.amzn2.0.1
     which:
         2.20-7.amzn2.0.2
     xz-libs:
