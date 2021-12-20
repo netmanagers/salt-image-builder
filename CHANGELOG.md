@@ -1,5 +1,13 @@
 # Changelog
 
+# [1.61.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.60.0...v1.61.0) (2021-12-20)
+
+
+### Features
+
+* **dockerfile.pac:** fix `pyzmq` requirements (new problem) [skip ci] ([ed46f97](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/ed46f97d11c67973e2366d710648b6459defa56b))
+* **dockerfile.pac:** remove Jinja2 downgrade [skip ci] ([003b26f](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/003b26f2382f3b98bb1c77d3b8fe65b05a472daa))
+
 # [1.60.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.59.0...v1.60.0) (2021-12-20)
 
 
