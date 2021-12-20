@@ -250,6 +250,7 @@ amaz-02.0-3001.8-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 # Latest stable release (can flag out-of-date from this page): https://archlinux.org/packages/community/any/salt/
 # Since Python 3.10 was released, would require manual workarounds for Salt < `3004.0`, so no longer building those images
 arch-late-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'archlinux/archlinux'  , DV: 'latest' , PI: 'pac', SIM: 'git'   , SV: 'master', SVB: ''      , PV: '3', EP: ''}}
+# When `3004.1` is released, remove the temporary `pyzmq` requirements fix from `Dockerfile.pac`
 arch-late-3004.0-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'archlinux/archlinux'  , DV: 'latest' , PI: 'pac', SIM: 'stable', SV: '3004.0', SVB: 'latest', PV: '3', EP: 'python-psutil'}}
 
 # CENTOS
