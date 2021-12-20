@@ -26,13 +26,6 @@ RUN pacman --noconfirm -Sy archlinux-keyring \
  && curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
     sed -e '/^\s\+echowarn "You have 10 seconds to cancel and stop the bootstrap process..."/,+2d' | \
     sh -s -- -XUdfPD -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION \
-    # Use temporary workaround of downgrading Jinja2 for images built using `git`
-    # See https://github.com/saltstack/salt/issues/60188
- && if [ "${SALT_INSTALL_METHOD}" = "git" ] && [ "${SALT_VERSION}" != "master" ]; then \
-      pip3 install --no-cache-dir Jinja2==2.11.3; \
-    elif [ "${SALT_INSTALL_METHOD}" = "stable" ]; then \
-      pacman --noconfirm -U https://archive.archlinux.org/packages/p/python-jinja/python-jinja-2.11.3-2-any.pkg.tar.zst; \
-    fi \
  && systemctl enable sshd \
  && systemctl disable salt-minion.service > /dev/null 2>&1 \
     # Similar to Fedora, enable the `ssh-rsa` keypair type since Kitchen
