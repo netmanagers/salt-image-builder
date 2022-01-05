@@ -130,9 +130,9 @@ local:
     base-passwd:
         3.5.52
     bash:
-        5.1-3.1
+        5.1-5+b1
     bsdextrautils:
-        2.37.2-4
+        2.37.2-5
     bsdmainutils:
         12.1.7+nmu3
     bsdutils:
@@ -142,7 +142,7 @@ local:
     coreutils:
         8.32-4.1
     curl:
-        7.79.1-2
+        7.80.0-3
     dash:
         0.5.11+git20210903+057cd650a4ed-3
     dctrl-tools:
@@ -162,15 +162,15 @@ local:
     dmsetup:
         2:1.02.175-2.1
     dpkg:
-        1.20.9
+        1.21.1
     e2fsprogs:
         1.46.4-1
     findutils:
         4.8.0-1
     gcc-10-base:
-        10.3.0-12
+        10.3.0-13
     gcc-11-base:
-        11.2.0-10
+        11.2.0-12
     git:
         1:2.34.1-1
     git-man:
@@ -202,7 +202,7 @@ local:
     hostname:
         3.23
     init-system-helpers:
-        1.60
+        1.61
     libacl1:
         2.3.1-1
     libapparmor1:
@@ -226,7 +226,7 @@ local:
     libbsd0:
         0.11.3-1
     libbz2-1.0:
-        1.0.8-4
+        1.0.8-5
     libc-bin:
         2.33-1
     libc-l10n:
@@ -246,9 +246,9 @@ local:
     libcryptsetup12:
         2:2.4.2-1
     libcurl3-gnutls:
-        7.79.1-2
+        7.80.0-3
     libcurl4:
-        7.79.1-2
+        7.80.0-3
     libdb5.3:
         5.3.28+dfsg1-0.8
     libdebconfclient0:
@@ -260,7 +260,7 @@ local:
     liberror-perl:
         0.17029-1
     libexpat1:
-        2.4.1-3
+        2.4.2-1
     libext2fs2:
         1.46.4-1
     libffi8:
@@ -268,7 +268,7 @@ local:
     libfido2-1:
         1.9.0-1
     libgcc-s1:
-        11.2.0-10
+        11.2.0-12
     libgcrypt20:
         1.9.4-3+b1
     libgdbm-compat4:
@@ -328,15 +328,15 @@ local:
     libnsl2:
         1.3.0-2
     libp11-kit0:
-        0.24.0-5
+        0.24.0-6
     libpam-modules:
-        1.4.0-10
+        1.4.0-11
     libpam-modules-bin:
-        1.4.0-10
+        1.4.0-11
     libpam-runtime:
-        1.4.0-10
+        1.4.0-11
     libpam0g:
-        1.4.0-10
+        1.4.0-11
     libpcre2-8-0:
         10.39-3
     libpcre3:
@@ -382,7 +382,7 @@ local:
     libssl1.1:
         1.1.1l-1
     libstdc++6:
-        11.2.0-10
+        11.2.0-12
     libsystemd0:
         249.7-1
     libtasn1-6:
@@ -430,13 +430,13 @@ local:
     net-tools:
         1.60+git20181103.0eebece-1
     openssh-client:
-        1:8.7p1-2
+        1:8.7p1-4
     openssh-server:
-        1:8.7p1-2
+        1:8.7p1-4
     openssh-sftp-server:
-        1:8.7p1-2
+        1:8.7p1-4
     openssl:
-        1.1.1l-1
+        1.1.1m-1
     passwd:
         1:4.8.1-2
     perl:
@@ -484,7 +484,7 @@ local:
     sensible-utils:
         0.0.17
     sudo:
-        1.9.5p2-3
+        1.9.8p2-1
     systemd:
         249.7-1
     systemd-sysv:

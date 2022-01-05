@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.62.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.61.0...v1.62.0) (2022-01-05)
+
+
+### Features
+
+* **dockerfile.emg:** workaround `ssh-rsa` Kitchen issue [skip ci] ([5cb3769](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/5cb376947598ec28744306f36968c152347336e6))
+
 # [1.61.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.60.0...v1.61.0) (2021-12-20)
 
 

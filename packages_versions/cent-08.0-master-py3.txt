@@ -2,7 +2,7 @@ cent-08.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.420d967
+          Salt: 3004+0na.4cac381
  
 Dependency Versions:
           cffi: Not Installed
@@ -106,7 +106,7 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3004+0na.420d967
+        3004+0na.4cac381
     saltversioninfo:
         - 3004
     systemd:
@@ -313,9 +313,9 @@ local:
     kbd-misc:
         2.0.4-10.el8
     kernel-headers:
-        4.18.0-348.2.1.el8_5
+        4.18.0-348.7.1.el8_5
     kexec-tools:
-        2.0.20-57.el8
+        2.0.20-57.el8_5.1
     keyutils-libs:
         1.5.10-9.el8
     keyutils-libs-devel:
@@ -499,11 +499,11 @@ local:
     openssh-server:
         8.0p1-10.el8
     openssl:
-        1:1.1.1k-4.el8
+        1:1.1.1k-5.el8_5
     openssl-devel:
-        1:1.1.1k-4.el8
+        1:1.1.1k-5.el8_5
     openssl-libs:
-        1:1.1.1k-4.el8
+        1:1.1.1k-5.el8_5
     openssl-pkcs11:
         0.4.10-2.el8
     os-prober:
@@ -713,13 +713,13 @@ local:
     swig:
         3.0.12-19.module_el8.3.0+557+3d058e38
     systemd:
-        239-51.el8
+        239-51.el8_5.2
     systemd-libs:
-        239-51.el8
+        239-51.el8_5.2
     systemd-pam:
-        239-51.el8
+        239-51.el8_5.2
     systemd-udev:
-        239-51.el8
+        239-51.el8_5.2
     tar:
         2:1.30-5.el8
     tpm2-tss:
@@ -764,7 +764,7 @@ local:
     certifi:
         2021.10.8
     charset-normalizer:
-        2.0.9
+        2.0.10
     contextvars:
         2.4
     dbus-python:
@@ -784,7 +784,7 @@ local:
     pip:
         9.0.3
     psutil:
-        5.8.0
+        5.9.0
     pycryptodomex:
         3.12.0
     python-dateutil:
@@ -792,11 +792,11 @@ local:
     pyzmq:
         22.3.0
     requests:
-        2.26.0
+        2.27.0
     rpm:
         4.14.3
     salt:
-        3004+0na.420d967
+        3004+0na.4cac381
     setuptools:
         39.2.0
     six:
@@ -806,4 +806,4 @@ local:
     urllib3:
         1.26.7
     wheel:
-        0.37.0
+        0.37.1

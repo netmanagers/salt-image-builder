@@ -2,7 +2,7 @@ gent-sysd-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.420d967
+          Salt: 3004+0na.4cac381
  
 Dependency Versions:
           cffi: Not Installed
@@ -104,7 +104,7 @@ local:
     saltpath:
         /usr/lib/python3.9/site-packages/salt
     saltversion:
-        3004+0na.420d967
+        3004+0na.4cac381
     saltversioninfo:
         - 3004
     systemd:
@@ -269,7 +269,7 @@ local:
     app-shells/bash:
         5.1_p8
     app-text/build-docbook-catalog:
-        2.1
+        1.21
     app-text/docbook-xml-dtd:
         4.1.2-r7,4.2-r3,4.4-r3,4.5-r2
     app-text/docbook-xsl-stylesheets:
@@ -287,7 +287,7 @@ local:
     dev-db/sqlite:
         3.35.5
     dev-lang/perl:
-        5.34.0-r3
+        5.34.0-r6
     dev-lang/python:
         3.10.0_p1,3.9.9
     dev-lang/python-exec:
@@ -333,7 +333,7 @@ local:
     dev-libs/mpc:
         1.2.1
     dev-libs/mpfr:
-        4.1.0-r1
+        4.1.0_p13-r1
     dev-libs/nettle:
         3.7.3
     dev-libs/npth:
@@ -381,9 +381,9 @@ local:
     dev-python/PySocks:
         1.7.1-r1
     dev-python/certifi:
-        3021.3.16
+        3021.3.16-r1
     dev-python/charset_normalizer:
-        2.0.7
+        2.0.9
     dev-python/cython:
         0.29.24-r1
     dev-python/idna:
@@ -397,7 +397,7 @@ local:
     dev-python/packaging:
         21.0
     dev-python/pip:
-        21.3.1
+        21.3.1-r1
     dev-python/pyparsing:
         2.4.7-r1
     dev-python/requests:
@@ -427,7 +427,7 @@ local:
     dev-util/re2c:
         2.1.1-r1
     dev-vcs/git:
-        2.32.0-r1
+        2.34.1
     mail-mta/nullmailer:
         2.2-r2
     net-dns/libidn2:
@@ -449,11 +449,13 @@ local:
     net-misc/iputils:
         20210722-r1
     net-misc/openssh:
-        8.7_p1-r3
+        8.8_p1-r4
     net-misc/rsync:
         3.2.3-r5
     net-misc/wget:
         1.21.1
+    perl-core/CPAN:
+        2.290.0-r1
     perl-core/Encode:
         3.120.0
     perl-core/File-Temp:
@@ -461,7 +463,7 @@ local:
     perl-core/Scalar-List-Utils:
         1.560.0
     sec-keys/openpgp-keys-gentoo-release:
-        20200704
+        20220101
     sys-apps/acl:
         2.3.1
     sys-apps/attr:
@@ -495,7 +497,7 @@ local:
     sys-apps/install-xattr:
         0.8
     sys-apps/iproute2:
-        5.13.0-r1
+        5.15.0
     sys-apps/kbd:
         2.4.0
     sys-apps/kmod:
@@ -519,7 +521,7 @@ local:
     sys-apps/shadow:
         4.9-r3
     sys-apps/systemd:
-        249.6-r1
+        249.7
     sys-apps/texinfo:
         6.8
     sys-apps/util-linux:
@@ -571,15 +573,15 @@ local:
     sys-kernel/installkernel-gentoo:
         3
     sys-kernel/linux-headers:
-        5.10-r1
+        5.15-r3
     sys-libs/e2fsprogs-libs:
-        1.46.4
+        1.46.4-r1
     sys-libs/gdbm:
         1.22
     sys-libs/glibc:
         2.33-r7
     sys-libs/libcap:
-        2.49-r1
+        2.62
     sys-libs/libseccomp:
         2.5.1-r1
     sys-libs/libxcrypt:
@@ -628,6 +630,8 @@ local:
         1
     virtual/pager:
         0
+    virtual/perl-CPAN:
+        2.290.0
     virtual/perl-CPAN-Meta:
         2.150.10-r5
     virtual/perl-CPAN-Meta-YAML:
@@ -725,8 +729,6 @@ local:
         3.0.28
     pyparsing:
         2.4.7
-    requests:
-        2.26.0
     setuptools:
         59.2.0
     setuptools-scm:
@@ -736,4 +738,4 @@ local:
     urllib3:
         1.26.7
     wheel:
-        0.37.0
+        0.37.1
