@@ -58,6 +58,9 @@ RUN mkdir --parents /etc/portage/repos.conf \
        /sbin/rc-update del salt-minion default > /dev/null 2>&1) \
       || true; \
     fi \
+    # Similar to Fedora, Arch Linux & Tumbleweed, enable the `ssh-rsa` keypair
+    # type since Kitchen testing currently relies on this
+ && echo "PubkeyAcceptedAlgorithms +ssh-rsa" | tee -a /etc/ssh/sshd_config \
     # Remove unnecessary getty and udev targets that result in high CPU usage when using
     # multiple containers with Molecule or Kitchen https://github.com/ansible/molecule/issues/1104
     # Remove binary packages and downloaded sources
