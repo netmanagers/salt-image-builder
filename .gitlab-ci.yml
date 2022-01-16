@@ -262,11 +262,6 @@ arch-late-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 arch-late-3004.0-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'archlinux/archlinux'  , DV: 'latest' , PI: 'pac', SIM: 'stable', SV: '3004.0', SVB: 'latest', PV: '3', EP: 'python-psutil'}}
 
 # CENTOS
-cent-08.0-tiamat-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'centos'               , DV: '8'      , PI: 'yum', SIM: 'stable', SV: 'tiamat', SVB: ''      , PV: '3', EP: 'glibc-langpack-en openssl-devel python3 python3-devel swig'}}
-cent-08.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'centos'               , DV: '8'      , PI: 'yum', SIM: 'git'   , SV: 'master', SVB: ''      , PV: '3', EP: 'glibc-langpack-en openssl-devel python3 python3-devel swig'}}
-cent-08.0-3004.0-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'centos'               , DV: '8'      , PI: 'yum', SIM: 'stable', SV: '3004.0', SVB: ''      , PV: '3', EP: 'glibc-langpack-en openssl-devel python3 python3-devel swig'}}
-cent-08.0-3003.3-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'centos'               , DV: '8'      , PI: 'yum', SIM: 'stable', SV: '3003.3', SVB: ''      , PV: '3', EP: 'glibc-langpack-en openssl-devel python3 python3-devel swig'}}
-cent-08.0-3002.7-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'centos'               , DV: '8'      , PI: 'yum', SIM: 'stable', SV: '3002.7', SVB: ''      , PV: '3', EP: 'glibc-langpack-en openssl-devel python3 python3-devel swig'}}
 cent-07.0-tiamat-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'centos'               , DV: '7'      , PI: 'yum', SIM: 'stable', SV: 'tiamat', SVB: ''      , PV: '3', EP: 'gcc-g++ openssl-devel python3 python3-devel swig zeromq zeromq-devel'}}
 cent-07.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'centos'               , DV: '7'      , PI: 'yum', SIM: 'git'   , SV: 'master', SVB: ''      , PV: '3', EP: 'gcc-g++ openssl-devel python3 python3-devel swig zeromq zeromq-devel'}}
 cent-07.0-3004.0-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'centos'               , DV: '7'      , PI: 'yum', SIM: 'stable', SV: '3004.0', SVB: ''      , PV: '3', EP: 'gcc-g++ openssl-devel python3 python3-devel swig zeromq zeromq-devel'}}
