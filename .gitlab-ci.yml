@@ -345,12 +345,6 @@ opsu-15.3-3004.0-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 # opsu-15.3-3003.3-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'        , DV: '15.3'   , PI: 'zyp', SIM: 'git'   , SV: '3003.3', SVB: ''      , PV: '3', EP: ''}}
 opsu-15.3-3003.3-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'        , DV: '15.3'   , PI: 'zyp', SIM: 'stable', SV: '3003.3', SVB: 'latest', PV: '3', EP: ''}}
 opsu-15.3-3002.7-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'        , DV: '15.3'   , PI: 'zyp', SIM: 'git'   , SV: '3002.7', SVB: ''      , PV: '3', EP: ''}}
-opsu-15.2-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'        , DV: '15.2'   , PI: 'zyp', SIM: 'git'   , SV: 'master', SVB: ''      , PV: '3', EP: ''}}
-opsu-15.2-3004.0-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'        , DV: '15.2'   , PI: 'zyp', SIM: 'git'   , SV: '3004.0', SVB: '3004'  , PV: '3', EP: ''}}
-# opsu-15.2-3004.0-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'        , DV: '15.2'   , PI: 'zyp', SIM: 'stable', SV: '3004.0', SVB: 'latest', PV: '3', EP: ''}}
-# opsu-15.2-3003.3-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'        , DV: '15.2'   , PI: 'zyp', SIM: 'git'   , SV: '3003.3', SVB: ''      , PV: '3', EP: ''}}
-opsu-15.2-3003.3-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'        , DV: '15.2'   , PI: 'zyp', SIM: 'stable', SV: '3003.3', SVB: 'latest', PV: '3', EP: ''}}
-opsu-15.2-3002.7-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'        , DV: '15.2'   , PI: 'zyp', SIM: 'git'   , SV: '3002.7', SVB: ''      , PV: '3', EP: ''}}
 
 # ORACLELINUX
 orac-08.0-tiamat-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'oraclelinux'          , DV: '8'      , PI: 'yum', SIM: 'stable', SV: 'tiamat', SVB: ''      , PV: '3', EP: 'glibc-langpack-en openssl-devel python3 python3-devel swig'}}
