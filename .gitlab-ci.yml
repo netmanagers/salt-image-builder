@@ -282,13 +282,9 @@ cstr-08.0-3003.3-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 # DEBIAN
 debi-12.0-tiamat-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'               , DV: '12'     , PI: 'apt', SIM: 'stable', SV: 'tiamat', SVB: ''      , PV: '3', EP: 'python3-pip'}}
 # debi-12.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'               , DV: '12'     , PI: 'apt', SIM: 'git'   , SV: 'master', SVB: ''      , PV: '3', EP: 'python3-apt python3-pip'}}
-# debi-12.0-3004.0-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'               , DV: '12'     , PI: 'apt', SIM: 'stable', SV: '3004.0', SVB: ''      , PV: '3', EP: 'python3-pip'}}
-# debi-12.0-3003.3-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'               , DV: '12'     , PI: 'apt', SIM: 'stable', SV: '3003.3', SVB: ''      , PV: '3', EP: 'python3-pip'}}
 debi-11.0-tiamat-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'               , DV: '11'     , PI: 'apt', SIM: 'stable', SV: 'tiamat', SVB: ''      , PV: '3', EP: 'python3-pip'}}
 debi-11.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'               , DV: '11'     , PI: 'apt', SIM: 'git'   , SV: 'master', SVB: ''      , PV: '3', EP: 'python3-apt python3-pip'}}
 debi-11.0-3004.0-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'               , DV: '11'     , PI: 'apt', SIM: 'stable', SV: '3004.0', SVB: ''      , PV: '3', EP: 'python3-pip'}}
-debi-11.0-3003.3-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'               , DV: '11'     , PI: 'apt', SIM: 'stable', SV: '3003.3', SVB: ''      , PV: '3', EP: 'python3-pip'}}
-debi-11.0-3002.7-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'               , DV: '11'     , PI: 'apt', SIM: 'stable', SV: '3002.7', SVB: ''      , PV: '3', EP: 'python3-pip'}}
 debi-10.0-tiamat-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'               , DV: '10'     , PI: 'apt', SIM: 'stable', SV: 'tiamat', SVB: ''      , PV: '3', EP: 'python3-pip'}}
 debi-10.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'               , DV: '10'     , PI: 'apt', SIM: 'git'   , SV: 'master', SVB: ''      , PV: '3', EP: 'python3-apt python3-pip'}}
 debi-10.0-3004.0-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'               , DV: '10'     , PI: 'apt', SIM: 'stable', SV: '3004.0', SVB: ''      , PV: '3', EP: 'python3-pip'}}
