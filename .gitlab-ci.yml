@@ -132,18 +132,26 @@ commitlint:
         if [ "${DN}" = "opensuse/tumbleweed" ]; then
           export CMD_DOCKER_BUILD="${CMD_DOCKER_BUILD} --build-arg=security-opt='seccomp=unconfined'"
         fi
+    # yamllint enable rule:line-length
     # Use workaround for Debian Bookworm (tag `12` isn't currently available)
     - |
         if [ "${DN}" = "debian" ] && [ "${DV}" = "12" ]; then
           export DV=bookworm
         fi
-    # yamllint enable rule:line-length
     # Use `SVB` for passing through to the bootstrap
     # This covers the previous situation of dealing with `.0` releases,
     # which can now be passed via. `SVB` instead (rather than using `sed`)
     - |
         if [ "${SVB}" = "" ]; then
           export SVB=${SV}
+        fi
+    # Use temporary workaround for avoiding `master` builds installing `3005`
+    # Use a forked Salt repo to pin to the commit before the version number
+    # increment takes place (include the `-g` switch required by `salt-bootstrap`)
+    - |
+        export SRU=""
+        if [ "${SV}" = "master" ]; then
+          export SRU="-g https://github.com/myii/salt.git"
         fi
     # Build the image
     - '${CMD_DOCKER_BUILD}
@@ -154,7 +162,8 @@ commitlint:
          --build-arg SALT_INSTALL_METHOD="${SIM}"
          --build-arg SALT_VERSION="${SVB}"
          --build-arg PYTHON_VERSION="${PV}"
-         --build-arg EXTRA_PACKAGES="${EP}"'
+         --build-arg EXTRA_PACKAGES="${EP}"
+         --build-arg SALT_REPO_URL="${SRU}"'
     # Run the test container
     - 'export TESTINFRA_CONTAINER=testinfra-${TAG}-${PI}-${PV}-${SIM}-${SV}'
     - 'docker run

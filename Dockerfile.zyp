@@ -17,6 +17,7 @@ ARG EXTRA_PACKAGES=""
 # - https://gitlab.com/saltstack-formulas/infrastructure/kitchen-docker/-/compare/master...ssf
 ARG KITCHEN_DOCKER_PACKAGES="curl openssh sudo which"
 ARG PKGS="${KITCHEN_DOCKER_PACKAGES} git glibc-locale net-tools net-tools-deprecated python-xml python3-pip systemd udev ${EXTRA_PACKAGES}"
+ARG SALT_REPO_URL=""
 
 SHELL ["/bin/bash", "-x", "-o", "pipefail", "-c"]
 # hadolint ignore=DL3037
@@ -32,7 +33,7 @@ RUN zypper refresh && zypper install --no-recommends -y ${PKGS} && zypper clean 
     # https://github.com/saltstack/salt-bootstrap/blob/4310738bc4cf3b89b2873c0d66f71cbf0888edff/bootstrap-salt.sh#L323-L325
  && curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
     sed -e '/^\s\+echowarn "You have 10 seconds to cancel and stop the bootstrap process..."/,+2d' | \
-    sh -s -- -XUdfPwD -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION \
+    sh -s -- ${SALT_REPO_URL} -XUdfPwD -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION \
     # Use temporary workaround of downgrading Jinja2 for images built using `git`
     # See https://github.com/saltstack/salt/issues/60188
  && if [ "${SALT_INSTALL_METHOD}" = "git" ] && [ "${SALT_VERSION}" != "master" ]; then \
