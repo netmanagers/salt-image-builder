@@ -22,7 +22,7 @@ Dependency Versions:
       pycrypto: Not Installed
   pycryptodome: 3.4.7
         pygit2: Not Installed
-        Python: 3.6.9 (default, Jan 26 2021, 15:33:00)
+        Python: 3.6.9 (default, Dec  8 2021, 21:08:43)
   python-gnupg: 0.4.1
         PyYAML: 3.12
          PyZMQ: 17.1.2
@@ -185,7 +185,7 @@ local:
     dirmngr:
         2.2.4-1ubuntu1.4
     distro-info-data:
-        0.37ubuntu0.11
+        0.37ubuntu0.13
     dpkg:
         1.19.0.5ubuntu2.3
     e2fsprogs:
@@ -305,7 +305,7 @@ local:
     libgirepository-1.0-1:
         1.56.1-1
     libglib2.0-0:
-        2.56.4-0ubuntu0.18.04.8
+        2.56.4-0ubuntu0.18.04.9
     libgmp10:
         2:6.1.2+dfsg-2
     libgnutls30:
@@ -397,9 +397,9 @@ local:
     libpython3-stdlib:
         3.6.7-1~18.04
     libpython3.6-minimal:
-        3.6.9-1~18.04ubuntu1.4
+        3.6.9-1~18.04ubuntu1.6
     libpython3.6-stdlib:
-        3.6.9-1~18.04ubuntu1.4
+        3.6.9-1~18.04ubuntu1.6
     libreadline7:
         7.0-3
     libroken18-heimdal:
@@ -411,7 +411,7 @@ local:
     libsasl2-modules-db:
         2.1.27~101-g0780600+dfsg-3ubuntu2.3
     libseccomp2:
-        2.5.1-1ubuntu1~18.04.1
+        2.5.1-1ubuntu1~18.04.2
     libselinux1:
         2.7-2build2
     libsemanage-common:
@@ -431,17 +431,17 @@ local:
     libssl1.0.0:
         1.0.2n-1ubuntu5.7
     libssl1.1:
-        1.1.1-1ubuntu2.1~18.04.13
+        1.1.1-1ubuntu2.1~18.04.14
     libstdc++6:
         8.4.0-1ubuntu1~18.04
     libsystemd0:
-        237-3ubuntu10.52
+        237-3ubuntu10.53
     libtasn1-6:
         4.13-2
     libtinfo5:
         6.1-1ubuntu1.18.04
     libudev1:
-        237-3ubuntu10.52
+        237-3ubuntu10.53
     libunistring2:
         0.9.9-0ubuntu2
     libuuid1:
@@ -483,7 +483,7 @@ local:
     openssh-sftp-server:
         1:7.6p1-4ubuntu0.5
     openssl:
-        1.1.1-1ubuntu2.1~18.04.13
+        1.1.1-1ubuntu2.1~18.04.14
     passwd:
         1:4.5-1ubuntu2
     pciutils:
@@ -551,7 +551,7 @@ local:
     python3-six:
         1.11.0-2
     python3-software-properties:
-        0.96.24.32.14
+        0.96.24.32.18
     python3-systemd:
         234-1build1
     python3-urllib3:
@@ -561,9 +561,9 @@ local:
     python3-zmq:
         17.1.2-3ubuntu1
     python3.6:
-        3.6.9-1~18.04ubuntu1.4
+        3.6.9-1~18.04ubuntu1.6
     python3.6-minimal:
-        3.6.9-1~18.04ubuntu1.4
+        3.6.9-1~18.04ubuntu1.6
     readline-common:
         7.0-3
     salt-common:
@@ -575,25 +575,25 @@ local:
     sensible-utils:
         0.0.12
     software-properties-common:
-        0.96.24.32.14
+        0.96.24.32.18
     sudo:
         1.8.21p2-3ubuntu1.4
     systemd:
-        237-3ubuntu10.52
+        237-3ubuntu10.53
     systemd-sysv:
-        237-3ubuntu10.52
+        237-3ubuntu10.53
     sysvinit-utils:
         2.88dsf-59.10ubuntu1
     tar:
         1.29b-2ubuntu0.2
     tzdata:
-        2021a-0ubuntu0.18.04
+        2021e-0ubuntu0.18.04
     ubuntu-keyring:
         2018.09.18.1~18.04.2
     ucf:
         3.0038
     udev:
-        237-3ubuntu10.52
+        237-3ubuntu10.53
     util-linux:
         2.31.1-0.4ubuntu3.7
     wget:

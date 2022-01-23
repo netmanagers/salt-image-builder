@@ -2,7 +2,7 @@ orac-07.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.4cac381
+          Salt: 3004+0na.ff12e4c
  
 Dependency Versions:
           cffi: Not Installed
@@ -106,7 +106,7 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3004+0na.4cac381
+        3004+0na.ff12e4c
     saltversioninfo:
         - 3004
     systemd:
@@ -255,7 +255,7 @@ local:
     kernel-container:
         3.10.0-0.0.0.2.el7
     kernel-headers:
-        3.10.0-1160.49.1.el7
+        3.10.0-1160.53.1.el7
     keyutils-libs:
         1.5.8-3.el7
     keyutils-libs-devel:
@@ -311,7 +311,7 @@ local:
     libgpg-error:
         1.12-3.el7
     libgudev1:
-        219-78.0.7.el7_9.3
+        219-78.0.7.el7_9.5
     libidn:
         1.28-4.el7
     libkadm5:
@@ -409,9 +409,9 @@ local:
     openssh-server:
         7.4p1-22.0.1.el7_9
     openssl-devel:
-        1:1.0.2k-22.el7_9
+        1:1.0.2k-24.el7_9
     openssl-libs:
-        1:1.0.2k-22.el7_9
+        1:1.0.2k-24.el7_9
     oracle-logos:
         70.7.0-1.0.7.el7
     oraclelinux-release:
@@ -603,9 +603,9 @@ local:
     swig:
         2.0.10-5.el7
     systemd:
-        219-78.0.7.el7_9.3
+        219-78.0.7.el7_9.5
     systemd-libs:
-        219-78.0.7.el7_9.3
+        219-78.0.7.el7_9.5
     sysvinit-tools:
         2.88-14.dsf.el7
     tar:
@@ -678,14 +678,14 @@ local:
     pyzmq:
         22.3.0
     requests:
-        2.27.0
+        2.27.1
     salt:
-        3004+0na.4cac381
+        3004+0na.ff12e4c
     setuptools:
         39.2.0
     typing-extensions:
         4.0.1
     urllib3:
-        1.26.7
+        1.26.8
     wheel:
         0.37.1

@@ -367,7 +367,7 @@ local:
     libsasl2-modules-db:
         2.1.27~101-g0780600+dfsg-3ubuntu2.3
     libseccomp2:
-        2.5.1-1ubuntu1~18.04.1
+        2.5.1-1ubuntu1~18.04.2
     libselinux1:
         2.7-2build2
     libsemanage-common:

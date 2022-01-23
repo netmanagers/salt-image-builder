@@ -588,7 +588,7 @@ local:
     pyzmq:
         22.3.0
     requests:
-        2.27.0
+        2.27.1
     salt:
         3002.7
     setuptools:
@@ -596,6 +596,6 @@ local:
     six:
         1.14.0
     urllib3:
-        1.26.7
+        1.26.8
     wheel:
         0.37.1

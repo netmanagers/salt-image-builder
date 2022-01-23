@@ -132,13 +132,13 @@ local:
     basesystem:
         10.0-7.el7.centos
     bash:
-        4.2.46-34.el7
+        4.2.46-35.el7_9
     bc:
         1.06.95-13.el7
     bind-license:
-        32:9.11.4-26.P2.el7_9.7
+        32:9.11.4-26.P2.el7_9.8
     binutils:
-        2.27-44.base.el7
+        2.27-44.base.el7_9.1
     bzip2-libs:
         1.0.6-13.el7
     ca-certificates:
@@ -210,9 +210,9 @@ local:
     glib2:
         2.56.1-9.el7_9
     glibc:
-        2.17-324.el7_9
+        2.17-325.el7_9
     glibc-common:
-        2.17-324.el7_9
+        2.17-325.el7_9
     gmp:
         1:6.0.0-15.el7
     gnupg2:
@@ -252,9 +252,9 @@ local:
     kpartx:
         0.4.9-135.el7_9
     krb5-devel:
-        1.15.1-50.el7
+        1.15.1-51.el7_9
     krb5-libs:
-        1.15.1-50.el7
+        1.15.1-51.el7_9
     less:
         458-9.el7
     libacl:
@@ -292,7 +292,7 @@ local:
     libidn:
         1.28-4.el7
     libkadm5:
-        1.15.1-50.el7
+        1.15.1-51.el7_9
     libmount:
         2.23.2-65.el7_9.1
     libpwquality:
@@ -330,9 +330,9 @@ local:
     libverto-devel:
         0.2.5-4.el7
     libxml2:
-        2.9.1-6.el7.5
+        2.9.1-6.el7_9.6
     libxml2-python:
-        2.9.1-6.el7.5
+        2.9.1-6.el7_9.6
     libyaml:
         0.1.4-11.el7_0
     lua:
@@ -348,35 +348,35 @@ local:
     net-tools:
         2.0-0.25.20131004git.el7
     nspr:
-        4.25.0-2.el7_9
+        4.32.0-1.el7_9
     nss:
-        3.53.1-7.el7_9
+        3.67.0-4.el7_9
     nss-pem:
         1.0.3-7.el7
     nss-softokn:
-        3.53.1-6.el7_9
+        3.67.0-3.el7_9
     nss-softokn-freebl:
-        3.53.1-6.el7_9
+        3.67.0-3.el7_9
     nss-sysinit:
-        3.53.1-7.el7_9
+        3.67.0-4.el7_9
     nss-tools:
-        3.53.1-7.el7_9
+        3.67.0-4.el7_9
     nss-util:
-        3.53.1-1.el7_9
+        3.67.0-1.el7_9
     openldap:
         2.4.44-24.el7_9
     openpgm:
         5.2.122-2.el7
     openssh:
-        7.4p1-21.el7
+        7.4p1-22.el7_9
     openssh-clients:
-        7.4p1-21.el7
+        7.4p1-22.el7_9
     openssh-server:
-        7.4p1-21.el7
+        7.4p1-22.el7_9
     openssl-devel:
-        1:1.0.2k-21.el7_9
+        1:1.0.2k-24.el7_9
     openssl-libs:
-        1:1.0.2k-21.el7_9
+        1:1.0.2k-24.el7_9
     p11-kit:
         0.23.5-3.el7
     p11-kit-trust:
@@ -508,7 +508,7 @@ local:
     python36-chardet:
         3.0.4-12.el7
     python36-distro:
-        1.2.0-4.el7
+        1.5.0-1.el7
     python36-idna:
         2.10-1.el7
     python36-jinja2:
@@ -544,13 +544,13 @@ local:
     rootfiles:
         8.1-11.el7
     rpm:
-        4.11.3-45.el7
+        4.11.3-48.el7_9
     rpm-build-libs:
-        4.11.3-45.el7
+        4.11.3-48.el7_9
     rpm-libs:
-        4.11.3-45.el7
+        4.11.3-48.el7_9
     rpm-python:
-        4.11.3-45.el7
+        4.11.3-48.el7_9
     rsync:
         3.1.2-10.el7
     salt:
@@ -568,19 +568,19 @@ local:
     sqlite:
         3.7.17-8.el7_7.1
     sudo:
-        1.8.23-10.el7_9.1
+        1.8.23-10.el7_9.2
     swig:
         2.0.10-5.el7
     systemd:
-        219-78.el7_9.3
+        219-78.el7_9.5
     systemd-libs:
-        219-78.el7_9.3
+        219-78.el7_9.5
     tar:
         2:1.26-35.el7
     tcp_wrappers-libs:
         7.6-77.el7
     tzdata:
-        2021a-1.el7
+        2021e-1.el7
     ustr:
         1.0.4-16.el7
     util-linux:
@@ -629,7 +629,7 @@ local:
     chardet:
         3.0.4
     distro:
-        1.2.0
+        1.5.0
     idna:
         2.10
     msgpack:

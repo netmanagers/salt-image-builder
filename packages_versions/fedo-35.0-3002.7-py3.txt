@@ -20,9 +20,9 @@ Dependency Versions:
   mysql-python: Not Installed
      pycparser: Not Installed
       pycrypto: Not Installed
-  pycryptodome: 3.11.0
+  pycryptodome: 3.12.0
         pygit2: Not Installed
-        Python: 3.10.0 (default, Oct  4 2021, 00:00:00) [GCC 11.2.1 20210728 (Red Hat 11.2.1-1)]
+        Python: 3.10.2 (main, Jan 17 2022, 00:00:00) [GCC 11.2.1 20211203 (Red Hat 11.2.1-7)]
   python-gnupg: Not Installed
         PyYAML: 6.0
          PyZMQ: 22.3.0
@@ -98,7 +98,7 @@ local:
     pythonversion:
         - 3
         - 10
-        - 0
+        - 2
         - final
         - 0
     saltpath:
@@ -140,7 +140,7 @@ local:
     bzip2-libs:
         1.0.8-9.fc35
     ca-certificates:
-        2021.2.50-3.fc35
+        2021.2.52-1.0.fc35
     coreutils:
         8.32-31.fc35
     coreutils-common:
@@ -148,7 +148,7 @@ local:
     cpio:
         2.13-11.fc35
     cpp:
-        11.2.1-1.fc35
+        11.2.1-7.fc35
     cracklib:
         2.9.6-27.fc35
     crypto-policies:
@@ -156,7 +156,7 @@ local:
     crypto-policies-scripts:
         20210819-1.gitd0fdcfb.fc35
     cryptsetup-libs:
-        2.4.2-1.fc35
+        2.4.3-1.fc35
     curl:
         7.79.1-1.fc35
     cyrus-sasl-lib:
@@ -188,7 +188,7 @@ local:
     elfutils-libs:
         0.186-1.fc35
     expat:
-        2.4.1-2.fc35
+        2.4.3-1.fc35
     fedora-gpg-keys:
         35-1
     fedora-release-common:
@@ -216,7 +216,7 @@ local:
     gc:
         8.0.4-6.fc35
     gcc:
-        11.2.1-1.fc35
+        11.2.1-7.fc35
     gdbm-libs:
         1:1.22-1.fc35
     gettext:
@@ -224,29 +224,33 @@ local:
     gettext-libs:
         0.21-8.fc35
     git:
-        2.33.1-2.fc35
+        2.34.1-1.fc35
     git-core:
-        2.33.1-2.fc35
+        2.34.1-1.fc35
     git-core-doc:
-        2.33.1-2.fc35
+        2.34.1-1.fc35
     glib2:
-        2.70.1-1.fc35
+        2.70.2-1.fc35
     glibc:
-        2.34-8.fc35
+        2.34-11.fc35
     glibc-common:
-        2.34-8.fc35
+        2.34-11.fc35
     glibc-devel:
-        2.34-8.fc35
+        2.34-11.fc35
+    glibc-gconv-extra:
+        2.34-11.fc35
     glibc-headers-x86:
-        2.34-8.fc35
+        2.34-11.fc35
     glibc-langpack-en:
-        2.34-8.fc35
+        2.34-11.fc35
     glibc-minimal-langpack:
-        2.34-8.fc35
+        2.34-11.fc35
     gmp:
         1:6.2.0-7.fc35
     gnupg2:
-        2.3.3-1.fc35
+        2.3.4-1.fc35
+    gnupg2-smime:
+        2.3.4-1.fc35
     gnutls:
         3.7.2-2.fc35
     gpg-pubkey.(none):
@@ -258,11 +262,11 @@ local:
     groff-base:
         1.22.4-8.fc35
     grub2-common:
-        1:2.06-8.fc35
+        1:2.06-10.fc35
     grub2-tools:
-        1:2.06-8.fc35
+        1:2.06-10.fc35
     grub2-tools-minimal:
-        1:2.06-8.fc35
+        1:2.06-10.fc35
     grubby:
         8.40-55.fc35
     guile22:
@@ -305,12 +309,14 @@ local:
         2.5.1-3.fc35
     libblkid:
         2.37.2-1.fc35
+    libbpf:
+        2:0.4.0-2.fc35
     libbrotli:
         1.0.9-6.fc35
     libcap:
         2.48-3.fc35
     libcap-ng:
-        0.8.2-6.fc35
+        0.8.2-8.fc35
     libcbor:
         0.7.0-4.fc35
     libcom_err:
@@ -336,15 +342,15 @@ local:
     libfsverity:
         1.4-6.fc35
     libgcc:
-        11.2.1-1.fc35
+        11.2.1-7.fc35
     libgcrypt:
         1.9.4-1.fc35
     libgomp:
-        11.2.1-1.fc35
+        11.2.1-7.fc35
     libgpg-error:
         1.43-1.fc35
     libibverbs:
-        38.0-1.fc35
+        38.1-2.fc35
     libidn2:
         2.3.2-3.fc35
     libkcapi:
@@ -379,6 +385,8 @@ local:
         2.15.2-6.fc35
     libseccomp:
         2.5.3-1.fc35
+    libsecret:
+        0.20.4-3.fc35
     libselinux:
         3.3-1.fc35
     libsemanage:
@@ -396,7 +404,7 @@ local:
     libssh-config:
         0.9.6-1.fc35
     libstdc++:
-        11.2.1-1.fc35
+        11.2.1-7.fc35
     libtasn1:
         4.16.0-6.fc35
     libtirpc:
@@ -405,6 +413,8 @@ local:
         2.4.6-42.fc35
     libunistring:
         0.9.10-14.fc35
+    libusb1:
+        1.0.24-4.fc35
     libutempter:
         1.2.1-5.fc35
     libuuid:
@@ -412,9 +422,9 @@ local:
     libverto:
         0.3.2-2.fc35
     libxcrypt:
-        4.4.26-4.fc35
+        4.4.27-2.fc35
     libxcrypt-devel:
-        4.4.26-4.fc35
+        4.4.27-2.fc35
     libxkbcommon:
         1.3.1-1.fc35
     libxml2:
@@ -422,7 +432,7 @@ local:
     libyaml:
         0.2.5-6.fc35
     libzstd:
-        1.5.0-2.fc35
+        1.5.1-6.fc35
     lua-libs:
         5.4.3-2.fc35
     lz4-libs:
@@ -430,7 +440,11 @@ local:
     make:
         1:4.3-6.fc35
     memstrack:
-        0.2.3-2.fc35
+        0.2.4-1.fc35
+    mkpasswd:
+        5.5.11-1.fc35
+    mozjs78:
+        78.15.0-1.fc35
     mpdecimal:
         2.5.1-2.fc35
     mpfr:
@@ -464,13 +478,19 @@ local:
     p11-kit-trust:
         0.23.22-4.fc35
     pam:
-        1.5.2-5.fc35
+        1.5.2-7.fc35
     pcre:
         8.45-1.fc35
     pcre2:
-        10.37-4.fc35
+        10.39-1.fc35
     pcre2-syntax:
-        10.37-4.fc35
+        10.39-1.fc35
+    pcsc-lite:
+        1.9.5-1.fc35
+    pcsc-lite-ccid:
+        1.4.36-2.fc35
+    pcsc-lite-libs:
+        1.9.5-1.fc35
     perl-Carp:
         1.52-478.fc35
     perl-Class-Struct:
@@ -502,7 +522,7 @@ local:
     perl-Getopt-Std:
         1.13-482.fc35
     perl-Git:
-        2.33.1-2.fc35
+        2.34.1-1.fc35
     perl-HTTP-Tiny:
         0.080-1.fc35
     perl-IO:
@@ -571,12 +591,20 @@ local:
         1.05-482.fc35
     pigz:
         2.5-2.fc35
+    pinentry:
+        1.2.0-1.fc35
     pkgconf:
         1.8.0-1.fc35
     pkgconf-m4:
         1.8.0-1.fc35
     pkgconf-pkg-config:
         1.8.0-1.fc35
+    polkit:
+        0.120-1.fc35
+    polkit-libs:
+        0.120-1.fc35
+    polkit-pkla-compat:
+        0.1-20.fc35
     popt:
         1.18-6.fc35
     procps-ng:
@@ -587,10 +615,12 @@ local:
         21.2.3-4.fc35
     python-setuptools-wheel:
         57.4.0-1.fc35
+    python-unversioned-command:
+        3.10.2-1.fc35
     python3:
-        3.10.0-1.fc35
+        3.10.2-1.fc35
     python3-devel:
-        3.10.0-1.fc35
+        3.10.2-1.fc35
     python3-dnf:
         4.9.0-1.fc35
     python3-gpg:
@@ -602,11 +632,11 @@ local:
     python3-libdnf:
         0.64.0-1.fc35
     python3-libs:
-        3.10.0-1.fc35
+        3.10.2-1.fc35
     python3-pip:
         21.2.3-4.fc35
     python3-rpm:
-        4.17.0-1.fc35
+        4.17.0-3.fc35
     python3-setuptools:
         57.4.0-1.fc35
     qrencode-libs:
@@ -616,13 +646,13 @@ local:
     rootfiles:
         8.1-30.fc35
     rpm:
-        4.17.0-1.fc35
+        4.17.0-3.fc35
     rpm-build-libs:
-        4.17.0-1.fc35
+        4.17.0-3.fc35
     rpm-libs:
-        4.17.0-1.fc35
+        4.17.0-3.fc35
     rpm-sign-libs:
-        4.17.0-1.fc35
+        4.17.0-3.fc35
     sed:
         4.8-8.fc35
     setup:
@@ -634,17 +664,17 @@ local:
     sudo:
         1.9.7p2-2.fc35
     systemd:
-        249.7-2.fc35
+        249.9-1.fc35
     systemd-libs:
-        249.7-2.fc35
+        249.9-1.fc35
     systemd-networkd:
-        249.7-2.fc35
+        249.9-1.fc35
     systemd-pam:
-        249.7-2.fc35
+        249.9-1.fc35
     systemd-resolved:
-        249.7-2.fc35
+        249.9-1.fc35
     systemd-udev:
-        249.7-2.fc35
+        249.9-1.fc35
     tar:
         2:1.34-2.fc35
     tpm2-tss:
@@ -656,11 +686,13 @@ local:
     util-linux-core:
         2.37.2-1.fc35
     vim-data:
-        2:8.2.3642-2.fc35
+        2:8.2.4068-1.fc35
     vim-minimal:
-        2:8.2.3642-2.fc35
+        2:8.2.4068-1.fc35
     which:
         2.21-27.fc35
+    whois-nls:
+        5.5.11-1.fc35
     xkeyboard-config:
         2.33-2.fc35
     xz:
@@ -689,4 +721,4 @@ local:
     setuptools:
         57.4.0
     wheel:
-        0.37.0
+        0.37.1

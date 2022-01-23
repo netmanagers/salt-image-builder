@@ -316,21 +316,21 @@ local:
     net-tools:
         2.0-0.22.20131004git.amzn2.0.2
     nspr:
-        4.32.0-1.amzn2
+        4.32.0-1.amzn2.0.1
     nss:
-        3.67.0-4.amzn2.0.1
+        3.67.0-4.amzn2.0.2
     nss-pem:
         1.0.3-5.amzn2
     nss-softokn:
-        3.67.0-3.amzn2
+        3.67.0-3.amzn2.0.1
     nss-softokn-freebl:
-        3.67.0-3.amzn2
+        3.67.0-3.amzn2.0.1
     nss-sysinit:
-        3.67.0-4.amzn2.0.1
+        3.67.0-4.amzn2.0.2
     nss-tools:
-        3.67.0-4.amzn2.0.1
+        3.67.0-4.amzn2.0.2
     nss-util:
-        3.67.0-1.amzn2
+        3.67.0-1.amzn2.0.1
     openldap:
         2.4.44-23.amzn2.0.2
     openssh:
@@ -494,7 +494,7 @@ local:
     util-linux:
         2.30.2-2.amzn2.0.5
     vim-minimal:
-        2:8.1.1602-1.amzn2
+        2:8.2.3642-1.amzn2.0.1
     which:
         2.20-7.amzn2.0.2
     xz-libs:

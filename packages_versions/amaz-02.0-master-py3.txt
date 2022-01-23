@@ -2,7 +2,7 @@ amaz-02.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.4cac381
+          Salt: 3004+0na.ff12e4c
  
 Dependency Versions:
           cffi: Not Installed
@@ -105,7 +105,7 @@ local:
     saltpath:
         /usr/lib/python3.7/site-packages/salt
     saltversion:
-        3004+0na.4cac381
+        3004+0na.ff12e4c
     saltversioninfo:
         - 3004
     systemd:
@@ -138,7 +138,7 @@ local:
     bzip2-libs:
         1.0.6-13.amzn2.0.3
     ca-certificates:
-        2021.2.50-72.amzn2.0.1
+        2021.2.50-72.amzn2.0.2
     chkconfig:
         1.7.4-1.amzn2.0.2
     coreutils:
@@ -204,17 +204,17 @@ local:
     glib2:
         2.56.1-9.amzn2.0.2
     glibc:
-        2.26-56.amzn2
+        2.26-57.amzn2
     glibc-common:
-        2.26-56.amzn2
+        2.26-57.amzn2
     glibc-devel:
-        2.26-56.amzn2
+        2.26-57.amzn2
     glibc-headers:
-        2.26-56.amzn2
+        2.26-57.amzn2
     glibc-langpack-en:
-        2.26-56.amzn2
+        2.26-57.amzn2
     glibc-minimal-langpack:
-        2.26-56.amzn2
+        2.26-57.amzn2
     gmp:
         1:6.0.0-15.amzn2.0.2
     gnupg2:
@@ -240,7 +240,7 @@ local:
     kmod-libs:
         25-3.amzn2.0.2
     krb5-libs:
-        1.15.1-37.amzn2.2.2
+        1.15.1-37.amzn2.2.4
     less:
         458-9.amzn2.0.2
     libacl:
@@ -262,7 +262,7 @@ local:
     libcom_err:
         1.42.9-19.amzn2
     libcrypt:
-        2.26-56.amzn2
+        2.26-57.amzn2
     libcurl:
         7.79.1-1.amzn2.0.1
     libdb:
@@ -529,8 +529,10 @@ local:
         1.0.4-16.amzn2.0.3
     util-linux:
         2.30.2-2.amzn2.0.5
+    vim-data:
+        2:8.2.4006-1.amzn2.0.1
     vim-minimal:
-        2:8.2.3642-1.amzn2.0.1
+        2:8.2.4006-1.amzn2.0.1
     which:
         2.20-7.amzn2.0.2
     xz-libs:

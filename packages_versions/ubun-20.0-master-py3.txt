@@ -2,7 +2,7 @@ ubun-20.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.4cac381
+          Salt: 3004+0na.ff12e4c
  
 Dependency Versions:
           cffi: Not Installed
@@ -106,7 +106,7 @@ local:
     saltpath:
         /usr/local/lib/python3.8/dist-packages/salt
     saltversion:
-        3004+0na.4cac381
+        3004+0na.ff12e4c
     saltversioninfo:
         - 3004
     systemd:
@@ -431,7 +431,7 @@ local:
     libsasl2-modules-db:
         2.1.27+dfsg-2
     libseccomp2:
-        2.5.1-1ubuntu1~20.04.1
+        2.5.1-1ubuntu1~20.04.2
     libselinux1:
         3.0-1build2
     libsemanage-common:
@@ -453,7 +453,7 @@ local:
     libstdc++6:
         10.3.0-1ubuntu1~20.04
     libsystemd0:
-        245.4-4ubuntu3.14
+        245.4-4ubuntu3.15
     libtasn1-6:
         4.16.0-2
     libtinfo6:
@@ -463,7 +463,7 @@ local:
     libubsan1:
         10.3.0-1ubuntu1~20.04
     libudev1:
-        245.4-4ubuntu3.14
+        245.4-4ubuntu3.15
     libunistring2:
         0.9.10-2
     libuuid1:
@@ -475,7 +475,7 @@ local:
     libzstd1:
         1.4.4+dfsg-3ubuntu0.1
     linux-libc-dev:
-        5.4.0-92.103
+        5.4.0-96.109
     locales:
         2.31-0ubuntu9.2
     login:
@@ -499,11 +499,11 @@ local:
     net-tools:
         1.60+git20180626.aebd88e-1ubuntu1
     openssh-client:
-        1:8.2p1-4ubuntu0.3
+        1:8.2p1-4ubuntu0.4
     openssh-server:
-        1:8.2p1-4ubuntu0.3
+        1:8.2p1-4ubuntu0.4
     openssh-sftp-server:
-        1:8.2p1-4ubuntu0.3
+        1:8.2p1-4ubuntu0.4
     openssl:
         1.1.1f-1ubuntu2.10
     passwd:
@@ -557,11 +557,11 @@ local:
     sudo:
         1.8.31-1ubuntu1.2
     systemd:
-        245.4-4ubuntu3.14
+        245.4-4ubuntu3.15
     systemd-sysv:
-        245.4-4ubuntu3.14
+        245.4-4ubuntu3.15
     systemd-timesyncd:
-        245.4-4ubuntu3.14
+        245.4-4ubuntu3.15
     sysvinit-utils:
         2.96-2.1ubuntu1
     tar:
@@ -571,7 +571,7 @@ local:
     ucf:
         3.0038+nmu1
     udev:
-        245.4-4ubuntu3.14
+        245.4-4ubuntu3.15
     util-linux:
         2.34-0.1ubuntu9.1
     wget:
@@ -614,12 +614,12 @@ local:
     pyzmq:
         22.3.0
     requests:
-        2.27.0
+        2.27.1
     salt:
-        3004+0na.4cac381
+        3004+0na.ff12e4c
     setuptools:
         45.2.0
     urllib3:
-        1.26.7
+        1.26.8
     wheel:
         0.34.2

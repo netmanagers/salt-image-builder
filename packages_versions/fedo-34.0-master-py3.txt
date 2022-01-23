@@ -2,7 +2,7 @@ fedo-34.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.4cac381
+          Salt: 3004+0na.ff12e4c
  
 Dependency Versions:
           cffi: Not Installed
@@ -103,7 +103,7 @@ local:
     saltpath:
         /usr/lib/python3.9/site-packages/salt
     saltversion:
-        3004+0na.4cac381
+        3004+0na.ff12e4c
     saltversioninfo:
         - 3004
     systemd:

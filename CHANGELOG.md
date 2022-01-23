@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.63.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.62.0...v1.63.0) (2022-01-23)
+
+
+### Features
+
+* **gitlab-ci:** pin `master` builds to commit before `3005` [skip ci] ([dedb914](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/dedb9140c30c2c0107461b436b70a7a5d12347e2))
+
 # [1.62.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.61.0...v1.62.0) (2022-01-05)
 
 

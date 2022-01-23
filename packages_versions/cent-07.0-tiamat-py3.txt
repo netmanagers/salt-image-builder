@@ -371,9 +371,9 @@ local:
     openssh-server:
         7.4p1-22.el7_9
     openssl-devel:
-        1:1.0.2k-22.el7_9
+        1:1.0.2k-24.el7_9
     openssl-libs:
-        1:1.0.2k-22.el7_9
+        1:1.0.2k-24.el7_9
     p11-kit:
         0.23.5-3.el7
     p11-kit-trust:
@@ -539,9 +539,9 @@ local:
     swig:
         2.0.10-5.el7
     systemd:
-        219-78.el7_9.3
+        219-78.el7_9.5
     systemd-libs:
-        219-78.el7_9.3
+        219-78.el7_9.5
     tar:
         2:1.26-35.el7
     tcp_wrappers-libs:

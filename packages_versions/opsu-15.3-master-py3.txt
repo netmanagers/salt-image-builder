@@ -2,7 +2,7 @@ opsu-15.3-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.4cac381
+          Salt: 3004+0na.ff12e4c
  
 Dependency Versions:
           cffi: 1.13.2
@@ -107,7 +107,7 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3004+0na.4cac381
+        3004+0na.ff12e4c
     saltversioninfo:
         - 3004
     systemd:
@@ -246,7 +246,7 @@ local:
     libcrypt1:
         4.4.15-2.51
     libcryptsetup12:
-        2.3.4-1.34
+        2.3.7-150300.3.5.1
     libctf-nobfd0:
         2.37-7.26.1
     libctf0:
@@ -340,7 +340,7 @@ local:
     libnsl2:
         1.2.0-2.44
     libopenssl1_1:
-        1.1.1d-11.33.2
+        1.1.1d-11.38.1
     libp11-kit0:
         0.23.2-4.13.1
     libpcre1:
@@ -360,7 +360,7 @@ local:
     libpython2_7-1_0:
         2.7.18-33.1
     libpython3_6m1_0:
-        3.6.15-10.9.1
+        3.6.15-10.15.1
     libqrencode4:
         4.0.0-1.17
     libreadline7:
@@ -390,7 +390,7 @@ local:
     libstdc++6:
         11.2.1+git610-1.3.9
     libsystemd0:
-        246.16-7.28.1
+        246.16-7.33.1
     libtasn1:
         4.13-4.5.1
     libtasn1-6:
@@ -404,7 +404,7 @@ local:
     libubsan0:
         7.5.0+r278197-4.30.1
     libudev1:
-        246.16-7.28.1
+        246.16-7.33.1
     libunistring2:
         0.9.10-1.1
     libusb-1_0-0:
@@ -456,7 +456,7 @@ local:
     openssh-server:
         8.4p1-3.9.1
     openssl-1_1:
-        1.1.1d-11.33.2
+        1.1.1d-11.38.1
     p11-kit:
         0.23.2-4.13.1
     p11-kit-tools:
@@ -486,7 +486,7 @@ local:
     python-xml:
         2.7.18-33.1
     python3:
-        3.6.15-10.9.1
+        3.6.15-10.15.1
     python3-PyYAML:
         5.4.1-1.1
     python3-appdirs:
@@ -494,7 +494,7 @@ local:
     python3-asn1crypto:
         0.24.0-3.2.1
     python3-base:
-        3.6.15-10.9.1
+        3.6.15-10.15.1
     python3-certifi:
         2018.1.18-1.18
     python3-cffi:
@@ -504,7 +504,7 @@ local:
     python3-cryptography:
         2.8-10.1
     python3-devel:
-        3.6.15-10.9.1
+        3.6.15-10.15.1
     python3-idna:
         2.6-1.20
     python3-packaging:
@@ -530,7 +530,7 @@ local:
     python3-urllib3:
         1.25.10-4.3.1
     rpm:
-        4.14.3-40.1
+        4.14.3-43.1
     rpm-config-SUSE:
         1-5.6.1
     sed:
@@ -548,7 +548,7 @@ local:
     system-user-root:
         20190513-3.3.1
     systemd:
-        246.16-7.28.1
+        246.16-7.33.1
     systemd-default-settings:
         0.7-3.2.1
     systemd-default-settings-branding-SLE:
@@ -562,7 +562,7 @@ local:
     terminfo-base:
         6.1-5.9.1
     udev:
-        246.16-7.28.1
+        246.16-7.33.1
     update-alternatives:
         1.19.0.4-2.48
     util-linux:
@@ -625,9 +625,9 @@ local:
     pyzmq:
         22.3.0
     requests:
-        2.27.0
+        2.27.1
     salt:
-        3004+0na.4cac381
+        3004+0na.ff12e4c
     setuptools:
         40.5.0
     six:
@@ -635,6 +635,6 @@ local:
     typing-extensions:
         4.0.1
     urllib3:
-        1.26.7
+        1.26.8
     wheel:
         0.37.1

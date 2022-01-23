@@ -375,7 +375,7 @@ local:
     libsasl2-modules-db:
         2.1.27+dfsg-2
     libseccomp2:
-        2.5.1-1ubuntu1~20.04.1
+        2.5.1-1ubuntu1~20.04.2
     libselinux1:
         3.0-1build2
     libsemanage-common:
@@ -397,13 +397,13 @@ local:
     libstdc++6:
         10.3.0-1ubuntu1~20.04
     libsystemd0:
-        245.4-4ubuntu3.14
+        245.4-4ubuntu3.15
     libtasn1-6:
         4.16.0-2
     libtinfo6:
         6.2-0ubuntu2
     libudev1:
-        245.4-4ubuntu3.14
+        245.4-4ubuntu3.15
     libunistring2:
         0.9.10-2
     libuuid1:
@@ -437,11 +437,11 @@ local:
     net-tools:
         1.60+git20180626.aebd88e-1ubuntu1
     openssh-client:
-        1:8.2p1-4ubuntu0.3
+        1:8.2p1-4ubuntu0.4
     openssh-server:
-        1:8.2p1-4ubuntu0.3
+        1:8.2p1-4ubuntu0.4
     openssh-sftp-server:
-        1:8.2p1-4ubuntu0.3
+        1:8.2p1-4ubuntu0.4
     openssl:
         1.1.1f-1ubuntu2.10
     passwd:
@@ -491,11 +491,11 @@ local:
     sudo:
         1.8.31-1ubuntu1.2
     systemd:
-        245.4-4ubuntu3.14
+        245.4-4ubuntu3.15
     systemd-sysv:
-        245.4-4ubuntu3.14
+        245.4-4ubuntu3.15
     systemd-timesyncd:
-        245.4-4ubuntu3.14
+        245.4-4ubuntu3.15
     sysvinit-utils:
         2.96-2.1ubuntu1
     tar:
@@ -505,7 +505,7 @@ local:
     ucf:
         3.0038+nmu1
     udev:
-        245.4-4ubuntu3.14
+        245.4-4ubuntu3.15
     util-linux:
         2.34-0.1ubuntu9.1
     wget:
