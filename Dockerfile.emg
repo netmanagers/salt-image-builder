@@ -25,6 +25,7 @@ ARG EXTRA_PACKAGES=""
 # - https://gitlab.com/saltstack-formulas/infrastructure/kitchen-docker/-/compare/master...ssf
 ARG KITCHEN_DOCKER_PACKAGES="app-admin/sudo net-misc/openssh"
 ARG PKGS="${KITCHEN_DOCKER_PACKAGES} dev-python/pip dev-vcs/git ${EXTRA_PACKAGES}"
+ARG SALT_REPO_URL=""
 
 SHELL ["/bin/bash", "-x", "-o", "pipefail", "-c"]
 RUN mkdir --parents /etc/portage/repos.conf \
@@ -38,7 +39,7 @@ RUN mkdir --parents /etc/portage/repos.conf \
     # Install Salt using the bootstrap script (removing the 10 seconds delay to cancel the bootstrap)
  && curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
     sed -e '/^\s\+echowarn "You have 10 seconds to cancel and stop the bootstrap process..."/,+2d' | \
-    sh -s -- -XUdfPD -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION \
+    sh -s -- ${SALT_REPO_URL} -XUdfPD -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION \
     # Use temporary workaround of downgrading Jinja2 for images built using `git`
     # See https://github.com/saltstack/salt/issues/60188
     # Now required on most `stable` images as well and already at `2.11.3` on the rest,

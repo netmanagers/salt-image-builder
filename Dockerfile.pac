@@ -17,6 +17,7 @@ ARG EXTRA_PACKAGES=""
 # - https://gitlab.com/saltstack-formulas/infrastructure/kitchen-docker/-/compare/master...ssf
 ARG KITCHEN_DOCKER_PACKAGES="curl openssh openssl sudo"
 ARG PKGS="${KITCHEN_DOCKER_PACKAGES} awk git net-tools procps-ng python-pip systemd udev ${EXTRA_PACKAGES}"
+ARG SALT_REPO_URL=""
 
 SHELL ["/bin/bash", "-x", "-o", "pipefail", "-c"]
 RUN pacman --noconfirm -Sy archlinux-keyring \
@@ -25,7 +26,7 @@ RUN pacman --noconfirm -Sy archlinux-keyring \
     # Install Salt using the bootstrap script (removing the 10 seconds delay to cancel the bootstrap)
  && curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
     sed -e '/^\s\+echowarn "You have 10 seconds to cancel and stop the bootstrap process..."/,+2d' | \
-    sh -s -- -XUdfPD -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION \
+    sh -s -- ${SALT_REPO_URL} -XUdfPD -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION \
     # Fix `pyzmq` requirements (only required for `3004`, remove once `3004.1` is available), see:
     # https://github.com/saltstack/salt/commit/070597e525bb7d56ffadede1aede325dfb1b73a4
     # https://github.com/saltstack/salt/pull/61163
