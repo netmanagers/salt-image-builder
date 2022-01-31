@@ -246,7 +246,7 @@ local:
     liberror-perl:
         0.17024-1
     libexpat1:
-        2.2.0-2+deb9u3
+        2.2.0-2+deb9u4
     libfdisk1:
         2.29.2-1+deb9u1
     libffi6:

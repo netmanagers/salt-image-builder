@@ -20,7 +20,7 @@ Dependency Versions:
   mysql-python: Not Installed
      pycparser: Not Installed
       pycrypto: Not Installed
-  pycryptodome: 3.12.0
+  pycryptodome: 3.14.0
         pygit2: Not Installed
         Python: 3.5.3 (default, Nov  4 2021, 15:29:10)
   python-gnupg: Not Installed
@@ -293,9 +293,9 @@ local:
     liberror-perl:
         0.17024-1
     libexpat1:
-        2.2.0-2+deb9u3
+        2.2.0-2+deb9u4
     libexpat1-dev:
-        2.2.0-2+deb9u3
+        2.2.0-2+deb9u4
     libfdisk1:
         2.29.2-1+deb9u1
     libffi6:
@@ -590,7 +590,7 @@ local:
     psutil:
         5.9.0
     pycryptodomex:
-        3.12.0
+        3.14.0
     python-apt:
         1.4.3
     pyzmq:

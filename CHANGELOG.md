@@ -1,5 +1,17 @@
 # Changelog
 
+# [1.64.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.63.0...v1.64.0) (2022-01-31)
+
+
+### Features
+
+* **gitlab-ci:** deprecate `3001.8` [skip ci] ([6125b50](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/6125b50143b001559c39f85dc33317329f7e9f26))
+* **gitlab-ci:** deprecate `centos-8` (EOL) [skip ci] ([c0eee40](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/c0eee402182f3e3fa7cb78813478f091d4dc366d))
+* **gitlab-ci:** deprecate `fedora-33` (EOL) [skip ci] ([4461d0a](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/4461d0ab65445d9a6955c02c9bca6e568255e16c))
+* **gitlab-ci:** deprecate `opensuse-15.2` (EOL) [skip ci] ([40690ed](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/40690ed72b4f8762d1af0ab16ec875fca03f2ca6))
+* **gitlab-ci:** remove n/a Salt versions for Debian 11+ [skip ci] ([0404185](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/040418566f9453252a8fcbcef83d833380176825))
+* **opensuse:** build stable `3004.0` & git `3003.3` [skip ci] ([ce4d920](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/ce4d9205f87c1efd508176137a0b2dc699755024))
+
 # [1.63.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.62.0...v1.63.0) (2022-01-23)
 
 

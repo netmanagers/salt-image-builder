@@ -122,7 +122,7 @@ local:
     adduser:
         3.118
     apt:
-        2.3.13
+        2.3.14
     apt-transport-https:
         2.3.14
     base-files:
@@ -130,13 +130,13 @@ local:
     base-passwd:
         3.5.52
     bash:
-        5.1-5+b1
+        5.1-6
     bsdextrautils:
-        2.37.2-6
+        2.37.3-1+b1
     bsdmainutils:
         12.1.7+nmu3
     bsdutils:
-        1:2.37.2-4
+        1:2.37.2-6
     ca-certificates:
         20210119
     coreutils:
@@ -164,13 +164,13 @@ local:
     dpkg:
         1.21.1
     e2fsprogs:
-        1.46.4-1
+        1.46.5-2
     findutils:
         4.8.0-1
     gcc-10-base:
-        10.3.0-13
+        10.3.0-14
     gcc-11-base:
-        11.2.0-12
+        11.2.0-14
     git:
         1:2.34.1-1
     git-man:
@@ -208,7 +208,7 @@ local:
     libapparmor1:
         3.0.3-6
     libapt-pkg6.0:
-        2.3.13
+        2.3.14
     libargon2-1:
         0~20171227-0.2
     libassuan0:
@@ -220,19 +220,19 @@ local:
     libaudit1:
         1:3.0.6-1+b1
     libblkid1:
-        2.37.2-4
+        2.37.2-6
     libbrotli1:
         1.0.9-2+b3
     libbsd0:
-        0.11.3-1
+        0.11.5-1+b1
     libbz2-1.0:
         1.0.8-5
     libc-bin:
-        2.33-1
+        2.33-3
     libc-l10n:
-        2.33-2
+        2.33-5
     libc6:
-        2.33-1
+        2.33-3
     libcap-ng0:
         0.7.9-2.2+b1
     libcap2:
@@ -240,9 +240,9 @@ local:
     libcbor0.8:
         0.8.0-2
     libcom-err2:
-        1.46.4-1
+        1.46.5-2
     libcrypt1:
-        1:4.4.26-1
+        1:4.4.27-1.1
     libcryptsetup12:
         2:2.4.3-1
     libcurl3-gnutls:
@@ -260,19 +260,19 @@ local:
     liberror-perl:
         0.17029-1
     libexpat1:
-        2.4.3-1
+        2.4.3-3
     libext2fs2:
-        1.46.4-1
+        1.46.5-2
     libfdisk1:
-        2.37.2-6
+        2.37.3-1+b1
     libffi8:
-        3.4.2-3
+        3.4.2-4
     libfido2-1:
-        1.9.0-2
+        1.10.0-1
     libgcc-s1:
-        11.2.0-12
+        11.2.0-14
     libgcrypt20:
-        1.9.4-3+b1
+        1.9.4-5
     libgdbm-compat4:
         1.22-1
     libgdbm6:
@@ -280,9 +280,9 @@ local:
     libgmp10:
         2:6.2.1+dfsg-3
     libgnutls30:
-        3.7.2-2
+        3.7.2-5
     libgpg-error0:
-        1.42-3
+        1.43-3
     libgssapi-krb5-2:
         1.18.3-7
     libhogweed6:
@@ -314,7 +314,7 @@ local:
     libmd0:
         1.0.4-1
     libmount1:
-        2.37.2-4
+        2.37.2-6
     libmpdec3:
         2.5.1-2
     libncurses6:
@@ -374,19 +374,19 @@ local:
     libsepol2:
         3.3-1
     libsmartcols1:
-        2.37.2-4
+        2.37.2-6
     libsqlite3-0:
-        3.36.0-2
+        3.37.2-2
     libss2:
-        1.46.4-1
+        1.46.5-2
     libssh2-1:
         1.10.0-2
     libssl1.1:
-        1.1.1l-1
+        1.1.1m-1
     libstdc++6:
-        11.2.0-12
+        11.2.0-14
     libsystemd0:
-        250.3-1
+        250.3-2
     libtasn1-6:
         4.18.0-4
     libtinfo6:
@@ -396,23 +396,23 @@ local:
     libtirpc3:
         1.3.2-2
     libudev1:
-        250.3-1
+        250.3-2
     libunistring2:
         0.9.10-6
     libuuid1:
-        2.37.2-4
+        2.37.2-6
     libwrap0:
         7.6.q-31
     libxxhash0:
-        0.8.0-2
+        0.8.1-1
     libzstd1:
         1.4.8+dfsg-3
     locales:
-        2.33-2
+        2.33-5
     login:
         1:4.8.1-2
     logsave:
-        1.46.4-1
+        1.46.5-2
     lsb-base:
         11.1.0
     lsb-release:
@@ -420,15 +420,15 @@ local:
     mawk:
         1.3.4.20200120-2
     media-types:
-        4.0.0
+        5.0.0
     mount:
-        2.37.2-4
+        2.37.2-6
     ncal:
         12.1.7+nmu3
     ncurses-base:
-        6.3-1
+        6.3-2
     ncurses-bin:
-        6.3-1
+        6.3-2
     net-tools:
         1.60+git20181103.0eebece-1
     openssh-client:
@@ -486,11 +486,11 @@ local:
     sudo:
         1.9.8p2-1
     systemd:
-        250.3-1
+        250.3-2
     systemd-sysv:
-        250.3-1
+        250.3-2
     sysvinit-utils:
-        3.00-1
+        3.01-1
     tar:
         1.34+dfsg-1
     tzdata:
@@ -498,9 +498,9 @@ local:
     ucf:
         3.0043
     udev:
-        250.3-1
+        250.3-2
     util-linux:
-        2.37.2-4
+        2.37.2-6
     wget:
         1.21.2-2+b1
     zlib1g:

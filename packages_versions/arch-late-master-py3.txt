@@ -20,16 +20,16 @@ Dependency Versions:
   mysql-python: Not Installed
      pycparser: 2.21
       pycrypto: Not Installed
-  pycryptodome: 3.12.0
+  pycryptodome: 3.14.0
         pygit2: Not Installed
-        Python: 3.10.1 (main, Dec 18 2021, 23:53:45) [GCC 11.1.0]
+        Python: 3.10.2 (main, Jan 15 2022, 19:56:27) [GCC 11.1.0]
   python-gnupg: Not Installed
         PyYAML: 6.0
-         PyZMQ: 20.0.0
+         PyZMQ: 22.3.0
          smmap: Not Installed
        timelib: Not Installed
        Tornado: 4.5.3
-           ZMQ: 4.3.3
+           ZMQ: 4.3.4
  
 System Versions:
           dist: arch  
@@ -93,7 +93,7 @@ local:
     pythonversion:
         - 3
         - 10
-        - 1
+        - 2
         - final
         - 0
     saltpath:
@@ -113,14 +113,14 @@ local:
     virtual_subtype:
         Docker
     zmqversion:
-        4.3.3
+        4.3.4
 # salt-call --local pkg.list_pkgs
 local:
     ----------
     acl:
         2.3.1-1
     archlinux-keyring:
-        20220118-1
+        20220125-1
     argon2:
         20190702-4
     attr:
@@ -148,7 +148,7 @@ local:
     cryptsetup:
         2.4.3-1
     curl:
-        7.81.0-1
+        7.81.0-2
     db:
         5.3.28-5
     dbus:
@@ -160,7 +160,7 @@ local:
     e2fsprogs:
         1.46.5-1
     elfutils:
-        0.186-2
+        0.186-3
     expat:
         2.4.3-1
     file:
@@ -180,9 +180,9 @@ local:
     gettext:
         0.21-1
     git:
-        2.34.1-1
+        2.35.1-1
     glib2:
-        2.70.2-2
+        2.70.3-1
     glibc:
         2.33-5
     gmp:
@@ -228,7 +228,7 @@ local:
     libassuan:
         2.5.5-1
     libcap:
-        2.62-1
+        2.63-1
     libcap-ng:
         0.8.2-6
     libcroco:
@@ -236,13 +236,13 @@ local:
     libedit:
         20210910_3.1-1
     libelf:
-        0.186-2
+        0.186-3
     libffi:
         3.4.2-4
     libgcrypt:
         1.9.4-1
     libgpg-error:
-        1.43-1
+        1.44-1
     libidn2:
         2.3.2-1
     libksba:
@@ -294,7 +294,7 @@ local:
     libyaml:
         0.2.5-1
     licenses:
-        20200427-1
+        20220125-1
     linux-api-headers:
         5.12.3-1
     lz4:
@@ -346,7 +346,7 @@ local:
     psmisc:
         23.4-1
     python:
-        3.10.1-2
+        3.10.2-1
     python-appdirs:
         1.4.4-6
     python-cachecontrol:
@@ -404,9 +404,9 @@ local:
     python-toml:
         0.10.2-7
     python-tomli:
-        1.2.3-1
+        2.0.0-1
     python-urllib3:
-        1.26.7-5
+        1.26.8-1
     python-webencodings:
         0.5.1-9
     python-yaml:
@@ -422,25 +422,25 @@ local:
     sudo:
         1.9.8.p2-3
     systemd:
-        250.3-1
+        250.3-2
     systemd-libs:
-        250.3-1
+        250.3-2
     systemd-sysvcompat:
-        250.3-1
+        250.3-2
     tar:
         1.34-1
     tzdata:
         2021e-1
     util-linux:
-        2.37.2-5
+        2.37.3-1
     util-linux-libs:
-        2.37.2-5
+        2.37.3-1
     xz:
         5.2.5-2
     zlib:
         1:1.2.11-5
     zstd:
-        1.5.1-2
+        1.5.2-2
 # salt-call --local pip.list
 local:
     ----------
@@ -499,7 +499,9 @@ local:
     toml:
         0.10.2
     tomli:
-        1.2.3
+        2.0.0
+    urllib3:
+        1.26.8
     webencodings:
         0.5.1
     wheel:

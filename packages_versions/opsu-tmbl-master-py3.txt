@@ -20,7 +20,7 @@ Dependency Versions:
   mysql-python: Not Installed
      pycparser: Not Installed
       pycrypto: Not Installed
-  pycryptodome: 3.12.0
+  pycryptodome: 3.14.0
         pygit2: Not Installed
         Python: 3.8.12 (default, Aug 31 2021, 01:23:42) [GCC]
   python-gnupg: Not Installed
@@ -32,12 +32,12 @@ Dependency Versions:
            ZMQ: 4.3.4
  
 System Versions:
-          dist: opensuse-tumbleweed 20220122 
+          dist: opensuse-tumbleweed 20220128 
         locale: utf-8
        machine: x86_64
        release: 5.4.109+
         system: Linux
-       version: openSUSE Tumbleweed 20220122 
+       version: openSUSE Tumbleweed 20220128 
  
 # salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
 local:
@@ -65,7 +65,7 @@ local:
     lsb_distrib_id:
         openSUSE Tumbleweed
     lsb_distrib_release:
-        20220122
+        20220128
     os:
         SUSE
     os_family:
@@ -76,16 +76,16 @@ local:
     oscodename:
         openSUSE Tumbleweed
     osfinger:
-        openSUSE Tumbleweed-20220122
+        openSUSE Tumbleweed-20220128
     osfullname:
         openSUSE Tumbleweed
     osmajorrelease:
-        20220122
+        20220128
     osmanufacturer:
     osrelease:
-        20220122
+        20220128
     osrelease_info:
-        - 20220122
+        - 20220128
     osversion:
     pythonexecutable:
         /usr/bin/python3.8
@@ -125,13 +125,13 @@ local:
 local:
     ----------
     aaa_base:
-        84.87+git20211124.5486aad-2.1
+        84.87+git20211124.5486aad-1.2
     alts:
         1.2+3.b848aad-2.2
     bash:
-        5.1.12-4.2
+        5.1.16-5.1
     bash-sh:
-        5.1.12-4.2
+        5.1.16-5.1
     boost-license1_78_0:
         1.78.0-1.2
     ca-certificates:
@@ -211,7 +211,7 @@ local:
     libaugeas0:
         1.12.0-4.5
     libblkid1:
-        2.37.2-2.3
+        2.37.3-1.1
     libboost_thread1_78_0:
         1.78.0-1.2
     libbrotlicommon1:
@@ -249,7 +249,7 @@ local:
     libexpat1:
         2.4.3-1.1
     libfdisk1:
-        2.37.2-2.3
+        2.37.3-1.1
     libffi8:
         3.4.2-1.3
     libfido2-1:
@@ -299,7 +299,7 @@ local:
     libmagic1:
         5.41-1.3
     libmount1:
-        2.37.2-2.3
+        2.37.3-1.1
     libmpdec3:
         2.5.1-2.4
     libmpfr6:
@@ -332,6 +332,8 @@ local:
         3.3.17-5.3
     libprotobuf-lite28:
         3.17.3-2.6
+    libprotobuf-lite30:
+        3.19.3-1.1
     libproxy1:
         0.4.17-2.3
     libpsl5:
@@ -341,7 +343,7 @@ local:
     libpython3_8-1_0:
         3.8.12-3.3
     libreadline8:
-        8.1-2.16
+        8.1-3.1
     libsasl2-3:
         2.1.27-6.1
     libseccomp2:
@@ -359,7 +361,7 @@ local:
     libsigc-2_0-0:
         2.10.7-1.3
     libsmartcols1:
-        2.37.2-2.3
+        2.37.3-1.1
     libsolv-tools:
         0.7.20-1.3
     libsqlite3-0:
@@ -389,7 +391,7 @@ local:
     libutempter0:
         1.2.0-3.17
     libuuid1:
-        2.37.2-2.3
+        2.37.3-1.1
     libverto1:
         0.3.1-1.18
     libxml2-2:
@@ -403,7 +405,7 @@ local:
     libzstd1:
         1.5.1-2.2
     libzypp:
-        17.28.8-1.4
+        17.28.8-1.5
     login_defs:
         4.11.1-1.1
     ncurses-utils:
@@ -417,9 +419,9 @@ local:
     openSUSE-build-key:
         1.0-42.1
     openSUSE-release:
-        20220122-1401.1
+        20220128-1414.1
     openSUSE-release-appliance-docker:
-        20220122-1401.1
+        20220128-1414.1
     openssh:
         8.8p1-1.4
     openssh-clients:
@@ -521,7 +523,7 @@ local:
     update-alternatives:
         1.20.9-1.4
     util-linux:
-        2.37.2-2.3
+        2.37.3-1.1
     which:
         2.21-4.47
     xz:

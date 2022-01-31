@@ -20,7 +20,7 @@ Dependency Versions:
   mysql-python: Not Installed
      pycparser: Not Installed
       pycrypto: Not Installed
-  pycryptodome: 3.12.0
+  pycryptodome: 3.14.0
         pygit2: Not Installed
         Python: 3.6.8 (default, Nov 10 2021, 06:50:23)
   python-gnupg: Not Installed
@@ -149,7 +149,7 @@ local:
     coreutils-common:
         8.30-12.0.1.el8
     cpp:
-        8.5.0-4.0.1.el8_5
+        8.5.0-4.0.2.el8_5
     cracklib:
         2.9.6-15.el8
     cracklib-dicts:
@@ -213,7 +213,7 @@ local:
     gawk:
         4.2.1-2.el8
     gcc:
-        8.5.0-4.0.1.el8_5
+        8.5.0-4.0.2.el8_5
     gdbm:
         1:1.18-1.el8
     gdbm-libs:
@@ -325,11 +325,11 @@ local:
     libffi:
         3.1-22.el8
     libgcc:
-        8.5.0-4.0.1.el8_5
+        8.5.0-4.0.2.el8_5
     libgcrypt:
         1.8.5-6.el8
     libgomp:
-        8.5.0-4.0.1.el8_5
+        8.5.0-4.0.2.el8_5
     libgpg-error:
         1.31-1.el8
     libidn2:
@@ -359,7 +359,7 @@ local:
     librepo:
         1.14.0-2.el8
     libreport-filesystem:
-        2.9.5-15.0.2.el8
+        2.9.5-15.0.3.el8
     libseccomp:
         2.5.1-1.el8
     libselinux:
@@ -385,7 +385,7 @@ local:
     libssh-config:
         0.9.4-3.el8
     libstdc++:
-        8.5.0-4.0.1.el8_5
+        8.5.0-4.0.2.el8_5
     libtasn1:
         4.13-3.el8
     libtirpc:
@@ -668,7 +668,7 @@ local:
     certifi:
         2021.10.8
     charset-normalizer:
-        2.0.10
+        2.0.11
     contextvars:
         2.4
     dbus-python:
@@ -690,7 +690,7 @@ local:
     psutil:
         5.9.0
     pycryptodomex:
-        3.12.0
+        3.14.0
     python-dateutil:
         2.6.1
     pyzmq:

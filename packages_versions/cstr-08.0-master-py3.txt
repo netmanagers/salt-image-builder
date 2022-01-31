@@ -20,7 +20,7 @@ Dependency Versions:
   mysql-python: Not Installed
      pycparser: Not Installed
       pycrypto: Not Installed
-  pycryptodome: 3.12.0
+  pycryptodome: 3.14.0
         pygit2: Not Installed
         Python: 3.6.8 (default, Jan 19 2022, 23:28:49)
   python-gnupg: Not Installed
@@ -126,13 +126,13 @@ local:
     acl:
         2.2.53-1.el8
     audit-libs:
-        3.0-0.17.20191104git1c2f876.el8
+        3.0.7-1.el8
     basesystem:
         11-5.el8
     bash:
         4.4.20-3.el8
     binutils:
-        2.30-112.el8
+        2.30-113.el8
     brotli:
         1.0.6-3.el8
     bzip2-libs:
@@ -152,7 +152,7 @@ local:
     cpio:
         2.12-11.el8
     cpp:
-        8.5.0-7.el8
+        8.5.0-8.el8
     cracklib:
         2.9.6-15.el8
     cracklib-dicts:
@@ -220,7 +220,7 @@ local:
     gawk:
         4.2.1-2.el8
     gcc:
-        8.5.0-7.el8
+        8.5.0-8.el8
     gdb-gdbserver:
         8.2-18.el8
     gdbm:
@@ -312,7 +312,7 @@ local:
     kmod-libs:
         25-19.el8
     kpartx:
-        0.8.4-20.el8
+        0.8.4-21.el8
     krb5-devel:
         1.18.2-14.el8
     krb5-libs:
@@ -324,7 +324,7 @@ local:
     libacl:
         2.2.53-1.el8
     libarchive:
-        3.3.3-1.el8
+        3.3.3-3.el8_5
     libassuan:
         2.5.1-3.el8
     libattr:
@@ -360,11 +360,11 @@ local:
     libffi:
         3.1-23.el8
     libgcc:
-        8.5.0-7.el8
+        8.5.0-8.el8
     libgcrypt:
         1.8.5-6.el8
     libgomp:
-        8.5.0-7.el8
+        8.5.0-8.el8
     libgpg-error:
         1.31-1.el8
     libibverbs:
@@ -428,7 +428,7 @@ local:
     libssh-config:
         0.9.6-3.el8
     libstdc++:
-        8.5.0-7.el8
+        8.5.0-8.el8
     libtasn1:
         4.13-3.el8
     libtirpc:
@@ -636,7 +636,7 @@ local:
     python3-chardet:
         3.0.4-7.el8
     python3-cloud-what:
-        1.28.24-1.el8
+        1.28.25-1.el8
     python3-dateutil:
         1:2.6.1-6.el8
     python3-dbus:
@@ -650,7 +650,7 @@ local:
     python3-dnf-plugins-core:
         4.0.21-8.el8
     python3-ethtool:
-        0.14-3.el8
+        0.14-4.el8
     python3-gobject-base:
         3.28.3-2.el8
     python3-gpg:
@@ -694,9 +694,9 @@ local:
     python3-six:
         1.11.0-8.el8
     python3-subscription-manager-rhsm:
-        1.28.24-1.el8
+        1.28.25-1.el8
     python3-syspurpose:
-        1.28.24-1.el8
+        1.28.25-1.el8
     python3-unbound:
         1.7.3-17.el8
     python3-urllib3:
@@ -730,19 +730,19 @@ local:
     sqlite-libs:
         3.26.0-15.el8
     subscription-manager-rhsm-certificates:
-        1.28.24-1.el8
+        1.28.25-1.el8
     sudo:
         1.8.29-8.el8
     swig:
         3.0.12-19.module_el8.3.0+386+5db24358
     systemd:
-        239-55.el8
+        239-56.el8
     systemd-libs:
-        239-55.el8
+        239-56.el8
     systemd-pam:
-        239-55.el8
+        239-56.el8
     systemd-udev:
-        239-55.el8
+        239-56.el8
     tar:
         2:1.30-5.el8
     tpm2-tss:
@@ -756,7 +756,7 @@ local:
     util-linux:
         2.32.1-28.el8
     vim-minimal:
-        2:8.0.1763-16.el8_5.3
+        2:8.0.1763-16.el8_5.4
     virt-what:
         1.18-13.el8
     which:
@@ -791,7 +791,7 @@ local:
     chardet:
         3.0.4
     charset-normalizer:
-        2.0.10
+        2.0.11
     contextvars:
         2.4
     dbus-python:
@@ -819,7 +819,7 @@ local:
     psutil:
         5.9.0
     pycryptodomex:
-        3.12.0
+        3.14.0
     pygobject:
         3.28.3
     pyinotify:
@@ -841,7 +841,7 @@ local:
     six:
         1.11.0
     syspurpose:
-        1.28.24
+        1.28.25
     typing-extensions:
         4.0.1
     urllib3:

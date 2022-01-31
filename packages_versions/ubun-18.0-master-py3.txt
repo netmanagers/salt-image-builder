@@ -20,7 +20,7 @@ Dependency Versions:
   mysql-python: Not Installed
      pycparser: Not Installed
       pycrypto: Not Installed
-  pycryptodome: 3.12.0
+  pycryptodome: 3.14.0
         pygit2: Not Installed
         Python: 3.6.9 (default, Dec  8 2021, 21:08:43)
   python-gnupg: Not Installed
@@ -601,7 +601,7 @@ local:
     certifi:
         2021.10.8
     charset-normalizer:
-        2.0.10
+        2.0.11
     contextvars:
         2.4
     distro:
@@ -617,7 +617,7 @@ local:
     psutil:
         5.9.0
     pycryptodomex:
-        3.12.0
+        3.14.0
     python-apt:
         1.6.5+ubuntu0.7
     pyzmq:
