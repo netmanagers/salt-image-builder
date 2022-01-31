@@ -18,7 +18,7 @@ def test_salt_version(host, saltvers, installmethod):
         saltvers = pep440_tiamat_format + r"|" + major_minor
     else:
         # Handle version branch when installing from git, remove leading "v"
-        # v3001rc1 becomes 3001rc1
+        # v3004rc1 becomes 3004rc1
         if saltvers.startswith("v") and installmethod == "git":
             saltvers = saltvers[1:]
         # Handle version number when installing a `.0` release, where the `.0`
