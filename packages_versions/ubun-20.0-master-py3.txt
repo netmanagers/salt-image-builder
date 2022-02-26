@@ -2,7 +2,7 @@ ubun-20.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.ff12e4c
+          Salt: 3004+0na.e1a0881
  
 Dependency Versions:
           cffi: Not Installed
@@ -20,7 +20,7 @@ Dependency Versions:
   mysql-python: Not Installed
      pycparser: Not Installed
       pycrypto: Not Installed
-  pycryptodome: 3.14.0
+  pycryptodome: 3.14.1
         pygit2: Not Installed
         Python: 3.8.10 (default, Nov 26 2021, 20:14:08)
   python-gnupg: Not Installed
@@ -32,12 +32,12 @@ Dependency Versions:
            ZMQ: 4.3.4
  
 System Versions:
-          dist: ubuntu 20.04 focal
+          dist: ubuntu 20.04 Focal Fossa
         locale: utf-8
        machine: x86_64
        release: 5.4.109+
         system: Linux
-       version: Ubuntu 20.04 focal
+       version: Ubuntu 20.04 Focal Fossa
  
 # salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
 local:
@@ -106,7 +106,7 @@ local:
     saltpath:
         /usr/local/lib/python3.8/dist-packages/salt
     saltversion:
-        3004+0na.ff12e4c
+        3004+0na.e1a0881
     saltversioninfo:
         - 3004
     systemd:
@@ -271,7 +271,7 @@ local:
     libcrypt1:
         1:4.4.10-10ubuntu4
     libcryptsetup12:
-        2:2.2.2-3ubuntu2.3
+        2:2.2.2-3ubuntu2.4
     libctf-nobfd0:
         2.34-6ubuntu1.3
     libctf0:
@@ -291,9 +291,9 @@ local:
     liberror-perl:
         0.17029-1
     libexpat1:
-        2.2.9-1build1
+        2.2.9-1ubuntu0.2
     libexpat1-dev:
-        2.2.9-1build1
+        2.2.9-1ubuntu0.2
     libext2fs2:
         1.45.5-2ubuntu1
     libfdisk1:
@@ -427,9 +427,9 @@ local:
     librtmp1:
         2.4+20151223.gitfa8646d.1-2build1
     libsasl2-2:
-        2.1.27+dfsg-2
+        2.1.27+dfsg-2ubuntu0.1
     libsasl2-modules-db:
-        2.1.27+dfsg-2
+        2.1.27+dfsg-2ubuntu0.1
     libseccomp2:
         2.5.1-1ubuntu1~20.04.2
     libselinux1:
@@ -475,7 +475,7 @@ local:
     libzstd1:
         1.4.4+dfsg-3ubuntu0.1
     linux-libc-dev:
-        5.4.0-96.109
+        5.4.0-100.113
     locales:
         2.31-0ubuntu9.2
     login:
@@ -519,13 +519,13 @@ local:
     procps:
         2:3.3.16-1ubuntu2.3
     python-apt-common:
-        2.0.0ubuntu0.20.04.6
+        2.0.0ubuntu0.20.04.7
     python-pip-whl:
         20.0.2-5ubuntu1.6
     python3:
         3.8.2-0ubuntu2
     python3-apt:
-        2.0.0ubuntu0.20.04.6
+        2.0.0ubuntu0.20.04.7
     python3-dev:
         3.8.2-0ubuntu2
     python3-distutils:
@@ -586,17 +586,17 @@ local:
     Jinja2:
         3.0.3
     MarkupSafe:
-        2.0.1
+        2.1.0
     PyYAML:
         6.0
     certifi:
         2021.10.8
     charset-normalizer:
-        2.0.11
+        2.0.12
     contextvars:
         2.4
     distro:
-        1.6.0
+        1.7.0
     idna:
         3.3
     immutables:
@@ -608,15 +608,15 @@ local:
     psutil:
         5.9.0
     pycryptodomex:
-        3.14.0
+        3.14.1
     python-apt:
-        2.0.0+ubuntu0.20.4.6
+        2.0.0+ubuntu0.20.4.7
     pyzmq:
         22.3.0
     requests:
         2.27.1
     salt:
-        3004+0na.ff12e4c
+        3004+0na.e1a0881
     setuptools:
         45.2.0
     urllib3:

@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.65.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.64.0...v1.65.0) (2022-02-26)
+
+
+### Features
+
+* **gitlab-ci:** use official Rocky Linux image on Docker Hub [skip ci] ([66e0033](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/66e0033e009254c178f7eb297b76fb5e97028f37))
+
 # [1.64.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.63.0...v1.64.0) (2022-01-31)
 
 

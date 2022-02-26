@@ -2,7 +2,7 @@ gent-sysd-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.ff12e4c
+          Salt: 3004+0na.e1a0881
  
 Dependency Versions:
           cffi: Not Installed
@@ -20,7 +20,7 @@ Dependency Versions:
   mysql-python: Not Installed
      pycparser: Not Installed
       pycrypto: Not Installed
-  pycryptodome: 3.14.0
+  pycryptodome: 3.14.1
         pygit2: Not Installed
         Python: 3.9.9 (main, Jan 23 2022, 17:26:21)
   python-gnupg: Not Installed
@@ -104,7 +104,7 @@ local:
     saltpath:
         /usr/lib/python3.9/site-packages/salt
     saltversion:
-        3004+0na.ff12e4c
+        3004+0na.e1a0881
     saltversioninfo:
         - 3004
     systemd:
@@ -211,7 +211,7 @@ local:
     acct-user/systemd-timesync:
         0-r1
     app-admin/eselect:
-        1.4.17
+        1.4.20
     app-admin/perl-cleaner:
         2.30
     app-admin/sudo:
@@ -221,7 +221,7 @@ local:
     app-arch/gzip:
         1.11
     app-arch/libarchive:
-        3.5.2
+        3.5.3
     app-arch/lz4:
         1.9.3-r1
     app-arch/tar:
@@ -231,9 +231,9 @@ local:
     app-arch/xz-utils:
         5.2.5-r1
     app-arch/zstd:
-        1.5.0
+        1.5.2
     app-crypt/gnupg:
-        2.2.32-r1
+        2.2.33-r1
     app-crypt/gpgme:
         1.16.0
     app-crypt/libb2:
@@ -267,7 +267,7 @@ local:
     app-portage/portage-utils:
         0.93.3
     app-shells/bash:
-        5.1_p8
+        5.1_p16
     app-text/build-docbook-catalog:
         1.21
     app-text/docbook-xml-dtd:
@@ -285,7 +285,7 @@ local:
     app-text/xmlto:
         0.0.28-r6
     dev-db/sqlite:
-        3.35.5
+        3.37.2
     dev-lang/perl:
         5.34.0-r6
     dev-lang/python:
@@ -297,7 +297,7 @@ local:
     dev-lang/tcl:
         8.6.12
     dev-libs/expat:
-        2.4.4
+        2.4.5
     dev-libs/gmp:
         6.2.1-r2
     dev-libs/jsoncpp:
@@ -307,7 +307,7 @@ local:
     dev-libs/libffi:
         3.3-r2
     dev-libs/libgcrypt:
-        1.9.4
+        1.9.4-r1
     dev-libs/libgpg-error:
         1.42
     dev-libs/libksba:
@@ -319,13 +319,13 @@ local:
     dev-libs/libpcre2:
         10.39
     dev-libs/libpipeline:
-        1.5.4
+        1.5.5
     dev-libs/libtasn1:
         4.17.0
     dev-libs/libunistring:
         0.9.10-r1
     dev-libs/libuv:
-        1.42.0
+        1.43.0
     dev-libs/libxml2:
         2.9.12-r5
     dev-libs/libxslt:
@@ -339,7 +339,7 @@ local:
     dev-libs/npth:
         1.6-r1
     dev-libs/openssl:
-        1.1.1l-r1
+        1.1.1m
     dev-libs/popt:
         1.18
     dev-perl/Authen-SASL:
@@ -383,11 +383,13 @@ local:
     dev-python/certifi:
         3021.3.16-r1
     dev-python/charset_normalizer:
-        2.0.9
+        2.0.11
     dev-python/cython:
         0.29.26
     dev-python/idna:
         3.3
+    dev-python/installer:
+        0.4.0_p20220124
     dev-python/jinja:
         3.0.3
     dev-python/lxml:
@@ -401,17 +403,19 @@ local:
     dev-python/pyparsing:
         3.0.6
     dev-python/requests:
-        2.26.0
+        2.27.1
     dev-python/setuptools:
-        59.8.0
+        60.5.0
     dev-python/setuptools_scm:
         6.3.2
     dev-python/tomli:
         2.0.0
     dev-python/urllib3:
-        1.26.7
+        1.26.8
+    dev-python/wheel:
+        0.37.1
     dev-util/cmake:
-        3.21.4
+        3.22.2
     dev-util/gperf:
         3.1
     dev-util/gtk-doc-am:
@@ -483,9 +487,9 @@ local:
     sys-apps/findutils:
         4.8.0-r1
     sys-apps/gawk:
-        5.1.0
+        5.1.1-r1
     sys-apps/gentoo-functions:
-        0.14
+        0.15
     sys-apps/gentoo-systemd-integration:
         9
     sys-apps/grep:
@@ -525,7 +529,7 @@ local:
     sys-apps/texinfo:
         6.8
     sys-apps/util-linux:
-        2.37.3-r1
+        2.37.4
     sys-apps/which:
         2.21
     sys-auth/pambase:
@@ -543,7 +547,7 @@ local:
     sys-devel/automake-wrapper:
         11
     sys-devel/binutils:
-        2.37_p1
+        2.37_p1-r2
     sys-devel/binutils-config:
         5.4
     sys-devel/bison:
@@ -571,7 +575,7 @@ local:
     sys-fs/udev-init-scripts:
         34
     sys-kernel/installkernel-gentoo:
-        3
+        5
     sys-kernel/linux-headers:
         5.15-r3
     sys-libs/e2fsprogs-libs:
@@ -583,17 +587,17 @@ local:
     sys-libs/libcap:
         2.62
     sys-libs/libseccomp:
-        2.5.1-r1
+        2.5.3
     sys-libs/libxcrypt:
-        4.4.25-r1
+        4.4.27
     sys-libs/ncurses:
         6.2_p20210619
     sys-libs/pam:
         1.5.1_p20210622-r1
     sys-libs/readline:
-        8.1_p1-r1
+        8.1_p2
     sys-libs/timezone-data:
-        2021a-r1
+        2021e
     sys-libs/zlib:
         1.2.11-r4
     sys-process/procps:
@@ -707,8 +711,6 @@ local:
         0.29.26
     Jinja2:
         3.0.3
-    MarkupSafe:
-        2.0.1
     PySocks:
         1.7.1
     certifi-system-store:
@@ -717,6 +719,8 @@ local:
         16.2
     idna:
         3.3
+    installer:
+        0.4.0
     lxml:
         4.7.1
     meson:
@@ -729,11 +733,15 @@ local:
         3.0.30
     pyparsing:
         3.0.6
+    requests:
+        2.27.1
     setuptools:
-        59.8.0
+        60.5.0
     setuptools-scm:
         6.3.2
     tomli:
         2.0.0
+    urllib3:
+        1.26.8
     wheel:
         0.37.1

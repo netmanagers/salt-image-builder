@@ -24,7 +24,7 @@ Dependency Versions:
         pygit2: Not Installed
         Python: 3.10.2 (main, Jan 15 2022, 19:56:27) [GCC 11.1.0]
   python-gnupg: Not Installed
-        PyYAML: 5.4.1
+        PyYAML: 6.0
          PyZMQ: 22.3.0
          smmap: Not Installed
        timelib: Not Installed
@@ -118,15 +118,15 @@ local:
 local:
     ----------
     acl:
-        2.3.1-1
+        2.3.1-2
     archlinux-keyring:
-        20220125-1
+        20220224-1
     argon2:
         20190702-4
     attr:
-        2.5.1-1
+        2.5.1-2
     audit:
-        3.0.6-5
+        3.0.7-1
     base:
         2-2
     bash:
@@ -138,13 +138,13 @@ local:
     ca-certificates:
         20210603-1
     ca-certificates-mozilla:
-        3.74-1
+        3.75-1
     ca-certificates-utils:
         20210603-1
     coreutils:
         9.0-2
     cryptsetup:
-        2.4.3-1
+        2.4.3-2
     curl:
         7.81.0-2
     db:
@@ -152,33 +152,33 @@ local:
     dbus:
         1.12.20-1
     device-mapper:
-        2.03.14-2
+        2.03.15-1
     dnssec-anchors:
         20190629-3
     e2fsprogs:
-        1.46.5-1
+        1.46.5-3
     expat:
-        2.4.3-1
+        2.4.6-1
     file:
         5.41-1
     filesystem:
         2021.12.07-1
     findutils:
-        4.8.0-1
+        4.9.0-1
     gawk:
         5.1.1-1
     gcc-libs:
-        11.1.0-3
+        11.2.0-3
     gdbm:
-        1.22-1
+        1.23-1
     gettext:
         0.21-1
     git:
         2.35.1-1
     glib2:
-        2.70.3-1
+        2.70.4-1
     glibc:
-        2.33-5
+        2.35-2
     gmp:
         6.2.1-1
     gnupg:
@@ -186,15 +186,15 @@ local:
     gnutls:
         3.7.3-1
     gpgme:
-        1.16.0-3
+        1.17.0-2
     grep:
         3.7-1
     gzip:
         1.11-1
     hwdata:
-        0.355-1
+        0.356-1
     iana-etc:
-        20220110-1
+        20220205-1
     icu:
         70.1-1
     iproute2:
@@ -204,13 +204,13 @@ local:
     iputils:
         20211215-1
     json-c:
-        0.15-2
+        0.15-3
     kbd:
         2.4.0-2
     keyutils:
         1.6.3-1
     kmod:
-        29-1
+        29-2
     krb5:
         1.19.2-2
     ldns:
@@ -218,19 +218,19 @@ local:
     less:
         1:590-1
     libarchive:
-        3.5.2-2
+        3.6.0-1
     libassuan:
         2.5.5-1
     libcap:
-        2.63-1
+        2.63-2
     libcap-ng:
-        0.8.2-6
+        0.8.2-7
     libcroco:
         0.6.13-2
     libedit:
         20210910_3.1-1
     libelf:
-        0.186-3
+        0.186-5
     libffi:
         3.4.2-4
     libgcrypt:
@@ -252,15 +252,15 @@ local:
     libnftnl:
         1.2.1-1
     libnghttp2:
-        1.46.0-1
+        1.47.0-1
     libnl:
         3.5.0-3
     libnsl:
-        2.0.0-1
+        2.0.0-2
     libp11-kit:
         0.24.1-1
     libpcap:
-        1.10.1-1
+        1.10.1-2
     libpgm:
         5.3.128-1
     libpsl:
@@ -270,13 +270,13 @@ local:
     libseccomp:
         2.5.3-3
     libsecret:
-        0.20.4-1
+        0.20.5-1
     libsodium:
         1.0.18-2
     libssh2:
         1.10.0-1
     libsysprof-capture:
-        3.42.1-2
+        3.42.1-3
     libtasn1:
         4.18.0-1
     libtirpc:
@@ -284,21 +284,21 @@ local:
     libunistring:
         0.9.10-3
     libxcrypt:
-        4.4.27-1
+        4.4.28-2
     libxml2:
-        2.9.12-7
+        2.9.13-1
     libyaml:
         0.2.5-1
     licenses:
         20220125-1
     linux-api-headers:
-        5.12.3-1
+        5.16.8-1
     lz4:
         1:1.9.3-2
     mpfr:
-        4.1.0.p13-1
+        4.1.0.p13-2
     ncurses:
-        6.3-1
+        6.3-2
     net-tools:
         2.10-1
     nettle:
@@ -306,7 +306,7 @@ local:
     npth:
         1.6-3
     openssh:
-        8.8p1-1
+        8.9p1-1
     openssl:
         1.1.1.m-1
     p11-kit:
@@ -336,7 +336,7 @@ local:
     pinentry:
         1.2.0-1
     popt:
-        1.18-2
+        1.18-3
     procps-ng:
         3.3.17-1
     psmisc:
@@ -360,11 +360,11 @@ local:
     python-distlib:
         0.3.4-1
     python-distro:
-        1.6.0-4
+        1.7.0-1
     python-html5lib:
         1.1-11
     python-idna:
-        3.3-3
+        3.3-4
     python-importlib-metadata:
         4.8.1-3
     python-jinja:
@@ -384,7 +384,7 @@ local:
     python-pep517:
         0.12.0-4
     python-pip:
-        20.3.4-4
+        21.0-1
     python-ply:
         3.11-10
     python-progress:
@@ -398,17 +398,17 @@ local:
     python-pyopenssl:
         21.0.0-5
     python-pyparsing:
-        2.4.7-6
+        3.0.0-1
     python-pyzmq:
         22.3.0-1
     python-requests:
-        2.26.0-5
+        2.27.1-1
     python-resolvelib:
         0.5.5-4
     python-retrying:
         1.3.3-13
     python-setuptools:
-        1:59.1.1-1
+        1:59.3.0-1
     python-six:
         1.16.0-5
     python-systemd:
@@ -422,35 +422,37 @@ local:
     python-webencodings:
         0.5.1-9
     python-yaml:
-        5.4.1.1-4
+        6.0-1
     python-zipp:
         3.7.0-1
     readline:
-        8.1.001-1
+        8.1.002-1
     salt:
         3004-4
     sed:
         4.8-1
     shadow:
-        4.8.1-4
+        4.11.1-1
     sqlite:
-        3.37.2-1
+        3.38.0-1
     sudo:
-        1.9.8.p2-3
+        1.9.9-2
     systemd:
-        250.3-2
+        250.3-4
     systemd-libs:
-        250.3-2
+        250.3-4
     systemd-sysvcompat:
-        250.3-2
+        250.3-4
     tar:
         1.34-1
+    tpm2-tss:
+        3.2.0-1
     tzdata:
         2021e-1
     util-linux:
-        2.37.3-1
+        2.37.4-1
     util-linux-libs:
-        2.37.3-1
+        2.37.4-1
     xz:
         5.2.5-2
     zeromq:
@@ -471,7 +473,7 @@ local:
     MarkupSafe:
         2.0.1
     PyYAML:
-        5.4.1
+        6.0
     appdirs:
         1.4.4
     cffi:
@@ -487,7 +489,7 @@ local:
     distlib:
         0.3.4
     distro:
-        1.6.0
+        1.7.0
     html5lib:
         1.1
     idna:
@@ -505,7 +507,7 @@ local:
     pep517:
         0.12.0
     pip:
-        20.3.4
+        21.0
     ply:
         3.11
     progress:
@@ -519,11 +521,11 @@ local:
     pycryptodomex:
         3.10.1
     pyparsing:
-        2.4.7
+        3.0.0
     pyzmq:
         22.3.0
     requests:
-        2.26.0
+        2.27.1
     resolvelib:
         0.5.5
     retrying:
@@ -531,7 +533,7 @@ local:
     salt:
         3004
     setuptools:
-        59.1.1
+        59.3.0
     six:
         1.16.0
     systemd-python:

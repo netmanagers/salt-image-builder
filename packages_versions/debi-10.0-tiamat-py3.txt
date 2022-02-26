@@ -262,7 +262,7 @@ local:
     liberror-perl:
         0.17027-2
     libexpat1:
-        2.2.6-2+deb10u1
+        2.2.6-2+deb10u3
     libext2fs2:
         1.44.5-1+deb10u3
     libfdisk1:
@@ -362,9 +362,9 @@ local:
     librtmp1:
         2.4+20151223.gitfa8646d.1-2
     libsasl2-2:
-        2.1.27+dfsg-1+deb10u1
+        2.1.27+dfsg-1+deb10u2
     libsasl2-modules-db:
-        2.1.27+dfsg-1+deb10u1
+        2.1.27+dfsg-1+deb10u2
     libseccomp2:
         2.3.3-4
     libselinux1:

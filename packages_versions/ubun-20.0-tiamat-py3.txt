@@ -243,7 +243,7 @@ local:
     libcrypt1:
         1:4.4.10-10ubuntu4
     libcryptsetup12:
-        2:2.2.2-3ubuntu2.3
+        2:2.2.2-3ubuntu2.4
     libcurl3-gnutls:
         7.68.0-1ubuntu2.7
     libcurl4:
@@ -259,7 +259,7 @@ local:
     liberror-perl:
         0.17029-1
     libexpat1:
-        2.2.9-1build1
+        2.2.9-1ubuntu0.2
     libext2fs2:
         1.45.5-2ubuntu1
     libfdisk1:
@@ -371,9 +371,9 @@ local:
     librtmp1:
         2.4+20151223.gitfa8646d.1-2build1
     libsasl2-2:
-        2.1.27+dfsg-2
+        2.1.27+dfsg-2ubuntu0.1
     libsasl2-modules-db:
-        2.1.27+dfsg-2
+        2.1.27+dfsg-2ubuntu0.1
     libseccomp2:
         2.5.1-1ubuntu1~20.04.2
     libselinux1:

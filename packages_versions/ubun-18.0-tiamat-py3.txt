@@ -253,7 +253,7 @@ local:
     liberror-perl:
         0.17025-1
     libexpat1:
-        2.2.5-3ubuntu0.2
+        2.2.5-3ubuntu0.4
     libext2fs2:
         1.44.1-1ubuntu1.3
     libfdisk1:
@@ -363,9 +363,9 @@ local:
     librtmp1:
         2.4+20151223.gitfa8646d.1-1
     libsasl2-2:
-        2.1.27~101-g0780600+dfsg-3ubuntu2.3
+        2.1.27~101-g0780600+dfsg-3ubuntu2.4
     libsasl2-modules-db:
-        2.1.27~101-g0780600+dfsg-3ubuntu2.3
+        2.1.27~101-g0780600+dfsg-3ubuntu2.4
     libseccomp2:
         2.5.1-1ubuntu1~18.04.2
     libselinux1:
@@ -409,7 +409,7 @@ local:
     locales:
         2.27-3ubuntu1.4
     login:
-        1:4.5-1ubuntu2
+        1:4.5-1ubuntu2.2
     lsb-base:
         9.20170808ubuntu1
     lsb-release:
@@ -427,15 +427,15 @@ local:
     net-tools:
         1.60+git20161116.90da8a0-1ubuntu1
     openssh-client:
-        1:7.6p1-4ubuntu0.5
+        1:7.6p1-4ubuntu0.6
     openssh-server:
-        1:7.6p1-4ubuntu0.5
+        1:7.6p1-4ubuntu0.6
     openssh-sftp-server:
-        1:7.6p1-4ubuntu0.5
+        1:7.6p1-4ubuntu0.6
     openssl:
         1.1.1-1ubuntu2.1~18.04.14
     passwd:
-        1:4.5-1ubuntu2
+        1:4.5-1ubuntu2.2
     perl:
         5.26.1-6ubuntu0.5
     perl-base:

@@ -151,11 +151,11 @@ local:
     crypto-policies:
         20210617-1.gitc776d3e.el8
     cryptsetup-libs:
-        2.3.3-4.el8
+        2.3.3-4.el8_5.1
     curl:
         7.61.1-22.el8
     cyrus-sasl-lib:
-        2.1.27-5.el8
+        2.1.27-6.el8_5
     dbus:
         1:1.12.8-14.0.1.el8
     dbus-common:
@@ -187,7 +187,7 @@ local:
     dnf-data:
         4.7.0-4.0.1.el8
     dnf-plugins-core:
-        4.0.21-3.0.1.el8
+        4.0.21-4.0.1.el8_5
     elfutils-default-yama-scope:
         0.185-1.el8
     elfutils-libelf:
@@ -219,11 +219,11 @@ local:
     glib2:
         2.56.4-156.el8
     glibc:
-        2.28-164.0.1.el8
+        2.28-164.0.4.el8
     glibc-common:
-        2.28-164.0.1.el8
+        2.28-164.0.4.el8
     glibc-langpack-en:
-        2.28-164.0.1.el8
+        2.28-164.0.4.el8
     gmp:
         1:6.1.2-10.el8
     gnupg2:
@@ -311,7 +311,7 @@ local:
     libffi:
         3.1-22.el8
     libgcc:
-        8.5.0-4.0.1.el8_5
+        8.5.0-4.0.2.el8_5
     libgcrypt:
         1.8.5-6.el8
     libgpg-error:
@@ -341,7 +341,7 @@ local:
     librepo:
         1.14.0-2.el8
     libreport-filesystem:
-        2.9.5-15.0.2.el8
+        2.9.5-15.0.3.el8
     libseccomp:
         2.5.1-1.el8
     libselinux:
@@ -367,7 +367,7 @@ local:
     libssh-config:
         0.9.4-3.el8
     libstdc++:
-        8.5.0-4.0.1.el8_5
+        8.5.0-4.0.2.el8_5
     libtasn1:
         4.13-3.el8
     libtirpc:
@@ -429,7 +429,7 @@ local:
     oracle-epel-release-el8:
         1.0-3.el8
     oraclelinux-release:
-        8:8.5-1.0.7.el8
+        8:8.5-1.0.8.el8
     oraclelinux-release-el8:
         1.0-21.el8
     p11-kit:
@@ -557,7 +557,7 @@ local:
     python3-dnf:
         4.7.0-4.0.1.el8
     python3-dnf-plugins-core:
-        4.0.21-3.0.1.el8
+        4.0.21-4.0.1.el8_5
     python3-gpg:
         1.13.1-9.el8
     python3-hawkey:
@@ -573,7 +573,7 @@ local:
     python3-pip-wheel:
         9.0.3-20.el8
     python3-rpm:
-        4.14.3-19.el8
+        4.14.3-19.el8_5.2
     python3-rpm-generators:
         5-7.el8
     python3-rpm-macros:
@@ -591,15 +591,15 @@ local:
     readline:
         7.0-10.el8
     redhat-release:
-        2:8.5-0.8.0.1.el8
+        2:8.5-0.8.0.2.el8
     rootfiles:
         8.1-22.el8
     rpm:
-        4.14.3-19.el8
+        4.14.3-19.el8_5.2
     rpm-build-libs:
-        4.14.3-19.el8
+        4.14.3-19.el8_5.2
     rpm-libs:
-        4.14.3-19.el8
+        4.14.3-19.el8_5.2
     rsyslog:
         8.2102.0-5.el8
     salt:
@@ -633,7 +633,7 @@ local:
     util-linux:
         2.32.1-28.el8
     vim-minimal:
-        2:8.0.1763-16.0.1.el8
+        2:8.0.1763-16.0.1.el8_5.4
     which:
         2.21-16.el8
     xz-libs:
@@ -641,7 +641,7 @@ local:
     yum:
         4.7.0-4.0.1.el8
     yum-utils:
-        4.0.21-3.0.1.el8
+        4.0.21-4.0.1.el8_5
     zlib:
         1.2.11-17.el8
     zlib-devel:

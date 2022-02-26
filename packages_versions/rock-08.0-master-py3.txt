@@ -2,7 +2,7 @@ rock-08.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.ff12e4c
+          Salt: 3004+0na.e1a0881
  
 Dependency Versions:
           cffi: Not Installed
@@ -20,7 +20,7 @@ Dependency Versions:
   mysql-python: Not Installed
      pycparser: Not Installed
       pycrypto: Not Installed
-  pycryptodome: 3.14.0
+  pycryptodome: 3.14.1
         pygit2: Not Installed
         Python: 3.6.8 (default, Nov  9 2021, 14:44:26)
   python-gnupg: Not Installed
@@ -106,7 +106,7 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3004+0na.ff12e4c
+        3004+0na.e1a0881
     saltversioninfo:
         - 3004
     systemd:
@@ -151,11 +151,11 @@ local:
     crypto-policies:
         20210617-1.gitc776d3e.el8
     cryptsetup-libs:
-        2.3.3-4.el8
+        2.3.3-4.el8_5.1
     curl:
         7.61.1-22.el8
     cyrus-sasl-lib:
-        2.1.27-5.el8
+        2.1.27-6.el8_5
     dbus:
         1:1.12.8-14.el8
     dbus-common:
@@ -179,7 +179,7 @@ local:
     dnf-data:
         4.7.0-4.el8
     dnf-plugins-core:
-        4.0.21-3.el8
+        4.0.21-4.el8_5
     elfutils-default-yama-scope:
         0.185-1.el8
     elfutils-libelf:
@@ -189,7 +189,7 @@ local:
     emacs-filesystem:
         1:26.1-7.el8
     epel-release:
-        8-13.el8
+        8-14.el8
     expat:
         2.2.5-4.el8
     file-libs:
@@ -557,7 +557,7 @@ local:
     python3-dnf:
         4.7.0-4.el8
     python3-dnf-plugins-core:
-        4.0.21-3.el8
+        4.0.21-4.el8_5
     python3-gpg:
         1.13.1-9.el8
     python3-hawkey:
@@ -573,7 +573,7 @@ local:
     python3-pip-wheel:
         9.0.3-20.el8.rocky.0
     python3-rpm:
-        4.14.3-19.el8
+        4.14.3-19.el8_5.2
     python3-rpm-generators:
         5-7.el8
     python3-rpm-macros:
@@ -599,11 +599,11 @@ local:
     rootfiles:
         8.1-22.el8
     rpm:
-        4.14.3-19.el8
+        4.14.3-19.el8_5.2
     rpm-build-libs:
-        4.14.3-19.el8
+        4.14.3-19.el8_5.2
     rpm-libs:
-        4.14.3-19.el8
+        4.14.3-19.el8_5.2
     sed:
         4.5-2.el8
     setup:
@@ -633,7 +633,7 @@ local:
     util-linux:
         2.32.1-28.el8
     vim-minimal:
-        2:8.0.1763-16.el8
+        2:8.0.1763-16.el8_5.4
     which:
         2.21-16.el8
     xkeyboard-config:
@@ -643,7 +643,7 @@ local:
     yum:
         4.7.0-4.el8
     yum-utils:
-        4.0.21-3.el8
+        4.0.21-4.el8_5
     zlib:
         1.2.11-17.el8
     zlib-devel:
@@ -660,13 +660,13 @@ local:
     certifi:
         2021.10.8
     charset-normalizer:
-        2.0.11
+        2.0.12
     contextvars:
         2.4
     dbus-python:
         1.2.4
     distro:
-        1.6.0
+        1.7.0
     gpg:
         1.13.1
     idna:
@@ -682,7 +682,7 @@ local:
     psutil:
         5.9.0
     pycryptodomex:
-        3.14.0
+        3.14.1
     python-dateutil:
         2.6.1
     pyzmq:
@@ -692,13 +692,13 @@ local:
     rpm:
         4.14.3
     salt:
-        3004+0na.ff12e4c
+        3004+0na.e1a0881
     setuptools:
         39.2.0
     six:
         1.11.0
     typing-extensions:
-        4.0.1
+        4.1.1
     urllib3:
         1.26.8
     wheel:

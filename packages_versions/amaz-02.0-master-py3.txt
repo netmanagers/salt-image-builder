@@ -2,7 +2,7 @@ amaz-02.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.ff12e4c
+          Salt: 3004+0na.e1a0881
  
 Dependency Versions:
           cffi: Not Installed
@@ -20,7 +20,7 @@ Dependency Versions:
   mysql-python: Not Installed
      pycparser: Not Installed
       pycrypto: Not Installed
-  pycryptodome: 3.14.0
+  pycryptodome: 3.14.1
         pygit2: Not Installed
         Python: 3.7.10 (default, Jun  3 2021, 00:02:01)
   python-gnupg: Not Installed
@@ -105,7 +105,7 @@ local:
     saltpath:
         /usr/lib/python3.7/site-packages/salt
     saltversion:
-        3004+0na.ff12e4c
+        3004+0na.e1a0881
     saltversioninfo:
         - 3004
     systemd:
@@ -138,7 +138,7 @@ local:
     bzip2-libs:
         1.0.6-13.amzn2.0.3
     ca-certificates:
-        2021.2.50-72.amzn2.0.2
+        2021.2.50-72.amzn2.0.3
     chkconfig:
         1.7.4-1.amzn2.0.2
     coreutils:
@@ -232,7 +232,7 @@ local:
     info:
         5.1-5.amzn2
     kernel-headers:
-        4.14.256-197.484.amzn2
+        4.14.262-200.489.amzn2
     keyutils-libs:
         1.5.8-3.amzn2.0.2
     kmod:
@@ -364,11 +364,11 @@ local:
     openldap:
         2.4.44-23.amzn2.0.2
     openssh:
-        7.4p1-21.amzn2.0.3
+        7.4p1-22.amzn2.0.1
     openssh-clients:
-        7.4p1-21.amzn2.0.3
+        7.4p1-22.amzn2.0.1
     openssh-server:
-        7.4p1-21.amzn2.0.3
+        7.4p1-22.amzn2.0.1
     openssl-libs:
         1:1.0.2k-19.amzn2.0.10
     p11-kit:
@@ -524,15 +524,15 @@ local:
     tcp_wrappers-libs:
         7.6-77.amzn2.0.2
     tzdata:
-        2021a-1.amzn2
+        2021e-1.amzn2
     ustr:
         1.0.4-16.amzn2.0.3
     util-linux:
         2.30.2-2.amzn2.0.5
     vim-data:
-        2:8.2.4006-1.amzn2.0.1
+        2:8.2.4314-1.amzn2.0.1
     vim-minimal:
-        2:8.2.4006-1.amzn2.0.1
+        2:8.2.4314-1.amzn2.0.1
     which:
         2.20-7.amzn2.0.2
     xz-libs:

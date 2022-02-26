@@ -136,7 +136,7 @@ local:
     bzip2-libs:
         1.0.6-13.amzn2.0.3
     ca-certificates:
-        2021.2.50-72.amzn2.0.2
+        2021.2.50-72.amzn2.0.3
     chkconfig:
         1.7.4-1.amzn2.0.2
     coreutils:
@@ -342,11 +342,11 @@ local:
     openpgm:
         5.2.122-15.amzn2
     openssh:
-        7.4p1-21.amzn2.0.3
+        7.4p1-22.amzn2.0.1
     openssh-clients:
-        7.4p1-21.amzn2.0.3
+        7.4p1-22.amzn2.0.1
     openssh-server:
-        7.4p1-21.amzn2.0.3
+        7.4p1-22.amzn2.0.1
     openssl-libs:
         1:1.0.2k-19.amzn2.0.10
     p11-kit:

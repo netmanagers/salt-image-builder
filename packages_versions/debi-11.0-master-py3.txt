@@ -2,7 +2,7 @@ debi-11.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.ff12e4c
+          Salt: 3004+0na.e1a0881
  
 Dependency Versions:
           cffi: Not Installed
@@ -20,7 +20,7 @@ Dependency Versions:
   mysql-python: Not Installed
      pycparser: Not Installed
       pycrypto: Not Installed
-  pycryptodome: 3.14.0
+  pycryptodome: 3.14.1
         pygit2: Not Installed
         Python: 3.9.2 (default, Feb 28 2021, 17:03:44)
   python-gnupg: Not Installed
@@ -105,7 +105,7 @@ local:
     saltpath:
         /usr/local/lib/python3.9/dist-packages/salt
     saltversion:
-        3004+0na.ff12e4c
+        3004+0na.e1a0881
     saltversioninfo:
         - 3004
     systemd:
@@ -272,7 +272,7 @@ local:
     libcrypt1:
         1:4.4.18-4
     libcryptsetup12:
-        2:2.3.5-1
+        2:2.3.7-1+deb11u1
     libctf-nobfd0:
         2.35.2-2
     libctf0:
@@ -292,9 +292,9 @@ local:
     liberror-perl:
         0.17029-1
     libexpat1:
-        2.2.10-2
+        2.2.10-2+deb11u2
     libexpat1-dev:
-        2.2.10-2
+        2.2.10-2+deb11u2
     libext2fs2:
         1.46.2-2
     libffi7:
@@ -424,9 +424,9 @@ local:
     librtmp1:
         2.4+20151223.gitfa8646d.1-2+b2
     libsasl2-2:
-        2.1.27+dfsg-2.1
+        2.1.27+dfsg-2.1+deb11u1
     libsasl2-modules-db:
-        2.1.27+dfsg-2.1
+        2.1.27+dfsg-2.1+deb11u1
     libseccomp2:
         2.5.1-1+deb11u1
     libselinux1:

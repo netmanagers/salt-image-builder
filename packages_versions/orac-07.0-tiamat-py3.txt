@@ -133,7 +133,7 @@ local:
     bc:
         1.06.95-13.el7
     bind-export-libs:
-        32:9.11.4-26.P2.el7_9.8
+        32:9.11.4-26.P2.el7_9.9
     binutils:
         2.27-44.base.0.3.el7_9.1
     bzip2-libs:
@@ -155,7 +155,7 @@ local:
     curl:
         7.29.0-59.0.3.el7_9.1
     cyrus-sasl-lib:
-        2.1.26-23.0.1.el7
+        2.1.26-24.0.1.el7_9
     dbus:
         1:1.10.24-15.0.1.el7
     dbus-glib:
@@ -179,7 +179,7 @@ local:
     dmidecode:
         1:3.2-5.0.1.el7_9.1
     dracut:
-        033-572.0.3.el7
+        033-572.0.9.el7
     dwz:
         0.11-3.el7
     elfutils-default-yama-scope:
@@ -383,7 +383,7 @@ local:
     nss-util:
         3.67.0-1.el7_9
     openldap:
-        2.4.44-24.el7_9
+        2.4.44-25.el7_9
     openssh:
         7.4p1-22.0.1.el7_9
     openssh-clients:

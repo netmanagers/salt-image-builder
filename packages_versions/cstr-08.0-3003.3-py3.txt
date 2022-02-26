@@ -127,7 +127,7 @@ local:
     acl:
         2.2.53-1.el8
     audit-libs:
-        3.0-0.17.20191104git1c2f876.el8
+        3.0.7-1.el8
     basesystem:
         11-5.el8
     bash:
@@ -148,8 +148,6 @@ local:
         1.19.1-1.el8
     coreutils-single:
         8.30-12.el8
-    cpio:
-        2.12-11.el8
     cracklib:
         2.9.6-15.el8
     cracklib-dicts:
@@ -159,7 +157,7 @@ local:
     crypto-policies-scripts:
         20211116-1.gitae470d6.el8
     cryptsetup-libs:
-        2.3.3-4.el8
+        2.3.7-1.el8
     curl:
         7.61.1-22.el8
     cyrus-sasl-lib:
@@ -177,23 +175,17 @@ local:
     dbus-tools:
         1:1.12.8-18.el8
     device-mapper:
-        8:1.02.181-2.el8
+        8:1.02.181-3.el8
     device-mapper-libs:
-        8:1.02.181-2.el8
-    diffutils:
-        3.6-6.el8
+        8:1.02.181-3.el8
     dmidecode:
         1:3.3-1.el8
     dnf:
-        4.7.0-5.el8
+        4.7.0-7.el8
     dnf-data:
-        4.7.0-5.el8
+        4.7.0-7.el8
     dnf-plugins-core:
-        4.0.21-8.el8
-    dracut:
-        049-191.git20210920.el8
-    elfutils-debuginfod-client:
-        0.186-1.el8
+        4.0.21-10.el8
     elfutils-default-yama-scope:
         0.186-1.el8
     elfutils-libelf:
@@ -203,11 +195,9 @@ local:
     emacs-filesystem:
         1:26.1-7.el8
     epel-release:
-        8-13.el8
+        8-14.el8
     expat:
         2.2.5-4.el8
-    file:
-        5.33-20.el8
     file-libs:
         5.33-20.el8
     filesystem:
@@ -222,10 +212,6 @@ local:
         1:1.18-1.el8
     gdbm-libs:
         1:1.18-1.el8
-    gettext:
-        0.19.8.1-17.el8
-    gettext-libs:
-        0.19.8.1-17.el8
     git:
         2.31.1-2.el8
     git-core:
@@ -235,15 +221,13 @@ local:
     glib2:
         2.56.4-158.el8
     glibc:
-        2.28-184.el8
+        2.28-189.el8
     glibc-common:
-        2.28-184.el8
-    glibc-gconv-extra:
-        2.28-184.el8
+        2.28-189.el8
     glibc-langpack-en:
-        2.28-184.el8
+        2.28-189.el8
     glibc-minimal-langpack:
-        2.28-184.el8
+        2.28-189.el8
     gmp:
         1:6.1.2-10.el8
     gnupg2:
@@ -260,26 +244,14 @@ local:
         3.1-6.el8
     groff-base:
         1.22.3-18.el8
-    grub2-common:
-        1:2.02-106.el8
-    grub2-tools:
-        1:2.02-106.el8
-    grub2-tools-minimal:
-        1:2.02-106.el8
-    grubby:
-        8.40-42.el8
     gzip:
         1.9-12.el8
-    hardlink:
-        1:1.3-6.el8
     hwdata:
         0.314-8.11.el8
     ima-evm-utils:
         1.3.2-12.el8
     info:
-        6.5-6.el8
-    iptables-libs:
-        1.8.4-22.el8
+        6.5-7.el8_5
     json-c:
         0.13.1-3.el8
     json-glib:
@@ -298,8 +270,6 @@ local:
         25-19.el8
     kmod-libs:
         25-19.el8
-    kpartx:
-        0.8.4-20.el8
     krb5-devel:
         1.18.2-14.el8
     krb5-libs:
@@ -311,25 +281,23 @@ local:
     libacl:
         2.2.53-1.el8
     libarchive:
-        3.3.3-1.el8
+        3.3.3-3.el8_5
     libassuan:
         2.5.1-3.el8
     libattr:
         2.4.48-3.el8
     libblkid:
-        2.32.1-28.el8
+        2.32.1-32.el8
     libcap:
-        2.26-5.el8
+        2.48-2.el8
     libcap-ng:
         0.7.11-1.el8
     libcom_err:
-        1.45.6-2.el8
+        1.45.6-3.el8
     libcom_err-devel:
-        1.45.6-2.el8
+        1.45.6-3.el8
     libcomps:
         0.1.18-1.el8
-    libcroco:
-        0.6.12-4.el8_2.1
     libcurl:
         7.61.1-22.el8
     libdb:
@@ -337,47 +305,35 @@ local:
     libdb-utils:
         5.3.28-42.el8_4
     libdnf:
-        0.63.0-5.el8
+        0.63.0-7.el8
     libedit:
         3.1-23.20170329cvs.el8
-    libevent:
-        2.1.8-5.el8
     libfdisk:
-        2.32.1-28.el8
+        2.32.1-32.el8
     libffi:
         3.1-23.el8
     libgcc:
-        8.5.0-7.el8
+        8.5.0-10.el8
     libgcrypt:
         1.8.5-6.el8
-    libgomp:
-        8.5.0-7.el8
     libgpg-error:
         1.31-1.el8
-    libibverbs:
-        37.2-1.el8
     libidn2:
         2.2.0-1.el8
     libkadm5:
         1.18.2-14.el8
-    libkcapi:
-        1.2.0-2.el8
-    libkcapi-hmaccalc:
-        1.2.0-2.el8
     libksba:
         1.3.5-7.el8
     libmodulemd:
         2.13.0-1.el8
     libmount:
-        2.32.1-28.el8
+        2.32.1-32.el8
     libnghttp2:
         1.33.0-3.el8_2.1
     libnl3:
         3.5.0-1.el8
     libnsl2:
         1.2.0-2.20180605git4a062cf.el8
-    libpcap:
-        14:1.9.1-5.el8
     libpkgconf:
         1.4.2-1.el8
     libpsl:
@@ -405,7 +361,7 @@ local:
     libsigsegv:
         2.11-5.el8
     libsmartcols:
-        2.32.1-28.el8
+        2.32.1-32.el8
     libsodium:
         1.0.18-2.el8
     libsolv:
@@ -415,7 +371,7 @@ local:
     libssh-config:
         0.9.6-3.el8
     libstdc++:
-        8.5.0-7.el8
+        8.5.0-10.el8
     libtasn1:
         4.13-3.el8
     libtirpc:
@@ -431,15 +387,13 @@ local:
     libutempter:
         1.1.6-14.el8
     libuuid:
-        2.32.1-28.el8
+        2.32.1-32.el8
     libverto:
         0.3.0-5.el8
     libverto-devel:
         0.3.0-5.el8
     libxcrypt:
         4.1.1-6.el8
-    libxkbcommon:
-        0.9.1-1.el8
     libxml2:
         2.9.7-11.el8
     libyaml:
@@ -450,8 +404,6 @@ local:
         5.3.4-12.el8
     lz4-libs:
         1.8.3-3.el8_4
-    memstrack:
-        0.1.11-1.el8
     mpfr:
         3.1.6-1.el8
     ncurses:
@@ -482,16 +434,12 @@ local:
         1:1.1.1k-5.el8_5
     openssl-libs:
         1:1.1.1k-5.el8_5
-    openssl-pkcs11:
-        0.4.10-2.el8
-    os-prober:
-        1.74-9.el8
     p11-kit:
         0.23.22-1.el8
     p11-kit-trust:
         0.23.22-1.el8
     pam:
-        1.3.1-15.el8
+        1.3.1-16.el8
     passwd:
         0.80-3.el8
     pciutils:
@@ -596,8 +544,6 @@ local:
         1:2.21-2.el8
     perl-threads-shared:
         1.58-2.el8
-    pigz:
-        2.4-4.el8
     pkgconf:
         1.4.2-1.el8
     pkgconf-m4:
@@ -627,7 +573,7 @@ local:
     python3-chardet:
         3.0.4-7.el8
     python3-cloud-what:
-        1.28.24-1.el8
+        1.28.25-1.el8
     python3-contextvars:
         2.4-1.el8
     python3-dateutil:
@@ -641,17 +587,17 @@ local:
     python3-dmidecode:
         3.12.2-15.el8
     python3-dnf:
-        4.7.0-5.el8
+        4.7.0-7.el8
     python3-dnf-plugins-core:
-        4.0.21-8.el8
+        4.0.21-10.el8
     python3-ethtool:
-        0.14-3.el8
+        0.14-5.el8
     python3-gobject-base:
         3.28.3-2.el8
     python3-gpg:
         1.13.1-9.el8
     python3-hawkey:
-        0.63.0-5.el8
+        0.63.0-7.el8
     python3-idna:
         2.5-5.el8
     python3-immutables:
@@ -665,7 +611,7 @@ local:
     python3-libcomps:
         0.1.18-1.el8
     python3-libdnf:
-        0.63.0-5.el8
+        0.63.0-7.el8
     python3-librepo:
         1.14.2-1.el8
     python3-libs:
@@ -707,11 +653,9 @@ local:
     python3-six:
         1.11.0-8.el8
     python3-subscription-manager-rhsm:
-        1.28.24-1.el8
+        1.28.25-1.el8
     python3-syspurpose:
-        1.28.24-1.el8
-    python3-unbound:
-        1.7.3-17.el8
+        1.28.25-1.el8
     python3-urllib3:
         1.24.2-5.el8
     python3-zmq:
@@ -720,8 +664,6 @@ local:
         3.6.8-38.module_el8.5.0+895+a459eca8
     python36-devel:
         3.6.8-38.module_el8.5.0+895+a459eca8
-    rdma-core:
-        37.2-1.el8
     readline:
         7.0-10.el8
     rootfiles:
@@ -731,8 +673,6 @@ local:
     rpm-build-libs:
         4.14.3-21.el8
     rpm-libs:
-        4.14.3-21.el8
-    rpm-plugin-systemd-inhibit:
         4.14.3-21.el8
     salt:
         3003.3-1.el8
@@ -744,52 +684,44 @@ local:
         2.12.2-6.el8
     shadow-utils:
         2:4.6-16.el8
-    shared-mime-info:
-        1.9-3.el8
     sqlite-libs:
         3.26.0-15.el8
     subscription-manager-rhsm-certificates:
-        1.28.24-1.el8
+        1.28.25-1.el8
     sudo:
         1.8.29-8.el8
     swig:
         3.0.12-19.module_el8.3.0+386+5db24358
     systemd:
-        239-55.el8
+        239-58.el8
     systemd-libs:
-        239-55.el8
+        239-58.el8
     systemd-pam:
-        239-55.el8
+        239-58.el8
     systemd-udev:
-        239-55.el8
+        239-58.el8
     tar:
         2:1.30-5.el8
     tpm2-tss:
         2.3.2-4.el8
     tzdata:
         2021e-1.el8
-    unbound-libs:
-        1.7.3-17.el8
     usermode:
         1.113-2.el8
     util-linux:
-        2.32.1-28.el8
+        2.32.1-32.el8
     vim-minimal:
-        2:8.0.1763-16.el8_5.3
+        2:8.0.1763-16.el8_5.7
     virt-what:
         1.18-13.el8
     which:
         2.21-17.el8
-    xkeyboard-config:
-        2.28-1.el8
-    xz:
-        5.2.4-3.el8
     xz-libs:
         5.2.4-3.el8
     yum:
-        4.7.0-5.el8
+        4.7.0-7.el8
     yum-utils:
-        4.0.21-8.el8
+        4.0.21-10.el8
     zeromq:
         4.3.4-2.el8
     zlib:
@@ -864,6 +796,6 @@ local:
     six:
         1.11.0
     syspurpose:
-        1.28.24
+        1.28.25
     urllib3:
         1.24.2

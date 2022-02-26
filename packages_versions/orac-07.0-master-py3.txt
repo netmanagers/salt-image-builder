@@ -2,7 +2,7 @@ orac-07.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.ff12e4c
+          Salt: 3004+0na.e1a0881
  
 Dependency Versions:
           cffi: Not Installed
@@ -20,7 +20,7 @@ Dependency Versions:
   mysql-python: Not Installed
      pycparser: Not Installed
       pycrypto: Not Installed
-  pycryptodome: 3.14.0
+  pycryptodome: 3.14.1
         pygit2: Not Installed
         Python: 3.6.8 (default, Nov 18 2021, 10:07:16)
   python-gnupg: Not Installed
@@ -106,7 +106,7 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3004+0na.ff12e4c
+        3004+0na.e1a0881
     saltversioninfo:
         - 3004
     systemd:
@@ -135,7 +135,7 @@ local:
     bc:
         1.06.95-13.el7
     bind-export-libs:
-        32:9.11.4-26.P2.el7_9.8
+        32:9.11.4-26.P2.el7_9.9
     binutils:
         2.27-44.base.0.3.el7_9.1
     bzip2-libs:
@@ -159,7 +159,7 @@ local:
     curl:
         7.29.0-59.0.3.el7_9.1
     cyrus-sasl-lib:
-        2.1.26-23.0.1.el7
+        2.1.26-24.0.1.el7_9
     dbus:
         1:1.10.24-15.0.1.el7
     dbus-glib:
@@ -181,7 +181,7 @@ local:
     diffutils:
         3.3-5.el7
     dracut:
-        033-572.0.3.el7
+        033-572.0.9.el7
     dwz:
         0.11-3.el7
     elfutils-default-yama-scope:
@@ -255,7 +255,7 @@ local:
     kernel-container:
         3.10.0-0.0.0.2.el7
     kernel-headers:
-        3.10.0-1160.53.1.el7
+        3.10.0-1160.59.1.el7
     keyutils-libs:
         1.5.8-3.el7
     keyutils-libs-devel:
@@ -401,7 +401,7 @@ local:
     nss-util:
         3.67.0-1.el7_9
     openldap:
-        2.4.44-24.el7_9
+        2.4.44-25.el7_9
     openssh:
         7.4p1-22.0.1.el7_9
     openssh-clients:
@@ -658,11 +658,11 @@ local:
     certifi:
         2021.10.8
     charset-normalizer:
-        2.0.11
+        2.0.12
     contextvars:
         2.4
     distro:
-        1.6.0
+        1.7.0
     idna:
         3.3
     immutables:
@@ -674,17 +674,17 @@ local:
     psutil:
         5.9.0
     pycryptodomex:
-        3.14.0
+        3.14.1
     pyzmq:
         22.3.0
     requests:
         2.27.1
     salt:
-        3004+0na.ff12e4c
+        3004+0na.e1a0881
     setuptools:
         39.2.0
     typing-extensions:
-        4.0.1
+        4.1.1
     urllib3:
         1.26.8
     wheel:

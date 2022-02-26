@@ -2,7 +2,7 @@ debi-10.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.ff12e4c
+          Salt: 3004+0na.e1a0881
  
 Dependency Versions:
           cffi: Not Installed
@@ -20,7 +20,7 @@ Dependency Versions:
   mysql-python: Not Installed
      pycparser: Not Installed
       pycrypto: Not Installed
-  pycryptodome: 3.14.0
+  pycryptodome: 3.14.1
         pygit2: Not Installed
         Python: 3.7.3 (default, Jan 22 2021, 20:04:44)
   python-gnupg: Not Installed
@@ -129,7 +129,7 @@ local:
     saltpath:
         /usr/local/lib/python3.7/dist-packages/salt
     saltversion:
-        3004+0na.ff12e4c
+        3004+0na.e1a0881
     saltversioninfo:
         - 3004
     systemd:
@@ -316,9 +316,9 @@ local:
     liberror-perl:
         0.17027-2
     libexpat1:
-        2.2.6-2+deb10u1
+        2.2.6-2+deb10u3
     libexpat1-dev:
-        2.2.6-2+deb10u1
+        2.2.6-2+deb10u3
     libext2fs2:
         1.44.5-1+deb10u3
     libfdisk1:
@@ -444,9 +444,9 @@ local:
     librtmp1:
         2.4+20151223.gitfa8646d.1-2
     libsasl2-2:
-        2.1.27+dfsg-1+deb10u1
+        2.1.27+dfsg-1+deb10u2
     libsasl2-modules-db:
-        2.1.27+dfsg-1+deb10u1
+        2.1.27+dfsg-1+deb10u2
     libseccomp2:
         2.3.3-4
     libselinux1:
@@ -601,17 +601,17 @@ local:
     Jinja2:
         3.0.3
     MarkupSafe:
-        2.0.1
+        2.1.0
     PyYAML:
         6.0
     certifi:
         2021.10.8
     charset-normalizer:
-        2.0.11
+        2.0.12
     contextvars:
         2.4
     distro:
-        1.6.0
+        1.7.0
     idna:
         3.3
     immutables:
@@ -623,7 +623,7 @@ local:
     psutil:
         5.9.0
     pycryptodomex:
-        3.14.0
+        3.14.1
     python-apt:
         1.8.4.3
     pyzmq:
@@ -631,11 +631,11 @@ local:
     requests:
         2.27.1
     salt:
-        3004+0na.ff12e4c
+        3004+0na.e1a0881
     setuptools:
         40.8.0
     typing-extensions:
-        4.0.1
+        4.1.1
     urllib3:
         1.26.8
     wheel:

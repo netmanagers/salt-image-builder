@@ -413,9 +413,9 @@ local:
     libpgm-5.2-0:
         5.2.122~dfsg-3ubuntu1
     libpolkit-agent-1-0:
-        0.105-26ubuntu1.1
+        0.105-26ubuntu1.2
     libpolkit-gobject-1-0:
-        0.105-26ubuntu1.1
+        0.105-26ubuntu1.2
     libprocps8:
         2:3.3.16-1ubuntu2.3
     libproxy1v5:
@@ -537,7 +537,7 @@ local:
     pinentry-curses:
         1.1.0-3build1
     policykit-1:
-        0.105-26ubuntu1.1
+        0.105-26ubuntu1.2
     procps:
         2:3.3.16-1ubuntu2.3
     python-apt-common:
