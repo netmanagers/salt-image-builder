@@ -2,7 +2,7 @@ debi-09.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.e1a0881
+          Salt: 3004+0na.b7c4981
  
 Dependency Versions:
           cffi: Not Installed
@@ -128,7 +128,7 @@ local:
     saltpath:
         /usr/local/lib/python3.5/dist-packages/salt
     saltversion:
-        3004+0na.e1a0881
+        3004+0na.b7c4981
     saltversioninfo:
         - 3004
     systemd:
@@ -177,7 +177,7 @@ local:
     debconf:
         1.5.61
     debian-archive-keyring:
-        2017.5+deb9u1
+        2017.5+deb9u2
     debianutils:
         4.8.1.1
     dh-python:
@@ -293,9 +293,9 @@ local:
     liberror-perl:
         0.17024-1
     libexpat1:
-        2.2.0-2+deb9u4
+        2.2.0-2+deb9u5
     libexpat1-dev:
-        2.2.0-2+deb9u4
+        2.2.0-2+deb9u5
     libfdisk1:
         2.29.2-1+deb9u1
     libffi6:
@@ -413,9 +413,9 @@ local:
     librtmp1:
         2.4+20151223.gitfa8646d.1-1+b1
     libsasl2-2:
-        2.1.27~101-g0780600+dfsg-3+deb9u1
+        2.1.27~101-g0780600+dfsg-3+deb9u2
     libsasl2-modules-db:
-        2.1.27~101-g0780600+dfsg-3+deb9u1
+        2.1.27~101-g0780600+dfsg-3+deb9u2
     libseccomp2:
         2.3.1-2.1+deb9u1
     libselinux1:
@@ -435,9 +435,9 @@ local:
     libssh2-1:
         1.7.0-1+deb9u2
     libssl1.0.2:
-        1.0.2u-1~deb9u6
+        1.0.2u-1~deb9u7
     libssl1.1:
-        1.1.0l-1~deb9u4
+        1.1.0l-1~deb9u5
     libstdc++6:
         6.3.0-18+deb9u1
     libsystemd0:
@@ -463,7 +463,7 @@ local:
     libyaml-0-2:
         0.1.7-2
     linux-libc-dev:
-        4.9.290-1
+        4.9.303-1
     locales:
         2.24-11+deb9u4
     login:
@@ -493,7 +493,7 @@ local:
     openssh-sftp-server:
         1:7.4p1-10+deb9u7
     openssl:
-        1.1.0l-1~deb9u4
+        1.1.0l-1~deb9u5
     passwd:
         1:4.4-4.1+deb9u1
     pciutils:
@@ -598,10 +598,10 @@ local:
     requests:
         2.25.1
     salt:
-        3004+0na.e1a0881
+        3004+0na.b7c4981
     setuptools:
         33.1.1
     urllib3:
-        1.26.8
+        1.26.9
     wheel:
         0.37.1

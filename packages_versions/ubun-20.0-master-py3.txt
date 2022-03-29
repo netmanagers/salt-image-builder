@@ -2,7 +2,7 @@ ubun-20.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.e1a0881
+          Salt: 3004+0na.b7c4981
  
 Dependency Versions:
           cffi: Not Installed
@@ -11,7 +11,7 @@ Dependency Versions:
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
-        Jinja2: 3.0.3
+        Jinja2: 3.1.1
        libgit2: Not Installed
       M2Crypto: Not Installed
           Mako: Not Installed
@@ -22,7 +22,7 @@ Dependency Versions:
       pycrypto: Not Installed
   pycryptodome: 3.14.1
         pygit2: Not Installed
-        Python: 3.8.10 (default, Nov 26 2021, 20:14:08)
+        Python: 3.8.10 (default, Mar 15 2022, 12:22:08)
   python-gnupg: Not Installed
         PyYAML: 6.0
          PyZMQ: 22.3.0
@@ -106,7 +106,7 @@ local:
     saltpath:
         /usr/local/lib/python3.8/dist-packages/salt
     saltversion:
-        3004+0na.e1a0881
+        3004+0na.b7c4981
     saltversioninfo:
         - 3004
     systemd:
@@ -131,7 +131,7 @@ local:
     apt-transport-https:
         2.0.6
     base-files:
-        11ubuntu5.4
+        11ubuntu5.5
     base-passwd:
         3.5.47
     bash:
@@ -143,7 +143,7 @@ local:
     binutils-x86-64-linux-gnu:
         2.34-6ubuntu1.3
     bsdutils:
-        1:2.34-0.1ubuntu9.1
+        1:2.34-0.1ubuntu9.3
     bzip2:
         1.0.8-2
     ca-certificates:
@@ -153,7 +153,7 @@ local:
     cpp:
         4:9.3.0-1ubuntu2
     cpp-9:
-        9.3.0-17ubuntu1~20.04
+        9.4.0-1ubuntu1~20.04.1
     curl:
         7.68.0-1ubuntu2.7
     dash:
@@ -173,7 +173,7 @@ local:
     e2fsprogs:
         1.45.5-2ubuntu1
     fdisk:
-        2.34-0.1ubuntu9.1
+        2.34-0.1ubuntu9.3
     findutils:
         4.7.0-1ubuntu1
     gcc:
@@ -181,9 +181,9 @@ local:
     gcc-10-base:
         10.3.0-1ubuntu1~20.04
     gcc-9:
-        9.3.0-17ubuntu1~20.04
+        9.4.0-1ubuntu1~20.04.1
     gcc-9-base:
-        9.3.0-17ubuntu1~20.04
+        9.4.0-1ubuntu1~20.04.1
     git:
         1:2.25.1-1ubuntu3.2
     git-man:
@@ -225,7 +225,7 @@ local:
     libargon2-1:
         0~20171227-0.2
     libasan5:
-        9.3.0-17ubuntu1~20.04
+        9.4.0-1ubuntu1~20.04.1
     libasn1-8-heimdal:
         7.7.0+dfsg-1ubuntu1
     libassuan0:
@@ -241,7 +241,7 @@ local:
     libbinutils:
         2.34-6ubuntu1.3
     libblkid1:
-        2.34-0.1ubuntu9.1
+        2.34-0.1ubuntu9.3
     libbrotli1:
         1.0.7-6ubuntu0.1
     libbsd0:
@@ -249,13 +249,13 @@ local:
     libbz2-1.0:
         1.0.8-2
     libc-bin:
-        2.31-0ubuntu9.2
+        2.31-0ubuntu9.7
     libc-dev-bin:
-        2.31-0ubuntu9.2
+        2.31-0ubuntu9.7
     libc6:
-        2.31-0ubuntu9.2
+        2.31-0ubuntu9.7
     libc6-dev:
-        2.31-0ubuntu9.2
+        2.31-0ubuntu9.7
     libcap-ng0:
         0.7.9-2.1build1
     libcap2:
@@ -291,19 +291,19 @@ local:
     liberror-perl:
         0.17029-1
     libexpat1:
-        2.2.9-1ubuntu0.2
+        2.2.9-1ubuntu0.4
     libexpat1-dev:
-        2.2.9-1ubuntu0.2
+        2.2.9-1ubuntu0.4
     libext2fs2:
         1.45.5-2ubuntu1
     libfdisk1:
-        2.34-0.1ubuntu9.1
+        2.34-0.1ubuntu9.3
     libffi7:
         3.3-4
     libfido2-1:
         1.3.1-1ubuntu2
     libgcc-9-dev:
-        9.3.0-17ubuntu1~20.04
+        9.4.0-1ubuntu1~20.04.1
     libgcc-s1:
         10.3.0-1ubuntu1~20.04
     libgcrypt20:
@@ -369,7 +369,7 @@ local:
     liblzma5:
         5.2.4-1ubuntu1
     libmount1:
-        2.34-0.1ubuntu9.1
+        2.34-0.1ubuntu9.3
     libmpc3:
         1.1.0-1
     libmpdec2:
@@ -411,13 +411,13 @@ local:
     libpython3-stdlib:
         3.8.2-0ubuntu2
     libpython3.8:
-        3.8.10-0ubuntu1~20.04.2
+        3.8.10-0ubuntu1~20.04.4
     libpython3.8-dev:
-        3.8.10-0ubuntu1~20.04.2
+        3.8.10-0ubuntu1~20.04.4
     libpython3.8-minimal:
-        3.8.10-0ubuntu1~20.04.2
+        3.8.10-0ubuntu1~20.04.4
     libpython3.8-stdlib:
-        3.8.10-0ubuntu1~20.04.2
+        3.8.10-0ubuntu1~20.04.4
     libquadmath0:
         10.3.0-1ubuntu1~20.04
     libreadline8:
@@ -441,7 +441,7 @@ local:
     libsepol1:
         3.0-1
     libsmartcols1:
-        2.34-0.1ubuntu9.1
+        2.34-0.1ubuntu9.3
     libsqlite3-0:
         3.31.1-4ubuntu0.2
     libss2:
@@ -449,7 +449,7 @@ local:
     libssh-4:
         0.9.3-2ubuntu2.2
     libssl1.1:
-        1.1.1f-1ubuntu2.10
+        1.1.1f-1ubuntu2.12
     libstdc++6:
         10.3.0-1ubuntu1~20.04
     libsystemd0:
@@ -467,7 +467,7 @@ local:
     libunistring2:
         0.9.10-2
     libuuid1:
-        2.34-0.1ubuntu9.1
+        2.34-0.1ubuntu9.3
     libwind0-heimdal:
         7.7.0+dfsg-1ubuntu1
     libwrap0:
@@ -475,9 +475,9 @@ local:
     libzstd1:
         1.4.4+dfsg-3ubuntu0.1
     linux-libc-dev:
-        5.4.0-100.113
+        5.4.0-105.119
     locales:
-        2.31-0ubuntu9.2
+        2.31-0ubuntu9.7
     login:
         1:4.8.1-1ubuntu5.20.04.1
     logsave:
@@ -491,7 +491,7 @@ local:
     mime-support:
         3.64ubuntu1
     mount:
-        2.34-0.1ubuntu9.1
+        2.34-0.1ubuntu9.3
     ncurses-base:
         6.2-0ubuntu2
     ncurses-bin:
@@ -505,7 +505,7 @@ local:
     openssh-sftp-server:
         1:8.2p1-4ubuntu0.4
     openssl:
-        1.1.1f-1ubuntu2.10
+        1.1.1f-1ubuntu2.12
     passwd:
         1:4.8.1-1ubuntu5.20.04.1
     perl:
@@ -543,11 +543,11 @@ local:
     python3-wheel:
         0.34.2-1
     python3.8:
-        3.8.10-0ubuntu1~20.04.2
+        3.8.10-0ubuntu1~20.04.4
     python3.8-dev:
-        3.8.10-0ubuntu1~20.04.2
+        3.8.10-0ubuntu1~20.04.4
     python3.8-minimal:
-        3.8.10-0ubuntu1~20.04.2
+        3.8.10-0ubuntu1~20.04.4
     readline-common:
         8.0-4
     sed:
@@ -565,7 +565,7 @@ local:
     sysvinit-utils:
         2.96-2.1ubuntu1
     tar:
-        1.30+dfsg-7ubuntu0.20.04.1
+        1.30+dfsg-7ubuntu0.20.04.2
     ubuntu-keyring:
         2020.02.11.4
     ucf:
@@ -573,7 +573,7 @@ local:
     udev:
         245.4-4ubuntu3.15
     util-linux:
-        2.34-0.1ubuntu9.1
+        2.34-0.1ubuntu9.3
     wget:
         1.20.3-1ubuntu2
     zlib1g:
@@ -584,9 +584,9 @@ local:
 local:
     ----------
     Jinja2:
-        3.0.3
+        3.1.1
     MarkupSafe:
-        2.1.0
+        2.1.1
     PyYAML:
         6.0
     certifi:
@@ -600,7 +600,7 @@ local:
     idna:
         3.3
     immutables:
-        0.16
+        0.17
     msgpack:
         1.0.3
     pip:
@@ -616,10 +616,10 @@ local:
     requests:
         2.27.1
     salt:
-        3004+0na.e1a0881
+        3004+0na.b7c4981
     setuptools:
         45.2.0
     urllib3:
-        1.26.8
+        1.26.9
     wheel:
         0.34.2

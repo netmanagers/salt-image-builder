@@ -131,7 +131,7 @@ local:
     apt-transport-https:
         2.0.6
     base-files:
-        11ubuntu5.4
+        11ubuntu5.5
     base-passwd:
         3.5.47
     bash:
@@ -139,7 +139,7 @@ local:
     bsdmainutils:
         11.1.2ubuntu3
     bsdutils:
-        1:2.34-0.1ubuntu9.1
+        1:2.34-0.1ubuntu9.3
     bzip2:
         1.0.8-2
     ca-certificates:
@@ -175,7 +175,7 @@ local:
     e2fsprogs:
         1.45.5-2ubuntu1
     fdisk:
-        2.34-0.1ubuntu9.1
+        2.34-0.1ubuntu9.3
     findutils:
         4.7.0-1ubuntu1
     gcc-10-base:
@@ -247,7 +247,7 @@ local:
     libaudit1:
         1:2.8.5-2ubuntu6
     libblkid1:
-        2.34-0.1ubuntu9.1
+        2.34-0.1ubuntu9.3
     libbrotli1:
         1.0.7-6ubuntu0.1
     libbsd0:
@@ -255,9 +255,9 @@ local:
     libbz2-1.0:
         1.0.8-2
     libc-bin:
-        2.31-0ubuntu9.2
+        2.31-0ubuntu9.7
     libc6:
-        2.31-0ubuntu9.2
+        2.31-0ubuntu9.7
     libcap-ng0:
         0.7.9-2.1build1
     libcap2:
@@ -271,7 +271,7 @@ local:
     libcrypt1:
         1:4.4.10-10ubuntu4
     libcryptsetup12:
-        2:2.2.2-3ubuntu2.3
+        2:2.2.2-3ubuntu2.4
     libcurl3-gnutls:
         7.68.0-1ubuntu2.7
     libcurl4:
@@ -293,11 +293,11 @@ local:
     liberror-perl:
         0.17029-1
     libexpat1:
-        2.2.9-1build1
+        2.2.9-1ubuntu0.4
     libext2fs2:
         1.45.5-2ubuntu1
     libfdisk1:
-        2.34-0.1ubuntu9.1
+        2.34-0.1ubuntu9.3
     libffi7:
         3.3-4
     libfido2-1:
@@ -373,7 +373,7 @@ local:
     liblzma5:
         5.2.4-1ubuntu1
     libmount1:
-        2.34-0.1ubuntu9.1
+        2.34-0.1ubuntu9.3
     libmpdec2:
         2.4.2-3
     libncurses6:
@@ -413,9 +413,9 @@ local:
     libpgm-5.2-0:
         5.2.122~dfsg-3ubuntu1
     libpolkit-agent-1-0:
-        0.105-26ubuntu1.2
+        0.105-26ubuntu1.3
     libpolkit-gobject-1-0:
-        0.105-26ubuntu1.2
+        0.105-26ubuntu1.3
     libprocps8:
         2:3.3.16-1ubuntu2.3
     libproxy1v5:
@@ -435,9 +435,9 @@ local:
     librtmp1:
         2.4+20151223.gitfa8646d.1-2build1
     libsasl2-2:
-        2.1.27+dfsg-2
+        2.1.27+dfsg-2ubuntu0.1
     libsasl2-modules-db:
-        2.1.27+dfsg-2
+        2.1.27+dfsg-2ubuntu0.1
     libseccomp2:
         2.5.1-1ubuntu1~20.04.2
     libselinux1:
@@ -449,7 +449,7 @@ local:
     libsepol1:
         3.0-1
     libsmartcols1:
-        2.34-0.1ubuntu9.1
+        2.34-0.1ubuntu9.3
     libsodium23:
         1.0.18-1
     libsoup2.4-1:
@@ -461,7 +461,7 @@ local:
     libssh-4:
         0.9.3-2ubuntu2.2
     libssl1.1:
-        1.1.1f-1ubuntu2.10
+        1.1.1f-1ubuntu2.12
     libstdc++6:
         10.3.0-1ubuntu1~20.04
     libstemmer0d:
@@ -477,13 +477,13 @@ local:
     libunistring2:
         0.9.10-2
     libuuid1:
-        2.34-0.1ubuntu9.1
+        2.34-0.1ubuntu9.3
     libwind0-heimdal:
         7.7.0+dfsg-1ubuntu1
     libwrap0:
         7.6.q-30
     libxml2:
-        2.9.10+dfsg-5ubuntu0.20.04.1
+        2.9.10+dfsg-5ubuntu0.20.04.2
     libyaml-0-2:
         0.2.2-1
     libzmq5:
@@ -491,7 +491,7 @@ local:
     libzstd1:
         1.4.4+dfsg-3ubuntu0.1
     locales:
-        2.31-0ubuntu9.2
+        2.31-0ubuntu9.7
     login:
         1:4.8.1-1ubuntu5.20.04.1
     logsave:
@@ -505,7 +505,7 @@ local:
     mime-support:
         3.64ubuntu1
     mount:
-        2.34-0.1ubuntu9.1
+        2.34-0.1ubuntu9.3
     ncurses-base:
         6.2-0ubuntu2
     ncurses-bin:
@@ -519,7 +519,7 @@ local:
     openssh-sftp-server:
         1:8.2p1-4ubuntu0.4
     openssl:
-        1.1.1f-1ubuntu2.10
+        1.1.1f-1ubuntu2.12
     packagekit:
         1.1.13-2ubuntu1.1
     passwd:
@@ -537,17 +537,17 @@ local:
     pinentry-curses:
         1.1.0-3build1
     policykit-1:
-        0.105-26ubuntu1.2
+        0.105-26ubuntu1.3
     procps:
         2:3.3.16-1ubuntu2.3
     python-apt-common:
-        2.0.0ubuntu0.20.04.6
+        2.0.0ubuntu0.20.04.7
     python-pip-whl:
         20.0.2-5ubuntu1.6
     python3:
         3.8.2-0ubuntu2
     python3-apt:
-        2.0.0ubuntu0.20.04.6
+        2.0.0ubuntu0.20.04.7
     python3-certifi:
         2019.11.28-1
     python3-chardet:
@@ -631,9 +631,9 @@ local:
     sysvinit-utils:
         2.96-2.1ubuntu1
     tar:
-        1.30+dfsg-7ubuntu0.20.04.1
+        1.30+dfsg-7ubuntu0.20.04.2
     tzdata:
-        2021e-0ubuntu0.20.04
+        2022a-0ubuntu0.20.04
     ubuntu-keyring:
         2020.02.11.4
     ucf:
@@ -641,7 +641,7 @@ local:
     udev:
         245.4-4ubuntu3.15
     util-linux:
-        2.34-0.1ubuntu9.1
+        2.34-0.1ubuntu9.3
     wget:
         1.20.3-1ubuntu2
     zlib1g:
@@ -676,7 +676,7 @@ local:
     pycryptodomex:
         3.6.1
     python-apt:
-        2.0.0+ubuntu0.20.4.6
+        2.0.0+ubuntu0.20.4.7
     python-dateutil:
         2.7.3
     python-gnupg:

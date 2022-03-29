@@ -2,7 +2,7 @@ gent-sysd-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.e1a0881
+          Salt: 3004+0na.b7c4981
  
 Dependency Versions:
           cffi: Not Installed
@@ -11,7 +11,7 @@ Dependency Versions:
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
-        Jinja2: 3.0.3
+        Jinja2: 3.1.1
        libgit2: Not Installed
       M2Crypto: Not Installed
           Mako: Not Installed
@@ -104,7 +104,7 @@ local:
     saltpath:
         /usr/lib/python3.9/site-packages/salt
     saltversion:
-        3004+0na.e1a0881
+        3004+0na.b7c4981
     saltversioninfo:
         - 3004
     systemd:
@@ -215,13 +215,13 @@ local:
     app-admin/perl-cleaner:
         2.30
     app-admin/sudo:
-        1.9.8_p2
+        1.9.8_p2-r1
     app-arch/bzip2:
         1.0.8-r1
     app-arch/gzip:
         1.11
     app-arch/libarchive:
-        3.5.3
+        3.6.0
     app-arch/lz4:
         1.9.3-r1
     app-arch/tar:
@@ -233,7 +233,7 @@ local:
     app-arch/zstd:
         1.5.2
     app-crypt/gnupg:
-        2.2.33-r1
+        2.2.34-r1
     app-crypt/gpgme:
         1.16.0
     app-crypt/libb2:
@@ -241,7 +241,7 @@ local:
     app-crypt/pinentry:
         1.2.0
     app-crypt/rhash:
-        1.3.6-r1
+        1.4.2
     app-editors/nano:
         5.9
     app-eselect/eselect-iptables:
@@ -283,13 +283,13 @@ local:
     app-text/sgml-common:
         0.6.3-r7
     app-text/xmlto:
-        0.0.28-r6
+        0.0.28-r8
     dev-db/sqlite:
         3.37.2
     dev-lang/perl:
         5.34.0-r6
     dev-lang/python:
-        3.10.0_p1-r1,3.9.9-r1
+        3.10.2_p1,3.9.9-r1
     dev-lang/python-exec:
         2.4.8
     dev-lang/python-exec-conf:
@@ -297,7 +297,7 @@ local:
     dev-lang/tcl:
         8.6.12
     dev-libs/expat:
-        2.4.5
+        2.4.7
     dev-libs/gmp:
         6.2.1-r2
     dev-libs/jsoncpp:
@@ -315,9 +315,9 @@ local:
     dev-libs/libltdl:
         2.4.6
     dev-libs/libpcre:
-        8.45
+        8.45-r1
     dev-libs/libpcre2:
-        10.39
+        10.39-r1
     dev-libs/libpipeline:
         1.5.5
     dev-libs/libtasn1:
@@ -327,9 +327,9 @@ local:
     dev-libs/libuv:
         1.43.0
     dev-libs/libxml2:
-        2.9.12-r5
+        2.9.13-r1
     dev-libs/libxslt:
-        1.1.34-r2
+        1.1.35
     dev-libs/mpc:
         1.2.1
     dev-libs/mpfr:
@@ -339,7 +339,7 @@ local:
     dev-libs/npth:
         1.6-r1
     dev-libs/openssl:
-        1.1.1m
+        1.1.1n
     dev-libs/popt:
         1.18
     dev-perl/Authen-SASL:
@@ -380,40 +380,58 @@ local:
         1.730.0-r1
     dev-python/PySocks:
         1.7.1-r1
+    dev-python/appdirs:
+        1.4.4-r2
     dev-python/certifi:
         3021.3.16-r1
     dev-python/charset_normalizer:
-        2.0.11
+        2.0.12
     dev-python/cython:
-        0.29.26
+        0.29.28
+    dev-python/flit_core:
+        3.7.1
     dev-python/idna:
         3.3
+    dev-python/importlib_metadata:
+        4.11.2
     dev-python/installer:
-        0.4.0_p20220124
+        0.5.0
+    dev-python/jaraco-context:
+        4.1.1-r2
+    dev-python/jaraco-functools:
+        3.5.0-r2
+    dev-python/jaraco-text:
+        3.7.0-r2
     dev-python/jinja:
         3.0.3
     dev-python/lxml:
-        4.7.1
+        4.8.0-r1
     dev-python/markupsafe:
-        2.0.1
+        2.1.1
+    dev-python/more-itertools:
+        8.12.0-r1
+    dev-python/ordered-set:
+        4.1.0
     dev-python/packaging:
-        21.3-r1
+        21.3-r2
     dev-python/pip:
-        21.3.1-r1
+        22.0.3
     dev-python/pyparsing:
-        3.0.6
+        3.0.7-r1
     dev-python/requests:
         2.27.1
     dev-python/setuptools:
-        60.5.0
+        60.9.2
     dev-python/setuptools_scm:
-        6.3.2
+        6.4.1
     dev-python/tomli:
-        2.0.0
+        2.0.1
     dev-python/urllib3:
         1.26.8
     dev-python/wheel:
-        0.37.1
+        0.37.1-r1
+    dev-python/zipp:
+        3.7.0-r1
     dev-util/cmake:
         3.22.2
     dev-util/gperf:
@@ -431,7 +449,7 @@ local:
     dev-util/re2c:
         2.1.1-r1
     dev-vcs/git:
-        2.34.1
+        2.35.1
     mail-mta/nullmailer:
         2.2-r2
     net-dns/libidn2:
@@ -439,7 +457,7 @@ local:
     net-firewall/iptables:
         1.8.7
     net-libs/gnutls:
-        3.7.2
+        3.7.3-r1
     net-libs/libmnl:
         1.0.4
     net-libs/libnsl:
@@ -449,7 +467,7 @@ local:
     net-libs/nghttp2:
         1.45.1-r1
     net-misc/curl:
-        7.79.1
+        7.79.1-r1
     net-misc/iputils:
         20210722-r1
     net-misc/openssh:
@@ -519,7 +537,7 @@ local:
     sys-apps/portage:
         3.0.30-r1
     sys-apps/sandbox:
-        2.25
+        2.29
     sys-apps/sed:
         4.8
     sys-apps/shadow:
@@ -555,7 +573,7 @@ local:
     sys-devel/flex:
         2.6.4-r1
     sys-devel/gcc:
-        11.2.0
+        11.2.1_p20220115
     sys-devel/gcc-config:
         2.5-r1
     sys-devel/gettext:
@@ -583,9 +601,9 @@ local:
     sys-libs/gdbm:
         1.22
     sys-libs/glibc:
-        2.33-r7
+        2.34-r10
     sys-libs/libcap:
-        2.62
+        2.63
     sys-libs/libseccomp:
         2.5.3
     sys-libs/libxcrypt:
@@ -708,40 +726,54 @@ local:
 local:
     ----------
     Cython:
-        0.29.26
-    Jinja2:
-        3.0.3
+        0.29.28
     PySocks:
         1.7.1
+    appdirs:
+        1.4.4
     certifi-system-store:
         3021.3.16
+    flit_core:
+        3.7.1
     gemato:
         16.2
     idna:
         3.3
+    importlib_metadata:
+        4.11.2
     installer:
-        0.4.0
+        0.5.0
+    jaraco.context:
+        4.1.1
+    jaraco.functools:
+        3.5.0
+    jaraco.text:
+        3.7.0
     lxml:
-        4.7.1
+        4.8.0
     meson:
         0.60.3
+    more_itertools:
+        8.12.0
+    ordered-set:
+        4.1.0
     packaging:
         21.3
     pip:
-        21.3.1
+        22.0.3
     portage:
         3.0.30
     pyparsing:
-        3.0.6
+        3.0.7
     requests:
         2.27.1
     setuptools:
-        60.5.0
+        60.9.2
     setuptools-scm:
-        6.3.2
+        6.4.1
     tomli:
-        2.0.0
-    urllib3:
-        1.26.8
+        2.0.1
     wheel:
         0.37.1
+    zipp:
+        3.7.0

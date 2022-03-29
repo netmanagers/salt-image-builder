@@ -2,7 +2,7 @@ fedo-34.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.e1a0881
+          Salt: 3004+0na.b7c4981
  
 Dependency Versions:
           cffi: Not Installed
@@ -11,7 +11,7 @@ Dependency Versions:
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
-        Jinja2: 3.0.3
+        Jinja2: 3.1.1
        libgit2: Not Installed
       M2Crypto: Not Installed
           Mako: Not Installed
@@ -103,7 +103,7 @@ local:
     saltpath:
         /usr/lib/python3.9/site-packages/salt
     saltversion:
-        3004+0na.e1a0881
+        3004+0na.b7c4981
     saltversioninfo:
         - 3004
     systemd:
@@ -140,9 +140,9 @@ local:
     ca-certificates:
         2021.2.52-1.0.fc34
     coreutils:
-        8.32-30.fc34
+        8.32-31.fc34
     coreutils-common:
-        8.32-30.fc34
+        8.32-31.fc34
     cpio:
         2.13-10.fc34
     cpp:
@@ -158,7 +158,7 @@ local:
     curl:
         7.76.1-12.fc34
     cyrus-sasl-lib:
-        2.1.27-8.fc34
+        2.1.27-9.fc34
     dbus:
         1:1.12.20-3.fc34
     dbus-broker:
@@ -188,7 +188,7 @@ local:
     elfutils-libs:
         0.186-1.fc34
     expat:
-        2.4.4-1.fc34
+        2.4.6-1.fc34
     fedora-gpg-keys:
         34-2
     fedora-release-common:
@@ -239,6 +239,8 @@ local:
         2.33-21.fc34
     glibc-devel:
         2.33-21.fc34
+    glibc-doc:
+        2.33-21.fc34
     glibc-headers-x86:
         2.33-21.fc34
     glibc-langpack-en:
@@ -250,7 +252,7 @@ local:
     gnupg2:
         2.2.27-4.fc34
     gnutls:
-        3.7.2-1.fc34
+        3.7.2-2.fc34
     gpg-pubkey.(none):
         45719a39-5f2c0192
     gpgme:
@@ -384,7 +386,7 @@ local:
     librepo:
         1.14.2-1.fc34
     libreport-filesystem:
-        2.15.2-2.fc34
+        2.15.2-4.fc34
     libseccomp:
         2.5.3-1.fc34
     libselinux:
@@ -429,14 +431,12 @@ local:
         0.3.2-1.fc34
     libxcrypt:
         4.4.28-1.fc34
-    libxcrypt-compat:
-        4.4.28-1.fc34
     libxcrypt-devel:
         4.4.28-1.fc34
     libxkbcommon:
         1.3.0-1.fc34
     libxml2:
-        2.9.12-4.fc34
+        2.9.13-1.fc34
     libyaml:
         0.2.5-5.fc34
     libzstd:
@@ -449,8 +449,6 @@ local:
         1:4.3-5.fc34
     memstrack:
         0.2.2-1.fc34
-    mkpasswd:
-        5.5.10-1.fc34
     mpfr:
         4.1.0-7.fc34
     ncurses:
@@ -605,8 +603,6 @@ local:
         21.0.1-4.fc34
     python-setuptools-wheel:
         53.0.0-3.fc34
-    python-unversioned-command:
-        3.9.10-1.fc34
     python3:
         3.9.10-1.fc34
     python3-devel:
@@ -671,18 +667,20 @@ local:
         2:1.34-1.fc34
     tpm2-tss:
         3.1.0-1.fc34
+    trousers:
+        0.3.15-2.fc34
+    trousers-lib:
+        0.3.15-2.fc34
     tzdata:
         2021e-1.fc34
     util-linux:
         2.36.2-1.fc34
     vim-data:
-        2:8.2.4460-1.fc34
+        2:8.2.4485-1.fc34
     vim-minimal:
-        2:8.2.4460-1.fc34
+        2:8.2.4485-1.fc34
     which:
         2.21-26.fc34
-    whois-nls:
-        5.5.10-1.fc34
     xkeyboard-config:
         2.33-1.fc34
     xz:
@@ -692,7 +690,7 @@ local:
     yum:
         4.9.0-1.fc34
     zchunk-libs:
-        1.1.15-1.fc34
+        1.2.1-1.fc34
     zlib:
         1.2.11-26.fc34
 # salt-call --local pip.list

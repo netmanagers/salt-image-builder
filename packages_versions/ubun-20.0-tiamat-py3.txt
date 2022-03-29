@@ -129,7 +129,7 @@ local:
     apt-transport-https:
         2.0.6
     base-files:
-        11ubuntu5.4
+        11ubuntu5.5
     base-passwd:
         3.5.47
     bash:
@@ -137,7 +137,7 @@ local:
     bsdmainutils:
         11.1.2ubuntu3
     bsdutils:
-        1:2.34-0.1ubuntu9.1
+        1:2.34-0.1ubuntu9.3
     bzip2:
         1.0.8-2
     ca-certificates:
@@ -165,7 +165,7 @@ local:
     e2fsprogs:
         1.45.5-2ubuntu1
     fdisk:
-        2.34-0.1ubuntu9.1
+        2.34-0.1ubuntu9.3
     findutils:
         4.7.0-1ubuntu1
     gcc-10-base:
@@ -221,7 +221,7 @@ local:
     libaudit1:
         1:2.8.5-2ubuntu6
     libblkid1:
-        2.34-0.1ubuntu9.1
+        2.34-0.1ubuntu9.3
     libbrotli1:
         1.0.7-6ubuntu0.1
     libbsd0:
@@ -229,9 +229,9 @@ local:
     libbz2-1.0:
         1.0.8-2
     libc-bin:
-        2.31-0ubuntu9.2
+        2.31-0ubuntu9.7
     libc6:
-        2.31-0ubuntu9.2
+        2.31-0ubuntu9.7
     libcap-ng0:
         0.7.9-2.1build1
     libcap2:
@@ -259,11 +259,11 @@ local:
     liberror-perl:
         0.17029-1
     libexpat1:
-        2.2.9-1ubuntu0.2
+        2.2.9-1ubuntu0.4
     libext2fs2:
         1.45.5-2ubuntu1
     libfdisk1:
-        2.34-0.1ubuntu9.1
+        2.34-0.1ubuntu9.3
     libffi7:
         3.3-4
     libfido2-1:
@@ -325,7 +325,7 @@ local:
     liblzma5:
         5.2.4-1ubuntu1
     libmount1:
-        2.34-0.1ubuntu9.1
+        2.34-0.1ubuntu9.3
     libmpdec2:
         2.4.2-3
     libncurses6:
@@ -361,9 +361,9 @@ local:
     libpython3-stdlib:
         3.8.2-0ubuntu2
     libpython3.8-minimal:
-        3.8.10-0ubuntu1~20.04.2
+        3.8.10-0ubuntu1~20.04.4
     libpython3.8-stdlib:
-        3.8.10-0ubuntu1~20.04.2
+        3.8.10-0ubuntu1~20.04.4
     libreadline8:
         8.0-4
     libroken18-heimdal:
@@ -385,7 +385,7 @@ local:
     libsepol1:
         3.0-1
     libsmartcols1:
-        2.34-0.1ubuntu9.1
+        2.34-0.1ubuntu9.3
     libsqlite3-0:
         3.31.1-4ubuntu0.2
     libss2:
@@ -393,7 +393,7 @@ local:
     libssh-4:
         0.9.3-2ubuntu2.2
     libssl1.1:
-        1.1.1f-1ubuntu2.10
+        1.1.1f-1ubuntu2.12
     libstdc++6:
         10.3.0-1ubuntu1~20.04
     libsystemd0:
@@ -407,7 +407,7 @@ local:
     libunistring2:
         0.9.10-2
     libuuid1:
-        2.34-0.1ubuntu9.1
+        2.34-0.1ubuntu9.3
     libwind0-heimdal:
         7.7.0+dfsg-1ubuntu1
     libwrap0:
@@ -415,7 +415,7 @@ local:
     libzstd1:
         1.4.4+dfsg-3ubuntu0.1
     locales:
-        2.31-0ubuntu9.2
+        2.31-0ubuntu9.7
     login:
         1:4.8.1-1ubuntu5.20.04.1
     logsave:
@@ -429,7 +429,7 @@ local:
     mime-support:
         3.64ubuntu1
     mount:
-        2.34-0.1ubuntu9.1
+        2.34-0.1ubuntu9.3
     ncurses-base:
         6.2-0ubuntu2
     ncurses-bin:
@@ -443,7 +443,7 @@ local:
     openssh-sftp-server:
         1:8.2p1-4ubuntu0.4
     openssl:
-        1.1.1f-1ubuntu2.10
+        1.1.1f-1ubuntu2.12
     passwd:
         1:4.8.1-1ubuntu5.20.04.1
     perl:
@@ -475,9 +475,9 @@ local:
     python3-wheel:
         0.34.2-1
     python3.8:
-        3.8.10-0ubuntu1~20.04.2
+        3.8.10-0ubuntu1~20.04.4
     python3.8-minimal:
-        3.8.10-0ubuntu1~20.04.2
+        3.8.10-0ubuntu1~20.04.4
     readline-common:
         8.0-4
     salt-common:
@@ -499,7 +499,7 @@ local:
     sysvinit-utils:
         2.96-2.1ubuntu1
     tar:
-        1.30+dfsg-7ubuntu0.20.04.1
+        1.30+dfsg-7ubuntu0.20.04.2
     ubuntu-keyring:
         2020.02.11.4
     ucf:
@@ -507,7 +507,7 @@ local:
     udev:
         245.4-4ubuntu3.15
     util-linux:
-        2.34-0.1ubuntu9.1
+        2.34-0.1ubuntu9.3
     wget:
         1.20.3-1ubuntu2
     zlib1g:

@@ -191,7 +191,7 @@ local:
     epel-release:
         7-14
     expat:
-        2.1.0-12.el7
+        2.1.0-14.0.1.el7_9
     file-libs:
         5.11-37.el7
     filesystem:
@@ -399,9 +399,9 @@ local:
     openssh-server:
         7.4p1-22.0.1.el7_9
     openssl-devel:
-        1:1.0.2k-24.el7_9
+        1:1.0.2k-25.el7_9
     openssl-libs:
-        1:1.0.2k-24.el7_9
+        1:1.0.2k-25.el7_9
     oracle-logos:
         70.7.0-1.0.7.el7
     oraclelinux-release:
@@ -539,7 +539,7 @@ local:
     python3-libs:
         3.6.8-18.0.5.el7
     python3-pip:
-        9.0.3-8.el7
+        9.0.3-8.0.1.el7
     python3-rpm-generators:
         6-2.el7
     python3-rpm-macros:
@@ -647,7 +647,7 @@ local:
     tcp_wrappers-libs:
         7.6-77.el7
     tzdata:
-        2021e-1.el7
+        2022a-1.el7
     usermode:
         1.111-6.el7
     ustr:

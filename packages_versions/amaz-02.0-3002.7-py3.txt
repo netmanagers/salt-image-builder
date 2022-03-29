@@ -153,7 +153,7 @@ local:
     curl:
         7.79.1-1.amzn2.0.1
     cyrus-sasl-lib:
-        2.1.26-23.amzn2
+        2.1.26-24.amzn2
     dbus:
         1:1.10.24-7.amzn2
     dbus-libs:
@@ -173,7 +173,7 @@ local:
     emacs-filesystem:
         1:27.2-4.amzn2.0.1
     expat:
-        2.1.0-12.amzn2
+        2.1.0-12.amzn2.0.3
     file-libs:
         5.11-36.amzn2.0.1
     filesystem:
@@ -349,7 +349,7 @@ local:
     openssh-server:
         7.4p1-22.amzn2.0.1
     openssl-libs:
-        1:1.0.2k-19.amzn2.0.10
+        1:1.0.2k-24.amzn2.0.2
     p11-kit:
         0.23.22-1.amzn2.0.1
     p11-kit-trust:
@@ -541,15 +541,15 @@ local:
     tcp_wrappers-libs:
         7.6-77.amzn2.0.2
     tzdata:
-        2021a-1.amzn2
+        2021e-1.amzn2
     ustr:
         1.0.4-16.amzn2.0.3
     util-linux:
         2.30.2-2.amzn2.0.5
     vim-data:
-        2:8.2.4006-1.amzn2.0.1
+        2:8.2.4314-1.amzn2.0.1
     vim-minimal:
-        2:8.2.4006-1.amzn2.0.1
+        2:8.2.4314-1.amzn2.0.1
     which:
         2.20-7.amzn2.0.2
     xz-libs:

@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.66.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.65.0...v1.66.0) (2022-03-29)
+
+
+### Features
+
+* **fedora-35:** add `gcc-c++` package for `git` builds 3004+ [skip ci] ([e2e19db](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/e2e19dbd57879635fb94f18a33085df6b585a05b))
+
 # [1.65.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.64.0...v1.65.0) (2022-02-26)
 
 

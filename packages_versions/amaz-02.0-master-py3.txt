@@ -2,7 +2,7 @@ amaz-02.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.e1a0881
+          Salt: 3004+0na.b7c4981
  
 Dependency Versions:
           cffi: Not Installed
@@ -11,7 +11,7 @@ Dependency Versions:
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
-        Jinja2: 3.0.3
+        Jinja2: 3.1.1
        libgit2: Not Installed
       M2Crypto: Not Installed
           Mako: Not Installed
@@ -105,7 +105,7 @@ local:
     saltpath:
         /usr/lib/python3.7/site-packages/salt
     saltversion:
-        3004+0na.e1a0881
+        3004+0na.b7c4981
     saltversioninfo:
         - 3004
     systemd:
@@ -134,7 +134,7 @@ local:
     bash:
         4.2.46-34.amzn2
     binutils:
-        2.29.1-30.amzn2
+        2.29.1-31.amzn2
     bzip2-libs:
         1.0.6-13.amzn2.0.3
     ca-certificates:
@@ -156,7 +156,7 @@ local:
     curl:
         7.79.1-1.amzn2.0.1
     cyrus-sasl-lib:
-        2.1.26-23.amzn2
+        2.1.26-24.amzn2
     dbus:
         1:1.10.24-7.amzn2
     dbus-libs:
@@ -178,7 +178,7 @@ local:
     emacs-filesystem:
         1:27.2-4.amzn2.0.1
     expat:
-        2.1.0-12.amzn2
+        2.1.0-12.amzn2.0.3
     file-libs:
         5.11-36.amzn2.0.1
     filesystem:
@@ -232,7 +232,7 @@ local:
     info:
         5.1-5.amzn2
     kernel-headers:
-        4.14.262-200.489.amzn2
+        4.14.268-205.500.amzn2
     keyutils-libs:
         1.5.8-3.amzn2.0.2
     kmod:
@@ -370,7 +370,7 @@ local:
     openssh-server:
         7.4p1-22.amzn2.0.1
     openssl-libs:
-        1:1.0.2k-19.amzn2.0.10
+        1:1.0.2k-24.amzn2.0.2
     p11-kit:
         0.23.22-1.amzn2.0.1
     p11-kit-trust:

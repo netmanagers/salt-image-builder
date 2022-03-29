@@ -175,7 +175,7 @@ local:
     debconf:
         1.5.61
     debian-archive-keyring:
-        2017.5+deb9u1
+        2017.5+deb9u2
     debianutils:
         4.8.1.1
     dh-python:
@@ -275,7 +275,7 @@ local:
     liberror-perl:
         0.17024-1
     libexpat1:
-        2.2.0-2+deb9u3
+        2.2.0-2+deb9u5
     libfdisk1:
         2.29.2-1+deb9u1
     libffi6:
@@ -371,9 +371,9 @@ local:
     librtmp1:
         2.4+20151223.gitfa8646d.1-1+b1
     libsasl2-2:
-        2.1.27~101-g0780600+dfsg-3+deb9u1
+        2.1.27~101-g0780600+dfsg-3+deb9u2
     libsasl2-modules-db:
-        2.1.27~101-g0780600+dfsg-3+deb9u1
+        2.1.27~101-g0780600+dfsg-3+deb9u2
     libseccomp2:
         2.3.1-2.1+deb9u1
     libselinux1:
@@ -395,9 +395,9 @@ local:
     libssh2-1:
         1.7.0-1+deb9u2
     libssl1.0.2:
-        1.0.2u-1~deb9u6
+        1.0.2u-1~deb9u7
     libssl1.1:
-        1.1.0l-1~deb9u4
+        1.1.0l-1~deb9u5
     libstdc++6:
         6.3.0-18+deb9u1
     libsystemd0:
@@ -449,7 +449,7 @@ local:
     openssh-sftp-server:
         1:7.4p1-10+deb9u7
     openssl:
-        1.1.0l-1~deb9u4
+        1.1.0l-1~deb9u5
     passwd:
         1:4.4-4.1+deb9u1
     pciutils:
