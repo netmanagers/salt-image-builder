@@ -27,14 +27,6 @@ RUN pacman --noconfirm -Sy archlinux-keyring \
  && curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
     sed -e '/^\s\+echowarn "You have 10 seconds to cancel and stop the bootstrap process..."/,+2d' | \
     sh -s -- ${SALT_REPO_URL} -XUdfPD -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION \
-    # Fix `pyzmq` requirements (only required for `3004`, remove once `3004.1` is available), see:
-    # https://github.com/saltstack/salt/commit/070597e525bb7d56ffadede1aede325dfb1b73a4
-    # https://github.com/saltstack/salt/pull/61163
-    # https://bugs.archlinux.org/task/73095 -- for this new incarnation of the `pyzmq` requirements bug
- && if [ "${SALT_INSTALL_METHOD}" = "stable" ] && [ "${SALT_VERSION}" = "latest" ]; then \
-      sed -i -e '/pyzmq<=20.0.0/d' /usr/lib/python3.10/site-packages/salt-3004-py3.10.egg-info/requires.txt; \
-      sed -i -e '/\(pyzmq>\)=17.0.0/s//\119.0.2/' /usr/lib/python3.10/site-packages/salt-3004-py3.10.egg-info/requires.txt; \
-    fi \
  && systemctl enable sshd \
  && systemctl disable salt-minion.service > /dev/null 2>&1 \
     # Similar to Fedora, enable the `ssh-rsa` keypair type since Kitchen

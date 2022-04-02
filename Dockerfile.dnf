@@ -38,14 +38,6 @@ RUN dnf -y update && dnf -y install ${PKGS} --setopt=install_weak_deps=False && 
       dnf -y install crypto-policies-scripts; \
       update-crypto-policies --set LEGACY; \
     fi \
-    # For `3004` on Fedora 35, use the upstream patch to avoid the following error:
-    #   AttributeError: 'PathDistribution' object has no attribute '_normalized_name'
- && if [ "${DISTRO_VERSION}" = "35" ] && [ "${SALT_VERSION}" = "3004" ]; then \
-      # The first `find` command is to log where the actual file is located
-      find /usr/ -type f -name _compat.py | grep 'salt/_compat.py'; \
-      curl -o "$(find /usr/ -type f -name _compat.py | grep 'salt/_compat.py')" \
-        https://raw.githubusercontent.com/saltstack/salt/a273fffc857145198f25ba269f7e2493112e55fc/salt/_compat.py; \
-    fi \
     # Remove unnecessary getty and udev targets that result in high CPU usage when using
     # multiple containers with Molecule or Kitchen (https://github.com/ansible/molecule/issues/1104)
  && rm -rf /var/cache/{salt,pacman} \
