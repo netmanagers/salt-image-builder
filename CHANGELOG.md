@@ -1,5 +1,19 @@
 # Changelog
 
+# [1.67.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.66.0...v1.67.0) (2022-04-03)
+
+
+### Features
+
+* **dockerfile.*:** remove all temporary Jinja2 downgrades ([6b7d9a5](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/6b7d9a59009db0d14d2f42cce8a7c6311fc328d9))
+* **gitlab-ci:** build CVE `3004.1`, `3003.4` & `3002.8` images ([bd8b022](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/bd8b0221d7a720b6300a1700558f41c6caa7a66f))
+* **leading edge distros:** build `master` & `latest` only [skip ci] ([776c294](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/776c294c3e01935e743853755c143d357c367028))
+
+
+### Tests
+
+* **jinja:** add state files for testing known Jinja issues ([e83078c](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/e83078cabe5c9d7b3859c90c2735b6d54932664f))
+
 # [1.66.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.65.0...v1.66.0) (2022-03-29)
 
 

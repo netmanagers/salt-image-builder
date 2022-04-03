@@ -1,35 +1,35 @@
-debi-09.0-master-py3
-Salt install method: git
+debi-09.0-3003.4-py3
+Salt install method: stable
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.b7c4981
+          Salt: 3003.4
  
 Dependency Versions:
           cffi: Not Installed
       cherrypy: Not Installed
-      dateutil: Not Installed
+      dateutil: 2.5.3
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
-        Jinja2: 2.11.3
+        Jinja2: 2.9.4
        libgit2: Not Installed
       M2Crypto: Not Installed
           Mako: Not Installed
-       msgpack: 1.0.3
+       msgpack: 0.6.2
   msgpack-pure: Not Installed
   mysql-python: Not Installed
      pycparser: Not Installed
       pycrypto: Not Installed
-  pycryptodome: 3.14.1
+  pycryptodome: 3.6.1
         pygit2: Not Installed
         Python: 3.5.3 (default, Nov  4 2021, 15:29:10)
   python-gnupg: Not Installed
-        PyYAML: 5.3.1
-         PyZMQ: 20.0.0
+        PyYAML: 3.12
+         PyZMQ: 17.1.2
          smmap: Not Installed
        timelib: Not Installed
        Tornado: 4.5.3
-           ZMQ: 4.3.3
+           ZMQ: 4.2.1
  
 System Versions:
           dist: debian 9 stretch
@@ -59,7 +59,7 @@ local:
         detectedencoding:
             ANSI_X3.4-1968
         timezone:
-            unknown
+            UTC
     lsb_distrib_codename:
         stretch
     lsb_distrib_id:
@@ -112,7 +112,7 @@ local:
         - /usr/share/python-wheels/webencodings-0.5-py2.py3-none-any.whl
         - /usr/share/python-wheels/distlib-0.2.4-py2.py3-none-any.whl
         - /usr/share/python-wheels/pkg_resources-0.0.0-py2.py3-none-any.whl
-        - /usr/local/bin
+        - /usr/bin
         - /usr/lib/python35.zip
         - /usr/lib/python3.5
         - /usr/lib/python3.5/plat-x86_64-linux-gnu
@@ -126,11 +126,12 @@ local:
         - final
         - 0
     saltpath:
-        /usr/local/lib/python3.5/dist-packages/salt
+        /usr/lib/python3/dist-packages/salt
     saltversion:
-        3004+0na.b7c4981
+        3003.4
     saltversioninfo:
-        - 3004
+        - 3003
+        - 4
     systemd:
         ----------
         features:
@@ -138,11 +139,11 @@ local:
         version:
             232
     virtual:
-        container
+        gce
     virtual_subtype:
         Docker
     zmqversion:
-        4.3.3
+        4.2.1
 # salt-call --local pkg.list_pkgs
 local:
     ----------
@@ -158,22 +159,20 @@ local:
         3.5.43
     bash:
         4.4-5
-    binutils:
-        2.28-5
+    bsdmainutils:
+        9.0.12+nmu1
     bsdutils:
         1:2.29.2-1+deb9u1
     ca-certificates:
         20200601~deb9u2
     coreutils:
         8.26-3
-    cpp:
-        4:6.3.0-4
-    cpp-6:
-        6.3.0-18+deb9u1
     curl:
         7.52.1-5+deb9u16
     dash:
         0.5.8-2.4
+    dctrl-tools:
+        2.24-2+b1
     debconf:
         1.5.61
     debian-archive-keyring:
@@ -198,10 +197,6 @@ local:
         1.43.4-2+deb9u2
     findutils:
         4.6.0+git+20161106-2
-    gcc:
-        4:6.3.0-4
-    gcc-6:
-        6.3.0-18+deb9u1
     gcc-6-base:
         6.3.0-18+deb9u1
     git:
@@ -236,12 +231,8 @@ local:
         1.4.11
     libapt-pkg5.0:
         1.4.11
-    libasan3:
-        6.3.0-18+deb9u1
     libassuan0:
         2.4.3-2
-    libatomic1:
-        6.3.0-18+deb9u1
     libattr1:
         1:2.4.47-2+b2
     libaudit-common:
@@ -256,22 +247,14 @@ local:
         1.0.6-8.1
     libc-bin:
         2.24-11+deb9u4
-    libc-dev-bin:
-        2.24-11+deb9u4
     libc-l10n:
         2.24-11+deb9u4
     libc6:
-        2.24-11+deb9u4
-    libc6-dev:
         2.24-11+deb9u4
     libcap-ng0:
         0.7.7-3+b1
     libcap2:
         1:2.25-1
-    libcc1-0:
-        6.3.0-18+deb9u1
-    libcilkrts5:
-        6.3.0-18+deb9u1
     libcomerr2:
         1.43.4-2+deb9u2
     libcryptsetup4:
@@ -294,14 +277,10 @@ local:
         0.17024-1
     libexpat1:
         2.2.0-2+deb9u5
-    libexpat1-dev:
-        2.2.0-2+deb9u5
     libfdisk1:
         2.29.2-1+deb9u1
     libffi6:
         3.2.1-6
-    libgcc-6-dev:
-        6.3.0-18+deb9u1
     libgcc1:
         1:6.3.0-18+deb9u1
     libgcrypt20:
@@ -312,8 +291,6 @@ local:
         2:6.1.2+dfsg-1+deb9u1
     libgnutls30:
         3.5.8-5+deb9u6
-    libgomp1:
-        6.3.0-18+deb9u1
     libgpg-error0:
         1.26-2
     libgssapi-krb5-2:
@@ -326,10 +303,6 @@ local:
         0.16-1+deb9u1
     libip4tc0:
         1.6.0+snapshot20161117-6
-    libisl15:
-        0.18-1
-    libitm1:
-        6.3.0-18+deb9u1
     libk5crypto3:
         1.15-1+deb9u3
     libkeyutils1:
@@ -346,8 +319,6 @@ local:
         2.4.44+dfsg-5+deb9u8
     libldap-common:
         2.4.44+dfsg-5+deb9u8
-    liblsan0:
-        6.3.0-18+deb9u1
     liblz4-1:
         0.0~r131-2+deb9u1
     liblzma5:
@@ -356,14 +327,8 @@ local:
         1.0.4-2
     libmount1:
         2.29.2-1+deb9u1
-    libmpc3:
-        1.0.3-1+b2
     libmpdec2:
         2.4.2-1
-    libmpfr4:
-        3.1.5-1
-    libmpx2:
-        6.3.0-18+deb9u1
     libncurses5:
         6.0+20161126-1+deb9u2
     libncursesw5:
@@ -390,24 +355,18 @@ local:
         2:8.39-3
     libperl5.24:
         5.24.1-3+deb9u7
+    libpgm-5.2-0:
+        5.2.122~dfsg-2
     libprocps6:
         2:3.3.12-3+deb9u1
     libpsl5:
         0.17.0-3
-    libpython3-dev:
-        3.5.3-1
     libpython3-stdlib:
         3.5.3-1
-    libpython3.5:
-        3.5.3-1+deb9u5
-    libpython3.5-dev:
-        3.5.3-1+deb9u5
     libpython3.5-minimal:
         3.5.3-1+deb9u5
     libpython3.5-stdlib:
         3.5.3-1+deb9u5
-    libquadmath0:
-        6.3.0-18+deb9u1
     libreadline7:
         7.0-3
     librtmp1:
@@ -428,6 +387,8 @@ local:
         2.6-2
     libsmartcols1:
         2.29.2-1+deb9u1
+    libsodium18:
+        1.0.11-2
     libsqlite3-0:
         3.16.2-5+deb9u3
     libss2:
@@ -446,10 +407,6 @@ local:
         4.10-1.1+deb9u1
     libtinfo5:
         6.0+20161126-1+deb9u2
-    libtsan0:
-        6.3.0-18+deb9u1
-    libubsan0:
-        6.3.0-18+deb9u1
     libudev1:
         232-25+deb9u13
     libunistring0:
@@ -462,8 +419,8 @@ local:
         7.6.q-26
     libyaml-0-2:
         0.1.7-2
-    linux-libc-dev:
-        4.9.303-1
+    libzmq5:
+        4.2.1-4+deb9u4
     locales:
         2.24-11+deb9u4
     login:
@@ -516,26 +473,54 @@ local:
         3.5.3-1
     python3-apt:
         1.4.3
-    python3-dev:
-        3.5.3-1
+    python3-chardet:
+        2.3.0-2
+    python3-contextvars:
+        2.4-1
+    python3-dateutil:
+        2.5.3-2
+    python3-distro:
+        1.0.1-2
+    python3-immutables:
+        0.14-1
+    python3-jinja2:
+        2.9.4-1
+    python3-markupsafe:
+        0.23-3
     python3-minimal:
         3.5.3-1
+    python3-msgpack:
+        0.6.2-1
     python3-pip:
         9.0.1-2+deb9u2
     python3-pkg-resources:
         33.1.1-1
-    python3-setuptools:
-        33.1.1-1
+    python3-psutil:
+        5.0.1-1
+    python3-pycryptodome:
+        3.6.1-3
+    python3-requests:
+        2.12.4-1
+    python3-six:
+        1.10.0-3
+    python3-systemd:
+        233-1
+    python3-urllib3:
+        1.19.1-1+deb9u1
     python3-yaml:
         3.12-1
+    python3-zmq:
+        17.1.2-2
     python3.5:
-        3.5.3-1+deb9u5
-    python3.5-dev:
         3.5.3-1+deb9u5
     python3.5-minimal:
         3.5.3-1+deb9u5
     readline-common:
         7.0-3
+    salt-common:
+        3003.4+ds-1
+    salt-minion:
+        3003.4+ds-1
     sed:
         4.4-1
     sensible-utils:
@@ -566,42 +551,40 @@ local:
 local:
     ----------
     Jinja2:
-        2.11.3
+        2.9.4
     MarkupSafe:
-        1.1.1
+        0.23
     PyYAML:
-        5.3.1
-    certifi:
-        2021.10.8
+        3.12
     chardet:
-        4.0.0
+        2.3.0
     contextvars:
         2.4
     distro:
-        1.6.0
-    idna:
-        2.10
+        1.0.1
     immutables:
-        0.15
+        0.14
     msgpack:
-        1.0.3
+        0.6.2
     pip:
         9.0.1
     psutil:
-        5.9.0
+        5.0.1
     pycryptodomex:
-        3.14.1
+        3.6.1
     python-apt:
         1.4.3
+    python-dateutil:
+        2.5.3
     pyzmq:
-        20.0.0
+        17.1.2
     requests:
-        2.25.1
+        2.12.4
     salt:
-        3004+0na.b7c4981
-    setuptools:
-        33.1.1
+        3003.4
+    six:
+        1.10.0
+    systemd-python:
+        233
     urllib3:
-        1.26.9
-    wheel:
-        0.37.1
+        1.19.1

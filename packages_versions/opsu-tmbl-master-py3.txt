@@ -22,7 +22,7 @@ Dependency Versions:
       pycrypto: Not Installed
   pycryptodome: 3.14.1
         pygit2: Not Installed
-        Python: 3.8.12 (default, Aug 31 2021, 01:23:42) [GCC]
+        Python: 3.8.13 (default, Mar 26 2022, 22:17:55) [GCC]
   python-gnupg: Not Installed
         PyYAML: 6.0
          PyZMQ: 22.3.0
@@ -32,12 +32,12 @@ Dependency Versions:
            ZMQ: 4.3.4
  
 System Versions:
-          dist: opensuse-tumbleweed 20220324 
+          dist: opensuse-tumbleweed 20220401 
         locale: utf-8
        machine: x86_64
        release: 5.4.109+
         system: Linux
-       version: openSUSE Tumbleweed 20220324 
+       version: openSUSE Tumbleweed 20220401 
  
 # salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
 local:
@@ -65,7 +65,7 @@ local:
     lsb_distrib_id:
         openSUSE Tumbleweed
     lsb_distrib_release:
-        20220324
+        20220401
     os:
         SUSE
     os_family:
@@ -76,16 +76,16 @@ local:
     oscodename:
         openSUSE Tumbleweed
     osfinger:
-        openSUSE Tumbleweed-20220324
+        openSUSE Tumbleweed-20220401
     osfullname:
         openSUSE Tumbleweed
     osmajorrelease:
-        20220324
+        20220401
     osmanufacturer:
     osrelease:
-        20220324
+        20220401
     osrelease_info:
-        - 20220324
+        - 20220401
     osversion:
     pythonexecutable:
         /usr/bin/python3.8
@@ -100,7 +100,7 @@ local:
     pythonversion:
         - 3
         - 8
-        - 12
+        - 13
         - final
         - 0
     saltpath:
@@ -112,9 +112,9 @@ local:
     systemd:
         ----------
         features:
-            +PAM +AUDIT +SELINUX +APPARMOR -IMA -SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified
+            +PAM +AUDIT +SELINUX +APPARMOR -IMA -SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -BPF_FRAMEWORK -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified
         version:
-            249
+            250
     virtual:
         container
     virtual_subtype:
@@ -125,13 +125,13 @@ local:
 local:
     ----------
     aaa_base:
-        84.87+git20211124.5486aad-1.4
+        84.87+git20220324.fca4619-1.1
     alts:
         1.2+3.b848aad-2.3
     bash:
-        5.1.16-6.1
+        5.1.16-7.1
     bash-sh:
-        5.1.16-6.1
+        5.1.16-7.1
     boost-license1_78_0:
         1.78.0-2.1
     ca-certificates:
@@ -155,9 +155,9 @@ local:
     diffutils:
         3.8-2.5
     file:
-        5.41-2.1
+        5.41-3.1
     file-magic:
-        5.41-2.1
+        5.41-3.1
     filesystem:
         84.87-4.1
     fillup:
@@ -199,7 +199,7 @@ local:
     libalternatives1:
         1.2+3.b848aad-2.3
     libapparmor1:
-        3.0.4-1.2
+        3.0.4-2.1
     libargon2-1:
         0.0+git20190520.62358ba-1.9
     libassuan0:
@@ -207,9 +207,9 @@ local:
     libattr1:
         2.5.1-1.17
     libaudit1:
-        3.0.6-2.4
+        3.0.6-3.1
     libaugeas0:
-        1.12.0-5.2
+        1.12.0-6.1
     libblkid1:
         2.37.4-1.1
     libboost_thread1_78_0:
@@ -247,7 +247,7 @@ local:
     libedit0:
         20210910.3.1-1.5
     libexpat1:
-        2.4.7-1.1
+        2.4.8-1.1
     libfdisk1:
         2.37.4-1.1
     libffi8:
@@ -265,7 +265,7 @@ local:
     libgdbm_compat4:
         1.23-1.4
     libglib-2_0-0:
-        2.70.5-1.1
+        2.72.0-1.1
     libgmp10:
         6.2.1-4.5
     libgpg-error0:
@@ -297,7 +297,7 @@ local:
     liblzma5:
         5.2.5-2.6
     libmagic1:
-        5.41-2.1
+        5.41-3.1
     libmount1:
         2.37.4-1.1
     libmpdec3:
@@ -305,7 +305,7 @@ local:
     libmpfr6:
         4.1.0-2.18
     libncurses6:
-        6.3.20220312-13.1
+        6.3.20220319-14.1
     libnghttp2-14:
         1.47.0-1.1
     libnpth0:
@@ -339,7 +339,7 @@ local:
     libpython2_7-1_0:
         2.7.18-20.1
     libpython3_8-1_0:
-        3.8.12-4.1
+        3.8.13-1.2
     libreadline8:
         8.1-3.3
     libsasl2-3:
@@ -361,9 +361,9 @@ local:
     libsmartcols1:
         2.37.4-1.1
     libsolv-tools:
-        0.7.21-1.1
+        0.7.22-1.1
     libsqlite3-0:
-        3.38.1-1.1
+        3.38.2-1.1
     libssh-config:
         0.9.6-3.2
     libssh4:
@@ -373,7 +373,7 @@ local:
     libsubid4:
         4.11.1-1.3
     libsystemd0:
-        249.10-4.1
+        250.4-2.1
     libtasn1-6:
         4.18.0-1.3
     libtirpc-netconfig:
@@ -381,7 +381,7 @@ local:
     libtirpc3:
         1.3.2-2.5
     libudev1:
-        249.10-4.1
+        250.4-2.1
     libunistring2:
         0.9.10-2.13
     libusb-1_0-0:
@@ -397,17 +397,17 @@ local:
     libyaml-cpp0_7:
         0.7.0-1.1
     libz1:
-        1.2.11-18.21
+        1.2.11-19.1
     libzck1:
         1.1.16-2.2
     libzstd1:
         1.5.2-1.3
     libzypp:
-        17.29.6-1.1
+        17.30.0-1.1
     login_defs:
         4.11.1-1.3
     ncurses-utils:
-        6.3.20220312-13.1
+        6.3.20220319-14.1
     net-tools:
         2.10-1.9
     net-tools-deprecated:
@@ -417,9 +417,9 @@ local:
     openSUSE-build-key:
         1.0-43.1
     openSUSE-release:
-        20220324-1517.1
+        20220401-1532.1
     openSUSE-release-appliance-docker:
-        20220324-1517.1
+        20220401-1532.1
     openssh:
         8.9p1-1.1
     openssh-clients:
@@ -471,7 +471,7 @@ local:
     python38-appdirs:
         1.4.4-3.4
     python38-base:
-        3.8.12-4.1
+        3.8.13-1.2
     python38-ordered-set:
         4.0.2-2.3
     python38-packaging:
@@ -481,7 +481,7 @@ local:
     python38-pyparsing:
         3.0.7-1.3
     python38-setuptools:
-        58.3.0-1.2
+        58.3.0-2.1
     rpm:
         4.17.0-5.1
     rpm-config-SUSE:
@@ -491,7 +491,7 @@ local:
     shadow:
         4.11.1-1.3
     sudo:
-        1.9.9-3.1
+        1.9.10-1.1
     suse-module-tools:
         16.0.19-1.3
     system-group-hardware:
@@ -501,7 +501,7 @@ local:
     system-user-root:
         20190513-2.3
     systemd:
-        249.10-4.1
+        250.4-2.1
     systemd-default-settings:
         0.7-2.2
     systemd-default-settings-branding-SLE:
@@ -515,9 +515,9 @@ local:
     sysuser-shadow:
         3.1-4.3
     terminfo-base:
-        6.3.20220312-13.1
+        6.3.20220319-14.1
     udev:
-        249.10-4.1
+        250.4-2.1
     update-alternatives:
         1.21.1-1.1
     util-linux:

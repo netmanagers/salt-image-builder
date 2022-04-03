@@ -189,7 +189,7 @@ local:
     epel-release:
         7-14
     expat:
-        2.1.0-12.el7
+        2.1.0-14.el7_9
     file-libs:
         5.11-37.el7
     filesystem:

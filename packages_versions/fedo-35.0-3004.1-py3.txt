@@ -1,43 +1,43 @@
-fedo-35.0-master-py3
-Salt install method: git
+fedo-35.0-3004.1-py3
+Salt install method: stable
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.b7c4981
+          Salt: 3004.1
  
 Dependency Versions:
           cffi: Not Installed
       cherrypy: Not Installed
-      dateutil: Not Installed
+      dateutil: 2.8.1
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
-        Jinja2: 3.1.1
+        Jinja2: 3.0.1
        libgit2: Not Installed
-      M2Crypto: Not Installed
+      M2Crypto: 0.38.0
           Mako: Not Installed
        msgpack: 1.0.3
   msgpack-pure: Not Installed
   mysql-python: Not Installed
      pycparser: Not Installed
-      pycrypto: Not Installed
+      pycrypto: 2.6.1
   pycryptodome: 3.14.1
         pygit2: Not Installed
         Python: 3.10.4 (main, Mar 25 2022, 00:00:00) [GCC 11.2.1 20220127 (Red Hat 11.2.1-9)]
   python-gnupg: Not Installed
-        PyYAML: 6.0
-         PyZMQ: 20.0.0
+        PyYAML: 5.4.1
+         PyZMQ: 22.2.1
          smmap: Not Installed
        timelib: Not Installed
        Tornado: 4.5.3
-           ZMQ: 4.3.3
+           ZMQ: 4.3.4
  
 System Versions:
-          dist: fedora 35 Container Image
+          dist: fedora 35 
         locale: utf-8
        machine: x86_64
        release: 5.4.109+
         system: Linux
-       version: Fedora Linux 35 Container Image
+       version: Fedora Linux 35 
  
 # salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
 local:
@@ -59,7 +59,7 @@ local:
         detectedencoding:
             utf-8
         timezone:
-            unknown
+            UTC
     lsb_distrib_codename:
     lsb_distrib_id:
         Fedora Linux
@@ -103,9 +103,10 @@ local:
     saltpath:
         /usr/lib/python3.10/site-packages/salt
     saltversion:
-        3004+0na.b7c4981
+        3004.1
     saltversioninfo:
         - 3004
+        - 1
     systemd:
         ----------
         features:
@@ -117,7 +118,7 @@ local:
     virtual_subtype:
         Docker
     zmqversion:
-        4.3.3
+        4.3.4
 # salt-call --local pkg.list_pkgs
 local:
     ----------
@@ -131,10 +132,6 @@ local:
         11-12.fc35
     bash:
         5.1.8-2.fc35
-    binutils:
-        2.37-10.fc35
-    binutils-gold:
-        2.37-10.fc35
     bzip2-libs:
         1.0.8-9.fc35
     ca-certificates:
@@ -145,8 +142,6 @@ local:
         8.32-33.fc35
     cpio:
         2.13-11.fc35
-    cpp:
-        11.2.1-9.fc35
     cracklib:
         2.9.6-27.fc35
     crypto-policies:
@@ -179,10 +174,12 @@ local:
         4.11.1-1.fc35
     dnf-data:
         4.11.1-1.fc35
+    dnf-plugins-core:
+        4.1.0-1.fc35
+    dnf-utils:
+        4.1.0-1.fc35
     dracut:
         055-6.fc35
-    elfutils-debuginfod-client:
-        0.186-1.fc35
     elfutils-default-yama-scope:
         0.186-1.fc35
     elfutils-libelf:
@@ -215,12 +212,6 @@ local:
         2.9.9-13.fc35
     gawk:
         5.1.0-4.fc35
-    gc:
-        8.0.4-6.fc35
-    gcc:
-        11.2.1-9.fc35
-    gcc-c++:
-        11.2.1-9.fc35
     gdbm-libs:
         1:1.22-1.fc35
     gettext:
@@ -239,11 +230,7 @@ local:
         2.34-29.fc35
     glibc-common:
         2.34-29.fc35
-    glibc-devel:
-        2.34-29.fc35
     glibc-gconv-extra:
-        2.34-29.fc35
-    glibc-headers-x86:
         2.34-29.fc35
     glibc-langpack-en:
         2.34-29.fc35
@@ -271,22 +258,22 @@ local:
         1:2.06-10.fc35
     grubby:
         8.40-55.fc35
-    guile22:
-        2.2.7-3.fc35
     gzip:
         1.10-5.fc35
+    hwdata:
+        0.357-1.fc35
     ima-evm-utils:
         1.3.2-3.fc35
     iptables-legacy-libs:
         1.8.7-13.fc35
+    js-jquery:
+        3.5.0-6.fc35
     json-c:
         0.15-2.fc35
     kbd:
         2.4.0-8.fc35
     kbd-misc:
         2.4.0-8.fc35
-    kernel-headers:
-        5.16.5-200.fc35
     keyutils-libs:
         1.6.1-3.fc35
     kmod:
@@ -367,8 +354,6 @@ local:
         2.14.0-1.fc35
     libmount:
         2.37.4-1.fc35
-    libmpc:
-        1.2.1-3.fc35
     libnghttp2:
         1.45.1-1.fc35
     libnl3:
@@ -377,8 +362,6 @@ local:
         1.3.0-4.fc35
     libpcap:
         14:1.10.1-2.fc35
-    libpkgconf:
-        1.8.0-1.fc35
     libpsl:
         0.21.1-4.fc35
     libpwquality:
@@ -399,6 +382,8 @@ local:
         2.13-3.fc35
     libsmartcols:
         2.37.4-1.fc35
+    libsodium:
+        1.0.18-8.fc35
     libsolv:
         0.7.21-1.fc35
     libssh:
@@ -407,16 +392,18 @@ local:
         0.9.6-1.fc35
     libstdc++:
         11.2.1-9.fc35
-    libstdc++-devel:
-        11.2.1-9.fc35
     libtasn1:
         4.16.0-6.fc35
     libtirpc:
         1.3.2-1.fc35
-    libtool-ltdl:
-        2.4.6-50.fc35
+    libtomcrypt:
+        1.18.2-13.fc35
+    libtommath:
+        1.2.0-5.fc35
     libunistring:
         0.9.10-14.fc35
+    libunwind:
+        1.5.0-1.fc35
     libutempter:
         1.2.1-5.fc35
     libuuid:
@@ -424,8 +411,6 @@ local:
     libverto:
         0.3.2-2.fc35
     libxcrypt:
-        4.4.28-1.fc35
-    libxcrypt-devel:
         4.4.28-1.fc35
     libxkbcommon:
         1.3.1-1.fc35
@@ -439,8 +424,6 @@ local:
         5.4.4-1.fc35
     lz4-libs:
         1.9.3-3.fc35
-    make:
-        1:4.3-6.fc35
     memstrack:
         0.2.4-1.fc35
     mpdecimal:
@@ -461,6 +444,8 @@ local:
         1.6-7.fc35
     openldap:
         2.4.59-3.fc35
+    openpgm:
+        5.2.122-27.fc35
     openssh:
         8.7p1-3.fc35
     openssh-clients:
@@ -479,6 +464,10 @@ local:
         0.23.22-4.fc35
     pam:
         1.5.2-7.fc35
+    pciutils:
+        3.7.0-4.fc35
+    pciutils-libs:
+        3.7.0-4.fc35
     pcre:
         8.45-1.fc35
     pcre2:
@@ -585,12 +574,6 @@ local:
         1.05-482.fc35
     pigz:
         2.5-2.fc35
-    pkgconf:
-        1.8.0-1.fc35
-    pkgconf-m4:
-        1.8.0-1.fc35
-    pkgconf-pkg-config:
-        1.8.0-1.fc35
     popt:
         1.18-6.fc35
     procps-ng:
@@ -603,32 +586,78 @@ local:
         21.2.3-4.fc35
     python-setuptools-wheel:
         57.4.0-1.fc35
+    python-systemd-doc:
+        234-19.fc35
     python-unversioned-command:
         3.10.4-1.fc35
     python3:
         3.10.4-1.fc35
-    python3-devel:
-        3.10.4-1.fc35
+    python3-babel:
+        2.9.1-4.fc35
+    python3-charset-normalizer:
+        2.0.4-1.fc35
+    python3-crypto:
+        2.6.1-36.fc35
+    python3-dateutil:
+        1:2.8.1-7.fc35
+    python3-dbus:
+        1.2.18-2.fc35
+    python3-distro:
+        1.6.0-1.fc35
     python3-dnf:
         4.11.1-1.fc35
+    python3-dnf-plugins-core:
+        4.1.0-1.fc35
     python3-gpg:
         1.15.1-6.fc35
     python3-hawkey:
         0.66.0-1.fc35
+    python3-idna:
+        3.2-1.fc35
+    python3-jinja2:
+        3.0.1-2.fc35
     python3-libcomps:
         0.1.18-1.fc35
     python3-libdnf:
         0.66.0-1.fc35
     python3-libs:
         3.10.4-1.fc35
+    python3-m2crypto:
+        0.38.0-2.fc35
+    python3-markupsafe:
+        2.0.0-2.fc35
+    python3-msgpack:
+        1.0.3-1.fc35
     python3-pip:
         21.2.3-4.fc35
+    python3-psutil:
+        5.8.0-12.fc35
+    python3-pycryptodomex:
+        3.14.1-1.fc35
+    python3-pycurl:
+        7.44.1-1.fc35
+    python3-pysocks:
+        1.7.1-11.fc35
+    python3-pytz:
+        2022.1-1.fc35
+    python3-pyyaml:
+        5.4.1-4.fc35
+    python3-requests:
+        2.27.0-1.fc35
     python3-rpm:
         4.17.0-4.fc35
     python3-setuptools:
         57.4.0-1.fc35
+    python3-six:
+        1.16.0-4.fc35
+    python3-systemd:
+        234-19.fc35
     python3-unbound:
         1.13.2-1.fc35
+    python3-urllib3:
+        1.26.7-2.fc35
+    python3-zmq:
+        22.2.1-1.fc35
     qrencode-libs:
         4.1.1-1.fc35
     readline:
@@ -645,6 +674,10 @@ local:
         4.17.0-4.fc35
     rpm-sign-libs:
         4.17.0-4.fc35
+    salt:
+        3004.1-1.fc35
+    salt-minion:
+        3004.1-1.fc35
     sed:
         4.8-8.fc35
     setup:
@@ -687,6 +720,8 @@ local:
         2:8.2.4621-1.fc35
     vim-minimal:
         2:8.2.4621-1.fc35
+    web-assets-filesystem:
+        5-14.fc35
     which:
         2.21-27.fc35
     xkeyboard-config:
@@ -699,20 +734,68 @@ local:
         4.11.1-1.fc35
     zchunk-libs:
         1.2.1-1.fc35
+    zeromq:
+        4.3.4-2.fc35
     zlib:
         1.2.11-30.fc35
 # salt-call --local pip.list
 local:
     ----------
+    Babel:
+        2.9.1
+    Jinja2:
+        3.0.1
+    M2Crypto:
+        0.38.0
+    MarkupSafe:
+        2.0.0
+    PySocks:
+        1.7.1
+    PyYAML:
+        5.4.1
+    charset-normalizer:
+        2.0.4
+    dbus-python:
+        1.2.18
+    distro:
+        1.6.0
     gpg:
         1.15.1
+    idna:
+        3.2
     libcomps:
         0.1.18
+    msgpack:
+        1.0.3
     pip:
         21.2.3
+    psutil:
+        5.8.0
+    pycrypto:
+        2.6.1
+    pycryptodomex:
+        3.14.1
+    pycurl:
+        7.44.1
+    python-dateutil:
+        2.8.1
+    pytz:
+        2022.1
+    pyzmq:
+        22.2.1
+    requests:
+        2.27.0
     rpm:
         4.17.0
+    salt:
+        3004.1
     setuptools:
         57.4.0
-    wheel:
-        0.37.1
+    six:
+        1.16.0
+    systemd-python:
+        234
+    tornado:
+        4.5.3
+    urllib3:
+        1.26.7

@@ -11,7 +11,7 @@ Dependency Versions:
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
-        Jinja2: 2.11.3
+        Jinja2: 3.0.3
        libgit2: Not Installed
       M2Crypto: 0.38.0
           Mako: Not Installed
@@ -22,7 +22,7 @@ Dependency Versions:
       pycrypto: Not Installed
   pycryptodome: Not Installed
         pygit2: Not Installed
-        Python: 3.8.12 (default, Aug 31 2021, 01:23:42) [GCC]
+        Python: 3.8.13 (default, Mar 26 2022, 22:17:55) [GCC]
   python-gnupg: Not Installed
         PyYAML: 6.0
          PyZMQ: 22.3.0
@@ -32,12 +32,12 @@ Dependency Versions:
            ZMQ: 4.3.4
  
 System Versions:
-          dist: opensuse-tumbleweed 20220324 
+          dist: opensuse-tumbleweed 20220401 
         locale: utf-8
        machine: x86_64
        release: 5.4.109+
         system: Linux
-       version: openSUSE Tumbleweed 20220324 
+       version: openSUSE Tumbleweed 20220401 
  
 # salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
 local:
@@ -65,7 +65,7 @@ local:
     lsb_distrib_id:
         openSUSE Tumbleweed
     lsb_distrib_release:
-        20220324
+        20220401
     os:
         SUSE
     os_family:
@@ -76,16 +76,16 @@ local:
     oscodename:
         openSUSE Tumbleweed
     osfinger:
-        openSUSE Tumbleweed-20220324
+        openSUSE Tumbleweed-20220401
     osfullname:
         openSUSE Tumbleweed
     osmajorrelease:
-        20220324
+        20220401
     osmanufacturer:
     osrelease:
-        20220324
+        20220401
     osrelease_info:
-        - 20220324
+        - 20220401
     osversion:
     pythonexecutable:
         /usr/bin/python3
@@ -100,7 +100,7 @@ local:
     pythonversion:
         - 3
         - 8
-        - 12
+        - 13
         - final
         - 0
     saltpath:
@@ -112,9 +112,9 @@ local:
     systemd:
         ----------
         features:
-            +PAM +AUDIT +SELINUX +APPARMOR -IMA -SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified
+            +PAM +AUDIT +SELINUX +APPARMOR -IMA -SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -BPF_FRAMEWORK -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified
         version:
-            249
+            250
     virtual:
         container
     virtual_subtype:
@@ -125,19 +125,19 @@ local:
 local:
     ----------
     aaa_base:
-        84.87+git20211124.5486aad-1.4
+        84.87+git20220324.fca4619-1.1
     alts:
         1.2+3.b848aad-2.3
     bash:
-        5.1.16-6.1
+        5.1.16-7.1
     bash-sh:
-        5.1.16-6.1
+        5.1.16-7.1
     boost-license1_78_0:
         1.78.0-2.1
     busybox:
-        1.35.0-1.2
+        1.35.0-2.1
     busybox-gzip:
-        1.35.0-22.1
+        1.35.0-23.1
     ca-certificates:
         2+git20211004.3efbea9-1.3
     ca-certificates-mozilla:
@@ -159,9 +159,9 @@ local:
     diffutils:
         3.8-2.5
     file:
-        5.41-2.1
+        5.41-3.1
     file-magic:
-        5.41-2.1
+        5.41-3.1
     filesystem:
         84.87-4.1
     fillup:
@@ -187,7 +187,7 @@ local:
     hostname:
         3.23-2.10
     iproute2:
-        5.16-2.1
+        5.17-1.1
     kbd:
         2.4.0-9.1
     kbd-legacy:
@@ -203,7 +203,7 @@ local:
     libalternatives1:
         1.2+3.b848aad-2.3
     libapparmor1:
-        3.0.4-1.2
+        3.0.4-2.1
     libargon2-1:
         0.0+git20190520.62358ba-1.9
     libassuan0:
@@ -211,9 +211,9 @@ local:
     libattr1:
         2.5.1-1.17
     libaudit1:
-        3.0.6-2.4
+        3.0.6-3.1
     libaugeas0:
-        1.12.0-5.2
+        1.12.0-6.1
     libblkid1:
         2.37.4-1.1
     libboost_thread1_78_0:
@@ -257,7 +257,7 @@ local:
     libelf1:
         0.186-2.1
     libexpat1:
-        2.4.7-1.1
+        2.4.8-1.1
     libfdisk1:
         2.37.4-1.1
     libffi8:
@@ -275,7 +275,7 @@ local:
     libgdbm_compat4:
         1.23-1.4
     libglib-2_0-0:
-        2.70.5-1.1
+        2.72.0-1.1
     libgmp10:
         6.2.1-4.5
     libgomp1:
@@ -309,7 +309,7 @@ local:
     liblzma5:
         5.2.5-2.6
     libmagic1:
-        5.41-2.1
+        5.41-3.1
     libmnl0:
         1.0.4-2.8
     libmount1:
@@ -319,7 +319,7 @@ local:
     libmpfr6:
         4.1.0-2.18
     libncurses6:
-        6.3.20220312-13.1
+        6.3.20220319-14.1
     libnghttp2-14:
         1.47.0-1.1
     libnpth0:
@@ -355,7 +355,7 @@ local:
     libpython2_7-1_0:
         2.7.18-20.1
     libpython3_8-1_0:
-        3.8.12-4.1
+        3.8.13-1.2
     libreadline8:
         8.1-3.3
     librpmbuild9:
@@ -381,9 +381,9 @@ local:
     libsodium23:
         1.0.18-2.9
     libsolv-tools:
-        0.7.21-1.1
+        0.7.22-1.1
     libsqlite3-0:
-        3.38.1-1.1
+        3.38.2-1.1
     libssh-config:
         0.9.6-3.2
     libssh4:
@@ -393,7 +393,7 @@ local:
     libsubid4:
         4.11.1-1.3
     libsystemd0:
-        249.10-4.1
+        250.4-2.1
     libtasn1-6:
         4.18.0-1.3
     libtirpc-netconfig:
@@ -401,7 +401,7 @@ local:
     libtirpc3:
         1.3.2-2.5
     libudev1:
-        249.10-4.1
+        250.4-2.1
     libunistring2:
         0.9.10-2.13
     libunwind:
@@ -421,7 +421,7 @@ local:
     libyaml-cpp0_7:
         0.7.0-1.1
     libz1:
-        1.2.11-18.21
+        1.2.11-19.1
     libzck1:
         1.1.16-2.2
     libzmq5:
@@ -429,13 +429,13 @@ local:
     libzstd1:
         1.5.2-1.3
     libzypp:
-        17.29.6-1.1
+        17.30.0-1.1
     login_defs:
         4.11.1-1.3
     logrotate:
         3.19.0-2.1
     ncurses-utils:
-        6.3.20220312-13.1
+        6.3.20220319-14.1
     net-tools:
         2.10-1.9
     net-tools-deprecated:
@@ -445,9 +445,9 @@ local:
     openSUSE-build-key:
         1.0-43.1
     openSUSE-release:
-        20220324-1517.1
+        20220401-1532.1
     openSUSE-release-appliance-docker:
-        20220324-1517.1
+        20220401-1532.1
     openssh:
         8.9p1-1.1
     openssh-clients:
@@ -497,17 +497,15 @@ local:
     python-xml:
         2.7.18-20.1
     python3-salt:
-        3004-4.16
+        3004-6.3
     python38:
-        3.8.12-4.1
-    python38-Babel:
-        2.9.1-3.4
+        3.8.13-1.1
     python38-Jinja2:
-        2.11.3-1.4
+        3.0.3-1.5
     python38-M2Crypto:
         0.38.0-1.4
     python38-MarkupSafe:
-        2.0.1-1.4
+        2.1.1-1.1
     python38-PyYAML:
         6.0-2.1
     python38-apipkg:
@@ -515,7 +513,7 @@ local:
     python38-appdirs:
         1.4.4-3.4
     python38-base:
-        3.8.12-4.1
+        3.8.13-1.2
     python38-cached-property:
         1.5.2-1.7
     python38-certifi:
@@ -527,7 +525,7 @@ local:
     python38-contextvars:
         2.4-2.4
     python38-cryptography:
-        36.0.1-2.1
+        36.0.2-1.1
     python38-distro:
         1.7.0-1.1
     python38-dragonmapper:
@@ -562,8 +560,6 @@ local:
         2.21-1.4
     python38-pyparsing:
         3.0.7-1.3
-    python38-pytz:
-        2021.3-1.4
     python38-pyzmq:
         22.3.0-1.2
     python38-requests:
@@ -571,7 +567,7 @@ local:
     python38-rpm:
         4.17.0-5.1
     python38-setuptools:
-        58.3.0-1.2
+        58.3.0-2.1
     python38-six:
         1.16.0-2.4
     python38-urllib3:
@@ -587,15 +583,15 @@ local:
     rpm-config-SUSE:
         20220317-1.1
     salt:
-        3004-4.16
+        3004-6.3
     salt-minion:
-        3004-4.16
+        3004-6.3
     sed:
         4.8-3.10
     shadow:
         4.11.1-1.3
     sudo:
-        1.9.9-3.1
+        1.9.10-1.1
     suse-module-tools:
         16.0.19-1.3
     system-group-hardware:
@@ -605,7 +601,7 @@ local:
     system-user-root:
         20190513-2.3
     systemd:
-        249.10-4.1
+        250.4-2.1
     systemd-default-settings:
         0.7-2.2
     systemd-default-settings-branding-SLE:
@@ -619,11 +615,9 @@ local:
     sysuser-shadow:
         3.1-4.3
     terminfo-base:
-        6.3.20220312-13.1
-    timezone:
-        2021e-1.5
+        6.3.20220319-14.1
     udev:
-        249.10-4.1
+        250.4-2.1
     update-alternatives:
         1.21.1-1.1
     util-linux:
@@ -637,14 +631,12 @@ local:
 # salt-call --local pip.list
 local:
     ----------
-    Babel:
-        2.9.1
     Jinja2:
-        2.11.3
+        3.0.3
     M2Crypto:
         0.38.0
     MarkupSafe:
-        2.0.1
+        2.1.1
     PyYAML:
         6.0
     apipkg:
@@ -662,7 +654,7 @@ local:
     contextvars:
         2.4
     cryptography:
-        36.0.1
+        36.0.2
     distro:
         1.7.0
     dragonmapper:
@@ -697,8 +689,6 @@ local:
         2.21
     pyparsing:
         3.0.7
-    pytz:
-        2021.3
     pyzmq:
         22.3.0
     requests:
