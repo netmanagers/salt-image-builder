@@ -198,6 +198,9 @@ commitlint:
          | tee -a ${PKGS_VERSIONS_FILE}'
     - 'docker exec "${TESTINFRA_CONTAINER}" ${CMD_SALT_CALL_PIP_LIST}
          | tee -a ${PKGS_VERSIONS_FILE}'
+    # Prepare the `test_jinja` state files
+    - 'docker exec "${TESTINFRA_CONTAINER}" mkdir -p /srv/salt/'
+    - 'docker cp test/test_jinja/ ${TESTINFRA_CONTAINER}:/srv/salt/test_jinja/'
     # Run the integration tests
     # Not using `${SVB}` instead of `${SV}` here since the test file itself handles
     # the any version number issues (e.g. the extra `.0` in the version number).

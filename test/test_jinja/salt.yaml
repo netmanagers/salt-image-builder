@@ -1,0 +1,1 @@
+{%- set salt = salt['pillar.get']('salt', '') %}

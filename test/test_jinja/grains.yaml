@@ -1,0 +1,1 @@
+{%- set grains = grains.get('os', '') %}
