@@ -34,16 +34,6 @@ RUN zypper refresh && zypper install --no-recommends -y ${PKGS} && zypper clean 
  && curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
     sed -e '/^\s\+echowarn "You have 10 seconds to cancel and stop the bootstrap process..."/,+2d' | \
     sh -s -- ${SALT_REPO_URL} -XUdfPwD -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION \
-    # Use temporary workaround of downgrading Jinja2 for images built using `git`
-    # See https://github.com/saltstack/salt/issues/60188
- && if [ "${SALT_INSTALL_METHOD}" = "git" ] && [ "${SALT_VERSION}" != "master" ]; then \
-      pip3 install --no-cache-dir Jinja2==2.11.3; \
-    elif [ "${SALT_INSTALL_METHOD}" = "stable" ] && [ "${DISTRO_NAME}" = "opensuse/tumbleweed" ]; then \
-      JINJA2_PKG_NAME=python38-Jinja2-2.11.3-1.4.x86_64.rpm; \
-      curl -L -o ${JINJA2_PKG_NAME} https://www.dropbox.com/s/gfga38nj7v8d35y/${JINJA2_PKG_NAME}?dl=1; \
-      zypper install -y --oldpackage ${JINJA2_PKG_NAME}; \
-      rm ${JINJA2_PKG_NAME}; \
-    fi \
     # NOTE: This needs to be done after running the bootstrap, in case `openSUSE-release` is updated during that process,
     #       which results in `/etc/os-release` being updated again; this is a particular problem if the Tumbleweed
     #       Docker Hub image hasn't been updated for a few days

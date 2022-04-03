@@ -1,0 +1,1 @@
+{%- set opts = opts.get('__cli', '') %}
