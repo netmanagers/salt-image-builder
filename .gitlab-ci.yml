@@ -297,7 +297,7 @@ debi-09.0-3002.8-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 # * Fedora 34: `3004.X`
 # Use for both accordingly in order to test against these latest available packages
 # Progress for new releases is visible here: https://bodhi.fedoraproject.org/updates/?search=salt
-fedo-35.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'               , DV: '35'     , PI: 'dnf', SIM: 'git'   , SV: 'master', SVB: ''      , PV: '3', EP: 'gcc-c++'}}
+fedo-35.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'               , DV: '35'     , PI: 'dnf', SIM: 'git'   , SV: 'master', SVB: ''      , PV: '3', EP: ''}}
 fedo-35.0-3004.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'               , DV: '35'     , PI: 'dnf', SIM: 'stable', SV: '3004.1', SVB: 'latest', PV: '3', EP: ''}}
 fedo-34.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'               , DV: '34'     , PI: 'dnf', SIM: 'git'   , SV: 'master', SVB: ''      , PV: '3', EP: ''}}
 fedo-34.0-3004.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'               , DV: '34'     , PI: 'dnf', SIM: 'stable', SV: '3004.1', SVB: 'latest', PV: '3', EP: ''}}
