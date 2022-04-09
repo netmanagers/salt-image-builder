@@ -1,5 +1,17 @@
 # Changelog
 
+# [1.68.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.67.0...v1.68.0) (2022-04-09)
+
+
+### Continuous Integration
+
+* **gitlab-ci:** remove Fedora 35 package after bootstrap update [skip ci] ([e849e94](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/e849e944aec51cd032d4a1de1ec58703bcfb12af))
+
+
+### Features
+
+* **gitlab-ci:** add `fedora-36` [skip ci] ([904e94a](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/904e94ab9e81e74b490aec0ef0ec9bbbbe0aac69))
+
 # [1.67.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.66.0...v1.67.0) (2022-04-03)
 
 

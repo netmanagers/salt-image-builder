@@ -2,7 +2,7 @@ fedo-35.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.b7c4981
+          Salt: 3004+0na.18c9b7e
  
 Dependency Versions:
           cffi: Not Installed
@@ -103,7 +103,7 @@ local:
     saltpath:
         /usr/lib/python3.10/site-packages/salt
     saltversion:
-        3004+0na.b7c4981
+        3004+0na.18c9b7e
     saltversioninfo:
         - 3004
     systemd:
@@ -126,7 +126,7 @@ local:
     alternatives:
         1.19-1.fc35
     audit-libs:
-        3.0.7-2.fc35
+        3.0.8-1.fc35
     basesystem:
         11-12.fc35
     bash:
@@ -176,9 +176,9 @@ local:
     diffutils:
         3.8-1.fc35
     dnf:
-        4.11.1-1.fc35
+        4.11.1-2.fc35
     dnf-data:
-        4.11.1-1.fc35
+        4.11.1-2.fc35
     dracut:
         055-6.fc35
     elfutils-debuginfod-client:
@@ -296,7 +296,7 @@ local:
     kpartx:
         0.8.6-5.fc35
     krb5-libs:
-        1.19.2-2.fc35
+        1.19.2-6.fc35
     less:
         590-2.fc35
     libacl:
@@ -488,45 +488,45 @@ local:
     perl-Carp:
         1.52-478.fc35
     perl-Class-Struct:
-        0.66-482.fc35
+        0.66-486.fc35
     perl-DynaLoader:
-        1.50-482.fc35
+        1.50-486.fc35
     perl-Encode:
         4:3.15-482.fc35
     perl-Errno:
-        1.33-482.fc35
+        1.33-486.fc35
     perl-Error:
         1:0.17029-7.fc35
     perl-Exporter:
         5.76-479.fc35
     perl-Fcntl:
-        1.14-482.fc35
+        1.14-486.fc35
     perl-File-Basename:
-        2.85-482.fc35
+        2.85-486.fc35
     perl-File-Find:
-        1.39-482.fc35
+        1.39-486.fc35
     perl-File-Path:
         2.18-478.fc35
     perl-File-Temp:
         1:0.231.100-478.fc35
     perl-File-stat:
-        1.09-482.fc35
+        1.09-486.fc35
     perl-Getopt-Long:
         1:2.52-478.fc35
     perl-Getopt-Std:
-        1.13-482.fc35
+        1.13-486.fc35
     perl-Git:
         2.35.1-1.fc35
     perl-HTTP-Tiny:
         0.080-1.fc35
     perl-IO:
-        1.46-482.fc35
+        1.46-486.fc35
     perl-IPC-Open3:
-        1.21-482.fc35
+        1.21-486.fc35
     perl-MIME-Base64:
         3.16-478.fc35
     perl-POSIX:
-        1.97-482.fc35
+        1.97-486.fc35
     perl-PathTools:
         3.80-478.fc35
     perl-Pod-Escapes:
@@ -540,13 +540,13 @@ local:
     perl-Scalar-List-Utils:
         5:1.62-463.fc35
     perl-SelectSaver:
-        1.02-482.fc35
+        1.02-486.fc35
     perl-Socket:
         4:2.032-2.fc35
     perl-Storable:
         1:3.25-1.fc35
     perl-Symbol:
-        1.09-482.fc35
+        1.09-486.fc35
     perl-Term-ANSIColor:
         5.01-479.fc35
     perl-Term-Cap:
@@ -562,27 +562,27 @@ local:
     perl-constant:
         1.33-479.fc35
     perl-if:
-        0.60.900-482.fc35
+        0.60.900-486.fc35
     perl-interpreter:
-        4:5.34.0-482.fc35
+        4:5.34.1-486.fc35
     perl-lib:
-        0.65-482.fc35
+        0.65-486.fc35
     perl-libs:
-        4:5.34.0-482.fc35
+        4:5.34.1-486.fc35
     perl-mro:
-        1.25-482.fc35
+        1.25-486.fc35
     perl-overload:
-        1.33-482.fc35
+        1.33-486.fc35
     perl-overloading:
-        0.02-482.fc35
+        0.02-486.fc35
     perl-parent:
         1:0.238-478.fc35
     perl-podlators:
         1:4.14-478.fc35
     perl-subs:
-        1.04-482.fc35
+        1.04-486.fc35
     perl-vars:
-        1.05-482.fc35
+        1.05-486.fc35
     pigz:
         2.5-2.fc35
     pkgconf:
@@ -610,7 +610,7 @@ local:
     python3-devel:
         3.10.4-1.fc35
     python3-dnf:
-        4.11.1-1.fc35
+        4.11.1-2.fc35
     python3-gpg:
         1.15.1-6.fc35
     python3-hawkey:
@@ -684,9 +684,9 @@ local:
     util-linux-core:
         2.37.4-1.fc35
     vim-data:
-        2:8.2.4621-1.fc35
+        2:8.2.4701-1.fc35
     vim-minimal:
-        2:8.2.4621-1.fc35
+        2:8.2.4701-1.fc35
     which:
         2.21-27.fc35
     xkeyboard-config:
@@ -696,7 +696,7 @@ local:
     xz-libs:
         5.2.5-7.fc35
     yum:
-        4.11.1-1.fc35
+        4.11.1-2.fc35
     zchunk-libs:
         1.2.1-1.fc35
     zlib:

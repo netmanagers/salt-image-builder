@@ -2,7 +2,7 @@ cstr-08.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.b7c4981
+          Salt: 3004+0na.18c9b7e
  
 Dependency Versions:
           cffi: Not Installed
@@ -105,7 +105,7 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3004+0na.b7c4981
+        3004+0na.18c9b7e
     saltversioninfo:
         - 3004
     systemd:
@@ -150,7 +150,7 @@ local:
     coreutils-single:
         8.30-12.el8
     cpp:
-        8.5.0-10.el8
+        8.5.0-12.el8
     cracklib:
         2.9.6-15.el8
     cracklib-dicts:
@@ -210,7 +210,7 @@ local:
     gawk:
         4.2.1-4.el8
     gcc:
-        8.5.0-10.el8
+        8.5.0-12.el8
     gdb-gdbserver:
         8.2-18.el8
     gdbm:
@@ -328,11 +328,11 @@ local:
     libffi:
         3.1-23.el8
     libgcc:
-        8.5.0-10.el8
+        8.5.0-12.el8
     libgcrypt:
         1.8.5-6.el8
     libgomp:
-        8.5.0-10.el8
+        8.5.0-12.el8
     libgpg-error:
         1.31-1.el8
     libidn2:
@@ -388,7 +388,7 @@ local:
     libssh-config:
         0.9.6-3.el8
     libstdc++:
-        8.5.0-10.el8
+        8.5.0-12.el8
     libtasn1:
         4.13-3.el8
     libtirpc:
@@ -775,7 +775,7 @@ local:
     rpm:
         4.14.3
     salt:
-        3004+0na.b7c4981
+        3004+0na.18c9b7e
     setuptools:
         39.2.0
     six:

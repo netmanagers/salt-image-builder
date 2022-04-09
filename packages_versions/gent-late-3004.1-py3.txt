@@ -195,7 +195,7 @@ local:
     app-editors/nano:
         5.9
     app-eselect/eselect-iptables:
-        20211203
+        20220320
     app-eselect/eselect-lib-bin-symlink:
         0.1.1-r1
     app-eselect/eselect-pinentry:
@@ -233,7 +233,7 @@ local:
     app-text/sgml-common:
         0.6.3-r7
     dev-db/sqlite:
-        3.37.2
+        3.38.0
     dev-lang/perl:
         5.34.0-r6
     dev-lang/python:
@@ -429,7 +429,7 @@ local:
     net-dns/libidn2:
         2.3.2
     net-firewall/iptables:
-        1.8.7
+        1.8.7-r2
     net-libs/gnutls:
         3.7.3-r1
     net-libs/libmnl:
@@ -525,7 +525,7 @@ local:
     sys-apps/systemd-tmpfiles:
         249.9
     sys-apps/sysvinit:
-        2.99-r1
+        3.01
     sys-apps/texinfo:
         6.8
     sys-apps/util-linux:
@@ -549,7 +549,7 @@ local:
     sys-devel/binutils:
         2.37_p1-r2
     sys-devel/binutils-config:
-        5.4
+        5.4.1
     sys-devel/bison:
         3.8.2
     sys-devel/flex:

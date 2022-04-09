@@ -511,7 +511,7 @@ local:
     wget:
         1.20.3-1ubuntu2
     zlib1g:
-        1:1.2.11.dfsg-2ubuntu1.2
+        1:1.2.11.dfsg-2ubuntu1.3
 # salt-call --local pip.list
 local:
     ----------

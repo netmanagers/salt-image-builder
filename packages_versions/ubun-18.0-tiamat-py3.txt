@@ -299,7 +299,7 @@ local:
     libk5crypto3:
         1.16-2ubuntu0.2
     libkeyutils1:
-        1.5.9-9.2ubuntu2
+        1.5.9-9.2ubuntu2.1
     libkmod2:
         24-1ubuntu3.5
     libkrb5-26-heimdal:
@@ -493,7 +493,7 @@ local:
     wget:
         1.19.4-1ubuntu2.2
     zlib1g:
-        1:1.2.11.dfsg-0ubuntu2
+        1:1.2.11.dfsg-0ubuntu2.1
 # salt-call --local pip.list
 local:
     ----------

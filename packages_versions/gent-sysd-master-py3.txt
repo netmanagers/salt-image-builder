@@ -2,7 +2,7 @@ gent-sysd-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.b7c4981
+          Salt: 3004+0na.18c9b7e
  
 Dependency Versions:
           cffi: Not Installed
@@ -104,7 +104,7 @@ local:
     saltpath:
         /usr/lib/python3.9/site-packages/salt
     saltversion:
-        3004+0na.b7c4981
+        3004+0na.18c9b7e
     saltversioninfo:
         - 3004
     systemd:
@@ -245,7 +245,7 @@ local:
     app-editors/nano:
         5.9
     app-eselect/eselect-iptables:
-        20211203
+        20220320
     app-eselect/eselect-lib-bin-symlink:
         0.1.1-r1
     app-eselect/eselect-pinentry:
@@ -285,7 +285,7 @@ local:
     app-text/xmlto:
         0.0.28-r8
     dev-db/sqlite:
-        3.37.2
+        3.38.0
     dev-lang/perl:
         5.34.0-r6
     dev-lang/python:
@@ -455,7 +455,7 @@ local:
     net-dns/libidn2:
         2.3.2
     net-firewall/iptables:
-        1.8.7
+        1.8.7-r2
     net-libs/gnutls:
         3.7.3-r1
     net-libs/libmnl:
@@ -543,7 +543,7 @@ local:
     sys-apps/shadow:
         4.11.1
     sys-apps/systemd:
-        249.9
+        249.11
     sys-apps/texinfo:
         6.8
     sys-apps/util-linux:
@@ -567,7 +567,7 @@ local:
     sys-devel/binutils:
         2.37_p1-r2
     sys-devel/binutils-config:
-        5.4
+        5.4.1
     sys-devel/bison:
         3.8.2
     sys-devel/flex:

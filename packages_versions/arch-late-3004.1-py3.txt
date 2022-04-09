@@ -159,7 +159,7 @@ local:
     e2fsprogs:
         1.46.5-3
     expat:
-        2.4.7-1
+        2.4.8-1
     file:
         5.41-1
     filesystem:
@@ -191,9 +191,9 @@ local:
     grep:
         3.7-1
     gzip:
-        1.11-1
+        1.12-1
     hwdata:
-        0.357-1
+        0.358-1
     iana-etc:
         20220205-1
     icu:
@@ -211,9 +211,9 @@ local:
     keyutils:
         1.6.3-1
     kmod:
-        29-2
+        29-3
     krb5:
-        1.19.2-2
+        1.19.3-1
     ldns:
         1.8.1-1
     less:
@@ -231,11 +231,11 @@ local:
     libelf:
         0.186-5
     libffi:
-        3.4.2-4
+        3.4.2-5
     libgcrypt:
         1.10.1-1
     libgpg-error:
-        1.44-1
+        1.45-1
     libidn2:
         2.3.2-1
     libksba:
@@ -269,7 +269,7 @@ local:
     libseccomp:
         2.5.3-3
     libsecret:
-        0.20.5-1
+        0.20.5-2
     libsodium:
         1.0.18-2
     libssh2:
@@ -325,7 +325,7 @@ local:
     pcre2:
         10.39-1
     perl:
-        5.34.0-3
+        5.34.1-1
     perl-error:
         0.17029-3
     perl-mailtools:
@@ -423,7 +423,7 @@ local:
     python-yaml:
         6.0-1
     python-zipp:
-        3.7.0-1
+        3.8.0-1
     readline:
         8.1.002-1
     salt:
@@ -453,7 +453,7 @@ local:
     util-linux-libs:
         2.38-1
     xz:
-        5.2.5-2
+        5.2.5-3
     zeromq:
         4.3.4-2
     zlib:
@@ -546,4 +546,4 @@ local:
     webencodings:
         0.5.1
     zipp:
-        3.7.0
+        3.8.0

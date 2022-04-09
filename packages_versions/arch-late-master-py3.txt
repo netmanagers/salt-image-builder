@@ -2,7 +2,7 @@ arch-late-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.b7c4981
+          Salt: 3004+0na.18c9b7e
  
 Dependency Versions:
           cffi: 1.15.0
@@ -99,7 +99,7 @@ local:
     saltpath:
         /usr/lib/python3.10/site-packages/salt
     saltversion:
-        3004+0na.b7c4981
+        3004+0na.18c9b7e
     saltversioninfo:
         - 3004
     systemd:
@@ -160,7 +160,7 @@ local:
     e2fsprogs:
         1.46.5-3
     expat:
-        2.4.7-1
+        2.4.8-1
     file:
         5.41-1
     filesystem:
@@ -194,9 +194,9 @@ local:
     grep:
         3.7-1
     gzip:
-        1.11-1
+        1.12-1
     hwdata:
-        0.357-1
+        0.358-1
     iana-etc:
         20220205-1
     icu:
@@ -214,9 +214,9 @@ local:
     keyutils:
         1.6.3-1
     kmod:
-        29-2
+        29-3
     krb5:
-        1.19.2-2
+        1.19.3-1
     ldns:
         1.8.1-1
     less:
@@ -234,11 +234,11 @@ local:
     libelf:
         0.186-5
     libffi:
-        3.4.2-4
+        3.4.2-5
     libgcrypt:
         1.10.1-1
     libgpg-error:
-        1.44-1
+        1.45-1
     libidn2:
         2.3.2-1
     libisl:
@@ -274,7 +274,7 @@ local:
     libseccomp:
         2.5.3-3
     libsecret:
-        0.20.5-1
+        0.20.5-2
     libssh2:
         1.10.0-1
     libsysprof-capture:
@@ -328,7 +328,7 @@ local:
     pcre2:
         10.39-1
     perl:
-        5.34.0-3
+        5.34.1-1
     perl-error:
         0.17029-3
     perl-mailtools:
@@ -436,7 +436,7 @@ local:
     util-linux-libs:
         2.38-1
     xz:
-        5.2.5-2
+        5.2.5-3
     zlib:
         1:1.2.12-1
     zstd:

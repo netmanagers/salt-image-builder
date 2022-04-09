@@ -2,7 +2,7 @@ amaz-02.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.b7c4981
+          Salt: 3004+0na.18c9b7e
  
 Dependency Versions:
           cffi: Not Installed
@@ -105,7 +105,7 @@ local:
     saltpath:
         /usr/lib/python3.7/site-packages/salt
     saltversion:
-        3004+0na.b7c4981
+        3004+0na.18c9b7e
     saltversioninfo:
         - 3004
     systemd:
@@ -204,17 +204,17 @@ local:
     glib2:
         2.56.1-9.amzn2.0.2
     glibc:
-        2.26-57.amzn2
+        2.26-58.amzn2
     glibc-common:
-        2.26-57.amzn2
+        2.26-58.amzn2
     glibc-devel:
-        2.26-57.amzn2
+        2.26-58.amzn2
     glibc-headers:
-        2.26-57.amzn2
+        2.26-58.amzn2
     glibc-langpack-en:
-        2.26-57.amzn2
+        2.26-58.amzn2
     glibc-minimal-langpack:
-        2.26-57.amzn2
+        2.26-58.amzn2
     gmp:
         1:6.0.0-15.amzn2.0.2
     gnupg2:
@@ -232,7 +232,7 @@ local:
     info:
         5.1-5.amzn2
     kernel-headers:
-        4.14.268-205.500.amzn2
+        4.14.273-207.502.amzn2
     keyutils-libs:
         1.5.8-3.amzn2.0.2
     kmod:
@@ -262,7 +262,7 @@ local:
     libcom_err:
         1.42.9-19.amzn2
     libcrypt:
-        2.26-57.amzn2
+        2.26-58.amzn2
     libcurl:
         7.79.1-1.amzn2.0.1
     libdb:
@@ -278,7 +278,7 @@ local:
     libgcc:
         7.3.1-13.amzn2
     libgcrypt:
-        1.5.3-14.amzn2.0.2
+        1.5.3-14.amzn2.0.3
     libgomp:
         7.3.1-13.amzn2
     libgpg-error:
@@ -362,7 +362,7 @@ local:
     nss-util:
         3.67.0-1.amzn2.0.1
     openldap:
-        2.4.44-23.amzn2.0.2
+        2.4.44-23.amzn2.0.3
     openssh:
         7.4p1-22.amzn2.0.1
     openssh-clients:
@@ -530,9 +530,9 @@ local:
     util-linux:
         2.30.2-2.amzn2.0.5
     vim-data:
-        2:8.2.4314-1.amzn2.0.1
+        2:8.2.4428-1.amzn2.0.3
     vim-minimal:
-        2:8.2.4314-1.amzn2.0.1
+        2:8.2.4428-1.amzn2.0.3
     which:
         2.20-7.amzn2.0.2
     xz-libs:
@@ -550,7 +550,7 @@ local:
     zip:
         3.0-11.amzn2.0.2
     zlib:
-        1.2.7-18.amzn2
+        1.2.7-19.amzn2.0.1
 # salt-call --local pip.list
 local:
     ----------

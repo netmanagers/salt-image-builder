@@ -124,7 +124,7 @@ local:
     apt:
         2.4.3
     apt-transport-https:
-        2.4.3
+        2.4.4
     base-files:
         12.2
     base-passwd:
@@ -258,7 +258,7 @@ local:
     liberror-perl:
         0.17029-1
     libexpat1:
-        2.4.7-1
+        2.4.8-1
     libext2fs2:
         1.46.5-2
     libfdisk1:
@@ -500,7 +500,7 @@ local:
     util-linux:
         2.37.3-1+b1
     wget:
-        1.21.2-2+b1
+        1.21.3-1+b1
     zlib1g:
         1:1.2.11.dfsg-2
 # salt-call --local pip.list

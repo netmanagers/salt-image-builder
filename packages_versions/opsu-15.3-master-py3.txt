@@ -2,7 +2,7 @@ opsu-15.3-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.b7c4981
+          Salt: 3004+0na.18c9b7e
  
 Dependency Versions:
           cffi: 1.13.2
@@ -107,7 +107,7 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3004+0na.b7c4981
+        3004+0na.18c9b7e
     saltversioninfo:
         - 3004
     systemd:
@@ -126,7 +126,7 @@ local:
 local:
     ----------
     aaa_base:
-        84.87+git20180409.04c9dae-3.52.1
+        84.87+git20180409.04c9dae-3.57.1
     bash:
         4.4-19.6.1
     binutils:
@@ -224,7 +224,7 @@ local:
     libaugeas0:
         1.10.1-3.9.1
     libblkid1:
-        2.36.2-150300.4.17.1
+        2.36.2-150300.4.20.1
     libboost_system1_66_0:
         1.66.0-12.3.1
     libboost_thread1_66_0:
@@ -270,7 +270,7 @@ local:
     libexpat1:
         2.2.5-3.19.1
     libfdisk1:
-        2.36.2-150300.4.17.1
+        2.36.2-150300.4.20.1
     libffi7:
         3.2.1.git259-10.8
     libfido2-1:
@@ -324,7 +324,7 @@ local:
     libmodman1:
         2.0.1-1.27
     libmount1:
-        2.36.2-150300.4.17.1
+        2.36.2-150300.4.20.1
     libmpc3:
         1.1.0-1.47
     libmpfr6:
@@ -382,7 +382,7 @@ local:
     libsigc-2_0-0:
         2.10.2-1.18
     libsmartcols1:
-        2.36.2-150300.4.17.1
+        2.36.2-150300.4.20.1
     libsolv-tools:
         0.7.20-9.2
     libsqlite3-0:
@@ -414,7 +414,7 @@ local:
     libutempter0:
         1.1.6-3.42
     libuuid1:
-        2.36.2-150300.4.17.1
+        2.36.2-150300.4.20.1
     libverto1:
         0.2.6-3.20
     libxcrypt-devel:
@@ -568,7 +568,7 @@ local:
     update-alternatives:
         1.19.0.4-4.3.1
     util-linux:
-        2.36.2-150300.4.17.1
+        2.36.2-150300.4.20.1
     which:
         2.21-2.20
     zypper:
@@ -629,7 +629,7 @@ local:
     requests:
         2.27.1
     salt:
-        3004+0na.b7c4981
+        3004+0na.18c9b7e
     setuptools:
         40.5.0
     six:

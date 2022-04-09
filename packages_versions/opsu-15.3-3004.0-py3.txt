@@ -126,7 +126,7 @@ local:
 local:
     ----------
     aaa_base:
-        84.87+git20180409.04c9dae-3.52.1
+        84.87+git20180409.04c9dae-3.57.1
     bash:
         4.4-19.6.1
     boost-license1_66_0:
@@ -210,7 +210,7 @@ local:
     libaugeas0:
         1.10.1-3.9.1
     libblkid1:
-        2.36.2-150300.4.17.1
+        2.36.2-150300.4.20.1
     libboost_system1_66_0:
         1.66.0-12.3.1
     libboost_thread1_66_0:
@@ -250,7 +250,7 @@ local:
     libexpat1:
         2.2.5-3.19.1
     libfdisk1:
-        2.36.2-150300.4.17.1
+        2.36.2-150300.4.20.1
     libffi7:
         3.2.1.git259-10.8
     libfido2-1:
@@ -298,7 +298,7 @@ local:
     libmodman1:
         2.0.1-1.27
     libmount1:
-        2.36.2-150300.4.17.1
+        2.36.2-150300.4.20.1
     libncurses6:
         6.1-5.9.1
     libnghttp2-14:
@@ -350,7 +350,7 @@ local:
     libsigc-2_0-0:
         2.10.2-1.18
     libsmartcols1:
-        2.36.2-150300.4.17.1
+        2.36.2-150300.4.20.1
     libsodium23:
         1.0.16-4.3.18
     libsolv-tools:
@@ -382,7 +382,7 @@ local:
     libutempter0:
         1.1.6-3.42
     libuuid1:
-        2.36.2-150300.4.17.1
+        2.36.2-150300.4.20.1
     libverto1:
         0.2.6-3.20
     libxml2-2:
@@ -564,13 +564,13 @@ local:
     terminfo-base:
         6.1-5.9.1
     timezone:
-        2021e-75.4.1
+        2022a-150000.75.7.1
     udev:
         246.16-150300.7.39.1
     update-alternatives:
         1.19.0.4-4.3.1
     util-linux:
-        2.36.2-150300.4.17.1
+        2.36.2-150300.4.20.1
     which:
         2.21-2.20
     xz:
