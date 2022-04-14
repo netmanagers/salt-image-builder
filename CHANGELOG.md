@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.68.1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.68.0...v1.68.1) (2022-04-14)
+
+
+### Tests
+
+* **test_jinja:** use Jinja relative imports throughout [skip ci] ([509e855](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/509e85542a60d7083ef161fbe1b64d90f018b8bc))
+
 # [1.68.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.67.0...v1.68.0) (2022-04-09)
 
 

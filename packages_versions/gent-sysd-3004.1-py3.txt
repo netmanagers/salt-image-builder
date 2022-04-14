@@ -222,9 +222,9 @@ local:
     app-arch/bzip2:
         1.0.8-r1
     app-arch/gzip:
-        1.11
+        1.12
     app-arch/libarchive:
-        3.6.0
+        3.6.1
     app-arch/lz4:
         1.9.3-r1
     app-arch/tar:
@@ -232,7 +232,7 @@ local:
     app-arch/unzip:
         6.0_p26
     app-arch/xz-utils:
-        5.2.5-r1
+        5.2.5-r2
     app-arch/zstd:
         1.5.2
     app-crypt/gnupg:
@@ -546,7 +546,7 @@ local:
     sys-apps/findutils:
         4.8.0-r1
     sys-apps/gawk:
-        5.1.1-r1
+        5.1.1-r2
     sys-apps/gentoo-functions:
         0.15
     sys-apps/gentoo-systemd-integration:
@@ -606,7 +606,7 @@ local:
     sys-devel/autoconf-wrapper:
         15
     sys-devel/automake:
-        1.16.4
+        1.16.5
     sys-devel/automake-wrapper:
         11
     sys-devel/binutils:
@@ -634,15 +634,13 @@ local:
     sys-devel/patch:
         2.7.6-r4
     sys-fs/e2fsprogs:
-        1.46.4
+        1.46.5
     sys-fs/udev-init-scripts:
         34
     sys-kernel/installkernel-gentoo:
         5
     sys-kernel/linux-headers:
         5.15-r3
-    sys-libs/e2fsprogs-libs:
-        1.46.4-r1
     sys-libs/gdbm:
         1.22
     sys-libs/glibc:

@@ -171,9 +171,9 @@ local:
     gcc-10-base:
         10.3.0-1ubuntu1~20.04
     git:
-        1:2.25.1-1ubuntu3.2
+        1:2.25.1-1ubuntu3.3
     git-man:
-        1:2.25.1-1ubuntu3.2
+        1:2.25.1-1ubuntu3.3
     gnupg:
         2.2.19-3ubuntu2.1
     gnupg-l10n:
@@ -397,13 +397,13 @@ local:
     libstdc++6:
         10.3.0-1ubuntu1~20.04
     libsystemd0:
-        245.4-4ubuntu3.15
+        245.4-4ubuntu3.16
     libtasn1-6:
         4.16.0-2
     libtinfo6:
         6.2-0ubuntu2
     libudev1:
-        245.4-4ubuntu3.15
+        245.4-4ubuntu3.16
     libunistring2:
         0.9.10-2
     libuuid1:
@@ -491,11 +491,11 @@ local:
     sudo:
         1.8.31-1ubuntu1.2
     systemd:
-        245.4-4ubuntu3.15
+        245.4-4ubuntu3.16
     systemd-sysv:
-        245.4-4ubuntu3.15
+        245.4-4ubuntu3.16
     systemd-timesyncd:
-        245.4-4ubuntu3.15
+        245.4-4ubuntu3.16
     sysvinit-utils:
         2.96-2.1ubuntu1
     tar:
@@ -505,7 +505,7 @@ local:
     ucf:
         3.0038+nmu1
     udev:
-        245.4-4ubuntu3.15
+        245.4-4ubuntu3.16
     util-linux:
         2.34-0.1ubuntu9.3
     wget:

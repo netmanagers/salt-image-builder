@@ -196,13 +196,13 @@ local:
     glib2:
         2.56.1-9.amzn2.0.2
     glibc:
-        2.26-57.amzn2
+        2.26-58.amzn2
     glibc-common:
-        2.26-57.amzn2
+        2.26-58.amzn2
     glibc-langpack-en:
-        2.26-57.amzn2
+        2.26-58.amzn2
     glibc-minimal-langpack:
-        2.26-57.amzn2
+        2.26-58.amzn2
     gmp:
         1:6.0.0-15.amzn2.0.2
     gnupg2:
@@ -246,7 +246,7 @@ local:
     libcom_err:
         1.42.9-19.amzn2
     libcrypt:
-        2.26-57.amzn2
+        2.26-58.amzn2
     libcurl:
         7.79.1-1.amzn2.0.1
     libdb:
@@ -262,7 +262,7 @@ local:
     libgcc:
         7.3.1-13.amzn2
     libgcrypt:
-        1.5.3-14.amzn2.0.2
+        1.5.3-14.amzn2.0.3
     libgpg-error:
         1.12-3.amzn2.0.3
     libidn2:
@@ -332,7 +332,7 @@ local:
     nss-util:
         3.67.0-1.amzn2.0.1
     openldap:
-        2.4.44-23.amzn2.0.2
+        2.4.44-23.amzn2.0.3
     openssh:
         7.4p1-22.amzn2.0.1
     openssh-clients:
@@ -494,9 +494,9 @@ local:
     util-linux:
         2.30.2-2.amzn2.0.5
     vim-data:
-        2:8.2.4314-1.amzn2.0.1
+        2:8.2.4428-1.amzn2.0.3
     vim-minimal:
-        2:8.2.4314-1.amzn2.0.1
+        2:8.2.4428-1.amzn2.0.3
     which:
         2.20-7.amzn2.0.2
     xz-libs:
@@ -512,7 +512,7 @@ local:
     yum-utils:
         1.1.31-46.amzn2.0.1
     zlib:
-        1.2.7-18.amzn2
+        1.2.7-19.amzn2.0.1
 # salt-call --local pip.list
 local:
     ----------
