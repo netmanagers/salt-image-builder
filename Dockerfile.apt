@@ -37,6 +37,8 @@ RUN apt-get update \
       # Use `buster` packages for `bookworm` until specific Tiamat package available
       if [ "${DISTRO_VERSION}" = "bookworm" ]; then \
         DISTRO_VERSION="10"; \
+        # Use temporary workaround of installing `contextvars`
+        pip3 install --no-cache-dir contextvars==2.4; \
       # Use `buster` packages for `bullseye` until specific Tiamat package available
       # Using this as a separate conditional since this will eventually be adjusted
       # separately from `bookworm` above
