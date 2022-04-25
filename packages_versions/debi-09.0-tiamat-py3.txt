@@ -186,7 +186,7 @@ local:
     grep:
         2.27-2
     gzip:
-        1.6-5+b1
+        1.6-5+deb9u1
     hostname:
         3.18+b1
     init-system-helpers:
@@ -292,7 +292,7 @@ local:
     liblz4-1:
         0.0~r131-2+deb9u1
     liblzma5:
-        5.2.2-1.2+b1
+        5.2.2-1.2+deb9u1
     libmnl0:
         1.0.4-2
     libmount1:
@@ -456,7 +456,7 @@ local:
     tar:
         1.29b-1.1+deb9u1
     tzdata:
-        2021a-0+deb9u2
+        2021a-0+deb9u3
     ucf:
         3.0036
     udev:
@@ -466,7 +466,7 @@ local:
     wget:
         1.18-5+deb9u3
     zlib1g:
-        1:1.2.8.dfsg-5
+        1:1.2.8.dfsg-5+deb9u1
 # salt-call --local pip.list
 local:
     ----------

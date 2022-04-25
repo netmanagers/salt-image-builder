@@ -136,7 +136,7 @@ local:
     base-passwd:
         3.5.44
     bash:
-        4.4.18-2ubuntu1.2
+        4.4.18-2ubuntu1.3
     bsdmainutils:
         11.1.2ubuntu1
     bsdutils:
@@ -176,9 +176,9 @@ local:
     gir1.2-glib-2.0:
         1.56.1-1
     git:
-        1:2.17.1-1ubuntu0.9
+        1:2.17.1-1ubuntu0.10
     git-man:
-        1:2.17.1-1ubuntu0.9
+        1:2.17.1-1ubuntu0.10
     gnupg:
         2.2.4-1ubuntu1.4
     gnupg-l10n:
@@ -202,7 +202,7 @@ local:
     grep:
         3.1-2build1
     gzip:
-        1.6-5ubuntu1.1
+        1.6-5ubuntu1.2
     hostname:
         3.20
     init-system-helpers:
@@ -332,7 +332,7 @@ local:
     liblz4-1:
         0.0~r131-2ubuntu3.1
     liblzma5:
-        5.2.2-1.3
+        5.2.2-1.3ubuntu0.1
     libmount1:
         2.31.1-0.4ubuntu3.7
     libmpdec2:

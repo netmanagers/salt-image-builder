@@ -2,7 +2,7 @@ debi-10.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.18c9b7e
+          Salt: 3004+0na.cfa7358
  
 Dependency Versions:
           cffi: Not Installed
@@ -129,7 +129,7 @@ local:
     saltpath:
         /usr/local/lib/python3.7/dist-packages/salt
     saltversion:
-        3004+0na.18c9b7e
+        3004+0na.cfa7358
     saltversioninfo:
         - 3004
     systemd:
@@ -238,7 +238,7 @@ local:
     grep:
         3.3-1
     gzip:
-        1.9-3
+        1.9-3+deb10u1
     hostname:
         3.21
     init-system-helpers:
@@ -380,7 +380,7 @@ local:
     liblz4-1:
         1.8.3-1+deb10u1
     liblzma5:
-        5.2.4-1
+        5.2.4-1+deb10u1
     libmnl0:
         1.0.4-2
     libmount1:
@@ -631,11 +631,11 @@ local:
     requests:
         2.27.1
     salt:
-        3004+0na.18c9b7e
+        3004+0na.cfa7358
     setuptools:
         40.8.0
     typing-extensions:
-        4.1.1
+        4.2.0
     urllib3:
         1.26.9
     wheel:

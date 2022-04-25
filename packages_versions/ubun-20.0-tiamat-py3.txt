@@ -197,7 +197,7 @@ local:
     grep:
         3.4-1
     gzip:
-        1.10-0ubuntu4
+        1.10-0ubuntu4.1
     hostname:
         3.23
     init-system-helpers:
@@ -323,7 +323,7 @@ local:
     liblz4-1:
         1.9.2-2ubuntu0.20.04.1
     liblzma5:
-        5.2.4-1ubuntu1
+        5.2.4-1ubuntu1.1
     libmount1:
         2.34-0.1ubuntu9.3
     libmpdec2:

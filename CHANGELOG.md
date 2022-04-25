@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.68.2](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.68.1...v1.68.2) (2022-04-25)
+
+
+### Bug Fixes
+
+* **bookworm:** install `contextvars` until package fixed [skip ci] ([d80b2bf](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/d80b2bf3958002ffe9e059b36bb2be4ca2369096))
+
 ## [1.68.1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.68.0...v1.68.1) (2022-04-14)
 
 

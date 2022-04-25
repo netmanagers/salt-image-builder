@@ -2,7 +2,7 @@ fedo-35.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.18c9b7e
+          Salt: 3004+0na.cfa7358
  
 Dependency Versions:
           cffi: Not Installed
@@ -103,7 +103,7 @@ local:
     saltpath:
         /usr/lib/python3.10/site-packages/salt
     saltversion:
-        3004+0na.18c9b7e
+        3004+0na.cfa7358
     saltversioninfo:
         - 3004
     systemd:
@@ -236,19 +236,19 @@ local:
     glib2:
         2.70.5-1.fc35
     glibc:
-        2.34-29.fc35
+        2.34-30.fc35
     glibc-common:
-        2.34-29.fc35
+        2.34-30.fc35
     glibc-devel:
-        2.34-29.fc35
+        2.34-30.fc35
     glibc-gconv-extra:
-        2.34-29.fc35
+        2.34-30.fc35
     glibc-headers-x86:
-        2.34-29.fc35
+        2.34-30.fc35
     glibc-langpack-en:
-        2.34-29.fc35
+        2.34-30.fc35
     glibc-minimal-langpack:
-        2.34-29.fc35
+        2.34-30.fc35
     gmp:
         1:6.2.0-7.fc35
     gnupg2:
@@ -274,7 +274,7 @@ local:
     guile22:
         2.2.7-3.fc35
     gzip:
-        1.10-5.fc35
+        1.10-6.fc35
     ima-evm-utils:
         1.3.2-3.fc35
     iptables-legacy-libs:
@@ -286,7 +286,7 @@ local:
     kbd-misc:
         2.4.0-8.fc35
     kernel-headers:
-        5.16.5-200.fc35
+        5.17.4-200.fc35
     keyutils-libs:
         1.6.1-3.fc35
     kmod:
@@ -400,7 +400,7 @@ local:
     libsmartcols:
         2.37.4-1.fc35
     libsolv:
-        0.7.21-1.fc35
+        0.7.22-1.fc35
     libssh:
         0.9.6-1.fc35
     libssh-config:
@@ -656,17 +656,17 @@ local:
     sudo:
         1.9.7p2-2.fc35
     systemd:
-        249.11-1.fc35
+        249.11-2.fc35
     systemd-libs:
-        249.11-1.fc35
+        249.11-2.fc35
     systemd-networkd:
-        249.11-1.fc35
+        249.11-2.fc35
     systemd-pam:
-        249.11-1.fc35
+        249.11-2.fc35
     systemd-resolved:
-        249.11-1.fc35
+        249.11-2.fc35
     systemd-udev:
-        249.11-1.fc35
+        249.11-2.fc35
     tar:
         2:1.34-2.fc35
     tpm2-tss:
@@ -676,7 +676,7 @@ local:
     trousers-lib:
         0.3.15-4.fc35
     tzdata:
-        2022a-1.fc35
+        2022a-2.fc35
     unbound-libs:
         1.13.2-1.fc35
     util-linux:
@@ -684,17 +684,17 @@ local:
     util-linux-core:
         2.37.4-1.fc35
     vim-data:
-        2:8.2.4701-1.fc35
+        2:8.2.4804-1.fc35
     vim-minimal:
-        2:8.2.4701-1.fc35
+        2:8.2.4804-1.fc35
     which:
         2.21-27.fc35
     xkeyboard-config:
         2.33-2.fc35
     xz:
-        5.2.5-7.fc35
+        5.2.5-9.fc35
     xz-libs:
-        5.2.5-7.fc35
+        5.2.5-9.fc35
     yum:
         4.11.1-2.fc35
     zchunk-libs:

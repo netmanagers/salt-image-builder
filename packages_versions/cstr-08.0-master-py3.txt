@@ -2,7 +2,7 @@ cstr-08.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.18c9b7e
+          Salt: 3004+0na.cfa7358
  
 Dependency Versions:
           cffi: Not Installed
@@ -105,7 +105,7 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3004+0na.18c9b7e
+        3004+0na.cfa7358
     saltversioninfo:
         - 3004
     systemd:
@@ -132,7 +132,7 @@ local:
     bash:
         4.4.20-4.el8
     binutils:
-        2.30-113.el8
+        2.30-114.el8
     brotli:
         1.0.6-3.el8
     bzip2-libs:
@@ -274,7 +274,7 @@ local:
     kbd-misc:
         2.0.4-10.el8
     kernel-headers:
-        4.18.0-373.el8
+        4.18.0-383.el8
     keyutils-libs:
         1.5.10-9.el8
     keyutils-libs-devel:
@@ -284,9 +284,9 @@ local:
     kmod-libs:
         25-19.el8
     krb5-devel:
-        1.18.2-14.el8
+        1.18.2-17.el8
     krb5-libs:
-        1.18.2-14.el8
+        1.18.2-17.el8
     langpacks-en:
         1.0-12.el8
     less:
@@ -338,7 +338,7 @@ local:
     libidn2:
         2.2.0-1.el8
     libkadm5:
-        1.18.2-14.el8
+        1.18.2-17.el8
     libksba:
         1.3.5-7.el8
     libmodulemd:
@@ -692,7 +692,7 @@ local:
     tpm2-tss:
         2.3.2-4.el8
     tzdata:
-        2022a-1.el8
+        2022a-2.el8
     unbound-libs:
         1.7.3-17.el8
     usermode:
@@ -702,7 +702,7 @@ local:
     vim-minimal:
         2:8.0.1763-16.el8_5.12
     virt-what:
-        1.18-13.el8
+        1.18-14.el8
     which:
         2.21-17.el8
     xz-libs:
@@ -775,7 +775,7 @@ local:
     rpm:
         4.14.3
     salt:
-        3004+0na.18c9b7e
+        3004+0na.cfa7358
     setuptools:
         39.2.0
     six:

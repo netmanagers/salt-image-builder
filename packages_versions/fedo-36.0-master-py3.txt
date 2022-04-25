@@ -2,7 +2,7 @@ fedo-36.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.18c9b7e
+          Salt: 3004+0na.cfa7358
  
 Dependency Versions:
           cffi: Not Installed
@@ -105,7 +105,7 @@ local:
     saltpath:
         /usr/local/lib/python3.10/site-packages/salt
     saltversion:
-        3004+0na.18c9b7e
+        3004+0na.cfa7358
     saltversioninfo:
         - 3004
     systemd:
@@ -147,10 +147,8 @@ local:
         9.0-5.fc36
     coreutils-common:
         9.0-5.fc36
-    cpio:
-        2.13-12.fc36
     cpp:
-        12.0.1-0.12.fc36
+        12.0.1-0.16.fc36
     cracklib:
         2.9.6-28.fc36
     crypto-policies:
@@ -177,8 +175,6 @@ local:
         4.11.1-2.fc36
     dnf-data:
         4.11.1-2.fc36
-    dracut:
-        056-1.fc36
     elfutils-debuginfod-client:
         0.186-3.fc36
     elfutils-default-yama-scope:
@@ -201,30 +197,22 @@ local:
         36-1
     fedora-repos-modular:
         36-1
-    file:
-        5.41-4.fc36
     file-libs:
         5.41-4.fc36
     filesystem:
         3.16-2.fc36
     findutils:
         1:4.9.0-1.fc36
-    fuse-libs:
-        2.9.9-14.fc36
     gawk:
         5.1.1-2.fc36
     gc:
         8.0.6-2.fc36
     gcc:
-        12.0.1-0.12.fc36
+        12.0.1-0.16.fc36
     gcc-c++:
-        12.0.1-0.12.fc36
+        12.0.1-0.16.fc36
     gdbm-libs:
         1:1.22-2.fc36
-    gettext:
-        0.21-9.fc36
-    gettext-libs:
-        0.21-9.fc36
     git:
         2.35.1-1.fc36
     git-core:
@@ -232,7 +220,7 @@ local:
     git-core-doc:
         2.35.1-1.fc36
     glib2:
-        2.72.0-2.fc36
+        2.72.1-1.fc36
     glibc:
         2.35-4.fc36
     glibc-common:
@@ -259,18 +247,10 @@ local:
         3.7-2.fc36
     groff-base:
         1.22.4-9.fc36
-    grub2-common:
-        1:2.06-29.fc36
-    grub2-tools:
-        1:2.06-29.fc36
-    grub2-tools-minimal:
-        1:2.06-29.fc36
-    grubby:
-        8.40-57.fc36
     guile22:
         2.2.7-5.fc36
     gzip:
-        1.11-2.fc36
+        1.11-3.fc36
     ima-evm-utils:
         1.4-5.fc36
     json-c:
@@ -287,8 +267,6 @@ local:
         29-7.fc36
     kmod-libs:
         29-7.fc36
-    kpartx:
-        0.8.7-8.fc36
     krb5-libs:
         1.19.2-9.fc36
     less:
@@ -338,19 +316,15 @@ local:
     libfsverity:
         1.4-7.fc36
     libgcc:
-        12.0.1-0.14.fc36
+        12.0.1-0.16.fc36
     libgcrypt:
         1.10.1-2.fc36
     libgomp:
-        12.0.1-0.12.fc36
+        12.0.1-0.16.fc36
     libgpg-error:
         1.45-1.fc36
     libidn2:
         2.3.2-4.fc36
-    libkcapi:
-        1.3.1-4.fc36
-    libkcapi-hmaccalc:
-        1.3.1-4.fc36
     libksba:
         1.6.0-3.fc36
     libmodulemd:
@@ -386,15 +360,15 @@ local:
     libsmartcols:
         2.38-0.2.fc36
     libsolv:
-        0.7.21-1.fc36
+        0.7.22-1.fc36
     libssh:
         0.9.6-4.fc36
     libssh-config:
         0.9.6-4.fc36
     libstdc++:
-        12.0.1-0.12.fc36
+        12.0.1-0.16.fc36
     libstdc++-devel:
-        12.0.1-0.12.fc36
+        12.0.1-0.16.fc36
     libtasn1:
         4.18.0-2.fc36
     libtirpc:
@@ -425,8 +399,6 @@ local:
         1.9.3-4.fc36
     make:
         1:4.3-7.fc36
-    memstrack:
-        0.2.4-2.fc36
     mpdecimal:
         2.5.1-3.fc36
     mpfr:
@@ -454,9 +426,7 @@ local:
     openssh-server:
         8.8p1-1.fc36.1
     openssl-libs:
-        1:3.0.2-2.fc36
-    os-prober:
-        1.77-9.fc36
+        1:3.0.2-3.fc36
     p11-kit:
         0.24.1-2.fc36
     p11-kit-trust:
@@ -569,8 +539,6 @@ local:
         1.04-486.fc36
     perl-vars:
         1.05-486.fc36
-    pigz:
-        2.6-2.fc36
     pkgconf:
         1.8.0-2.fc36
     pkgconf-m4:
@@ -650,19 +618,17 @@ local:
     util-linux-core:
         2.38-0.2.fc36
     vim-data:
-        2:8.2.4701-1.fc36
+        2:8.2.4804-1.fc36
     vim-minimal:
-        2:8.2.4701-1.fc36
+        2:8.2.4804-1.fc36
     which:
         2.21-32.fc36
-    xz:
-        5.2.5-8.fc36
     xz-libs:
-        5.2.5-8.fc36
+        5.2.5-9.fc36
     yum:
         4.11.1-2.fc36
     zchunk-libs:
-        1.2.1-1.fc36
+        1.2.2-1.fc36
     zlib:
         1.2.11-31.fc36
 # salt-call --local pip.list

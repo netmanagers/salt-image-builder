@@ -239,9 +239,9 @@ local:
     libattr:
         2.4.46-12.amzn2.0.2
     libblkid:
-        2.30.2-2.amzn2.0.5
+        2.30.2-2.amzn2.0.7
     libcap:
-        2.22-9.amzn2.0.2
+        2.54-1.amzn2.0.1
     libcap-ng:
         0.7.5-4.amzn2.0.4
     libcom_err:
@@ -257,7 +257,7 @@ local:
     libedit:
         3.0-12.20121213cvs.amzn2.0.2
     libfdisk:
-        2.30.2-2.amzn2.0.5
+        2.30.2-2.amzn2.0.7
     libffi:
         3.0.13-18.amzn2.0.2
     libgcc:
@@ -271,7 +271,7 @@ local:
     libmetalink:
         0.1.3-13.amzn2
     libmount:
-        2.30.2-2.amzn2.0.5
+        2.30.2-2.amzn2.0.7
     libnghttp2:
         1.41.0-1.amzn2
     libpwquality:
@@ -283,7 +283,7 @@ local:
     libsepol:
         2.5-8.1.amzn2.0.2
     libsmartcols:
-        2.30.2-2.amzn2.0.5
+        2.30.2-2.amzn2.0.7
     libssh2:
         1.4.3-12.amzn2.2.3
     libstdc++:
@@ -301,7 +301,7 @@ local:
     libutempter:
         1.1.6-4.amzn2.0.2
     libuuid:
-        2.30.2-2.amzn2.0.5
+        2.30.2-2.amzn2.0.7
     libverto:
         0.2.5-4.amzn2.0.2
     libxml2:
@@ -549,7 +549,7 @@ local:
     ustr:
         1.0.4-16.amzn2.0.3
     util-linux:
-        2.30.2-2.amzn2.0.5
+        2.30.2-2.amzn2.0.7
     vim-data:
         2:8.2.4428-1.amzn2.0.3
     vim-minimal:

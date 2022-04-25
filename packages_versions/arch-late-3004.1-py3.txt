@@ -121,7 +121,7 @@ local:
     acl:
         2.3.1-2
     archlinux-keyring:
-        20220224-1
+        20220424-1
     argon2:
         20190702-4
     attr:
@@ -143,7 +143,7 @@ local:
     ca-certificates-utils:
         20210603-1
     coreutils:
-        9.0-2
+        9.1-1
     cryptsetup:
         2.4.3-2
     curl:
@@ -175,9 +175,9 @@ local:
     gettext:
         0.21-2
     git:
-        2.35.2-1
+        2.36.0-1
     glib2:
-        2.72.0-1
+        2.72.1-1
     glibc:
         2.35-3
     gmp:
@@ -195,9 +195,9 @@ local:
     hwdata:
         0.358-1
     iana-etc:
-        20220205-1
+        20220325-1
     icu:
-        70.1-1
+        71.1-1
     iproute2:
         5.17.0-2
     iptables:
@@ -205,7 +205,7 @@ local:
     iputils:
         20211215-1
     json-c:
-        0.15-3
+        0.16-1
     kbd:
         2.4.0-2
     keyutils:
@@ -225,9 +225,9 @@ local:
     libbpf:
         0.7.0-1
     libcap:
-        2.63-2
+        2.64-1
     libcap-ng:
-        0.8.2-7
+        0.8.3-1
     libedit:
         20210910_3.1-1
     libelf:
@@ -245,17 +245,17 @@ local:
     libldap:
         2.6.1-1
     libmnl:
-        1.0.4-3
+        1.0.5-1
     libnetfilter_conntrack:
         1.0.9-1
     libnfnetlink:
-        1.0.1-4
+        1.0.2-1
     libnftnl:
         1.2.1-1
     libnghttp2:
         1.47.0-1
     libnl:
-        3.5.0-3
+        3.6.0-1
     libnsl:
         2.0.0-2
     libp11-kit:
@@ -263,7 +263,7 @@ local:
     libpcap:
         1.10.1-2
     libpgm:
-        5.3.128-1
+        5.3.128-2
     libpsl:
         0.21.1-1
     libsasl:
@@ -287,7 +287,7 @@ local:
     libxcrypt:
         4.4.28-2
     libxml2:
-        2.9.13-1
+        2.9.13-2
     libyaml:
         0.2.5-1
     licenses:
@@ -459,7 +459,7 @@ local:
     zeromq:
         4.3.4-2
     zlib:
-        1:1.2.12-1
+        1:1.2.12-2
     zstd:
         1.5.2-3
 # salt-call --local pip.list

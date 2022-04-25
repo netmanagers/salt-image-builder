@@ -224,7 +224,7 @@ local:
     libcbor0:
         0.5.0-4.3.1
     libcom_err2:
-        1.43.8-4.26.1
+        1.43.8-150000.4.29.1
     libcrack2:
         2.9.7-11.6.1
     libcrypt1:
@@ -368,9 +368,9 @@ local:
     libtasn1-6:
         4.13-4.5.1
     libtirpc-netconfig:
-        1.2.6-1.131
+        1.2.6-150300.3.3.1
     libtirpc3:
-        1.2.6-1.131
+        1.2.6-150300.3.3.1
     libudev1:
         246.16-150300.7.42.1
     libunistring2:

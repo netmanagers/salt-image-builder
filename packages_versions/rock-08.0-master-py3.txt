@@ -2,7 +2,7 @@ rock-08.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.18c9b7e
+          Salt: 3004+0na.cfa7358
  
 Dependency Versions:
           cffi: Not Installed
@@ -106,7 +106,7 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3004+0na.18c9b7e
+        3004+0na.cfa7358
     saltversioninfo:
         - 3004
     systemd:
@@ -692,7 +692,7 @@ local:
     rpm:
         4.14.3
     salt:
-        3004+0na.18c9b7e
+        3004+0na.cfa7358
     setuptools:
         39.2.0
     six:

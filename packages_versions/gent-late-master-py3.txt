@@ -2,7 +2,7 @@ gent-late-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.18c9b7e
+          Salt: 3004+0na.cfa7358
  
 Dependency Versions:
           cffi: Not Installed
@@ -22,7 +22,7 @@ Dependency Versions:
       pycrypto: Not Installed
   pycryptodome: 3.14.1
         pygit2: Not Installed
-        Python: 3.9.9 (main, Jan 23 2022, 17:26:21)
+        Python: 3.9.11 (main, Apr 24 2022, 17:33:07)
   python-gnupg: Not Installed
         PyYAML: 6.0
          PyZMQ: 22.3.0
@@ -98,13 +98,13 @@ local:
     pythonversion:
         - 3
         - 9
-        - 9
+        - 11
         - final
         - 0
     saltpath:
         /usr/lib/python3.9/site-packages/salt
     saltversion:
-        3004+0na.18c9b7e
+        3004+0na.cfa7358
     saltversioninfo:
         - 3004
     systemd:
@@ -228,11 +228,11 @@ local:
     app-text/sgml-common:
         0.6.3-r7
     dev-db/sqlite:
-        3.38.0
+        3.38.1
     dev-lang/perl:
-        5.34.0-r6
+        5.34.0-r9
     dev-lang/python:
-        3.10.2_p1,3.9.9-r1
+        3.10.3,3.9.11
     dev-lang/python-exec:
         2.4.8
     dev-lang/python-exec-conf:
@@ -330,7 +330,7 @@ local:
     dev-python/idna:
         3.3
     dev-python/importlib_metadata:
-        4.11.2
+        4.11.3
     dev-python/installer:
         0.5.0
     dev-python/jaraco-context:
@@ -345,24 +345,26 @@ local:
         2.1.1
     dev-python/more-itertools:
         8.12.0-r1
+    dev-python/nspektr:
+        0.3.0
     dev-python/ordered-set:
         4.1.0
     dev-python/packaging:
         21.3-r2
     dev-python/pip:
-        22.0.3
+        22.0.4
     dev-python/pyparsing:
         3.0.7-r1
     dev-python/requests:
         2.27.1
     dev-python/setuptools:
-        60.9.2
+        60.10.0
     dev-python/setuptools_scm:
         6.4.1
     dev-python/tomli:
         2.0.1
     dev-python/urllib3:
-        1.26.8
+        1.26.9
     dev-python/wheel:
         0.37.1-r1
     dev-python/zipp:
@@ -458,7 +460,7 @@ local:
     sys-apps/less:
         590
     sys-apps/man-db:
-        2.9.4-r1
+        2.10.2-r1
     sys-apps/man-pages:
         5.12-r2
     sys-apps/man-pages-posix:
@@ -468,7 +470,7 @@ local:
     sys-apps/openrc:
         0.44.10
     sys-apps/portage:
-        3.0.30-r1
+        3.0.30-r3
     sys-apps/sandbox:
         2.29
     sys-apps/sed:
@@ -524,7 +526,7 @@ local:
     sys-devel/patch:
         2.7.6-r4
     sys-fs/e2fsprogs:
-        1.46.5
+        1.46.5-r1
     sys-fs/udev:
         249.6-r2
     sys-fs/udev-init-scripts:
@@ -671,7 +673,7 @@ local:
     idna:
         3.3
     importlib_metadata:
-        4.11.2
+        4.11.3
     installer:
         0.5.0
     jaraco.context:
@@ -684,12 +686,14 @@ local:
         0.60.3
     more_itertools:
         8.12.0
+    nspektr:
+        0.3.0
     ordered-set:
         4.1.0
     packaging:
         21.3
     pip:
-        22.0.3
+        22.0.4
     portage:
         3.0.30
     pyparsing:
@@ -697,11 +701,13 @@ local:
     requests:
         2.27.1
     setuptools:
-        60.9.2
+        60.10.0
     setuptools-scm:
         6.4.1
     tomli:
         2.0.1
+    urllib3:
+        1.26.9
     wheel:
         0.37.1
     zipp:

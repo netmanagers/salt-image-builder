@@ -203,7 +203,7 @@ local:
     grep:
         3.3-1
     gzip:
-        1.9-3
+        1.9-3+deb10u1
     hostname:
         3.21
     init-system-helpers:
@@ -321,7 +321,7 @@ local:
     liblz4-1:
         1.8.3-1+deb10u1
     liblzma5:
-        5.2.4-1
+        5.2.4-1+deb10u1
     libmnl0:
         1.0.4-2
     libmount1:
