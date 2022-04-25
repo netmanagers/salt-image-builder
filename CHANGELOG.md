@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.69.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.68.2...v1.69.0) (2022-04-25)
+
+
+### Features
+
+* **gitlab-ci:** add `ubuntu-22.04` [skip ci] ([1fded1e](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/1fded1ebd5922bdbf847e2b2b4917f59ef466fa7)), closes [/en.wikipedia.org/wiki/Ubuntu_version_history#Ubuntu_22](https://gitlab.com//en.wikipedia.org/wiki/Ubuntu_version_history/issues/Ubuntu_22)
+
 ## [1.68.2](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.68.1...v1.68.2) (2022-04-25)
 
 

@@ -25,11 +25,11 @@ Dependency Versions:
         Python: 3.10.4 (main, Mar 23 2022, 23:05:40) [GCC 11.2.0]
   python-gnupg: Not Installed
         PyYAML: 6.0
-         PyZMQ: 22.3.0
+         PyZMQ: 20.0.0
          smmap: Not Installed
        timelib: Not Installed
        Tornado: 4.5.3
-           ZMQ: 4.3.4
+           ZMQ: 4.3.3
  
 System Versions:
           dist: arch  
@@ -113,7 +113,7 @@ local:
     virtual_subtype:
         Docker
     zmqversion:
-        4.3.4
+        4.3.3
 # salt-call --local pkg.list_pkgs
 local:
     ----------
