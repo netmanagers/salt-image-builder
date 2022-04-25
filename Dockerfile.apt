@@ -44,6 +44,11 @@ RUN apt-get update \
       # separately from `bookworm` above
       elif [ "${DISTRO_VERSION}" = "11" ]; then \
         DISTRO_VERSION="10"; \
+      # Use `20.04` packages for `22.04` until specific Tiamat package available
+      elif [ "${DISTRO_VERSION}" = "22.04" ]; then \
+        DISTRO_VERSION="20.04"; \
+        # Use temporary workaround of installing `contextvars`
+        pip3 install --no-cache-dir contextvars==2.4; \
       fi; \
       echo "${DISTRO_VERSION}"; \
       # Prepare the repo
