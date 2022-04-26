@@ -347,7 +347,7 @@ rock-08.0-3004.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 
 # UBUNTU
 ubun-22.0-tiamat-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'               , DV: '22.04'  , PI: 'apt', SIM: 'stable', SV: 'tiamat', SVB: ''      , PV: '3', EP: 'python3-pip'}}
-ubun-22.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'               , DV: '22.04'  , PI: 'apt', SIM: 'git'   , SV: 'master', SVB: ''      , PV: '3', EP: 'g++ python3-apt python3-pip'}}
+ubun-22.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'               , DV: '22.04'  , PI: 'apt', SIM: 'git'   , SV: 'master', SVB: ''      , PV: '3', EP: 'python3-apt python3-pip'}}
 ubun-22.0-3004.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'               , DV: '22.04'  , PI: 'apt', SIM: 'stable', SV: '3004.1', SVB: ''      , PV: '3', EP: 'python3-pip'}}
 ubun-20.0-tiamat-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'               , DV: '20.04'  , PI: 'apt', SIM: 'stable', SV: 'tiamat', SVB: ''      , PV: '3', EP: 'python3-pip'}}
 ubun-20.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'               , DV: '20.04'  , PI: 'apt', SIM: 'git'   , SV: 'master', SVB: ''      , PV: '3', EP: 'python3-apt python3-pip'}}
