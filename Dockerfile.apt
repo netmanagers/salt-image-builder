@@ -60,6 +60,11 @@ RUN apt-get update \
     fi \
     # Disable salt's service as we don't need it running
  && systemctl disable salt-minion.service > /dev/null 2>&1 \
+    # Similar to Fedora, Arch Linux, Tumbleweed & Gentoo, enable the `ssh-rsa` keypair
+    # type since Kitchen testing currently relies on this (on Ubuntu 22.04)
+ && if [ "${DISTRO_VERSION}" = "22.04" ]; then \
+      echo "PubkeyAcceptedAlgorithms +ssh-rsa" | tee -a /etc/ssh/sshd_config; \
+    fi \
     # Remove unnecessary getty and udev targets that result in high CPU usage when using
     # multiple containers with Molecule or Kitchen https://github.com/ansible/molecule/issues/1104
  && rm -rf /var/cache/apt \
