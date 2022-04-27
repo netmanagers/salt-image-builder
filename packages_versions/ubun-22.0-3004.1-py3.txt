@@ -164,7 +164,7 @@ local:
     dirmngr:
         2.2.27-3ubuntu2
     distro-info-data:
-        0.52
+        0.52ubuntu0.1
     dpkg:
         1.21.1ubuntu2
     e2fsprogs:
@@ -178,9 +178,9 @@ local:
     gir1.2-packagekitglib-1.0:
         1.2.5-2ubuntu2
     git:
-        1:2.34.1-1ubuntu1.1
+        1:2.34.1-1ubuntu1.2
     git-man:
-        1:2.34.1-1ubuntu1.1
+        1:2.34.1-1ubuntu1.2
     gnupg:
         2.2.27-3ubuntu2
     gnupg-l10n:

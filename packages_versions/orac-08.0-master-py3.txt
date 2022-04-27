@@ -251,7 +251,7 @@ local:
     groff-base:
         1.22.3-18.el8
     gzip:
-        1.9-12.el8
+        1.9-13.el8_5
     ima-evm-utils:
         1.3.2-12.el8
     info:
@@ -269,7 +269,7 @@ local:
     json-c:
         0.13.1-2.el8
     kernel-headers:
-        4.18.0-348.20.1.el8_5
+        4.18.0-348.23.1.el8_5
     keyutils-libs:
         1.5.10-9.el8
     keyutils-libs-devel:

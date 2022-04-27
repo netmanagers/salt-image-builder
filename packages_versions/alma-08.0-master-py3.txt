@@ -243,7 +243,7 @@ local:
     groff-base:
         1.22.3-18.el8
     gzip:
-        1.9-12.el8
+        1.9-13.el8_5
     hostname:
         3.20-6.el8
     ima-evm-utils:
@@ -263,7 +263,7 @@ local:
     kbd-misc:
         2.0.4-10.el8
     kernel-headers:
-        4.18.0-348.20.1.el8_5
+        4.18.0-348.23.1.el8_5
     keyutils-libs:
         1.5.10-9.el8
     keyutils-libs-devel:
@@ -631,7 +631,7 @@ local:
     util-linux:
         2.32.1-28.el8
     vim-minimal:
-        2:8.0.1763-16.el8_5.12
+        2:8.0.1763-16.el8_5.13
     which:
         2.21-16.el8
     xkeyboard-config:

@@ -178,11 +178,11 @@ local:
     elfutils-debuginfod-client:
         0.186-3.fc36
     elfutils-default-yama-scope:
-        0.186-3.fc36
+        0.187-1.fc36
     elfutils-libelf:
-        0.186-3.fc36
+        0.187-1.fc36
     elfutils-libs:
-        0.186-3.fc36
+        0.187-1.fc36
     expat:
         2.4.7-1.fc36
     fedora-gpg-keys:
@@ -236,9 +236,9 @@ local:
     gmp:
         1:6.2.1-2.fc36
     gnupg2:
-        2.3.4-2.fc36
+        2.3.6-1.fc36
     gnutls:
-        3.7.3-2.fc36
+        3.7.4-1.fc36
     gpg-pubkey.(none):
         38ab71f4-60242b08
     gpgme:
@@ -612,7 +612,7 @@ local:
     tpm2-tss:
         3.2.0-1.fc36
     tzdata:
-        2022a-1.fc36
+        2022a-2.fc36
     util-linux:
         2.38-0.2.fc36
     util-linux-core:

@@ -159,7 +159,7 @@ local:
     dirmngr:
         2.2.19-3ubuntu2.1
     distro-info-data:
-        0.43ubuntu1.9
+        0.43ubuntu1.10
     dpkg:
         1.19.7ubuntu3
     e2fsprogs:
@@ -171,9 +171,9 @@ local:
     gcc-10-base:
         10.3.0-1ubuntu1~20.04
     git:
-        1:2.25.1-1ubuntu3.3
+        1:2.25.1-1ubuntu3.4
     git-man:
-        1:2.25.1-1ubuntu3.3
+        1:2.25.1-1ubuntu3.4
     gnupg:
         2.2.19-3ubuntu2.1
     gnupg-l10n:

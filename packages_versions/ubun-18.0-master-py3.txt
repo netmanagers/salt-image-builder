@@ -192,7 +192,7 @@ local:
     dirmngr:
         2.2.4-1ubuntu1.4
     distro-info-data:
-        0.37ubuntu0.13
+        0.37ubuntu0.14
     dpkg:
         1.19.0.5ubuntu2.3
     e2fsprogs:
@@ -210,9 +210,9 @@ local:
     gcc-8-base:
         8.4.0-1ubuntu1~18.04
     git:
-        1:2.17.1-1ubuntu0.10
+        1:2.17.1-1ubuntu0.11
     git-man:
-        1:2.17.1-1ubuntu0.10
+        1:2.17.1-1ubuntu0.11
     gnupg:
         2.2.4-1ubuntu1.4
     gnupg-l10n:

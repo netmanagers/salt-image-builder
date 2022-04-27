@@ -1,5 +1,17 @@
 # Changelog
 
+# [1.70.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.69.0...v1.70.0) (2022-04-27)
+
+
+### Continuous Integration
+
+* **gitlab-ci:** remove `22.04` package after bootstrap update [skip ci] ([1675dda](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/1675ddabf88f635e5059d2b21bca3edf703ec794))
+
+
+### Features
+
+* **dockerfile.apt:** workaround 22.04 `ssh-rsa` Kitchen issue [skip ci] ([f1d5bf5](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/f1d5bf505f97beb343db7078db74312f86a9bcd2))
+
 # [1.69.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.68.2...v1.69.0) (2022-04-25)
 
 

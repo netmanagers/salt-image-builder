@@ -348,6 +348,8 @@ local:
         1.7.0
     dev-python/flit_core:
         3.7.1
+    dev-python/gpep517:
+        3
     dev-python/idna:
         3.3
     dev-python/importlib_metadata:
@@ -405,7 +407,7 @@ local:
     dev-python/urllib3:
         1.26.9
     dev-python/watchdog:
-        2.1.6
+        2.1.7
     dev-python/wheel:
         0.37.1-r1
     dev-python/zipp:
@@ -792,7 +794,7 @@ local:
     urllib3:
         1.26.9
     watchdog:
-        2.1.6
+        2.1.7
     wheel:
         0.37.1
     zipp:

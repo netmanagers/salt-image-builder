@@ -698,7 +698,7 @@ local:
     yum:
         4.11.1-2.fc35
     zchunk-libs:
-        1.2.1-1.fc35
+        1.2.2-1.fc35
     zlib:
         1.2.11-30.fc35
 # salt-call --local pip.list

@@ -162,7 +162,7 @@ local:
     dirmngr:
         2.2.4-1ubuntu1.4
     distro-info-data:
-        0.37ubuntu0.13
+        0.37ubuntu0.14
     dpkg:
         1.19.0.5ubuntu2.3
     e2fsprogs:
@@ -176,9 +176,9 @@ local:
     gir1.2-glib-2.0:
         1.56.1-1
     git:
-        1:2.17.1-1ubuntu0.10
+        1:2.17.1-1ubuntu0.11
     git-man:
-        1:2.17.1-1ubuntu0.10
+        1:2.17.1-1ubuntu0.11
     gnupg:
         2.2.4-1ubuntu1.4
     gnupg-l10n:
@@ -396,7 +396,7 @@ local:
     libsemanage1:
         2.7-2build2
     libsepol1:
-        2.7-1
+        2.7-1ubuntu0.1
     libsmartcols1:
         2.31.1-0.4ubuntu3.7
     libsodium23:
