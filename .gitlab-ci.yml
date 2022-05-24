@@ -99,6 +99,10 @@ commitlint:
     CMD_SALT_CALL_GRAINS_ITEM: 'salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion'
     CMD_SALT_CALL_PKG_LIST_PKGS: 'salt-call --local pkg.list_pkgs'
     CMD_SALT_CALL_PIP_LIST: 'salt-call --local pip.list'
+    CMD_SALT_CALL_TEST_JINJA_GRAINS: 'salt-call --local state.sls test_jinja.grains'
+    CMD_SALT_CALL_TEST_JINJA_OPTS: 'salt-call --local state.sls test_jinja.opts'
+    CMD_SALT_CALL_TEST_JINJA_PILLAR: 'salt-call --local state.sls test_jinja.pillar'
+    CMD_SALT_CALL_TEST_JINJA_SALT: 'salt-call --local state.sls test_jinja.salt'
   before_script:
     # Set up the Python virtual environment used for testing the built image
     - 'python3 -m venv venv'
@@ -201,6 +205,11 @@ commitlint:
     # Prepare the `test_jinja` state files
     - 'docker exec "${TESTINFRA_CONTAINER}" mkdir -p /srv/salt/'
     - 'docker cp test/test_jinja/ ${TESTINFRA_CONTAINER}:/srv/salt/test_jinja/'
+    # Run the `test_jinja` state files
+    - 'docker exec "${TESTINFRA_CONTAINER}" ${CMD_SALT_CALL_TEST_JINJA_GRAINS}
+       ; docker exec "${TESTINFRA_CONTAINER}" ${CMD_SALT_CALL_TEST_JINJA_OPTS}
+       ; docker exec "${TESTINFRA_CONTAINER}" ${CMD_SALT_CALL_TEST_JINJA_PILLAR}
+       ; docker exec "${TESTINFRA_CONTAINER}" ${CMD_SALT_CALL_TEST_JINJA_SALT}'
     # Run the integration tests
     # Not using `${SVB}` instead of `${SV}` here since the test file itself handles
     # the any version number issues (e.g. the extra `.0` in the version number).
