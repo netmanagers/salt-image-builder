@@ -2,7 +2,7 @@ orac-07.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.cfa7358
+          Salt: 3004+0na.6a9da11
  
 Dependency Versions:
           cffi: Not Installed
@@ -15,7 +15,7 @@ Dependency Versions:
        libgit2: Not Installed
       M2Crypto: Not Installed
           Mako: Not Installed
-       msgpack: 1.0.3
+       msgpack: 1.0.4
   msgpack-pure: Not Installed
   mysql-python: Not Installed
      pycparser: Not Installed
@@ -25,7 +25,7 @@ Dependency Versions:
         Python: 3.6.8 (default, Nov 18 2021, 10:07:16)
   python-gnupg: Not Installed
         PyYAML: 6.0
-         PyZMQ: 22.3.0
+         PyZMQ: 23.1.0
          smmap: Not Installed
        timelib: Not Installed
        Tornado: 4.5.3
@@ -106,7 +106,7 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3004+0na.cfa7358
+        3004+0na.6a9da11
     saltversioninfo:
         - 3004
     systemd:
@@ -215,13 +215,13 @@ local:
     glib2:
         2.56.1-9.el7_9
     glibc:
-        2.17-325.0.1.el7_9
+        2.17-326.0.1.el7_9
     glibc-common:
-        2.17-325.0.1.el7_9
+        2.17-326.0.1.el7_9
     glibc-devel:
-        2.17-325.0.1.el7_9
+        2.17-326.0.1.el7_9
     glibc-headers:
-        2.17-325.0.1.el7_9
+        2.17-326.0.1.el7_9
     gmp:
         1:6.0.0-15.el7
     gnupg2:
@@ -235,7 +235,7 @@ local:
     groff-base:
         1.22.2-8.el7
     gzip:
-        1.5-10.el7
+        1.5-11.el7_9
     hardlink:
         1:1.0-19.el7
     hostname:
@@ -245,9 +245,9 @@ local:
     info:
         5.1-5.el7
     initscripts:
-        9.49.53-1.0.1.el7_9.1
+        9.49.53-1.0.3.el7_9.1
     iproute:
-        5.4.0-1.0.1.el7
+        5.4.0-1.0.3.el7
     iputils:
         20160308-10.el7
     json-c:
@@ -255,7 +255,7 @@ local:
     kernel-container:
         3.10.0-0.0.0.2.el7
     kernel-headers:
-        3.10.0-1160.62.1.el7
+        3.10.0-1160.66.1.el7
     keyutils-libs:
         1.5.8-3.el7
     keyutils-libs-devel:
@@ -267,9 +267,9 @@ local:
     kpartx:
         0.4.9-135.0.1.el7_9
     krb5-devel:
-        1.15.1-51.0.1.el7_9
+        1.15.1-51.0.3.el7_9
     krb5-libs:
-        1.15.1-51.0.1.el7_9
+        1.15.1-51.0.3.el7_9
     less:
         458-9.el7
     libacl:
@@ -285,9 +285,9 @@ local:
     libcap-ng:
         0.7.5-4.el7
     libcom_err:
-        1.42.9-19.el7
+        1.42.9-19.0.1.el7
     libcom_err-devel:
-        1.42.9-19.el7
+        1.42.9-19.0.1.el7
     libcurl:
         7.29.0-59.0.3.el7_9.1
     libdb:
@@ -315,7 +315,7 @@ local:
     libidn:
         1.28-4.el7
     libkadm5:
-        1.15.1-51.0.1.el7_9
+        1.15.1-51.0.3.el7_9
     libmnl:
         1.0.3-7.el7
     libmount:
@@ -585,7 +585,7 @@ local:
     rsync:
         3.1.2-10.el7
     rsyslog:
-        8.24.0-57.0.1.el7_9.2
+        8.24.0-57.0.1.el7_9.3
     sed:
         4.2.2-7.el7
     setup:
@@ -643,9 +643,9 @@ local:
     zip:
         3.0-11.el7
     zlib:
-        1.2.7-19.el7_9
+        1.2.7-20.el7_9
     zlib-devel:
-        1.2.7-19.el7_9
+        1.2.7-20.el7_9
 # salt-call --local pip.list
 local:
     ----------
@@ -656,7 +656,7 @@ local:
     PyYAML:
         6.0
     certifi:
-        2021.10.8
+        2022.5.18.1
     charset-normalizer:
         2.0.12
     contextvars:
@@ -666,21 +666,21 @@ local:
     idna:
         3.3
     immutables:
-        0.17
+        0.18
     msgpack:
-        1.0.3
+        1.0.4
     pip:
         9.0.3
     psutil:
-        5.9.0
+        5.9.1
     pycryptodomex:
         3.14.1
     pyzmq:
-        22.3.0
+        23.1.0
     requests:
         2.27.1
     salt:
-        3004+0na.cfa7358
+        3004+0na.6a9da11
     setuptools:
         39.2.0
     typing-extensions:

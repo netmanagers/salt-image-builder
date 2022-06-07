@@ -128,9 +128,9 @@ local:
     adduser:
         3.118ubuntu2
     apt:
-        2.0.6
+        2.0.8
     apt-transport-https:
-        2.0.6
+        2.0.8
     base-files:
         11ubuntu5.5
     base-passwd:
@@ -148,13 +148,13 @@ local:
     coreutils:
         8.30-3ubuntu2
     curl:
-        7.68.0-1ubuntu2.7
+        7.68.0-1ubuntu2.11
     dash:
         0.5.10.2-6
     dbus:
-        1.12.16-2ubuntu2.1
+        1.12.16-2ubuntu2.2
     dbus-user-session:
-        1.12.16-2ubuntu2.1
+        1.12.16-2ubuntu2.2
     dconf-gsettings-backend:
         0.36.0-1
     dconf-service:
@@ -172,7 +172,7 @@ local:
     distro-info-data:
         0.43ubuntu1.10
     dpkg:
-        1.19.7ubuntu3
+        1.19.7ubuntu3.2
     e2fsprogs:
         1.45.5-2ubuntu1
     fdisk:
@@ -234,7 +234,7 @@ local:
     libappstream4:
         0.12.10-2
     libapt-pkg6.0:
-        2.0.6
+        2.0.8
     libargon2-1:
         0~20171227-0.2
     libasn1-8-heimdal:
@@ -256,9 +256,9 @@ local:
     libbz2-1.0:
         1.0.8-2
     libc-bin:
-        2.31-0ubuntu9.7
+        2.31-0ubuntu9.9
     libc6:
-        2.31-0ubuntu9.7
+        2.31-0ubuntu9.9
     libcap-ng0:
         0.7.9-2.1build1
     libcap2:
@@ -274,13 +274,13 @@ local:
     libcryptsetup12:
         2:2.2.2-3ubuntu2.4
     libcurl3-gnutls:
-        7.68.0-1ubuntu2.7
+        7.68.0-1ubuntu2.11
     libcurl4:
-        7.68.0-1ubuntu2.7
+        7.68.0-1ubuntu2.11
     libdb5.3:
         5.3.28+dfsg1-0.6ubuntu2
     libdbus-1-3:
-        1.12.16-2ubuntu2.1
+        1.12.16-2ubuntu2.2
     libdconf1:
         0.36.0-1
     libdebconfclient0:
@@ -352,9 +352,9 @@ local:
     libk5crypto3:
         1.17-6ubuntu4.1
     libkeyutils1:
-        1.6-6ubuntu1
+        1.6-6ubuntu1.1
     libkmod2:
-        27-1ubuntu2
+        27-1ubuntu2.1
     libkrb5-26-heimdal:
         7.7.0+dfsg-1ubuntu1
     libkrb5-3:
@@ -364,9 +364,9 @@ local:
     libksba8:
         1.3.5-2
     libldap-2.4-2:
-        2.4.49+dfsg-2ubuntu1.8
+        2.4.49+dfsg-2ubuntu1.9
     libldap-common:
-        2.4.49+dfsg-2ubuntu1.8
+        2.4.49+dfsg-2ubuntu1.9
     liblmdb0:
         0.9.24-1
     liblz4-1:
@@ -400,7 +400,7 @@ local:
     libpam-runtime:
         1.3.1-5ubuntu4.3
     libpam-systemd:
-        245.4-4ubuntu3.16
+        245.4-4ubuntu3.17
     libpam0g:
         1.3.1-5ubuntu4.3
     libpci3:
@@ -408,7 +408,7 @@ local:
     libpcre2-8-0:
         10.34-7
     libpcre3:
-        2:8.39-12build1
+        2:8.39-12ubuntu0.1
     libperl5.30:
         5.30.0-9ubuntu0.2
     libpgm-5.2-0:
@@ -456,25 +456,25 @@ local:
     libsoup2.4-1:
         2.70.0-1
     libsqlite3-0:
-        3.31.1-4ubuntu0.2
+        3.31.1-4ubuntu0.3
     libss2:
         1.45.5-2ubuntu1
     libssh-4:
         0.9.3-2ubuntu2.2
     libssl1.1:
-        1.1.1f-1ubuntu2.12
+        1.1.1f-1ubuntu2.13
     libstdc++6:
         10.3.0-1ubuntu1~20.04
     libstemmer0d:
         0+svn585-2
     libsystemd0:
-        245.4-4ubuntu3.16
+        245.4-4ubuntu3.17
     libtasn1-6:
         4.16.0-2
     libtinfo6:
         6.2-0ubuntu2
     libudev1:
-        245.4-4ubuntu3.16
+        245.4-4ubuntu3.17
     libunistring2:
         0.9.10-2
     libuuid1:
@@ -484,7 +484,7 @@ local:
     libwrap0:
         7.6.q-30
     libxml2:
-        2.9.10+dfsg-5ubuntu0.20.04.2
+        2.9.10+dfsg-5ubuntu0.20.04.3
     libyaml-0-2:
         0.2.2-1
     libzmq5:
@@ -492,9 +492,9 @@ local:
     libzstd1:
         1.4.4+dfsg-3ubuntu0.1
     locales:
-        2.31-0ubuntu9.7
+        2.31-0ubuntu9.9
     login:
-        1:4.8.1-1ubuntu5.20.04.1
+        1:4.8.1-1ubuntu5.20.04.2
     logsave:
         1.45.5-2ubuntu1
     lsb-base:
@@ -514,17 +514,17 @@ local:
     net-tools:
         1.60+git20180626.aebd88e-1ubuntu1
     openssh-client:
-        1:8.2p1-4ubuntu0.4
+        1:8.2p1-4ubuntu0.5
     openssh-server:
-        1:8.2p1-4ubuntu0.4
+        1:8.2p1-4ubuntu0.5
     openssh-sftp-server:
-        1:8.2p1-4ubuntu0.4
+        1:8.2p1-4ubuntu0.5
     openssl:
-        1.1.1f-1ubuntu2.12
+        1.1.1f-1ubuntu2.13
     packagekit:
         1.1.13-2ubuntu1.1
     passwd:
-        1:4.8.1-1ubuntu5.20.04.1
+        1:4.8.1-1ubuntu5.20.04.2
     pci.ids:
         0.0~2020.03.20-1
     pciutils:
@@ -624,11 +624,11 @@ local:
     sudo:
         1.8.31-1ubuntu1.2
     systemd:
-        245.4-4ubuntu3.16
+        245.4-4ubuntu3.17
     systemd-sysv:
-        245.4-4ubuntu3.16
+        245.4-4ubuntu3.17
     systemd-timesyncd:
-        245.4-4ubuntu3.16
+        245.4-4ubuntu3.17
     sysvinit-utils:
         2.96-2.1ubuntu1
     tar:
@@ -640,7 +640,7 @@ local:
     ucf:
         3.0038+nmu1
     udev:
-        245.4-4ubuntu3.16
+        245.4-4ubuntu3.17
     util-linux:
         2.34-0.1ubuntu9.3
     wget:

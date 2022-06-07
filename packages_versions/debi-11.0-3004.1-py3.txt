@@ -167,7 +167,7 @@ local:
     dmsetup:
         2:1.02.175-2.1
     dpkg:
-        1.20.9
+        1.20.10
     e2fsprogs:
         1.46.2-2
     findutils:
@@ -311,7 +311,7 @@ local:
     libksba8:
         1.5.0-3
     libldap-2.4-2:
-        2.4.57+dfsg-3
+        2.4.57+dfsg-3+deb11u1
     liblz4-1:
         1.9.3-2
     liblzma5:
@@ -395,7 +395,7 @@ local:
     libssh2-1:
         1.9.0-2
     libssl1.1:
-        1.1.1n-0+deb11u1
+        1.1.1n-0+deb11u2
     libstdc++6:
         10.2.1-6
     libsystemd0:
@@ -455,7 +455,7 @@ local:
     openssh-sftp-server:
         1:8.4p1-5
     openssl:
-        1.1.1n-0+deb11u1
+        1.1.1n-0+deb11u2
     passwd:
         1:4.8.1-1
     pci.ids:

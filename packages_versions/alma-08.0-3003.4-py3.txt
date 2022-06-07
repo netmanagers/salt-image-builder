@@ -22,7 +22,7 @@ Dependency Versions:
       pycrypto: Not Installed
   pycryptodome: Not Installed
         pygit2: Not Installed
-        Python: 3.6.8 (default, Nov 17 2021, 16:10:06)
+        Python: 3.6.8 (default, Apr 29 2022, 13:46:02)
   python-gnupg: Not Installed
         PyYAML: 3.12
          PyZMQ: 19.0.0
@@ -32,12 +32,12 @@ Dependency Versions:
            ZMQ: 4.3.4
  
 System Versions:
-          dist: almalinux 8.5 Arctic Sphynx
+          dist: almalinux 8.6 Sky Tiger
         locale: UTF-8
        machine: x86_64
        release: 5.4.109+
         system: Linux
-       version: AlmaLinux 8.5 Arctic Sphynx
+       version: AlmaLinux 8.6 Sky Tiger
  
 # salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
 local:
@@ -61,11 +61,11 @@ local:
         timezone:
             UTC
     lsb_distrib_codename:
-        AlmaLinux 8.5 (Arctic Sphynx)
+        AlmaLinux 8.6 (Sky Tiger)
     lsb_distrib_id:
         AlmaLinux
     lsb_distrib_release:
-        8.5
+        8.6
     os:
         AlmaLinux
     os_family:
@@ -74,7 +74,7 @@ local:
         x86_64
     osbuild:
     oscodename:
-        AlmaLinux 8.5 (Arctic Sphynx)
+        AlmaLinux 8.6 (Sky Tiger)
     osfinger:
         AlmaLinux-8
     osfullname:
@@ -83,10 +83,10 @@ local:
         8
     osmanufacturer:
     osrelease:
-        8.5
+        8.6
     osrelease_info:
         - 8
-        - 5
+        - 6
     osversion:
     pythonexecutable:
         /usr/libexec/platform-python
@@ -128,15 +128,15 @@ local:
     acl:
         2.2.53-1.el8
     almalinux-release:
-        8.5-4.el8
+        8.6-0.1.el8
     audit-libs:
-        3.0-0.17.20191104git1c2f876.el8
+        3.0.7-2.el8.2
     basesystem:
         11-5.el8
     bash:
-        4.4.20-2.el8
+        4.4.20-3.el8
     binutils:
-        2.30-108.el8_5.1
+        2.30-113.el8
     bzip2-libs:
         1.0.6-26.el8
     ca-certificates:
@@ -150,49 +150,47 @@ local:
     cracklib-dicts:
         2.9.6-15.el8
     crypto-policies:
-        20210617-1.gitc776d3e.el8
+        20211116-1.gitae470d6.el8
     cryptsetup-libs:
-        2.3.3-4.el8_5.1
+        2.3.7-2.el8
     curl:
         7.61.1-22.el8
     cyrus-sasl-lib:
         2.1.27-6.el8_5
     dbus:
-        1:1.12.8-14.el8
+        1:1.12.8-18.el8
     dbus-common:
-        1:1.12.8-14.el8
+        1:1.12.8-18.el8
     dbus-daemon:
-        1:1.12.8-14.el8
+        1:1.12.8-18.el8
     dbus-glib:
         0.110-2.el8
     dbus-libs:
-        1:1.12.8-14.el8
+        1:1.12.8-18.el8
     dbus-tools:
-        1:1.12.8-14.el8
+        1:1.12.8-18.el8
     device-mapper:
-        8:1.02.177-11.el8_5
+        8:1.02.181-3.el8
     device-mapper-libs:
-        8:1.02.177-11.el8_5
-    diffutils:
-        3.6-6.el8
+        8:1.02.181-3.el8
     dnf:
-        4.7.0-4.el8
+        4.7.0-8.el8.alma
     dnf-data:
-        4.7.0-4.el8
+        4.7.0-8.el8.alma
     dnf-plugins-core:
-        4.0.21-4.el8_5
+        4.0.21-11.el8
     elfutils-default-yama-scope:
-        0.185-1.el8
+        0.186-1.el8
     elfutils-libelf:
-        0.185-1.el8
+        0.186-1.el8
     elfutils-libs:
-        0.185-1.el8
+        0.186-1.el8
     emacs-filesystem:
         1:26.1-7.el8
     epel-release:
         8-15.el8
     expat:
-        2.2.5-4.el8_5.3
+        2.2.5-8.el8
     file-libs:
         5.33-20.el8
     filesystem:
@@ -200,27 +198,27 @@ local:
     findutils:
         1:4.6.0-20.el8
     gawk:
-        4.2.1-2.el8
+        4.2.1-4.el8
     gdbm:
         1:1.18-1.el8
     gdbm-libs:
         1:1.18-1.el8
     git:
-        2.27.0-1.el8
+        2.31.1-2.el8
     git-core:
-        2.27.0-1.el8
+        2.31.1-2.el8
     git-core-doc:
-        2.27.0-1.el8
+        2.31.1-2.el8
     glib2:
-        2.56.4-156.el8
+        2.56.4-158.el8
     glibc:
-        2.28-164.el8_5.3
+        2.28-189.1.el8
     glibc-common:
-        2.28-164.el8_5.3
+        2.28-189.1.el8
     glibc-langpack-en:
-        2.28-164.el8_5.3
+        2.28-189.1.el8
     glibc-minimal-langpack:
-        2.28-164.el8_5.3
+        2.28-189.1.el8
     gmp:
         1:6.1.2-10.el8
     gnupg2:
@@ -230,25 +228,25 @@ local:
     gpg-pubkey.(none):
         2f86d6a1-5cf7cefb,3abb34f8-5ffd890e,de57bfbe-53a9be98
     gpgme:
-        1.13.1-9.el8
+        1.13.1-11.el8
     grep:
         3.1-6.el8
     groff-base:
         1.22.3-18.el8
     gzip:
-        1.9-12.el8
+        1.9-13.el8_5
     hostname:
         3.20-6.el8
     hwdata:
-        0.314-8.10.el8
+        0.314-8.12.el8
     ima-evm-utils:
         1.3.2-12.el8
     info:
-        6.5-6.el8
+        6.5-7.el8
     iputils:
-        20180629-7.el8
+        20180629-9.el8
     json-c:
-        0.13.1-2.el8
+        0.13.1-3.el8
     kbd:
         2.0.4-10.el8
     kbd-legacy:
@@ -260,9 +258,9 @@ local:
     keyutils-libs-devel:
         1.5.10-9.el8
     kmod:
-        25-18.el8
+        25-19.el8
     kmod-libs:
-        25-18.el8
+        25-19.el8
     krb5-devel:
         1.18.2-14.el8
     krb5-libs:
@@ -280,17 +278,17 @@ local:
     libattr:
         2.4.48-3.el8
     libblkid:
-        2.32.1-28.el8
+        2.32.1-35.el8
     libcap:
-        2.26-5.el8
+        2.48-2.el8
     libcap-ng:
         0.7.11-1.el8
     libcom_err:
-        1.45.6-2.el8
+        1.45.6-4.el8
     libcom_err-devel:
-        1.45.6-2.el8
+        1.45.6-4.el8
     libcomps:
-        0.1.16-2.el8
+        0.1.18-1.el8
     libcurl-minimal:
         7.61.1-22.el8
     libdb:
@@ -298,15 +296,15 @@ local:
     libdb-utils:
         5.3.28-42.el8_4
     libdnf:
-        0.63.0-3.el8
+        0.63.0-8.el8.alma
     libedit:
         3.1-23.20170329cvs.el8
     libfdisk:
-        2.32.1-28.el8
+        2.32.1-35.el8
     libffi:
-        3.1-22.el8
+        3.1-23.el8
     libgcc:
-        8.5.0-4.el8_5.alma
+        8.5.0-10.el8.alma
     libgcrypt:
         1.8.5-6.el8
     libgpg-error:
@@ -320,7 +318,7 @@ local:
     libmodulemd:
         2.13.0-1.el8
     libmount:
-        2.32.1-28.el8
+        2.32.1-35.el8
     libnghttp2:
         1.33.0-3.el8_2.1
     libnsl2:
@@ -330,17 +328,17 @@ local:
     libpwquality:
         1.4.4-3.el8
     librepo:
-        1.14.0-2.el8
+        1.14.2-1.el8
     libreport-filesystem:
         2.9.5-15.el8.alma.1
     libseccomp:
-        2.5.1-1.el8
+        2.5.2-1.el8
     libselinux:
         2.9-5.el8
     libselinux-devel:
         2.9-5.el8
     libsemanage:
-        2.9-6.el8
+        2.9-8.el8
     libsepol:
         2.9-3.el8
     libsepol-devel:
@@ -348,17 +346,17 @@ local:
     libsigsegv:
         2.11-5.el8
     libsmartcols:
-        2.32.1-28.el8
+        2.32.1-35.el8
     libsodium:
         1.0.18-2.el8
     libsolv:
-        0.7.19-1.el8
+        0.7.20-1.el8
     libstdc++:
-        8.5.0-4.el8_5.alma
+        8.5.0-10.el8.alma
     libtasn1:
         4.13-3.el8
     libtirpc:
-        1.1.4-5.el8
+        1.1.4-6.el8
     libunistring:
         0.9.9-3.el8
     libunwind:
@@ -368,17 +366,15 @@ local:
     libutempter:
         1.1.6-14.el8
     libuuid:
-        2.32.1-28.el8
+        2.32.1-35.el8
     libverto:
         0.3.0-5.el8
     libverto-devel:
         0.3.0-5.el8
     libxcrypt:
         4.1.1-6.el8
-    libxkbcommon:
-        0.9.1-1.el8
     libxml2:
-        2.9.7-12.el8_5
+        2.9.7-13.el8
     libyaml:
         0.1.7-5.el8
     libzstd:
@@ -406,25 +402,23 @@ local:
     openpgm:
         5.2.122-21.el8
     openssh:
-        8.0p1-10.el8
+        8.0p1-13.el8
     openssh-clients:
-        8.0p1-10.el8
+        8.0p1-13.el8
     openssh-server:
-        8.0p1-10.el8
+        8.0p1-13.el8
     openssl:
         1:1.1.1k-6.el8_5
     openssl-devel:
         1:1.1.1k-6.el8_5
     openssl-libs:
         1:1.1.1k-6.el8_5
-    openssl-pkcs11:
-        0.4.10-2.el8
     p11-kit:
         0.23.22-1.el8
     p11-kit-trust:
         0.23.22-1.el8
     pam:
-        1.3.1-15.el8
+        1.3.1-16.el8
     pciutils:
         3.7.0-1.el8
     pciutils-libs:
@@ -450,7 +444,7 @@ local:
     perl-Encode:
         4:2.97-3.el8
     perl-Errno:
-        1.28-420.el8
+        1.28-421.el8
     perl-Error:
         1:0.17025-2.el8
     perl-Exporter:
@@ -462,21 +456,21 @@ local:
     perl-Getopt-Long:
         1:2.50-4.el8
     perl-Git:
-        2.27.0-1.el8
+        2.31.1-2.el8
     perl-HTTP-Tiny:
         0.074-1.el8
     perl-IO:
-        1.38-420.el8
+        1.38-421.el8
     perl-IO-Socket-IP:
         0.39-5.el8
     perl-IO-Socket-SSL:
-        2.066-4.module_el8.3.0+2086+72f2d257
+        2.066-4.module_el8.6.0+2811+fe6c84b0
     perl-MIME-Base64:
         3.15-396.el8
     perl-Mozilla-CA:
-        20160104-7.module_el8.3.0+2091+9eecfe51
+        20160104-7.module_el8.5.0+2812+ed912d05
     perl-Net-SSLeay:
-        1.88-1.module_el8.3.0+2086+72f2d257
+        1.88-2.module_el8.6.0+2811+fe6c84b0
     perl-PathTools:
         3.74-1.el8
     perl-Pod-Escapes:
@@ -512,13 +506,13 @@ local:
     perl-constant:
         1.33-396.el8
     perl-interpreter:
-        4:5.26.3-420.el8
+        4:5.26.3-421.el8
     perl-libnet:
         3.11-3.el8
     perl-libs:
-        4:5.26.3-420.el8
+        4:5.26.3-421.el8
     perl-macros:
-        4:5.26.3-420.el8
+        4:5.26.3-421.el8
     perl-parent:
         1:0.237-1.el8
     perl-podlators:
@@ -534,11 +528,11 @@ local:
     pkgconf-pkg-config:
         1.4.2-1.el8
     platform-python:
-        3.6.8-41.el8.alma
+        3.6.8-45.el8.alma
     platform-python-devel:
-        3.6.8-41.el8.alma
+        3.6.8-45.el8.alma
     platform-python-pip:
-        9.0.3-20.el8
+        9.0.3-22.el8
     platform-python-setuptools:
         39.2.0-6.el8
     popt:
@@ -562,13 +556,13 @@ local:
     python3-distro:
         1.4.0-2.module_el8.5.0+2569+5c5719bc
     python3-dnf:
-        4.7.0-4.el8
+        4.7.0-8.el8.alma
     python3-dnf-plugins-core:
-        4.0.21-4.el8_5
+        4.0.21-11.el8
     python3-gpg:
-        1.13.1-9.el8
+        1.13.1-11.el8
     python3-hawkey:
-        0.63.0-3.el8
+        0.63.0-8.el8.alma
     python3-idna:
         2.5-5.el8
     python3-immutables:
@@ -576,11 +570,11 @@ local:
     python3-jinja2:
         2.10.1-3.el8
     python3-libcomps:
-        0.1.16-2.el8
+        0.1.18-1.el8
     python3-libdnf:
-        0.63.0-3.el8
+        0.63.0-8.el8.alma
     python3-libs:
-        3.6.8-41.el8.alma
+        3.6.8-45.el8.alma
     python3-m2crypto:
         0.35.2-5.el8
     python3-markupsafe:
@@ -588,9 +582,9 @@ local:
     python3-msgpack:
         0.6.2-1.el8
     python3-pip:
-        9.0.3-20.el8
+        9.0.3-22.el8
     python3-pip-wheel:
-        9.0.3-20.el8
+        9.0.3-22.el8
     python3-psutil:
         5.4.3-11.el8
     python3-pycurl:
@@ -604,7 +598,7 @@ local:
     python3-requests:
         2.20.0-2.1.el8_1
     python3-rpm:
-        4.14.3-19.el8_5.2
+        4.14.3-23.el8
     python3-rpm-generators:
         5-7.el8
     python3-rpm-macros:
@@ -628,35 +622,35 @@ local:
     rootfiles:
         8.1-22.el8
     rpm:
-        4.14.3-19.el8_5.2
+        4.14.3-23.el8
     rpm-build-libs:
-        4.14.3-19.el8_5.2
+        4.14.3-23.el8
     rpm-libs:
-        4.14.3-19.el8_5.2
+        4.14.3-23.el8
     salt:
         3003.4-1.el8
     salt-minion:
         3003.4-1.el8
     sed:
-        4.5-2.el8
+        4.5-5.el8
     setup:
         2.12.2-6.el8
     shadow-utils:
-        2:4.6-14.el8
+        2:4.6-16.el8
     sqlite-libs:
         3.26.0-15.el8
     sudo:
-        1.8.29-7.el8_4.1
+        1.8.29-8.el8
     swig:
         3.0.12-19.module_el8.3.0+6167+838326ab
     systemd:
-        239-51.el8_5.5
+        239-58.el8
     systemd-libs:
-        239-51.el8_5.5
+        239-58.el8
     systemd-pam:
-        239-51.el8_5.5
+        239-58.el8
     systemd-udev:
-        239-51.el8_5.5
+        239-58.el8
     tar:
         2:1.30-5.el8
     tpm2-tss:
@@ -664,27 +658,25 @@ local:
     tzdata:
         2022a-1.el8
     util-linux:
-        2.32.1-28.el8
+        2.32.1-35.el8
     vim-minimal:
-        2:8.0.1763-16.el8_5.12
+        2:8.0.1763-16.el8_5.13
     which:
-        2.21-16.el8
-    xkeyboard-config:
-        2.28-1.el8
+        2.21-17.el8
     xz:
         5.2.4-3.el8
     xz-libs:
         5.2.4-3.el8
     yum:
-        4.7.0-4.el8
+        4.7.0-8.el8.alma
     yum-utils:
-        4.0.21-4.el8_5
+        4.0.21-11.el8
     zeromq:
         4.3.4-2.el8
     zlib:
-        1.2.11-17.el8
+        1.2.11-18.el8_5
     zlib-devel:
-        1.2.11-17.el8
+        1.2.11-18.el8_5
 # salt-call --local pip.list
 local:
     ----------
@@ -715,7 +707,7 @@ local:
     immutables:
         0.15
     libcomps:
-        0.1.16
+        0.1.18
     msgpack:
         0.6.2
     pip:

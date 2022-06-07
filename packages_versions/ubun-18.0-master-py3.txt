@@ -2,7 +2,7 @@ ubun-18.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.cfa7358
+          Salt: 3004+0na.6a9da11
  
 Dependency Versions:
           cffi: Not Installed
@@ -15,7 +15,7 @@ Dependency Versions:
        libgit2: Not Installed
       M2Crypto: Not Installed
           Mako: Not Installed
-       msgpack: 1.0.3
+       msgpack: 1.0.4
   msgpack-pure: Not Installed
   mysql-python: Not Installed
      pycparser: Not Installed
@@ -25,7 +25,7 @@ Dependency Versions:
         Python: 3.6.9 (default, Mar 15 2022, 13:55:28)
   python-gnupg: Not Installed
         PyYAML: 6.0
-         PyZMQ: 22.3.0
+         PyZMQ: 23.1.0
          smmap: Not Installed
        timelib: Not Installed
        Tornado: 4.5.3
@@ -129,7 +129,7 @@ local:
     saltpath:
         /usr/local/lib/python3.6/dist-packages/salt
     saltversion:
-        3004+0na.cfa7358
+        3004+0na.6a9da11
     saltversioninfo:
         - 3004
     systemd:
@@ -158,7 +158,7 @@ local:
     base-passwd:
         3.5.44
     bash:
-        4.4.18-2ubuntu1.2
+        4.4.18-2ubuntu1.3
     binutils:
         2.30-21ubuntu1~18.04.7
     binutils-common:
@@ -178,7 +178,7 @@ local:
     cpp-7:
         7.5.0-3ubuntu1~18.04
     curl:
-        7.58.0-2ubuntu3.16
+        7.58.0-2ubuntu3.18
     dash:
         0.5.8-2.10
     debconf:
@@ -190,11 +190,11 @@ local:
     diffutils:
         1:3.6-1
     dirmngr:
-        2.2.4-1ubuntu1.4
+        2.2.4-1ubuntu1.5
     distro-info-data:
         0.37ubuntu0.14
     dpkg:
-        1.19.0.5ubuntu2.3
+        1.19.0.5ubuntu2.4
     e2fsprogs:
         1.44.1-1ubuntu1.3
     fdisk:
@@ -214,25 +214,25 @@ local:
     git-man:
         1:2.17.1-1ubuntu0.11
     gnupg:
-        2.2.4-1ubuntu1.4
+        2.2.4-1ubuntu1.5
     gnupg-l10n:
-        2.2.4-1ubuntu1.4
+        2.2.4-1ubuntu1.5
     gnupg-utils:
-        2.2.4-1ubuntu1.4
+        2.2.4-1ubuntu1.5
     gpg:
-        2.2.4-1ubuntu1.4
+        2.2.4-1ubuntu1.5
     gpg-agent:
-        2.2.4-1ubuntu1.4
+        2.2.4-1ubuntu1.5
     gpg-wks-client:
-        2.2.4-1ubuntu1.4
+        2.2.4-1ubuntu1.5
     gpg-wks-server:
-        2.2.4-1ubuntu1.4
+        2.2.4-1ubuntu1.5
     gpgconf:
-        2.2.4-1ubuntu1.4
+        2.2.4-1ubuntu1.5
     gpgsm:
-        2.2.4-1ubuntu1.4
+        2.2.4-1ubuntu1.5
     gpgv:
-        2.2.4-1ubuntu1.4
+        2.2.4-1ubuntu1.5
     grep:
         3.1-2build1
     gzip:
@@ -274,13 +274,13 @@ local:
     libbz2-1.0:
         1.0.6-8.1ubuntu0.2
     libc-bin:
-        2.27-3ubuntu1.5
+        2.27-3ubuntu1.6
     libc-dev-bin:
-        2.27-3ubuntu1.5
+        2.27-3ubuntu1.6
     libc6:
-        2.27-3ubuntu1.5
+        2.27-3ubuntu1.6
     libc6-dev:
-        2.27-3ubuntu1.5
+        2.27-3ubuntu1.6
     libcap-ng0:
         0.7.7-3.1
     libcap2:
@@ -294,9 +294,9 @@ local:
     libcryptsetup12:
         2:2.0.2-1ubuntu1.2
     libcurl3-gnutls:
-        7.58.0-2ubuntu3.16
+        7.58.0-2ubuntu3.18
     libcurl4:
-        7.58.0-2ubuntu3.16
+        7.58.0-2ubuntu3.18
     libdb5.3:
         5.3.28-13.1ubuntu1.1
     libdebconfclient0:
@@ -376,9 +376,9 @@ local:
     libksba8:
         1.3.5-2
     libldap-2.4-2:
-        2.4.45+dfsg-1ubuntu1.10
+        2.4.45+dfsg-1ubuntu1.11
     libldap-common:
-        2.4.45+dfsg-1ubuntu1.10
+        2.4.45+dfsg-1ubuntu1.11
     liblsan0:
         8.4.0-1ubuntu1~18.04
     liblz4-1:
@@ -416,7 +416,7 @@ local:
     libpam0g:
         1.1.8-3.6ubuntu2.18.04.3
     libpcre3:
-        2:8.39-9
+        2:8.39-9ubuntu0.1
     libperl5.26:
         5.26.1-6ubuntu0.5
     libprocps6:
@@ -456,17 +456,17 @@ local:
     libsemanage1:
         2.7-2build2
     libsepol1:
-        2.7-1
+        2.7-1ubuntu0.1
     libsmartcols1:
         2.31.1-0.4ubuntu3.7
     libsqlite3-0:
-        3.22.0-1ubuntu0.4
+        3.22.0-1ubuntu0.5
     libss2:
         1.44.1-1ubuntu1.3
     libssl1.0.0:
-        1.0.2n-1ubuntu5.8
+        1.0.2n-1ubuntu5.9
     libssl1.1:
-        1.1.1-1ubuntu2.1~18.04.15
+        1.1.1-1ubuntu2.1~18.04.17
     libstdc++6:
         8.4.0-1ubuntu1~18.04
     libsystemd0:
@@ -492,9 +492,9 @@ local:
     libzstd1:
         1.3.3+dfsg-2ubuntu1.2
     linux-libc-dev:
-        4.15.0-176.185
+        4.15.0-180.189
     locales:
-        2.27-3ubuntu1.5
+        2.27-3ubuntu1.6
     login:
         1:4.5-1ubuntu2.2
     lsb-base:
@@ -514,13 +514,13 @@ local:
     net-tools:
         1.60+git20161116.90da8a0-1ubuntu1
     openssh-client:
-        1:7.6p1-4ubuntu0.6
+        1:7.6p1-4ubuntu0.7
     openssh-server:
-        1:7.6p1-4ubuntu0.6
+        1:7.6p1-4ubuntu0.7
     openssh-sftp-server:
-        1:7.6p1-4ubuntu0.6
+        1:7.6p1-4ubuntu0.7
     openssl:
-        1.1.1-1ubuntu2.1~18.04.15
+        1.1.1-1ubuntu2.1~18.04.17
     passwd:
         1:4.5-1ubuntu2.2
     perl:
@@ -599,7 +599,7 @@ local:
     PyYAML:
         6.0
     certifi:
-        2021.10.8
+        2022.5.18.1
     charset-normalizer:
         2.0.12
     contextvars:
@@ -609,23 +609,23 @@ local:
     idna:
         3.3
     immutables:
-        0.17
+        0.18
     msgpack:
-        1.0.3
+        1.0.4
     pip:
         9.0.1
     psutil:
-        5.9.0
+        5.9.1
     pycryptodomex:
         3.14.1
     python-apt:
         1.6.5+ubuntu0.7
     pyzmq:
-        22.3.0
+        23.1.0
     requests:
         2.27.1
     salt:
-        3004+0na.cfa7358
+        3004+0na.6a9da11
     setuptools:
         39.0.1
     typing-extensions:

@@ -127,9 +127,9 @@ local:
     audit-libs:
         3.0.8-1.fc36
     authselect:
-        1.3.0-10.fc36
+        1.4.0-1.fc36
     authselect-libs:
-        1.3.0-10.fc36
+        1.4.0-1.fc36
     basesystem:
         11-13.fc36
     bash:
@@ -153,13 +153,13 @@ local:
     cryptsetup-libs:
         2.4.3-2.fc36
     curl:
-        7.82.0-2.fc36
+        7.82.0-5.fc36
     cyrus-sasl-lib:
         2.1.27-18.fc36
     dbus:
         1:1.14.0-1.fc36
     dbus-broker:
-        29-5.fc36
+        31-1.fc36
     dbus-common:
         1:1.14.0-1.fc36
     dbus-libs:
@@ -169,35 +169,35 @@ local:
     device-mapper-libs:
         1.02.175-7.fc36
     dnf:
-        4.11.1-2.fc36
+        4.12.0-1.fc36
     dnf-data:
-        4.11.1-2.fc36
+        4.12.0-1.fc36
     dnf-plugins-core:
-        4.1.0-1.fc36
+        4.2.0-1.fc36
     dnf-utils:
-        4.1.0-1.fc36
+        4.2.0-1.fc36
     dracut:
         056-1.fc36
     elfutils-default-yama-scope:
-        0.186-3.fc36
+        0.187-4.fc36
     elfutils-libelf:
-        0.186-3.fc36
+        0.187-4.fc36
     elfutils-libs:
-        0.186-3.fc36
+        0.187-4.fc36
     expat:
         2.4.7-1.fc36
     fedora-gpg-keys:
-        36-0.4
+        36-1
     fedora-release-common:
-        36-0.16
+        36-17
     fedora-release-container:
-        36-0.16
+        36-17
     fedora-release-identity-container:
-        36-0.16
+        36-17
     fedora-repos:
-        36-0.4
+        36-1
     fedora-repos-modular:
-        36-0.4
+        36-1
     file:
         5.41-4.fc36
     file-libs:
@@ -217,27 +217,27 @@ local:
     gettext-libs:
         0.21-9.fc36
     git:
-        2.35.1-1.fc36
+        2.36.1-1.fc36
     git-core:
-        2.35.1-1.fc36
+        2.36.1-1.fc36
     git-core-doc:
-        2.35.1-1.fc36
+        2.36.1-1.fc36
     glib2:
-        2.72.0-2.fc36
+        2.72.1-1.fc36
     glibc:
-        2.35-4.fc36
+        2.35-6.fc36
     glibc-common:
-        2.35-4.fc36
+        2.35-6.fc36
     glibc-langpack-en:
-        2.35-4.fc36
+        2.35-6.fc36
     glibc-minimal-langpack:
-        2.35-4.fc36
+        2.35-6.fc36
     gmp:
         1:6.2.1-2.fc36
     gnupg2:
-        2.3.4-2.fc36
+        2.3.6-1.fc36
     gnutls:
-        3.7.3-2.fc36
+        3.7.4-1.fc36
     gpg-pubkey.(none):
         38ab71f4-60242b08
     gpgme:
@@ -247,17 +247,17 @@ local:
     groff-base:
         1.22.4-9.fc36
     grub2-common:
-        1:2.06-29.fc36
+        1:2.06-40.fc36
     grub2-tools:
-        1:2.06-29.fc36
+        1:2.06-40.fc36
     grub2-tools-minimal:
-        1:2.06-29.fc36
+        1:2.06-40.fc36
     grubby:
         8.40-57.fc36
     gzip:
-        1.11-2.fc36
+        1.11-3.fc36
     hwdata:
-        0.358-1.fc36
+        0.359-1.fc36
     ima-evm-utils:
         1.4-5.fc36
     js-jquery:
@@ -305,11 +305,11 @@ local:
     libcomps:
         0.1.18-2.fc36
     libcurl:
-        7.82.0-2.fc36
+        7.82.0-5.fc36
     libdb:
         5.3.28-51.fc36
     libdnf:
-        0.66.0-1.fc36
+        0.67.0-2.fc36
     libeconf:
         0.4.0-3.fc36
     libedit:
@@ -325,11 +325,11 @@ local:
     libfsverity:
         1.4-7.fc36
     libgcc:
-        12.0.1-0.14.fc36
+        12.1.1-1.fc36
     libgcrypt:
         1.10.1-2.fc36
     libgomp:
-        12.0.1-0.14.fc36
+        12.1.1-1.fc36
     libgpg-error:
         1.45-1.fc36
     libidn2:
@@ -353,7 +353,7 @@ local:
     libpwquality:
         1.4.4-7.fc36
     librepo:
-        1.14.2-2.fc36
+        1.14.3-1.fc36
     libreport-filesystem:
         2.17.1-1.fc36
     libseccomp:
@@ -371,13 +371,13 @@ local:
     libsodium:
         1.0.18-9.fc36
     libsolv:
-        0.7.21-1.fc36
+        0.7.22-1.fc36
     libssh:
         0.9.6-4.fc36
     libssh-config:
         0.9.6-4.fc36
     libstdc++:
-        12.0.1-0.14.fc36
+        12.1.1-1.fc36
     libtasn1:
         4.18.0-2.fc36
     libtirpc:
@@ -399,7 +399,7 @@ local:
     libxcrypt:
         4.4.28-1.fc36
     libxml2:
-        2.9.13-1.fc36
+        2.9.14-1.fc36
     libyaml:
         0.2.5-7.fc36
     libzstd:
@@ -439,7 +439,7 @@ local:
     openssh-server:
         8.8p1-1.fc36.1
     openssl-libs:
-        1:3.0.2-2.fc36
+        1:3.0.2-5.fc36
     openssl1.1:
         1:1.1.1n-1.fc36
     os-prober:
@@ -459,9 +459,9 @@ local:
     pcre:
         8.45-1.fc36.1
     pcre2:
-        10.39-1.fc36.1
+        10.40-1.fc36
     pcre2-syntax:
-        10.39-1.fc36.1
+        10.40-1.fc36
     perl-Carp:
         1.52-479.fc36
     perl-Class-Struct:
@@ -493,7 +493,7 @@ local:
     perl-Getopt-Std:
         1.13-486.fc36
     perl-Git:
-        2.35.1-1.fc36
+        2.36.1-1.fc36
     perl-HTTP-Tiny:
         0.080-2.fc36
     perl-IO:
@@ -519,7 +519,7 @@ local:
     perl-SelectSaver:
         1.02-486.fc36
     perl-Socket:
-        4:2.032-3.fc36
+        4:2.033-1.fc36
     perl-Storable:
         1:3.25-2.fc36
     perl-Symbol:
@@ -531,7 +531,7 @@ local:
     perl-TermReadKey:
         2.38-12.fc36
     perl-Text-ParseWords:
-        3.30-479.fc36
+        3.31-1.fc36
     perl-Text-Tabs+Wrap:
         2021.0814-2.fc36
     perl-Time-Local:
@@ -587,13 +587,13 @@ local:
     python3-distro:
         1.6.0-2.fc36
     python3-dnf:
-        4.11.1-2.fc36
+        4.12.0-1.fc36
     python3-dnf-plugins-core:
-        4.1.0-1.fc36
+        4.2.0-1.fc36
     python3-gpg:
         1.15.1-6.fc36
     python3-hawkey:
-        0.66.0-1.fc36
+        0.67.0-2.fc36
     python3-idna:
         3.3-2.fc36
     python3-jinja2:
@@ -601,7 +601,7 @@ local:
     python3-libcomps:
         0.1.18-2.fc36
     python3-libdnf:
-        0.66.0-1.fc36
+        0.67.0-2.fc36
     python3-libs:
         3.10.4-1.fc36
     python3-m2crypto:
@@ -655,7 +655,7 @@ local:
     sed:
         4.8-10.fc36
     setup:
-        2.13.9.1-3.fc36
+        2.13.10-1.fc36
     shadow-utils:
         2:4.11.1-2.fc36
     sqlite-libs:
@@ -675,27 +675,27 @@ local:
     tpm2-tss:
         3.2.0-1.fc36
     tzdata:
-        2022a-1.fc36
+        2022a-2.fc36
     util-linux:
         2.38-0.2.fc36
     util-linux-core:
         2.38-0.2.fc36
     vim-data:
-        2:8.2.4701-1.fc36
+        2:8.2.4969-1.fc36
     vim-minimal:
-        2:8.2.4701-1.fc36
+        2:8.2.4969-1.fc36
     web-assets-filesystem:
         5-16.fc36
     which:
         2.21-32.fc36
     xz:
-        5.2.5-8.fc36
+        5.2.5-9.fc36
     xz-libs:
-        5.2.5-8.fc36
+        5.2.5-9.fc36
     yum:
-        4.11.1-2.fc36
+        4.12.0-1.fc36
     zchunk-libs:
-        1.2.1-1.fc36
+        1.2.2-1.fc36
     zeromq:
         4.3.4-3.fc36
     zlib:

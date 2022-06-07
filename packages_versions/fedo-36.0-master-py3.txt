@@ -2,7 +2,7 @@ fedo-36.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.cfa7358
+          Salt: 3004+0na.6a9da11
  
 Dependency Versions:
           cffi: Not Installed
@@ -11,11 +11,11 @@ Dependency Versions:
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
-        Jinja2: 3.1.1
+        Jinja2: 3.1.2
        libgit2: Not Installed
       M2Crypto: Not Installed
           Mako: Not Installed
-       msgpack: 1.0.3
+       msgpack: 1.0.4
   msgpack-pure: Not Installed
   mysql-python: Not Installed
      pycparser: Not Installed
@@ -105,7 +105,7 @@ local:
     saltpath:
         /usr/local/lib/python3.10/site-packages/salt
     saltversion:
-        3004+0na.cfa7358
+        3004+0na.6a9da11
     saltversioninfo:
         - 3004
     systemd:
@@ -128,17 +128,17 @@ local:
     audit-libs:
         3.0.8-1.fc36
     authselect:
-        1.3.0-10.fc36
+        1.4.0-1.fc36
     authselect-libs:
-        1.3.0-10.fc36
+        1.4.0-1.fc36
     basesystem:
         11-13.fc36
     bash:
         5.1.16-2.fc36
     binutils:
-        2.37-24.fc36
+        2.37-27.fc36
     binutils-gold:
-        2.37-24.fc36
+        2.37-27.fc36
     bzip2-libs:
         1.0.8-11.fc36
     ca-certificates:
@@ -147,8 +147,10 @@ local:
         9.0-5.fc36
     coreutils-common:
         9.0-5.fc36
+    cpio:
+        2.13-12.fc36
     cpp:
-        12.0.1-0.16.fc36
+        12.1.1-1.fc36
     cracklib:
         2.9.6-28.fc36
     crypto-policies:
@@ -158,13 +160,13 @@ local:
     cryptsetup-libs:
         2.4.3-2.fc36
     curl:
-        7.82.0-2.fc36
+        7.82.0-5.fc36
     cyrus-sasl-lib:
         2.1.27-18.fc36
     dbus:
         1:1.14.0-1.fc36
     dbus-broker:
-        29-5.fc36
+        31-1.fc36
     dbus-common:
         1:1.14.0-1.fc36
     device-mapper:
@@ -172,17 +174,19 @@ local:
     device-mapper-libs:
         1.02.175-7.fc36
     dnf:
-        4.11.1-2.fc36
+        4.13.0-1.fc36
     dnf-data:
-        4.11.1-2.fc36
+        4.13.0-1.fc36
+    dracut:
+        056-1.fc36
     elfutils-debuginfod-client:
-        0.186-3.fc36
+        0.187-4.fc36
     elfutils-default-yama-scope:
-        0.187-1.fc36
+        0.187-4.fc36
     elfutils-libelf:
-        0.187-1.fc36
+        0.187-4.fc36
     elfutils-libs:
-        0.187-1.fc36
+        0.187-4.fc36
     expat:
         2.4.7-1.fc36
     fedora-gpg-keys:
@@ -197,48 +201,56 @@ local:
         36-1
     fedora-repos-modular:
         36-1
+    file:
+        5.41-4.fc36
     file-libs:
         5.41-4.fc36
     filesystem:
         3.16-2.fc36
     findutils:
         1:4.9.0-1.fc36
+    fuse-libs:
+        2.9.9-14.fc36
     gawk:
         5.1.1-2.fc36
     gc:
         8.0.6-2.fc36
     gcc:
-        12.0.1-0.16.fc36
+        12.1.1-1.fc36
     gcc-c++:
-        12.0.1-0.16.fc36
+        12.1.1-1.fc36
     gdbm-libs:
         1:1.22-2.fc36
+    gettext:
+        0.21-9.fc36
+    gettext-libs:
+        0.21-9.fc36
     git:
-        2.35.1-1.fc36
+        2.36.1-1.fc36
     git-core:
-        2.35.1-1.fc36
+        2.36.1-1.fc36
     git-core-doc:
-        2.35.1-1.fc36
+        2.36.1-1.fc36
     glib2:
-        2.72.1-1.fc36
+        2.72.2-1.fc36
     glibc:
-        2.35-4.fc36
+        2.35-11.fc36
     glibc-common:
-        2.35-4.fc36
+        2.35-11.fc36
     glibc-devel:
-        2.35-4.fc36
+        2.35-11.fc36
     glibc-headers-x86:
-        2.35-4.fc36
+        2.35-11.fc36
     glibc-langpack-en:
-        2.35-4.fc36
+        2.35-11.fc36
     glibc-minimal-langpack:
-        2.35-4.fc36
+        2.35-11.fc36
     gmp:
         1:6.2.1-2.fc36
     gnupg2:
         2.3.6-1.fc36
     gnutls:
-        3.7.4-1.fc36
+        3.7.6-1.fc36
     gpg-pubkey.(none):
         38ab71f4-60242b08
     gpgme:
@@ -247,6 +259,14 @@ local:
         3.7-2.fc36
     groff-base:
         1.22.4-9.fc36
+    grub2-common:
+        1:2.06-40.fc36
+    grub2-tools:
+        1:2.06-40.fc36
+    grub2-tools-minimal:
+        1:2.06-40.fc36
+    grubby:
+        8.40-57.fc36
     guile22:
         2.2.7-5.fc36
     gzip:
@@ -260,13 +280,15 @@ local:
     kbd-misc:
         2.4.0-9.fc36
     kernel-headers:
-        5.17.0-300.fc36
+        5.17.11-300.fc36
     keyutils-libs:
         1.6.1-4.fc36
     kmod:
         29-7.fc36
     kmod-libs:
         29-7.fc36
+    kpartx:
+        0.8.7-8.fc36
     krb5-libs:
         1.19.2-9.fc36
     less:
@@ -274,21 +296,21 @@ local:
     libacl:
         2.3.1-3.fc36
     libarchive:
-        3.5.3-1.fc36
+        3.5.3-2.fc36
     libargon2:
-        20171227-8.fc36
+        20171227-9.fc36
     libassuan:
         2.5.5-4.fc36
     libattr:
         2.5.1-4.fc36
     libblkid:
-        2.38-0.2.fc36
+        2.38-1.fc36
     libbrotli:
         1.0.9-7.fc36
     libcap:
         2.48-4.fc36
     libcap-ng:
-        0.8.2-9.fc36
+        0.8.3-1.fc36
     libcbor:
         0.7.0-5.fc36
     libcom_err:
@@ -296,11 +318,11 @@ local:
     libcomps:
         0.1.18-2.fc36
     libcurl:
-        7.82.0-2.fc36
+        7.82.0-5.fc36
     libdb:
         5.3.28-51.fc36
     libdnf:
-        0.66.0-1.fc36
+        0.67.0-2.fc36
     libeconf:
         0.4.0-3.fc36
     libedit:
@@ -308,7 +330,7 @@ local:
     libevent:
         2.1.12-6.fc36
     libfdisk:
-        2.38-0.2.fc36
+        2.38-1.fc36
     libffi:
         3.4.2-8.fc36
     libfido2:
@@ -316,21 +338,25 @@ local:
     libfsverity:
         1.4-7.fc36
     libgcc:
-        12.0.1-0.16.fc36
+        12.1.1-1.fc36
     libgcrypt:
-        1.10.1-2.fc36
+        1.10.1-3.fc36
     libgomp:
-        12.0.1-0.16.fc36
+        12.1.1-1.fc36
     libgpg-error:
         1.45-1.fc36
     libidn2:
         2.3.2-4.fc36
+    libkcapi:
+        1.3.1-4.fc36
+    libkcapi-hmaccalc:
+        1.3.1-4.fc36
     libksba:
         1.6.0-3.fc36
     libmodulemd:
         2.14.0-2.fc36
     libmount:
-        2.38-0.2.fc36
+        2.38-1.fc36
     libmpc:
         1.2.1-4.fc36
     libnghttp2:
@@ -344,7 +370,7 @@ local:
     libpwquality:
         1.4.4-7.fc36
     librepo:
-        1.14.2-2.fc36
+        1.14.3-1.fc36
     libreport-filesystem:
         2.17.1-1.fc36
     libseccomp:
@@ -358,7 +384,7 @@ local:
     libsigsegv:
         2.14-2.fc36
     libsmartcols:
-        2.38-0.2.fc36
+        2.38-1.fc36
     libsolv:
         0.7.22-1.fc36
     libssh:
@@ -366,9 +392,9 @@ local:
     libssh-config:
         0.9.6-4.fc36
     libstdc++:
-        12.0.1-0.16.fc36
+        12.1.1-1.fc36
     libstdc++-devel:
-        12.0.1-0.16.fc36
+        12.1.1-1.fc36
     libtasn1:
         4.18.0-2.fc36
     libtirpc:
@@ -380,7 +406,7 @@ local:
     libutempter:
         1.2.1-6.fc36
     libuuid:
-        2.38-0.2.fc36
+        2.38-1.fc36
     libverto:
         0.3.2-3.fc36
     libxcrypt:
@@ -388,17 +414,19 @@ local:
     libxcrypt-devel:
         4.4.28-1.fc36
     libxml2:
-        2.9.13-1.fc36
+        2.9.14-1.fc36
     libyaml:
         0.2.5-7.fc36
     libzstd:
-        1.5.2-1.fc36
+        1.5.2-2.fc36
     lua-libs:
         5.4.4-1.fc36
     lz4-libs:
         1.9.3-4.fc36
     make:
         1:4.3-7.fc36
+    memstrack:
+        0.2.4-2.fc36
     mpdecimal:
         2.5.1-3.fc36
     mpfr:
@@ -416,9 +444,9 @@ local:
     npth:
         1.6-8.fc36
     openldap:
-        2.6.1-2.fc36
+        2.6.2-1.fc36
     openldap-compat:
-        2.6.1-2.fc36
+        2.6.2-1.fc36
     openssh:
         8.8p1-1.fc36.1
     openssh-clients:
@@ -426,7 +454,9 @@ local:
     openssh-server:
         8.8p1-1.fc36.1
     openssl-libs:
-        1:3.0.2-3.fc36
+        1:3.0.3-1.fc36
+    os-prober:
+        1.77-9.fc36
     p11-kit:
         0.24.1-2.fc36
     p11-kit-trust:
@@ -438,9 +468,9 @@ local:
     pcre:
         8.45-1.fc36.1
     pcre2:
-        10.39-1.fc36.1
+        10.40-1.fc36
     pcre2-syntax:
-        10.39-1.fc36.1
+        10.40-1.fc36
     perl-Carp:
         1.52-479.fc36
     perl-Class-Struct:
@@ -448,7 +478,7 @@ local:
     perl-DynaLoader:
         1.50-486.fc36
     perl-Encode:
-        4:3.16-484.fc36
+        4:3.17-485.fc36
     perl-Errno:
         1.33-486.fc36
     perl-Error:
@@ -472,7 +502,7 @@ local:
     perl-Getopt-Std:
         1.13-486.fc36
     perl-Git:
-        2.35.1-1.fc36
+        2.36.1-1.fc36
     perl-HTTP-Tiny:
         0.080-2.fc36
     perl-IO:
@@ -498,7 +528,7 @@ local:
     perl-SelectSaver:
         1.02-486.fc36
     perl-Socket:
-        4:2.032-3.fc36
+        4:2.033-1.fc36
     perl-Storable:
         1:3.25-2.fc36
     perl-Symbol:
@@ -510,7 +540,7 @@ local:
     perl-TermReadKey:
         2.38-12.fc36
     perl-Text-ParseWords:
-        3.30-479.fc36
+        3.31-1.fc36
     perl-Text-Tabs+Wrap:
         2021.0814-2.fc36
     perl-Time-Local:
@@ -539,6 +569,8 @@ local:
         1.04-486.fc36
     perl-vars:
         1.05-486.fc36
+    pigz:
+        2.7-1.fc36
     pkgconf:
         1.8.0-2.fc36
     pkgconf-m4:
@@ -560,15 +592,15 @@ local:
     python3-devel:
         3.10.4-1.fc36
     python3-dnf:
-        4.11.1-2.fc36
+        4.13.0-1.fc36
     python3-gpg:
         1.15.1-6.fc36
     python3-hawkey:
-        0.66.0-1.fc36
+        0.67.0-2.fc36
     python3-libcomps:
         0.1.18-2.fc36
     python3-libdnf:
-        0.66.0-1.fc36
+        0.67.0-2.fc36
     python3-libs:
         3.10.4-1.fc36
     python3-pip:
@@ -592,7 +624,7 @@ local:
     sed:
         4.8-10.fc36
     setup:
-        2.13.9.1-3.fc36
+        2.13.10-1.fc36
     shadow-utils:
         2:4.11.1-2.fc36
     sqlite-libs:
@@ -600,13 +632,13 @@ local:
     sudo:
         1.9.8-5.p2.fc36
     systemd:
-        250.3-8.fc36
+        250.7-1.fc36
     systemd-libs:
-        250.3-8.fc36
+        250.7-1.fc36
     systemd-pam:
-        250.3-8.fc36
+        250.7-1.fc36
     systemd-udev:
-        250.3-8.fc36
+        250.7-1.fc36
     tar:
         2:1.34-3.fc36
     tpm2-tss:
@@ -614,19 +646,21 @@ local:
     tzdata:
         2022a-2.fc36
     util-linux:
-        2.38-0.2.fc36
+        2.38-1.fc36
     util-linux-core:
-        2.38-0.2.fc36
+        2.38-1.fc36
     vim-data:
-        2:8.2.4804-1.fc36
+        2:8.2.5052-1.fc36
     vim-minimal:
-        2:8.2.4804-1.fc36
+        2:8.2.5052-1.fc36
     which:
         2.21-32.fc36
+    xz:
+        5.2.5-9.fc36
     xz-libs:
         5.2.5-9.fc36
     yum:
-        4.11.1-2.fc36
+        4.13.0-1.fc36
     zchunk-libs:
         1.2.2-1.fc36
     zlib:

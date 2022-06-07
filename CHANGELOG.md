@@ -1,5 +1,19 @@
 # Changelog
 
+# [1.71.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.70.0...v1.71.0) (2022-06-07)
+
+
+### Continuous Integration
+
+* **tiamat:** permit failures until `503` errors are resolved ([b77a18f](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/b77a18f38730e43d4faaa8884d1708a18e973a60))
+
+
+### Features
+
+* **gitlab-ci:** deprecate `3002.8` [skip ci] ([3e0c75a](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/3e0c75a8892985c863e60291203cf607380006f8))
+* **gitlab-ci:** deprecate `fedora-34` (EOL) ([bcc260a](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/bcc260ad2fe6742d3cf04e56a7f568d3889b31a6))
+* **gitlab-ci:** display `test_jinja` states output ([d18c352](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/d18c352738ae55a27b39caa0a5e7fa2ea4613a33))
+
 # [1.70.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.69.0...v1.70.0) (2022-04-27)
 
 

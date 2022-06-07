@@ -171,7 +171,7 @@ local:
     coreutils:
         8.28-1ubuntu1
     curl:
-        7.58.0-2ubuntu3.16
+        7.58.0-2ubuntu3.18
     dash:
         0.5.8-2.10
     dctrl-tools:
@@ -183,11 +183,11 @@ local:
     diffutils:
         1:3.6-1
     dirmngr:
-        2.2.4-1ubuntu1.4
+        2.2.4-1ubuntu1.5
     distro-info-data:
         0.37ubuntu0.14
     dpkg:
-        1.19.0.5ubuntu2.3
+        1.19.0.5ubuntu2.4
     e2fsprogs:
         1.44.1-1ubuntu1.3
     fdisk:
@@ -203,25 +203,25 @@ local:
     git-man:
         1:2.17.1-1ubuntu0.11
     gnupg:
-        2.2.4-1ubuntu1.4
+        2.2.4-1ubuntu1.5
     gnupg-l10n:
-        2.2.4-1ubuntu1.4
+        2.2.4-1ubuntu1.5
     gnupg-utils:
-        2.2.4-1ubuntu1.4
+        2.2.4-1ubuntu1.5
     gpg:
-        2.2.4-1ubuntu1.4
+        2.2.4-1ubuntu1.5
     gpg-agent:
-        2.2.4-1ubuntu1.4
+        2.2.4-1ubuntu1.5
     gpg-wks-client:
-        2.2.4-1ubuntu1.4
+        2.2.4-1ubuntu1.5
     gpg-wks-server:
-        2.2.4-1ubuntu1.4
+        2.2.4-1ubuntu1.5
     gpgconf:
-        2.2.4-1ubuntu1.4
+        2.2.4-1ubuntu1.5
     gpgsm:
-        2.2.4-1ubuntu1.4
+        2.2.4-1ubuntu1.5
     gpgv:
-        2.2.4-1ubuntu1.4
+        2.2.4-1ubuntu1.5
     grep:
         3.1-2build1
     gzip:
@@ -259,9 +259,9 @@ local:
     libbz2-1.0:
         1.0.6-8.1ubuntu0.2
     libc-bin:
-        2.27-3ubuntu1.5
+        2.27-3ubuntu1.6
     libc6:
-        2.27-3ubuntu1.5
+        2.27-3ubuntu1.6
     libcap-ng0:
         0.7.7-3.1
     libcap2:
@@ -271,13 +271,13 @@ local:
     libcryptsetup12:
         2:2.0.2-1ubuntu1.2
     libcurl3-gnutls:
-        7.58.0-2ubuntu3.16
+        7.58.0-2ubuntu3.18
     libcurl4:
-        7.58.0-2ubuntu3.16
+        7.58.0-2ubuntu3.18
     libdb5.3:
         5.3.28-13.1ubuntu1.1
     libdbus-1-3:
-        1.12.2-1ubuntu1.2
+        1.12.2-1ubuntu1.3
     libdebconfclient0:
         0.213ubuntu1
     libdevmapper1.02.1:
@@ -349,9 +349,9 @@ local:
     libksba8:
         1.3.5-2
     libldap-2.4-2:
-        2.4.45+dfsg-1ubuntu1.10
+        2.4.45+dfsg-1ubuntu1.11
     libldap-common:
-        2.4.45+dfsg-1ubuntu1.10
+        2.4.45+dfsg-1ubuntu1.11
     liblz4-1:
         0.0~r131-2ubuntu3.1
     liblzma5:
@@ -385,7 +385,7 @@ local:
     libpci3:
         1:3.5.2-1ubuntu1.1
     libpcre3:
-        2:8.39-9
+        2:8.39-9ubuntu0.1
     libperl5.26:
         5.26.1-6ubuntu0.5
     libpgm-5.2-0:
@@ -425,13 +425,13 @@ local:
     libsodium23:
         1.0.16-2
     libsqlite3-0:
-        3.22.0-1ubuntu0.4
+        3.22.0-1ubuntu0.5
     libss2:
         1.44.1-1ubuntu1.3
     libssl1.0.0:
-        1.0.2n-1ubuntu5.8
+        1.0.2n-1ubuntu5.9
     libssl1.1:
-        1.1.1-1ubuntu2.1~18.04.15
+        1.1.1-1ubuntu2.1~18.04.17
     libstdc++6:
         8.4.0-1ubuntu1~18.04
     libsystemd0:
@@ -457,7 +457,7 @@ local:
     libzstd1:
         1.3.3+dfsg-2ubuntu1.2
     locales:
-        2.27-3ubuntu1.5
+        2.27-3ubuntu1.6
     login:
         1:4.5-1ubuntu2.2
     lsb-base:
@@ -477,13 +477,13 @@ local:
     net-tools:
         1.60+git20161116.90da8a0-1ubuntu1
     openssh-client:
-        1:7.6p1-4ubuntu0.6
+        1:7.6p1-4ubuntu0.7
     openssh-server:
-        1:7.6p1-4ubuntu0.6
+        1:7.6p1-4ubuntu0.7
     openssh-sftp-server:
-        1:7.6p1-4ubuntu0.6
+        1:7.6p1-4ubuntu0.7
     openssl:
-        1.1.1-1ubuntu2.1~18.04.15
+        1.1.1-1ubuntu2.1~18.04.17
     passwd:
         1:4.5-1ubuntu2.2
     pciutils:

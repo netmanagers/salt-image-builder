@@ -2,7 +2,7 @@ ubun-22.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.cfa7358
+          Salt: 3004+0na.6a9da11
  
 Dependency Versions:
           cffi: Not Installed
@@ -11,11 +11,11 @@ Dependency Versions:
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
-        Jinja2: 3.1.1
+        Jinja2: 3.1.2
        libgit2: Not Installed
       M2Crypto: Not Installed
           Mako: Not Installed
-       msgpack: 1.0.3
+       msgpack: 1.0.4
   msgpack-pure: Not Installed
   mysql-python: Not Installed
      pycparser: Not Installed
@@ -106,7 +106,7 @@ local:
     saltpath:
         /usr/local/lib/python3.10/dist-packages/salt
     saltversion:
-        3004+0na.cfa7358
+        3004+0na.6a9da11
     saltversioninfo:
         - 3004
     systemd:
@@ -131,7 +131,7 @@ local:
     apt-transport-https:
         2.4.5
     base-files:
-        12ubuntu4
+        12ubuntu4.1
     base-passwd:
         3.5.52build1
     bash:
@@ -153,7 +153,7 @@ local:
     cpp-11:
         11.2.0-19ubuntu1
     curl:
-        7.81.0-1
+        7.81.0-1ubuntu1.2
     dash:
         0.5.11+git20210903+057cd650a4ed-3build1
     debconf:
@@ -167,7 +167,7 @@ local:
     distro-info-data:
         0.52ubuntu0.1
     dpkg:
-        1.21.1ubuntu2
+        1.21.1ubuntu2.1
     e2fsprogs:
         1.46.5-2ubuntu1
     findutils:
@@ -275,9 +275,9 @@ local:
     libctf0:
         2.38-3ubuntu1
     libcurl3-gnutls:
-        7.81.0-1
+        7.81.0-1ubuntu1.2
     libcurl4:
-        7.81.0-1
+        7.81.0-1ubuntu1.2
     libdb5.3:
         5.3.28+dfsg1-0.8ubuntu3
     libdebconfclient0:
@@ -335,7 +335,7 @@ local:
     libjs-underscore:
         1.13.2~dfsg-2
     libjson-c5:
-        0.15-2build4
+        0.15-3~ubuntu1.22.04.1
     libk5crypto3:
         1.19.2-2
     libkeyutils1:
@@ -349,7 +349,7 @@ local:
     libksba8:
         1.6.0-2build1
     libldap-2.5-0:
-        2.5.11+dfsg-1~exp1ubuntu3
+        2.5.11+dfsg-1~exp1ubuntu3.1
     liblsan0:
         12-20220319-1ubuntu1
     liblz4-1:
@@ -393,7 +393,7 @@ local:
     libpcre2-8-0:
         10.39-3build1
     libpcre3:
-        2:8.39-13build5
+        2:8.39-13ubuntu0.22.04.1
     libperl5.34:
         5.34.0-3ubuntu1
     libprocps8:
@@ -441,13 +441,13 @@ local:
     libssh-4:
         0.9.6-2build1
     libssl3:
-        3.0.2-0ubuntu1
+        3.0.2-0ubuntu1.2
     libstdc++-11-dev:
         11.2.0-19ubuntu1
     libstdc++6:
         12-20220319-1ubuntu1
     libsystemd0:
-        249.11-0ubuntu3
+        249.11-0ubuntu3.1
     libtasn1-6:
         4.18.0-4build1
     libtinfo6:
@@ -463,7 +463,7 @@ local:
     libubsan1:
         12-20220319-1ubuntu1
     libudev1:
-        249.11-0ubuntu3
+        249.11-0ubuntu3.1
     libunistring2:
         1.0-1
     libuuid1:
@@ -475,7 +475,7 @@ local:
     libzstd1:
         1.4.8+dfsg-3build1
     linux-libc-dev:
-        5.15.0-27.28
+        5.15.0-35.36
     locales:
         2.35-0ubuntu3
     login:
@@ -505,7 +505,7 @@ local:
     openssh-sftp-server:
         1:8.9p1-3
     openssl:
-        3.0.2-0ubuntu1
+        3.0.2-0ubuntu1.2
     passwd:
         1:4.8.1-2ubuntu2
     perl:
@@ -557,9 +557,9 @@ local:
     sudo:
         1.9.9-1ubuntu2
     systemd:
-        249.11-0ubuntu3
+        249.11-0ubuntu3.1
     systemd-sysv:
-        249.11-0ubuntu3
+        249.11-0ubuntu3.1
     sysvinit-utils:
         3.01-1ubuntu1
     tar:
@@ -569,7 +569,7 @@ local:
     ucf:
         3.0043
     udev:
-        249.11-0ubuntu3
+        249.11-0ubuntu3.1
     usrmerge:
         25ubuntu2
     util-linux:

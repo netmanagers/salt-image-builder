@@ -2,7 +2,7 @@ debi-11.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.cfa7358
+          Salt: 3004+0na.6a9da11
  
 Dependency Versions:
           cffi: Not Installed
@@ -11,11 +11,11 @@ Dependency Versions:
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
-        Jinja2: 3.1.1
+        Jinja2: 3.1.2
        libgit2: Not Installed
       M2Crypto: Not Installed
           Mako: Not Installed
-       msgpack: 1.0.3
+       msgpack: 1.0.4
   msgpack-pure: Not Installed
   mysql-python: Not Installed
      pycparser: Not Installed
@@ -25,7 +25,7 @@ Dependency Versions:
         Python: 3.9.2 (default, Feb 28 2021, 17:03:44)
   python-gnupg: Not Installed
         PyYAML: 6.0
-         PyZMQ: 22.3.0
+         PyZMQ: 23.1.0
          smmap: Not Installed
        timelib: Not Installed
        Tornado: 4.5.3
@@ -105,7 +105,7 @@ local:
     saltpath:
         /usr/local/lib/python3.9/dist-packages/salt
     saltversion:
-        3004+0na.cfa7358
+        3004+0na.6a9da11
     saltversioninfo:
         - 3004
     systemd:
@@ -170,7 +170,7 @@ local:
     dmsetup:
         2:1.02.175-2.1
     dpkg:
-        1.20.9
+        1.20.10
     e2fsprogs:
         1.46.2-2
     findutils:
@@ -352,7 +352,7 @@ local:
     libksba8:
         1.5.0-3
     libldap-2.4-2:
-        2.4.57+dfsg-3
+        2.4.57+dfsg-3+deb11u1
     liblsan0:
         10.2.1-6
     liblz4-1:
@@ -446,7 +446,7 @@ local:
     libssh2-1:
         1.9.0-2
     libssl1.1:
-        1.1.1n-0+deb11u1
+        1.1.1n-0+deb11u2
     libstdc++6:
         10.2.1-6
     libsystemd0:
@@ -480,7 +480,7 @@ local:
     libzstd1:
         1.4.8+dfsg-2.1
     linux-libc-dev:
-        5.10.106-1
+        5.10.113-1
     locales:
         2.31-13+deb11u3
     login:
@@ -510,7 +510,7 @@ local:
     openssh-sftp-server:
         1:8.4p1-5
     openssl:
-        1.1.1n-0+deb11u1
+        1.1.1n-0+deb11u2
     passwd:
         1:4.8.1-1
     pci.ids:
