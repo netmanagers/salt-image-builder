@@ -147,14 +147,9 @@ commitlint:
         if [ "${SVB}" = "" ]; then
           export SVB=${SV}
         fi
-    # Use temporary workaround for avoiding `master` builds installing `3005`
-    # Use a forked Salt repo to pin to the commit before the version number
-    # increment takes place (include the `-g` switch required by `salt-bootstrap`)
-    - |
-        export SRU=""
-        if [ "${SV}" = "master" ]; then
-          export SRU="-g https://github.com/myii/salt.git"
-        fi
+    # Use an empty `SRU` since all builds are working fine using the main Salt repo
+    # Historically, have needed to use a forked Salt repo for `master` builds
+    - 'export SRU=""'
     # Build the image
     - '${CMD_DOCKER_BUILD}
          --file "Dockerfile.${PI}"
