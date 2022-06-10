@@ -2,7 +2,7 @@ fedo-36.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.6a9da11
+          Salt: 3005+0na.599872e
  
 Dependency Versions:
           cffi: Not Installed
@@ -105,9 +105,9 @@ local:
     saltpath:
         /usr/local/lib/python3.10/site-packages/salt
     saltversion:
-        3004+0na.6a9da11
+        3005+0na.599872e
     saltversioninfo:
-        - 3004
+        - 3005
     systemd:
         ----------
         features:
@@ -154,9 +154,9 @@ local:
     cracklib:
         2.9.6-28.fc36
     crypto-policies:
-        20220203-2.git112f859.fc36
+        20220428-1.gitdfb10ea.fc36
     crypto-policies-scripts:
-        20220203-2.git112f859.fc36
+        20220428-1.gitdfb10ea.fc36
     cryptsetup-libs:
         2.4.3-2.fc36
     curl:
@@ -260,11 +260,11 @@ local:
     groff-base:
         1.22.4-9.fc36
     grub2-common:
-        1:2.06-40.fc36
+        1:2.06-42.fc36
     grub2-tools:
-        1:2.06-40.fc36
+        1:2.06-42.fc36
     grub2-tools-minimal:
-        1:2.06-40.fc36
+        1:2.06-42.fc36
     grubby:
         8.40-57.fc36
     guile22:

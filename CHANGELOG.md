@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.72.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.71.0...v1.72.0) (2022-06-10)
+
+
+### Features
+
+* **gitlab-ci:** use main Salt repo for all builds inc. master [skip ci] ([f40e7db](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/f40e7dbf92a1b90c844eb889d6273897b85de040))
+
 # [1.71.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.70.0...v1.71.0) (2022-06-07)
 
 

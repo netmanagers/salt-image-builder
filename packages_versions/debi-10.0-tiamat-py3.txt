@@ -162,7 +162,7 @@ local:
     dmsetup:
         2:1.02.155-3
     dpkg:
-        1.19.7
+        1.19.8
     e2fsprogs:
         1.44.5-1+deb10u3
     fdisk:
@@ -198,7 +198,7 @@ local:
     grep:
         3.3-1
     gzip:
-        1.9-3
+        1.9-3+deb10u1
     hostname:
         3.21
     init-system-helpers:
@@ -308,13 +308,13 @@ local:
     libksba8:
         1.3.5-2
     libldap-2.4-2:
-        2.4.47+dfsg-3+deb10u6
+        2.4.47+dfsg-3+deb10u7
     libldap-common:
-        2.4.47+dfsg-3+deb10u6
+        2.4.47+dfsg-3+deb10u7
     liblz4-1:
         1.8.3-1+deb10u1
     liblzma5:
-        5.2.4-1
+        5.2.4-1+deb10u1
     libmnl0:
         1.0.4-2
     libmount1:
@@ -384,7 +384,7 @@ local:
     libssh2-1:
         1.8.0-2.1
     libssl1.1:
-        1.1.1n-0+deb10u1
+        1.1.1n-0+deb10u2
     libstdc++6:
         8.3.0-6
     libsystemd0:
@@ -432,7 +432,7 @@ local:
     openssh-sftp-server:
         1:7.9p1-10+deb10u2
     openssl:
-        1.1.1n-0+deb10u1
+        1.1.1n-0+deb10u2
     passwd:
         1:4.5-1.1
     perl:

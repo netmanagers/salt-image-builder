@@ -2,7 +2,7 @@ opsu-15.3-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.6a9da11
+          Salt: 3005+0na.599872e
  
 Dependency Versions:
           cffi: 1.13.2
@@ -107,9 +107,9 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3004+0na.6a9da11
+        3005+0na.599872e
     saltversioninfo:
-        - 3004
+        - 3005
     systemd:
         ----------
         features:
@@ -216,7 +216,7 @@ local:
     libassuan0:
         2.5.1-2.14
     libatomic1:
-        11.2.1+git610-150000.1.6.6
+        11.3.0+git1637-150000.1.9.1
     libattr1:
         2.4.47-2.19
     libaudit1:
@@ -278,7 +278,7 @@ local:
     libfido2-udev:
         1.5.0-1.30
     libgcc_s1:
-        11.2.1+git610-150000.1.6.6
+        11.3.0+git1637-150000.1.9.1
     libgcrypt20:
         1.8.2-8.42.1
     libgdbm4:
@@ -288,7 +288,7 @@ local:
     libgmp10:
         6.1.2-4.9.1
     libgomp1:
-        11.2.1+git610-150000.1.6.6
+        11.3.0+git1637-150000.1.9.1
     libgpg-error0:
         1.29-1.8
     libgpgme11:
@@ -298,7 +298,7 @@ local:
     libisl15:
         0.18-1.443
     libitm1:
-        11.2.1+git610-150000.1.6.6
+        11.3.0+git1637-150000.1.9.1
     libjson-c3:
         0.13-3.3.1
     libkeyutils1:
@@ -312,7 +312,7 @@ local:
     libldap-data:
         2.4.46-150200.14.8.1
     liblsan0:
-        11.2.1+git610-150000.1.6.6
+        11.3.0+git1637-150000.1.9.1
     liblua5_3-5:
         5.3.6-3.6.1
     liblz4-1:
@@ -390,7 +390,7 @@ local:
     libssh4:
         0.8.7-10.12.1
     libstdc++6:
-        11.2.1+git610-150000.1.6.6
+        11.3.0+git1637-150000.1.9.1
     libsystemd0:
         246.16-150300.7.45.1
     libtasn1:
@@ -402,7 +402,7 @@ local:
     libtirpc3:
         1.2.6-150300.3.6.1
     libtsan0:
-        11.2.1+git610-150000.1.6.6
+        11.3.0+git1637-150000.1.9.1
     libubsan0:
         7.5.0+r278197-4.30.1
     libudev1:
@@ -629,7 +629,7 @@ local:
     requests:
         2.27.1
     salt:
-        3004+0na.6a9da11
+        3005+0na.599872e
     setuptools:
         40.5.0
     six:

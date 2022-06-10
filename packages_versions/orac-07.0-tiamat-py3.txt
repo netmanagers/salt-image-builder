@@ -209,9 +209,9 @@ local:
     glib2:
         2.56.1-9.el7_9
     glibc:
-        2.17-325.0.1.el7_9
+        2.17-326.0.1.el7_9
     glibc-common:
-        2.17-325.0.1.el7_9
+        2.17-326.0.1.el7_9
     gmp:
         1:6.0.0-15.el7
     gnupg2:
@@ -225,7 +225,7 @@ local:
     groff-base:
         1.22.2-8.el7
     gzip:
-        1.5-10.el7
+        1.5-11.el7_9
     hardlink:
         1:1.0-19.el7
     hostname:
@@ -235,9 +235,9 @@ local:
     info:
         5.1-5.el7
     initscripts:
-        9.49.53-1.0.1.el7_9.1
+        9.49.53-1.0.3.el7_9.1
     iproute:
-        5.4.0-1.0.1.el7
+        5.4.0-1.0.3.el7
     iputils:
         20160308-10.el7
     json-c:
@@ -255,9 +255,9 @@ local:
     kpartx:
         0.4.9-135.0.1.el7_9
     krb5-devel:
-        1.15.1-51.0.1.el7_9
+        1.15.1-51.0.3.el7_9
     krb5-libs:
-        1.15.1-51.0.1.el7_9
+        1.15.1-51.0.3.el7_9
     less:
         458-9.el7
     libacl:
@@ -273,9 +273,9 @@ local:
     libcap-ng:
         0.7.5-4.el7
     libcom_err:
-        1.42.9-19.el7
+        1.42.9-19.0.1.el7
     libcom_err-devel:
-        1.42.9-19.el7
+        1.42.9-19.0.1.el7
     libcurl:
         7.29.0-59.0.3.el7_9.1
     libdb:
@@ -301,7 +301,7 @@ local:
     libidn:
         1.28-4.el7
     libkadm5:
-        1.15.1-51.0.1.el7_9
+        1.15.1-51.0.3.el7_9
     libmnl:
         1.0.3-7.el7
     libmount:
@@ -573,7 +573,7 @@ local:
     rsync:
         3.1.2-10.el7
     rsyslog:
-        8.24.0-57.0.1.el7_9.1
+        8.24.0-57.0.1.el7_9.3
     salt:
         3004rc1-1.el7
     salt-minion:
@@ -635,9 +635,9 @@ local:
     zip:
         3.0-11.el7
     zlib:
-        1.2.7-19.el7_9
+        1.2.7-20.el7_9
     zlib-devel:
-        1.2.7-19.el7_9
+        1.2.7-20.el7_9
 # salt-call --local pip.list
 local:
     ----------

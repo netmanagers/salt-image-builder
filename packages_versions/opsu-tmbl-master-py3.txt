@@ -2,7 +2,7 @@ opsu-tmbl-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3004+0na.6a9da11
+          Salt: 3005+0na.599872e
  
 Dependency Versions:
           cffi: Not Installed
@@ -32,12 +32,12 @@ Dependency Versions:
            ZMQ: 4.3.4
  
 System Versions:
-          dist: opensuse-tumbleweed 20220605 
+          dist: opensuse-tumbleweed 20220608 
         locale: utf-8
        machine: x86_64
        release: 5.4.109+
         system: Linux
-       version: openSUSE Tumbleweed 20220605 
+       version: openSUSE Tumbleweed 20220608 
  
 # salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
 local:
@@ -65,7 +65,7 @@ local:
     lsb_distrib_id:
         openSUSE Tumbleweed
     lsb_distrib_release:
-        20220605
+        20220608
     os:
         SUSE
     os_family:
@@ -76,16 +76,16 @@ local:
     oscodename:
         openSUSE Tumbleweed
     osfinger:
-        openSUSE Tumbleweed-20220605
+        openSUSE Tumbleweed-20220608
     osfullname:
         openSUSE Tumbleweed
     osmajorrelease:
-        20220605
+        20220608
     osmanufacturer:
     osrelease:
-        20220605
+        20220608
     osrelease_info:
-        - 20220605
+        - 20220608
     osversion:
     pythonexecutable:
         /usr/bin/python3.8
@@ -106,9 +106,9 @@ local:
     saltpath:
         /usr/lib/python3.8/site-packages/salt
     saltversion:
-        3004+0na.6a9da11
+        3005+0na.599872e
     saltversioninfo:
-        - 3004
+        - 3005
     systemd:
         ----------
         features:
@@ -291,7 +291,7 @@ local:
     libldap2:
         2.6.2-1.1
     liblua5_4-5:
-        5.4.4-2.4
+        5.4.4-3.1
     liblz4-1:
         1.9.3-2.4
     liblzma5:
@@ -417,9 +417,9 @@ local:
     openSUSE-build-key:
         1.0-44.2
     openSUSE-release:
-        20220605-1652.1
+        20220608-1658.1
     openSUSE-release-appliance-docker:
-        20220605-1652.1
+        20220608-1658.1
     openssh:
         8.9p1-2.3
     openssh-clients:

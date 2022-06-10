@@ -125,23 +125,23 @@ local:
     adduser:
         3.121
     apt:
-        2.4.5
+        2.5.0
     apt-transport-https:
-        2.4.5
+        2.5.0
     base-files:
         12.2
     base-passwd:
         3.5.52
     bash:
-        5.1-6
+        5.1-6+b1
     bsdutils:
-        1:2.37.3-1+b1
+        1:2.38-4
     ca-certificates:
         20211016
     coreutils:
         8.32-4.1
     curl:
-        7.82.0-2
+        7.83.0-1
     dash:
         0.5.11+git20210903+057cd650a4ed-8
     dctrl-tools:
@@ -151,13 +151,13 @@ local:
     debian-archive-keyring:
         2021.1.1
     debianutils:
-        5.7-0.1
+        5.7-0.2
     diffutils:
         1:3.7-5
     dirmngr:
-        2.2.27-3+b1
+        2.2.35-2
     distro-info-data:
-        0.52
+        0.53
     dmsetup:
         2:1.02.175-2.1
     dpkg:
@@ -165,33 +165,33 @@ local:
     e2fsprogs:
         1.46.5-2
     findutils:
-        4.9.0-2
+        4.9.0-3
     gcc-12-base:
-        12-20220319-1
+        12.1.0-2
     git:
         1:2.35.1-1
     git-man:
         1:2.35.1-1
     gnupg:
-        2.2.27-3
+        2.2.35-2
     gnupg-l10n:
-        2.2.27-3
+        2.2.35-2
     gnupg-utils:
-        2.2.27-3+b1
+        2.2.35-2
     gpg:
-        2.2.27-3+b1
+        2.2.35-2
     gpg-agent:
-        2.2.27-3+b1
+        2.2.35-2
     gpg-wks-client:
-        2.2.27-3+b1
+        2.2.35-2
     gpg-wks-server:
-        2.2.27-3+b1
+        2.2.35-2
     gpgconf:
-        2.2.27-3+b1
+        2.2.35-2
     gpgsm:
-        2.2.27-3+b1
+        2.2.35-2
     gpgv:
-        2.2.27-3+b1
+        2.2.35-2
     grep:
         3.7-1
     gzip:
@@ -199,7 +199,7 @@ local:
     hostname:
         3.23
     init-system-helpers:
-        1.62
+        1.63
     iproute2:
         5.17.0-2
     libacl1:
@@ -207,11 +207,11 @@ local:
     libapparmor1:
         3.0.4-2
     libapt-pkg6.0:
-        2.4.5
+        2.5.0
     libargon2-1:
         0~20171227-0.3
     libassuan0:
-        2.5.5-1
+        2.5.5-3
     libattr1:
         1:2.5.1-1
     libaudit-common:
@@ -219,7 +219,7 @@ local:
     libaudit1:
         1:3.0.7-1+b1
     libblkid1:
-        2.37.3-1+b1
+        2.38-4
     libbpf0:
         1:0.7.0-2
     libbrotli1:
@@ -235,7 +235,7 @@ local:
     libc6:
         2.33-7
     libcap-ng0:
-        0.7.9-2.2+b1
+        0.7.9-2.2+b2
     libcap2:
         1:2.44-1
     libcap2-bin:
@@ -249,19 +249,19 @@ local:
     libcryptsetup12:
         2:2.4.3-1
     libcurl3-gnutls:
-        7.82.0-2
+        7.83.0-1
     libcurl4:
-        7.82.0-2
+        7.83.0-1
     libdb5.3:
-        5.3.28+dfsg1-0.8
+        5.3.28+dfsg1-0.9
     libdebconfclient0:
-        0.261
+        0.262
     libdevmapper1.02.1:
         2:1.02.175-2.1
     libedit2:
         3.1-20210910-1
     libelf1:
-        0.186-1
+        0.187-1
     liberror-perl:
         0.17029-1
     libexpat1:
@@ -275,7 +275,7 @@ local:
     libfido2-1:
         1.10.0-1
     libgcc-s1:
-        12-20220319-1
+        12.1.0-2
     libgcrypt20:
         1.10.1-2
     libgdbm-compat4:
@@ -285,9 +285,9 @@ local:
     libgmp10:
         2:6.2.1+dfsg-3
     libgnutls30:
-        3.7.3-4+b1
+        3.7.4-2
     libgpg-error0:
-        1.43-3
+        1.45-2
     libgssapi-krb5-2:
         1.19.2-2+b1
     libhogweed6:
@@ -295,9 +295,9 @@ local:
     libidn2-0:
         2.3.2-2
     libip4tc2:
-        1.8.7-1
+        1.8.8-1
     libjson-c5:
-        0.15-3
+        0.16-1
     libk5crypto3:
         1.19.2-2+b1
     libkeyutils1:
@@ -311,7 +311,7 @@ local:
     libksba8:
         1.6.0-2
     libldap-2.5-0:
-        2.5.11+dfsg-1
+        2.5.12+dfsg-2
     liblz4-1:
         1.9.3-2
     liblzma5:
@@ -321,17 +321,17 @@ local:
     libmnl0:
         1.0.4-3
     libmount1:
-        2.37.3-1+b1
+        2.38-4
     libmpdec3:
         2.5.1-2
     libncurses6:
-        6.3-2
+        6.3+20220423-2
     libncursesw6:
-        6.3-2
+        6.3+20220423-2
     libnettle8:
         3.7.3-1
     libnghttp2-14:
-        1.43.0-1
+        1.47.0-1
     libnorm1:
         1.5.9+dfsg-2
     libnpth0:
@@ -339,17 +339,17 @@ local:
     libnsl2:
         1.3.0-2
     libp11-kit0:
-        0.24.0-6
+        0.24.1-1
     libpam-modules:
-        1.4.0-11
+        1.4.0-13
     libpam-modules-bin:
-        1.4.0-11
+        1.4.0-13
     libpam-runtime:
-        1.4.0-11
+        1.4.0-13
     libpam0g:
-        1.4.0-11
+        1.4.0-13
     libpcre2-8-0:
-        10.39-4
+        10.40-1
     libpcre3:
         2:8.39-14
     libperl5.34:
@@ -361,7 +361,7 @@ local:
     libpsl5:
         0.21.0-1.2
     libpython3-stdlib:
-        3.10.4-1
+        3.10.4-1+b1
     libpython3.10-minimal:
         3.10.4-1
     libpython3.10-stdlib:
@@ -375,7 +375,7 @@ local:
     libsasl2-modules-db:
         2.1.28+dfsg-4
     libseccomp2:
-        2.5.3-2
+        2.5.4-1
     libselinux1:
         3.3-1+b2
     libsemanage-common:
@@ -385,25 +385,25 @@ local:
     libsepol2:
         3.3-1
     libsmartcols1:
-        2.37.3-1+b1
+        2.38-4
     libsodium23:
         1.0.18-1
     libsqlite3-0:
-        3.38.2-1
+        3.38.5-1
     libss2:
         1.46.5-2
     libssh2-1:
         1.10.0-3
     libssl1.1:
-        1.1.1n-1
+        1.1.1o-1
     libstdc++6:
-        12-20220319-1
+        12.1.0-2
     libsystemd0:
         250.4-1
     libtasn1-6:
         4.18.0-4
     libtinfo6:
-        6.3-2
+        6.3+20220423-2
     libtirpc-common:
         1.3.2-2
     libtirpc3:
@@ -413,11 +413,11 @@ local:
     libunistring2:
         1.0-1
     libuuid1:
-        2.37.3-1+b1
+        2.38-4
     libwrap0:
         7.6.q-31
     libxtables12:
-        1.8.7-1
+        1.8.8-1
     libxxhash0:
         0.8.1-1
     libyaml-0-2:
@@ -435,17 +435,17 @@ local:
     lsb-base:
         11.1.0
     lsb-release:
-        11.1.0
+        11.2
     mawk:
         1.3.4.20200120-3+b1
     media-types:
-        7.1.0
+        8.0.0
     mount:
-        2.37.3-1+b1
+        2.38-4
     ncurses-base:
-        6.3-2
+        6.3+20220423-2
     ncurses-bin:
-        6.3-2
+        6.3+20220423-2
     net-tools:
         1.60+git20181103.0eebece-1
     openssh-client:
@@ -455,7 +455,7 @@ local:
     openssh-sftp-server:
         1:9.0p1-1
     openssl:
-        1.1.1n-1
+        1.1.1o-1
     passwd:
         1:4.11.1+dfsg1-2
     perl:
@@ -465,7 +465,7 @@ local:
     perl-modules-5.34:
         5.34.0-4
     pinentry-curses:
-        1.1.0-4
+        1.2.0-1
     procps:
         2:3.3.17-7+b1
     python-apt-common:
@@ -473,7 +473,7 @@ local:
     python-babel-localedata:
         2.8.0+dfsg.1-7
     python3:
-        3.10.4-1
+        3.10.4-1+b1
     python3-apt:
         2.3.0+b1
     python3-babel:
@@ -501,11 +501,11 @@ local:
     python3-markupsafe:
         2.0.1-2+b1
     python3-minimal:
-        3.10.4-1
+        3.10.4-1+b1
     python3-msgpack:
         1.0.3-1
     python3-pip:
-        22.0.2+dfsg-1
+        22.1.1+dfsg-1
     python3-pkg-resources:
         59.6.0-1.2
     python3-psutil:
@@ -537,7 +537,7 @@ local:
     readline-common:
         8.1.2-1.2
     runit-helper:
-        2.10.3
+        2.13.1
     salt-common:
         3004.1+dfsg-2
     salt-minion:
@@ -553,7 +553,7 @@ local:
     systemd-sysv:
         250.4-1
     sysvinit-utils:
-        3.01-1
+        3.03-1
     tar:
         1.34+dfsg-1
     tzdata:
@@ -563,7 +563,9 @@ local:
     udev:
         250.4-1
     util-linux:
-        2.37.3-1+b1
+        2.38-4
+    util-linux-extra:
+        2.38-4
     wget:
         1.21.3-1+b1
     zlib1g:
@@ -594,11 +596,11 @@ local:
     idna:
         3.3
     immutables:
-        0.17
+        0.18
     msgpack:
         1.0.3
     pip:
-        22.0.2
+        22.1.1
     psutil:
         5.9.0
     pycryptodomex:
