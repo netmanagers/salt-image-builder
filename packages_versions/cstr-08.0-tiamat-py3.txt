@@ -124,7 +124,7 @@ local:
     acl:
         2.2.53-1.el8
     audit-libs:
-        3.0.7-3.el8
+        3.0.7-4.el8
     basesystem:
         11-5.el8
     bash:
@@ -178,21 +178,21 @@ local:
     dmidecode:
         1:3.3-4.el8
     dnf:
-        4.7.0-8.el8
+        4.7.0-10.el8
     dnf-data:
-        4.7.0-8.el8
+        4.7.0-10.el8
     elfutils-default-yama-scope:
-        0.186-1.el8
+        0.187-4.el8
     elfutils-libelf:
-        0.186-1.el8
+        0.187-4.el8
     elfutils-libs:
-        0.186-1.el8
+        0.187-4.el8
     emacs-filesystem:
         1:26.1-7.el8
     epel-release:
         8-11.el8
     expat:
-        2.2.5-8.el8
+        2.2.5-9.el8
     file-libs:
         5.33-20.el8
     filesystem:
@@ -202,7 +202,7 @@ local:
     gawk:
         4.2.1-4.el8
     gdb-gdbserver:
-        8.2-18.el8
+        8.2-19.el8
     gdbm:
         1:1.18-1.el8
     gdbm-libs:
@@ -218,8 +218,6 @@ local:
     glibc:
         2.28-203.el8
     glibc-common:
-        2.28-203.el8
-    glibc-gconv-extra:
         2.28-203.el8
     glibc-langpack-en:
         2.28-203.el8
@@ -268,9 +266,9 @@ local:
     kmod-libs:
         25-19.el8
     krb5-devel:
-        1.18.2-17.el8
+        1.18.2-20.el8
     krb5-libs:
-        1.18.2-17.el8
+        1.18.2-20.el8
     langpacks-en:
         1.0-12.el8
     less:
@@ -286,13 +284,13 @@ local:
     libblkid:
         2.32.1-35.el8
     libcap:
-        2.48-2.el8
+        2.48-4.el8
     libcap-ng:
         0.7.11-1.el8
     libcom_err:
-        1.45.6-4.el8
+        1.45.6-5.el8
     libcom_err-devel:
-        1.45.6-4.el8
+        1.45.6-5.el8
     libcomps:
         0.1.18-1.el8
     libcurl:
@@ -302,7 +300,7 @@ local:
     libdb-utils:
         5.3.28-42.el8_4
     libdnf:
-        0.63.0-8.el8
+        0.63.0-9.el8
     libedit:
         3.1-23.20170329cvs.el8
     libfdisk:
@@ -318,7 +316,7 @@ local:
     libidn2:
         2.2.0-1.el8
     libkadm5:
-        1.18.2-17.el8
+        1.18.2-20.el8
     libksba:
         1.3.5-7.el8
     libmodulemd:
@@ -360,7 +358,7 @@ local:
     libsmartcols:
         2.32.1-35.el8
     libsolv:
-        0.7.20-1.el8
+        0.7.20-3.el8
     libssh:
         0.9.6-3.el8
     libssh-config:
@@ -388,7 +386,7 @@ local:
     libxcrypt:
         4.1.1-6.el8
     libxml2:
-        2.9.7-13.el8
+        2.9.7-14.el8
     libyaml:
         0.1.7-5.el8
     libzstd:
@@ -432,7 +430,7 @@ local:
     p11-kit-trust:
         0.23.22-1.el8
     pam:
-        1.3.1-16.el8
+        1.3.1-20.el8
     passwd:
         0.80-4.el8
     pciutils:
@@ -564,7 +562,7 @@ local:
     python3-chardet:
         3.0.4-7.el8
     python3-cloud-what:
-        1.28.28-1.el8
+        1.28.29-3.el8
     python3-dateutil:
         1:2.6.1-6.el8
     python3-dbus:
@@ -574,7 +572,7 @@ local:
     python3-dmidecode:
         3.12.2-15.el8
     python3-dnf:
-        4.7.0-8.el8
+        4.7.0-10.el8
     python3-dnf-plugins-core:
         4.0.21-11.el8
     python3-ethtool:
@@ -584,7 +582,7 @@ local:
     python3-gpg:
         1.13.1-11.el8
     python3-hawkey:
-        0.63.0-8.el8
+        0.63.0-9.el8
     python3-idna:
         2.5-5.el8
     python3-iniparse:
@@ -594,13 +592,13 @@ local:
     python3-libcomps:
         0.1.18-1.el8
     python3-libdnf:
-        0.63.0-8.el8
+        0.63.0-9.el8
     python3-librepo:
         1.14.2-1.el8
     python3-libs:
         3.6.8-46.el8
     python3-libxml2:
-        2.9.7-13.el8
+        2.9.7-14.el8
     python3-pip:
         9.0.3-22.el8
     python3-pip-wheel:
@@ -622,9 +620,9 @@ local:
     python3-six:
         1.11.0-8.el8
     python3-subscription-manager-rhsm:
-        1.28.28-1.el8
+        1.28.29-3.el8
     python3-syspurpose:
-        1.28.28-1.el8
+        1.28.29-3.el8
     python3-urllib3:
         1.24.2-5.el8
     python36:
@@ -654,7 +652,7 @@ local:
     sqlite-libs:
         3.26.0-15.el8
     subscription-manager-rhsm-certificates:
-        1.28.28-1.el8
+        1.28.29-3.el8
     sudo:
         1.8.29-8.el8
     swig:
@@ -686,7 +684,7 @@ local:
     xz-libs:
         5.2.4-3.el8
     yum:
-        4.7.0-8.el8
+        4.7.0-10.el8
     zlib:
         1.2.11-19.el8
     zlib-devel:

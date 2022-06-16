@@ -2,7 +2,7 @@ cstr-08.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3005+0na.599872e
+          Salt: 3005+0na.257d2b4
  
 Dependency Versions:
           cffi: Not Installed
@@ -105,7 +105,7 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3005+0na.599872e
+        3005+0na.257d2b4
     saltversioninfo:
         - 3005
     systemd:
@@ -189,8 +189,6 @@ local:
         4.7.0-10.el8
     dnf-plugins-core:
         4.0.21-11.el8
-    elfutils-debuginfod-client:
-        0.187-4.el8
     elfutils-default-yama-scope:
         0.187-4.el8
     elfutils-libelf:
@@ -232,8 +230,6 @@ local:
     glibc-common:
         2.28-203.el8
     glibc-devel:
-        2.28-203.el8
-    glibc-gconv-extra:
         2.28-203.el8
     glibc-headers:
         2.28-203.el8
@@ -323,8 +319,6 @@ local:
         0.63.0-9.el8
     libedit:
         3.1-23.20170329cvs.el8
-    libevent:
-        2.1.8-5.el8
     libfdisk:
         2.32.1-35.el8
     libffi:
@@ -586,7 +580,7 @@ local:
     python3-chardet:
         3.0.4-7.el8
     python3-cloud-what:
-        1.28.28-1.el8
+        1.28.29-3.el8
     python3-dateutil:
         1:2.6.1-6.el8
     python3-dbus:
@@ -644,11 +638,9 @@ local:
     python3-six:
         1.11.0-8.el8
     python3-subscription-manager-rhsm:
-        1.28.28-1.el8
+        1.28.29-3.el8
     python3-syspurpose:
-        1.28.28-1.el8
-    python3-unbound:
-        1.7.3-17.el8
+        1.28.29-3.el8
     python3-urllib3:
         1.24.2-5.el8
     python36:
@@ -665,8 +657,6 @@ local:
         4.14.3-23.el8
     rpm-libs:
         4.14.3-23.el8
-    rpm-plugin-systemd-inhibit:
-        4.14.3-23.el8
     sed:
         4.5-5.el8
     setup:
@@ -676,7 +666,7 @@ local:
     sqlite-libs:
         3.26.0-15.el8
     subscription-manager-rhsm-certificates:
-        1.28.28-1.el8
+        1.28.29-3.el8
     sudo:
         1.8.29-8.el8
     swig:
@@ -695,8 +685,6 @@ local:
         2.3.2-4.el8
     tzdata:
         2022a-2.el8
-    unbound-libs:
-        1.7.3-17.el8
     usermode:
         1.113-2.el8
     util-linux:
@@ -729,7 +717,7 @@ local:
     PyYAML:
         6.0
     certifi:
-        2022.5.18.1
+        2022.6.15
     chardet:
         3.0.4
     charset-normalizer:
@@ -777,13 +765,13 @@ local:
     rpm:
         4.14.3
     salt:
-        3005+0na.599872e
+        3005+0na.257d2b4
     setuptools:
         39.2.0
     six:
         1.11.0
     syspurpose:
-        1.28.28
+        1.28.29
     typing-extensions:
         4.1.1
     urllib3:

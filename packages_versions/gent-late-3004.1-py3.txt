@@ -164,7 +164,7 @@ local:
     app-admin/eselect:
         1.4.20
     app-admin/metalog:
-        20200113-r1
+        20220214
     app-admin/perl-cleaner:
         2.30
     app-admin/salt:
@@ -186,7 +186,7 @@ local:
     app-crypt/gnupg:
         2.2.34-r1
     app-crypt/gpgme:
-        1.16.0
+        1.17.1-r1
     app-crypt/libb2:
         0.98.1-r2
     app-crypt/libmd:
@@ -234,13 +234,13 @@ local:
     app-text/sgml-common:
         0.6.3-r7
     dev-db/sqlite:
-        3.38.3
+        3.38.5
     dev-lang/perl:
-        5.34.0-r9
+        5.34.1-r3
     dev-lang/python:
         3.10.4,3.9.12
     dev-lang/python-exec:
-        2.4.8
+        2.4.9
     dev-lang/python-exec-conf:
         2.4.6
     dev-lang/tcl:
@@ -274,7 +274,7 @@ local:
     dev-libs/libtasn1:
         4.18.0
     dev-libs/libtomcrypt:
-        1.18.2-r3
+        1.18.2-r4
     dev-libs/libtommath:
         1.2.0-r2
     dev-libs/libunistring:
@@ -338,21 +338,21 @@ local:
     dev-python/appdirs:
         1.4.4-r2
     dev-python/certifi:
-        3021.3.16-r1
+        3021.3.16-r2
     dev-python/cffi:
-        1.15.0
+        1.15.0-r1
     dev-python/charset_normalizer:
         2.0.12
     dev-python/cython:
-        0.29.28
+        0.29.30
     dev-python/distro:
         1.7.0
     dev-python/flit_core:
         3.7.1
     dev-python/gpep517:
-        3
+        6
     dev-python/idna:
-        3.3
+        3.3-r1
     dev-python/importlib_metadata:
         4.11.3
     dev-python/installer:
@@ -370,7 +370,7 @@ local:
     dev-python/markupsafe:
         2.1.1
     dev-python/more-itertools:
-        8.12.0-r1
+        8.13.0
     dev-python/msgpack:
         1.0.3
     dev-python/nspektr:
@@ -380,19 +380,19 @@ local:
     dev-python/packaging:
         21.3-r2
     dev-python/pip:
-        22.0.4
+        22.1.2
     dev-python/ply:
-        3.11-r1
+        3.11-r2
     dev-python/psutil:
         5.9.0
     dev-python/pycparser:
-        2.21
+        2.21-r1
     dev-python/pycryptodome:
         3.14.1
     dev-python/pyparsing:
         3.0.9
     dev-python/pyyaml:
-        6.0
+        6.0-r1
     dev-python/pyzmq:
         22.1.0
     dev-python/requests:
@@ -402,7 +402,7 @@ local:
     dev-python/setuptools_scm:
         6.4.2
     dev-python/toml:
-        0.10.2
+        0.10.2-r1
     dev-python/tomli:
         2.0.1
     dev-python/urllib3:
@@ -415,6 +415,8 @@ local:
         3.8.0
     dev-util/gperf:
         3.1
+    dev-util/gtk-doc-am:
+        1.33.2
     dev-util/meson:
         0.61.4-r2
     dev-util/meson-format-array:
@@ -434,7 +436,7 @@ local:
     net-firewall/iptables:
         1.8.7-r2
     net-libs/gnutls:
-        3.7.3-r1
+        3.7.6
     net-libs/libmnl:
         1.0.4
     net-libs/libnsl:
@@ -600,7 +602,7 @@ local:
     sys-libs/timezone-data:
         2021e
     sys-libs/zlib:
-        1.2.11-r4
+        1.2.12-r2
     sys-process/procps:
         3.3.17-r1
     sys-process/psmisc:
@@ -711,7 +713,7 @@ local:
 local:
     ----------
     Cython:
-        0.29.28
+        0.29.30
     Jinja2:
         3.1.2
     MarkupSafe:
@@ -750,8 +752,8 @@ local:
         1.7.2
     meson:
         0.61.4
-    more_itertools:
-        8.12.0
+    more-itertools:
+        8.13.0
     msgpack:
         1.0.3
     nspektr:
@@ -761,7 +763,7 @@ local:
     packaging:
         21.3
     pip:
-        22.0.4
+        22.1.2
     ply:
         3.11
     portage:

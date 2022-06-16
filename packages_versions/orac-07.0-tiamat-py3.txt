@@ -617,9 +617,9 @@ local:
     which:
         2.20-7.el7
     xz:
-        5.2.2-1.el7
+        5.2.2-2.el7_9
     xz-libs:
-        5.2.2-1.el7
+        5.2.2-2.el7_9
     yum:
         3.4.3-168.0.3.el7
     yum-metadata-parser:

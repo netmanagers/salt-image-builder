@@ -2,7 +2,7 @@ ubun-22.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3005+0na.599872e
+          Salt: 3005+0na.257d2b4
  
 Dependency Versions:
           cffi: Not Installed
@@ -106,7 +106,7 @@ local:
     saltpath:
         /usr/local/lib/python3.10/dist-packages/salt
     saltversion:
-        3005+0na.599872e
+        3005+0na.257d2b4
     saltversioninfo:
         - 3005
     systemd:
@@ -475,7 +475,7 @@ local:
     libzstd1:
         1.4.8+dfsg-3build1
     linux-libc-dev:
-        5.15.0-37.39
+        5.15.0-39.42
     locales:
         2.35-0ubuntu3
     login:

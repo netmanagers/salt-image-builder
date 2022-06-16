@@ -2,7 +2,7 @@ opsu-15.3-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3005+0na.599872e
+          Salt: 3005+0na.257d2b4
  
 Dependency Versions:
           cffi: 1.13.2
@@ -107,7 +107,7 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3005+0na.599872e
+        3005+0na.257d2b4
     saltversioninfo:
         - 3005
     systemd:
@@ -130,7 +130,7 @@ local:
     bash:
         4.4-19.6.1
     binutils:
-        2.37-150100.7.29.1
+        2.37-150100.7.34.1
     boost-license1_66_0:
         1.66.0-12.3.1
     ca-certificates:
@@ -248,9 +248,9 @@ local:
     libcryptsetup12:
         2.3.7-150300.3.5.1
     libctf-nobfd0:
-        2.37-150100.7.29.1
+        2.37-150100.7.34.1
     libctf0:
-        2.37-150100.7.29.1
+        2.37-150100.7.34.1
     libcurl4:
         7.66.0-150200.4.33.1
     libdbus-1-3:
@@ -587,7 +587,7 @@ local:
     asn1crypto:
         0.24.0
     certifi:
-        2022.5.18.1
+        2022.6.15
     cffi:
         1.13.2
     chardet:
@@ -629,7 +629,7 @@ local:
     requests:
         2.27.1
     salt:
-        3005+0na.599872e
+        3005+0na.257d2b4
     setuptools:
         40.5.0
     six:

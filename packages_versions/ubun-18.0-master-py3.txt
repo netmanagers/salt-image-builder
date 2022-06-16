@@ -2,7 +2,7 @@ ubun-18.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3005+0na.599872e
+          Salt: 3005+0na.257d2b4
  
 Dependency Versions:
           cffi: Not Installed
@@ -129,7 +129,7 @@ local:
     saltpath:
         /usr/local/lib/python3.6/dist-packages/salt
     saltversion:
-        3005+0na.599872e
+        3005+0na.257d2b4
     saltversioninfo:
         - 3005
     systemd:
@@ -492,7 +492,7 @@ local:
     libzstd1:
         1.3.3+dfsg-2ubuntu1.2
     linux-libc-dev:
-        4.15.0-184.194
+        4.15.0-187.198
     locales:
         2.27-3ubuntu1.6
     login:
@@ -599,7 +599,7 @@ local:
     PyYAML:
         6.0
     certifi:
-        2022.5.18.1
+        2022.6.15
     charset-normalizer:
         2.0.12
     contextvars:
@@ -625,7 +625,7 @@ local:
     requests:
         2.27.1
     salt:
-        3005+0na.599872e
+        3005+0na.257d2b4
     setuptools:
         39.0.1
     typing-extensions:

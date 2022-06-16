@@ -2,7 +2,7 @@ fedo-35.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3005+0na.599872e
+          Salt: 3005+0na.257d2b4
  
 Dependency Versions:
           cffi: Not Installed
@@ -103,7 +103,7 @@ local:
     saltpath:
         /usr/lib/python3.10/site-packages/salt
     saltversion:
-        3005+0na.599872e
+        3005+0na.257d2b4
     saltversioninfo:
         - 3005
     systemd:
@@ -232,25 +232,25 @@ local:
     glib2:
         2.70.5-1.fc35
     glibc:
-        2.34-34.fc35
+        2.34-35.fc35
     glibc-common:
-        2.34-34.fc35
+        2.34-35.fc35
     glibc-devel:
-        2.34-34.fc35
+        2.34-35.fc35
     glibc-gconv-extra:
-        2.34-34.fc35
+        2.34-35.fc35
     glibc-headers-x86:
-        2.34-34.fc35
+        2.34-35.fc35
     glibc-langpack-en:
-        2.34-34.fc35
+        2.34-35.fc35
     glibc-minimal-langpack:
-        2.34-34.fc35
+        2.34-35.fc35
     gmp:
         1:6.2.0-7.fc35
     gnupg2:
         2.3.4-1.fc35
     gnutls:
-        3.7.4-1.fc35
+        3.7.6-1.fc35
     gpg-pubkey.(none):
         9867c58f-601c49ca
     gpgme:

@@ -639,7 +639,7 @@ local:
     which:
         2.21-17.el8
     xz-libs:
-        5.2.4-3.el8
+        5.2.4-4.el8_6
     yum:
         4.7.0-8.0.1.el8
     yum-utils:

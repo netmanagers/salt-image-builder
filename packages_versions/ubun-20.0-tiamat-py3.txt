@@ -127,7 +127,7 @@ local:
     apt:
         2.0.8
     apt-transport-https:
-        2.0.8
+        2.0.9
     base-files:
         11ubuntu5.5
     base-passwd:
