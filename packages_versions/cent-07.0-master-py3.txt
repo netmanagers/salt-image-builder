@@ -2,7 +2,7 @@ cent-07.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3005+0na.257d2b4
+          Salt: 3005+0na.7a0cf79
  
 Dependency Versions:
           cffi: Not Installed
@@ -106,7 +106,7 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3005+0na.257d2b4
+        3005+0na.7a0cf79
     saltversioninfo:
         - 3005
     systemd:
@@ -563,9 +563,9 @@ local:
     which:
         2.20-7.el7
     xz:
-        5.2.2-1.el7
+        5.2.2-2.el7_9
     xz-libs:
-        5.2.2-1.el7
+        5.2.2-2.el7_9
     yum:
         3.4.3-168.el7.centos
     yum-metadata-parser:
@@ -620,7 +620,7 @@ local:
     requests:
         2.27.1
     salt:
-        3005+0na.257d2b4
+        3005+0na.7a0cf79
     setuptools:
         39.2.0
     typing-extensions:

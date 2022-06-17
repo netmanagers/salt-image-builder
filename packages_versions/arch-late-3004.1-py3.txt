@@ -32,12 +32,12 @@ Dependency Versions:
            ZMQ: 4.3.4
  
 System Versions:
-          dist: arch  
+          dist: arch TEMPLATE_VERSION_ID 
         locale: utf-8
        machine: x86_64
        release: 5.4.109+
         system: Linux
-       version: Arch Linux  
+       version: Arch Linux TEMPLATE_VERSION_ID 
  
 # salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
 local:
@@ -65,6 +65,7 @@ local:
     lsb_distrib_id:
         Arch Linux
     lsb_distrib_release:
+        TEMPLATE_VERSION_ID
     os:
         Arch
     os_family:
@@ -75,12 +76,15 @@ local:
     oscodename:
         Arch Linux
     osfinger:
+        Arch Linux-TEMPLATE_VERSION_ID
     osfullname:
         Arch Linux
     osmajorrelease:
     osmanufacturer:
     osrelease:
+        TEMPLATE_VERSION_ID
     osrelease_info:
+        - TEMPLATE_VERSION_ID
     osversion:
     pythonexecutable:
         /usr/bin/python
@@ -359,7 +363,7 @@ local:
     python-colorama:
         0.4.4-6
     python-contextlib2:
-        0.6.0.post1-6
+        21.6.0-1
     python-cryptography:
         37.0.2-1
     python-distlib:
@@ -477,7 +481,7 @@ local:
     zlib:
         1:1.2.12-2
     zstd:
-        1.5.2-5
+        1.5.2-7
 # salt-call --local pip.list
 local:
     ----------
@@ -500,7 +504,7 @@ local:
     colorama:
         0.4.4
     contextlib2:
-        0.6.0.post1
+        21.6.0
     cryptography:
         37.0.2
     distlib:

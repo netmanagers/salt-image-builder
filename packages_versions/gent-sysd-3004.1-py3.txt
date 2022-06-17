@@ -471,7 +471,7 @@ local:
     dev-python/urllib3:
         1.26.9
     dev-python/watchdog:
-        2.1.7
+        2.1.8
     dev-python/wheel:
         0.37.1-r1
     dev-python/zipp:
@@ -858,7 +858,7 @@ local:
     urllib3:
         1.26.9
     watchdog:
-        2.1.7
+        2.1.8
     wheel:
         0.37.1
     zipp:

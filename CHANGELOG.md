@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.73.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.72.1...v1.73.0) (2022-06-17)
+
+
+### Features
+
+* **gitlab-ci:** build openSUSE 15.4 images [skip ci] ([4350133](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/43501336d9622e7bde5f009c4e937dd8640a616d))
+
 ## [1.72.1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.72.0...v1.72.1) (2022-06-16)
 
 
