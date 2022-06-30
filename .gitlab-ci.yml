@@ -99,6 +99,7 @@ commitlint:
     CMD_SALT_CALL_GRAINS_ITEM: 'salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion'
     CMD_SALT_CALL_PKG_LIST_PKGS: 'salt-call --local pkg.list_pkgs'
     CMD_SALT_CALL_PIP_LIST: 'salt-call --local pip.list'
+    CMD_SALT_CALL_LOCALE_LIST: 'salt-call --local locale.list_avail'
     CMD_SALT_CALL_TEST_JINJA_GRAINS: 'salt-call --local state.sls test_jinja.grains'
     CMD_SALT_CALL_TEST_JINJA_OPTS: 'salt-call --local state.sls test_jinja.opts'
     CMD_SALT_CALL_TEST_JINJA_PILLAR: 'salt-call --local state.sls test_jinja.pillar'
@@ -205,6 +206,11 @@ commitlint:
     - 'echo "# ${CMD_SALT_CALL_PIP_LIST}"
          | tee -a ${PKGS_VERSIONS_FILE}'
     - 'docker exec "${TESTINFRA_CONTAINER}" ${CMD_SALT_CALL_PIP_LIST}
+         | tee -a ${PKGS_VERSIONS_FILE}'
+    # Capture the list of locales available
+    - 'echo "# ${CMD_SALT_CALL_LOCALE_LIST}"
+         | tee -a ${PKGS_VERSIONS_FILE}'
+    - 'docker exec "${TESTINFRA_CONTAINER}" ${CMD_SALT_CALL_LOCALE_LIST}
          | tee -a ${PKGS_VERSIONS_FILE}'
     # Prepare the `test_jinja` state files
     - 'docker exec "${TESTINFRA_CONTAINER}" mkdir -p /srv/salt/'
