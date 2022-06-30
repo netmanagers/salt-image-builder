@@ -309,10 +309,13 @@ debi-09.0-3003.5-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 
 # FEDORA
 # For Fedora, `stable` builds only appear to work with `latest` but that doesn't guarantee the actual latest version of Salt
+# * Fedora 37: `3004.X`
 # * Fedora 36: `3004.X`
 # * Fedora 35: `3004.X`
 # Use for both accordingly in order to test against these latest available packages
 # Progress for new releases is visible here: https://bodhi.fedoraproject.org/updates/?search=salt
+fedo-37.0-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'fedora'               , DV: '37'     , PI: 'dnf', SIM: 'git'   , SV: 'master', SVB: ''      , PV: '3', EP: ''}}
+fedo-37.0-3004.2-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'fedora'               , DV: '37'     , PI: 'dnf', SIM: 'stable', SV: '3004.2', SVB: 'latest', PV: '3', EP: 'python-setuptools'}}
 fedo-36.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'               , DV: '36'     , PI: 'dnf', SIM: 'git'   , SV: 'master', SVB: ''      , PV: '3', EP: ''}}
 fedo-36.0-3004.2-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'               , DV: '36'     , PI: 'dnf', SIM: 'stable', SV: '3004.2', SVB: 'latest', PV: '3', EP: 'python-setuptools'}}
 fedo-35.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'               , DV: '35'     , PI: 'dnf', SIM: 'git'   , SV: 'master', SVB: ''      , PV: '3', EP: ''}}
