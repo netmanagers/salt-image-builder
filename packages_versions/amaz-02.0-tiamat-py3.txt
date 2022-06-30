@@ -260,7 +260,7 @@ local:
     libffi:
         3.0.13-18.amzn2.0.2
     libgcc:
-        7.3.1-14.amzn2
+        7.3.1-15.amzn2
     libgcrypt:
         1.5.3-14.amzn2.0.3
     libgpg-error:
@@ -286,7 +286,7 @@ local:
     libssh2:
         1.4.3-12.amzn2.2.3
     libstdc++:
-        7.3.1-14.amzn2
+        7.3.1-15.amzn2
     libtasn1:
         4.10-1.amzn2.0.2
     libtirpc:
@@ -332,7 +332,7 @@ local:
     nss-util:
         3.67.0-1.amzn2.0.1
     openldap:
-        2.4.44-23.amzn2.0.3
+        2.4.44-23.amzn2.0.4
     openssh:
         7.4p1-22.amzn2.0.1
     openssh-clients:
@@ -340,7 +340,7 @@ local:
     openssh-server:
         7.4p1-22.amzn2.0.1
     openssl-libs:
-        1:1.0.2k-24.amzn2.0.2
+        1:1.0.2k-24.amzn2.0.3
     p11-kit:
         0.23.22-1.amzn2.0.1
     p11-kit-trust:
@@ -428,7 +428,7 @@ local:
     pyliblzma:
         0.5.3-25.amzn2
     python:
-        2.7.18-1.amzn2.0.4
+        2.7.18-1.amzn2.0.5
     python-chardet:
         2.2.1-1.amzn2
     python-iniparse:
@@ -436,7 +436,7 @@ local:
     python-kitchen:
         1.1.1-5.amzn2
     python-libs:
-        2.7.18-1.amzn2.0.4
+        2.7.18-1.amzn2.0.5
     python-pycurl:
         7.19.0-19.amzn2.0.2
     python-urlgrabber:
@@ -494,9 +494,9 @@ local:
     util-linux:
         2.30.2-2.amzn2.0.7
     vim-data:
-        2:8.2.4428-1.amzn2.0.3
+        2:8.2.4857-1.amzn2.0.1
     vim-minimal:
-        2:8.2.4428-1.amzn2.0.3
+        2:8.2.4857-1.amzn2.0.1
     which:
         2.20-7.amzn2.0.2
     xz-libs:
@@ -518,3 +518,42 @@ local:
     ----------
     pip:
         21.2.4
+# salt-call --local locale.list_avail
+local:
+    - C
+    - C.utf8
+    - POSIX
+    - en_AG
+    - en_AU
+    - en_AU.utf8
+    - en_BW
+    - en_BW.utf8
+    - en_CA
+    - en_CA.utf8
+    - en_DK
+    - en_DK.utf8
+    - en_GB
+    - en_GB.iso885915
+    - en_GB.utf8
+    - en_HK
+    - en_HK.utf8
+    - en_IE
+    - en_IE.utf8
+    - en_IE@euro
+    - en_IL
+    - en_IN
+    - en_NG
+    - en_NZ
+    - en_NZ.utf8
+    - en_PH
+    - en_PH.utf8
+    - en_SG
+    - en_SG.utf8
+    - en_US
+    - en_US.iso885915
+    - en_US.utf8
+    - en_ZA
+    - en_ZA.utf8
+    - en_ZM
+    - en_ZW
+    - en_ZW.utf8

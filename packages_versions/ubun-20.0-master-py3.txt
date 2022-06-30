@@ -2,7 +2,7 @@ ubun-20.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3005+0na.7a0cf79
+          Salt: 3005+0na.264d02a
  
 Dependency Versions:
           cffi: Not Installed
@@ -20,12 +20,12 @@ Dependency Versions:
   mysql-python: Not Installed
      pycparser: Not Installed
       pycrypto: Not Installed
-  pycryptodome: 3.14.1
+  pycryptodome: 3.15.0
         pygit2: Not Installed
         Python: 3.8.10 (default, Mar 15 2022, 12:22:08)
   python-gnupg: Not Installed
         PyYAML: 6.0
-         PyZMQ: 23.1.0
+         PyZMQ: 23.2.0
          smmap: Not Installed
        timelib: Not Installed
        Tornado: 4.5.3
@@ -106,7 +106,7 @@ local:
     saltpath:
         /usr/local/lib/python3.8/dist-packages/salt
     saltversion:
-        3005+0na.7a0cf79
+        3005+0na.264d02a
     saltversioninfo:
         - 3005
     systemd:
@@ -155,7 +155,7 @@ local:
     cpp-9:
         9.4.0-1ubuntu1~20.04.1
     curl:
-        7.68.0-1ubuntu2.11
+        7.68.0-1ubuntu2.12
     dash:
         0.5.10.2-6
     debconf:
@@ -277,9 +277,9 @@ local:
     libctf0:
         2.34-6ubuntu1.3
     libcurl3-gnutls:
-        7.68.0-1ubuntu2.11
+        7.68.0-1ubuntu2.12
     libcurl4:
-        7.68.0-1ubuntu2.11
+        7.68.0-1ubuntu2.12
     libdb5.3:
         5.3.28+dfsg1-0.6ubuntu2
     libdebconfclient0:
@@ -449,7 +449,7 @@ local:
     libssh-4:
         0.9.3-2ubuntu2.2
     libssl1.1:
-        1.1.1f-1ubuntu2.13
+        1.1.1f-1ubuntu2.15
     libstdc++6:
         10.3.0-1ubuntu1~20.04
     libsystemd0:
@@ -475,7 +475,7 @@ local:
     libzstd1:
         1.4.4+dfsg-3ubuntu0.1
     linux-libc-dev:
-        5.4.0-120.136
+        5.4.0-121.137
     locales:
         2.31-0ubuntu9.9
     login:
@@ -505,7 +505,7 @@ local:
     openssh-sftp-server:
         1:8.2p1-4ubuntu0.5
     openssl:
-        1.1.1f-1ubuntu2.13
+        1.1.1f-1ubuntu2.15
     passwd:
         1:4.8.1-1ubuntu5.20.04.2
     perl:
@@ -592,7 +592,7 @@ local:
     certifi:
         2022.6.15
     charset-normalizer:
-        2.0.12
+        2.1.0
     contextvars:
         2.4
     distro:
@@ -608,18 +608,24 @@ local:
     psutil:
         5.9.1
     pycryptodomex:
-        3.14.1
+        3.15.0
     python-apt:
         2.0.0+ubuntu0.20.4.7
     pyzmq:
-        23.1.0
+        23.2.0
     requests:
-        2.28.0
+        2.28.1
     salt:
-        3005+0na.7a0cf79
+        3005+0na.264d02a
     setuptools:
         45.2.0
     urllib3:
         1.26.9
     wheel:
         0.34.2
+# salt-call --local locale.list_avail
+local:
+    - C
+    - C.UTF-8
+    - POSIX
+    - en_US.utf8

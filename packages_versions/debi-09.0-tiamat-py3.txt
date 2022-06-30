@@ -366,13 +366,13 @@ local:
     libstdc++6:
         6.3.0-18+deb9u1
     libsystemd0:
-        232-25+deb9u13
+        232-25+deb9u14
     libtasn1-6:
         4.10-1.1+deb9u1
     libtinfo5:
         6.0+20161126-1+deb9u2
     libudev1:
-        232-25+deb9u13
+        232-25+deb9u14
     libunistring0:
         0.9.6+really0.9.3-0.1
     libustr-1.0-1:
@@ -448,19 +448,19 @@ local:
     sudo:
         1.8.19p1-2.1+deb9u3
     systemd:
-        232-25+deb9u13
+        232-25+deb9u14
     systemd-sysv:
-        232-25+deb9u13
+        232-25+deb9u14
     sysvinit-utils:
         2.88dsf-59.9
     tar:
         1.29b-1.1+deb9u1
     tzdata:
-        2021a-0+deb9u3
+        2021a-0+deb9u4
     ucf:
         3.0036
     udev:
-        232-25+deb9u13
+        232-25+deb9u14
     util-linux:
         2.29.2-1+deb9u1
     wget:
@@ -472,3 +472,9 @@ local:
     ----------
     pip:
         20.3.4
+# salt-call --local locale.list_avail
+local:
+    - C
+    - C.UTF-8
+    - POSIX
+    - en_US.utf8

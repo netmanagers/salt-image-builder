@@ -2,7 +2,7 @@ amaz-02.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3005+0na.7a0cf79
+          Salt: 3005+0na.264d02a
  
 Dependency Versions:
           cffi: Not Installed
@@ -20,12 +20,12 @@ Dependency Versions:
   mysql-python: Not Installed
      pycparser: Not Installed
       pycrypto: Not Installed
-  pycryptodome: 3.14.1
+  pycryptodome: 3.15.0
         pygit2: Not Installed
         Python: 3.7.10 (default, Jun  3 2021, 00:02:01)
   python-gnupg: Not Installed
         PyYAML: 6.0
-         PyZMQ: 23.1.0
+         PyZMQ: 23.2.0
          smmap: Not Installed
        timelib: Not Installed
        Tornado: 4.5.3
@@ -105,7 +105,7 @@ local:
     saltpath:
         /usr/lib/python3.7/site-packages/salt
     saltversion:
-        3005+0na.7a0cf79
+        3005+0na.264d02a
     saltversioninfo:
         - 3005
     systemd:
@@ -560,3 +560,42 @@ local:
         20.2.2
     wheel:
         0.37.1
+# salt-call --local locale.list_avail
+local:
+    - C
+    - C.utf8
+    - POSIX
+    - en_AG
+    - en_AU
+    - en_AU.utf8
+    - en_BW
+    - en_BW.utf8
+    - en_CA
+    - en_CA.utf8
+    - en_DK
+    - en_DK.utf8
+    - en_GB
+    - en_GB.iso885915
+    - en_GB.utf8
+    - en_HK
+    - en_HK.utf8
+    - en_IE
+    - en_IE.utf8
+    - en_IE@euro
+    - en_IL
+    - en_IN
+    - en_NG
+    - en_NZ
+    - en_NZ.utf8
+    - en_PH
+    - en_PH.utf8
+    - en_SG
+    - en_SG.utf8
+    - en_US
+    - en_US.iso885915
+    - en_US.utf8
+    - en_ZA
+    - en_ZA.utf8
+    - en_ZM
+    - en_ZW
+    - en_ZW.utf8

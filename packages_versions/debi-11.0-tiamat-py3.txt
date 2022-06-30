@@ -438,7 +438,7 @@ local:
     openssh-sftp-server:
         1:8.4p1-5
     openssl:
-        1.1.1n-0+deb11u2
+        1.1.1n-0+deb11u3
     passwd:
         1:4.8.1-1
     perl:
@@ -496,7 +496,7 @@ local:
     tar:
         1.34+dfsg-1
     tzdata:
-        2021a-1+deb11u3
+        2021a-1+deb11u4
     ucf:
         3.0043
     udev:
@@ -512,3 +512,9 @@ local:
     ----------
     pip:
         20.3.4
+# salt-call --local locale.list_avail
+local:
+    - C
+    - C.UTF-8
+    - POSIX
+    - en_US.utf8

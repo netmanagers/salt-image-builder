@@ -143,7 +143,7 @@ local:
     ca-certificates:
         20210603-1
     ca-certificates-mozilla:
-        3.79-1
+        3.80-1
     ca-certificates-utils:
         20210603-1
     coreutils:
@@ -151,7 +151,7 @@ local:
     cryptsetup:
         2.4.3-2
     curl:
-        7.83.1-1
+        7.84.0-1
     db:
         5.3.28-5
     dbus:
@@ -161,7 +161,7 @@ local:
     dnssec-anchors:
         20190629-3
     e2fsprogs:
-        1.46.5-3
+        1.46.5-4
     expat:
         2.4.8-1
     file:
@@ -179,7 +179,7 @@ local:
     gettext:
         0.21-2
     git:
-        2.36.1-1
+        2.37.0-1
     glib2:
         2.72.2-1
     glibc:
@@ -211,7 +211,7 @@ local:
     json-c:
         0.16-1
     kbd:
-        2.5.0-2
+        2.5.1-1
     keyutils:
         1.6.3-1
     kmod:
@@ -259,7 +259,7 @@ local:
     libnftnl:
         1.2.2-1
     libnghttp2:
-        1.47.0-1
+        1.48.0-1
     libnl:
         3.6.0-3
     libnsl:
@@ -317,7 +317,7 @@ local:
     openssh:
         9.0p1-1
     openssl:
-        1.1.1.o-1
+        1.1.1.p-1
     p11-kit:
         0.24.1-1
     pacman:
@@ -356,20 +356,26 @@ local:
         1.4.4-6
     python-cachecontrol:
         1:0.12.6-4
+    python-certifi:
+        2022.06.15-1
     python-cffi:
         1.15.0-3
     python-chardet:
         4.0.0-5
     python-colorama:
         0.4.4-6
-    python-contextlib2:
-        21.6.0-1
+    python-commonmark:
+        0.9.1-5
     python-cryptography:
         37.0.2-1
     python-distlib:
         0.3.4-1
     python-distro:
         1.7.0-1
+    python-docutils:
+        1:0.18.1-1
+    python-future:
+        0.18.2-7
     python-html5lib:
         1.1-11
     python-idna:
@@ -401,17 +407,19 @@ local:
     python-pep517:
         0.12.0-4
     python-pip:
-        21.0-1
+        22.1.2-1
+    python-platformdirs:
+        2.5.1-1
     python-ply:
         3.11-10
-    python-progress:
-        1.6-5
     python-psutil:
-        5.9.0-2
+        5.9.1-1
     python-pycparser:
         2.21-3
     python-pycryptodomex:
         3.12.0-1
+    python-pygments:
+        2.12.0-1
     python-pyopenssl:
         22.0.0-1
     python-pyparsing:
@@ -421,21 +429,23 @@ local:
     python-requests:
         2.27.1-1
     python-resolvelib:
-        0.5.5-4
-    python-retrying:
-        1.3.3-13
+        0.8.1-1
+    python-rich:
+        12.4.4-1
     python-setuptools:
         1:61.3.1-1
     python-six:
         1.16.0-5
     python-systemd:
         234-11
-    python-toml:
-        0.10.2-7
+    python-tenacity:
+        8.0.1-3
     python-tomli:
         2.0.1-1
     python-trove-classifiers:
-        2022.5.19-1
+        2022.6.26-1
+    python-typing_extensions:
+        4.2.0-1
     python-urllib3:
         1.26.9-1
     python-validate-pyproject:
@@ -455,9 +465,9 @@ local:
     shadow:
         4.11.1-1
     sqlite:
-        3.38.5-1
+        3.39.0-2
     sudo:
-        1.9.11.p2-1
+        1.9.11.p3-1
     systemd:
         251.2-1
     systemd-libs:
@@ -495,22 +505,30 @@ local:
         2.1.1
     PyYAML:
         6.0
+    Pygments:
+        2.12.0
     appdirs:
         1.4.4
+    certifi:
+        2022.6.15
     cffi:
         1.15.0
     chardet:
         4.0.0
     colorama:
         0.4.4
-    contextlib2:
-        21.6.0
+    commonmark:
+        0.9.1
     cryptography:
         37.0.2
     distlib:
         0.3.4
     distro:
         1.7.0
+    docutils:
+        0.18.1
+    future:
+        0.18.2
     html5lib:
         1.1
     idna:
@@ -536,13 +554,13 @@ local:
     pep517:
         0.12.0
     pip:
-        21.0
+        22.1.2
+    platformdirs:
+        2.5.1
     ply:
         3.11
-    progress:
-        1.6
     psutil:
-        5.9.0
+        5.9.1
     pyOpenSSL:
         22.0.0
     pycparser:
@@ -556,9 +574,7 @@ local:
     requests:
         2.27.1
     resolvelib:
-        0.5.5
-    retrying:
-        1.3.3
+        0.8.1
     salt:
         3004.1
     setuptools:
@@ -567,12 +583,14 @@ local:
         1.16.0
     systemd-python:
         234
-    toml:
-        0.10.2
+    tenacity:
+        8.0.1
     tomli:
         2.0.1
     trove-classifiers:
-        2022.5.19
+        2022.6.26
+    typing_extensions:
+        4.2.0
     urllib3:
         1.26.9
     validate-pyproject:
@@ -581,3 +599,8 @@ local:
         0.5.1
     zipp:
         3.8.0
+# salt-call --local locale.list_avail
+local:
+    - C
+    - C.UTF-8
+    - POSIX

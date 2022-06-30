@@ -2,7 +2,7 @@ ubun-22.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3005+0na.7a0cf79
+          Salt: 3005+0na.264d02a
  
 Dependency Versions:
           cffi: Not Installed
@@ -20,7 +20,7 @@ Dependency Versions:
   mysql-python: Not Installed
      pycparser: Not Installed
       pycrypto: Not Installed
-  pycryptodome: 3.14.1
+  pycryptodome: 3.15.0
         pygit2: Not Installed
         Python: 3.10.4 (main, Apr  2 2022, 09:04:19) [GCC 11.2.0]
   python-gnupg: Not Installed
@@ -106,13 +106,13 @@ local:
     saltpath:
         /usr/local/lib/python3.10/dist-packages/salt
     saltversion:
-        3005+0na.7a0cf79
+        3005+0na.264d02a
     saltversioninfo:
         - 3005
     systemd:
         ----------
         features:
-            +PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT +GNUTLS -OPENSSL +ACL +BLKID +CURL +ELFUTILS -FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP -LIBFDISK +PCRE2 -PWQUALITY -P11KIT -QRENCODE +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified
+            +PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP -LIBFDISK +PCRE2 -PWQUALITY -P11KIT -QRENCODE +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified
         version:
             249
     virtual:
@@ -153,7 +153,7 @@ local:
     cpp-11:
         11.2.0-19ubuntu1
     curl:
-        7.81.0-1ubuntu1.2
+        7.81.0-1ubuntu1.3
     dash:
         0.5.11+git20210903+057cd650a4ed-3build1
     debconf:
@@ -219,7 +219,7 @@ local:
     libacl1:
         2.3.1-1
     libapparmor1:
-        3.0.4-2ubuntu2
+        3.0.4-2ubuntu2.1
     libapt-pkg6.0:
         2.4.5
     libargon2-1:
@@ -275,9 +275,9 @@ local:
     libctf0:
         2.38-3ubuntu1
     libcurl3-gnutls:
-        7.81.0-1ubuntu1.2
+        7.81.0-1ubuntu1.3
     libcurl4:
-        7.81.0-1ubuntu1.2
+        7.81.0-1ubuntu1.3
     libdb5.3:
         5.3.28+dfsg1-0.8ubuntu3
     libdebconfclient0:
@@ -349,7 +349,7 @@ local:
     libksba8:
         1.6.0-2build1
     libldap-2.5-0:
-        2.5.11+dfsg-1~exp1ubuntu3.1
+        2.5.12+dfsg-0ubuntu0.22.04.1
     liblsan0:
         12-20220319-1ubuntu1
     liblz4-1:
@@ -447,7 +447,7 @@ local:
     libstdc++6:
         12-20220319-1ubuntu1
     libsystemd0:
-        249.11-0ubuntu3.1
+        249.11-0ubuntu3.3
     libtasn1-6:
         4.18.0-4build1
     libtinfo6:
@@ -463,7 +463,7 @@ local:
     libubsan1:
         12-20220319-1ubuntu1
     libudev1:
-        249.11-0ubuntu3.1
+        249.11-0ubuntu3.3
     libunistring2:
         1.0-1
     libuuid1:
@@ -475,7 +475,7 @@ local:
     libzstd1:
         1.4.8+dfsg-3build1
     linux-libc-dev:
-        5.15.0-39.42
+        5.15.0-40.43
     locales:
         2.35-0ubuntu3
     login:
@@ -505,7 +505,7 @@ local:
     openssh-sftp-server:
         1:8.9p1-3
     openssl:
-        3.0.2-0ubuntu1.2
+        3.0.2-0ubuntu1.5
     passwd:
         1:4.8.1-2ubuntu2
     perl:
@@ -557,9 +557,9 @@ local:
     sudo:
         1.9.9-1ubuntu2
     systemd:
-        249.11-0ubuntu3.1
+        249.11-0ubuntu3.3
     systemd-sysv:
-        249.11-0ubuntu3.1
+        249.11-0ubuntu3.3
     sysvinit-utils:
         3.01-1ubuntu1
     tar:
@@ -569,7 +569,7 @@ local:
     ucf:
         3.0043
     udev:
-        249.11-0ubuntu3.1
+        249.11-0ubuntu3.3
     usrmerge:
         25ubuntu2
     util-linux:
@@ -591,3 +591,9 @@ local:
         59.6.0
     wheel:
         0.37.1
+# salt-call --local locale.list_avail
+local:
+    - C
+    - C.utf8
+    - POSIX
+    - en_US.utf8

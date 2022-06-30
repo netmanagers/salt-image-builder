@@ -1,5 +1,19 @@
 # Changelog
 
+# [1.74.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.73.0...v1.74.0) (2022-06-30)
+
+
+### Features
+
+* **gitlab-ci:** add `fedora-37` [skip ci] ([5187336](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/51873360386ee0c020461c4362d94f5bf4ce517e))
+* **gitlab-ci:** build CVE `3004.2` & `3003.5` images ([4ad9aed](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/4ad9aed84cecb6b9cc3396256469cf38251c649e))
+* **gitlab-ci:** capture locales available to packages' text files ([bbbe286](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/bbbe286e835aa6b11af5a635b3941fe1295d2581))
+
+
+### Tests
+
+* **locale:** expand assertion for `C.UTF-8` (Arch Linux) as well ([ea074d1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/ea074d158445cebe910a7c2e8a449011112d0fe0))
+
 # [1.73.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.72.1...v1.73.0) (2022-06-17)
 
 

@@ -2,7 +2,7 @@ fedo-36.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3005+0na.7a0cf79
+          Salt: 3005+0na.264d02a
  
 Dependency Versions:
           cffi: Not Installed
@@ -20,9 +20,9 @@ Dependency Versions:
   mysql-python: Not Installed
      pycparser: Not Installed
       pycrypto: Not Installed
-  pycryptodome: 3.14.1
+  pycryptodome: 3.15.0
         pygit2: Not Installed
-        Python: 3.10.4 (main, Mar 25 2022, 00:00:00) [GCC 12.0.1 20220308 (Red Hat 12.0.1-0)]
+        Python: 3.10.5 (main, Jun  9 2022, 00:00:00) [GCC 12.1.1 20220507 (Red Hat 12.1.1-1)]
   python-gnupg: Not Installed
         PyYAML: 6.0
          PyZMQ: 20.0.0
@@ -99,13 +99,13 @@ local:
     pythonversion:
         - 3
         - 10
-        - 4
+        - 5
         - final
         - 0
     saltpath:
         /usr/local/lib/python3.10/site-packages/salt
     saltversion:
-        3005+0na.7a0cf79
+        3005+0na.264d02a
     saltversioninfo:
         - 3005
     systemd:
@@ -214,7 +214,7 @@ local:
     gawk:
         5.1.1-2.fc36
     gc:
-        8.0.6-2.fc36
+        8.0.6-3.fc36
     gcc:
         12.1.1-1.fc36
     gcc-c++:
@@ -234,23 +234,23 @@ local:
     glib2:
         2.72.2-1.fc36
     glibc:
-        2.35-11.fc36
+        2.35-12.fc36
     glibc-common:
-        2.35-11.fc36
+        2.35-12.fc36
     glibc-devel:
-        2.35-11.fc36
+        2.35-12.fc36
     glibc-headers-x86:
-        2.35-11.fc36
+        2.35-12.fc36
     glibc-langpack-en:
-        2.35-11.fc36
+        2.35-12.fc36
     glibc-minimal-langpack:
-        2.35-11.fc36
+        2.35-12.fc36
     gmp:
         1:6.2.1-2.fc36
     gnupg2:
         2.3.6-1.fc36
     gnutls:
-        3.7.6-1.fc36
+        3.7.6-3.fc36
     gpg-pubkey.(none):
         38ab71f4-60242b08
     gpgme:
@@ -290,7 +290,7 @@ local:
     kpartx:
         0.8.7-8.fc36
     krb5-libs:
-        1.19.2-9.fc36
+        1.19.2-11.fc36
     less:
         590-3.fc36
     libacl:
@@ -440,7 +440,7 @@ local:
     net-tools:
         2.0-0.61.20160912git.fc36
     nettle:
-        3.7.3-3.fc36
+        3.8-1.fc36
     npth:
         1.6-8.fc36
     openldap:
@@ -588,9 +588,9 @@ local:
     python-setuptools-wheel:
         59.6.0-2.fc36
     python3:
-        3.10.4-1.fc36
+        3.10.5-2.fc36
     python3-devel:
-        3.10.4-1.fc36
+        3.10.5-2.fc36
     python3-dnf:
         4.13.0-1.fc36
     python3-gpg:
@@ -602,7 +602,7 @@ local:
     python3-libdnf:
         0.67.0-2.fc36
     python3-libs:
-        3.10.4-1.fc36
+        3.10.5-2.fc36
     python3-pip:
         21.3.1-2.fc36
     python3-rpm:
@@ -650,9 +650,9 @@ local:
     util-linux-core:
         2.38-1.fc36
     vim-data:
-        2:8.2.5085-1.fc36
+        2:8.2.5172-1.fc36
     vim-minimal:
-        2:8.2.5085-1.fc36
+        2:8.2.5172-1.fc36
     which:
         2.21-32.fc36
     xz:
@@ -680,3 +680,43 @@ local:
         59.6.0
     wheel:
         0.37.1
+# salt-call --local locale.list_avail
+local:
+    - C
+    - C.utf8
+    - POSIX
+    - en_AG
+    - en_AU
+    - en_AU.utf8
+    - en_BW
+    - en_BW.utf8
+    - en_CA
+    - en_CA.utf8
+    - en_DK
+    - en_DK.utf8
+    - en_GB
+    - en_GB.iso885915
+    - en_GB.utf8
+    - en_HK
+    - en_HK.utf8
+    - en_IE
+    - en_IE.utf8
+    - en_IE@euro
+    - en_IL
+    - en_IN
+    - en_NG
+    - en_NZ
+    - en_NZ.utf8
+    - en_PH
+    - en_PH.utf8
+    - en_SC.utf8
+    - en_SG
+    - en_SG.utf8
+    - en_US
+    - en_US.iso885915
+    - en_US.utf8
+    - en_ZA
+    - en_ZA.utf8
+    - en_ZM
+    - en_ZW
+    - en_ZW.utf8

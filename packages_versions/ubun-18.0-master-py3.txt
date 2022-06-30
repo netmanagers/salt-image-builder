@@ -2,7 +2,7 @@ ubun-18.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3005+0na.7a0cf79
+          Salt: 3005+0na.264d02a
  
 Dependency Versions:
           cffi: Not Installed
@@ -20,12 +20,12 @@ Dependency Versions:
   mysql-python: Not Installed
      pycparser: Not Installed
       pycrypto: Not Installed
-  pycryptodome: 3.14.1
+  pycryptodome: 3.15.0
         pygit2: Not Installed
         Python: 3.6.9 (default, Mar 15 2022, 13:55:28)
   python-gnupg: Not Installed
         PyYAML: 6.0
-         PyZMQ: 23.1.0
+         PyZMQ: 23.2.0
          smmap: Not Installed
        timelib: Not Installed
        Tornado: 4.5.3
@@ -129,7 +129,7 @@ local:
     saltpath:
         /usr/local/lib/python3.6/dist-packages/salt
     saltversion:
-        3005+0na.7a0cf79
+        3005+0na.264d02a
     saltversioninfo:
         - 3005
     systemd:
@@ -178,7 +178,7 @@ local:
     cpp-7:
         7.5.0-3ubuntu1~18.04
     curl:
-        7.58.0-2ubuntu3.18
+        7.58.0-2ubuntu3.19
     dash:
         0.5.8-2.10
     debconf:
@@ -294,9 +294,9 @@ local:
     libcryptsetup12:
         2:2.0.2-1ubuntu1.2
     libcurl3-gnutls:
-        7.58.0-2ubuntu3.18
+        7.58.0-2ubuntu3.19
     libcurl4:
-        7.58.0-2ubuntu3.18
+        7.58.0-2ubuntu3.19
     libdb5.3:
         5.3.28-13.1ubuntu1.1
     libdebconfclient0:
@@ -464,9 +464,9 @@ local:
     libss2:
         1.44.1-1ubuntu1.3
     libssl1.0.0:
-        1.0.2n-1ubuntu5.9
+        1.0.2n-1ubuntu5.10
     libssl1.1:
-        1.1.1-1ubuntu2.1~18.04.17
+        1.1.1-1ubuntu2.1~18.04.19
     libstdc++6:
         8.4.0-1ubuntu1~18.04
     libsystemd0:
@@ -492,7 +492,7 @@ local:
     libzstd1:
         1.3.3+dfsg-2ubuntu1.2
     linux-libc-dev:
-        4.15.0-187.198
+        4.15.0-188.199
     locales:
         2.27-3ubuntu1.6
     login:
@@ -520,7 +520,7 @@ local:
     openssh-sftp-server:
         1:7.6p1-4ubuntu0.7
     openssl:
-        1.1.1-1ubuntu2.1~18.04.17
+        1.1.1-1ubuntu2.1~18.04.19
     passwd:
         1:4.5-1ubuntu2.2
     perl:
@@ -617,15 +617,15 @@ local:
     psutil:
         5.9.1
     pycryptodomex:
-        3.14.1
+        3.15.0
     python-apt:
         1.6.5+ubuntu0.7
     pyzmq:
-        23.1.0
+        23.2.0
     requests:
         2.27.1
     salt:
-        3005+0na.7a0cf79
+        3005+0na.264d02a
     setuptools:
         39.0.1
     typing-extensions:
@@ -634,3 +634,9 @@ local:
         1.26.9
     wheel:
         0.37.1
+# salt-call --local locale.list_avail
+local:
+    - C
+    - C.UTF-8
+    - POSIX
+    - en_US.utf8

@@ -153,7 +153,7 @@ local:
     cryptsetup-libs:
         2.3.7-2.el8
     curl:
-        7.61.1-22.el8
+        7.61.1-22.el8_6.3
     cyrus-sasl-lib:
         2.1.27-6.el8_5
     dbus:
@@ -197,7 +197,7 @@ local:
     emacs-filesystem:
         1:26.1-7.el8
     expat:
-        2.2.5-8.0.1.el8
+        2.2.5-8.0.1.el8_6.2
     file-libs:
         5.33-20.el8
     filesystem:
@@ -219,11 +219,11 @@ local:
     glib2:
         2.56.4-158.el8
     glibc:
-        2.28-189.1.0.1.el8
+        2.28-189.5.0.1.el8_6
     glibc-common:
-        2.28-189.1.0.1.el8
+        2.28-189.5.0.1.el8_6
     glibc-langpack-en:
-        2.28-189.1.0.1.el8
+        2.28-189.5.0.1.el8_6
     gmp:
         1:6.1.2-10.el8
     gnupg2:
@@ -293,7 +293,7 @@ local:
     libcomps:
         0.1.18-1.el8
     libcurl:
-        7.61.1-22.el8
+        7.61.1-22.el8_6.3
     libdb:
         5.3.28-42.el8_4
     libdb-utils:
@@ -431,7 +431,7 @@ local:
     oraclelinux-release:
         8:8.6-1.0.5.el8
     oraclelinux-release-el8:
-        1.0-23.el8
+        1.0-24.el8
     p11-kit:
         0.23.22-1.el8
     p11-kit-trust:
@@ -653,3 +653,64 @@ local:
     ----------
     pip:
         21.2.4
+# salt-call --local locale.list_avail
+local:
+    - C
+    - C.utf8
+    - POSIX
+    - en_AG
+    - en_AG.utf8
+    - en_AU
+    - en_AU.iso88591
+    - en_AU.utf8
+    - en_BW
+    - en_BW.iso88591
+    - en_BW.utf8
+    - en_CA
+    - en_CA.iso88591
+    - en_CA.utf8
+    - en_DK
+    - en_DK.iso88591
+    - en_DK.utf8
+    - en_GB
+    - en_GB.iso88591
+    - en_GB.iso885915
+    - en_GB.utf8
+    - en_HK
+    - en_HK.iso88591
+    - en_HK.utf8
+    - en_IE
+    - en_IE.iso88591
+    - en_IE.iso885915@euro
+    - en_IE.utf8
+    - en_IE@euro
+    - en_IL
+    - en_IL.utf8
+    - en_IN
+    - en_IN.utf8
+    - en_NG
+    - en_NG.utf8
+    - en_NZ
+    - en_NZ.iso88591
+    - en_NZ.utf8
+    - en_PH
+    - en_PH.iso88591
+    - en_PH.utf8
+    - en_SC.utf8
+    - en_SG
+    - en_SG.iso88591
+    - en_SG.utf8
+    - en_US
+    - en_US.iso88591
+    - en_US.iso885915
+    - en_US.utf8
+    - en_US.utf8@ampm.UTF-8
+    - en_US@ampm.UTF-8
+    - en_ZA
+    - en_ZA.iso88591
+    - en_ZA.utf8
+    - en_ZM
+    - en_ZM.utf8
+    - en_ZW
+    - en_ZW.iso88591
+    - en_ZW.utf8

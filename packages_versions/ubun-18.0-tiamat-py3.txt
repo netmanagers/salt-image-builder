@@ -145,7 +145,7 @@ local:
     coreutils:
         8.28-1ubuntu1
     curl:
-        7.58.0-2ubuntu3.18
+        7.58.0-2ubuntu3.19
     dash:
         0.5.8-2.10
     dctrl-tools:
@@ -239,9 +239,9 @@ local:
     libcryptsetup12:
         2:2.0.2-1ubuntu1.2
     libcurl3-gnutls:
-        7.58.0-2ubuntu3.18
+        7.58.0-2ubuntu3.19
     libcurl4:
-        7.58.0-2ubuntu3.18
+        7.58.0-2ubuntu3.19
     libdb5.3:
         5.3.28-13.1ubuntu1.1
     libdebconfclient0:
@@ -383,9 +383,9 @@ local:
     libss2:
         1.44.1-1ubuntu1.3
     libssl1.0.0:
-        1.0.2n-1ubuntu5.9
+        1.0.2n-1ubuntu5.10
     libssl1.1:
-        1.1.1-1ubuntu2.1~18.04.17
+        1.1.1-1ubuntu2.1~18.04.19
     libstdc++6:
         8.4.0-1ubuntu1~18.04
     libsystemd0:
@@ -433,7 +433,7 @@ local:
     openssh-sftp-server:
         1:7.6p1-4ubuntu0.7
     openssl:
-        1.1.1-1ubuntu2.1~18.04.17
+        1.1.1-1ubuntu2.1~18.04.19
     passwd:
         1:4.5-1ubuntu2.2
     perl:
@@ -499,3 +499,9 @@ local:
     ----------
     pip:
         20.3.4
+# salt-call --local locale.list_avail
+local:
+    - C
+    - C.UTF-8
+    - POSIX
+    - en_US.utf8

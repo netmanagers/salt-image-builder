@@ -2,7 +2,7 @@ cent-07.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3005+0na.7a0cf79
+          Salt: 3005+0na.264d02a
  
 Dependency Versions:
           cffi: Not Installed
@@ -20,12 +20,12 @@ Dependency Versions:
   mysql-python: Not Installed
      pycparser: Not Installed
       pycrypto: Not Installed
-  pycryptodome: 3.14.1
+  pycryptodome: 3.15.0
         pygit2: Not Installed
         Python: 3.6.8 (default, Nov 16 2020, 16:55:22)
   python-gnupg: Not Installed
         PyYAML: 6.0
-         PyZMQ: 23.1.0
+         PyZMQ: 23.2.0
          smmap: Not Installed
        timelib: Not Installed
        Tornado: 4.5.3
@@ -106,7 +106,7 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3005+0na.7a0cf79
+        3005+0na.264d02a
     saltversioninfo:
         - 3005
     systemd:
@@ -247,7 +247,7 @@ local:
     json-c:
         0.11-4.el7_0
     kernel-headers:
-        3.10.0-1160.66.1.el7
+        3.10.0-1160.71.1.el7
     keyutils-libs:
         1.5.8-3.el7
     keyutils-libs-devel:
@@ -259,9 +259,9 @@ local:
     kpartx:
         0.4.9-135.el7_9
     krb5-devel:
-        1.15.1-51.el7_9
+        1.15.1-54.el7_9
     krb5-libs:
-        1.15.1-51.el7_9
+        1.15.1-54.el7_9
     less:
         458-9.el7
     libacl:
@@ -301,7 +301,7 @@ local:
     libidn:
         1.28-4.el7
     libkadm5:
-        1.15.1-51.el7_9
+        1.15.1-54.el7_9
     libmount:
         2.23.2-65.el7_9.1
     libmpc:
@@ -477,7 +477,7 @@ local:
     pyliblzma:
         0.5.3-11.el7
     python:
-        2.7.5-90.el7
+        2.7.5-92.el7_9
     python-chardet:
         2.2.1-3.el7
     python-gobject-base:
@@ -487,7 +487,7 @@ local:
     python-kitchen:
         1.1.1-5.el7
     python-libs:
-        2.7.5-90.el7
+        2.7.5-92.el7_9
     python-pycurl:
         7.19.0-19.el7
     python-rpm-macros:
@@ -614,13 +614,13 @@ local:
     psutil:
         5.9.1
     pycryptodomex:
-        3.14.1
+        3.15.0
     pyzmq:
-        23.1.0
+        23.2.0
     requests:
         2.27.1
     salt:
-        3005+0na.7a0cf79
+        3005+0na.264d02a
     setuptools:
         39.2.0
     typing-extensions:
@@ -629,3 +629,8 @@ local:
         1.26.9
     wheel:
         0.37.1
+# salt-call --local locale.list_avail
+local:
+    - C
+    - POSIX
+    - en_US.utf8

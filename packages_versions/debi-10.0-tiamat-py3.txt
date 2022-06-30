@@ -384,7 +384,7 @@ local:
     libssh2-1:
         1.8.0-2.1
     libssl1.1:
-        1.1.1n-0+deb10u2
+        1.1.1n-0+deb10u3
     libstdc++6:
         8.3.0-6
     libsystemd0:
@@ -432,7 +432,7 @@ local:
     openssh-sftp-server:
         1:7.9p1-10+deb10u2
     openssl:
-        1.1.1n-0+deb10u2
+        1.1.1n-0+deb10u3
     passwd:
         1:4.5-1.1
     perl:
@@ -482,7 +482,7 @@ local:
     tar:
         1.30+dfsg-6
     tzdata:
-        2021a-0+deb10u4
+        2021a-0+deb10u5
     ucf:
         3.0038+nmu1
     udev:
@@ -498,3 +498,9 @@ local:
     ----------
     pip:
         20.3.4
+# salt-call --local locale.list_avail
+local:
+    - C
+    - C.UTF-8
+    - POSIX
+    - en_US.utf8

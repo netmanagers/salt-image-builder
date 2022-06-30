@@ -255,9 +255,9 @@ local:
     kpartx:
         0.4.9-135.0.1.el7_9
     krb5-devel:
-        1.15.1-51.0.3.el7_9
+        1.15.1-54.0.1.el7_9
     krb5-libs:
-        1.15.1-51.0.3.el7_9
+        1.15.1-54.0.1.el7_9
     less:
         458-9.el7
     libacl:
@@ -301,7 +301,7 @@ local:
     libidn:
         1.28-4.el7
     libkadm5:
-        1.15.1-51.0.3.el7_9
+        1.15.1-54.0.1.el7_9
     libmnl:
         1.0.3-7.el7
     libmount:
@@ -643,3 +643,59 @@ local:
     ----------
     pip:
         21.2.4
+# salt-call --local locale.list_avail
+local:
+    - C
+    - C.utf8
+    - POSIX
+    - en_AG
+    - en_AG.utf8
+    - en_AU
+    - en_AU.iso88591
+    - en_AU.utf8
+    - en_BW
+    - en_BW.iso88591
+    - en_BW.utf8
+    - en_CA
+    - en_CA.iso88591
+    - en_CA.utf8
+    - en_DK
+    - en_DK.iso88591
+    - en_DK.utf8
+    - en_GB
+    - en_GB.iso88591
+    - en_GB.iso885915
+    - en_GB.utf8
+    - en_HK
+    - en_HK.iso88591
+    - en_HK.utf8
+    - en_IE
+    - en_IE.iso88591
+    - en_IE.iso885915@euro
+    - en_IE.utf8
+    - en_IE@euro
+    - en_IN
+    - en_IN.utf8
+    - en_NG
+    - en_NG.utf8
+    - en_NZ
+    - en_NZ.iso88591
+    - en_NZ.utf8
+    - en_PH
+    - en_PH.iso88591
+    - en_PH.utf8
+    - en_SG
+    - en_SG.iso88591
+    - en_SG.utf8
+    - en_US
+    - en_US.iso88591
+    - en_US.iso885915
+    - en_US.utf8
+    - en_ZA
+    - en_ZA.iso88591
+    - en_ZA.utf8
+    - en_ZM
+    - en_ZM.utf8
+    - en_ZW
+    - en_ZW.iso88591
+    - en_ZW.utf8
