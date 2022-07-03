@@ -27,6 +27,9 @@ RUN pacman --noconfirm -Sy archlinux-keyring \
  && curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
     sed -e '/^\s\+echowarn "You have 10 seconds to cancel and stop the bootstrap process..."/,+2d' | \
     sh -s -- ${SALT_REPO_URL} -XUdfPD -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION \
+    # Generate locales
+ && sed -i -e "/^#\(en_US.UTF-8 UTF-8\)/s//\1/" /etc/locale.gen && locale-gen \
+    # Enable sshd and disable salt's service as we don't need it running
  && systemctl enable sshd \
  && systemctl disable salt-minion.service > /dev/null 2>&1 \
     # Similar to Fedora, enable the `ssh-rsa` keypair type since Kitchen
