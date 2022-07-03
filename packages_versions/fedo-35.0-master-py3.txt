@@ -292,7 +292,7 @@ local:
     kpartx:
         0.8.6-5.fc35
     krb5-libs:
-        1.19.2-6.fc35
+        1.19.2-8.fc35
     less:
         590-2.fc35
     libacl:

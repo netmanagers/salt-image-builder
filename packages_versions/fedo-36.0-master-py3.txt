@@ -160,7 +160,7 @@ local:
     cryptsetup-libs:
         2.4.3-2.fc36
     curl:
-        7.82.0-5.fc36
+        7.82.0-6.fc36
     cyrus-sasl-lib:
         2.1.27-18.fc36
     dbus:
@@ -318,7 +318,7 @@ local:
     libcomps:
         0.1.18-2.fc36
     libcurl:
-        7.82.0-5.fc36
+        7.82.0-6.fc36
     libdb:
         5.3.28-51.fc36
     libdnf:
@@ -444,9 +444,9 @@ local:
     npth:
         1.6-8.fc36
     openldap:
-        2.6.2-1.fc36
+        2.6.2-2.fc36
     openldap-compat:
-        2.6.2-1.fc36
+        2.6.2-2.fc36
     openssh:
         8.8p1-1.fc36.1
     openssh-clients:
@@ -528,7 +528,7 @@ local:
     perl-SelectSaver:
         1.02-486.fc36
     perl-Socket:
-        4:2.033-1.fc36
+        4:2.034-1.fc36
     perl-Storable:
         1:3.25-2.fc36
     perl-Symbol:

@@ -151,7 +151,7 @@ local:
     cryptsetup-libs:
         2.3.7-2.el8
     curl:
-        7.61.1-22.el8
+        7.61.1-22.el8_6.3
     cyrus-sasl-lib:
         2.1.27-6.el8_5
     dbus:
@@ -287,7 +287,7 @@ local:
     libcomps:
         0.1.18-1.el8
     libcurl-minimal:
-        7.61.1-22.el8
+        7.61.1-22.el8_6.3
     libdb:
         5.3.28-42.el8_4
     libdb-utils:

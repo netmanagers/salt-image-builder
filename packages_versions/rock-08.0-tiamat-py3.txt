@@ -207,15 +207,15 @@ local:
     glib2:
         2.56.4-156.el8
     glibc:
-        2.28-189.1.el8
+        2.28-189.5.el8_6
     glibc-common:
-        2.28-189.1.el8
+        2.28-189.5.el8_6
     glibc-gconv-extra:
-        2.28-189.1.el8
+        2.28-189.5.el8_6
     glibc-langpack-en:
-        2.28-189.1.el8
+        2.28-189.5.el8_6
     glibc-minimal-langpack:
-        2.28-189.1.el8
+        2.28-189.5.el8_6
     gmp:
         1:6.1.2-10.el8
     gnupg2:

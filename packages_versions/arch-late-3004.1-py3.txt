@@ -25,7 +25,7 @@ Dependency Versions:
         Python: 3.10.5 (main, Jun  6 2022, 18:49:26) [GCC 12.1.0]
   python-gnupg: Not Installed
         PyYAML: 6.0
-         PyZMQ: 23.1.0
+         PyZMQ: 23.2.0
          smmap: Not Installed
        timelib: Not Installed
        Tornado: 4.5.3
@@ -181,7 +181,7 @@ local:
     git:
         2.37.0-1
     glib2:
-        2.72.2-1
+        2.72.3-1
     glibc:
         2.35-6
     gmp:
@@ -425,7 +425,7 @@ local:
     python-pyparsing:
         3.0.9-1
     python-pyzmq:
-        23.1.0-1
+        23.2.0-1
     python-requests:
         2.27.1-1
     python-resolvelib:
@@ -570,7 +570,7 @@ local:
     pyparsing:
         3.0.9
     pyzmq:
-        23.1.0
+        23.2.0
     requests:
         2.27.1
     resolvelib:
@@ -604,3 +604,4 @@ local:
     - C
     - C.UTF-8
     - POSIX
+    - en_US.utf8

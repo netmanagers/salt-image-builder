@@ -1,5 +1,17 @@
 # Changelog
 
+# [1.75.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.74.0...v1.75.0) (2022-07-03)
+
+
+### Features
+
+* **dockerfile.pac:** generate `en_US.UTF-8` locale [skip ci] ([01a5076](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/01a50768e74a34654014bd0d871786df0c4c3e64)), closes [/gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/-/blob/b249237200bb/Dockerfile.apt#L83-84](https://gitlab.com//gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/-/blob/b249237200bb/Dockerfile.apt/issues/L83-84) [/gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/-/blob/b249237200bb/Dockerfile.emg#L44](https://gitlab.com//gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/-/blob/b249237200bb/Dockerfile.emg/issues/L44)
+
+
+### Reverts
+
+* **locale:** expand assertion for `C.UTF-8` (Arch Linux) as well ([2d7d3c6](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/2d7d3c664307c3122c06a45690a32b646b35583d))
+
 # [1.74.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.73.0...v1.74.0) (2022-06-30)
 
 

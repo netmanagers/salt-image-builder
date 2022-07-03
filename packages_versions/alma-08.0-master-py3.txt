@@ -145,7 +145,7 @@ local:
     coreutils-single:
         8.30-12.el8
     cpp:
-        8.5.0-10.el8.alma
+        8.5.0-10.1.el8_6.alma
     cracklib:
         2.9.6-15.el8
     cracklib-dicts:
@@ -155,7 +155,7 @@ local:
     cryptsetup-libs:
         2.3.7-2.el8
     curl:
-        7.61.1-22.el8
+        7.61.1-22.el8_6.3
     cyrus-sasl-lib:
         2.1.27-6.el8_5
     dbus:
@@ -191,7 +191,7 @@ local:
     epel-release:
         8-15.el8
     expat:
-        2.2.5-8.el8
+        2.2.5-8.el8_6.2
     file-libs:
         5.33-20.el8
     filesystem:
@@ -201,7 +201,7 @@ local:
     gawk:
         4.2.1-4.el8
     gcc:
-        8.5.0-10.el8.alma
+        8.5.0-10.1.el8_6.alma
     gdbm:
         1:1.18-1.el8
     gdbm-libs:
@@ -263,7 +263,7 @@ local:
     kbd-misc:
         2.0.4-10.el8
     kernel-headers:
-        4.18.0-372.9.1.el8
+        4.18.0-372.13.1.el8_6
     keyutils-libs:
         1.5.10-9.el8
     keyutils-libs-devel:
@@ -301,7 +301,7 @@ local:
     libcomps:
         0.1.18-1.el8
     libcurl-minimal:
-        7.61.1-22.el8
+        7.61.1-22.el8_6.3
     libdb:
         5.3.28-42.el8_4
     libdb-utils:
@@ -315,11 +315,11 @@ local:
     libffi:
         3.1-23.el8
     libgcc:
-        8.5.0-10.el8.alma
+        8.5.0-10.1.el8_6.alma
     libgcrypt:
-        1.8.5-6.el8
+        1.8.5-7.el8_6
     libgomp:
-        8.5.0-10.el8.alma
+        8.5.0-10.1.el8_6.alma
     libgpg-error:
         1.31-1.el8
     libidn2:
@@ -365,7 +365,7 @@ local:
     libsolv:
         0.7.20-1.el8
     libstdc++:
-        8.5.0-10.el8.alma
+        8.5.0-10.1.el8_6.alma
     libtasn1:
         4.13-3.el8
     libtirpc:
@@ -387,7 +387,7 @@ local:
     libxcrypt-devel:
         4.1.1-6.el8
     libxml2:
-        2.9.7-13.el8
+        2.9.7-13.el8_6.1
     libyaml:
         0.1.7-5.el8
     libzstd:
@@ -627,7 +627,7 @@ local:
     util-linux:
         2.32.1-35.el8
     vim-minimal:
-        2:8.0.1763-16.el8_5.13
+        2:8.0.1763-19.el8_6.2
     which:
         2.21-17.el8
     xz:
