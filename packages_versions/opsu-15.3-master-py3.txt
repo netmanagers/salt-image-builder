@@ -342,7 +342,7 @@ local:
     libnsl2:
         1.2.0-2.44
     libopenssl1_1:
-        1.1.1d-11.43.1
+        1.1.1d-150200.11.48.1
     libp11-kit0:
         0.23.2-4.13.1
     libpcre1:
@@ -458,7 +458,7 @@ local:
     openssh-server:
         8.4p1-3.9.1
     openssl-1_1:
-        1.1.1d-11.43.1
+        1.1.1d-150200.11.48.1
     p11-kit:
         0.23.2-4.13.1
     p11-kit-tools:

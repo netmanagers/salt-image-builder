@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.76.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.75.0...v1.76.0) (2022-07-05)
+
+
+### Features
+
+* **arch:** build CVE `3004.2` image [skip ci] ([30bef49](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/30bef49da94130348643bd93dbd6dcc15c55c6b6))
+
 # [1.75.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.74.0...v1.75.0) (2022-07-03)
 
 
