@@ -41,6 +41,7 @@ RUN zypper refresh && zypper install --no-recommends -y ${PKGS} && zypper clean 
     # TODO: Add InSpec bug report link when it is available
  && sed -i -e "s/^# //" /etc/os-release \
  && sed -i -e "s/^# //" /etc/SuSE-release \
+    # Disable Salt's service as we don't need it running
  && systemctl disable salt-minion.service > /dev/null 2>&1 \
     # Similar to Fedora and Arch Linux, enable the `ssh-rsa` keypair type since Kitchen
     # testing currently relies on this (only required on Tumbleweed so far)

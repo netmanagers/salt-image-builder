@@ -42,7 +42,7 @@ RUN mkdir --parents /etc/portage/repos.conf \
     sh -s -- ${SALT_REPO_URL} -XUdfPD -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION \
     # Generate locales
  && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen && locale-gen \
-    # Enable sshd and disable salt's service as we don't need it running
+    # Enable sshd and disable Salt's service as we don't need it running
  && if [ "${DISTRO_VERSION}" = "systemd" ]; then \
       (systemctl enable sshd.service > /dev/null 2>&1; \
        systemctl disable salt-minion.service > /dev/null 2>&1) \

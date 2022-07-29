@@ -32,7 +32,7 @@ RUN apt-get update \
  && curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
     sed -e '/^\s\+echowarn "You have 10 seconds to cancel and stop the bootstrap process..."/,+2d' | \
     sh -s -- ${SALT_REPO_URL} -XUdfPD -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION \
-    # Disable salt's service as we don't need it running
+    # Disable Salt's service as we don't need it running
  && systemctl disable salt-minion.service > /dev/null 2>&1 \
     # Similar to Fedora, Arch Linux, Tumbleweed & Gentoo, enable the `ssh-rsa` keypair
     # type since Kitchen testing currently relies on this (on Ubuntu 22.04)

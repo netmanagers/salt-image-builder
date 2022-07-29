@@ -29,7 +29,7 @@ RUN pacman --noconfirm -Sy archlinux-keyring \
     sh -s -- ${SALT_REPO_URL} -XUdfPD -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION \
     # Generate locales
  && sed -i -e "/^#\(en_US.UTF-8 UTF-8\)/s//\1/" /etc/locale.gen && locale-gen \
-    # Enable sshd and disable salt's service as we don't need it running
+    # Enable sshd and disable Salt's service as we don't need it running
  && systemctl enable sshd \
  && systemctl disable salt-minion.service > /dev/null 2>&1 \
     # Similar to Fedora, enable the `ssh-rsa` keypair type since Kitchen
