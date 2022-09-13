@@ -279,7 +279,7 @@ amaz-02.0-3003.5-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 # Latest stable release (can flag out-of-date from this page): https://archlinux.org/packages/community/any/salt/
 # Since Python 3.10 was released, would require manual workarounds for Salt < `3004.2`, so no longer building those images
 arch-late-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'archlinux/archlinux'  , DV: 'latest' , PI: 'pac', SIM: 'git'   , SV: 'master', SVB: ''      , PV: '3', EP: ''}}
-arch-late-3004.2-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'archlinux/archlinux'  , DV: 'latest' , PI: 'pac', SIM: 'stable', SV: '3004.2', SVB: 'latest', PV: '3', EP: 'python-psutil'}}
+arch-late-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'archlinux/archlinux'  , DV: 'latest' , PI: 'pac', SIM: 'stable', SV: '3005.1', SVB: 'latest', PV: '3', EP: 'python-psutil'}}
 
 # CENTOS (STREAM)
 cstr-08.0-tiamat-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'quay.io/centos/centos', DV: 'stream8', PI: 'yum', SIM: 'stable', SV: 'tiamat', SVB: ''      , PV: '3', EP: 'glibc-langpack-en openssl-devel procps-ng python3 python3-devel swig'}}
@@ -314,24 +314,24 @@ debi-09.0-3003.5-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 
 # FEDORA
 # For Fedora, `stable` builds only appear to work with `latest` but that doesn't guarantee the actual latest version of Salt
-# * Fedora 37: `3004.X`
-# * Fedora 36: `3004.X`
-# * Fedora 35: `3004.X`
+# * Fedora 37: `3005.X`
+# * Fedora 36: `3005.X`
+# * Fedora 35: `3005.X`
 # Use for both accordingly in order to test against these latest available packages
 # Progress for new releases is visible here: https://bodhi.fedoraproject.org/updates/?search=salt
 fedo-37.0-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'fedora'               , DV: '37'     , PI: 'dnf', SIM: 'git'   , SV: 'master', SVB: ''      , PV: '3', EP: ''}}
-fedo-37.0-3004.2-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'fedora'               , DV: '37'     , PI: 'dnf', SIM: 'stable', SV: '3004.2', SVB: 'latest', PV: '3', EP: 'python-setuptools'}}
+fedo-37.0-3005.1-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'fedora'               , DV: '37'     , PI: 'dnf', SIM: 'stable', SV: '3005.1', SVB: 'latest', PV: '3', EP: 'python-setuptools'}}
 fedo-36.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'               , DV: '36'     , PI: 'dnf', SIM: 'git'   , SV: 'master', SVB: ''      , PV: '3', EP: ''}}
-fedo-36.0-3004.2-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'               , DV: '36'     , PI: 'dnf', SIM: 'stable', SV: '3004.2', SVB: 'latest', PV: '3', EP: 'python-setuptools'}}
+fedo-36.0-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'               , DV: '36'     , PI: 'dnf', SIM: 'stable', SV: '3005.1', SVB: 'latest', PV: '3', EP: 'python-setuptools'}}
 fedo-35.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'               , DV: '35'     , PI: 'dnf', SIM: 'git'   , SV: 'master', SVB: ''      , PV: '3', EP: ''}}
-fedo-35.0-3004.2-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'               , DV: '35'     , PI: 'dnf', SIM: 'stable', SV: '3004.2', SVB: 'latest', PV: '3', EP: ''}}
+fedo-35.0-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'               , DV: '35'     , PI: 'dnf', SIM: 'stable', SV: '3005.1', SVB: 'latest', PV: '3', EP: ''}}
 
 # GENTOO
 # Available versions: https://packages.gentoo.org/packages/app-admin/salt
 gent-late-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'latest' , PI: 'emg', SIM: 'git'   , SV: 'master', SVB: ''      , PV: '3', EP: ''}}
-gent-late-3004.2-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'latest' , PI: 'emg', SIM: 'stable', SV: '3004.2', SVB: ''      , PV: '3', EP: ''}}
+gent-late-3005.1-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'latest' , PI: 'emg', SIM: 'stable', SV: '3005.1', SVB: ''      , PV: '3', EP: ''}}
 gent-sysd-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'systemd', PI: 'emg', SIM: 'git'   , SV: 'master', SVB: ''      , PV: '3', EP: ''}}
-gent-sysd-3004.2-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'systemd', PI: 'emg', SIM: 'stable', SV: '3004.2', SVB: ''      , PV: '3', EP: ''}}
+gent-sysd-3005.1-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'systemd', PI: 'emg', SIM: 'stable', SV: '3005.1', SVB: ''      , PV: '3', EP: ''}}
 
 # OPENSUSE
 # For openSUSE, the bootstrap script only allows `latest` to be built using `stable`
