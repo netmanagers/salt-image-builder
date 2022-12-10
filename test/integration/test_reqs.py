@@ -5,14 +5,19 @@ import pytest
     "cmd",
     ["python", "pip"],
 )
-def test_python(host, pyvers, cmd):
+def test_python(host, pyvers, installmethod, cmd):
     if host.system_info.distribution == "arch":
         python_verstr = "" if pyvers == "3" else pyvers
     elif pyvers == "2":
         python_verstr = ""
     else:
         python_verstr = pyvers
-    host.find_command(cmd + python_verstr)
+    command = cmd + python_verstr
+
+    if cmd == "pip" and installmethod == "onedir":
+        command = "salt-pip"
+
+    host.find_command(command)
 
 
 @pytest.mark.parametrize(
