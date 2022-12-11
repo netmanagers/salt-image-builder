@@ -5,9 +5,9 @@ def test_salt_version(host, saltvers, installmethod):
     cmd = host.run("salt-call --version")
     # See https://github.com/saltstack/salt/blob/01b22ea1b141/salt/version.py#L54-L63
     git_sha_regex = r"g?[a-f0-9]{7,40}"
-    pep440_master_format = r"3\d{3}\+0na." + git_sha_regex
-    pep440_onedir_format = r"3\d{3}(rc\d)?\+\d{1,4}." + git_sha_regex
     major_minor = r"3\d{3}"
+    pep440_master_format = major_minor + r"\+0na." + git_sha_regex
+    pep440_onedir_format = major_minor + r"(rc\d)?\+\d{1,4}." + git_sha_regex
     if saltvers == "master":
         # New PEP440-compliant `master` format
         # https://pythex.org/?regex=3%5Cd%7B3%7D%5C%2B0na.g%3F%5Ba-f0-9%5D%7B7%2C40%7D&test_string=3003%2B0na.10c4da2%0A3004%2B0na.f39e419&ignorecase=0&multiline=0&dotall=0&verbose=0
