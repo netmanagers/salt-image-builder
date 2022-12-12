@@ -32,10 +32,9 @@ RUN dnf -y update \
  && systemctl disable salt-minion.service > /dev/null 2>&1 \
     # Use the `LEGACY` crypto policy since Kitchen testing currently relies on
     # this keypair type (make the SSH policy in Fedora 33+ behave like Fedora 32)
- && if [ "${DISTRO_VERSION}" != "32" ]; then \
-      dnf -y install crypto-policies-scripts; \
-      update-crypto-policies --set LEGACY; \
-    fi \
+ && dnf -y install crypto-policies-scripts \
+ && update-crypto-policies --set LEGACY \
+ && dnf clean all \
     # Remove unnecessary getty and udev targets that result in high CPU usage when using
     # multiple containers with Molecule or Kitchen (https://github.com/ansible/molecule/issues/1104)
  && rm -rf /var/cache/{salt,pacman} \
