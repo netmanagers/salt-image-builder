@@ -37,6 +37,13 @@ RUN if [[ "${DISTRO_NAME}" = "centos" ]]; then \
     elif [ -f "/etc/init.d/salt-minion" ]; then \
       /sbin/chkconfig salt-minion off; \
     fi \
+    # Use the `LEGACY` crypto policy since Kitchen testing currently relies on
+    # this keypair type (make the SSH policy in RedHat-9 behave like RedHat-8)
+ && if [ "${DISTRO_VERSION}" = "9" ] || [ "${DISTRO_VERSION}" = "stream9" ]; then \
+      dnf -y install crypto-policies-scripts; \
+      update-crypto-policies --set LEGACY; \
+      dnf clean all; \
+    fi \
     # Remove unnecessary getty and udev targets that result in high CPU usage when using
     # multiple containers with Molecule or Kitchen (https://github.com/ansible/molecule/issues/1104)
  && rm -rf /var/cache/{salt,yum} \
