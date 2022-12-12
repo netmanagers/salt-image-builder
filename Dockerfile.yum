@@ -16,7 +16,7 @@ ARG EXTRA_PACKAGES=""
 # These are now expected by the `ssf` customised `kitchen-docker` being used:
 # - https://gitlab.com/saltstack-formulas/infrastructure/kitchen-docker/-/compare/master...ssf
 ARG KITCHEN_DOCKER_PACKAGES="curl openssh-clients openssh-server sudo which"
-ARG PKGS="${KITCHEN_DOCKER_PACKAGES} git net-tools python3-pip systemd udev ${EXTRA_PACKAGES}"
+ARG PKGS="${KITCHEN_DOCKER_PACKAGES} git net-tools systemd udev ${EXTRA_PACKAGES}"
 ARG SALT_REPO_URL=""
 
 SHELL ["/bin/bash", "-x", "-o", "pipefail", "-c"]
@@ -26,40 +26,12 @@ RUN if [[ "${DISTRO_NAME}" = "centos" ]]; then \
       yum -y install epel-release; \
     fi \
  && yum -y install ${PKGS} \
- && if [ "${SALT_VERSION}" != "tiamat" ]; then \
-      # Install Salt using the bootstrap script (removing the 10 seconds delay to cancel the bootstrap)
-      curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
-      sed -e '/^\s\+echowarn "You have 10 seconds to cancel and stop the bootstrap process..."/,+2d' | \
-      sh -s -- ${SALT_REPO_URL} -XUdfPD -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION; \
-    else \
-      # Prepare the `TIAMAT_DISTRO_NAME`
-      if [ "${DISTRO_NAME}" = "amazonlinux" ]; then \
-        TIAMAT_DISTRO_NAME="amazon"; \
-      else \
-        TIAMAT_DISTRO_NAME="redhat"; \
-      fi; \
-      echo "${TIAMAT_DISTRO_NAME}"; \
-      # Prepare the `TIAMAT_DISTRO_VERSION`
-      if [ "${DISTRO_VERSION}" = "stream8" ]; then \
-        TIAMAT_DISTRO_VERSION="8"; \
-      else \
-        TIAMAT_DISTRO_VERSION="${DISTRO_VERSION}"; \
-      fi; \
-      echo "${TIAMAT_DISTRO_VERSION}"; \
-      # Prepare the `EPEL_PACKAGE_NAME`
-      if [ "${DISTRO_NAME}" = "oraclelinux" ]; then \
-        EPEL_PACKAGE_NAME="oracle-epel-release-el${DISTRO_VERSION}"; \
-      else \
-        EPEL_PACKAGE_NAME="epel-release"; \
-      fi; \
-      echo "${EPEL_PACKAGE_NAME}"; \
-      # Prepare the repo
-      rpm --import https://repo.saltproject.io/salt-dev/py3/${TIAMAT_DISTRO_NAME}/${TIAMAT_DISTRO_VERSION}/x86_64/SALTSTACK-GPG-KEY.pub; \
-      curl -fsSL https://repo.saltproject.io/salt-dev/py3/${TIAMAT_DISTRO_NAME}/${TIAMAT_DISTRO_VERSION}/x86_64/dev.repo | tee /etc/yum.repos.d/salt-dev.repo; \
-      # Install the package
-      yum clean expire-cache; \
-      yum -y install "${EPEL_PACKAGE_NAME}" salt-minion; \
-    fi \
+ && yum clean all \
+    # Install Salt using the bootstrap script (removing the 10 seconds delay to cancel the bootstrap)
+ && curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
+    sed -e '/^\s\+echowarn "You have 10 seconds to cancel and stop the bootstrap process..."/,+2d' | \
+    sh -s -- ${SALT_REPO_URL} -XUdfPD -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION \
+    # Disable Salt's service as we don't need it running
  && if command -v systemctl; then \
       systemctl disable salt-minion.service > /dev/null 2>&1; \
     elif [ -f "/etc/init.d/salt-minion" ]; then \
