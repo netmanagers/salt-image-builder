@@ -23,7 +23,7 @@ SHELL ["/bin/bash", "-x", "-o", "pipefail", "-c"]
 RUN pacman --noconfirm -Sy archlinux-keyring \
  && pacman-db-upgrade \
  && pacman --noconfirm -Syu ${PKGS} \
- && pacman -Scc \
+ && pacman --noconfirm -Scc \
     # Install Salt using the bootstrap script (removing the 10 seconds delay to cancel the bootstrap)
  && curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
     sed -e '/^\s\+echowarn "You have 10 seconds to cancel and stop the bootstrap process..."/,+2d' | \
