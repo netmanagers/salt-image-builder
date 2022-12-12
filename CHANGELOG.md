@@ -1,5 +1,25 @@
 # Changelog
 
+# [1.78.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.77.0...v1.78.0) (2022-12-12)
+
+
+### Bug Fixes
+
+* **dockerfile.pac:** use `--noconfirm` for cleaning package cache ([892f4cb](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/892f4cbcdfe156a9d11aaa6667b1d103ec2a1788))
+* **gitlab-ci:** use `nghtly` => `nightly` & fix spacing for `SV` & `SVB` ([75a7d44](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/75a7d44d0d91a20a346be91ab4670b3b0c606822))
+
+
+### Code Refactoring
+
+* **dockerfile.dnf:** remove obsolete `update-crypto-policies` `if` ([480ce17](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/480ce17f4d55e0b08131a3eaece348973fda554e))
+
+
+### Features
+
+* **dockerfile.yum:** use Fedora `ssh-rsa` workaround on RedHat-9 ([a94fa07](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/a94fa074663090fbe36eedefe6cf4679f452113b))
+* **gitlab-ci:** add RedHat-9 platforms ([7330242](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/73302422a0a2a7c74225a88eb97df54ff46b68a1))
+* **yum:** limit `curl` installation to RedHat-8 platforms ([02349b2](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/02349b2d48f173983e5bcb1944cf56f3ec1c72e2))
+
 # [1.77.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.76.0...v1.77.0) (2022-12-12)
 
 

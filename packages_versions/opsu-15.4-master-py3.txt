@@ -25,11 +25,11 @@ Dependency Versions:
         Python: 3.6.15 (default, Sep 23 2021, 15:41:43) [GCC]
   python-gnupg: Not Installed
         PyYAML: 6.0
-         PyZMQ: 20.0.0
+         PyZMQ: 22.0.3
          smmap: Not Installed
        timelib: Not Installed
        Tornado: 4.5.3
-           ZMQ: 4.3.3
+           ZMQ: 4.3.4
  
 System Versions:
           dist: opensuse 15.4 
@@ -122,7 +122,7 @@ local:
     virtual_subtype:
         Docker
     zmqversion:
-        4.3.3
+        4.3.4
 # salt-call --local pkg.list_pkgs
 local:
     ----------
@@ -666,7 +666,7 @@ local:
     pyparsing:
         2.4.7
     pyzmq:
-        20.0.0
+        22.0.3
     requests:
         2.27.1
     salt:

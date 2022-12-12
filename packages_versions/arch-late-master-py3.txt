@@ -185,7 +185,7 @@ local:
     gettext:
         0.21.1-2
     git:
-        2.38.1-2
+        2.38.2-1
     glib2:
         2.74.3-1
     glibc:
@@ -231,7 +231,7 @@ local:
     less:
         1:608-1
     libarchive:
-        3.6.1-5
+        3.6.2-1
     libassuan:
         2.5.5-1
     libbpf:
