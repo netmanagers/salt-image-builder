@@ -2,7 +2,7 @@ cent-07.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3005+0na.264d02a
+          Salt: 3006.0+0na.d937173
  
 Dependency Versions:
           cffi: Not Installed
@@ -20,12 +20,12 @@ Dependency Versions:
   mysql-python: Not Installed
      pycparser: Not Installed
       pycrypto: Not Installed
-  pycryptodome: 3.15.0
+  pycryptodome: 3.16.0
         pygit2: Not Installed
         Python: 3.6.8 (default, Nov 16 2020, 16:55:22)
   python-gnupg: Not Installed
         PyYAML: 6.0
-         PyZMQ: 23.2.0
+         PyZMQ: 24.0.1
          smmap: Not Installed
        timelib: Not Installed
        Tornado: 4.5.3
@@ -106,9 +106,10 @@ local:
     saltpath:
         /usr/lib/python3.6/site-packages/salt
     saltversion:
-        3005+0na.264d02a
+        3006.0+0na.d937173
     saltversioninfo:
-        - 3005
+        - 3006
+        - 0
     systemd:
         ----------
         features:
@@ -135,13 +136,13 @@ local:
     bc:
         1.06.95-13.el7
     bind-license:
-        32:9.11.4-26.P2.el7_9.9
+        32:9.11.4-26.P2.el7_9.10
     binutils:
         2.27-44.base.el7_9.1
     bzip2-libs:
         1.0.6-13.el7
     ca-certificates:
-        2021.2.50-72.el7_9
+        2022.2.54-74.el7_9
     centos-release:
         7-9.2009.1.el7.centos
     chkconfig:
@@ -189,7 +190,7 @@ local:
     epel-release:
         7-14
     expat:
-        2.1.0-14.el7_9
+        2.1.0-15.el7_9
     file-libs:
         5.11-37.el7
     filesystem:
@@ -247,7 +248,7 @@ local:
     json-c:
         0.11-4.el7_0
     kernel-headers:
-        3.10.0-1160.71.1.el7
+        3.10.0-1160.80.1.el7
     keyutils-libs:
         1.5.8-3.el7
     keyutils-libs-devel:
@@ -257,11 +258,11 @@ local:
     kmod-libs:
         20-28.el7
     kpartx:
-        0.4.9-135.el7_9
+        0.4.9-136.el7_9
     krb5-devel:
-        1.15.1-54.el7_9
+        1.15.1-55.el7_9
     krb5-libs:
-        1.15.1-54.el7_9
+        1.15.1-55.el7_9
     less:
         458-9.el7
     libacl:
@@ -301,7 +302,7 @@ local:
     libidn:
         1.28-4.el7
     libkadm5:
-        1.15.1-54.el7_9
+        1.15.1-55.el7_9
     libmount:
         2.23.2-65.el7_9.1
     libmpc:
@@ -359,21 +360,21 @@ local:
     net-tools:
         2.0-0.25.20131004git.el7
     nspr:
-        4.32.0-1.el7_9
+        4.34.0-3.1.el7_9
     nss:
-        3.67.0-4.el7_9
+        3.79.0-4.el7_9
     nss-pem:
         1.0.3-7.el7
     nss-softokn:
-        3.67.0-3.el7_9
+        3.79.0-4.el7_9
     nss-softokn-freebl:
-        3.67.0-3.el7_9
+        3.79.0-4.el7_9
     nss-sysinit:
-        3.67.0-4.el7_9
+        3.79.0-4.el7_9
     nss-tools:
-        3.67.0-4.el7_9
+        3.79.0-4.el7_9
     nss-util:
-        3.67.0-1.el7_9
+        3.79.0-1.el7_9
     openldap:
         2.4.44-25.el7_9
     openpgm:
@@ -529,7 +530,7 @@ local:
     rpm-python:
         4.11.3-48.el7_9
     rsync:
-        3.1.2-10.el7
+        3.1.2-11.el7_9
     sed:
         4.2.2-7.el7
     setup:
@@ -545,15 +546,15 @@ local:
     swig:
         2.0.10-5.el7
     systemd:
-        219-78.el7_9.5
+        219-78.el7_9.7
     systemd-libs:
-        219-78.el7_9.5
+        219-78.el7_9.7
     tar:
         2:1.26-35.el7
     tcp_wrappers-libs:
         7.6-77.el7
     tzdata:
-        2022a-1.el7
+        2022f-1.el7
     ustr:
         1.0.4-16.el7
     util-linux:
@@ -596,37 +597,39 @@ local:
     PyYAML:
         6.0
     certifi:
-        2022.6.15
+        2022.12.7
     charset-normalizer:
         2.0.12
     contextvars:
         2.4
     distro:
-        1.7.0
+        1.8.0
     idna:
-        3.3
+        3.4
     immutables:
-        0.18
+        0.19
+    jmespath:
+        0.10.0
     msgpack:
         1.0.4
     pip:
         9.0.3
     psutil:
-        5.9.1
+        5.9.4
     pycryptodomex:
-        3.15.0
+        3.16.0
     pyzmq:
-        23.2.0
+        24.0.1
     requests:
         2.27.1
     salt:
-        3005+0na.264d02a
+        3006.0+0na.d937173
     setuptools:
         39.2.0
     typing-extensions:
         4.1.1
     urllib3:
-        1.26.9
+        1.26.13
     wheel:
         0.37.1
 # salt-call --local locale.list_avail

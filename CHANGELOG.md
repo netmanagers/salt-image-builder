@@ -1,5 +1,38 @@
 # Changelog
 
+# [1.77.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.76.0...v1.77.0) (2022-12-12)
+
+
+### Features
+
+* **arch:** add package `python-jmespath` for `stable` build ([f34a5c0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/f34a5c078d256a07f5432a682529a76f8cbe53ef))
+* **dockerfile.*:** ensure packages are cleaned up after installation ([0acbb40](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/0acbb405832b7ef697a5dff72f48e06b3e1a2081))
+* **dockerfile.*:** remove Tiamat `if` block since no longer needed ([c398085](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/c3980859337c2505f31fcd781bd12defa9536ce0))
+* **fedora:** avoid `git`-based installs on Fedora 37+ ([2153363](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/2153363c8998da49eaf00c64b80114d0988d80b3)), closes [/github.com/saltstack/salt-bootstrap/pull/1840#issuecomment-1343953989](https://gitlab.com//github.com/saltstack/salt-bootstrap/pull/1840/issues/issuecomment-1343953989)
+* **gentoo:** disable `3005.1` instanced until failures resolved ([9f9c96a](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/9f9c96a472d54b874b459728619b1e9d2ad8e109))
+* **gitlab-ci:** add `fedora-38` ([c8665c7](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/c8665c77e3fb7a28ee077bb98200be3b787b6322))
+* **gitlab-ci:** build `onedir 3005.1` images ([ca50336](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/ca503369695ddf7bbe201945a2b0d5d6729a1504))
+* **gitlab-ci:** build `onedir nightly` images ([138bd1c](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/138bd1c2416d5f28c1a8640536f596cae3093c15))
+* **gitlab-ci:** deprecate `3003.5` ([f99eb08](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/f99eb0832bdc8ad5458c1c69a894e2d91e21eb42))
+* **gitlab-ci:** deprecate `debian-9` (EOL) ([d9a5565](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/d9a5565f0dcc8634aa159d1c8f58278c86181e32))
+* **onedir:** perform `tiamat` => `onedir` replacement (not 1:1) ([174b856](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/174b8566016a603724fc8ea86439af93c367c3a0))
+* **onedir:** remove extra package `python3-pip` (Debian-based) ([946d805](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/946d805378fbf8aec2339291f2254cac9897c13f))
+* **onedir:** remove extra package `python3-pip` (RedHat-based) ([1721fd8](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/1721fd89d998a17b39314562c7160f7f2739166f))
+* **phosphorus:** add `3005.1` ([a6111aa](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/a6111aacb9237cb12c65336a52f1cb07cb3511cf))
+
+
+### Styles
+
+* **dockerfile.*:** use consistent disable Salt service comment ([0749ee2](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/0749ee26124d89531831efd4222f203172213c99))
+* **gitlab-ci:** adjust spacing for upcoming `SV: 'nightly'` ([fc5d18c](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/fc5d18c069bd6d57018d9cfe022efd4e5c044d71))
+
+
+### Tests
+
+* **reqs:** check for `salt-pip` instead of `pip` for `onedir` ([347253a](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/347253a636e7fd13a033f47e455ac0b8e9bbe319))
+* **salt_version:** expand `major_minor` to allow ending in `.x` ([0242f33](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/0242f33c26993db26ff01b6816e77e145ad7d0be))
+* **salt_version:** refactor to make DRY using `major_minor` ([2644661](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/26446613263befa8cb406b729296f692450f5cd3))
+
 # [1.76.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.75.0...v1.76.0) (2022-07-05)
 
 

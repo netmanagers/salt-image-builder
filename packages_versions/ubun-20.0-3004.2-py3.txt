@@ -22,7 +22,7 @@ Dependency Versions:
       pycrypto: Not Installed
   pycryptodome: 3.6.1
         pygit2: Not Installed
-        Python: 3.8.10 (default, Mar 15 2022, 12:22:08)
+        Python: 3.8.10 (default, Nov 14 2022, 12:59:47)
   python-gnupg: 0.4.5
         PyYAML: 5.3.1
          PyZMQ: 18.1.1
@@ -132,7 +132,7 @@ local:
     apt-transport-https:
         2.0.9
     base-files:
-        11ubuntu5.5
+        11ubuntu5.6
     base-passwd:
         3.5.47
     bash:
@@ -144,17 +144,17 @@ local:
     bzip2:
         1.0.8-2
     ca-certificates:
-        20211016~20.04.1
+        20211016ubuntu0.20.04.1
     coreutils:
         8.30-3ubuntu2
     curl:
-        7.68.0-1ubuntu2.12
+        7.68.0-1ubuntu2.14
     dash:
         0.5.10.2-6
     dbus:
-        1.12.16-2ubuntu2.2
+        1.12.16-2ubuntu2.3
     dbus-user-session:
-        1.12.16-2ubuntu2.2
+        1.12.16-2ubuntu2.3
     dconf-gsettings-backend:
         0.36.0-1
     dconf-service:
@@ -168,9 +168,9 @@ local:
     diffutils:
         1:3.7-3
     dirmngr:
-        2.2.19-3ubuntu2.1
+        2.2.19-3ubuntu2.2
     distro-info-data:
-        0.43ubuntu1.10
+        0.43ubuntu1.11
     dpkg:
         1.19.7ubuntu3.2
     e2fsprogs:
@@ -186,9 +186,9 @@ local:
     gir1.2-packagekitglib-1.0:
         1.1.13-2ubuntu1.1
     git:
-        1:2.25.1-1ubuntu3.4
+        1:2.25.1-1ubuntu3.6
     git-man:
-        1:2.25.1-1ubuntu3.4
+        1:2.25.1-1ubuntu3.6
     glib-networking:
         2.64.2-1ubuntu0.1
     glib-networking-common:
@@ -196,25 +196,25 @@ local:
     glib-networking-services:
         2.64.2-1ubuntu0.1
     gnupg:
-        2.2.19-3ubuntu2.1
+        2.2.19-3ubuntu2.2
     gnupg-l10n:
-        2.2.19-3ubuntu2.1
+        2.2.19-3ubuntu2.2
     gnupg-utils:
-        2.2.19-3ubuntu2.1
+        2.2.19-3ubuntu2.2
     gpg:
-        2.2.19-3ubuntu2.1
+        2.2.19-3ubuntu2.2
     gpg-agent:
-        2.2.19-3ubuntu2.1
+        2.2.19-3ubuntu2.2
     gpg-wks-client:
-        2.2.19-3ubuntu2.1
+        2.2.19-3ubuntu2.2
     gpg-wks-server:
-        2.2.19-3ubuntu2.1
+        2.2.19-3ubuntu2.2
     gpgconf:
-        2.2.19-3ubuntu2.1
+        2.2.19-3ubuntu2.2
     gpgsm:
-        2.2.19-3ubuntu2.1
+        2.2.19-3ubuntu2.2
     gpgv:
-        2.2.19-3ubuntu2.1
+        2.2.19-3ubuntu2.2
     grep:
         3.4-1
     gsettings-desktop-schemas:
@@ -238,7 +238,7 @@ local:
     libargon2-1:
         0~20171227-0.2
     libasn1-8-heimdal:
-        7.7.0+dfsg-1ubuntu1
+        7.7.0+dfsg-1ubuntu1.2
     libassuan0:
         2.5.3-7ubuntu2
     libattr1:
@@ -274,13 +274,13 @@ local:
     libcryptsetup12:
         2:2.2.2-3ubuntu2.4
     libcurl3-gnutls:
-        7.68.0-1ubuntu2.12
+        7.68.0-1ubuntu2.14
     libcurl4:
-        7.68.0-1ubuntu2.12
+        7.68.0-1ubuntu2.14
     libdb5.3:
         5.3.28+dfsg1-0.6ubuntu2
     libdbus-1-3:
-        1.12.16-2ubuntu2.2
+        1.12.16-2ubuntu2.3
     libdconf1:
         0.36.0-1
     libdebconfclient0:
@@ -294,7 +294,7 @@ local:
     liberror-perl:
         0.17029-1
     libexpat1:
-        2.2.9-1ubuntu0.4
+        2.2.9-1ubuntu0.6
     libext2fs2:
         1.45.5-2ubuntu1.1
     libfdisk1:
@@ -320,27 +320,27 @@ local:
     libglib2.0-data:
         2.64.6-1~ubuntu20.04.4
     libgmp10:
-        2:6.2.0+dfsg-4
+        2:6.2.0+dfsg-4ubuntu0.1
     libgnutls30:
-        3.6.13-2ubuntu1.6
+        3.6.13-2ubuntu1.7
     libgpg-error0:
         1.37-1
     libgssapi-krb5-2:
         1.17-6ubuntu4.1
     libgssapi3-heimdal:
-        7.7.0+dfsg-1ubuntu1
+        7.7.0+dfsg-1ubuntu1.2
     libgstreamer1.0-0:
-        1.16.2-2
+        1.16.3-0ubuntu1.1
     libhcrypto4-heimdal:
-        7.7.0+dfsg-1ubuntu1
+        7.7.0+dfsg-1ubuntu1.2
     libheimbase1-heimdal:
-        7.7.0+dfsg-1ubuntu1
+        7.7.0+dfsg-1ubuntu1.2
     libheimntlm0-heimdal:
-        7.7.0+dfsg-1ubuntu1
+        7.7.0+dfsg-1ubuntu1.2
     libhogweed5:
         3.5.1+really3.5.1-2ubuntu0.2
     libhx509-5-heimdal:
-        7.7.0+dfsg-1ubuntu1
+        7.7.0+dfsg-1ubuntu1.2
     libicu66:
         66.1-2ubuntu2.1
     libidn2-0:
@@ -356,13 +356,13 @@ local:
     libkmod2:
         27-1ubuntu2.1
     libkrb5-26-heimdal:
-        7.7.0+dfsg-1ubuntu1
+        7.7.0+dfsg-1ubuntu1.2
     libkrb5-3:
         1.17-6ubuntu4.1
     libkrb5support0:
         1.17-6ubuntu4.1
     libksba8:
-        1.3.5-2
+        1.3.5-2ubuntu0.20.04.1
     libldap-2.4-2:
         2.4.49+dfsg-2ubuntu1.9
     libldap-common:
@@ -400,17 +400,17 @@ local:
     libpam-runtime:
         1.3.1-5ubuntu4.3
     libpam-systemd:
-        245.4-4ubuntu3.17
+        245.4-4ubuntu3.19
     libpam0g:
         1.3.1-5ubuntu4.3
     libpci3:
         1:3.6.4-1ubuntu0.20.04.1
     libpcre2-8-0:
-        10.34-7
+        10.34-7ubuntu0.1
     libpcre3:
         2:8.39-12ubuntu0.1
     libperl5.30:
-        5.30.0-9ubuntu0.2
+        5.30.0-9ubuntu0.3
     libpgm-5.2-0:
         5.2.122~dfsg-3ubuntu1
     libpolkit-agent-1-0:
@@ -426,13 +426,13 @@ local:
     libpython3-stdlib:
         3.8.2-0ubuntu2
     libpython3.8-minimal:
-        3.8.10-0ubuntu1~20.04.4
+        3.8.10-0ubuntu1~20.04.6
     libpython3.8-stdlib:
-        3.8.10-0ubuntu1~20.04.4
+        3.8.10-0ubuntu1~20.04.6
     libreadline8:
         8.0-4
     libroken18-heimdal:
-        7.7.0+dfsg-1ubuntu1
+        7.7.0+dfsg-1ubuntu1.2
     librtmp1:
         2.4+20151223.gitfa8646d.1-2build1
     libsasl2-2:
@@ -456,35 +456,35 @@ local:
     libsoup2.4-1:
         2.70.0-1
     libsqlite3-0:
-        3.31.1-4ubuntu0.3
+        3.31.1-4ubuntu0.5
     libss2:
         1.45.5-2ubuntu1.1
     libssh-4:
         0.9.3-2ubuntu2.2
     libssl1.1:
-        1.1.1f-1ubuntu2.15
+        1.1.1f-1ubuntu2.16
     libstdc++6:
         10.3.0-1ubuntu1~20.04
     libstemmer0d:
         0+svn585-2
     libsystemd0:
-        245.4-4ubuntu3.17
+        245.4-4ubuntu3.19
     libtasn1-6:
         4.16.0-2
     libtinfo6:
         6.2-0ubuntu2
     libudev1:
-        245.4-4ubuntu3.17
+        245.4-4ubuntu3.19
     libunistring2:
         0.9.10-2
     libuuid1:
         2.34-0.1ubuntu9.3
     libwind0-heimdal:
-        7.7.0+dfsg-1ubuntu1
+        7.7.0+dfsg-1ubuntu1.2
     libwrap0:
         7.6.q-30
     libxml2:
-        2.9.10+dfsg-5ubuntu0.20.04.3
+        2.9.10+dfsg-5ubuntu0.20.04.5
     libyaml-0-2:
         0.2.2-1
     libzmq5:
@@ -494,7 +494,7 @@ local:
     locales:
         2.31-0ubuntu9.9
     login:
-        1:4.8.1-1ubuntu5.20.04.2
+        1:4.8.1-1ubuntu5.20.04.4
     logsave:
         1.45.5-2ubuntu1.1
     lsb-base:
@@ -520,21 +520,21 @@ local:
     openssh-sftp-server:
         1:8.2p1-4ubuntu0.5
     openssl:
-        1.1.1f-1ubuntu2.15
+        1.1.1f-1ubuntu2.16
     packagekit:
         1.1.13-2ubuntu1.1
     passwd:
-        1:4.8.1-1ubuntu5.20.04.2
+        1:4.8.1-1ubuntu5.20.04.4
     pci.ids:
         0.0~2020.03.20-1
     pciutils:
         1:3.6.4-1ubuntu0.20.04.1
     perl:
-        5.30.0-9ubuntu0.2
+        5.30.0-9ubuntu0.3
     perl-base:
-        5.30.0-9ubuntu0.2
+        5.30.0-9ubuntu0.3
     perl-modules-5.30:
-        5.30.0-9ubuntu0.2
+        5.30.0-9ubuntu0.3
     pinentry-curses:
         1.1.0-3build1
     policykit-1:
@@ -542,13 +542,13 @@ local:
     procps:
         2:3.3.16-1ubuntu2.3
     python-apt-common:
-        2.0.0ubuntu0.20.04.7
+        2.0.0ubuntu0.20.04.8
     python-pip-whl:
         20.0.2-5ubuntu1.6
     python3:
         3.8.2-0ubuntu2
     python3-apt:
-        2.0.0ubuntu0.20.04.7
+        2.0.0ubuntu0.20.04.8
     python3-certifi:
         2019.11.28-1
     python3-chardet:
@@ -606,9 +606,9 @@ local:
     python3-zmq:
         18.1.1-3
     python3.8:
-        3.8.10-0ubuntu1~20.04.4
+        3.8.10-0ubuntu1~20.04.6
     python3.8-minimal:
-        3.8.10-0ubuntu1~20.04.4
+        3.8.10-0ubuntu1~20.04.6
     readline-common:
         8.0-4
     salt-common:
@@ -624,29 +624,29 @@ local:
     sudo:
         1.8.31-1ubuntu1.2
     systemd:
-        245.4-4ubuntu3.17
+        245.4-4ubuntu3.19
     systemd-sysv:
-        245.4-4ubuntu3.17
+        245.4-4ubuntu3.19
     systemd-timesyncd:
-        245.4-4ubuntu3.17
+        245.4-4ubuntu3.19
     sysvinit-utils:
         2.96-2.1ubuntu1
     tar:
         1.30+dfsg-7ubuntu0.20.04.2
     tzdata:
-        2022a-0ubuntu0.20.04
+        2022f-0ubuntu0.20.04.1
     ubuntu-keyring:
         2020.02.11.4
     ucf:
         3.0038+nmu1
     udev:
-        245.4-4ubuntu3.17
+        245.4-4ubuntu3.19
     util-linux:
         2.34-0.1ubuntu9.3
     wget:
         1.20.3-1ubuntu2
     zlib1g:
-        1:1.2.11.dfsg-2ubuntu1.3
+        1:1.2.11.dfsg-2ubuntu1.5
 # salt-call --local pip.list
 local:
     ----------
@@ -677,7 +677,7 @@ local:
     pycryptodomex:
         3.6.1
     python-apt:
-        2.0.0+ubuntu0.20.4.7
+        2.0.0+ubuntu0.20.4.8
     python-dateutil:
         2.7.3
     python-gnupg:

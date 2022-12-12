@@ -2,7 +2,7 @@ amaz-02.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3005+0na.264d02a
+          Salt: 3006.0+0na.d937173
  
 Dependency Versions:
           cffi: Not Installed
@@ -20,16 +20,16 @@ Dependency Versions:
   mysql-python: Not Installed
      pycparser: Not Installed
       pycrypto: Not Installed
-  pycryptodome: 3.15.0
+  pycryptodome: 3.16.0
         pygit2: Not Installed
-        Python: 3.7.10 (default, Jun  3 2021, 00:02:01)
+        Python: 3.7.15 (default, Oct 31 2022, 22:44:31)
   python-gnupg: Not Installed
         PyYAML: 6.0
-         PyZMQ: 23.2.0
+         PyZMQ: 20.0.0
          smmap: Not Installed
        timelib: Not Installed
        Tornado: 4.5.3
-           ZMQ: 4.3.4
+           ZMQ: 4.3.3
  
 System Versions:
           dist: amzn 2 
@@ -99,15 +99,16 @@ local:
     pythonversion:
         - 3
         - 7
-        - 10
+        - 15
         - final
         - 0
     saltpath:
         /usr/lib/python3.7/site-packages/salt
     saltversion:
-        3005+0na.264d02a
+        3006.0+0na.d937173
     saltversioninfo:
-        - 3005
+        - 3006
+        - 0
     systemd:
         ----------
         features:
@@ -119,7 +120,7 @@ local:
     virtual_subtype:
         Docker
     zmqversion:
-        4.3.4
+        4.3.3
 # salt-call --local pkg.list_pkgs
 local:
     ----------
@@ -154,13 +155,13 @@ local:
     cryptsetup-libs:
         1.7.4-4.amzn2
     curl:
-        7.79.1-2.amzn2.0.1
+        7.79.1-7.amzn2.0.1
     cyrus-sasl-lib:
         2.1.26-24.amzn2
     dbus:
-        1:1.10.24-7.amzn2
+        1:1.10.24-7.amzn2.0.2
     dbus-libs:
-        1:1.10.24-7.amzn2
+        1:1.10.24-7.amzn2.0.2
     device-mapper:
         7:1.02.170-6.amzn2.5
     device-mapper-libs:
@@ -175,10 +176,8 @@ local:
         0.176-2.amzn2
     elfutils-libs:
         0.176-2.amzn2
-    emacs-filesystem:
-        1:27.2-4.amzn2.0.1
     expat:
-        2.1.0-12.amzn2.0.4
+        2.1.0-15.amzn2.0.2
     file-libs:
         5.11-36.amzn2.0.1
     filesystem:
@@ -196,31 +195,31 @@ local:
     gdbm:
         1:1.13-6.amzn2.0.2
     git:
-        2.32.0-1.amzn2.0.1
+        2.38.1-1.amzn2.0.1
     git-core:
-        2.32.0-1.amzn2.0.1
+        2.38.1-1.amzn2.0.1
     git-core-doc:
-        2.32.0-1.amzn2.0.1
+        2.38.1-1.amzn2.0.1
     glib2:
         2.56.1-9.amzn2.0.2
     glibc:
-        2.26-58.amzn2
+        2.26-62.amzn2
     glibc-common:
-        2.26-58.amzn2
+        2.26-62.amzn2
     glibc-devel:
-        2.26-58.amzn2
+        2.26-62.amzn2
     glibc-headers:
-        2.26-58.amzn2
+        2.26-62.amzn2
     glibc-langpack-en:
-        2.26-58.amzn2
+        2.26-62.amzn2
     glibc-minimal-langpack:
-        2.26-58.amzn2
+        2.26-62.amzn2
     gmp:
         1:6.0.0-15.amzn2.0.2
     gnupg2:
-        2.0.22-5.amzn2.0.4
+        2.0.22-5.amzn2.0.5
     go-srpm-macros:
-        3.0.15-23.amzn2.0.1
+        3.0.15-23.amzn2.0.2
     gpg-pubkey.(none):
         c87f5b1a-593863f8
     gpgme:
@@ -234,7 +233,7 @@ local:
     info:
         5.1-5.amzn2
     kernel-headers:
-        4.14.281-212.502.amzn2
+        4.14.299-223.520.amzn2
     keyutils-libs:
         1.5.8-3.amzn2.0.2
     kmod:
@@ -254,7 +253,7 @@ local:
     libattr:
         2.4.46-12.amzn2.0.2
     libblkid:
-        2.30.2-2.amzn2.0.7
+        2.30.2-2.amzn2.0.10
     libcap:
         2.54-1.amzn2.0.1
     libcap-ng:
@@ -262,11 +261,11 @@ local:
     libcilkrts:
         7.3.1-15.amzn2
     libcom_err:
-        1.42.9-19.amzn2
+        1.42.9-19.amzn2.0.1
     libcrypt:
-        2.26-58.amzn2
+        2.26-62.amzn2
     libcurl:
-        7.79.1-2.amzn2.0.1
+        7.79.1-7.amzn2.0.1
     libdb:
         5.3.21-24.amzn2.0.3
     libdb-utils:
@@ -274,7 +273,7 @@ local:
     libedit:
         3.0-12.20121213cvs.amzn2.0.2
     libfdisk:
-        2.30.2-2.amzn2.0.7
+        2.30.2-2.amzn2.0.10
     libffi:
         3.0.13-18.amzn2.0.2
     libgcc:
@@ -292,7 +291,7 @@ local:
     libmetalink:
         0.1.3-13.amzn2
     libmount:
-        2.30.2-2.amzn2.0.7
+        2.30.2-2.amzn2.0.10
     libmpc:
         1.0.1-3.amzn2.0.2
     libmpx:
@@ -312,7 +311,7 @@ local:
     libsepol:
         2.5-8.1.amzn2.0.2
     libsmartcols:
-        2.30.2-2.amzn2.0.7
+        2.30.2-2.amzn2.0.10
     libssh2:
         1.4.3-12.amzn2.2.3
     libstdc++:
@@ -326,13 +325,13 @@ local:
     libutempter:
         1.1.6-4.amzn2.0.2
     libuuid:
-        2.30.2-2.amzn2.0.7
+        2.30.2-2.amzn2.0.10
     libverto:
         0.2.5-4.amzn2.0.2
     libxml2:
-        2.9.1-6.amzn2.5.4
+        2.9.1-6.amzn2.5.6
     libxml2-python:
-        2.9.1-6.amzn2.5.4
+        2.9.1-6.amzn2.5.6
     lua:
         5.1.4-15.amzn2.0.2
     lz4:
@@ -340,29 +339,29 @@ local:
     mpfr:
         3.1.1-4.amzn2.0.2
     ncurses:
-        6.0-8.20170212.amzn2.1.3
+        6.0-8.20170212.amzn2.1.4
     ncurses-base:
-        6.0-8.20170212.amzn2.1.3
+        6.0-8.20170212.amzn2.1.4
     ncurses-libs:
-        6.0-8.20170212.amzn2.1.3
+        6.0-8.20170212.amzn2.1.4
     net-tools:
         2.0-0.22.20131004git.amzn2.0.2
     nspr:
-        4.32.0-1.amzn2.0.1
+        4.34.0-3.1.amzn2
     nss:
-        3.67.0-4.amzn2.0.2
+        3.79.0-4.amzn2
     nss-pem:
         1.0.3-5.amzn2
     nss-softokn:
-        3.67.0-3.amzn2.0.1
+        3.79.0-4.amzn2
     nss-softokn-freebl:
-        3.67.0-3.amzn2.0.1
+        3.79.0-4.amzn2
     nss-sysinit:
-        3.67.0-4.amzn2.0.2
+        3.79.0-4.amzn2
     nss-tools:
-        3.67.0-4.amzn2.0.2
+        3.79.0-4.amzn2
     nss-util:
-        3.67.0-1.amzn2.0.1
+        3.79.0-1.amzn2
     openldap:
         2.4.44-23.amzn2.0.4
     openssh:
@@ -372,7 +371,7 @@ local:
     openssh-server:
         7.4p1-22.amzn2.0.1
     openssl-libs:
-        1:1.0.2k-24.amzn2.0.3
+        1:1.0.2k-24.amzn2.0.4
     p11-kit:
         0.23.22-1.amzn2.0.1
     p11-kit-trust:
@@ -382,7 +381,7 @@ local:
     pcre:
         8.32-17.amzn2.0.2
     pcre2:
-        10.23-2.amzn2.0.2
+        10.23-11.amzn2.0.1
     perl:
         4:5.16.3-299.amzn2.0.1
     perl-Carp:
@@ -402,7 +401,7 @@ local:
     perl-Getopt-Long:
         2.40-3.amzn2
     perl-Git:
-        2.32.0-1.amzn2.0.1
+        2.38.1-1.amzn2.0.1
     perl-HTTP-Tiny:
         0.033-3.amzn2
     perl-PathTools:
@@ -480,11 +479,11 @@ local:
     python2-rpm:
         4.11.3-48.amzn2.0.2
     python3:
-        3.7.10-1.amzn2.0.1
+        3.7.15-1.amzn2.0.2
     python3-devel:
-        3.7.10-1.amzn2.0.1
+        3.7.15-1.amzn2.0.2
     python3-libs:
-        3.7.10-1.amzn2.0.1
+        3.7.15-1.amzn2.0.2
     python3-pip:
         20.2.2-1.amzn2.0.3
     python3-rpm-macros:
@@ -520,27 +519,27 @@ local:
     system-rpm-config:
         9.1.0-76.amzn2.0.14
     systemd:
-        219-78.amzn2.0.18
+        219-78.amzn2.0.21
     systemd-libs:
-        219-78.amzn2.0.18
+        219-78.amzn2.0.21
     tcp_wrappers-libs:
         7.6-77.amzn2.0.2
     tzdata:
-        2022a-1.amzn2
+        2022f-1.amzn2.0.1
     ustr:
         1.0.4-16.amzn2.0.3
     util-linux:
-        2.30.2-2.amzn2.0.7
+        2.30.2-2.amzn2.0.10
     vim-data:
-        2:8.2.4857-1.amzn2.0.1
+        2:9.0.828-1.amzn2.0.1
     vim-minimal:
-        2:8.2.4857-1.amzn2.0.1
+        2:9.0.828-1.amzn2.0.1
     which:
         2.20-7.amzn2.0.2
     xz-libs:
         5.2.2-1.amzn2.0.3
     yum:
-        3.4.3-158.amzn2.0.5
+        3.4.3-158.amzn2.0.6
     yum-metadata-parser:
         1.1.4-10.amzn2.0.2
     yum-plugin-ovl:
@@ -552,14 +551,14 @@ local:
     zip:
         3.0-11.amzn2.0.2
     zlib:
-        1.2.7-19.amzn2.0.1
+        1.2.7-19.amzn2.0.2
 # salt-call --local pip.list
 local:
     ----------
     pip:
         20.2.2
     wheel:
-        0.37.1
+        0.38.4
 # salt-call --local locale.list_avail
 local:
     - C

@@ -2,7 +2,7 @@ gent-late-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3005+0na.264d02a
+          Salt: 3006.0+0na.d937173
  
 Dependency Versions:
           cffi: Not Installed
@@ -20,9 +20,9 @@ Dependency Versions:
   mysql-python: Not Installed
      pycparser: Not Installed
       pycrypto: Not Installed
-  pycryptodome: 3.15.0
+  pycryptodome: 3.16.0
         pygit2: Not Installed
-        Python: 3.10.5 (main, Jun 26 2022, 17:22:37) [GCC 11.3.0]
+        Python: 3.10.8 (main, Nov 27 2022, 17:44:24) [GCC 11.3.0]
   python-gnupg: Not Installed
         PyYAML: 6.0
          PyZMQ: 20.0.0
@@ -32,12 +32,12 @@ Dependency Versions:
            ZMQ: 4.3.3
  
 System Versions:
-          dist: gentoo 2.8 
+          dist: gentoo 2.9 
         locale: utf-8
        machine: x86_64
        release: 5.4.109+
         system: Linux
-       version: Gentoo 2.8 
+       version: Gentoo 2.9 
  
 # salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
 local:
@@ -65,7 +65,7 @@ local:
     lsb_distrib_id:
         Gentoo
     lsb_distrib_release:
-        2.8
+        2.9
     os:
         Gentoo
     os_family:
@@ -83,10 +83,10 @@ local:
         2
     osmanufacturer:
     osrelease:
-        2.8
+        2.9
     osrelease_info:
         - 2
-        - 8
+        - 9
     osversion:
     pythonexecutable:
         /usr/bin/python3.10
@@ -99,15 +99,16 @@ local:
     pythonversion:
         - 3
         - 10
-        - 5
+        - 8
         - final
         - 0
     saltpath:
         /usr/lib/python3.10/site-packages/salt
     saltversion:
-        3005+0na.264d02a
+        3006.0+0na.d937173
     saltversioninfo:
-        - 3005
+        - 3006
+        - 0
     systemd:
     virtual:
         container
@@ -167,29 +168,33 @@ local:
     app-admin/perl-cleaner:
         2.30
     app-admin/sudo:
-        1.9.10-r1
+        1.9.12_p1
+    app-alternatives/awk:
+        1
+    app-alternatives/yacc:
+        0
     app-arch/bzip2:
-        1.0.8-r1
+        1.0.8-r3
     app-arch/gzip:
-        1.12
+        1.12-r2
     app-arch/tar:
         1.34
     app-arch/unzip:
-        6.0_p26
+        6.0_p27-r1
     app-arch/xz-utils:
-        5.2.5-r2
+        5.2.8
     app-arch/zstd:
-        1.5.2
+        1.5.2-r3
     app-crypt/gnupg:
-        2.2.35
+        2.2.40
     app-crypt/gpgme:
-        1.17.1-r1
+        1.18.0-r2
     app-crypt/libb2:
         0.98.1-r2
     app-crypt/pinentry:
-        1.2.0
+        1.2.1-r1
     app-editors/nano:
-        6.2
+        6.4
     app-eselect/eselect-iptables:
         20220320
     app-eselect/eselect-lib-bin-symlink:
@@ -199,19 +204,21 @@ local:
     app-misc/c_rehash:
         1.7-r1
     app-misc/ca-certificates:
-        20210119.3.66
+        20211016.3.83
     app-misc/editor-wrapper:
         4-r1
+    app-misc/mime-types:
+        2.1.53
     app-misc/pax-utils:
-        1.3.4
+        1.3.5
     app-portage/elt-patches:
-        20211104
+        20220831
     app-portage/gemato:
         16.2
     app-portage/portage-utils:
-        0.93.3
+        0.94.1
     app-shells/bash:
-        5.1_p16
+        5.1_p16-r2
     app-text/build-docbook-catalog:
         2.3-r1
     app-text/docbook-xml-dtd:
@@ -221,37 +228,39 @@ local:
     app-text/manpager:
         1
     app-text/opensp:
-        1.5.2-r7
+        1.5.2-r9
     app-text/po4a:
-        0.64
+        0.66
     app-text/sgml-common:
         0.6.3-r7
+    app-text/xmlto:
+        0.0.28-r9
     dev-db/sqlite:
-        3.38.5
+        3.39.4
     dev-lang/perl:
-        5.34.1-r3
+        5.34.1-r4
     dev-lang/python:
-        3.10.5
+        3.10.8_p3,3.11.0_p2
     dev-lang/python-exec:
         2.4.9
     dev-lang/python-exec-conf:
         2.4.6
     dev-lang/tcl:
-        8.6.12
+        8.6.12-r1
     dev-libs/expat:
-        2.4.8
+        2.5.0
     dev-libs/gmp:
         6.2.1-r2
     dev-libs/libassuan:
         2.5.5
     dev-libs/libffi:
-        3.4.2-r1
+        3.4.4
     dev-libs/libgcrypt:
-        1.9.4-r1
+        1.10.1-r2
     dev-libs/libgpg-error:
-        1.45
+        1.46-r1
     dev-libs/libksba:
-        1.6.0
+        1.6.2
     dev-libs/libltdl:
         2.4.7
     dev-libs/libpcre:
@@ -261,23 +270,23 @@ local:
     dev-libs/libpipeline:
         1.5.6
     dev-libs/libtasn1:
-        4.18.0
+        4.19.0
     dev-libs/libunistring:
         0.9.10-r1
     dev-libs/libxml2:
-        2.9.14-r1
+        2.10.3-r1
     dev-libs/libxslt:
-        1.1.35
+        1.1.37
     dev-libs/mpc:
         1.2.1
     dev-libs/mpfr:
         4.1.0_p13-r1
     dev-libs/nettle:
-        3.7.3
+        3.8.1
     dev-libs/npth:
         1.6-r1
     dev-libs/openssl:
-        1.1.1o
+        1.1.1q
     dev-libs/popt:
         1.18
     dev-perl/Authen-SASL:
@@ -299,13 +308,13 @@ local:
     dev-perl/Mozilla-CA:
         20999999-r1
     dev-perl/Net-SSLeay:
-        1.900.0
+        1.920.0
     dev-perl/Pod-Parser:
         1.630.0-r1
     dev-perl/SGMLSpm:
         1.1-r2
     dev-perl/TermReadKey:
-        2.380.0
+        2.380.0-r1
     dev-perl/Text-CharWidth:
         0.40.0-r2
     dev-perl/Text-WrapI18N:
@@ -320,96 +329,116 @@ local:
         1.7.1-r2
     dev-python/appdirs:
         1.4.4-r2
+    dev-python/autocommand:
+        2.2.1_p20211118
     dev-python/certifi:
         3021.3.16-r2
     dev-python/charset_normalizer:
-        2.0.12
+        3.0.1
+    dev-python/cython:
+        0.29.32
+    dev-python/ensurepip-pip:
+        22.3.1
+    dev-python/ensurepip-setuptools:
+        65.5.1
+    dev-python/ensurepip-wheels:
+        100
     dev-python/flit_core:
-        3.7.1
+        3.8.0
     dev-python/gpep517:
-        6
+        9
     dev-python/idna:
-        3.3-r1
+        3.4
+    dev-python/inflect:
+        6.0.2
     dev-python/installer:
-        0.5.1
+        0.5.1-r1
     dev-python/jaraco-context:
-        4.1.1-r2
+        4.1.2
     dev-python/jaraco-functools:
-        3.5.0-r2
+        3.5.2
     dev-python/jaraco-text:
-        3.7.0-r2
+        3.10.0
     dev-python/jinja:
         3.1.2
     dev-python/markupsafe:
         2.1.1
     dev-python/more-itertools:
-        8.13.0
+        9.0.0
     dev-python/nspektr:
-        0.3.0
+        0.4.0
     dev-python/ordered-set:
         4.1.0
     dev-python/packaging:
         21.3-r2
     dev-python/pip:
-        22.1.2
+        22.3.1
+    dev-python/pydantic:
+        1.10.2
     dev-python/pyparsing:
         3.0.9
     dev-python/requests:
-        2.27.1-r2
+        2.28.1-r1
     dev-python/setuptools:
-        62.3.3
+        65.5.1
     dev-python/setuptools_scm:
-        6.4.2
+        7.0.5
+    dev-python/six:
+        1.16.0-r1
     dev-python/tomli:
-        2.0.1
+        2.0.1-r1
+    dev-python/typing-extensions:
+        4.3.0
     dev-python/urllib3:
-        1.26.9-r1
+        1.26.12
     dev-python/wheel:
-        0.37.1-r1
+        0.38.4
     dev-util/gperf:
         3.1
     dev-util/gtk-doc-am:
         1.33.2
     dev-util/meson:
-        0.61.4-r2
+        0.63.3
     dev-util/meson-format-array:
         0
     dev-util/ninja:
-        1.10.2-r1
+        1.11.1-r2
     dev-util/pkgconf:
         1.8.0-r1
     dev-util/re2c:
         2.1.1-r1
     dev-vcs/git:
-        2.35.1
+        2.37.4
     mail-mta/nullmailer:
         2.2-r2
+    net-dns/c-ares:
+        1.18.1
     net-dns/libidn2:
-        2.3.2
+        2.3.3
     net-firewall/iptables:
-        1.8.7-r2
+        1.8.8-r5
     net-libs/gnutls:
-        3.7.6
+        3.7.8
     net-libs/libmnl:
         1.0.4
     net-libs/libnsl:
         2.0.0-r1
     net-libs/libtirpc:
-        1.3.2
+        1.3.3
     net-libs/nghttp2:
         1.47.0
     net-misc/curl:
-        7.84.0
+        7.86.0-r3
     net-misc/iputils:
         20211215
     net-misc/netifrc:
         0.7.3
     net-misc/openssh:
-        8.9_p1-r2
+        9.0_p1-r6
     net-misc/rsync:
         3.2.4-r3
     net-misc/wget:
-        1.21.3
+        1.21.3-r1
     perl-core/CPAN:
         2.290.0-r1
     perl-core/Encode:
@@ -421,25 +450,25 @@ local:
     sec-keys/openpgp-keys-gentoo-release:
         20220101
     sys-apps/acl:
-        2.3.1
+        2.3.1-r1
     sys-apps/attr:
-        2.5.1
+        2.5.1-r2
     sys-apps/baselayout:
-        2.8
+        2.9
     sys-apps/coreutils:
-        8.32-r1
+        9.1-r1
     sys-apps/debianutils:
         5.7
     sys-apps/diffutils:
         3.8
     sys-apps/file:
-        5.41
+        5.43-r1
     sys-apps/findutils:
-        4.9.0
+        4.9.0-r1
     sys-apps/gawk:
         5.1.1-r2
     sys-apps/gentoo-functions:
-        0.15
+        0.17
     sys-apps/grep:
         3.7
     sys-apps/groff:
@@ -451,33 +480,31 @@ local:
     sys-apps/iproute2:
         5.15.0
     sys-apps/kbd:
-        2.4.0
+        2.5.1
     sys-apps/kmod:
-        29
+        30
     sys-apps/less:
-        590
+        608-r1
     sys-apps/man-db:
         2.10.2-r1
     sys-apps/man-pages:
-        5.13
-    sys-apps/man-pages-posix:
-        2017a
+        6.01
     sys-apps/net-tools:
         2.10
     sys-apps/openrc:
-        0.44.10
+        0.45.2-r2
     sys-apps/portage:
-        3.0.30-r3
+        3.0.38.1-r4
     sys-apps/sandbox:
         2.29
     sys-apps/sed:
         4.8
     sys-apps/shadow:
-        4.11.1
+        4.12.3
     sys-apps/systemd-utils:
-        250.7
+        251.7
     sys-apps/sysvinit:
-        3.01
+        3.05
     sys-apps/texinfo:
         6.8
     sys-apps/util-linux:
@@ -489,31 +516,33 @@ local:
     sys-auth/passwdqc:
         2.0.2-r1
     sys-devel/autoconf:
-        2.71-r1
+        2.71-r5
     sys-devel/autoconf-archive:
-        2022.02.11
+        2022.09.03
     sys-devel/autoconf-wrapper:
         20220130
     sys-devel/automake:
         1.16.5
     sys-devel/automake-wrapper:
         11-r1
+    sys-devel/bc:
+        1.07.1-r5
     sys-devel/binutils:
-        2.37_p1-r2
+        2.38-r2
     sys-devel/binutils-config:
         5.4.1
     sys-devel/bison:
         3.8.2
     sys-devel/flex:
-        2.6.4-r1
+        2.6.4-r4
     sys-devel/gcc:
         11.3.0
     sys-devel/gcc-config:
-        2.5-r1
+        2.8
     sys-devel/gettext:
-        0.21-r3
+        0.21.1
     sys-devel/gnuconfig:
-        20220508
+        20221007
     sys-devel/libtool:
         2.4.7
     sys-devel/m4:
@@ -523,9 +552,9 @@ local:
     sys-devel/patch:
         2.7.6-r4
     sys-fs/e2fsprogs:
-        1.46.5-r1
+        1.46.5-r3
     sys-fs/udev-init-scripts:
-        34
+        35
     sys-kernel/installkernel-gentoo:
         5
     sys-kernel/linux-headers:
@@ -533,31 +562,29 @@ local:
     sys-libs/gdbm:
         1.23
     sys-libs/glibc:
-        2.34-r13
+        2.36-r5
     sys-libs/libcap:
-        2.64
+        2.66
     sys-libs/libseccomp:
         2.5.4
     sys-libs/libxcrypt:
-        4.4.27
+        4.4.28-r1
     sys-libs/ncurses:
         6.3_p20220423
     sys-libs/pam:
-        1.5.1_p20210622-r1
+        1.5.2-r2
     sys-libs/readline:
-        8.1_p2
+        8.1_p2-r1
     sys-libs/timezone-data:
-        2021e
+        2022f-r1
     sys-libs/zlib:
-        1.2.12-r2
+        1.2.13-r1
     sys-process/procps:
         3.3.17-r1
     sys-process/psmisc:
         23.4-r1
     virtual/acl:
         0-r2
-    virtual/awk:
-        1
     virtual/dev-manager:
         0-r2
     virtual/editor:
@@ -643,60 +670,72 @@ local:
     virtual/pkgconfig:
         2-r1
     virtual/service-manager:
-        1
+        1-r1
     virtual/ssh:
         0-r1
     virtual/tmpfiles:
         0-r3
     virtual/udev:
         217-r5
-    virtual/yacc:
-        0
 # salt-call --local pip.list
 local:
     ----------
+    Cython:
+        0.29.32
     PySocks:
         1.7.1
     appdirs:
         1.4.4
+    autocommand:
+        2.2.1
     certifi-system-store:
         3021.3.16
+    charset-normalizer:
+        3.0.1
     flit_core:
-        3.7.1
+        3.8.0
     gemato:
         16.2
+    inflect:
+        6.0.2
     installer:
         0.5.1
     jaraco.context:
-        4.1.1
+        4.1.2
     jaraco.functools:
-        3.5.0
+        3.5.2
     jaraco.text:
-        3.7.0
+        3.10.0
     meson:
-        0.61.4
+        0.63.3
     more-itertools:
-        8.13.0
+        9.0.0
     nspektr:
-        0.3.0
+        0.4.0
     ordered-set:
         4.1.0
     packaging:
         21.3
     pip:
-        22.1.2
+        22.3.1
     portage:
-        3.0.30
+        3.0.38.1
+    pydantic:
+        1.10.2
     pyparsing:
         3.0.9
     setuptools:
-        62.3.3
+        65.5.1
     setuptools-scm:
-        6.4.2
+        7.0.5
+    six:
+        1.16.0
     tomli:
         2.0.1
+    typing_extensions:
+        4.3.0
     wheel:
-        0.37.1
+        0.38.4
 # salt-call --local locale.list_avail
 local:
     - C

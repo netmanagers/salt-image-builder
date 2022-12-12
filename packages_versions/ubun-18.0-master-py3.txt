@@ -2,7 +2,7 @@ ubun-18.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3005+0na.264d02a
+          Salt: 3006.0+0na.d937173
  
 Dependency Versions:
           cffi: Not Installed
@@ -20,12 +20,12 @@ Dependency Versions:
   mysql-python: Not Installed
      pycparser: Not Installed
       pycrypto: Not Installed
-  pycryptodome: 3.15.0
+  pycryptodome: 3.16.0
         pygit2: Not Installed
-        Python: 3.6.9 (default, Mar 15 2022, 13:55:28)
+        Python: 3.6.9 (default, Nov 25 2022, 14:10:45)
   python-gnupg: Not Installed
         PyYAML: 6.0
-         PyZMQ: 23.2.0
+         PyZMQ: 24.0.1
          smmap: Not Installed
        timelib: Not Installed
        Tornado: 4.5.3
@@ -129,9 +129,10 @@ local:
     saltpath:
         /usr/local/lib/python3.6/dist-packages/salt
     saltversion:
-        3005+0na.264d02a
+        3006.0+0na.d937173
     saltversioninfo:
-        - 3005
+        - 3006
+        - 0
     systemd:
         ----------
         features:
@@ -160,17 +161,17 @@ local:
     bash:
         4.4.18-2ubuntu1.3
     binutils:
-        2.30-21ubuntu1~18.04.7
+        2.30-21ubuntu1~18.04.8
     binutils-common:
-        2.30-21ubuntu1~18.04.7
+        2.30-21ubuntu1~18.04.8
     binutils-x86-64-linux-gnu:
-        2.30-21ubuntu1~18.04.7
+        2.30-21ubuntu1~18.04.8
     bsdutils:
         1:2.31.1-0.4ubuntu3.7
     bzip2:
         1.0.6-8.1ubuntu0.2
     ca-certificates:
-        20211016~18.04.1
+        20211016ubuntu0.18.04.1
     coreutils:
         8.28-1ubuntu1
     cpp:
@@ -178,7 +179,7 @@ local:
     cpp-7:
         7.5.0-3ubuntu1~18.04
     curl:
-        7.58.0-2ubuntu3.19
+        7.58.0-2ubuntu3.21
     dash:
         0.5.8-2.10
     debconf:
@@ -192,11 +193,11 @@ local:
     dirmngr:
         2.2.4-1ubuntu1.6
     distro-info-data:
-        0.37ubuntu0.14
+        0.37ubuntu0.15
     dpkg:
         1.19.0.5ubuntu2.4
     e2fsprogs:
-        1.44.1-1ubuntu1.3
+        1.44.1-1ubuntu1.4
     fdisk:
         2.31.1-0.4ubuntu3.7
     findutils:
@@ -210,9 +211,9 @@ local:
     gcc-8-base:
         8.4.0-1ubuntu1~18.04
     git:
-        1:2.17.1-1ubuntu0.11
+        1:2.17.1-1ubuntu0.13
     git-man:
-        1:2.17.1-1ubuntu0.11
+        1:2.17.1-1ubuntu0.13
     gnupg:
         2.2.4-1ubuntu1.6
     gnupg-l10n:
@@ -254,7 +255,7 @@ local:
     libasan4:
         7.5.0-3ubuntu1~18.04
     libasn1-8-heimdal:
-        7.5.0+dfsg-1
+        7.5.0+dfsg-1ubuntu0.2
     libassuan0:
         2.5.1-2
     libatomic1:
@@ -266,7 +267,7 @@ local:
     libaudit1:
         1:2.8.2-1ubuntu1.1
     libbinutils:
-        2.30-21ubuntu1~18.04.7
+        2.30-21ubuntu1~18.04.8
     libblkid1:
         2.31.1-0.4ubuntu3.7
     libbsd0:
@@ -290,13 +291,13 @@ local:
     libcilkrts5:
         7.5.0-3ubuntu1~18.04
     libcom-err2:
-        1.44.1-1ubuntu1.3
+        1.44.1-1ubuntu1.4
     libcryptsetup12:
         2:2.0.2-1ubuntu1.2
     libcurl3-gnutls:
-        7.58.0-2ubuntu3.19
+        7.58.0-2ubuntu3.21
     libcurl4:
-        7.58.0-2ubuntu3.19
+        7.58.0-2ubuntu3.21
     libdb5.3:
         5.3.28-13.1ubuntu1.1
     libdebconfclient0:
@@ -308,11 +309,11 @@ local:
     liberror-perl:
         0.17025-1
     libexpat1:
-        2.2.5-3ubuntu0.7
+        2.2.5-3ubuntu0.9
     libexpat1-dev:
-        2.2.5-3ubuntu0.7
+        2.2.5-3ubuntu0.9
     libext2fs2:
-        1.44.1-1ubuntu1.3
+        1.44.1-1ubuntu1.4
     libfdisk1:
         2.31.1-0.4ubuntu3.7
     libffi6:
@@ -328,9 +329,9 @@ local:
     libgdbm5:
         1.14.1-6
     libgmp10:
-        2:6.1.2+dfsg-2
+        2:6.1.2+dfsg-2ubuntu0.1
     libgnutls30:
-        3.5.18-1ubuntu1.5
+        3.5.18-1ubuntu1.6
     libgomp1:
         8.4.0-1ubuntu1~18.04
     libgpg-error0:
@@ -338,17 +339,17 @@ local:
     libgssapi-krb5-2:
         1.16-2ubuntu0.2
     libgssapi3-heimdal:
-        7.5.0+dfsg-1
+        7.5.0+dfsg-1ubuntu0.2
     libhcrypto4-heimdal:
-        7.5.0+dfsg-1
+        7.5.0+dfsg-1ubuntu0.2
     libheimbase1-heimdal:
-        7.5.0+dfsg-1
+        7.5.0+dfsg-1ubuntu0.2
     libheimntlm0-heimdal:
-        7.5.0+dfsg-1
+        7.5.0+dfsg-1ubuntu0.2
     libhogweed4:
         3.4.1-0ubuntu0.18.04.1
     libhx509-5-heimdal:
-        7.5.0+dfsg-1
+        7.5.0+dfsg-1ubuntu0.2
     libidn11:
         1.33-2.1ubuntu1.2
     libidn2-0:
@@ -368,13 +369,13 @@ local:
     libkmod2:
         24-1ubuntu3.5
     libkrb5-26-heimdal:
-        7.5.0+dfsg-1
+        7.5.0+dfsg-1ubuntu0.2
     libkrb5-3:
         1.16-2ubuntu0.2
     libkrb5support0:
         1.16-2ubuntu0.2
     libksba8:
-        1.3.5-2
+        1.3.5-2ubuntu0.18.04.1
     libldap-2.4-2:
         2.4.45+dfsg-1ubuntu1.11
     libldap-common:
@@ -418,7 +419,7 @@ local:
     libpcre3:
         2:8.39-9ubuntu0.1
     libperl5.26:
-        5.26.1-6ubuntu0.5
+        5.26.1-6ubuntu0.6
     libprocps6:
         2:3.3.12-3ubuntu1.2
     libpsl5:
@@ -428,19 +429,19 @@ local:
     libpython3-stdlib:
         3.6.7-1~18.04
     libpython3.6:
-        3.6.9-1~18.04ubuntu1.7
+        3.6.9-1~18.04ubuntu1.9
     libpython3.6-dev:
-        3.6.9-1~18.04ubuntu1.7
+        3.6.9-1~18.04ubuntu1.9
     libpython3.6-minimal:
-        3.6.9-1~18.04ubuntu1.7
+        3.6.9-1~18.04ubuntu1.9
     libpython3.6-stdlib:
-        3.6.9-1~18.04ubuntu1.7
+        3.6.9-1~18.04ubuntu1.9
     libquadmath0:
         8.4.0-1ubuntu1~18.04
     libreadline7:
         7.0-3
     libroken18-heimdal:
-        7.5.0+dfsg-1
+        7.5.0+dfsg-1ubuntu0.2
     librtmp1:
         2.4+20151223.gitfa8646d.1-1
     libsasl2-2:
@@ -460,9 +461,9 @@ local:
     libsmartcols1:
         2.31.1-0.4ubuntu3.7
     libsqlite3-0:
-        3.22.0-1ubuntu0.5
+        3.22.0-1ubuntu0.7
     libss2:
-        1.44.1-1ubuntu1.3
+        1.44.1-1ubuntu1.4
     libssl1.0.0:
         1.0.2n-1ubuntu5.10
     libssl1.1:
@@ -470,7 +471,7 @@ local:
     libstdc++6:
         8.4.0-1ubuntu1~18.04
     libsystemd0:
-        237-3ubuntu10.53
+        237-3ubuntu10.56
     libtasn1-6:
         4.13-2
     libtinfo5:
@@ -480,23 +481,23 @@ local:
     libubsan0:
         7.5.0-3ubuntu1~18.04
     libudev1:
-        237-3ubuntu10.53
+        237-3ubuntu10.56
     libunistring2:
         0.9.9-0ubuntu2
     libuuid1:
         2.31.1-0.4ubuntu3.7
     libwind0-heimdal:
-        7.5.0+dfsg-1
+        7.5.0+dfsg-1ubuntu0.2
     libwrap0:
         7.6.q-27
     libzstd1:
         1.3.3+dfsg-2ubuntu1.2
     linux-libc-dev:
-        4.15.0-188.199
+        4.15.0-200.211
     locales:
         2.27-3ubuntu1.6
     login:
-        1:4.5-1ubuntu2.2
+        1:4.5-1ubuntu2.5
     lsb-base:
         9.20170808ubuntu1
     lsb-release:
@@ -522,13 +523,13 @@ local:
     openssl:
         1.1.1-1ubuntu2.1~18.04.20
     passwd:
-        1:4.5-1ubuntu2.2
+        1:4.5-1ubuntu2.5
     perl:
-        5.26.1-6ubuntu0.5
+        5.26.1-6ubuntu0.6
     perl-base:
-        5.26.1-6ubuntu0.5
+        5.26.1-6ubuntu0.6
     perl-modules-5.26:
-        5.26.1-6ubuntu0.5
+        5.26.1-6ubuntu0.6
     pinentry-curses:
         1.1.0-1
     procps:
@@ -556,11 +557,11 @@ local:
     python3-setuptools:
         39.0.1-2
     python3.6:
-        3.6.9-1~18.04ubuntu1.7
+        3.6.9-1~18.04ubuntu1.9
     python3.6-dev:
-        3.6.9-1~18.04ubuntu1.7
+        3.6.9-1~18.04ubuntu1.9
     python3.6-minimal:
-        3.6.9-1~18.04ubuntu1.7
+        3.6.9-1~18.04ubuntu1.9
     readline-common:
         7.0-3
     sed:
@@ -570,9 +571,9 @@ local:
     sudo:
         1.8.21p2-3ubuntu1.4
     systemd:
-        237-3ubuntu10.53
+        237-3ubuntu10.56
     systemd-sysv:
-        237-3ubuntu10.53
+        237-3ubuntu10.56
     sysvinit-utils:
         2.88dsf-59.10ubuntu1
     tar:
@@ -582,13 +583,13 @@ local:
     ucf:
         3.0038
     udev:
-        237-3ubuntu10.53
+        237-3ubuntu10.56
     util-linux:
         2.31.1-0.4ubuntu3.7
     wget:
         1.19.4-1ubuntu2.2
     zlib1g:
-        1:1.2.11.dfsg-0ubuntu2.1
+        1:1.2.11.dfsg-0ubuntu2.2
 # salt-call --local pip.list
 local:
     ----------
@@ -599,39 +600,41 @@ local:
     PyYAML:
         6.0
     certifi:
-        2022.6.15
+        2022.12.7
     charset-normalizer:
         2.0.12
     contextvars:
         2.4
     distro:
-        1.7.0
+        1.8.0
     idna:
-        3.3
+        3.4
     immutables:
-        0.18
+        0.19
+    jmespath:
+        0.10.0
     msgpack:
         1.0.4
     pip:
         9.0.1
     psutil:
-        5.9.1
+        5.9.4
     pycryptodomex:
-        3.15.0
+        3.16.0
     python-apt:
         1.6.5+ubuntu0.7
     pyzmq:
-        23.2.0
+        24.0.1
     requests:
         2.27.1
     salt:
-        3005+0na.264d02a
+        3006.0+0na.d937173
     setuptools:
         39.0.1
     typing-extensions:
         4.1.1
     urllib3:
-        1.26.9
+        1.26.13
     wheel:
         0.37.1
 # salt-call --local locale.list_avail
