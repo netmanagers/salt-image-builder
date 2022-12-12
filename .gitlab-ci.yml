@@ -262,6 +262,8 @@ commitlint:
 
 # yamllint disable rule:commas rule:line-length
 # ALMALINUX
+alma-09.0-nghtly-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'almalinux'            , DV: '9'      , PI: 'yum', SIM: 'onedir', SV: 'nghtly' , SVB: 'nightly', PV: '3', EP: 'glibc-langpack-en openssl-devel procps-ng python3 python3-devel'}}
+alma-09.0-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'almalinux'            , DV: '9'      , PI: 'yum', SIM: 'onedir', SV: '3005.1' , SVB: ''       , PV: '3', EP: 'glibc-langpack-en openssl-devel procps-ng python3 python3-devel'}}
 alma-08.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'almalinux'            , DV: '8'      , PI: 'yum', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: 'curl glibc-langpack-en openssl-devel procps-ng python3 python3-devel python3-pip swig'}}
 alma-08.0-nghtly-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'almalinux'            , DV: '8'      , PI: 'yum', SIM: 'onedir', SV: 'nghtly' , SVB: 'nightly', PV: '3', EP: 'curl glibc-langpack-en openssl-devel procps-ng python3 python3-devel swig'}}
 alma-08.0-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'almalinux'            , DV: '8'      , PI: 'yum', SIM: 'onedir', SV: '3005.1' , SVB: ''       , PV: '3', EP: 'curl glibc-langpack-en openssl-devel procps-ng python3 python3-devel swig'}}
@@ -280,6 +282,8 @@ arch-late-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 arch-late-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'archlinux/archlinux'  , DV: 'latest' , PI: 'pac', SIM: 'stable', SV: '3005.1' , SVB: 'latest' , PV: '3', EP: 'python-jmespath python-psutil'}}
 
 # CENTOS (STREAM)
+cstr-09.0-nghtly-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'quay.io/centos/centos', DV: 'stream9', PI: 'yum', SIM: 'onedir', SV: 'nghtly' , SVB: 'nightly', PV: '3', EP: 'glibc-langpack-en openssl-devel procps-ng python3 python3-devel'}}
+cstr-09.0-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'quay.io/centos/centos', DV: 'stream9', PI: 'yum', SIM: 'onedir', SV: '3005.1' , SVB: ''       , PV: '3', EP: 'glibc-langpack-en openssl-devel procps-ng python3 python3-devel'}}
 cstr-08.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'quay.io/centos/centos', DV: 'stream8', PI: 'yum', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: 'curl glibc-langpack-en openssl-devel procps-ng python3 python3-devel python3-pip swig'}}
 cstr-08.0-nghtly-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'quay.io/centos/centos', DV: 'stream8', PI: 'yum', SIM: 'onedir', SV: 'nghtly' , SVB: 'nightly', PV: '3', EP: 'curl glibc-langpack-en openssl-devel procps-ng python3 python3-devel swig'}}
 cstr-08.0-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'quay.io/centos/centos', DV: 'stream8', PI: 'yum', SIM: 'onedir', SV: '3005.1' , SVB: ''       , PV: '3', EP: 'curl glibc-langpack-en openssl-devel procps-ng python3 python3-devel swig'}}
@@ -348,6 +352,8 @@ opsu-15.3-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 opsu-15.3-3004.0-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'        , DV: '15.3'   , PI: 'zyp', SIM: 'stable', SV: '3004.0' , SVB: 'latest' , PV: '3', EP: ''}}
 
 # ORACLELINUX
+orac-09.0-nghtly-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'oraclelinux'          , DV: '9'      , PI: 'yum', SIM: 'onedir', SV: 'nghtly' , SVB: 'nightly', PV: '3', EP: 'glibc-langpack-en openssl-devel python3 python3-devel'}}
+orac-09.0-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'oraclelinux'          , DV: '9'      , PI: 'yum', SIM: 'onedir', SV: '3005.1' , SVB: ''       , PV: '3', EP: 'glibc-langpack-en openssl-devel python3 python3-devel'}}
 orac-08.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'oraclelinux'          , DV: '8'      , PI: 'yum', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: 'curl glibc-langpack-en openssl-devel python3 python3-devel python3-pip swig'}}
 orac-08.0-nghtly-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'oraclelinux'          , DV: '8'      , PI: 'yum', SIM: 'onedir', SV: 'nghtly' , SVB: 'nightly', PV: '3', EP: 'curl glibc-langpack-en openssl-devel python3 python3-devel swig'}}
 orac-08.0-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'oraclelinux'          , DV: '8'      , PI: 'yum', SIM: 'onedir', SV: '3005.1' , SVB: ''       , PV: '3', EP: 'curl glibc-langpack-en openssl-devel python3 python3-devel swig'}}
@@ -358,6 +364,8 @@ orac-07.0-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 orac-07.0-3004.2-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'oraclelinux'          , DV: '7'      , PI: 'yum', SIM: 'stable', SV: '3004.2' , SVB: ''       , PV: '3', EP: 'gcc-g++ openssl-devel python3 python3-devel python3-pip swig zeromq zeromq-devel'}}
 
 # ROCKYLINUX
+rock-09.0-nghtly-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'rockylinux'           , DV: '9'      , PI: 'yum', SIM: 'onedir', SV: 'nghtly' , SVB: 'nightly', PV: '3', EP: 'findutils glibc-langpack-en openssl-devel procps-ng python3 python3-devel'}}
+rock-09.0-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'rockylinux'           , DV: '9'      , PI: 'yum', SIM: 'onedir', SV: '3005.1' , SVB: ''       , PV: '3', EP: 'findutils glibc-langpack-en openssl-devel procps-ng python3 python3-devel'}}
 rock-08.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'rockylinux'           , DV: '8'      , PI: 'yum', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: 'curl findutils glibc-langpack-en openssl-devel procps-ng python3 python3-devel python3-pip swig'}}
 rock-08.0-nghtly-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'rockylinux'           , DV: '8'      , PI: 'yum', SIM: 'onedir', SV: 'nghtly' , SVB: 'nightly', PV: '3', EP: 'curl findutils glibc-langpack-en openssl-devel procps-ng python3 python3-devel swig'}}
 rock-08.0-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'rockylinux'           , DV: '8'      , PI: 'yum', SIM: 'onedir', SV: '3005.1' , SVB: ''       , PV: '3', EP: 'curl findutils glibc-langpack-en openssl-devel procps-ng python3 python3-devel swig'}}
