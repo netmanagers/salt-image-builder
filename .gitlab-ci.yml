@@ -322,10 +322,11 @@ fedo-35.0-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 
 # GENTOO
 # Available versions: https://packages.gentoo.org/packages/app-admin/salt
+# Disabled `3005.1` for the time being since it's broken and fails, even though it installs successfully (see commit message for error example)
 gent-late-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'latest' , PI: 'emg', SIM: 'git'   , SV: 'master' , SVB: ''      , PV: '3', EP: ''}}
-gent-late-3005.1-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'latest' , PI: 'emg', SIM: 'stable', SV: '3005.1' , SVB: ''      , PV: '3', EP: ''}}
+# gent-late-3005.1-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'latest' , PI: 'emg', SIM: 'stable', SV: '3005.1' , SVB: ''      , PV: '3', EP: ''}}
 gent-sysd-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'systemd', PI: 'emg', SIM: 'git'   , SV: 'master' , SVB: ''      , PV: '3', EP: ''}}
-gent-sysd-3005.1-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'systemd', PI: 'emg', SIM: 'stable', SV: '3005.1' , SVB: ''      , PV: '3', EP: ''}}
+# gent-sysd-3005.1-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'systemd', PI: 'emg', SIM: 'stable', SV: '3005.1' , SVB: ''      , PV: '3', EP: ''}}
 
 # OPENSUSE
 # For openSUSE, the bootstrap script only allows `latest` to be built using `stable`
