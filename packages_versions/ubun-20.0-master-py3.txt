@@ -25,11 +25,11 @@ Dependency Versions:
         Python: 3.8.10 (default, Nov 14 2022, 12:59:47)
   python-gnupg: Not Installed
         PyYAML: 6.0
-         PyZMQ: 24.0.1
+         PyZMQ: 20.0.0
          smmap: Not Installed
        timelib: Not Installed
        Tornado: 4.5.3
-           ZMQ: 4.3.4
+           ZMQ: 4.3.3
  
 System Versions:
           dist: ubuntu 20.04 Focal Fossa
@@ -121,7 +121,7 @@ local:
     virtual_subtype:
         Docker
     zmqversion:
-        4.3.4
+        4.3.3
 # salt-call --local pkg.list_pkgs
 local:
     ----------
@@ -615,7 +615,7 @@ local:
     python-apt:
         2.0.0+ubuntu0.20.4.8
     pyzmq:
-        24.0.1
+        20.0.0
     requests:
         2.28.1
     salt:

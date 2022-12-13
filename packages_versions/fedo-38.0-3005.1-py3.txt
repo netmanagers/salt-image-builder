@@ -409,8 +409,6 @@ local:
         0.3.2-4.fc37
     libxcrypt:
         4.4.33-3.fc38
-    libxcrypt-compat:
-        4.4.33-3.fc38
     libxml2:
         2.10.3-2.fc38
     libyaml:
@@ -574,7 +572,7 @@ local:
     procps-ng:
         3.3.17-8.fc38
     publicsuffix-list-dafsa:
-        20210518-5.fc37
+        20221208-1.fc38
     python-pip-wheel:
         22.3.1-1.fc38
     python-setuptools-wheel:

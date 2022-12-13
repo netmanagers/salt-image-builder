@@ -233,7 +233,7 @@ local:
     info:
         5.1-5.amzn2
     kernel-headers:
-        4.14.299-223.520.amzn2
+        4.14.301-224.520.amzn2
     keyutils-libs:
         1.5.8-3.amzn2.0.2
     kmod:

@@ -236,8 +236,6 @@ local:
         2.34-49.fc35
     glibc-devel:
         2.34-49.fc35
-    glibc-gconv-extra:
-        2.34-49.fc35
     glibc-headers-x86:
         2.34-49.fc35
     glibc-langpack-en:
@@ -432,8 +430,6 @@ local:
         1:4.3-6.fc35
     memstrack:
         0.2.4-1.fc35
-    mkpasswd:
-        5.5.13-1.fc35
     mpdecimal:
         2.5.1-2.fc35
     mpfr:
@@ -590,8 +586,6 @@ local:
         21.2.3-4.fc35
     python-setuptools-wheel:
         57.4.0-1.fc35
-    python-unversioned-command:
-        3.10.8-3.fc35
     python3:
         3.10.8-3.fc35
     python3-devel:
@@ -649,7 +643,7 @@ local:
     tpm2-tss:
         3.1.0-3.fc35
     tzdata:
-        2022f-1.fc35
+        2022g-1.fc35
     util-linux:
         2.37.4-1.fc35
     util-linux-core:
@@ -660,8 +654,6 @@ local:
         2:9.0.915-1.fc35
     which:
         2.21-27.fc35
-    whois-nls:
-        5.5.13-1.fc35
     xz:
         5.2.5-9.fc35
     xz-libs:

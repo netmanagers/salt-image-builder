@@ -25,7 +25,7 @@ Dependency Versions:
         Python: 3.9.2 (default, Feb 28 2021, 17:03:44)
   python-gnupg: Not Installed
         PyYAML: 6.0
-         PyZMQ: 24.0.1
+         PyZMQ: 22.0.3
          smmap: Not Installed
        timelib: Not Installed
        Tornado: 4.5.3

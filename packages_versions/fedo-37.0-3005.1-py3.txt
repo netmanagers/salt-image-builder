@@ -405,8 +405,6 @@ local:
         0.3.2-4.fc37
     libxcrypt:
         4.4.33-3.fc37
-    libxcrypt-compat:
-        4.4.33-3.fc37
     libxml2:
         2.10.3-2.fc37
     libyaml:
@@ -684,7 +682,7 @@ local:
     tpm2-tss:
         3.2.0-3.fc37
     tzdata:
-        2022f-1.fc37
+        2022g-1.fc37
     util-linux:
         2.38.1-1.fc37
     util-linux-core:

@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.79.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.78.0...v1.79.0) (2022-12-13)
+
+
+### Features
+
+* **gentoo:** add pkg workaround for `3005.1` until bug fixed [skip ci] ([e40c673](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/e40c6733f8c01414e9bc62dc3fddf8f466f53bea)), closes [/bugs.gentoo.org/875389#c5](https://gitlab.com//bugs.gentoo.org/875389/issues/c5)
+
 # [1.78.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.77.0...v1.78.0) (2022-12-12)
 
 
