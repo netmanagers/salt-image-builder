@@ -254,7 +254,7 @@ local:
     kernel-container:
         3.10.0-0.0.0.2.el7
     kernel-headers:
-        3.10.0-1160.80.1.0.1.el7
+        3.10.0-1160.81.1.0.1.el7
     keyutils-libs:
         1.5.8-3.el7
     keyutils-libs-devel:
@@ -310,7 +310,7 @@ local:
     libgpg-error:
         1.12-3.el7
     libgudev1:
-        219-78.0.9.el7_9.7
+        219-78.0.10.el7_9.7
     libidn:
         1.28-4.el7
     libkadm5:
@@ -582,7 +582,7 @@ local:
     rpm-python:
         4.11.3-48.el7_9
     rsync:
-        3.1.2-11.el7_9
+        3.1.2-12.el7_9
     rsyslog:
         8.24.0-57.0.1.el7_9.3
     sed:
@@ -602,9 +602,9 @@ local:
     swig:
         2.0.10-5.el7
     systemd:
-        219-78.0.9.el7_9.7
+        219-78.0.10.el7_9.7
     systemd-libs:
-        219-78.0.9.el7_9.7
+        219-78.0.10.el7_9.7
     sysvinit-tools:
         2.88-14.dsf.el7
     tar:

@@ -367,7 +367,7 @@ local:
     libsmartcols:
         2.32.1-38.el8
     libsolv:
-        0.7.20-3.el8
+        0.7.20-4.el8_7
     libstdc++:
         8.5.0-15.el8
     libtasn1:

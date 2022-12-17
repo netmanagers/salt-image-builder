@@ -211,9 +211,9 @@ local:
     gcc-8-base:
         8.3.0-6
     git:
-        1:2.20.1-2+deb10u4
+        1:2.20.1-2+deb10u6
     git-man:
-        1:2.20.1-2+deb10u4
+        1:2.20.1-2+deb10u6
     gnupg:
         2.2.12-1+deb10u2
     gnupg-l10n:

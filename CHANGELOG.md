@@ -1,5 +1,13 @@
 # Changelog
 
+# [1.80.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.79.0...v1.80.0) (2022-12-17)
+
+
+### Features
+
+* **gitlab-ci:** deprecate `fedora-35` (EOL) [skip ci] ([a839448](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/a839448c1b9f7001e85a9859c1efc520a7fe891f))
+* **gitlab-ci:** deprecate `opensuse-15.3` (EOL) [skip ci] ([5d6c073](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/5d6c0739d4e049b214fefa782dd1080e14345bbd))
+
 # [1.79.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.78.0...v1.79.0) (2022-12-13)
 
 

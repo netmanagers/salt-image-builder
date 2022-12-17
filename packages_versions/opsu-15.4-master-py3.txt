@@ -25,11 +25,11 @@ Dependency Versions:
         Python: 3.6.15 (default, Sep 23 2021, 15:41:43) [GCC]
   python-gnupg: Not Installed
         PyYAML: 6.0
-         PyZMQ: 20.0.0
+         PyZMQ: 24.0.1
          smmap: Not Installed
        timelib: Not Installed
        Tornado: 4.5.3
-           ZMQ: 4.3.3
+           ZMQ: 4.3.4
  
 System Versions:
           dist: opensuse 15.4 
@@ -122,7 +122,7 @@ local:
     virtual_subtype:
         Docker
     zmqversion:
-        4.3.3
+        4.3.4
 # salt-call --local pkg.list_pkgs
 local:
     ----------
@@ -469,15 +469,15 @@ local:
     openSUSE-release-appliance-docker:
         15.4-lp154.166.1
     openssh:
-        8.4p1-150300.3.12.2
+        8.4p1-150300.3.15.4
     openssh-clients:
-        8.4p1-150300.3.12.2
+        8.4p1-150300.3.15.4
     openssh-common:
-        8.4p1-150300.3.12.2
+        8.4p1-150300.3.15.4
     openssh-fips:
-        8.4p1-150300.3.12.2
+        8.4p1-150300.3.15.4
     openssh-server:
-        8.4p1-150300.3.12.2
+        8.4p1-150300.3.15.4
     openssl-1_1:
         1.1.1l-150400.7.16.1
     p11-kit:
@@ -569,7 +569,7 @@ local:
     shadow:
         4.8.1-150400.8.57
     sudo:
-        1.9.9-150400.4.6.1
+        1.9.9-150400.4.9.1
     suse-module-tools:
         15.4.12-150400.1.4
     system-group-hardware:
@@ -666,7 +666,7 @@ local:
     pyparsing:
         2.4.7
     pyzmq:
-        20.0.0
+        24.0.1
     requests:
         2.27.1
     salt:

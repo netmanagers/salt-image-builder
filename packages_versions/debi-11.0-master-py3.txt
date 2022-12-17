@@ -25,11 +25,11 @@ Dependency Versions:
         Python: 3.9.2 (default, Feb 28 2021, 17:03:44)
   python-gnupg: Not Installed
         PyYAML: 6.0
-         PyZMQ: 22.0.3
+         PyZMQ: 20.0.0
          smmap: Not Installed
        timelib: Not Installed
        Tornado: 4.5.3
-           ZMQ: 4.3.4
+           ZMQ: 4.3.3
  
 System Versions:
           dist: debian 11 bullseye
@@ -120,7 +120,7 @@ local:
     virtual_subtype:
         Docker
     zmqversion:
-        4.3.4
+        4.3.3
 # salt-call --local pkg.list_pkgs
 local:
     ----------
@@ -131,7 +131,7 @@ local:
     apt-transport-https:
         2.2.4
     base-files:
-        11.1+deb11u5
+        11.1+deb11u6
     base-passwd:
         3.5.51
     bash:
@@ -167,7 +167,7 @@ local:
     dirmngr:
         2.2.27-2+deb11u2
     distro-info-data:
-        0.51+deb11u2
+        0.51+deb11u3
     dmsetup:
         2:1.02.175-2.1
     dpkg:
@@ -453,7 +453,7 @@ local:
     libsystemd0:
         247.3-7+deb11u1
     libtasn1-6:
-        4.16.0-2
+        4.16.0-2+deb11u1
     libtinfo6:
         6.2+20201114-2
     libtirpc-common:
@@ -481,7 +481,7 @@ local:
     libzstd1:
         1.4.8+dfsg-2.1
     linux-libc-dev:
-        5.10.149-2
+        5.10.158-2
     locales:
         2.31-13+deb11u5
     login:

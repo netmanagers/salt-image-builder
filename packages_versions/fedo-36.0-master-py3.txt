@@ -409,9 +409,9 @@ local:
     libverto:
         0.3.2-3.fc36
     libxcrypt:
-        4.4.33-1.fc36
+        4.4.33-3.fc36
     libxcrypt-devel:
-        4.4.33-1.fc36
+        4.4.33-3.fc36
     libxml2:
         2.10.3-2.fc36
     libyaml:

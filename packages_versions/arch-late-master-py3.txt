@@ -125,7 +125,7 @@ local:
     acl:
         2.3.1-2
     archlinux-keyring:
-        20221123-1
+        20221213-1
     argon2:
         20190702-4
     attr:
@@ -156,8 +156,8 @@ local:
         7.86.0-4
     cython:
         0.29.32-2
-    db:
-        5.3.28-5
+    db5.3:
+        5.3.28-2
     dbus:
         1.14.4-1
     device-mapper:
@@ -209,7 +209,7 @@ local:
     icu:
         72.1-2
     iproute2:
-        6.0.0-1
+        6.1.0-3
     iptables:
         1:1.8.8-2
     iputils:
@@ -263,7 +263,7 @@ local:
     libmnl:
         1.0.5-1
     libmpc:
-        1.3.0-1
+        1.3.0-2
     libnetfilter_conntrack:
         1.0.9-1
     libnfnetlink:
@@ -341,7 +341,7 @@ local:
     pcre2:
         10.40-3
     perl:
-        5.36.0-1
+        5.36.0-3
     perl-error:
         0.17029-4
     perl-mailtools:
@@ -355,7 +355,7 @@ local:
     procps-ng:
         3.3.17-1
     psmisc:
-        23.5-1
+        23.6-1
     python:
         3.10.8-3
     python-appdirs:
@@ -433,7 +433,7 @@ local:
     util-linux-libs:
         2.38.1-1
     xz:
-        5.2.9-1
+        5.4.0-1
     zlib:
         1:1.2.13-2
     zstd:
