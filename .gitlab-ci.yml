@@ -311,7 +311,6 @@ debi-10.0-3004.2-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 # * Fedora 38: `3005.X`
 # * Fedora 37: `3005.X`
 # * Fedora 36: `3005.X`
-# * Fedora 35: `3005.X`
 # Use for both accordingly in order to test against these latest available packages
 # Progress for new releases is visible here: https://bodhi.fedoraproject.org/updates/?search=salt
 # Git-based installs aren't currently working on Fedora 37+, so commented out below
@@ -321,8 +320,6 @@ fedo-38.0-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 fedo-37.0-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'               , DV: '37'     , PI: 'dnf', SIM: 'stable', SV: '3005.1' , SVB: 'latest' , PV: '3', EP: 'python-setuptools'}}
 fedo-36.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'               , DV: '36'     , PI: 'dnf', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: ''}}
 fedo-36.0-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'               , DV: '36'     , PI: 'dnf', SIM: 'stable', SV: '3005.1' , SVB: 'latest' , PV: '3', EP: 'python-setuptools'}}
-fedo-35.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'               , DV: '35'     , PI: 'dnf', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: ''}}
-fedo-35.0-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'               , DV: '35'     , PI: 'dnf', SIM: 'stable', SV: '3005.1' , SVB: 'latest' , PV: '3', EP: ''}}
 
 # GENTOO
 # Available versions: https://packages.gentoo.org/packages/app-admin/salt
@@ -347,9 +344,6 @@ opsu-tmbl-3004.0-py3: {extends: '.build_image_failure_permitted', variables: {DN
 opsu-15.4-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'        , DV: '15.4'   , PI: 'zyp', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: ''}}
 # opsu-15.4-3004.2-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'        , DV: '15.4'   , PI: 'zyp', SIM: 'stable', SV: '3004.2' , SVB: 'latest' , PV: '3', EP: ''}}
 opsu-15.4-3004.0-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'        , DV: '15.4'   , PI: 'zyp', SIM: 'stable', SV: '3004.0' , SVB: 'latest' , PV: '3', EP: ''}}
-opsu-15.3-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'        , DV: '15.3'   , PI: 'zyp', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: ''}}
-# opsu-15.3-3004.2-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'        , DV: '15.3'   , PI: 'zyp', SIM: 'stable', SV: '3004.2' , SVB: 'latest' , PV: '3', EP: ''}}
-opsu-15.3-3004.0-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'        , DV: '15.3'   , PI: 'zyp', SIM: 'stable', SV: '3004.0' , SVB: 'latest' , PV: '3', EP: ''}}
 
 # ORACLELINUX
 orac-09.0-nghtly-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'oraclelinux'          , DV: '9'      , PI: 'yum', SIM: 'onedir', SV: 'nghtly' , SVB: 'nightly', PV: '3', EP: 'glibc-langpack-en openssl-devel python3 python3-devel'}}
