@@ -161,16 +161,19 @@ commitlint:
           export SRU="-g https://github.com/myii/salt.git"
         fi
     - >
-      export CMD_DOCKER_BUILD="${CMD_DOCKER_BUILD}
-          --file Dockerfile.${PI}
-          --tag ${TAG}
-          --build-arg DISTRO_NAME=${DN}
-          --build-arg DISTRO_VERSION=${DV}
-          --build-arg SALT_INSTALL_METHOD=${SIM}
-          --build-arg SALT_VERSION=${SVB}
-          --build-arg PYTHON_VERSION=${PV}
-          --build-arg EXTRA_PACKAGES=\"${EP}\"
-          --build-arg SALT_REPO_URL=${SRU}"
+      export CMD_DOCKER_BUILD=$(cat <<EOF
+      ${CMD_DOCKER_BUILD} \
+         --file "Dockerfile.${PI}" \
+         --tag "${TAG}" \
+         --build-arg DISTRO_NAME="${DN}" \
+         --build-arg DISTRO_VERSION="${DV}" \
+         --build-arg SALT_INSTALL_METHOD="${SIM}" \
+         --build-arg SALT_VERSION="${SVB}" \
+         --build-arg PYTHON_VERSION="${PV}" \
+         --build-arg EXTRA_PACKAGES="${EP}" \
+         --build-arg SALT_REPO_URL="${SRU}"
+      EOF
+      )
     # Build the image
     - |
       echo -e "\e[0Ksection_start:$(date +%s):docker-image-build-run[collapsed=true]
