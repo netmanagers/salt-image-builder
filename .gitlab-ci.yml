@@ -169,7 +169,7 @@ commitlint:
           --build-arg SALT_INSTALL_METHOD=${SIM}
           --build-arg SALT_VERSION=${SVB}
           --build-arg PYTHON_VERSION=${PV}
-          --build-arg EXTRA_PACKAGES='${EP}'
+          --build-arg EXTRA_PACKAGES=\"${EP}\"
           --build-arg SALT_REPO_URL=${SRU}"
     # Build the image
     - |
