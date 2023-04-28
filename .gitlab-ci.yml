@@ -160,7 +160,7 @@ commitlint:
         if [ "${SV}" = "master" ]; then
           export SRU="-g https://github.com/myii/salt.git"
         fi
-    - >
+    - |
       export CMD_DOCKER_BUILD=$(cat <<EOF
       ${CMD_DOCKER_BUILD} \
          --file "Dockerfile.${PI}" \
