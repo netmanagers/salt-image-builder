@@ -160,17 +160,23 @@ commitlint:
         if [ "${SV}" = "master" ]; then
           export SRU="-g https://github.com/myii/salt.git"
         fi
+    - >-
+      export CMD_DOCKER_BUILD="${CMD_DOCKER_BUILD}
+          --file Dockerfile.${PI}
+          --tag ${TAG}
+          --build-arg DISTRO_NAME=${DN}
+          --build-arg DISTRO_VERSION=${DV}
+          --build-arg SALT_INSTALL_METHOD=${SIM}
+          --build-arg SALT_VERSION=${SVB}
+          --build-arg PYTHON_VERSION=${PV}
+          --build-arg EXTRA_PACKAGES=${EP}
+          --build-arg SALT_REPO_URL=${SRU}"
     # Build the image
-    - '${CMD_DOCKER_BUILD}
-         --file "Dockerfile.${PI}"
-         --tag "${TAG}"
-         --build-arg DISTRO_NAME="${DN}"
-         --build-arg DISTRO_VERSION="${DV}"
-         --build-arg SALT_INSTALL_METHOD="${SIM}"
-         --build-arg SALT_VERSION="${SVB}"
-         --build-arg PYTHON_VERSION="${PV}"
-         --build-arg EXTRA_PACKAGES="${EP}"
-         --build-arg SALT_REPO_URL="${SRU}"'
+    - |
+      echo -e "\e[0Ksection_start:$(date +%s):docker-image-build-run[collapsed=true]
+          \r\e[0KBuild docker image using: ${CMD_DOCKER_BUILD}"
+      ${CMD_DOCKER_BUILD}
+      echo -e "\e[0Ksection_end:$(date +%s):docker-image-build-run\r\e[0K"
     # Run the test container
     - 'export TESTINFRA_CONTAINER=testinfra-${TAG}-${PI}-${PV}-${SIM}-${SV}'
     - 'docker run
