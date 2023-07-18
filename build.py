@@ -29,7 +29,6 @@ print(builds)
 for job_key, job_data in builds.items():
     # # Extra packages lines require some extra processing
     print(job_data)
-    EP = " ".join(job_data["variables"]["EP"])
 
     DN = job_data["variables"]["DN"]
     DV = job_data["variables"]["DV"]
@@ -39,7 +38,7 @@ for job_key, job_data in builds.items():
     SV = job_data["variables"]["SV"]
     SVB = job_data["variables"]["SVB"]
     # Extra packages lines require some extra processing
-    EP = " ".join(job_data["variables"]["EP"])
+    EP = job_data["variables"]["EP"]
 
     build_script = (
         "/tmp/salt-docker-builder-script-"
@@ -65,6 +64,7 @@ for job_key, job_data in builds.items():
         script.write('export EP="' + EP.replace('"', "") + '"\n')
         script.write('export PI="' + PI + '"\n')
         script.write('export SVB="' + SVB + '"\n')
+        script.write('export DOCKER_DEFAULT_PLATFORM=linux/amd64\n')
 
         for var_name, var_val in gitlab_ci_yaml[".build_image_failure_forbidden"][
             "variables"
@@ -78,6 +78,8 @@ for job_key, job_data in builds.items():
 
         for install_line in gitlab_ci_yaml[".build_image_failure_forbidden"]["script"]:
             script.write(install_line + "\n")
+        
+        script.close()
 
     os.chmod(build_script, 0o755)
     subprocess.run(build_script)
