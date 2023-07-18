@@ -4,7 +4,7 @@
 usage: %prog
 Build different docker images with salt-minion pre-installed to ease testing
 
-This script allows you to build locally, pulling the images matrix from the .travis.yml file.
+This script allows you to build locally, pulling the images matrix from the .gitlab-ci.yml file.
 
 Check that file for details.
 """
@@ -12,21 +12,34 @@ import yaml
 import os
 import subprocess
 
-travis_file = open(".travis.yml", "r")
+gitlab_ci_file = open(".gitlab-ci.yml", "r")
 # travis_yaml = yaml.load(travis_file, Loader=yaml.FullLoader)
-travis_yaml = yaml.load(travis_file)
+gitlab_ci_yaml = yaml.load(gitlab_ci_file, Loader=yaml.FullLoader)
 
-for job_line in travis_yaml["env"]["jobs"]:
-    DN, DV, PI, SIM, SV, PV, *EP = job_line.split()
+builds = {}
 
-    DN = DN.split("=")[1]
-    DV = DV.split("=")[1]
-    PI = PI.split("=")[1]
-    PV = PV.split("=")[1]
-    SIM = SIM.split("=")[1]
-    SV = SV.split("=")[1]
+for job_key, job_data in gitlab_ci_yaml.items():
+    # remove anything without an "extends"
+    if "extends" in job_data:
+        if "variables" in job_data and "EP" in job_data["variables"]:
+            builds[job_key] = job_data
+
+print(builds)
+
+for job_key, job_data in builds.items():
+    # # Extra packages lines require some extra processing
+    print(job_data)
+    EP = " ".join(job_data["variables"]["EP"])
+
+    DN = job_data["variables"]["DN"]
+    DV = job_data["variables"]["DV"]
+    PI = job_data["variables"]["PI"]
+    PV = job_data["variables"]["PV"]
+    SIM = job_data["variables"]["SIM"]
+    SV = job_data["variables"]["SV"]
+    SVB = job_data["variables"]["SVB"]
     # Extra packages lines require some extra processing
-    EP = " ".join(EP).split("=")[1]
+    EP = " ".join(job_data["variables"]["EP"])
 
     build_script = (
         "/tmp/salt-docker-builder-script-"
@@ -41,6 +54,7 @@ for job_line in travis_yaml["env"]["jobs"]:
         + "-"
         + SV
     )
+
     with open(build_script, "w") as script:
         script.write("#!/bin/bash\n")
         script.write('export DN="' + DN + '"\n')
@@ -50,12 +64,19 @@ for job_line in travis_yaml["env"]["jobs"]:
         script.write('export PV="' + PV + '"\n')
         script.write('export EP="' + EP.replace('"', "") + '"\n')
         script.write('export PI="' + PI + '"\n')
+        script.write('export SVB="' + SVB + '"\n')
 
-        for install_line in travis_yaml["before_install"]:
+        for var_name, var_val in gitlab_ci_yaml[".build_image_failure_forbidden"][
+            "variables"
+        ].items():
+            script.write("export " + var_name + '="' + var_val + '"\n')
+
+        for install_line in gitlab_ci_yaml[".build_image_failure_forbidden"][
+            "before_script"
+        ]:
             script.write(install_line + "\n")
-        for install_line in travis_yaml["install"]:
-            script.write(install_line + "\n")
-        for install_line in travis_yaml["script"]:
+
+        for install_line in gitlab_ci_yaml[".build_image_failure_forbidden"]["script"]:
             script.write(install_line + "\n")
 
     os.chmod(build_script, 0o755)
