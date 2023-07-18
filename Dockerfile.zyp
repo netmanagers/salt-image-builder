@@ -16,7 +16,7 @@ ARG EXTRA_PACKAGES=""
 # These are now expected by the `ssf` customised `kitchen-docker` being used:
 # - https://gitlab.com/saltstack-formulas/infrastructure/kitchen-docker/-/compare/master...ssf
 ARG KITCHEN_DOCKER_PACKAGES="curl openssh sudo which"
-ARG PKGS="${KITCHEN_DOCKER_PACKAGES} git glibc-locale net-tools net-tools-deprecated python-xml python3-pip systemd udev ${EXTRA_PACKAGES}"
+ARG PKGS="${KITCHEN_DOCKER_PACKAGES} git glibc-locale net-tools net-tools-deprecated python3-pip systemd udev ${EXTRA_PACKAGES}"
 ARG SALT_REPO_URL=""
 
 SHELL ["/bin/bash", "-x", "-o", "pipefail", "-c"]
