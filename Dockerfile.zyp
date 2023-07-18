@@ -35,7 +35,7 @@ RUN zypper refresh \
     # https://github.com/saltstack/salt-bootstrap/blob/4310738bc4cf3b89b2873c0d66f71cbf0888edff/bootstrap-salt.sh#L323-L325
  && curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
     sed -e '/^\s\+echowarn "You have 10 seconds to cancel and stop the bootstrap process..."/,+2d' | \
-    sh -s -- ${SALT_REPO_URL} -XUdfPwD -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION \
+    sh -s -- ${SALT_REPO_URL} -XUdfPD -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION \
     # NOTE: This needs to be done after running the bootstrap, in case `openSUSE-release` is updated during that process,
     #       which results in `/etc/os-release` being updated again; this is a particular problem if the Tumbleweed
     #       Docker Hub image hasn't been updated for a few days
