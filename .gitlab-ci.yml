@@ -330,14 +330,10 @@ gent-sysd-3005.1-py3: {extends: '.build_image_failure_permitted', variables: {DN
 
 # OPENSUSE
 # For openSUSE, the bootstrap script only allows `latest` to be built using `stable`
-# Now using the `-w` switch with the bootstrap script in order to build using the packages available in the downstream, official openSUSE repo, which is kept up-to-date.  Compare:
-# * Downstream: https://download.opensuse.org/repositories/systemsmanagement:/saltstack/
-# * Upstream:   http://repo.saltstack.com/opensuse/
 # Use for both Leap and Tumbleweed in order to test against these latest available packages
-# Installing `gzip` in Tumbleweed to avoid strange packaging conflicts involving `busybox-gzip` instead, see:
-# * https://github.com/saltstack-formulas/libvirt-formula/pull/83#issuecomment-767748061
 # Note: Permitting failure on Tumbleweed until https://bugzilla.opensuse.org/show_bug.cgi?id=1190670 is resolved (similar situation to Fedora 35+)
-opsu-tmbl-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'opensuse/tumbleweed'  , DV: 'latest' , PI: 'zyp', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: 'gzip'}}
+opsu-tmbl-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'opensuse/tumbleweed'  , DV: 'latest' , PI: 'zyp', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: ''}}
+opsu-15.5-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'        , DV: '15.5'   , PI: 'zyp', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: ''}}
 opsu-15.4-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'        , DV: '15.4'   , PI: 'zyp', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: ''}}
 
 # ORACLELINUX
