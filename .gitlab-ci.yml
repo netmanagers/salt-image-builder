@@ -332,9 +332,9 @@ gent-sysd-3005.1-py3: {extends: '.build_image_failure_permitted', variables: {DN
 # For openSUSE, the bootstrap script only allows `latest` to be built using `stable`
 # Use for both Leap and Tumbleweed in order to test against these latest available packages
 # Note: Permitting failure on Tumbleweed until https://bugzilla.opensuse.org/show_bug.cgi?id=1190670 is resolved (similar situation to Fedora 35+)
-opsu-tmbl-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'opensuse/tumbleweed'  , DV: 'latest' , PI: 'zyp', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: ''}}
-opsu-15.5-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'        , DV: '15.5'   , PI: 'zyp', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '310', EP: ''}}
-opsu-15.4-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'        , DV: '15.4'   , PI: 'zyp', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '310', EP: ''}}
+opsu-tmbl-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'opensuse/tumbleweed'  , DV: 'latest' , PI: 'zyp', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: 'python3-pip'}}
+opsu-15.5-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'        , DV: '15.5'   , PI: 'zyp', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3.11', EP: 'python311-pip'}}
+opsu-15.4-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'        , DV: '15.4'   , PI: 'zyp', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3.10', EP: 'python310-pip'}}
 
 # ORACLELINUX
 orac-09.0-nghtly-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'oraclelinux'          , DV: '9'      , PI: 'yum', SIM: 'onedir', SV: 'nghtly' , SVB: 'nightly', PV: '3', EP: 'glibc-langpack-en openssl-devel python3 python3-devel'}}
