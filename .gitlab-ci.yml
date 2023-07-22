@@ -79,7 +79,7 @@ commitlint:
   script:
     # Add `upstream` remote to get access to `upstream/master`
     - 'git remote add upstream
-       https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder.git'
+       https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder.git || true'
     - 'git fetch --all'
     # Run `commitlint`
     - 'commitlint --from "$(git merge-base upstream/master HEAD)"
