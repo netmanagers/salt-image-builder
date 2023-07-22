@@ -149,18 +149,9 @@ commitlint:
         if [ "${SVB}" = "" ]; then
           export SVB=${SV}
         fi
-    # Originally, this was only supposed to be a temporary workaround:
-    # > Use temporary workaround for avoiding `master` builds installing `3005`
-    # > Use a forked Salt repo to pin to the commit before the version number
-    #   increment takes place (include the `-g` switch required by `salt-bootstrap`)
-    # However, using a separate fork gives a faster resolution in case of
-    # regressions introduced upstream, which has happened many times now
-    # So keep this long-term for `master` builds, until a better method is found
+    # Allow overriding of SRU in future
     - |
-        export SRU=""
-        if [ "${SV}" = "master" ]; then
-          export SRU="-g https://github.com/myii/salt.git"
-        fi
+        export SRU="-g https://github.com/saltstack/salt.git"
     # Build the image
     - '${CMD_DOCKER_BUILD}
          --file "Dockerfile.${PI}"
@@ -318,15 +309,12 @@ debi-10.0-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 # Use for both accordingly in order to test against these latest available packages
 # Progress for new releases is visible here: https://bodhi.fedoraproject.org/updates/?search=salt
 # Git-based installs aren't currently working on Fedora 37+, so commented out below
-# fedo-38.0-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'fedora'               , DV: '38'     , PI: 'dnf', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: ''}}
+fedo-38.0-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'fedora'               , DV: '38'     , PI: 'dnf', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: ''}}
 fedo-38.0-3006.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'               , DV: '38'     , PI: 'dnf', SIM: 'stable', SV: '3006.1' , SVB: 'latest' , PV: '3', EP: ''}}
-fedo-38.0-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'               , DV: '38'     , PI: 'dnf', SIM: 'stable', SV: '3005.1' , SVB: 'latest' , PV: '3', EP: 'python-setuptools'}}
-# fedo-37.0-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'fedora'               , DV: '37'     , PI: 'dnf', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: ''}}
+fedo-37.0-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'fedora'               , DV: '37'     , PI: 'dnf', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: ''}}
 fedo-37.0-3006.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'               , DV: '37'     , PI: 'dnf', SIM: 'stable', SV: '3006.1' , SVB: 'latest' , PV: '3', EP: ''}}
-fedo-37.0-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'               , DV: '37'     , PI: 'dnf', SIM: 'stable', SV: '3005.1' , SVB: 'latest' , PV: '3', EP: 'python-setuptools'}}
-fedo-36.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'               , DV: '36'     , PI: 'dnf', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: ''}}
+fedo-36.0-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'fedora'               , DV: '36'     , PI: 'dnf', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: ''}}
 fedo-36.0-3006.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'               , DV: '36'     , PI: 'dnf', SIM: 'stable', SV: '3006.1' , SVB: 'latest' , PV: '3', EP: ''}}
-fedo-36.0-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'               , DV: '36'     , PI: 'dnf', SIM: 'stable', SV: '3005.1' , SVB: 'latest' , PV: '3', EP: 'python-setuptools'}}
 
 # GENTOO
 # Available versions: https://packages.gentoo.org/packages/app-admin/salt
