@@ -123,7 +123,7 @@ commitlint:
     - 'export DOCKERHUB_IMAGE=salt-${SV}-py${PV}:${TAG}'
     - 'export CMD_DOCKER_BUILD="docker build ."'
     - 'export CACHE_FROM=${DOCKERHUB_ORG}/${DOCKERHUB_IMAGE}'
-    # Avoid using Docker caching for `master` builds
+    # Source previous builds as a cache
     - |
         export CMD_DOCKER_BUILD="${CMD_DOCKER_BUILD} --cache-from ${CACHE_FROM}"
         docker pull ${CACHE_FROM} || true
