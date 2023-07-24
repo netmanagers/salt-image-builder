@@ -26,9 +26,10 @@ RUN if [[ "${DISTRO_NAME}" = "centos" ]]; then \
       yum -y install epel-release; \
     fi \
  && yum -y install ${PKGS} \
- && yum clean all \
-    # Install Salt using the bootstrap script (removing the 10 seconds delay to cancel the bootstrap)
- && curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
+ && yum clean all
+ARG CACHEBUST=1
+# Install Salt using the bootstrap script (removing the 10 seconds delay to cancel the bootstrap)
+RUN curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
     sed -e '/^\s\+echowarn "You have 10 seconds to cancel and stop the bootstrap process..."/,+2d' | \
     sh -s -- ${SALT_REPO_URL} -XUdfPD -x python$PYTHON_VERSION $SALT_INSTALL_METHOD $SALT_VERSION \
     # Disable Salt's service as we don't need it running
