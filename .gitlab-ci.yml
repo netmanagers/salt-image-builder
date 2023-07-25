@@ -79,7 +79,8 @@ commitlint:
   script:
     # Add `upstream` remote to get access to `upstream/master`
     - 'git remote add upstream
-       https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder.git'
+       https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder.git
+       || true'
     - 'git fetch --all'
     # Run `commitlint`
     - 'commitlint --from "$(git merge-base upstream/master HEAD)"
@@ -122,12 +123,13 @@ commitlint:
     - 'export DOCKERHUB_IMAGE=salt-${SV}-py${PV}:${TAG}'
     - 'export CMD_DOCKER_BUILD="docker build ."'
     - 'export CACHE_FROM=${DOCKERHUB_ORG}/${DOCKERHUB_IMAGE}'
-    # Avoid using Docker caching for `master` builds
-    - |
-        if [ "${SV}" != "master" ]; then
-          export CMD_DOCKER_BUILD="${CMD_DOCKER_BUILD} --cache-from ${CACHE_FROM}"
-          docker pull ${CACHE_FROM} || true
-        fi
+    # disabling use of upstream caching untill all builds are in clean working order
+    # # Avoid using Docker caching for `master` builds
+    # - |
+    #     if [ "${SV}" != "master" ]; then
+    #       export CMD_DOCKER_BUILD="${CMD_DOCKER_BUILD} --cache-from ${CACHE_FROM}"
+    #       docker pull ${CACHE_FROM} || true
+    #     fi
     # Use workaround for openSUSE Tumbleweed
     # (to allow Test Kitchen to access the container using an `ssh-rsa` public key)
     # yamllint disable rule:line-length
@@ -256,13 +258,12 @@ commitlint:
 alma-09.0-nghtly-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'almalinux'            , DV: '9'      , PI: 'yum', SIM: 'onedir', SV: 'nghtly' , SVB: 'nightly', PV: '3', EP: 'glibc-langpack-en openssl-devel procps-ng python3 python3-devel'}}
 alma-09.0-3006.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'almalinux'            , DV: '9'      , PI: 'yum', SIM: 'onedir', SV: '3006.1' , SVB: ''       , PV: '3', EP: 'glibc-langpack-en openssl-devel procps-ng python3 python3-devel'}}
 alma-09.0-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'almalinux'            , DV: '9'      , PI: 'yum', SIM: 'onedir', SV: '3005.1' , SVB: ''       , PV: '3', EP: 'glibc-langpack-en openssl-devel procps-ng python3 python3-devel'}}
-alma-08.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'almalinux'            , DV: '8'      , PI: 'yum', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: 'curl glibc-langpack-en openssl-devel procps-ng python3 python3-devel python3-pip swig'}}
+alma-08.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'almalinux'            , DV: '8'      , PI: 'yum', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3.11', EP: 'curl glibc-langpack-en openssl-devel procps-ng python3.11 python3.11-devel python3.11-pip swig'}}
 alma-08.0-nghtly-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'almalinux'            , DV: '8'      , PI: 'yum', SIM: 'onedir', SV: 'nghtly' , SVB: 'nightly', PV: '3', EP: 'curl glibc-langpack-en openssl-devel procps-ng python3 python3-devel swig'}}
 alma-08.0-3006.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'almalinux'            , DV: '8'      , PI: 'yum', SIM: 'onedir', SV: '3006.1' , SVB: ''       , PV: '3', EP: 'curl glibc-langpack-en openssl-devel procps-ng python3 python3-devel swig'}}
 alma-08.0-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'almalinux'            , DV: '8'      , PI: 'yum', SIM: 'onedir', SV: '3005.1' , SVB: ''       , PV: '3', EP: 'curl glibc-langpack-en openssl-devel procps-ng python3 python3-devel swig'}}
 
 # AMAZONLINUX
-amaz-02.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'amazonlinux'          , DV: '2'      , PI: 'yum', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: 'procps-ng python3-pip yum-utils'}}
 amaz-02.0-nghtly-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'amazonlinux'          , DV: '2'      , PI: 'yum', SIM: 'onedir', SV: 'nghtly' , SVB: 'nightly', PV: '3', EP: 'procps-ng yum-utils'}}
 amaz-02.0-3006.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'amazonlinux'          , DV: '2'      , PI: 'yum', SIM: 'onedir', SV: '3006.1' , SVB: ''       , PV: '3', EP: 'procps-ng yum-utils'}}
 amaz-02.0-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'amazonlinux'          , DV: '2'      , PI: 'yum', SIM: 'onedir', SV: '3005.1' , SVB: ''       , PV: '3', EP: 'procps-ng yum-utils'}}
@@ -270,21 +271,21 @@ amaz-02.0-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 # ARCHLINUX
 # Latest stable release (can flag out-of-date from this page): https://archlinux.org/packages/community/any/salt/
 # Since Python 3.10 was released, would require manual workarounds for Salt < `3004.2`, so no longer building those images
-arch-late-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'archlinux/archlinux'  , DV: 'latest' , PI: 'pac', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: ''}}
-arch-late-3006.1-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'archlinux/archlinux'  , DV: 'latest' , PI: 'pac', SIM: 'stable', SV: '3006.1' , SVB: 'latest' , PV: '3', EP: 'python-jmespath python-psutil'}}
-arch-late-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'archlinux/archlinux'  , DV: 'latest' , PI: 'pac', SIM: 'stable', SV: '3005.1' , SVB: 'latest' , PV: '3', EP: 'python-jmespath python-psutil'}}
+arch-late-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'archlinux/archlinux'  , DV: 'latest' , PI: 'pac', SIM: 'git', SV: 'master' , SVB: ''       , PV: '3', EP: ''}}
+arch-late-3006.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'archlinux/archlinux'  , DV: 'latest' , PI: 'pac', SIM: 'git', SV: '3006.1' , SVB: 'v3006.1' , PV: '3', EP: 'python-jmespath python-psutil'}}
+arch-late-3005.1-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'archlinux/archlinux'  , DV: 'latest' , PI: 'pac', SIM: 'git', SV: '3005.1' , SVB: 'v3005.1' , PV: '3', EP: 'python-jmespath python-psutil python-pyzmq'}}
+
 
 # CENTOS (STREAM)
 cstr-09.0-nghtly-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'quay.io/centos/centos', DV: 'stream9', PI: 'yum', SIM: 'onedir', SV: 'nghtly' , SVB: 'nightly', PV: '3', EP: 'glibc-langpack-en openssl-devel procps-ng python3 python3-devel'}}
 cstr-09.0-3006.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'quay.io/centos/centos', DV: 'stream9', PI: 'yum', SIM: 'onedir', SV: '3006.1' , SVB: ''       , PV: '3', EP: 'glibc-langpack-en openssl-devel procps-ng python3 python3-devel'}}
 cstr-09.0-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'quay.io/centos/centos', DV: 'stream9', PI: 'yum', SIM: 'onedir', SV: '3005.1' , SVB: ''       , PV: '3', EP: 'glibc-langpack-en openssl-devel procps-ng python3 python3-devel'}}
-cstr-08.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'quay.io/centos/centos', DV: 'stream8', PI: 'yum', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: 'curl glibc-langpack-en openssl-devel procps-ng python3 python3-devel python3-pip swig'}}
+cstr-08.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'quay.io/centos/centos', DV: 'stream8', PI: 'yum', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3.11', EP: 'curl glibc-langpack-en openssl-devel procps-ng python3.11 python3.11-devel python3.11-pip swig'}}
 cstr-08.0-nghtly-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'quay.io/centos/centos', DV: 'stream8', PI: 'yum', SIM: 'onedir', SV: 'nghtly' , SVB: 'nightly', PV: '3', EP: 'curl glibc-langpack-en openssl-devel procps-ng python3 python3-devel swig'}}
 cstr-08.0-3006.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'quay.io/centos/centos', DV: 'stream8', PI: 'yum', SIM: 'onedir', SV: '3006.1' , SVB: ''       , PV: '3', EP: 'curl glibc-langpack-en openssl-devel procps-ng python3 python3-devel swig'}}
 cstr-08.0-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'quay.io/centos/centos', DV: 'stream8', PI: 'yum', SIM: 'onedir', SV: '3005.1' , SVB: ''       , PV: '3', EP: 'curl glibc-langpack-en openssl-devel procps-ng python3 python3-devel swig'}}
 
 # CENTOS
-cent-07.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'centos'               , DV: '7'      , PI: 'yum', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: 'gcc-g++ openssl-devel python3 python3-devel python3-pip swig zeromq zeromq-devel'}}
 cent-07.0-nghtly-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'centos'               , DV: '7'      , PI: 'yum', SIM: 'onedir', SV: 'nghtly' , SVB: 'nightly', PV: '3', EP: 'gcc-g++ openssl-devel python3 python3-devel swig zeromq zeromq-devel'}}
 cent-07.0-3006.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'centos'               , DV: '7'      , PI: 'yum', SIM: 'onedir', SV: '3006.1' , SVB: ''       , PV: '3', EP: 'gcc-g++ openssl-devel python3 python3-devel swig zeromq zeromq-devel'}}
 cent-07.0-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'centos'               , DV: '7'      , PI: 'yum', SIM: 'onedir', SV: '3005.1' , SVB: ''       , PV: '3', EP: 'gcc-g++ openssl-devel python3 python3-devel swig zeromq zeromq-devel'}}
@@ -295,7 +296,6 @@ debi-11.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 debi-11.0-nghtly-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'               , DV: '11'     , PI: 'apt', SIM: 'onedir', SV: 'nghtly' , SVB: 'nightly', PV: '3', EP: ''}}
 debi-11.0-3006.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'               , DV: '11'     , PI: 'apt', SIM: 'onedir', SV: '3006.1' , SVB: ''       , PV: '3', EP: ''}}
 debi-11.0-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'               , DV: '11'     , PI: 'apt', SIM: 'onedir', SV: '3005.1' , SVB: ''       , PV: '3', EP: ''}}
-debi-10.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'               , DV: '10'     , PI: 'apt', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: 'python3-apt python3-pip'}}
 debi-10.0-nghtly-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'               , DV: '10'     , PI: 'apt', SIM: 'onedir', SV: 'nghtly' , SVB: 'nightly', PV: '3', EP: ''}}
 debi-10.0-3006.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'               , DV: '10'     , PI: 'apt', SIM: 'onedir', SV: '3006.1' , SVB: ''       , PV: '3', EP: ''}}
 debi-10.0-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'               , DV: '10'     , PI: 'apt', SIM: 'onedir', SV: '3005.1' , SVB: ''       , PV: '3', EP: ''}}
@@ -308,47 +308,39 @@ debi-10.0-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 # Use for both accordingly in order to test against these latest available packages
 # Progress for new releases is visible here: https://bodhi.fedoraproject.org/updates/?search=salt
 # Git-based installs aren't currently working on Fedora 37+, so commented out below
-# fedo-38.0-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'fedora'               , DV: '38'     , PI: 'dnf', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: ''}}
+fedo-38.0-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'fedora'               , DV: '38'     , PI: 'dnf', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: ''}}
 fedo-38.0-3006.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'               , DV: '38'     , PI: 'dnf', SIM: 'stable', SV: '3006.1' , SVB: 'latest' , PV: '3', EP: ''}}
-fedo-38.0-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'               , DV: '38'     , PI: 'dnf', SIM: 'stable', SV: '3005.1' , SVB: 'latest' , PV: '3', EP: 'python-setuptools'}}
-# fedo-37.0-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'fedora'               , DV: '37'     , PI: 'dnf', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: ''}}
+fedo-37.0-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'fedora'               , DV: '37'     , PI: 'dnf', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: ''}}
 fedo-37.0-3006.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'               , DV: '37'     , PI: 'dnf', SIM: 'stable', SV: '3006.1' , SVB: 'latest' , PV: '3', EP: ''}}
-fedo-37.0-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'               , DV: '37'     , PI: 'dnf', SIM: 'stable', SV: '3005.1' , SVB: 'latest' , PV: '3', EP: 'python-setuptools'}}
-fedo-36.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'               , DV: '36'     , PI: 'dnf', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: ''}}
+fedo-36.0-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'fedora'               , DV: '36'     , PI: 'dnf', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: ''}}
 fedo-36.0-3006.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'               , DV: '36'     , PI: 'dnf', SIM: 'stable', SV: '3006.1' , SVB: 'latest' , PV: '3', EP: ''}}
-fedo-36.0-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'               , DV: '36'     , PI: 'dnf', SIM: 'stable', SV: '3005.1' , SVB: 'latest' , PV: '3', EP: 'python-setuptools'}}
 
 # GENTOO
 # Available versions: https://packages.gentoo.org/packages/app-admin/salt
 # Using extra package workaround for `3005.1` until upstream bug is fixed (https://bugs.gentoo.org/875389#c5)
-gent-late-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'latest' , PI: 'emg', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: ''}}
-gent-late-3006.1-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'latest' , PI: 'emg', SIM: 'stable', SV: '3006.1' , SVB: ''       , PV: '3', EP: 'dev-python/importlib_metadata'}}
-gent-late-3005.1-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'latest' , PI: 'emg', SIM: 'stable', SV: '3005.1' , SVB: ''       , PV: '3', EP: 'dev-python/importlib_metadata'}}
-gent-sysd-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'systemd', PI: 'emg', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: ''}}
-gent-sysd-3006.1-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'systemd', PI: 'emg', SIM: 'stable', SV: '3006.1' , SVB: ''       , PV: '3', EP: 'dev-python/importlib_metadata'}}
-gent-sysd-3005.1-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'systemd', PI: 'emg', SIM: 'stable', SV: '3005.1' , SVB: ''       , PV: '3', EP: 'dev-python/importlib_metadata'}}
+gent-late-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'latest' , PI: 'emg', SIM: 'git', SV: 'master' , SVB: ''       , PV: '3', EP: ''}}
+gent-late-3006.1-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'latest' , PI: 'emg', SIM: 'git', SV: '3006.1' , SVB: 'v3006.1'       , PV: '3', EP: 'dev-python/importlib-metadata'}}
+gent-late-3005.1-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'latest' , PI: 'emg', SIM: 'git', SV: '3005.1' , SVB: 'v3005.1'       , PV: '3', EP: 'dev-python/importlib-metadata'}}
+gent-sysd-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'systemd', PI: 'emg', SIM: 'git', SV: 'master' , SVB: ''       , PV: '3', EP: ''}}
+gent-sysd-3006.1-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'systemd', PI: 'emg', SIM: 'git', SV: '3006.1' , SVB: 'v3006.1'       , PV: '3', EP: 'dev-python/importlib-metadata'}}
+gent-sysd-3005.1-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'systemd', PI: 'emg', SIM: 'git', SV: '3005.1' , SVB: 'v3005.1'       , PV: '3', EP: 'dev-python/importlib-metadata'}}
 
 # OPENSUSE
 # For openSUSE, the bootstrap script only allows `latest` to be built using `stable`
-# Now using the `-w` switch with the bootstrap script in order to build using the packages available in the downstream, official openSUSE repo, which is kept up-to-date.  Compare:
-# * Downstream: https://download.opensuse.org/repositories/systemsmanagement:/saltstack/
-# * Upstream:   http://repo.saltstack.com/opensuse/
 # Use for both Leap and Tumbleweed in order to test against these latest available packages
-# Installing `gzip` in Tumbleweed to avoid strange packaging conflicts involving `busybox-gzip` instead, see:
-# * https://github.com/saltstack-formulas/libvirt-formula/pull/83#issuecomment-767748061
 # Note: Permitting failure on Tumbleweed until https://bugzilla.opensuse.org/show_bug.cgi?id=1190670 is resolved (similar situation to Fedora 35+)
-opsu-tmbl-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'opensuse/tumbleweed'  , DV: 'latest' , PI: 'zyp', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: 'gzip'}}
-opsu-15.4-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'        , DV: '15.4'   , PI: 'zyp', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: ''}}
+opsu-tmbl-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'opensuse/tumbleweed'  , DV: 'latest' , PI: 'zyp', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: 'python3-pip'}}
+opsu-15.5-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'        , DV: '15.5'   , PI: 'zyp', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3.11', EP: 'python311-pip'}}
+opsu-15.4-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'        , DV: '15.4'   , PI: 'zyp', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3.10', EP: 'python310-pip'}}
 
 # ORACLELINUX
 orac-09.0-nghtly-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'oraclelinux'          , DV: '9'      , PI: 'yum', SIM: 'onedir', SV: 'nghtly' , SVB: 'nightly', PV: '3', EP: 'glibc-langpack-en openssl-devel python3 python3-devel'}}
 orac-09.0-3006.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'oraclelinux'          , DV: '9'      , PI: 'yum', SIM: 'onedir', SV: '3006.1' , SVB: ''       , PV: '3', EP: 'glibc-langpack-en openssl-devel python3 python3-devel'}}
 orac-09.0-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'oraclelinux'          , DV: '9'      , PI: 'yum', SIM: 'onedir', SV: '3005.1' , SVB: ''       , PV: '3', EP: 'glibc-langpack-en openssl-devel python3 python3-devel'}}
-orac-08.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'oraclelinux'          , DV: '8'      , PI: 'yum', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: 'curl glibc-langpack-en openssl-devel python3 python3-devel python3-pip swig'}}
+orac-08.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'oraclelinux'          , DV: '8'      , PI: 'yum', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3.11', EP: 'curl glibc-langpack-en openssl-devel python3.11 python3.11-devel python3.11-pip swig'}}
 orac-08.0-nghtly-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'oraclelinux'          , DV: '8'      , PI: 'yum', SIM: 'onedir', SV: 'nghtly' , SVB: 'nightly', PV: '3', EP: 'curl glibc-langpack-en openssl-devel python3 python3-devel swig'}}
 orac-08.0-3006.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'oraclelinux'          , DV: '8'      , PI: 'yum', SIM: 'onedir', SV: '3006.1' , SVB: ''       , PV: '3', EP: 'curl glibc-langpack-en openssl-devel python3 python3-devel swig'}}
 orac-08.0-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'oraclelinux'          , DV: '8'      , PI: 'yum', SIM: 'onedir', SV: '3005.1' , SVB: ''       , PV: '3', EP: 'curl glibc-langpack-en openssl-devel python3 python3-devel swig'}}
-orac-07.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'oraclelinux'          , DV: '7'      , PI: 'yum', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: 'gcc-g++ openssl-devel python3 python3-devel python3-pip swig zeromq zeromq-devel'}}
 orac-07.0-nghtly-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'oraclelinux'          , DV: '7'      , PI: 'yum', SIM: 'onedir', SV: 'nghtly' , SVB: 'nightly', PV: '3', EP: 'gcc-g++ openssl-devel python3 python3-devel swig zeromq zeromq-devel'}}
 orac-07.0-3006.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'oraclelinux'          , DV: '7'      , PI: 'yum', SIM: 'onedir', SV: '3006.1' , SVB: ''       , PV: '3', EP: 'gcc-g++ openssl-devel python3 python3-devel swig zeromq zeromq-devel'}}
 orac-07.0-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'oraclelinux'          , DV: '7'      , PI: 'yum', SIM: 'onedir', SV: '3005.1' , SVB: ''       , PV: '3', EP: 'gcc-g++ openssl-devel python3 python3-devel swig zeromq zeromq-devel'}}
@@ -357,7 +349,7 @@ orac-07.0-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 rock-09.0-nghtly-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'rockylinux'           , DV: '9'      , PI: 'yum', SIM: 'onedir', SV: 'nghtly' , SVB: 'nightly', PV: '3', EP: 'findutils glibc-langpack-en openssl-devel procps-ng python3 python3-devel'}}
 rock-09.0-3006.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'rockylinux'           , DV: '9'      , PI: 'yum', SIM: 'onedir', SV: '3006.1' , SVB: ''       , PV: '3', EP: 'findutils glibc-langpack-en openssl-devel procps-ng python3 python3-devel'}}
 rock-09.0-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'rockylinux'           , DV: '9'      , PI: 'yum', SIM: 'onedir', SV: '3005.1' , SVB: ''       , PV: '3', EP: 'findutils glibc-langpack-en openssl-devel procps-ng python3 python3-devel'}}
-rock-08.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'rockylinux'           , DV: '8'      , PI: 'yum', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: 'curl findutils glibc-langpack-en openssl-devel procps-ng python3 python3-devel python3-pip swig'}}
+rock-08.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'rockylinux'           , DV: '8'      , PI: 'yum', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3.11', EP: 'curl findutils glibc-langpack-en openssl-devel procps-ng python3.11 python3.11-devel python3.11-pip swig'}}
 rock-08.0-nghtly-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'rockylinux'           , DV: '8'      , PI: 'yum', SIM: 'onedir', SV: 'nghtly' , SVB: 'nightly', PV: '3', EP: 'curl findutils glibc-langpack-en openssl-devel procps-ng python3 python3-devel swig'}}
 rock-08.0-3006.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'rockylinux'           , DV: '8'      , PI: 'yum', SIM: 'onedir', SV: '3006.1' , SVB: ''       , PV: '3', EP: 'curl findutils glibc-langpack-en openssl-devel procps-ng python3 python3-devel swig'}}
 rock-08.0-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'rockylinux'           , DV: '8'      , PI: 'yum', SIM: 'onedir', SV: '3005.1' , SVB: ''       , PV: '3', EP: 'curl findutils glibc-langpack-en openssl-devel procps-ng python3 python3-devel swig'}}
@@ -371,7 +363,6 @@ ubun-20.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 ubun-20.0-nghtly-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'               , DV: '20.04'  , PI: 'apt', SIM: 'onedir', SV: 'nghtly' , SVB: 'nightly', PV: '3', EP: ''}}
 ubun-20.0-3006.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'               , DV: '20.04'  , PI: 'apt', SIM: 'onedir', SV: '3006.1' , SVB: ''       , PV: '3', EP: ''}}
 ubun-20.0-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'               , DV: '20.04'  , PI: 'apt', SIM: 'onedir', SV: '3005.1' , SVB: ''       , PV: '3', EP: ''}}
-ubun-18.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'               , DV: '18.04'  , PI: 'apt', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: 'python3-apt python3-pip'}}
 ubun-18.0-nghtly-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'               , DV: '18.04'  , PI: 'apt', SIM: 'onedir', SV: 'nghtly' , SVB: 'nightly', PV: '3', EP: ''}}
 ubun-18.0-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'               , DV: '18.04'  , PI: 'apt', SIM: 'onedir', SV: '3005.1' , SVB: ''       , PV: '3', EP: ''}}
 # yamllint enable rule:commas rule:line-length

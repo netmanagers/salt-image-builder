@@ -1,5 +1,41 @@
 # Changelog
 
+# [1.81.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.80.0...v1.81.0) (2023-07-25)
+
+
+### Bug Fixes
+
+* **commitlint:** handle bug if upstream already exists ([cbc8bd3](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/cbc8bd3e41e44c4cd960f81ed7d03fff2e64174f))
+* **commitlint:** handle bug if upstream already exists ([3af82a2](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/3af82a2a775f67ccc2f472a807baf8a19edcabb8))
+* **commitlint:** handle bug upstream url spacing ([b494ffa](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/b494ffa5cdc4b537d867f86d33c61b562d5b031c))
+* **dockerfile.zyp:** add opensuse 15.5 and cleanup opensuse comments ([0509e11](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/0509e115c98eb5eee80926c8969d96fdac880e21))
+* **dockerfile.zyp:** drop python-xml from package list ([0e2ec34](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/0e2ec3444e207cfa1656aeed6df525a1cae0c015))
+* **dockerfile.zyp:** remove old invalid flag ([2fdea35](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/2fdea35258f0054249f2b69dbf6084ea3ee6180f))
+* **gitlab-ci:** adjust arch install's svb check ([cbc0ac3](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/cbc0ac373b8d726e60e1ec4dd7ff847fd75dcfd3))
+* **gitlab-ci:** adjust arch install's svb to branch ([038bf9e](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/038bf9ecf4eb1e28dff6b76177044145ce906894))
+* **gitlab-ci:** arch 3005.1 - install zmq ([7a28cc8](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/7a28cc88d2a446e2f68feaf7f1fe9d0336381dcf))
+* **gitlab-ci:** cleanup master builds ([8081d39](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/8081d391c9c92bceb17bde1d120a656277d6294b))
+* **gitlab-ci:** convert arch installs to git based ([3300966](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/3300966873364ce07aab02a3b3953e363d0b036a))
+* **gitlab-ci:** disable use of previous containers as cache ([dfcc8f8](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/dfcc8f84f00648f6bab6c80fe89809c4ee8e66a2))
+* **gitlab-ci:** drop amazon 2.0 master ([873c6a0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/873c6a0140bc6e61497343662fa81840313c6a27))
+* **gitlab-ci:** fedora build image fixes ([ea3273f](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/ea3273f827ec175535cbc9a4fd72c134cf0ddfa9))
+* **gitlab-ci:** fix gentoo git based installs ([1239aac](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/1239aac848678cfb737598f37f0e0d094f26bd4b))
+* **gitlab-ci:** fix gentoo git branch name ([8c77751](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/8c777510c58e6f0b49bdfab794b35372f4c46677))
+* **gitlab-ci:** fix gentoo imports ([60f75c9](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/60f75c98c76a820489711c165f7075a6b2179391))
+* **gitlab-ci:** fix oracle 8 master ([6f39f0f](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/6f39f0fdfb476bf752d2e8e964df1479fb53e0f7))
+* **gitlab-ci:** fix typo ([9368f45](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/9368f45ef4f09b3443d44f43edd92b62343bb57d))
+* **gitlab-ci:** fix yamllint ([8c26d75](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/8c26d758e15899e2bf1ae5ba4d3ec14424f0ad2c))
+* **opensuse:** adjust python versions ([a35e6d5](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/a35e6d50bbaf0864a41f812c512c5aff143dba82))
+* **opensuse:** install correct python310 ([d4ef96e](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/d4ef96ef902a8cf09e7ba33f39a0b863cac183ca))
+* **test-salt-version:** version name support ([2fa9069](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/2fa90698d55a0c771f10eb5b86df1eeb5a904d4a))
+
+
+### Features
+
+* **gitlab-ci:** remove 3004 - end phase3 support ([3fe2f32](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/3fe2f32ebfaecf1a5d99955049e41d9d77e4f1bd))
+* **gitlab-ci:** remove old SRU logic ([b47310b](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/b47310b137dd96271d3d498389ac64e537411699))
+* **salt_version:** add 3006.1" ([8d44a75](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/8d44a75b722257c23e05c383e9759532d6d75150))
+
 # [1.80.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.79.0...v1.80.0) (2022-12-17)
 
 
