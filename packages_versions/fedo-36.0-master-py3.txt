@@ -2,10 +2,13 @@ fedo-36.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3006.0+0na.d937173
+          Salt: 3007.0+0na.0a98359
+ 
+Python Version:
+        Python: 3.10.11 (main, Apr  5 2023, 00:00:00) [GCC 12.2.1 20221121 (Red Hat 12.2.1-4)]
  
 Dependency Versions:
-          cffi: Not Installed
+          cffi: 1.15.1
       cherrypy: Not Installed
       dateutil: Not Installed
      docker-py: Not Installed
@@ -13,31 +16,33 @@ Dependency Versions:
      gitpython: Not Installed
         Jinja2: 3.1.2
        libgit2: Not Installed
+  looseversion: 1.3.0
       M2Crypto: Not Installed
           Mako: Not Installed
-       msgpack: 1.0.4
+       msgpack: 1.0.5
   msgpack-pure: Not Installed
   mysql-python: Not Installed
-     pycparser: Not Installed
+     packaging: 23.1
+     pycparser: 2.21
       pycrypto: Not Installed
-  pycryptodome: 3.16.0
+  pycryptodome: 3.18.0
         pygit2: Not Installed
-        Python: 3.10.8 (main, Nov 14 2022, 00:00:00) [GCC 12.2.1 20220819 (Red Hat 12.2.1-2)]
   python-gnupg: Not Installed
-        PyYAML: 6.0
-         PyZMQ: 20.0.0
+        PyYAML: 6.0.1
+         PyZMQ: 25.1.0
+        relenv: Not Installed
          smmap: Not Installed
        timelib: Not Installed
-       Tornado: 4.5.3
-           ZMQ: 4.3.3
+       Tornado: 6.3.2
+           ZMQ: 4.3.4
  
 System Versions:
-          dist: fedora 36 Container Image
+          dist: fedora 36 
         locale: utf-8
        machine: x86_64
        release: 5.4.109+
         system: Linux
-       version: Fedora Linux 36 Container Image
+       version: Fedora Linux 36 
  
 # salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
 local:
@@ -97,15 +102,15 @@ local:
     pythonversion:
         - 3
         - 10
-        - 8
+        - 11
         - final
         - 0
     saltpath:
         /usr/lib/python3.10/site-packages/salt
     saltversion:
-        3006.0+0na.d937173
+        3007.0+0na.0a98359
     saltversioninfo:
-        - 3006
+        - 3007
         - 0
     systemd:
         ----------
@@ -118,14 +123,14 @@ local:
     virtual_subtype:
         Docker
     zmqversion:
-        4.3.3
+        4.3.4
 # salt-call --local pkg.list_pkgs
 local:
     ----------
     alternatives:
-        1.21-1.fc36
+        1.22-1.fc36
     audit-libs:
-        3.0.9-1.fc36
+        3.1.1-1.fc36
     authselect:
         1.4.0-1.fc36
     authselect-libs:
@@ -133,7 +138,7 @@ local:
     basesystem:
         11-13.fc36
     bash:
-        5.2.9-2.fc36
+        5.2.15-1.fc36
     binutils:
         2.37-37.fc36
     binutils-gold:
@@ -141,11 +146,11 @@ local:
     bzip2-libs:
         1.0.8-11.fc36
     ca-certificates:
-        2022.2.54-1.2.fc36
+        2023.2.60-1.0.fc36
     coreutils:
-        9.0-8.fc36
+        9.0-9.fc36
     coreutils-common:
-        9.0-8.fc36
+        9.0-9.fc36
     cpio:
         2.13-12.fc36
     cpp:
@@ -159,13 +164,13 @@ local:
     cryptsetup-libs:
         2.4.3-2.fc36
     curl:
-        7.82.0-11.fc36
+        7.82.0-14.fc36
     cyrus-sasl-lib:
         2.1.27-18.fc36
     dbus:
         1:1.14.4-1.fc36
     dbus-broker:
-        32-1.fc36
+        33-1.fc36
     dbus-common:
         1:1.14.4-1.fc36
     device-mapper:
@@ -173,33 +178,33 @@ local:
     device-mapper-libs:
         1.02.175-7.fc36
     dnf:
-        4.14.0-1.fc36
+        4.15.0-1.fc36
     dnf-data:
-        4.14.0-1.fc36
+        4.15.0-1.fc36
     dracut:
         057-3.fc36
     elfutils-debuginfod-client:
-        0.187-4.fc36
+        0.189-2.fc36
     elfutils-default-yama-scope:
-        0.187-4.fc36
+        0.189-2.fc36
     elfutils-libelf:
-        0.187-4.fc36
+        0.189-2.fc36
     elfutils-libs:
-        0.187-4.fc36
+        0.189-2.fc36
     expat:
         2.5.0-1.fc36
     fedora-gpg-keys:
-        36-4
+        36-5
     fedora-release-common:
-        36-20
+        36-21
     fedora-release-container:
-        36-20
+        36-21
     fedora-release-identity-container:
-        36-20
+        36-21
     fedora-repos:
-        36-4
+        36-5
     fedora-repos-modular:
-        36-4
+        36-5
     file:
         5.41-4.fc36
     file-libs:
@@ -225,31 +230,31 @@ local:
     gettext-libs:
         0.21-9.fc36
     git:
-        2.38.1-1.fc36
+        2.40.1-1.fc36
     git-core:
-        2.38.1-1.fc36
+        2.40.1-1.fc36
     git-core-doc:
-        2.38.1-1.fc36
+        2.40.1-1.fc36
     glib2:
         2.72.3-1.fc36
     glibc:
-        2.35-20.fc36
+        2.35-22.fc36
     glibc-common:
-        2.35-20.fc36
+        2.35-22.fc36
     glibc-devel:
-        2.35-20.fc36
+        2.35-22.fc36
     glibc-headers-x86:
-        2.35-20.fc36
+        2.35-22.fc36
     glibc-langpack-en:
-        2.35-20.fc36
+        2.35-22.fc36
     glibc-minimal-langpack:
-        2.35-20.fc36
+        2.35-22.fc36
     gmp:
         1:6.2.1-2.fc36
     gnupg2:
         2.3.7-3.fc36
     gnutls:
-        3.7.8-3.fc36
+        3.8.0-2.fc36
     gpg-pubkey.(none):
         38ab71f4-60242b08
     gpgme:
@@ -259,11 +264,11 @@ local:
     groff-base:
         1.22.4-9.fc36
     grub2-common:
-        1:2.06-57.fc36
+        1:2.06-62.fc36
     grub2-tools:
-        1:2.06-57.fc36
+        1:2.06-62.fc36
     grub2-tools-minimal:
-        1:2.06-57.fc36
+        1:2.06-62.fc36
     grubby:
         8.40-67.fc36
     guile22:
@@ -279,7 +284,7 @@ local:
     kbd-misc:
         2.4.0-9.fc36
     kernel-headers:
-        6.0.5-200.fc36
+        6.2.6-100.fc36
     keyutils-libs:
         1.6.1-4.fc36
     kmod:
@@ -317,11 +322,11 @@ local:
     libcomps:
         0.1.18-2.fc36
     libcurl:
-        7.82.0-11.fc36
+        7.82.0-14.fc36
     libdb:
         5.3.28-51.fc36
     libdnf:
-        0.68.0-1.fc36
+        0.70.0-1.fc36
     libeconf:
         0.4.0-3.fc36
     libedit:
@@ -351,7 +356,7 @@ local:
     libkcapi-hmaccalc:
         1.4.0-2.fc36
     libksba:
-        1.6.2-1.fc36
+        1.6.3-1.fc36
     libmodulemd:
         2.14.0-2.fc36
     libmount:
@@ -369,7 +374,7 @@ local:
     libpwquality:
         1.4.4-7.fc36
     librepo:
-        1.14.4-1.fc36
+        1.15.1-1.fc36
     libreport-filesystem:
         2.17.4-1.fc36
     libseccomp:
@@ -395,7 +400,7 @@ local:
     libstdc++-devel:
         12.2.1-4.fc36
     libtasn1:
-        4.18.0-2.fc36
+        4.19.0-1.fc36
     libtirpc:
         1.3.3-0.fc36
     libtool-ltdl:
@@ -409,17 +414,17 @@ local:
     libverto:
         0.3.2-3.fc36
     libxcrypt:
-        4.4.33-3.fc36
+        4.4.33-4.fc36
     libxcrypt-devel:
-        4.4.33-3.fc36
+        4.4.33-4.fc36
     libxml2:
         2.10.3-2.fc36
     libyaml:
         0.2.5-7.fc36
     libzstd:
-        1.5.2-2.fc36
+        1.5.5-1.fc36
     lua-libs:
-        5.4.4-3.fc36
+        5.4.4-9.fc36
     lz4-libs:
         1.9.3-4.fc36
     make:
@@ -437,15 +442,13 @@ local:
     ncurses-libs:
         6.2-9.20210508.fc36
     net-tools:
-        2.0-0.61.20160912git.fc36
+        2.0-0.62.20160912git.fc36
     nettle:
         3.8-1.fc36
     npth:
         1.6-8.fc36
     openldap:
-        2.6.3-1.fc36
-    openldap-compat:
-        2.6.3-1.fc36
+        2.6.4-1.fc36
     openssh:
         8.8p1-1.fc36.1
     openssh-clients:
@@ -453,7 +456,7 @@ local:
     openssh-server:
         8.8p1-1.fc36.1
     openssl-libs:
-        1:3.0.5-2.fc36
+        1:3.0.8-1.fc36
     os-prober:
         1.77-9.fc36
     p11-kit:
@@ -501,7 +504,7 @@ local:
     perl-Getopt-Std:
         1.13-486.fc36
     perl-Git:
-        2.38.1-1.fc36
+        2.40.1-1.fc36
     perl-HTTP-Tiny:
         0.082-1.fc36
     perl-IO:
@@ -581,33 +584,33 @@ local:
     procps-ng:
         3.3.17-4.fc36.1
     publicsuffix-list-dafsa:
-        20210518-4.fc36
+        20230318-1.fc36
     python-pip-wheel:
         21.3.1-4.fc36
     python-setuptools-wheel:
-        59.6.0-3.fc36
+        59.6.0-4.fc36
     python3:
-        3.10.8-3.fc36
+        3.10.11-1.fc36
     python3-devel:
-        3.10.8-3.fc36
+        3.10.11-1.fc36
     python3-dnf:
-        4.14.0-1.fc36
+        4.15.0-1.fc36
     python3-gpg:
         1.17.0-4.fc36
     python3-hawkey:
-        0.68.0-1.fc36
+        0.70.0-1.fc36
     python3-libcomps:
         0.1.18-2.fc36
     python3-libdnf:
-        0.68.0-1.fc36
+        0.70.0-1.fc36
     python3-libs:
-        3.10.8-3.fc36
+        3.10.11-1.fc36
     python3-pip:
         21.3.1-4.fc36
     python3-rpm:
         4.17.1-3.fc36
     python3-setuptools:
-        59.6.0-3.fc36
+        59.6.0-4.fc36
     readline:
         8.2-2.fc36
     rootfiles:
@@ -625,62 +628,108 @@ local:
     setup:
         2.14.1-1.fc36
     shadow-utils:
-        2:4.11.1-5.fc36
+        2:4.11.1-6.fc36
     sqlite-libs:
         3.36.0-5.fc36
     sudo:
-        1.9.8-5.p2.fc36
+        1.9.13-1.p2.fc36
     systemd:
-        250.8-1.fc36
+        250.10-2.fc36
     systemd-libs:
-        250.8-1.fc36
+        250.10-2.fc36
     systemd-pam:
-        250.8-1.fc36
+        250.10-2.fc36
     systemd-udev:
-        250.8-1.fc36
+        250.10-2.fc36
     tar:
         2:1.34-3.fc36
     tpm2-tools:
-        5.2-2.fc36
+        5.4-1.fc36
     tpm2-tss:
-        3.2.0-3.fc36
+        3.2.2-1.fc36
     tzdata:
-        2022g-1.fc36
+        2023c-1.fc36
     util-linux:
         2.38-1.fc36
     util-linux-core:
         2.38-1.fc36
     vim-data:
-        2:9.0.1006-1.fc36
+        2:9.0.1486-1.fc36
     vim-minimal:
-        2:9.0.1006-1.fc36
+        2:9.0.1486-1.fc36
     which:
         2.21-32.fc36
     xz:
-        5.2.5-9.fc36
+        5.4.1-1.fc36
     xz-libs:
-        5.2.5-9.fc36
+        5.4.1-1.fc36
     yum:
-        4.14.0-1.fc36
+        4.15.0-1.fc36
     zchunk-libs:
-        1.2.3-1.fc36
+        1.3.1-1.fc36
     zlib:
         1.2.11-33.fc36
 # salt-call --local pip.list
 local:
     ----------
+    Jinja2:
+        3.1.2
+    MarkupSafe:
+        2.1.3
+    PyYAML:
+        6.0.1
+    certifi:
+        2023.7.22
+    cffi:
+        1.15.1
+    charset-normalizer:
+        3.2.0
+    contextvars:
+        2.4
+    cryptography:
+        41.0.2
+    distro:
+        1.8.0
     gpg:
         1.17.0
+    idna:
+        3.4
+    immutables:
+        0.19
+    jmespath:
+        1.0.1
     libcomps:
         0.1.18
+    looseversion:
+        1.3.0
+    msgpack:
+        1.0.5
+    packaging:
+        23.1
     pip:
         21.3.1
+    psutil:
+        5.9.5
+    pycparser:
+        2.21
+    pycryptodomex:
+        3.18.0
+    pyzmq:
+        25.1.0
+    requests:
+        2.31.0
     rpm:
         4.17.1
+    salt:
+        3007.0+0na.0a98359
     setuptools:
-        59.6.0
+        68.0.0
+    tornado:
+        6.3.2
+    urllib3:
+        2.0.4
     wheel:
-        0.38.4
+        0.41.0
 # salt-call --local locale.list_avail
 local:
     - C

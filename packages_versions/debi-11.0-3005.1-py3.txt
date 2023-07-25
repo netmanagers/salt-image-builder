@@ -22,7 +22,7 @@ Dependency Versions:
       pycrypto: Not Installed
   pycryptodome: 3.9.8
         pygit2: Not Installed
-        Python: 3.9.15 (main, Nov  8 2022, 03:45:09)
+        Python: 3.9.16 (main, Jan  6 2023, 22:49:58)
   python-gnupg: 0.4.8
         PyYAML: 5.4.1
          PyZMQ: 23.2.0
@@ -97,7 +97,7 @@ local:
     pythonversion:
         - 3
         - 9
-        - 15
+        - 16
         - final
         - 0
     saltpath:
@@ -129,7 +129,7 @@ local:
     apt-transport-https:
         2.2.4
     base-files:
-        11.1+deb11u5
+        11.1+deb11u7
     base-passwd:
         3.5.51
     bash:
@@ -145,7 +145,7 @@ local:
     coreutils:
         8.32-4+b1
     curl:
-        7.74.0-1.3+deb11u3
+        7.74.0-1.3+deb11u7
     dash:
         0.5.11+git20200708+dd9ef66-5
     dctrl-tools:
@@ -153,7 +153,7 @@ local:
     debconf:
         1.5.77
     debian-archive-keyring:
-        2021.1.1
+        2021.1.1+deb11u1
     debianutils:
         4.11.2
     diffutils:
@@ -161,7 +161,7 @@ local:
     dirmngr:
         2.2.27-2+deb11u2
     distro-info-data:
-        0.51+deb11u2
+        0.51+deb11u3
     dmsetup:
         2:1.02.175-2.1
     dpkg:
@@ -175,9 +175,9 @@ local:
     gcc-9-base:
         9.3.0-22
     git:
-        1:2.30.2-1
+        1:2.30.2-1+deb11u2
     git-man:
-        1:2.30.2-1
+        1:2.30.2-1+deb11u2
     gnupg:
         2.2.27-2+deb11u2
     gnupg-l10n:
@@ -201,7 +201,7 @@ local:
     gpgv:
         2.2.27-2+deb11u2
     grep:
-        3.6-1
+        3.6-1+deb11u1
     gzip:
         1.10-4+deb11u1
     hostname:
@@ -233,11 +233,11 @@ local:
     libbz2-1.0:
         1.0.8-4
     libc-bin:
-        2.31-13+deb11u5
+        2.31-13+deb11u6
     libc-l10n:
-        2.31-13+deb11u5
+        2.31-13+deb11u6
     libc6:
-        2.31-13+deb11u5
+        2.31-13+deb11u6
     libcap-ng0:
         0.7.9-2.2+b1
     libcap2:
@@ -251,9 +251,9 @@ local:
     libcryptsetup12:
         2:2.3.7-1+deb11u1
     libcurl3-gnutls:
-        7.74.0-1.3+deb11u3
+        7.74.0-1.3+deb11u7
     libcurl4:
-        7.74.0-1.3+deb11u3
+        7.74.0-1.3+deb11u7
     libdb5.3:
         5.3.28+dfsg1-0.8
     libdebconfclient0:
@@ -283,7 +283,7 @@ local:
     libgmp10:
         2:6.2.1+dfsg-1+deb11u1
     libgnutls30:
-        3.7.1-5+deb11u2
+        3.7.1-5+deb11u3
     libgpg-error0:
         1.38-2
     libgssapi-krb5-2:
@@ -307,7 +307,7 @@ local:
     libkrb5support0:
         1.18.3-6+deb11u3
     libksba8:
-        1.5.0-3+deb11u1
+        1.5.0-3+deb11u2
     libldap-2.4-2:
         2.4.57+dfsg-3+deb11u1
     liblz4-1:
@@ -321,9 +321,9 @@ local:
     libmpdec3:
         2.5.1-1
     libncurses6:
-        6.2+20201114-2
+        6.2+20201114-2+deb11u1
     libncursesw6:
-        6.2+20201114-2
+        6.2+20201114-2+deb11u1
     libnettle8:
         3.7.3-1
     libnghttp2-14:
@@ -387,21 +387,21 @@ local:
     libssh2-1:
         1.9.0-2
     libssl1.1:
-        1.1.1n-0+deb11u3
+        1.1.1n-0+deb11u5
     libstdc++6:
         10.2.1-6
     libsystemd0:
-        247.3-7+deb11u1
+        247.3-7+deb11u2
     libtasn1-6:
-        4.16.0-2
+        4.16.0-2+deb11u1
     libtinfo6:
-        6.2+20201114-2
+        6.2+20201114-2+deb11u1
     libtirpc-common:
         1.3.1-1+deb11u1
     libtirpc3:
         1.3.1-1+deb11u1
     libudev1:
-        247.3-7+deb11u1
+        247.3-7+deb11u2
     libunistring2:
         0.9.10-4
     libuuid1:
@@ -415,7 +415,7 @@ local:
     libzstd1:
         1.4.8+dfsg-2.1
     locales:
-        2.31-13+deb11u5
+        2.31-13+deb11u6
     login:
         1:4.8.1-1
     logsave:
@@ -433,9 +433,9 @@ local:
     ncal:
         12.1.7+nmu3
     ncurses-base:
-        6.2+20201114-2
+        6.2+20201114-2+deb11u1
     ncurses-bin:
-        6.2+20201114-2
+        6.2+20201114-2+deb11u1
     net-tools:
         1.60+git20181103.0eebece-1
     openssh-client:
@@ -445,7 +445,7 @@ local:
     openssh-sftp-server:
         1:8.4p1-5+deb11u1
     openssl:
-        1.1.1n-0+deb11u3
+        1.1.1n-0+deb11u5
     passwd:
         1:4.8.1-1
     pci.ids:
@@ -477,29 +477,29 @@ local:
     runit-helper:
         2.10.3
     salt-common:
-        3005.1+ds-2
+        3005.1+ds-4
     salt-minion:
-        3005.1+ds-2
+        3005.1+ds-4
     sed:
         4.7-1
     sensible-utils:
         0.0.14
     sudo:
-        1.9.5p2-3
+        1.9.5p2-3+deb11u1
     systemd:
-        247.3-7+deb11u1
+        247.3-7+deb11u2
     systemd-sysv:
-        247.3-7+deb11u1
+        247.3-7+deb11u2
     sysvinit-utils:
         2.96-7+deb11u1
     tar:
         1.34+dfsg-1
     tzdata:
-        2021a-1+deb11u8
+        2021a-1+deb11u10
     ucf:
         3.0043
     udev:
-        247.3-7+deb11u1
+        247.3-7+deb11u2
     util-linux:
         2.36.1-8+deb11u1
     wget:
