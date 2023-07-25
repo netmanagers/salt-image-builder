@@ -133,7 +133,7 @@ local:
     bc:
         1.06.95-13.el7
     bind-license:
-        32:9.11.4-26.P2.el7_9.10
+        32:9.11.4-26.P2.el7_9.13
     binutils:
         2.27-44.base.el7_9.1
     bzip2-libs:
@@ -171,7 +171,7 @@ local:
     device-mapper-libs:
         7:1.02.170-6.el7_9.5
     diffutils:
-        3.3-5.el7
+        3.3-6.el7_9
     dmidecode:
         1:3.2-5.el7_9.1
     dracut:
@@ -203,9 +203,9 @@ local:
     gdbm:
         1.10-8.el7
     geoipupdate:
-        2.5.0-1.el7
+        2.5.0-2.el7
     git:
-        1.8.3.1-23.el7_8
+        1.8.3.1-25.el7_9
     glib2:
         2.56.1-9.el7_9
     glibc:
@@ -349,17 +349,17 @@ local:
     nspr:
         4.34.0-3.1.el7_9
     nss:
-        3.79.0-4.el7_9
+        3.79.0-5.el7_9
     nss-pem:
-        1.0.3-7.el7
+        1.0.3-7.el7_9.1
     nss-softokn:
         3.79.0-4.el7_9
     nss-softokn-freebl:
         3.79.0-4.el7_9
     nss-sysinit:
-        3.79.0-4.el7_9
+        3.79.0-5.el7_9
     nss-tools:
-        3.79.0-4.el7_9
+        3.79.0-5.el7_9
     nss-util:
         3.79.0-1.el7_9
     openldap:
@@ -373,11 +373,11 @@ local:
     openssh-server:
         7.4p1-22.el7_9
     openssl:
-        1:1.0.2k-25.el7_9
+        1:1.0.2k-26.el7_9
     openssl-devel:
-        1:1.0.2k-25.el7_9
+        1:1.0.2k-26.el7_9
     openssl-libs:
-        1:1.0.2k-25.el7_9
+        1:1.0.2k-26.el7_9
     p11-kit:
         0.23.5-3.el7
     p11-kit-trust:
@@ -413,7 +413,7 @@ local:
     perl-Getopt-Long:
         2.40-3.el7
     perl-Git:
-        1.8.3.1-23.el7_8
+        1.8.3.1-25.el7_9
     perl-HTTP-Tiny:
         0.033-3.el7
     perl-PathTools:
@@ -471,7 +471,7 @@ local:
     pyliblzma:
         0.5.3-11.el7
     python:
-        2.7.5-92.el7_9
+        2.7.5-93.el7_9
     python-chardet:
         2.2.1-3.el7
     python-gobject-base:
@@ -481,7 +481,7 @@ local:
     python-kitchen:
         1.1.1-5.el7
     python-libs:
-        2.7.5-92.el7_9
+        2.7.5-93.el7_9
     python-pycurl:
         7.19.0-19.el7
     python-rpm-macros:
@@ -491,11 +491,11 @@ local:
     python-urlgrabber:
         3.10-10.el7
     python3:
-        3.6.8-18.el7
+        3.6.8-19.el7_9
     python3-devel:
-        3.6.8-18.el7
+        3.6.8-19.el7_9
     python3-libs:
-        3.6.8-18.el7
+        3.6.8-19.el7_9
     python3-pip:
         9.0.3-8.el7
     python3-rpm-generators:
@@ -523,7 +523,7 @@ local:
     rpm-python:
         4.11.3-48.el7_9
     rsync:
-        3.1.2-11.el7_9
+        3.1.2-12.el7_9
     salt:
         3005+494.ga1a07d1c8c-1.el7
     salt-minion:
@@ -539,7 +539,7 @@ local:
     sqlite:
         3.7.17-8.el7_7.1
     sudo:
-        1.8.23-10.el7_9.2
+        1.8.23-10.el7_9.3
     swig:
         2.0.10-5.el7
     systemd:
@@ -551,7 +551,7 @@ local:
     tcp_wrappers-libs:
         7.6-77.el7
     tzdata:
-        2022f-1.el7
+        2023c-1.el7
     ustr:
         1.0.4-16.el7
     util-linux:
@@ -581,9 +581,9 @@ local:
     zip:
         3.0-11.el7
     zlib:
-        1.2.7-20.el7_9
+        1.2.7-21.el7_9
     zlib-devel:
-        1.2.7-20.el7_9
+        1.2.7-21.el7_9
 # salt-call --local pip.list
 local:
     ----------

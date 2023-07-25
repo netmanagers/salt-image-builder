@@ -22,7 +22,7 @@ Dependency Versions:
       pycrypto: Not Installed
   pycryptodome: 3.9.8
         pygit2: Not Installed
-        Python: 3.9.16 (main, Dec 11 2022, 10:10:12)
+        Python: 3.9.16 (main, Dec 18 2022, 02:12:09)
   python-gnupg: 0.4.8
         PyYAML: 5.4.1
          PyZMQ: 23.2.0
@@ -143,7 +143,7 @@ local:
     coreutils:
         8.30-3
     curl:
-        7.64.0-4+deb10u3
+        7.64.0-4+deb10u6
     dash:
         0.5.10.2-5
     dctrl-tools:
@@ -151,7 +151,7 @@ local:
     debconf:
         1.5.71+deb10u1
     debian-archive-keyring:
-        2019.1+deb10u1
+        2019.1+deb10u2
     debianutils:
         4.8.6.1
     diffutils:
@@ -159,7 +159,7 @@ local:
     dirmngr:
         2.2.12-1+deb10u2
     distro-info-data:
-        0.41+deb10u6
+        0.41+deb10u7
     dmsetup:
         2:1.02.155-3
     dpkg:
@@ -173,9 +173,9 @@ local:
     gcc-8-base:
         8.3.0-6
     git:
-        1:2.20.1-2+deb10u4
+        1:2.20.1-2+deb10u8
     git-man:
-        1:2.20.1-2+deb10u4
+        1:2.20.1-2+deb10u8
     gnupg:
         2.2.12-1+deb10u2
     gnupg-l10n:
@@ -249,9 +249,9 @@ local:
     libcryptsetup12:
         2:2.1.0-5+deb10u2
     libcurl3-gnutls:
-        7.64.0-4+deb10u3
+        7.64.0-4+deb10u6
     libcurl4:
-        7.64.0-4+deb10u3
+        7.64.0-4+deb10u6
     libdb5.3:
         5.3.28+dfsg1-0.5
     libdebconfclient0:
@@ -283,7 +283,7 @@ local:
     libgmp10:
         2:6.1.2+dfsg-4+deb10u1
     libgnutls30:
-        3.6.7-4+deb10u9
+        3.6.7-4+deb10u10
     libgpg-error0:
         1.35-1
     libgssapi-krb5-2:
@@ -309,7 +309,7 @@ local:
     libkrb5support0:
         1.17-3+deb10u5
     libksba8:
-        1.3.5-2+deb10u1
+        1.3.5-2+deb10u2
     libldap-2.4-2:
         2.4.47+dfsg-3+deb10u7
     libldap-common:
@@ -347,7 +347,7 @@ local:
     libpci3:
         1:3.5.2-1
     libpcre2-8-0:
-        10.32-5
+        10.32-5+deb10u1
     libpcre3:
         2:8.39-12
     libperl5.28:
@@ -359,9 +359,9 @@ local:
     libpython3-stdlib:
         3.7.3-1
     libpython3.7-minimal:
-        3.7.3-2+deb10u4
+        3.7.3-2+deb10u5
     libpython3.7-stdlib:
-        3.7.3-2+deb10u4
+        3.7.3-2+deb10u5
     libreadline7:
         7.0-5
     librtmp1:
@@ -389,17 +389,17 @@ local:
     libssh2-1:
         1.8.0-2.1
     libssl1.1:
-        1.1.1n-0+deb10u3
+        1.1.1n-0+deb10u5
     libstdc++6:
         8.3.0-6
     libsystemd0:
-        241-7~deb10u8
+        241-7~deb10u10
     libtasn1-6:
-        4.13-3
+        4.13-3+deb10u1
     libtinfo6:
         6.1+20181013-2+deb10u3
     libudev1:
-        241-7~deb10u8
+        241-7~deb10u10
     libunistring2:
         0.9.10-1
     libuuid1:
@@ -439,7 +439,7 @@ local:
     openssh-sftp-server:
         1:7.9p1-10+deb10u2
     openssl:
-        1.1.1n-0+deb10u3
+        1.1.1n-0+deb10u5
     passwd:
         1:4.5-1.1
     pciutils:
@@ -461,9 +461,9 @@ local:
     python3-yaml:
         3.13-2
     python3.7:
-        3.7.3-2+deb10u4
+        3.7.3-2+deb10u5
     python3.7-minimal:
-        3.7.3-2+deb10u4
+        3.7.3-2+deb10u5
     readline-common:
         7.0-5
     salt-common:
@@ -475,21 +475,21 @@ local:
     sensible-utils:
         0.0.12
     sudo:
-        1.8.27-1+deb10u4
+        1.8.27-1+deb10u5
     systemd:
-        241-7~deb10u8
+        241-7~deb10u10
     systemd-sysv:
-        241-7~deb10u8
+        241-7~deb10u10
     sysvinit-utils:
         2.93-8
     tar:
         1.30+dfsg-6
     tzdata:
-        2021a-0+deb10u8
+        2021a-0+deb10u11
     ucf:
         3.0038+nmu1
     udev:
-        241-7~deb10u8
+        241-7~deb10u10
     util-linux:
         2.33.1-0.1
     wget:

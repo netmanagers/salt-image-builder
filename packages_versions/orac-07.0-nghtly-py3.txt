@@ -133,7 +133,7 @@ local:
     bc:
         1.06.95-13.el7
     bind-export-libs:
-        32:9.11.4-26.P2.el7_9.10
+        32:9.11.4-26.P2.el7_9.14
     binutils:
         2.27-44.base.0.3.el7_9.1
     bzip2-libs:
@@ -169,13 +169,13 @@ local:
     device-mapper-libs:
         7:1.02.170-6.0.5.el7_9.5
     dhclient:
-        12:4.2.5-83.0.1.el7_9.1
+        12:4.2.5-83.0.3.el7_9.1
     dhcp-common:
-        12:4.2.5-83.0.1.el7_9.1
+        12:4.2.5-83.0.3.el7_9.1
     dhcp-libs:
-        12:4.2.5-83.0.1.el7_9.1
+        12:4.2.5-83.0.3.el7_9.1
     diffutils:
-        3.3-5.el7
+        3.3-6.el7_9
     dmidecode:
         1:3.2-5.0.1.el7_9.1
     dracut:
@@ -205,13 +205,13 @@ local:
     gdbm:
         1.10-8.el7
     git:
-        1.8.3.1-23.el7_8
+        1.8.3.1-25.el7_9
     glib2:
         2.56.1-9.el7_9
     glibc:
-        2.17-326.0.1.el7_9
+        2.17-326.0.9.el7_9
     glibc-common:
-        2.17-326.0.1.el7_9
+        2.17-326.0.9.el7_9
     gmp:
         1:6.0.0-15.el7
     gnupg2:
@@ -297,7 +297,7 @@ local:
     libgpg-error:
         1.12-3.el7
     libgudev1:
-        219-78.0.9.el7_9.7
+        219-78.0.10.el7_9.7
     libidn:
         1.28-4.el7
     libkadm5:
@@ -371,17 +371,17 @@ local:
     nspr:
         4.34.0-3.1.el7_9
     nss:
-        3.79.0-4.el7_9
+        3.79.0-5.el7_9
     nss-pem:
-        1.0.3-7.el7
+        1.0.3-7.el7_9.1
     nss-softokn:
         3.79.0-4.0.1.el7_9
     nss-softokn-freebl:
         3.79.0-4.0.1.el7_9
     nss-sysinit:
-        3.79.0-4.el7_9
+        3.79.0-5.el7_9
     nss-tools:
-        3.79.0-4.el7_9
+        3.79.0-5.el7_9
     nss-util:
         3.79.0-1.el7_9
     openldap:
@@ -393,15 +393,15 @@ local:
     openssh-server:
         7.4p1-22.0.1.el7_9
     openssl:
-        1:1.0.2k-25.el7_9
+        1:1.0.2k-26.el7_9
     openssl-devel:
-        1:1.0.2k-25.el7_9
+        1:1.0.2k-26.el7_9
     openssl-libs:
-        1:1.0.2k-25.el7_9
+        1:1.0.2k-26.el7_9
     oracle-logos:
         70.7.0-1.0.7.el7
     oraclelinux-release:
-        7:7.9-1.0.9.el7
+        7:7.9-1.0.11.el7
     oraclelinux-release-el7:
         1.0-17.el7
     p11-kit:
@@ -439,7 +439,7 @@ local:
     perl-Getopt-Long:
         2.40-3.el7
     perl-Git:
-        1.8.3.1-23.el7_8
+        1.8.3.1-25.el7_9
     perl-HTTP-Tiny:
         0.033-3.el7
     perl-PathTools:
@@ -503,7 +503,7 @@ local:
     pyliblzma:
         0.5.3-11.el7
     python:
-        2.7.5-92.0.1.el7_9
+        2.7.5-93.0.1.el7_9
     python-chardet:
         2.2.1-3.el7
     python-dmidecode:
@@ -519,7 +519,7 @@ local:
     python-kitchen:
         1.1.1-5.el7
     python-libs:
-        2.7.5-92.0.1.el7_9
+        2.7.5-93.0.1.el7_9
     python-pycurl:
         7.19.0-19.el7
     python-rpm-macros:
@@ -529,19 +529,19 @@ local:
     python-urlgrabber:
         3.10-10.el7
     python3:
-        3.6.8-18.0.5.el7
+        3.6.8-19.0.1.el7_9
     python3-devel:
-        3.6.8-18.0.5.el7
+        3.6.8-19.0.1.el7_9
     python3-libs:
-        3.6.8-18.0.5.el7
+        3.6.8-19.0.1.el7_9
     python3-pip:
-        9.0.3-8.0.1.el7
+        9.0.3-8.0.3.el7
     python3-rpm-generators:
         6-2.el7
     python3-rpm-macros:
         3-34.el7
     python3-setuptools:
-        39.2.0-10.el7
+        39.2.0-10.0.1.el7
     pyxattr:
         0.5.1-5.el7
     qrencode-libs:
@@ -553,13 +553,13 @@ local:
     redhat-rpm-config:
         9.1.0-88.0.1.el7
     rhn-check:
-        2.0.2-24.0.7.el7
+        2.0.2-24.0.9.el7
     rhn-client-tools:
-        2.0.2-24.0.7.el7
+        2.0.2-24.0.9.el7
     rhn-setup:
-        2.0.2-24.0.7.el7
+        2.0.2-24.0.9.el7
     rhnlib:
-        2.5.65-8.0.3.el7
+        2.5.65-8.0.5.el7
     rhnsd:
         5.0.13-10.0.1.el7
     rootfiles:
@@ -573,9 +573,9 @@ local:
     rpm-python:
         4.11.3-48.el7_9
     rsync:
-        3.1.2-11.el7_9
+        3.1.2-12.el7_9
     rsyslog:
-        8.24.0-57.0.1.el7_9.3
+        8.24.0-57.0.3.el7_9.3
     salt:
         3005+494.ga1a07d1c8c-1.el7
     salt-minion:
@@ -593,13 +593,13 @@ local:
     sqlite:
         3.7.17-8.el7_7.1
     sudo:
-        1.8.23-10.el7_9.2
+        1.8.23-10.el7_9.3
     swig:
         2.0.10-5.el7
     systemd:
-        219-78.0.9.el7_9.7
+        219-78.0.10.el7_9.7
     systemd-libs:
-        219-78.0.9.el7_9.7
+        219-78.0.10.el7_9.7
     sysvinit-tools:
         2.88-14.dsf.el7
     tar:
@@ -607,7 +607,7 @@ local:
     tcp_wrappers-libs:
         7.6-77.el7
     tzdata:
-        2022g-1.el7
+        2023c-1.el7
     usermode:
         1.111-6.el7
     ustr:
@@ -623,7 +623,7 @@ local:
     xz-libs:
         5.2.2-2.el7_9
     yum:
-        3.4.3-168.0.3.el7
+        3.4.3-168.0.5.el7
     yum-metadata-parser:
         1.1.4-10.el7
     yum-plugin-ovl:
@@ -637,9 +637,9 @@ local:
     zip:
         3.0-11.el7
     zlib:
-        1.2.7-20.0.1.el7_9
+        1.2.7-21.el7_9
     zlib-devel:
-        1.2.7-20.0.1.el7_9
+        1.2.7-21.el7_9
 # salt-call --local pip.list
 local:
     ----------
