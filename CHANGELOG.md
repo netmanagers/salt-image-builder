@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.81.1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.81.0...v1.81.1) (2023-08-03)
+
+
+### Bug Fixes
+
+* **build.py:** adjust build script for Extra Packages ([a6afd89](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/a6afd89e07926902d6bf051068e6f6e387a9565d))
+* **build.py:** black linting ([510c23b](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/510c23b2d890e0d63888b2beb2ba84e5c898e884))
+* **build.py:** refactor build.py script to support gitlab-ci source data ([1a36bb9](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/1a36bb956bc2b9694b68f637455136757d27207a))
+* **dockerfile:** hadolint fixes ([cadaf31](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/cadaf31bde74fb5544360acdee90bbbc05012ffd))
+* **gitlab-ci:** add cachebust date ([4537c82](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/4537c829c028105ea52e809efdcc21575653051e))
+* **gitlab-ci:** adjust caching comment ([1567e27](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/1567e27bb44b9d7cdc56d6ff77239cbb6857eb40))
+* **gitlab-ci:** adjust caching logic ([58198cc](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/58198cc7ba648697405f07b5cf5d4810e4791fff))
+* **gitlab-ci:** drop arch gentoo 3005 builds ([32071ac](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/32071ac547cf6599261c6c6052149b4ed26c7e10))
+* **gitlab-ci:** fix build typo ([1fc5cd6](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/1fc5cd603f66fdc9bb013695d11669a34f1d9650))
+* **gitlab-ci:** move buildarg cachebust ([dc46b4f](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/dc46b4ff2f3f54d144e0fe68718b219d5e30ffaa))
+
 # [1.81.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.80.0...v1.81.0) (2023-07-25)
 
 

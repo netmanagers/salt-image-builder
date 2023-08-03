@@ -2,7 +2,7 @@ opsu-15.4-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3007.0+0na.0a98359
+          Salt: 3007.0+0na.611944f
  
 Python Version:
         Python: 3.10.12 (main, Jun 30 2023, 17:58:40) [GCC]
@@ -112,7 +112,7 @@ local:
     saltpath:
         /usr/lib/python3.10/site-packages/salt
     saltversion:
-        3007.0+0na.0a98359
+        3007.0+0na.611944f
     saltversioninfo:
         - 3007
         - 0
@@ -272,7 +272,7 @@ local:
     libcurl4:
         8.0.1-150400.5.26.1
     libdb-4_8:
-        4.8.30-150000.7.6.1
+        4.8.30-150000.7.9.1
     libdbus-1-3:
         1.12.2-150400.18.8.1
     libdevmapper1_03:
@@ -384,7 +384,7 @@ local:
     libpsl5:
         0.20.1-150000.3.3.1
     libpython2_7-1_0:
-        2.7.18-150000.48.1
+        2.7.18-150000.51.1
     libpython3_10-1_0:
         3.10.12-150400.4.30.1
     libpython3_6m1_0:
@@ -474,7 +474,7 @@ local:
     openSUSE-build-key:
         1.0-lp154.3.14.1
     openSUSE-release:
-        15.4-lp1542.26.1
+        15.4-lp1542.35.4
     openSUSE-release-appliance-docker:
         15.4-lp154.166.1
     openssh:
@@ -516,9 +516,9 @@ local:
     procps:
         3.3.15-150000.7.31.1
     python:
-        2.7.18-150000.48.1
+        2.7.18-150000.51.1
     python-base:
-        2.7.18-150000.48.1
+        2.7.18-150000.51.1
     python3:
         3.6.15-150300.10.48.1
     python3-PyYAML:
@@ -639,7 +639,7 @@ local:
     contextvars:
         2.4
     cryptography:
-        41.0.2
+        41.0.3
     distro:
         1.8.0
     idna:
@@ -667,7 +667,7 @@ local:
     requests:
         2.31.0
     salt:
-        3007.0+0na.0a98359
+        3007.0+0na.611944f
     setuptools:
         68.0.0
     tornado:

@@ -248,7 +248,7 @@ local:
     app-arch/gzip:
         1.12-r4
     app-arch/libarchive:
-        3.6.2-r1
+        3.7.1
     app-arch/lz4:
         1.9.4
     app-arch/tar:
@@ -330,7 +330,7 @@ local:
     dev-libs/jsoncpp:
         1.9.5
     dev-libs/libassuan:
-        2.5.5
+        2.5.6
     dev-libs/libffi:
         3.4.4-r1
     dev-libs/libgcrypt:
@@ -338,7 +338,7 @@ local:
     dev-libs/libgpg-error:
         1.47
     dev-libs/libksba:
-        1.6.3
+        1.6.4
     dev-libs/libltdl:
         2.4.7-r1
     dev-libs/libpcre2:
@@ -382,13 +382,13 @@ local:
     dev-perl/MailTools:
         2.210.0
     dev-perl/Module-Build:
-        0.423.100
+        0.423.400
     dev-perl/Mozilla-CA:
         20999999-r1
     dev-perl/Net-SSLeay:
         1.920.0-r1
     dev-perl/Pod-Parser:
-        1.630.0-r1
+        1.660.0
     dev-perl/SGMLSpm:
         1.1-r2
     dev-perl/TermReadKey:
@@ -402,7 +402,7 @@ local:
     dev-perl/Unicode-LineBreak:
         2019.1.0
     dev-perl/YAML-Tiny:
-        1.730.0-r1
+        1.740.0
     dev-python/PySocks:
         1.7.1-r2
     dev-python/calver:
@@ -418,7 +418,7 @@ local:
     dev-python/ensurepip-pip:
         23.1.2
     dev-python/ensurepip-setuptools:
-        67.8.0
+        68.0.0
     dev-python/ensurepip-wheels:
         100
     dev-python/flit-core:
@@ -432,7 +432,7 @@ local:
     dev-python/idna:
         3.4
     dev-python/importlib-metadata:
-        6.6.0
+        6.8.0
     dev-python/installer:
         0.7.0
     dev-python/jaraco-context:
@@ -462,9 +462,9 @@ local:
     dev-python/platformdirs:
         3.8.0
     dev-python/pluggy:
-        1.0.0-r2
+        1.2.0
     dev-python/pyparsing:
-        3.0.9
+        3.1.0
     dev-python/requests:
         2.31.0
     dev-python/setuptools:
@@ -510,7 +510,7 @@ local:
     net-firewall/iptables:
         1.8.9
     net-libs/gnutls:
-        3.7.8
+        3.8.0
     net-libs/libmnl:
         1.0.5
     net-libs/libnsl:
@@ -532,7 +532,7 @@ local:
     sec-keys/openpgp-keys-gentoo-release:
         20230329
     sys-apps/acl:
-        2.3.1-r1
+        2.3.1-r2
     sys-apps/attr:
         2.5.1-r2
     sys-apps/baselayout:
@@ -803,7 +803,7 @@ local:
     immutables:
         0.19
     importlib_metadata:
-        6.6.0
+        6.8.0
     installer:
         0.7.0
     jaraco.context:
@@ -837,7 +837,7 @@ local:
     platformdirs:
         3.8.0
     pluggy:
-        1.0.0
+        1.2.0
     portage:
         3.0.49
     psutil:
@@ -845,7 +845,7 @@ local:
     pycryptodomex:
         3.18.0
     pyparsing:
-        3.0.9
+        3.1.0
     pyzmq:
         25.0.2
     requests:

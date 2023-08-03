@@ -2,7 +2,7 @@ ubun-20.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3007.0+0na.0a98359
+          Salt: 3007.0+0na.611944f
  
 Python Version:
         Python: 3.8.10 (default, May 26 2023, 14:05:08)
@@ -111,7 +111,7 @@ local:
     saltpath:
         /usr/local/lib/python3.8/dist-packages/salt
     saltversion:
-        3007.0+0na.0a98359
+        3007.0+0na.611944f
     saltversioninfo:
         - 3007
         - 0
@@ -185,7 +185,7 @@ local:
     gcc:
         4:9.3.0-1ubuntu2
     gcc-10-base:
-        10.3.0-1ubuntu1~20.04
+        10.5.0-1ubuntu1~20.04
     gcc-9:
         9.4.0-1ubuntu1~20.04.1
     gcc-9-base:
@@ -237,7 +237,7 @@ local:
     libassuan0:
         2.5.3-7ubuntu2
     libatomic1:
-        10.3.0-1ubuntu1~20.04
+        10.5.0-1ubuntu1~20.04
     libattr1:
         1:2.4.48-5
     libaudit-common:
@@ -269,7 +269,7 @@ local:
     libcbor0.6:
         0.6.0-0ubuntu1
     libcc1-0:
-        10.3.0-1ubuntu1~20.04
+        10.5.0-1ubuntu1~20.04
     libcom-err2:
         1.45.5-2ubuntu1.1
     libcrypt-dev:
@@ -311,7 +311,7 @@ local:
     libgcc-9-dev:
         9.4.0-1ubuntu1~20.04.1
     libgcc-s1:
-        10.3.0-1ubuntu1~20.04
+        10.5.0-1ubuntu1~20.04
     libgcrypt20:
         1.8.5-5ubuntu1.1
     libgdbm-compat4:
@@ -323,7 +323,7 @@ local:
     libgnutls30:
         3.6.13-2ubuntu1.8
     libgomp1:
-        10.3.0-1ubuntu1~20.04
+        10.5.0-1ubuntu1~20.04
     libgpg-error0:
         1.37-1
     libgssapi-krb5-2:
@@ -347,7 +347,7 @@ local:
     libisl22:
         0.22.1-1
     libitm1:
-        10.3.0-1ubuntu1~20.04
+        10.5.0-1ubuntu1~20.04
     libjson-c4:
         0.13.1+dfsg-7ubuntu0.3
     libk5crypto3:
@@ -369,7 +369,7 @@ local:
     libldap-common:
         2.4.49+dfsg-2ubuntu1.9
     liblsan0:
-        10.3.0-1ubuntu1~20.04
+        10.5.0-1ubuntu1~20.04
     liblz4-1:
         1.9.2-2ubuntu0.20.04.1
     liblzma5:
@@ -425,7 +425,7 @@ local:
     libpython3.8-stdlib:
         3.8.10-0ubuntu1~20.04.8
     libquadmath0:
-        10.3.0-1ubuntu1~20.04
+        10.5.0-1ubuntu1~20.04
     libreadline8:
         8.0-4
     libroken18-heimdal:
@@ -457,7 +457,7 @@ local:
     libssl1.1:
         1.1.1f-1ubuntu2.19
     libstdc++6:
-        10.3.0-1ubuntu1~20.04
+        10.5.0-1ubuntu1~20.04
     libsystemd0:
         245.4-4ubuntu3.22
     libtasn1-6:
@@ -465,9 +465,9 @@ local:
     libtinfo6:
         6.2-0ubuntu2.1
     libtsan0:
-        10.3.0-1ubuntu1~20.04
+        10.5.0-1ubuntu1~20.04
     libubsan1:
-        10.3.0-1ubuntu1~20.04
+        10.5.0-1ubuntu1~20.04
     libudev1:
         245.4-4ubuntu3.22
     libunistring2:
@@ -604,7 +604,7 @@ local:
     contextvars:
         2.4
     cryptography:
-        41.0.2
+        41.0.3
     distro:
         1.8.0
     idna:
@@ -634,7 +634,7 @@ local:
     requests:
         2.31.0
     salt:
-        3007.0+0na.0a98359
+        3007.0+0na.611944f
     setuptools:
         68.0.0
     tornado:

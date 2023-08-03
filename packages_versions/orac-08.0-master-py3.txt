@@ -2,7 +2,7 @@ orac-08.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3007.0+0na.0a98359
+          Salt: 3007.0+0na.611944f
  
 Python Version:
         Python: 3.11.2 (main, Jun 14 2023, 13:00:29) [GCC 8.5.0 20210514 (Red Hat 8.5.0-18.0.2)]
@@ -111,7 +111,7 @@ local:
     saltpath:
         /usr/lib/python3.11/site-packages/salt
     saltversion:
-        3007.0+0na.0a98359
+        3007.0+0na.611944f
     saltversioninfo:
         - 3007
         - 0
@@ -181,9 +181,9 @@ local:
     dbus-tools:
         1:1.12.8-24.0.1.el8
     device-mapper:
-        8:1.02.181-9.el8
+        8:1.02.181-9.0.1.el8
     device-mapper-libs:
-        8:1.02.181-9.el8
+        8:1.02.181-9.0.1.el8
     dhcp-client:
         12:4.3.6-49.el8
     dhcp-common:
@@ -449,11 +449,11 @@ local:
     openldap:
         2.4.46-18.el8
     openssh:
-        8.0p1-17.0.1.el8
+        8.0p1-19.el8_8
     openssh-clients:
-        8.0p1-17.0.1.el8
+        8.0p1-19.el8_8
     openssh-server:
-        8.0p1-17.0.1.el8
+        8.0p1-19.el8_8
     openssl:
         1:1.1.1k-9.el8_7
     openssl-devel:
@@ -517,7 +517,7 @@ local:
     perl-MIME-Base64:
         3.15-396.el8
     perl-Mozilla-CA:
-        20160104-7.module+el8.3.0+7692+542c56f9
+        20160104-7.0.1.module+el8.3.0+21136+b437fca9
     perl-Net-SSLeay:
         1.88-2.module+el8.6.0+20623+f0897f98
     perl-PathTools:
@@ -726,7 +726,7 @@ local:
     contextvars:
         2.4
     cryptography:
-        41.0.2
+        41.0.3
     distro:
         1.8.0
     idna:
@@ -754,7 +754,7 @@ local:
     requests:
         2.31.0
     salt:
-        3007.0+0na.0a98359
+        3007.0+0na.611944f
     setuptools:
         65.5.1
     tornado:

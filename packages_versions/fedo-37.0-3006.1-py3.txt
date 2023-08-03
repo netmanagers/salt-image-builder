@@ -160,7 +160,7 @@ local:
     cryptsetup-libs:
         2.6.1-1.fc37
     curl:
-        7.85.0-9.fc37
+        7.85.0-10.fc37
     cyrus-sasl-lib:
         2.1.28-8.fc37
     dbus:
@@ -182,9 +182,9 @@ local:
     dnf-data:
         4.15.1-1.fc37
     dnf-plugins-core:
-        4.4.1-1.fc37
+        4.4.2-1.fc37
     dnf-utils:
-        4.4.1-1.fc37
+        4.4.2-1.fc37
     dracut:
         059-2.fc37
     elfutils-default-yama-scope:
@@ -322,7 +322,7 @@ local:
     libcomps:
         0.1.18-4.fc37
     libcurl:
-        7.85.0-9.fc37
+        7.85.0-10.fc37
     libdb:
         5.3.28-53.fc37
     libdnf:
@@ -440,11 +440,11 @@ local:
     openldap:
         2.6.4-1.fc37
     openssh:
-        8.8p1-10.fc37
+        8.8p1-11.fc37
     openssh-clients:
-        8.8p1-10.fc37
+        8.8p1-11.fc37
     openssh-server:
-        8.8p1-10.fc37
+        8.8p1-11.fc37
     openssl:
         1:3.0.9-1.fc37
     openssl-libs:
@@ -594,7 +594,7 @@ local:
     python3-dnf:
         4.15.1-1.fc37
     python3-dnf-plugins-core:
-        4.4.1-1.fc37
+        4.4.2-1.fc37
     python3-gpg:
         1.17.0-4.fc37
     python3-hawkey:
@@ -662,9 +662,9 @@ local:
     util-linux-core:
         2.38.1-1.fc37
     vim-data:
-        2:9.0.1671-1.fc37
+        2:9.0.1677-2.fc37
     vim-minimal:
-        2:9.0.1671-1.fc37
+        2:9.0.1677-2.fc37
     web-assets-filesystem:
         5-18.fc37
     which:

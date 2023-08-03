@@ -2,7 +2,7 @@ rock-08.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3007.0+0na.0a98359
+          Salt: 3007.0+0na.611944f
  
 Python Version:
         Python: 3.11.2 (main, Jun 22 2023, 04:35:24) [GCC 8.5.0 20210514 (Red Hat 8.5.0-18)]
@@ -108,7 +108,7 @@ local:
     saltpath:
         /usr/lib/python3.11/site-packages/salt
     saltversion:
-        3007.0+0na.0a98359
+        3007.0+0na.611944f
     saltversioninfo:
         - 3007
         - 0
@@ -685,7 +685,7 @@ local:
     contextvars:
         2.4
     cryptography:
-        41.0.2
+        41.0.3
     distro:
         1.8.0
     idna:
@@ -713,7 +713,7 @@ local:
     requests:
         2.31.0
     salt:
-        3007.0+0na.0a98359
+        3007.0+0na.611944f
     setuptools:
         65.5.1
     tornado:

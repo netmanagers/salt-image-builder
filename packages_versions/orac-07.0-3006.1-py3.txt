@@ -395,11 +395,11 @@ local:
     openldap:
         2.4.44-25.el7_9
     openssh:
-        7.4p1-22.0.1.el7_9
+        7.4p1-23.0.1.el7_9
     openssh-clients:
-        7.4p1-22.0.1.el7_9
+        7.4p1-23.0.1.el7_9
     openssh-server:
-        7.4p1-22.0.1.el7_9
+        7.4p1-23.0.1.el7_9
     openssl:
         1:1.0.2k-26.el7_9
     openssl-devel:
