@@ -273,7 +273,6 @@ amaz-02.0-3005.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 # Since Python 3.10 was released, would require manual workarounds for Salt < `3004.2`, so no longer building those images
 arch-late-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'archlinux/archlinux'  , DV: 'latest' , PI: 'pac', SIM: 'git', SV: 'master' , SVB: ''       , PV: '3', EP: ''}}
 arch-late-3006.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'archlinux/archlinux'  , DV: 'latest' , PI: 'pac', SIM: 'git', SV: '3006.1' , SVB: 'v3006.1' , PV: '3', EP: 'python-jmespath python-psutil'}}
-arch-late-3005.1-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'archlinux/archlinux'  , DV: 'latest' , PI: 'pac', SIM: 'git', SV: '3005.1' , SVB: 'v3005.1' , PV: '3', EP: 'python-jmespath python-psutil python-pyzmq'}}
 
 
 # CENTOS (STREAM)
@@ -320,10 +319,8 @@ fedo-36.0-3006.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 # Using extra package workaround for `3005.1` until upstream bug is fixed (https://bugs.gentoo.org/875389#c5)
 gent-late-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'latest' , PI: 'emg', SIM: 'git', SV: 'master' , SVB: ''       , PV: '3', EP: ''}}
 gent-late-3006.1-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'latest' , PI: 'emg', SIM: 'git', SV: '3006.1' , SVB: 'v3006.1'       , PV: '3', EP: 'dev-python/importlib-metadata'}}
-gent-late-3005.1-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'latest' , PI: 'emg', SIM: 'git', SV: '3005.1' , SVB: 'v3005.1'       , PV: '3', EP: 'dev-python/importlib-metadata'}}
 gent-sysd-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'systemd', PI: 'emg', SIM: 'git', SV: 'master' , SVB: ''       , PV: '3', EP: ''}}
 gent-sysd-3006.1-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'systemd', PI: 'emg', SIM: 'git', SV: '3006.1' , SVB: 'v3006.1'       , PV: '3', EP: 'dev-python/importlib-metadata'}}
-gent-sysd-3005.1-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'gentoo/stage3'        , DV: 'systemd', PI: 'emg', SIM: 'git', SV: '3005.1' , SVB: 'v3005.1'       , PV: '3', EP: 'dev-python/importlib-metadata'}}
 
 # OPENSUSE
 # For openSUSE, the bootstrap script only allows `latest` to be built using `stable`
