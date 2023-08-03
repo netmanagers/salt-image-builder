@@ -123,13 +123,10 @@ commitlint:
     - 'export DOCKERHUB_IMAGE=salt-${SV}-py${PV}:${TAG}'
     - 'export CMD_DOCKER_BUILD="docker build ."'
     - 'export CACHE_FROM=${DOCKERHUB_ORG}/${DOCKERHUB_IMAGE}'
-    # disabling use of upstream caching untill all builds are in clean working order
-    # # Avoid using Docker caching for `master` builds
-    # - |
-    #     if [ "${SV}" != "master" ]; then
-    #       export CMD_DOCKER_BUILD="${CMD_DOCKER_BUILD} --cache-from ${CACHE_FROM}"
-    #       docker pull ${CACHE_FROM} || true
-    #     fi
+    # Source previous builds as a cache
+    - |
+        export CMD_DOCKER_BUILD="${CMD_DOCKER_BUILD} --cache-from ${CACHE_FROM}"
+        docker pull ${CACHE_FROM} || true
     # Use workaround for openSUSE Tumbleweed
     # (to allow Test Kitchen to access the container using an `ssh-rsa` public key)
     # yamllint disable rule:line-length
@@ -163,7 +160,8 @@ commitlint:
          --build-arg SALT_VERSION="${SVB}"
          --build-arg PYTHON_VERSION="${PV}"
          --build-arg EXTRA_PACKAGES="${EP}"
-         --build-arg SALT_REPO_URL="${SRU}"'
+         --build-arg SALT_REPO_URL="${SRU}"
+         --build-arg CACHEBUST="$(date +%s)"'
     # Run the test container
     - 'export TESTINFRA_CONTAINER=testinfra-${TAG}-${PI}-${PV}-${SIM}-${SV}'
     - 'docker run
