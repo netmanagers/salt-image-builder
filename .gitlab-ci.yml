@@ -246,7 +246,7 @@ commitlint:
 # DV:  distro version
 # PI:  packages installer, used as dockerfile extension (apt, dnf, emg, pac, yum, zyp)
 # SIM: salt install method (git, onedir, stable)
-# SV:  salt version (master, nightly, 3005.2, 3004.2)
+# SV:  salt version (master, nightly, 3006.2, 3005.2)
 # SVB: salt version used with `salt-bootstrap`, only if different from `SV` (latest)
 # PV:  python version (3)
 # EP:  extra packages required for the specific build
@@ -357,8 +357,6 @@ ubun-20.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 ubun-20.0-nghtly-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'               , DV: '20.04'  , PI: 'apt', SIM: 'onedir', SV: 'nghtly' , SVB: 'nightly', PV: '3', EP: ''}}
 ubun-20.0-3006.2-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'               , DV: '20.04'  , PI: 'apt', SIM: 'onedir', SV: '3006.2' , SVB: ''       , PV: '3', EP: ''}}
 ubun-20.0-3005.2-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'               , DV: '20.04'  , PI: 'apt', SIM: 'onedir', SV: '3005.2' , SVB: ''       , PV: '3', EP: ''}}
-ubun-18.0-nghtly-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'               , DV: '18.04'  , PI: 'apt', SIM: 'onedir', SV: 'nghtly' , SVB: 'nightly', PV: '3', EP: ''}}
-ubun-18.0-3005.2-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'               , DV: '18.04'  , PI: 'apt', SIM: 'onedir', SV: '3005.2' , SVB: ''       , PV: '3', EP: ''}}
 # yamllint enable rule:commas rule:line-length
 
 ###############################################################################
