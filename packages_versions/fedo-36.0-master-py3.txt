@@ -2,7 +2,7 @@ fedo-36.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3007.0+0na.611944f
+          Salt: 3007.0+0na.8f9405c
  
 Python Version:
         Python: 3.10.11 (main, Apr  5 2023, 00:00:00) [GCC 12.2.1 20221121 (Red Hat 12.2.1-4)]
@@ -29,12 +29,15 @@ Dependency Versions:
         pygit2: Not Installed
   python-gnupg: Not Installed
         PyYAML: 6.0.1
-         PyZMQ: 25.1.0
+         PyZMQ: 25.1.1
         relenv: Not Installed
          smmap: Not Installed
        timelib: Not Installed
-       Tornado: 6.3.2
+       Tornado: 6.3.3
            ZMQ: 4.3.4
+ 
+Salt Package Information:
+  Package Type: Not Installed
  
 System Versions:
           dist: fedora 36 
@@ -108,7 +111,7 @@ local:
     saltpath:
         /usr/lib/python3.10/site-packages/salt
     saltversion:
-        3007.0+0na.611944f
+        3007.0+0na.8f9405c
     saltversioninfo:
         - 3007
         - 0
@@ -695,7 +698,7 @@ local:
     idna:
         3.4
     immutables:
-        0.19
+        0.20
     jmespath:
         1.0.1
     libcomps:
@@ -715,21 +718,21 @@ local:
     pycryptodomex:
         3.18.0
     pyzmq:
-        25.1.0
+        25.1.1
     requests:
         2.31.0
     rpm:
         4.17.1
     salt:
-        3007.0+0na.611944f
+        3007.0+0na.8f9405c
     setuptools:
-        68.0.0
+        68.1.2
     tornado:
-        6.3.2
+        6.3.3
     urllib3:
         2.0.4
     wheel:
-        0.41.0
+        0.41.2
 # salt-call --local locale.list_avail
 local:
     - C

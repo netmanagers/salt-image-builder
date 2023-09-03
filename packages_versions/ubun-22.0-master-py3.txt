@@ -2,7 +2,7 @@ ubun-22.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3007.0+0na.611944f
+          Salt: 3007.0+0na.8f9405c
  
 Python Version:
         Python: 3.10.12 (main, Jun 11 2023, 05:26:28) [GCC 11.4.0]
@@ -29,20 +29,23 @@ Dependency Versions:
         pygit2: Not Installed
   python-gnupg: Not Installed
         PyYAML: 6.0.1
-         PyZMQ: 25.1.0
+         PyZMQ: 25.1.1
         relenv: Not Installed
          smmap: Not Installed
        timelib: Not Installed
-       Tornado: 6.3.2
+       Tornado: 6.3.3
            ZMQ: 4.3.4
  
+Salt Package Information:
+  Package Type: Not Installed
+ 
 System Versions:
-          dist: ubuntu 22.04.2 jammy
+          dist: ubuntu 22.04.3 jammy
         locale: utf-8
        machine: x86_64
        release: 5.4.109+
         system: Linux
-       version: Ubuntu 22.04.2 jammy
+       version: Ubuntu 22.04.3 jammy
  
 # salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
 local:
@@ -111,7 +114,7 @@ local:
     saltpath:
         /usr/local/lib/python3.10/dist-packages/salt
     saltversion:
-        3007.0+0na.611944f
+        3007.0+0na.8f9405c
     saltversioninfo:
         - 3007
         - 0
@@ -133,11 +136,11 @@ local:
     adduser:
         3.118ubuntu5
     apt:
-        2.4.9
+        2.4.10
     apt-transport-https:
-        2.4.9
+        2.4.10
     base-files:
-        12ubuntu4.3
+        12ubuntu4.4
     base-passwd:
         3.5.52build1
     bash:
@@ -191,9 +194,9 @@ local:
     gcc-12-base:
         12.3.0-1ubuntu1~22.04
     git:
-        1:2.34.1-1ubuntu1.9
+        1:2.34.1-1ubuntu1.10
     git-man:
-        1:2.34.1-1ubuntu1.9
+        1:2.34.1-1ubuntu1.10
     gnupg:
         2.2.27-3ubuntu2.1
     gnupg-l10n:
@@ -227,7 +230,7 @@ local:
     libapparmor1:
         3.0.4-2ubuntu2.2
     libapt-pkg6.0:
-        2.4.9
+        2.4.10
     libargon2-1:
         0~20171227-0.3
     libasan6:
@@ -341,7 +344,7 @@ local:
     libjs-underscore:
         1.13.2~dfsg-2
     libjson-c5:
-        0.15-3~ubuntu1.22.04.1
+        0.15-3~ubuntu1.22.04.2
     libk5crypto3:
         1.19.2-2ubuntu0.2
     libkeyutils1:
@@ -355,7 +358,7 @@ local:
     libksba8:
         1.6.0-2ubuntu0.2
     libldap-2.5-0:
-        2.5.15+dfsg-0ubuntu0.22.04.1
+        2.5.16+dfsg-0ubuntu0.22.04.1
     liblsan0:
         12.3.0-1ubuntu1~22.04
     liblz4-1:
@@ -481,7 +484,7 @@ local:
     libzstd1:
         1.4.8+dfsg-3build1
     linux-libc-dev:
-        5.15.0-78.85
+        5.15.0-82.91
     locales:
         2.35-0ubuntu3.1
     login:
@@ -525,11 +528,11 @@ local:
     procps:
         2:3.3.17-6ubuntu2
     python-apt-common:
-        2.4.0ubuntu1
+        2.4.0ubuntu2
     python3:
         3.10.6-1~22.04
     python3-apt:
-        2.4.0ubuntu1
+        2.4.0ubuntu2
     python3-dev:
         3.10.6-1~22.04
     python3-distutils:
@@ -610,7 +613,7 @@ local:
     idna:
         3.4
     immutables:
-        0.19
+        0.20
     jmespath:
         1.0.1
     looseversion:
@@ -628,21 +631,21 @@ local:
     pycryptodomex:
         3.18.0
     python-apt:
-        2.4.0+ubuntu1
+        2.4.0+ubuntu2
     pyzmq:
-        25.1.0
+        25.1.1
     requests:
         2.31.0
     salt:
-        3007.0+0na.611944f
+        3007.0+0na.8f9405c
     setuptools:
-        68.0.0
+        68.1.2
     tornado:
-        6.3.2
+        6.3.3
     urllib3:
         2.0.4
     wheel:
-        0.41.0
+        0.41.2
 # salt-call --local locale.list_avail
 local:
     - C

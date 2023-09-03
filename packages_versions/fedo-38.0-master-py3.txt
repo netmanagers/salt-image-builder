@@ -2,7 +2,7 @@ fedo-38.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3007.0+0na.611944f
+          Salt: 3007.0+0na.8f9405c
  
 Python Version:
         Python: 3.11.4 (main, Jun  7 2023, 00:00:00) [GCC 13.1.1 20230511 (Red Hat 13.1.1-2)]
@@ -29,12 +29,15 @@ Dependency Versions:
         pygit2: Not Installed
   python-gnupg: Not Installed
         PyYAML: 6.0.1
-         PyZMQ: 25.1.0
+         PyZMQ: 25.1.1
         relenv: Not Installed
          smmap: Not Installed
        timelib: Not Installed
-       Tornado: 6.3.2
+       Tornado: 6.3.3
            ZMQ: 4.3.4
+ 
+Salt Package Information:
+  Package Type: Not Installed
  
 System Versions:
           dist: fedora 38 
@@ -108,7 +111,7 @@ local:
     saltpath:
         /usr/lib/python3.11/site-packages/salt
     saltversion:
-        3007.0+0na.611944f
+        3007.0+0na.8f9405c
     saltversioninfo:
         - 3007
         - 0
@@ -128,9 +131,9 @@ local:
 local:
     ----------
     alternatives:
-        1.24-1.fc38
+        1.25-1.fc38
     audit-libs:
-        3.1.1-1.fc38
+        3.1.2-1.fc38
     authselect:
         1.4.2-2.fc38
     authselect-libs:
@@ -238,7 +241,7 @@ local:
     git-core-doc:
         2.41.0-1.fc38
     glib2:
-        2.76.4-3.fc38
+        2.76.5-1.fc38
     glibc:
         2.37-4.fc38
     glibc-common:
@@ -256,21 +259,21 @@ local:
     gnupg2:
         2.4.0-3.fc38
     gnutls:
-        3.8.0-2.fc38
+        3.8.1-1.fc38
     gpg-pubkey.(none):
         eb10b464-6202d9c6
     gpgme:
-        1.17.1-3.fc38
+        1.17.1-5.fc38
     grep:
         3.8-3.fc38
     groff-base:
         1.22.4-11.fc38
     grub2-common:
-        1:2.06-95.fc38
+        1:2.06-97.fc38
     grub2-tools:
-        1:2.06-95.fc38
+        1:2.06-97.fc38
     grub2-tools-minimal:
-        1:2.06-95.fc38
+        1:2.06-97.fc38
     grubby:
         8.40-69.fc38
     guile22:
@@ -282,7 +285,7 @@ local:
     jansson:
         2.13.1-6.fc38
     json-c:
-        0.16-4.fc38
+        0.17-1.fc38
     kbd:
         2.5.1-5.fc38
     kbd-legacy:
@@ -300,7 +303,7 @@ local:
     kpartx:
         0.9.4-2.fc38
     krb5-libs:
-        1.21-2.fc38
+        1.21-3.fc38
     less:
         633-1.fc38
     libacl:
@@ -336,7 +339,7 @@ local:
     libdnf:
         0.70.2-1.fc38
     libeconf:
-        0.4.0-5.fc38
+        0.5.2-1.fc38
     libedit:
         3.1-45.20221030cvs.fc38
     libevent:
@@ -382,7 +385,7 @@ local:
     libpwquality:
         1.4.5-3.fc38
     librepo:
-        1.15.1-2.fc38
+        1.15.2-1.fc38
     libreport-filesystem:
         2.17.11-1.fc38
     libseccomp:
@@ -410,7 +413,7 @@ local:
     libtasn1:
         4.19.0-2.fc38
     libtirpc:
-        1.3.3-1.rc1.fc38
+        1.3.3-1.rc2.fc38
     libtool-ltdl:
         2.4.7-6.fc38
     libunistring:
@@ -424,6 +427,8 @@ local:
     libverto:
         0.3.2-5.fc38
     libxcrypt:
+        4.4.36-1.fc38
+    libxcrypt-compat:
         4.4.36-1.fc38
     libxcrypt-devel:
         4.4.36-1.fc38
@@ -481,10 +486,20 @@ local:
         10.42-1.fc38.1
     pcre2-syntax:
         10.42-1.fc38.1
+    perl-AutoLoader:
+        5.74-497.fc38
+    perl-B:
+        1.83-497.fc38
     perl-Carp:
         1.52-490.fc38
     perl-Class-Struct:
         0.66-497.fc38
+    perl-Data-Dumper:
+        2.184-491.fc38
+    perl-Digest:
+        1.20-490.fc38
+    perl-Digest-MD5:
+        2.58-490.fc38
     perl-DynaLoader:
         1.52-497.fc38
     perl-Encode:
@@ -507,6 +522,8 @@ local:
         1:0.231.100-490.fc38
     perl-File-stat:
         1.12-497.fc38
+    perl-FileHandle:
+        2.03-497.fc38
     perl-Getopt-Long:
         1:2.54-2.fc38
     perl-Getopt-Std:
@@ -514,13 +531,21 @@ local:
     perl-Git:
         2.41.0-1.fc38
     perl-HTTP-Tiny:
-        0.086-1.fc38
+        0.086-2.fc38
     perl-IO:
         1.50-497.fc38
+    perl-IO-Socket-IP:
+        0.41-492.fc38
+    perl-IO-Socket-SSL:
+        2.081-1.fc38
     perl-IPC-Open3:
         1.22-497.fc38
     perl-MIME-Base64:
         3.16-490.fc38
+    perl-Mozilla-CA:
+        20221114-2.fc38
+    perl-Net-SSLeay:
+        1.92-5.fc38
     perl-POSIX:
         2.03-497.fc38
     perl-PathTools:
@@ -555,6 +580,10 @@ local:
         2023.0511-1.fc38
     perl-Time-Local:
         2:1.300-490.fc38
+    perl-URI:
+        5.17-2.fc38
+    perl-base:
+        2.27-497.fc38
     perl-constant:
         1.33-491.fc38
     perl-if:
@@ -563,6 +592,8 @@ local:
         4:5.36.1-497.fc38
     perl-lib:
         0.65-497.fc38
+    perl-libnet:
+        3.15-1.fc38
     perl-libs:
         4:5.36.1-497.fc38
     perl-locale:
@@ -590,11 +621,11 @@ local:
     popt:
         1.19-2.fc38
     procps-ng:
-        3.3.17-9.fc38
+        3.3.17-11.fc38
     publicsuffix-list-dafsa:
-        20230614-1.fc38
+        20230812-1.fc38
     python-pip-wheel:
-        22.3.1-2.fc38
+        22.3.1-3.fc38
     python-setuptools-wheel:
         65.5.1-2.fc38
     python3:
@@ -604,7 +635,7 @@ local:
     python3-dnf:
         4.16.2-1.fc38
     python3-gpg:
-        1.17.1-3.fc38
+        1.17.1-5.fc38
     python3-hawkey:
         0.70.2-1.fc38
     python3-libcomps:
@@ -614,7 +645,7 @@ local:
     python3-libs:
         3.11.4-1.fc38
     python3-pip:
-        22.3.1-2.fc38
+        22.3.1-3.fc38
     python3-rpm:
         4.18.1-3.fc38
     python3-setuptools:
@@ -630,7 +661,7 @@ local:
     rpm-libs:
         4.18.1-3.fc38
     rpm-sequoia:
-        1.4.1-1.fc38
+        1.5.0-1.fc38
     rpm-sign-libs:
         4.18.1-3.fc38
     sed:
@@ -664,9 +695,9 @@ local:
     util-linux-core:
         2.38.1-4.fc38
     vim-data:
-        2:9.0.1677-2.fc38
+        2:9.0.1712-1.fc38
     vim-minimal:
-        2:9.0.1677-2.fc38
+        2:9.0.1712-1.fc38
     which:
         2.21-39.fc38
     xz:
@@ -705,7 +736,7 @@ local:
     idna:
         3.4
     immutables:
-        0.19
+        0.20
     jmespath:
         1.0.1
     libcomps:
@@ -725,21 +756,21 @@ local:
     pycryptodomex:
         3.18.0
     pyzmq:
-        25.1.0
+        25.1.1
     requests:
         2.31.0
     rpm:
         4.18.1
     salt:
-        3007.0+0na.611944f
+        3007.0+0na.8f9405c
     setuptools:
-        65.5.1
+        68.1.2
     tornado:
-        6.3.2
+        6.3.3
     urllib3:
         2.0.4
     wheel:
-        0.41.0
+        0.41.2
 # salt-call --local locale.list_avail
 local:
     - C

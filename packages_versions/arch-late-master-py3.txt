@@ -2,10 +2,10 @@ arch-late-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3007.0+0na.611944f
+          Salt: 3007.0+0na.8f9405c
  
 Python Version:
-        Python: 3.11.3 (main, Jun  5 2023, 09:32:32) [GCC 13.1.1 20230429]
+        Python: 3.11.5 (main, Aug 28 2023, 20:02:58) [GCC 13.2.1 20230801]
  
 Dependency Versions:
           cffi: 1.15.1
@@ -29,12 +29,15 @@ Dependency Versions:
         pygit2: Not Installed
   python-gnupg: Not Installed
         PyYAML: 6.0.1
-         PyZMQ: 25.1.0
+         PyZMQ: 25.1.1
         relenv: Not Installed
          smmap: Not Installed
        timelib: Not Installed
-       Tornado: 6.3.2
+       Tornado: 6.3.3
            ZMQ: 4.3.4
+ 
+Salt Package Information:
+  Package Type: Not Installed
  
 System Versions:
           dist: arch 20230725.0.167364 
@@ -105,13 +108,13 @@ local:
     pythonversion:
         - 3
         - 11
-        - 3
+        - 5
         - final
         - 0
     saltpath:
         /usr/lib/python3.11/site-packages/salt
     saltversion:
-        3007.0+0na.611944f
+        3007.0+0na.8f9405c
     saltversioninfo:
         - 3007
         - 0
@@ -133,19 +136,19 @@ local:
     acl:
         2.3.1-3
     archlinux-keyring:
-        20230704-1
+        20230821-2
     argon2:
         20190702-5
     attr:
         2.5.1-3
     audit:
-        3.1.1-1
+        3.1.2-1
     base:
         3-1
     bash:
         5.1.016-4
     binutils:
-        2.41-2
+        2.41-3
     brotli:
         1.0.9-12
     bzip2:
@@ -165,11 +168,11 @@ local:
     db:
         6.2.32-1
     db5.3:
-        5.3.28-2
+        5.3.28-4
     dbus:
         1.14.8-1
     device-mapper:
-        2.03.21-1
+        2.03.22-2
     dnssec-anchors:
         20190629-3
     e2fsprogs:
@@ -177,7 +180,7 @@ local:
     expat:
         2.5.0-1
     file:
-        5.44-3
+        5.45-1
     filesystem:
         2023.01.31-1
     findutils:
@@ -193,27 +196,27 @@ local:
     gettext:
         0.22-1
     git:
-        2.41.0-2
+        2.42.0-1
     glib2:
-        2.76.4-1
+        2.76.5-1
     glibc:
-        2.38-1
+        2.38-3
     gmp:
-        6.2.1-2
+        6.3.0-1
     gnupg:
         2.2.41-1
     gnutls:
-        3.8.0-1
+        3.8.1-1
     gpgme:
-        1.21.0-1
+        1.22.0-1
     grep:
         3.11-1
     gzip:
-        1.12-2
+        1.12-3
     hwdata:
-        0.372-1
+        0.373-1
     iana-etc:
-        20230629-1
+        20230803-1
     icu:
         73.2-2
     iproute2:
@@ -225,9 +228,9 @@ local:
     jansson:
         2.14-2
     json-c:
-        0.16-1
+        0.17-1
     kbd:
-        2.6.1-1
+        2.6.2-1
     keyutils:
         1.6.3-2
     kmod:
@@ -237,7 +240,7 @@ local:
     ldns:
         1.8.3-2
     less:
-        1:633-1
+        1:643-1
     libarchive:
         3.7.1-1
     libassuan:
@@ -267,7 +270,7 @@ local:
     libksba:
         1.6.4-1
     libldap:
-        2.6.4-2
+        2.6.6-1
     libmnl:
         1.0.5-1
     libmpc:
@@ -277,7 +280,7 @@ local:
     libnfnetlink:
         1.0.2-1
     libnftnl:
-        1.2.5-1
+        1.2.6-1
     libnghttp2:
         1.55.1-1
     libnl:
@@ -295,7 +298,7 @@ local:
     libseccomp:
         2.5.4-2
     libsecret:
-        0.20.5-2
+        0.21.0-1
     libssh2:
         1.11.0-1
     libsysprof-capture:
@@ -313,7 +316,7 @@ local:
     libxcrypt:
         4.4.36-1
     libxml2:
-        2.11.4-1
+        2.11.5-1
     libyaml:
         0.2.5-2
     licenses:
@@ -323,7 +326,7 @@ local:
     lz4:
         1:1.9.4-1
     mpfr:
-        4.2.0.p12-3
+        4.2.1-1
     ncurses:
         6.4_20230520-1
     net-tools:
@@ -333,7 +336,7 @@ local:
     npth:
         1.6-4
     openssh:
-        9.3p2-1
+        9.4p1-2
     openssl:
         3.1.2-1
     p11-kit:
@@ -341,7 +344,7 @@ local:
     pacman:
         6.0.2-7
     pacman-mirrorlist:
-        20230628-1
+        20230820-1
     pam:
         1.5.3-3
     pambase:
@@ -351,13 +354,13 @@ local:
     pcre2:
         10.42-2
     perl:
-        5.36.1-2
+        5.38.0-1
     perl-error:
-        0.17029-4
+        0.17029-5
     perl-mailtools:
-        2.21-6
+        2.21-7
     perl-timedate:
-        2.33-4
+        2.33-5
     pinentry:
         1.2.1-1
     popt:
@@ -367,15 +370,15 @@ local:
     psmisc:
         23.6-1
     python:
-        3.11.3-2
+        3.11.5-1
     python-attrs:
         22.2.0-3
     python-autocommand:
         2.2.2-4
     python-cffi:
-        1.15.1-3
+        1.15.1-4
     python-cryptography:
-        41.0.2-1
+        41.0.3-1
     python-fastjsonschema:
         2.18.0-1
     python-inflect:
@@ -383,11 +386,11 @@ local:
     python-jaraco.context:
         4.3.0-3
     python-jaraco.functools:
-        3.8.0-1
+        3.8.1-1
     python-jaraco.text:
         3.11.1-3
     python-more-itertools:
-        9.1.1-4
+        10.1.0-1
     python-ordered-set:
         4.1.0-4
     python-packaging:
@@ -395,7 +398,7 @@ local:
     python-pip:
         23.2.1-1
     python-platformdirs:
-        3.9.1-1
+        3.10.0-1
     python-ply:
         3.11-12
     python-pycparser:
@@ -407,7 +410,7 @@ local:
     python-tomli:
         2.0.1-3
     python-trove-classifiers:
-        2023.7.6-1
+        2023.8.7-1
     python-typing_extensions:
         4.7.1-1
     python-validate-pyproject:
@@ -423,15 +426,15 @@ local:
     shadow:
         4.13-2
     sqlite:
-        3.42.0-1
+        3.43.0-1
     sudo:
         1.9.14.p3-1
     systemd:
-        254-1
+        254.1-1
     systemd-libs:
-        254-1
+        254.1-1
     systemd-sysvcompat:
-        254-1
+        254.1-1
     tar:
         1.35-1
     tpm2-tss:
@@ -439,13 +442,13 @@ local:
     tzdata:
         2023c-2
     util-linux:
-        2.39.1-1
+        2.39.2-1
     util-linux-libs:
-        2.39.1-1
+        2.39.2-1
     xz:
-        5.4.3-1
+        5.4.4-1
     zlib:
-        1:1.2.13-3
+        1:1.3-1
     zstd:
         1.5.5-1
 # salt-call --local pip.list
@@ -478,13 +481,13 @@ local:
     idna:
         3.4
     immutables:
-        0.19
+        0.20
     inflect:
         7.0.0
     jaraco.context:
         4.3.0
     jaraco.functools:
-        3.8.0
+        3.8.1
     jaraco.text:
         3.11.1
     jmespath:
@@ -492,7 +495,7 @@ local:
     looseversion:
         1.3.0
     more-itertools:
-        9.1.0
+        10.1.0
     msgpack:
         1.0.5
     ordered-set:
@@ -502,7 +505,7 @@ local:
     pip:
         23.2.1
     platformdirs:
-        3.9.1
+        3.10.0
     ply:
         3.11
     psutil:
@@ -514,19 +517,19 @@ local:
     pydantic:
         1.10.9
     pyzmq:
-        25.1.0
+        25.1.1
     requests:
         2.31.0
     salt:
-        3007.0+0na.611944f
+        3007.0+0na.8f9405c
     setuptools:
-        68.0.0
+        68.1.2
     tomli:
         2.0.1
     tornado:
-        6.3.2
+        6.3.3
     trove-classifiers:
-        2023.7.8
+        2023.8.8
     typing_extensions:
         4.7.1
     urllib3:
@@ -534,7 +537,7 @@ local:
     validate-pyproject:
         0.13.post1.dev0+gb752273.d20230520
     wheel:
-        0.41.0
+        0.41.2
 # salt-call --local locale.list_avail
 local:
     - C

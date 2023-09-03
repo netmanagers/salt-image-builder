@@ -1,5 +1,13 @@
 # Changelog
 
+# [1.82.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.81.1...v1.82.0) (2023-09-03)
+
+
+### Features
+
+* **gitlab-ci:** build CVE 3005.2 & 3006.2 images ([cc2add2](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/cc2add2b0772dd550628da72cea61227cde2265b))
+* **gitlab-ci:** deprecate ubuntu-18 (EOL) ([c7265cd](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/c7265cd40b588da889a416b5b93449a845c32a0a))
+
 ## [1.81.1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.81.0...v1.81.1) (2023-08-03)
 
 

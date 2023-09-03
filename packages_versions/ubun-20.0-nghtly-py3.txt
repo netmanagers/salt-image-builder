@@ -288,7 +288,7 @@ local:
     libedit2:
         3.1-20191231-1
     libelf1:
-        0.176-1.1build1
+        0.176-1.1ubuntu0.1
     liberror-perl:
         0.17029-1
     libexpat1:
@@ -504,11 +504,11 @@ local:
     net-tools:
         1.60+git20180626.aebd88e-1ubuntu1
     openssh-client:
-        1:8.2p1-4ubuntu0.8
+        1:8.2p1-4ubuntu0.9
     openssh-server:
-        1:8.2p1-4ubuntu0.8
+        1:8.2p1-4ubuntu0.9
     openssh-sftp-server:
-        1:8.2p1-4ubuntu0.8
+        1:8.2p1-4ubuntu0.9
     openssl:
         1.1.1f-1ubuntu2.19
     packagekit:
@@ -558,7 +558,7 @@ local:
     python3-six:
         1.14.0-2
     python3-software-properties:
-        0.99.9.11
+        0.99.9.12
     python3-urllib3:
         1.25.8-2ubuntu0.2
     python3-yaml:
@@ -578,7 +578,7 @@ local:
     sensible-utils:
         0.0.12+nmu1
     software-properties-common:
-        0.99.9.11
+        0.99.9.12
     sudo:
         1.8.31-1ubuntu1.5
     systemd:

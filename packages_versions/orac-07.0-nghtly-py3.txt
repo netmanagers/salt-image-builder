@@ -253,7 +253,7 @@ local:
     kmod-libs:
         20-28.0.3.el7
     kpartx:
-        0.4.9-136.0.1.el7_9
+        0.4.9-136.0.3.el7_9
     krb5-devel:
         1.15.1-55.0.1.el7_9
     krb5-libs:
@@ -553,11 +553,11 @@ local:
     redhat-rpm-config:
         9.1.0-88.0.1.el7
     rhn-check:
-        2.0.2-24.0.9.el7
+        2.0.2-24.0.11.el7
     rhn-client-tools:
-        2.0.2-24.0.9.el7
+        2.0.2-24.0.11.el7
     rhn-setup:
-        2.0.2-24.0.9.el7
+        2.0.2-24.0.11.el7
     rhnlib:
         2.5.65-8.0.5.el7
     rhnsd:

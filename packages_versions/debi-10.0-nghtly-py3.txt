@@ -389,7 +389,7 @@ local:
     libssh2-1:
         1.8.0-2.1
     libssl1.1:
-        1.1.1n-0+deb10u5
+        1.1.1n-0+deb10u6
     libstdc++6:
         8.3.0-6
     libsystemd0:
@@ -433,13 +433,13 @@ local:
     net-tools:
         1.60+git20180626.aebd88e-1
     openssh-client:
-        1:7.9p1-10+deb10u2
+        1:7.9p1-10+deb10u3
     openssh-server:
-        1:7.9p1-10+deb10u2
+        1:7.9p1-10+deb10u3
     openssh-sftp-server:
-        1:7.9p1-10+deb10u2
+        1:7.9p1-10+deb10u3
     openssl:
-        1.1.1n-0+deb10u5
+        1.1.1n-0+deb10u6
     passwd:
         1:4.5-1.1
     pciutils:

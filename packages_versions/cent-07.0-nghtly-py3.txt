@@ -133,7 +133,7 @@ local:
     bc:
         1.06.95-13.el7
     bind-license:
-        32:9.11.4-26.P2.el7_9.13
+        32:9.11.4-26.P2.el7_9.14
     binutils:
         2.27-44.base.el7_9.1
     bzip2-libs:
@@ -367,11 +367,11 @@ local:
     openpgm:
         5.2.122-2.el7
     openssh:
-        7.4p1-22.el7_9
+        7.4p1-23.el7_9
     openssh-clients:
-        7.4p1-22.el7_9
+        7.4p1-23.el7_9
     openssh-server:
-        7.4p1-22.el7_9
+        7.4p1-23.el7_9
     openssl:
         1:1.0.2k-26.el7_9
     openssl-devel:

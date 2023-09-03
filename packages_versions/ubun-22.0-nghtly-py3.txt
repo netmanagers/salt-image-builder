@@ -126,11 +126,11 @@ local:
     adduser:
         3.118ubuntu5
     apt:
-        2.4.9
+        2.4.10
     apt-transport-https:
-        2.4.9
+        2.4.10
     base-files:
-        12ubuntu4.3
+        12ubuntu4.4
     base-passwd:
         3.5.52build1
     bash:
@@ -176,9 +176,9 @@ local:
     gir1.2-packagekitglib-1.0:
         1.2.5-2ubuntu2
     git:
-        1:2.34.1-1ubuntu1.9
+        1:2.34.1-1ubuntu1.10
     git-man:
-        1:2.34.1-1ubuntu1.9
+        1:2.34.1-1ubuntu1.10
     gnupg:
         2.2.27-3ubuntu2.1
     gnupg-l10n:
@@ -216,7 +216,7 @@ local:
     libappstream4:
         0.15.2-2
     libapt-pkg6.0:
-        2.4.9
+        2.4.10
     libargon2-1:
         0~20171227-0.3
     libassuan0:
@@ -316,7 +316,7 @@ local:
     libip4tc2:
         1.8.7-1ubuntu5.1
     libjson-c5:
-        0.15-3~ubuntu1.22.04.1
+        0.15-3~ubuntu1.22.04.2
     libk5crypto3:
         1.19.2-2ubuntu0.2
     libkeyutils1:
@@ -330,7 +330,7 @@ local:
     libksba8:
         1.6.0-2ubuntu0.2
     libldap-2.5-0:
-        2.5.15+dfsg-0ubuntu0.22.04.1
+        2.5.16+dfsg-0ubuntu0.22.04.1
     liblz4-1:
         1.9.3-2build2
     liblzma5:
@@ -508,11 +508,11 @@ local:
     procps:
         2:3.3.17-6ubuntu2
     python-apt-common:
-        2.4.0ubuntu1
+        2.4.0ubuntu2
     python3:
         3.10.6-1~22.04
     python3-apt:
-        2.4.0ubuntu1
+        2.4.0ubuntu2
     python3-blinker:
         1.4+dfsg1-0.4
     python3-certifi:
