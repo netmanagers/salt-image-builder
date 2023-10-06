@@ -35,7 +35,9 @@ RUN mkdir --parents /etc/portage/repos.conf \
     # We're already keeping the portage repository, as mentioned below
     # Since these images are built every week, this essentially "simulates" a weekly version of `portage:sync_wait_one_day`
  && sed -i -e "/^\(auto-sync = \)yes$/s//\1no/" /etc/portage/repos.conf/gentoo.conf \
- && emerge --noreplace --quiet --with-bdeps-auto=n ${PKGS}
+ && emerge --noreplace --quiet --with-bdeps-auto=n ${PKGS} \
+    # Workaround bug https://bugs.gentoo.org/879179 whereby /etc/sudoers.d is missing
+ && mkdir /etc/sudoers.d && chmod 750 /etc/sudoers.d
 ARG CACHEBUST=1
 # Install Salt using the bootstrap script (removing the 10 seconds delay to cancel the bootstrap)
 RUN curl -L https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.sh | \
