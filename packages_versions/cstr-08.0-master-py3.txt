@@ -2,13 +2,13 @@ cstr-08.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3007.0+0na.8f9405c
+          Salt: 3007.0+0na.6e64117
  
 Python Version:
         Python: 3.11.4 (main, Aug 11 2023, 13:46:19) [GCC 8.5.0 20210514 (Red Hat 8.5.0-20)]
  
 Dependency Versions:
-          cffi: 1.15.1
+          cffi: 1.16.0
       cherrypy: Not Installed
       dateutil: Not Installed
      docker-py: Not Installed
@@ -19,13 +19,13 @@ Dependency Versions:
   looseversion: 1.3.0
       M2Crypto: Not Installed
           Mako: Not Installed
-       msgpack: 1.0.5
+       msgpack: 1.0.7
   msgpack-pure: Not Installed
   mysql-python: Not Installed
-     packaging: 23.1
+     packaging: 23.2
      pycparser: 2.21
       pycrypto: Not Installed
-  pycryptodome: 3.18.0
+  pycryptodome: 3.19.0
         pygit2: Not Installed
   python-gnupg: Not Installed
         PyYAML: 6.0.1
@@ -113,7 +113,7 @@ local:
     saltpath:
         /usr/lib/python3.11/site-packages/salt
     saltversion:
-        3007.0+0na.8f9405c
+        3007.0+0na.6e64117
     saltversioninfo:
         - 3007
         - 0
@@ -239,17 +239,17 @@ local:
     glib2:
         2.56.4-161.el8
     glibc:
-        2.28-236.el8
+        2.28-236.el8.6
     glibc-common:
-        2.28-236.el8
+        2.28-236.el8.6
     glibc-devel:
-        2.28-236.el8
+        2.28-236.el8.6
     glibc-headers:
-        2.28-236.el8
+        2.28-236.el8.6
     glibc-langpack-en:
-        2.28-236.el8
+        2.28-236.el8.6
     glibc-minimal-langpack:
-        2.28-236.el8
+        2.28-236.el8.6
     gmp:
         1:6.1.2-10.el8
     gnupg2:
@@ -273,7 +273,7 @@ local:
     info:
         6.5-7.el8_5
     iproute:
-        6.2.0-2.el8
+        6.2.0-5.el8
     iputils:
         20180629-11.el8
     isl:
@@ -281,9 +281,9 @@ local:
     json-c:
         0.13.1-3.el8
     kernel-headers:
-        4.18.0-513.el8
+        4.18.0-514.el8
     kexec-tools:
-        2.0.26-7.el8
+        2.0.26-10.el8
     keyutils-libs:
         1.5.10-9.el8
     keyutils-libs-devel:
@@ -329,7 +329,7 @@ local:
     libdb-utils:
         5.3.28-42.el8_4
     libdnf:
-        0.63.0-16.el8
+        0.63.0-17.el8
     libedit:
         3.1-23.20170329cvs.el8
     libfdisk:
@@ -597,11 +597,11 @@ local:
     python3-gpg:
         1.13.1-11.el8
     python3-hawkey:
-        0.63.0-16.el8
+        0.63.0-17.el8
     python3-libcomps:
         0.1.18-1.el8
     python3-libdnf:
-        0.63.0-16.el8
+        0.63.0-17.el8
     python3-libs:
         3.6.8-55.el8
     python3-pip:
@@ -661,7 +661,7 @@ local:
     sqlite-libs:
         3.26.0-18.el8
     squashfs-tools:
-        4.3-20.el8
+        4.3-21.el8
     sudo:
         1.8.29-10.el8
     swig:
@@ -710,13 +710,13 @@ local:
     certifi:
         2023.7.22
     cffi:
-        1.15.1
+        1.16.0
     charset-normalizer:
-        3.2.0
+        3.3.0
     contextvars:
         2.4
     cryptography:
-        41.0.3
+        41.0.4
     distro:
         1.8.0
     idna:
@@ -728,9 +728,9 @@ local:
     looseversion:
         1.3.0
     msgpack:
-        1.0.5
+        1.0.7
     packaging:
-        23.1
+        23.2
     pip:
         22.3.1
     psutil:
@@ -738,19 +738,19 @@ local:
     pycparser:
         2.21
     pycryptodomex:
-        3.18.0
+        3.19.0
     pyzmq:
         25.1.1
     requests:
         2.31.0
     salt:
-        3007.0+0na.8f9405c
+        3007.0+0na.6e64117
     setuptools:
         65.5.1
     tornado:
         6.3.3
     urllib3:
-        2.0.4
+        2.0.6
     wheel:
         0.41.2
 # salt-call --local locale.list_avail

@@ -135,7 +135,7 @@ local:
     bzip2-libs:
         1.0.8-8.el9
     ca-certificates:
-        2022.2.54-90.2.el9_0
+        2023.2.60_v7.0.306-90.1.el9_2
     chkconfig:
         1.20-2.0.3.el9
     coreutils:
@@ -147,9 +147,9 @@ local:
     cracklib-dicts:
         2.9.6-27.el9
     crypto-policies:
-        20221215-1.git9a18988.el9
+        20221215-1.git9a18988.el9_2.1
     crypto-policies-scripts:
-        20221215-1.git9a18988.el9
+        20221215-1.git9a18988.el9_2.1
     cryptsetup-libs:
         2.6.0-2.el9
     curl:
@@ -175,7 +175,7 @@ local:
     diffutils:
         3.7-12.el9
     dmidecode:
-        1:3.3-7.el9
+        1:3.3-7.0.1.el9_2.1
     dnf:
         4.14.0-5.0.1.el9_2
     dnf-data:
@@ -211,17 +211,17 @@ local:
     glib2:
         2.68.4-6.el9
     glibc:
-        2.34-60.0.2.el9
+        2.34-60.0.3.el9
     glibc-common:
-        2.34-60.0.2.el9
+        2.34-60.0.3.el9
     glibc-langpack-en:
-        2.34-60.0.2.el9
+        2.34-60.0.3.el9
     gmp:
         1:6.2.0-10.el9
     gnupg2:
         2.3.3-2.el9_0
     gnutls:
-        3.7.6-20.el9_2
+        3.7.6-21.el9_2
     gpg-pubkey.(none):
         8b4efbe6-629ec292,8d8b756f-629e59ec,9d30d7b6-62d757ff
     gpgme:
@@ -279,7 +279,7 @@ local:
     libbrotli:
         1.0.9-6.el9
     libcap:
-        2.48-8.el9
+        2.48-9.el9_2
     libcap-ng:
         0.8.2-7.el9
     libcbor:
@@ -311,11 +311,11 @@ local:
     libfido2:
         1.6.0-7.el9
     libgcc:
-        11.3.1-4.3.0.1.el9
+        11.3.1-4.3.0.4.el9
     libgcrypt:
         1.10.0-10.el9_2
     libgomp:
-        11.3.1-4.3.0.1.el9
+        11.3.1-4.3.0.4.el9
     libgpg-error:
         1.42-5.el9
     libidn2:
@@ -361,7 +361,7 @@ local:
     libssh-config:
         0.10.4-8.el9
     libstdc++:
-        11.3.1-4.3.0.1.el9
+        11.3.1-4.3.0.4.el9
     libtasn1:
         4.16.0-8.el9_1
     libunistring:
@@ -631,7 +631,7 @@ local:
     rpm-sign-libs:
         4.16.1.3-22.0.1.el9
     rsyslog:
-        8.2102.0-113.el9_2
+        8.2102.0-113.el9_2.1
     salt:
         3005+494.ga1a07d1c8c-1.el9
     salt-minion:

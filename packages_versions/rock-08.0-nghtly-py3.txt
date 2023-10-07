@@ -135,7 +135,7 @@ local:
     bzip2-libs:
         1.0.6-26.el8
     ca-certificates:
-        2022.2.54-80.2.el8_6
+        2023.2.60_v7.0.306-80.0.el8_8
     chkconfig:
         1.19.1-1.el8
     coreutils-single:
@@ -171,7 +171,7 @@ local:
     diffutils:
         3.6-6.el8
     dmidecode:
-        1:3.3-4.el8
+        1:3.3-4.el8_8.1
     dnf:
         4.7.0-16.el8_8
     dnf-data:
@@ -193,7 +193,7 @@ local:
     filesystem:
         3.8-6.el8
     findutils:
-        1:4.6.0-20.el8
+        1:4.6.0-20.el8_8.1
     gawk:
         4.2.1-4.el8
     gdbm:
@@ -209,13 +209,15 @@ local:
     glib2:
         2.56.4-161.el8
     glibc:
-        2.28-225.el8
+        2.28-225.el8_8.6
     glibc-common:
-        2.28-225.el8
+        2.28-225.el8_8.6
+    glibc-gconv-extra:
+        2.28-225.el8_8.6
     glibc-langpack-en:
-        2.28-225.el8
+        2.28-225.el8_8.6
     glibc-minimal-langpack:
-        2.28-225.el8
+        2.28-225.el8_8.6
     gmp:
         1:6.1.2-10.el8
     gnupg2:
@@ -381,11 +383,11 @@ local:
     mpfr:
         3.1.6-1.el8
     ncurses:
-        6.1-9.20180224.el8
+        6.1-9.20180224.el8_8.1
     ncurses-base:
-        6.1-9.20180224.el8
+        6.1-9.20180224.el8_8.1
     ncurses-libs:
-        6.1-9.20180224.el8
+        6.1-9.20180224.el8_8.1
     net-tools:
         2.0-0.52.20160912git.el8
     nettle:
@@ -609,13 +611,13 @@ local:
     swig:
         3.0.12-19.module+el8.4.0+385+82b6e804
     systemd:
-        239-74.el8_8.3
+        239-74.el8_8.5
     systemd-libs:
-        239-74.el8_8.3
+        239-74.el8_8.5
     systemd-pam:
-        239-74.el8_8.3
+        239-74.el8_8.5
     systemd-udev:
-        239-74.el8_8.3
+        239-74.el8_8.5
     tar:
         2:1.30-9.el8
     tpm2-tss:

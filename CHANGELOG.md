@@ -1,5 +1,19 @@
 # Changelog
 
+# [1.83.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.82.0...v1.83.0) (2023-10-07)
+
+
+### Bug Fixes
+
+* **gentoo:** workaround for missing `/etc/sudoers.d` ([20a589e](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/20a589e6c3361cca3c2a935484854d431f09f976))
+* **opsu:** add extra package `gawk` to Tumbleweed ([077183d](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/077183df2df2472e9906c3420b67aad06286b2ac))
+
+
+### Features
+
+* **salt:** update to version `v3005.3` ([a322361](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/a322361c1b84537ee7062db9e734c4b4291a041b))
+* **salt:** update to version `v3006.3` ([2a4c4dd](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/2a4c4ddde8e3a97f4684f0a5bc7e4a4f80e878bb))
+
 # [1.82.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.81.1...v1.82.0) (2023-09-03)
 
 

@@ -233,11 +233,11 @@ local:
     libbz2-1.0:
         1.0.8-4
     libc-bin:
-        2.31-13+deb11u6
+        2.31-13+deb11u7
     libc-l10n:
-        2.31-13+deb11u6
+        2.31-13+deb11u7
     libc6:
-        2.31-13+deb11u6
+        2.31-13+deb11u7
     libcap-ng0:
         0.7.9-2.2+b1
     libcap2:
@@ -415,7 +415,7 @@ local:
     libzstd1:
         1.4.8+dfsg-2.1
     locales:
-        2.31-13+deb11u6
+        2.31-13+deb11u7
     login:
         1:4.8.1-1
     logsave:

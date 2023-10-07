@@ -2,13 +2,13 @@ fedo-38.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3007.0+0na.8f9405c
+          Salt: 3007.0+0na.6e64117
  
 Python Version:
-        Python: 3.11.4 (main, Jun  7 2023, 00:00:00) [GCC 13.1.1 20230511 (Red Hat 13.1.1-2)]
+        Python: 3.11.5 (main, Aug 28 2023, 00:00:00) [GCC 13.2.1 20230728 (Red Hat 13.2.1-1)]
  
 Dependency Versions:
-          cffi: 1.15.1
+          cffi: 1.16.0
       cherrypy: Not Installed
       dateutil: Not Installed
      docker-py: Not Installed
@@ -19,13 +19,13 @@ Dependency Versions:
   looseversion: 1.3.0
       M2Crypto: Not Installed
           Mako: Not Installed
-       msgpack: 1.0.5
+       msgpack: 1.0.7
   msgpack-pure: Not Installed
   mysql-python: Not Installed
-     packaging: 23.1
+     packaging: 23.2
      pycparser: 2.21
       pycrypto: Not Installed
-  pycryptodome: 3.18.0
+  pycryptodome: 3.19.0
         pygit2: Not Installed
   python-gnupg: Not Installed
         PyYAML: 6.0.1
@@ -105,13 +105,13 @@ local:
     pythonversion:
         - 3
         - 11
-        - 4
+        - 5
         - final
         - 0
     saltpath:
         /usr/lib/python3.11/site-packages/salt
     saltversion:
-        3007.0+0na.8f9405c
+        3007.0+0na.6e64117
     saltversioninfo:
         - 3007
         - 0
@@ -135,9 +135,9 @@ local:
     audit-libs:
         3.1.2-1.fc38
     authselect:
-        1.4.2-2.fc38
+        1.4.3-1.fc38
     authselect-libs:
-        1.4.2-2.fc38
+        1.4.3-1.fc38
     basesystem:
         11-15.fc38
     bash:
@@ -167,23 +167,23 @@ local:
     cryptsetup-libs:
         2.6.1-1.fc38
     curl:
-        8.0.1-3.fc38
+        8.0.1-4.fc38
     cyrus-sasl-lib:
         2.1.28-9.fc38
     dbus:
-        1:1.14.8-1.fc38
+        1:1.14.10-1.fc38
     dbus-broker:
         33-1.fc38
     dbus-common:
-        1:1.14.8-1.fc38
+        1:1.14.10-1.fc38
     device-mapper:
         1.02.189-2.fc38
     device-mapper-libs:
         1.02.189-2.fc38
     dnf:
-        4.16.2-1.fc38
+        4.17.0-6.fc38
     dnf-data:
-        4.16.2-1.fc38
+        4.17.0-6.fc38
     dracut:
         059-3.fc38
     elfutils-debuginfod-client:
@@ -241,19 +241,19 @@ local:
     git-core-doc:
         2.41.0-1.fc38
     glib2:
-        2.76.5-1.fc38
+        2.76.5-2.fc38
     glibc:
-        2.37-4.fc38
+        2.37-10.fc38
     glibc-common:
-        2.37-4.fc38
+        2.37-10.fc38
     glibc-devel:
-        2.37-4.fc38
+        2.37-10.fc38
     glibc-headers-x86:
-        2.37-4.fc38
+        2.37-10.fc38
     glibc-langpack-en:
-        2.37-4.fc38
+        2.37-10.fc38
     glibc-minimal-langpack:
-        2.37-4.fc38
+        2.37-10.fc38
     gmp:
         1:6.2.1-4.fc38
     gnupg2:
@@ -269,11 +269,11 @@ local:
     groff-base:
         1.22.4-11.fc38
     grub2-common:
-        1:2.06-97.fc38
+        1:2.06-102.fc38
     grub2-tools:
-        1:2.06-97.fc38
+        1:2.06-102.fc38
     grub2-tools-minimal:
-        1:2.06-97.fc38
+        1:2.06-102.fc38
     grubby:
         8.40-69.fc38
     guile22:
@@ -293,7 +293,7 @@ local:
     kbd-misc:
         2.5.1-5.fc38
     kernel-headers:
-        6.4.4-200.fc38
+        6.5.4-200.fc38
     keyutils-libs:
         1.6.1-6.fc38
     kmod:
@@ -325,7 +325,7 @@ local:
     libcap:
         2.48-6.fc38
     libcap-ng:
-        0.8.3-5.fc38
+        0.8.3-8.fc38
     libcbor:
         0.7.0-9.fc38
     libcom_err:
@@ -333,11 +333,11 @@ local:
     libcomps:
         0.1.18-6.fc38
     libcurl:
-        8.0.1-3.fc38
+        8.0.1-4.fc38
     libdb:
         5.3.28-55.fc38
     libdnf:
-        0.70.2-1.fc38
+        0.71.0-2.fc38
     libeconf:
         0.5.2-1.fc38
     libedit:
@@ -385,7 +385,7 @@ local:
     libpwquality:
         1.4.5-3.fc38
     librepo:
-        1.15.2-1.fc38
+        1.16.0-2.fc38
     libreport-filesystem:
         2.17.11-1.fc38
     libseccomp:
@@ -428,8 +428,6 @@ local:
         0.3.2-5.fc38
     libxcrypt:
         4.4.36-1.fc38
-    libxcrypt-compat:
-        4.4.36-1.fc38
     libxcrypt-devel:
         4.4.36-1.fc38
     libxml2:
@@ -443,7 +441,7 @@ local:
     lz4-libs:
         1.9.4-2.fc38
     make:
-        1:4.4-3.fc38
+        1:4.4.1-1.fc38
     memstrack:
         0.2.5-1.fc38
     mpdecimal:
@@ -463,7 +461,7 @@ local:
     npth:
         1.6-12.fc38
     openldap:
-        2.6.4-1.fc38
+        2.6.6-1.fc38
     openssh:
         9.0p1-17.fc38
     openssh-clients:
@@ -629,21 +627,21 @@ local:
     python-setuptools-wheel:
         65.5.1-2.fc38
     python3:
-        3.11.4-1.fc38
+        3.11.5-1.fc38
     python3-devel:
-        3.11.4-1.fc38
+        3.11.5-1.fc38
     python3-dnf:
-        4.16.2-1.fc38
+        4.17.0-6.fc38
     python3-gpg:
         1.17.1-5.fc38
     python3-hawkey:
-        0.70.2-1.fc38
+        0.71.0-2.fc38
     python3-libcomps:
         0.1.18-6.fc38
     python3-libdnf:
-        0.70.2-1.fc38
+        0.71.0-2.fc38
     python3-libs:
-        3.11.4-1.fc38
+        3.11.5-1.fc38
     python3-pip:
         22.3.1-3.fc38
     python3-rpm:
@@ -675,13 +673,13 @@ local:
     sudo:
         1.9.13-2.p2.fc38
     systemd:
-        253.7-1.fc38
+        253.10-1.fc38
     systemd-libs:
-        253.7-1.fc38
+        253.10-1.fc38
     systemd-pam:
-        253.7-1.fc38
+        253.10-1.fc38
     systemd-udev:
-        253.7-1.fc38
+        253.10-1.fc38
     tar:
         2:1.34-8.fc38
     tpm2-tools:
@@ -695,9 +693,9 @@ local:
     util-linux-core:
         2.38.1-4.fc38
     vim-data:
-        2:9.0.1712-1.fc38
+        2:9.0.1968-1.fc38
     vim-minimal:
-        2:9.0.1712-1.fc38
+        2:9.0.1968-1.fc38
     which:
         2.21-39.fc38
     xz:
@@ -705,7 +703,7 @@ local:
     xz-libs:
         5.4.1-1.fc38
     yum:
-        4.16.2-1.fc38
+        4.17.0-6.fc38
     zchunk-libs:
         1.3.1-1.fc38
     zlib:
@@ -722,13 +720,13 @@ local:
     certifi:
         2023.7.22
     cffi:
-        1.15.1
+        1.16.0
     charset-normalizer:
-        3.2.0
+        3.3.0
     contextvars:
         2.4
     cryptography:
-        41.0.3
+        41.0.4
     distro:
         1.8.0
     gpg:
@@ -744,9 +742,9 @@ local:
     looseversion:
         1.3.0
     msgpack:
-        1.0.5
+        1.0.7
     packaging:
-        23.1
+        23.2
     pip:
         22.3.1
     psutil:
@@ -754,7 +752,7 @@ local:
     pycparser:
         2.21
     pycryptodomex:
-        3.18.0
+        3.19.0
     pyzmq:
         25.1.1
     requests:
@@ -762,13 +760,13 @@ local:
     rpm:
         4.18.1
     salt:
-        3007.0+0na.8f9405c
+        3007.0+0na.6e64117
     setuptools:
-        68.1.2
+        65.5.1
     tornado:
         6.3.3
     urllib3:
-        2.0.4
+        2.0.6
     wheel:
         0.41.2
 # salt-call --local locale.list_avail

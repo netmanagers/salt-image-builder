@@ -254,9 +254,9 @@ local:
     libbz2-1.0:
         1.0.8-2
     libc-bin:
-        2.31-0ubuntu9.9
+        2.31-0ubuntu9.12
     libc6:
-        2.31-0ubuntu9.9
+        2.31-0ubuntu9.12
     libcap-ng0:
         0.7.9-2.1build1
     libcap2:
@@ -482,7 +482,7 @@ local:
     libzstd1:
         1.4.4+dfsg-3ubuntu0.1
     locales:
-        2.31-0ubuntu9.9
+        2.31-0ubuntu9.12
     login:
         1:4.8.1-1ubuntu5.20.04.4
     logsave:

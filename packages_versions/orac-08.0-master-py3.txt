@@ -2,13 +2,13 @@ orac-08.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3007.0+0na.8f9405c
+          Salt: 3007.0+0na.6e64117
  
 Python Version:
         Python: 3.11.2 (main, Jun 14 2023, 13:00:29) [GCC 8.5.0 20210514 (Red Hat 8.5.0-18.0.2)]
  
 Dependency Versions:
-          cffi: 1.15.1
+          cffi: 1.16.0
       cherrypy: Not Installed
       dateutil: Not Installed
      docker-py: Not Installed
@@ -19,13 +19,13 @@ Dependency Versions:
   looseversion: 1.3.0
       M2Crypto: Not Installed
           Mako: Not Installed
-       msgpack: 1.0.5
+       msgpack: 1.0.7
   msgpack-pure: Not Installed
   mysql-python: Not Installed
-     packaging: 23.1
+     packaging: 23.2
      pycparser: 2.21
       pycrypto: Not Installed
-  pycryptodome: 3.18.0
+  pycryptodome: 3.19.0
         pygit2: Not Installed
   python-gnupg: Not Installed
         PyYAML: 6.0.1
@@ -114,7 +114,7 @@ local:
     saltpath:
         /usr/lib/python3.11/site-packages/salt
     saltversion:
-        3007.0+0na.8f9405c
+        3007.0+0na.6e64117
     saltversioninfo:
         - 3007
         - 0
@@ -142,15 +142,15 @@ local:
     bash:
         4.4.20-4.el8_6
     bind-export-libs:
-        32:9.11.36-8.el8_8.1
+        32:9.11.36-8.el8_8.2
     binutils:
-        2.30-119.0.1.el8
+        2.30-119.0.2.el8
     brotli:
         1.0.6-3.el8
     bzip2-libs:
         1.0.6-26.el8
     ca-certificates:
-        2022.2.54-80.2.el8_6
+        2023.2.60_v7.0.306-80.0.el8_8
     chkconfig:
         1.19.1-1.0.2.el8
     coreutils:
@@ -158,7 +158,7 @@ local:
     coreutils-common:
         8.30-15.0.1.el8
     cpp:
-        8.5.0-18.0.2.el8
+        8.5.0-18.0.6.el8
     cracklib:
         2.9.6-15.el8
     cracklib-dicts:
@@ -216,11 +216,11 @@ local:
     filesystem:
         3.8-6.el8
     findutils:
-        1:4.6.0-20.el8
+        1:4.6.0-20.el8_8.1
     gawk:
         4.2.1-4.el8
     gcc:
-        8.5.0-18.0.2.el8
+        8.5.0-18.0.6.el8
     gdbm:
         1:1.18-2.el8
     gdbm-libs:
@@ -234,15 +234,17 @@ local:
     glib2:
         2.56.4-161.el8
     glibc:
-        2.28-225.0.3.el8
+        2.28-225.0.4.el8
     glibc-common:
-        2.28-225.0.3.el8
+        2.28-225.0.4.el8
     glibc-devel:
-        2.28-225.0.3.el8
+        2.28-225.0.4.el8
+    glibc-gconv-extra:
+        2.28-225.0.4.el8
     glibc-headers:
-        2.28-225.0.3.el8
+        2.28-225.0.4.el8
     glibc-langpack-en:
-        2.28-225.0.3.el8
+        2.28-225.0.4.el8
     gmp:
         1:6.1.2-10.el8
     gnupg2:
@@ -282,7 +284,7 @@ local:
     kbd-misc:
         2.0.4-10.el8
     kernel-headers:
-        4.18.0-477.21.1.el8_8
+        4.18.0-477.27.1.el8_8
     keyutils-libs:
         1.5.10-9.el8
     keyutils-libs-devel:
@@ -338,11 +340,11 @@ local:
     libffi:
         3.1-24.el8
     libgcc:
-        8.5.0-18.0.2.el8
+        8.5.0-18.0.6.el8
     libgcrypt:
         1.8.5-7.el8_6
     libgomp:
-        8.5.0-18.0.2.el8
+        8.5.0-18.0.6.el8
     libgpg-error:
         1.31-1.el8
     libidn2:
@@ -398,7 +400,7 @@ local:
     libssh-config:
         0.9.6-10.el8_8
     libstdc++:
-        8.5.0-18.0.2.el8
+        8.5.0-18.0.6.el8
     libtasn1:
         4.13-4.el8_7
     libtirpc:
@@ -421,8 +423,6 @@ local:
         4.1.1-6.el8
     libxcrypt-devel:
         4.1.1-6.el8
-    libxkbcommon:
-        0.9.1-1.el8
     libxml2:
         2.9.7-16.el8_8.1
     libyaml:
@@ -440,11 +440,11 @@ local:
     mpfr:
         3.1.6-1.el8
     ncurses:
-        6.1-9.20180224.el8
+        6.1-9.20180224.el8_8.1
     ncurses-base:
-        6.1-9.20180224.el8
+        6.1-9.20180224.el8_8.1
     ncurses-libs:
-        6.1-9.20180224.el8
+        6.1-9.20180224.el8_8.1
     net-tools:
         2.0-0.52.20160912git.el8
     nettle:
@@ -703,8 +703,6 @@ local:
         2:8.0.1763-19.0.1.el8_6.4
     which:
         2.21-18.el8
-    xkeyboard-config:
-        2.28-1.el8
     xz-libs:
         5.2.4-4.el8_6
     yum:
@@ -727,13 +725,13 @@ local:
     certifi:
         2023.7.22
     cffi:
-        1.15.1
+        1.16.0
     charset-normalizer:
-        3.2.0
+        3.3.0
     contextvars:
         2.4
     cryptography:
-        41.0.3
+        41.0.4
     distro:
         1.8.0
     idna:
@@ -745,9 +743,9 @@ local:
     looseversion:
         1.3.0
     msgpack:
-        1.0.5
+        1.0.7
     packaging:
-        23.1
+        23.2
     pip:
         22.3.1
     psutil:
@@ -755,19 +753,19 @@ local:
     pycparser:
         2.21
     pycryptodomex:
-        3.18.0
+        3.19.0
     pyzmq:
         25.1.1
     requests:
         2.31.0
     salt:
-        3007.0+0na.8f9405c
+        3007.0+0na.6e64117
     setuptools:
         65.5.1
     tornado:
         6.3.3
     urllib3:
-        2.0.4
+        2.0.6
     wheel:
         0.41.2
 # salt-call --local locale.list_avail

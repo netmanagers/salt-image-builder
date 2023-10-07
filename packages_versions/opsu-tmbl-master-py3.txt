@@ -2,13 +2,13 @@ opsu-tmbl-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3007.0+0na.611944f
+          Salt: 3007.0+0na.6e64117
  
 Python Version:
-        Python: 3.11.4 (main, Jun 28 2023, 19:51:46) [GCC]
+        Python: 3.11.5 (main, Aug 31 2023, 07:57:41) [GCC]
  
 Dependency Versions:
-          cffi: 1.15.1
+          cffi: 1.16.0
       cherrypy: Not Installed
       dateutil: Not Installed
      docker-py: Not Installed
@@ -19,30 +19,33 @@ Dependency Versions:
   looseversion: 1.3.0
       M2Crypto: Not Installed
           Mako: Not Installed
-       msgpack: 1.0.5
+       msgpack: 1.0.7
   msgpack-pure: Not Installed
   mysql-python: Not Installed
-     packaging: 23.1
+     packaging: 23.2
      pycparser: 2.21
       pycrypto: Not Installed
-  pycryptodome: 3.18.0
+  pycryptodome: 3.19.0
         pygit2: Not Installed
   python-gnupg: Not Installed
         PyYAML: 6.0.1
-         PyZMQ: 25.1.0
+         PyZMQ: 25.1.1
         relenv: Not Installed
          smmap: Not Installed
        timelib: Not Installed
-       Tornado: 6.3.2
+       Tornado: 6.3.3
            ZMQ: 4.3.4
  
+Salt Package Information:
+  Package Type: Not Installed
+ 
 System Versions:
-          dist: opensuse-tumbleweed 20230801 n/a
+          dist: opensuse-tumbleweed 20231005 n/a
         locale: utf-8
        machine: x86_64
        release: 5.4.109+
         system: Linux
-       version: openSUSE Tumbleweed 20230801 n/a
+       version: openSUSE Tumbleweed 20231005 n/a
  
 # salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
 local:
@@ -70,7 +73,7 @@ local:
     lsb_distrib_id:
         openSUSE Tumbleweed
     lsb_distrib_release:
-        20230801
+        20231005
     os:
         SUSE
     os_family:
@@ -81,16 +84,16 @@ local:
     oscodename:
         openSUSE Tumbleweed
     osfinger:
-        openSUSE Tumbleweed-20230801
+        openSUSE Tumbleweed-20231005
     osfullname:
         openSUSE Tumbleweed
     osmajorrelease:
-        20230801
+        20231005
     osmanufacturer:
     osrelease:
-        20230801
+        20231005
     osrelease_info:
-        - 20230801
+        - 20231005
     osversion:
     pythonexecutable:
         /usr/bin/python3.11
@@ -105,13 +108,13 @@ local:
     pythonversion:
         - 3
         - 11
-        - 4
+        - 5
         - final
         - 0
     saltpath:
         /usr/lib/python3.11/site-packages/salt
     saltversion:
-        3007.0+0na.611944f
+        3007.0+0na.6e64117
     saltversioninfo:
         - 3007
         - 0
@@ -120,7 +123,7 @@ local:
         features:
             +PAM +AUDIT +SELINUX +APPARMOR +IMA -SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified
         version:
-            253
+            254
     virtual:
         container
     virtual_subtype:
@@ -131,481 +134,501 @@ local:
 local:
     ----------
     aaa_base:
-        84.87+git20230329.b39efbc-1.2
+        84.87+git20230815.cab7b44-1.1
     alts:
-        1.2+30.a5431e9-1.2
+        1.2+30.a5431e9-1.3
     bash:
-        5.2.15-8.4
+        5.2.15-8.5
     bash-sh:
-        5.2.15-8.4
+        5.2.15-8.5
     binutils:
-        2.40-5.2
+        2.40-5.4
     boost-license1_82_0:
-        1.82.0-1.3
+        1.82.0-1.4
     ca-certificates:
         2+git20230406.2dae8b7-1.2
     ca-certificates-mozilla:
-        2.60-3.1
+        2.62-2.1
     chkstat:
-        1699_20230602-1.4
-    compat-usrmerge-tools:
-        84.87-5.14
+        1699_20230602-1.6
     coreutils:
-        9.3-1.2
+        9.4-2.1
     cpp:
-        13-1.3
+        13-1.5
     cpp13:
-        13.1.1+git7597-1.1
+        13.2.1+git7813-2.1
     cracklib-dict-small:
-        2.9.11-1.1
+        2.9.11-1.2
     crypto-policies:
-        20230614.5f3458e-1.1
+        20230920.570ea89-1.1
     curl:
-        8.2.1-1.1
+        8.3.0-1.1
     dbus-1:
-        1.14.8-1.2
+        1.14.10-1.1
     dbus-1-common:
-        1.14.8-1.2
+        1.14.10-1.1
     dbus-1-daemon:
-        1.14.8-1.2
+        1.14.10-1.1
     dbus-1-tools:
-        1.14.8-1.2
+        1.14.10-1.1
     diffutils:
-        3.10-1.2
+        3.10-1.4
     file:
-        5.44-2.2
+        5.45-1.3
     file-magic:
-        5.44-2.2
+        5.45-1.3
     filesystem:
-        84.87-12.1
+        84.87-13.1
     fillup:
-        1.42-279.3
+        1.42-279.4
     findutils:
-        4.9.0-2.3
+        4.9.0-3.1
     gawk:
-        5.2.2-2.3
+        5.2.2-2.6
     gcc:
-        13-1.3
+        13-1.5
     gcc-c++:
-        13-1.3
+        13-1.5
     gcc13:
-        13.1.1+git7597-1.1
+        13.2.1+git7813-2.1
     gcc13-c++:
-        13.1.1+git7597-1.1
+        13.2.1+git7813-2.1
+    gio-branding-openSUSE:
+        42.1-20.6
     git:
-        2.41.0-1.2
+        2.42.0-2.1
     git-core:
-        2.41.0-1.2
+        2.42.0-2.1
+    glib2-tools:
+        2.78.0-2.1
     glibc:
-        2.37-5.1
+        2.38-5.1
     glibc-devel:
-        2.37-5.1
+        2.38-5.1
     glibc-locale:
-        2.37-5.1
+        2.38-5.1
     glibc-locale-base:
-        2.37-5.1
+        2.38-5.1
     gpg2:
-        2.3.8-3.1
+        2.4.0-1.1
     grep:
-        3.11-1.2
+        3.11-2.1
     gzip:
-        1.12-3.3
+        1.13-1.1
     hostname:
-        3.23-3.2
+        3.23-3.4
     kbd:
-        2.6.1-1.1
+        2.6.3-1.1
     kbd-legacy:
-        2.6.1-1.1
+        2.6.3-1.1
     kmod:
-        30-7.1
+        30-8.1
     krb5:
-        1.21.1-1.1
+        1.21.1-2.1
     less:
-        633-2.2
-    libabsl2301_0_0:
-        20230125.3-2.1
+        643-1.1
+    libabsl2308_0_0:
+        20230802.0-1.1
     libacl1:
-        2.3.1-2.9
+        2.3.1-2.11
     libalternatives1:
-        1.2+30.a5431e9-1.2
+        1.2+30.a5431e9-1.3
     libapparmor1:
-        3.1.6-2.1
+        3.1.6-5.1
     libargon2-1:
-        20190702-2.6
+        20190702-3.1
     libasan8:
-        13.1.1+git7597-1.1
+        13.2.1+git7813-2.1
     libassuan0:
-        2.5.6-1.1
+        2.5.6-1.2
     libatomic1:
-        13.1.1+git7597-1.1
+        13.2.1+git7813-2.1
     libattr1:
-        2.5.1-1.25
+        2.5.1-1.27
     libaudit1:
-        3.1.1-1.1
+        3.1.1-1.3
     libaugeas0:
-        1.13.0-2.2
+        1.14.1-1.1
     libblkid1:
-        2.39.1-1.1
+        2.39.2-1.1
     libboost_thread1_82_0:
-        1.82.0-1.3
+        1.82.0-1.4
     libbrotlicommon1:
-        1.0.9-3.4
+        1.0.9-3.5
     libbrotlidec1:
-        1.0.9-3.4
+        1.0.9-3.5
     libbz2-1:
-        1.0.8-5.5
+        1.0.8-5.7
     libcap-ng0:
-        0.8.3-2.2
+        0.8.3-2.4
     libcap2:
-        2.69-1.2
+        2.69-1.4
     libcbor0_10:
         0.10.2-1.2
     libcom_err2:
-        1.47.0-1.2
+        1.47.0-2.1
     libcrypt1:
-        4.4.36-1.1
+        4.4.36-1.3
     libcryptsetup12:
-        2.6.1-3.1
+        2.6.1-3.2
     libctf-nobfd0:
-        2.40-5.2
+        2.40-5.4
     libctf0:
-        2.40-5.2
+        2.40-5.4
     libcurl4:
-        8.2.1-1.1
+        8.3.0-1.1
     libdb-4_8:
-        4.8.30-42.1
+        4.8.30-42.3
     libdbus-1-3:
-        1.14.8-1.2
+        1.14.10-1.1
     libdevmapper1_03:
-        2.03.16_1.02.185-7.1
+        2.03.22_1.02.196-1.1
+    libduktape207:
+        2.7.0-2.1
     libeconf0:
-        0.5.2-1.3
+        0.5.2-2.1
     libedit0:
-        20210910.3.1-2.2
+        20210910.3.1-2.4
+    libelf1:
+        0.189-5.1
     libexpat1:
-        2.5.0-2.3
+        2.5.0-2.5
     libfa1:
-        1.13.0-2.2
+        1.14.1-1.1
     libfdisk1:
-        2.39.1-1.1
+        2.39.2-1.1
     libffi8:
-        3.4.4-1.3
+        3.4.4-1.5
     libfido2-1:
-        1.13.0-1.3
+        1.13.0-1.4
     libgcc_s1:
-        13.1.1+git7597-1.1
+        13.2.1+git7813-2.1
     libgcrypt20:
-        1.10.2-2.2
+        1.10.2-2.4
     libgdbm6:
-        1.23-1.12
+        1.23-2.1
     libgdbm_compat4:
-        1.23-1.12
+        1.23-2.1
+    libgio-2_0-0:
+        2.78.0-2.1
     libglib-2_0-0:
-        2.76.4-1.1
+        2.78.0-2.1
+    libgmodule-2_0-0:
+        2.78.0-2.1
     libgmp10:
-        6.2.1-4.13
+        6.3.0-2.1
+    libgobject-2_0-0:
+        2.78.0-2.1
     libgomp1:
-        13.1.1+git7597-1.1
+        13.2.1+git7813-2.1
     libgpg-error0:
-        1.47-1.2
+        1.47-1.4
     libgpgme11:
-        1.21.0-1.1
+        1.22.0-2.1
     libhidapi-hidraw0:
         0.14.0-1.1
     libhwasan0:
-        13.1.1+git7597-1.1
+        13.2.1+git7813-2.1
     libidn2-0:
-        2.3.4-1.3
+        2.3.4-1.4
     libip4tc2:
-        1.8.9-1.3
+        1.8.9-1.4
     libisl23:
-        0.26-1.2
+        0.26-1.4
     libitm1:
-        13.1.1+git7597-1.1
+        13.2.1+git7813-2.1
+    libjitterentropy3:
+        3.4.1-2.3
     libjson-c5:
-        0.16-1.6
+        0.16-1.7
     libkeyutils1:
-        1.6.3-6.2
+        1.6.3-6.3
     libkmod2:
-        30-7.1
+        30-8.1
     libksba8:
-        1.6.4-1.1
+        1.6.4-1.2
     libldap2:
-        2.6.4-2.1
+        2.6.4-3.1
     liblsan0:
-        13.1.1+git7597-1.1
+        13.2.1+git7813-2.1
     liblua5_4-5:
-        5.4.6-1.2
+        5.4.6-1.4
     liblz4-1:
-        1.9.4-2.5
+        1.9.4-2.6
     liblzma5:
-        5.4.3-1.2
+        5.4.4-2.1
     libmagic1:
-        5.44-2.2
+        5.45-1.3
     libmount1:
-        2.39.1-1.1
+        2.39.2-1.1
     libmpc3:
-        1.3.1-1.3
+        1.3.1-1.5
     libmpdec3:
-        2.5.1-2.14
+        2.5.1-2.16
     libmpfr6:
-        4.2.0-3.1
+        4.2.1-1.1
     libncurses6:
-        6.4.20230715-17.1
+        6.4.20230909-20.1
     libnghttp2-14:
-        1.55.1-1.1
+        1.55.1-1.2
     libnpth0:
         1.6-2.11
     libnss_usrfiles2:
-        2.27-3.13
+        2.27-3.15
     libopenssl1_1:
-        1.1.1u-5.1
+        1.1.1w-1.1
     libopenssl3:
-        3.1.1-3.1
+        3.1.3-1.2
     libp11-kit0:
-        0.24.1-2.3
+        0.25.0-1.1
     libpcre2-8-0:
-        10.42-3.9
+        10.42-3.11
     libpgm-5_3-0:
         5.3.128-2.1
     libpkgconf3:
-        1.8.0-2.3
+        1.8.0-2.5
     libpopt0:
-        1.19-1.3
+        1.19-1.5
     libprocps8:
-        3.3.17-12.3
+        3.3.17-14.2
     libprotobuf-lite23_4_0:
-        23.4-6.1
+        23.4-6.3
     libproxy1:
-        0.4.18-2.1
+        0.5.3-1.1
     libpsl5:
-        0.21.2-1.3
+        0.21.2-1.4
+    libpxbackend-1_0:
+        0.5.3-1.1
     libpython2_7-1_0:
-        2.7.18-36.4
+        2.7.18-39.1
     libpython3_11-1_0:
-        3.11.4-1.2
+        3.11.5-2.1
     libreadline8:
-        8.2-2.3
+        8.2-2.5
     libsasl2-3:
-        2.1.28-5.2
+        2.1.28-5.3
     libseccomp2:
-        2.5.4-2.5
+        2.5.4-2.7
     libselinux1:
-        3.5-3.2
+        3.5-5.1
     libsemanage-conf:
-        3.5-1.4
+        3.5-3.1
     libsemanage2:
-        3.5-1.4
+        3.5-3.1
     libsepol2:
-        3.5-1.3
+        3.5-1.5
     libsha1detectcoll1:
-        1.0.3-4.19
+        1.0.3-4.20
     libsigc-2_0-0:
-        2.12.0-1.2
+        2.12.1-1.1
     libsmartcols1:
-        2.39.1-1.1
+        2.39.2-1.1
     libsodium-devel:
         1.0.18-2.14
     libsodium23:
         1.0.18-2.14
     libsolv-tools:
-        0.7.24-1.3
+        0.7.25-1.1
     libsqlite3-0:
-        3.42.0-1.2
+        3.42.0-1.3
     libssh-config:
-        0.10.5-1.2
+        0.10.5-3.1
     libssh4:
-        0.10.5-1.2
+        0.10.5-3.1
     libstdc++6:
-        13.1.1+git7597-1.1
+        13.2.1+git7813-2.1
     libstdc++6-devel-gcc13:
-        13.1.1+git7597-1.1
+        13.2.1+git7813-2.1
     libsubid4:
-        4.13-6.2
+        4.14.0-2.1
     libsystemd0:
-        253.7-2.1
+        254.5-1.1
     libtasn1-6:
-        4.19.0-1.4
+        4.19.0-1.5
     libtsan2:
-        13.1.1+git7597-1.1
+        13.2.1+git7813-2.1
     libubsan1:
-        13.1.1+git7597-1.1
+        13.2.1+git7813-2.1
     libudev1:
-        253.7-2.1
+        254.5-1.1
     libunistring5:
-        1.1-2.2
+        1.1-3.1
     libunwind-coredump0:
-        1.7.0-1.1
+        1.7.2-1.1
     libunwind-devel:
-        1.7.0-1.1
+        1.7.2-1.1
     libunwind-ptrace0:
-        1.7.0-1.1
+        1.7.2-1.1
     libunwind-setjmp0:
-        1.7.0-1.1
+        1.7.2-1.1
     libunwind8:
-        1.7.0-1.1
+        1.7.2-1.1
     libusb-1_0-0:
-        1.0.26-1.6
-    libutempter0:
-        1.2.1-1.2
+        1.0.26-1.7
     libuuid1:
-        2.39.1-1.1
+        2.39.2-1.1
     libverto1:
         0.3.2-3.1
     libwtmpdb0:
-        0.7.1-1.1
+        0.9.2-1.1
     libxcrypt-devel:
-        4.4.36-1.1
+        4.4.36-1.3
     libxml2-2:
-        2.10.4-2.2
-    libyaml-cpp0_7:
-        0.7.0-2.2
+        2.10.4-3.1
+    libyaml-cpp0_8:
+        0.8.0-1.1
     libz1:
-        1.2.13-4.2
+        1.2.13-4.4
     libzck1:
-        1.3.1-1.1
+        1.3.1-1.2
     libzmq5:
-        4.3.4-4.3
+        4.3.4-4.4
     libzstd1:
-        1.5.5-3.2
+        1.5.5-3.4
     libzypp:
-        17.31.17-1.1
+        17.31.20-1.2
     linux-glibc-devel:
-        6.4-1.1
+        6.5-1.1
     login_defs:
-        4.13-6.2
+        4.14.0-2.1
     lsb-release:
-        3.2-1.5
+        3.2-3.1
     ncurses-utils:
-        6.4.20230715-17.1
+        6.4.20230909-20.1
     net-tools:
-        2.10-2.2
+        2.10-2.3
     net-tools-deprecated:
-        2.10-2.2
+        2.10-2.3
     netcfg:
-        11.6-10.3
+        11.6-11.1
     openSUSE-build-key:
         1.0-48.1
     openSUSE-release:
-        20230801-2424.1
+        20231005-2525.1
     openSUSE-release-appliance-docker:
-        20230801-2424.1
+        20231005-2525.1
     openpgm-devel:
         5.3.128-2.1
     openssh:
-        9.3p2-1.1
+        9.3p2-2.1
     openssh-clients:
-        9.3p2-1.1
+        9.3p2-2.1
     openssh-common:
-        9.3p2-1.1
+        9.3p2-2.1
     openssh-fips:
-        9.3p2-1.1
+        9.3p2-2.1
     openssh-server:
-        9.3p2-1.1
+        9.3p2-2.1
     openssl:
-        3.1.1-2.1
+        3.1.3-1.1
     openssl-3:
-        3.1.1-3.1
+        3.1.3-1.2
     p11-kit:
-        0.24.1-2.3
+        0.25.0-1.1
     p11-kit-tools:
-        0.24.1-2.3
+        0.25.0-1.1
     pam:
-        1.5.3-1.3
+        1.5.3-3.2
     pam-config:
-        2.5-1.2
+        2.9-1.1
     patterns-base-fips:
-        20200505-41.1
+        20200505-43.1
+    patterns-glibc-hwcaps-x86_64_v3:
+        20230201-3.1
     perl:
-        5.36.1-1.2
+        5.38.0-1.3
     perl-Error:
-        0.17029-1.16
+        0.17029-1.17
     perl-Git:
-        2.41.0-1.2
+        2.42.0-2.1
     perl-base:
-        5.36.1-1.2
+        5.38.0-1.3
     permissions:
-        1699_20230602-1.4
+        1699_20230602-1.6
     permissions-config:
-        1699_20230602-1.4
+        1699_20230602-1.6
     pinentry:
-        1.2.1-3.1
+        1.2.1-3.2
     pkgconf:
-        1.8.0-2.3
+        1.8.0-2.5
     pkgconf-m4:
-        1.8.0-2.3
+        1.8.0-2.5
     pkgconf-pkg-config:
-        1.8.0-2.3
+        1.8.0-2.5
     procps:
-        3.3.17-12.3
+        3.3.17-14.2
     python:
-        2.7.18-36.1
+        2.7.18-39.1
     python-base:
-        2.7.18-36.4
+        2.7.18-39.1
     python311-base:
-        3.11.4-1.2
+        3.11.5-2.1
     python311-devel:
-        3.11.4-1.2
+        3.11.5-2.1
     python311-pip:
-        23.1.2-2.2
+        23.2.1-1.1
     python311-pyzmq:
-        25.0.2-1.2
+        25.1.1-1.1
     python311-pyzmq-devel:
-        25.0.2-1.2
+        25.1.1-1.1
     python311-setuptools:
-        67.8.0-1.3
+        68.1.2-1.1
     rpm:
-        4.18.0-5.2
+        4.18.0-6.1
     rpm-config-SUSE:
         20230712-1.1
     sed:
-        4.9-2.3
+        4.9-2.4
     shadow:
-        4.13-6.2
+        4.14.0-2.1
+    shared-mime-info:
+        2.2-2.3
     sudo:
-        1.9.14p1-1.1
+        1.9.14p3-1.1
     suse-module-tools:
-        16.0.32-1.1
+        16.0.36-1.1
     system-group-hardware:
-        20170617-24.13
+        20170617-25.1
     system-group-kvm:
-        20170617-24.13
+        20170617-25.1
+    system-user-lp:
+        20170617-25.1
     system-user-root:
-        20190513-2.11
+        20190513-2.13
     systemd:
-        253.7-2.1
+        254.5-1.1
     systemd-default-settings:
         0.7-2.7
     systemd-default-settings-branding-SLE:
         0.7-2.7
-    systemd-presets-branding-MicroOS:
-        20230214-2.2
+    systemd-presets-branding-Aeon:
+        20231005-1.1
     systemd-presets-common-SUSE:
         15-30.1
     systemd-rpm-macros:
-        24-1.1
+        24-1.3
     sysuser-shadow:
-        3.2-1.1
+        3.2-1.3
     tar:
-        1.34-11.1
+        1.34-12.2
     terminfo-base:
-        6.4.20230715-17.1
+        6.4.20230909-20.1
     timezone:
-        2023c-1.2
+        2023c-1.4
     udev:
-        253.7-2.1
+        254.5-1.1
     update-alternatives:
-        1.21.22-1.1
+        1.22.0-1.1
     util-linux:
-        2.39.1-1.1
+        2.39.2-1.1
     which:
-        2.21-5.9
+        2.21-5.11
     xz:
-        5.4.3-1.2
+        5.4.4-2.1
     zeromq-devel:
-        4.3.4-4.3
+        4.3.4-4.4
     zypper:
-        1.14.62-1.1
+        1.14.64-1.1
 # salt-call --local pip.list
 local:
     ----------
@@ -618,49 +641,49 @@ local:
     certifi:
         2023.7.22
     cffi:
-        1.15.1
+        1.16.0
     charset-normalizer:
-        3.2.0
+        3.3.0
     contextvars:
         2.4
     cryptography:
-        41.0.3
+        41.0.4
     distro:
         1.8.0
     idna:
         3.4
     immutables:
-        0.19
+        0.20
     jmespath:
         1.0.1
     looseversion:
         1.3.0
     msgpack:
-        1.0.5
+        1.0.7
     packaging:
-        23.1
+        23.2
     pip:
-        23.1.2
+        23.2.1
     psutil:
         5.9.5
     pycparser:
         2.21
     pycryptodomex:
-        3.18.0
+        3.19.0
     pyzmq:
-        25.1.0
+        25.1.1
     requests:
         2.31.0
     salt:
-        3007.0+0na.611944f
+        3007.0+0na.6e64117
     setuptools:
-        68.0.0
+        68.2.2
     tornado:
-        6.3.2
+        6.3.3
     urllib3:
-        2.0.4
+        2.0.6
     wheel:
-        0.41.0
+        0.41.2
 # salt-call --local locale.list_avail
 local:
     - C
