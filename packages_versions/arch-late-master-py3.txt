@@ -2,7 +2,7 @@ arch-late-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3007.0+0na.6e64117
+          Salt: 3007.0+0na.93b6405
  
 Python Version:
         Python: 3.11.5 (main, Sep  2 2023, 14:16:33) [GCC 13.2.1 20230801]
@@ -40,12 +40,12 @@ Salt Package Information:
   Package Type: Not Installed
  
 System Versions:
-          dist: arch 20231001.0.182351 
+          dist: arch 20231029.0.188183 
         locale: utf-8
        machine: x86_64
        release: 5.4.109+
         system: Linux
-       version: Arch Linux 20231001.0.182351 
+       version: Arch Linux 20231029.0.188183 
  
 # salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
 local:
@@ -73,7 +73,7 @@ local:
     lsb_distrib_id:
         Arch Linux
     lsb_distrib_release:
-        20231001.0.182351
+        20231029.0.188183
     os:
         Arch
     os_family:
@@ -84,18 +84,18 @@ local:
     oscodename:
         Arch Linux
     osfinger:
-        Arch Linux-20231001
+        Arch Linux-20231029
     osfullname:
         Arch Linux
     osmajorrelease:
-        20231001
+        20231029
     osmanufacturer:
     osrelease:
-        20231001.0.182351
+        20231029.0.188183
     osrelease_info:
-        - 20231001
+        - 20231029
         - 0
-        - 182351
+        - 188183
     osversion:
     pythonexecutable:
         /usr/bin/python
@@ -114,7 +114,7 @@ local:
     saltpath:
         /usr/lib/python3.11/site-packages/salt
     saltversion:
-        3007.0+0na.6e64117
+        3007.0+0na.93b6405
     saltversioninfo:
         - 3007
         - 0
@@ -136,7 +136,7 @@ local:
     acl:
         2.3.1-3
     archlinux-keyring:
-        20230918-1
+        20231026-1
     argon2:
         20190702-5
     attr:
@@ -144,7 +144,7 @@ local:
     audit:
         3.1.2-1
     base:
-        3-1
+        3-2
     bash:
         5.1.016-4
     binutils:
@@ -164,7 +164,7 @@ local:
     cryptsetup:
         2.6.1-3
     curl:
-        8.3.0-1
+        8.4.0-2
     db:
         6.2.32-1
     db5.3:
@@ -194,11 +194,11 @@ local:
     gdbm:
         1.23-2
     gettext:
-        0.22.2-1
+        0.22.3-1
     git:
         2.42.0-1
     glib2:
-        2.78.0-2
+        2.78.1-1
     glibc:
         2.38-7
     gmp:
@@ -208,15 +208,15 @@ local:
     gnutls:
         3.8.1-2
     gpgme:
-        1.22.0-1
+        1.23.0-1
     grep:
         3.11-1
     gzip:
         1.13-2
     hwdata:
-        0.375-1
+        0.375-2
     iana-etc:
-        20230907-1
+        20231018-1
     icu:
         73.2-2
     iproute2:
@@ -236,7 +236,7 @@ local:
     kmod:
         31-1
     krb5:
-        1.20.1-1
+        1.20.1-2
     ldns:
         1.8.3-2
     libarchive:
@@ -268,7 +268,7 @@ local:
     libksba:
         1.6.4-1
     libldap:
-        2.6.6-1
+        2.6.6-2
     libmnl:
         1.0.5-1
     libmpc:
@@ -280,13 +280,13 @@ local:
     libnftnl:
         1.2.6-1
     libnghttp2:
-        1.56.0-1
+        1.57.0-1
     libnl:
         3.8.0-1
     libnsl:
-        2.0.0-3
+        2.0.1-1
     libp11-kit:
-        0.25.0-2
+        0.25.1-1
     libpcap:
         1.10.4-1
     libpsl:
@@ -300,11 +300,11 @@ local:
     libssh2:
         1.11.0-1
     libsysprof-capture:
-        3.48.0-4
+        45.1-1
     libtasn1:
         4.19.0-1
     libtirpc:
-        1.3.3-2
+        1.3.4-1
     libunistring:
         1.1-2
     libusb:
@@ -320,7 +320,7 @@ local:
     libyaml:
         0.2.5-2
     licenses:
-        20230917-1
+        20231011-1
     linux-api-headers:
         6.4-1
     lz4:
@@ -338,9 +338,9 @@ local:
     openssh:
         9.5p1-1
     openssl:
-        3.1.3-1
+        3.1.4-1
     p11-kit:
-        0.25.0-2
+        0.25.1-1
     pacman:
         6.0.2-8
     pacman-mirrorlist:
@@ -372,15 +372,15 @@ local:
     python:
         3.11.5-2
     python-annotated-types:
-        0.5.0-1
+        0.6.0-1
     python-attrs:
         22.2.0-3
     python-autocommand:
         2.2.2-4
     python-cffi:
-        1.15.1-4
+        1.16.0-1
     python-cryptography:
-        41.0.4-1
+        41.0.5-1
     python-fastjsonschema:
         2.18.1-1
     python-inflect:
@@ -398,9 +398,9 @@ local:
     python-packaging:
         23.1-1
     python-pip:
-        23.2.1-1
+        23.3.1-1
     python-platformdirs:
-        3.10.0-1
+        3.11.0-1
     python-ply:
         3.11-12
     python-pycparser:
@@ -414,7 +414,7 @@ local:
     python-tomli:
         2.0.1-3
     python-trove-classifiers:
-        2023.9.19-1
+        2023.10.18-1
     python-typing_extensions:
         4.8.0-1
     python-validate-pyproject:
@@ -428,9 +428,9 @@ local:
     sed:
         4.9-3
     shadow:
-        4.14.0-4
+        4.14.1-1
     sqlite:
-        3.43.1-1
+        3.43.2-1
     sudo:
         1.9.14.p3-1
     systemd:
@@ -440,7 +440,7 @@ local:
     systemd-sysvcompat:
         254.5-1
     tar:
-        1.35-1
+        1.35-2
     tpm2-tss:
         4.0.1-1
     tzdata:
@@ -452,7 +452,7 @@ local:
     xz:
         5.4.4-1
     zlib:
-        1:1.3-1
+        1:1.3-2
     zstd:
         1.5.5-1
 # salt-call --local pip.list
@@ -465,7 +465,7 @@ local:
     PyYAML:
         6.0.1
     annotated-types:
-        0.5.0
+        0.6.0
     attrs:
         22.2.0
     autocommand:
@@ -475,11 +475,11 @@ local:
     cffi:
         1.16.0
     charset-normalizer:
-        3.3.0
+        3.3.1
     contextvars:
         2.4
     cryptography:
-        41.0.4
+        41.0.5
     distro:
         1.8.0
     fastjsonschema:
@@ -509,13 +509,13 @@ local:
     packaging:
         23.2
     pip:
-        23.2.1
+        23.3.1
     platformdirs:
-        3.10.0
+        3.11.0
     ply:
         3.11
     psutil:
-        5.9.5
+        5.9.6
     pycparser:
         2.21
     pycryptodomex:
@@ -529,7 +529,7 @@ local:
     requests:
         2.31.0
     salt:
-        3007.0+0na.6e64117
+        3007.0+0na.93b6405
     setuptools:
         68.2.2
     tomli:
@@ -537,11 +537,11 @@ local:
     tornado:
         6.3.3
     trove-classifiers:
-        2023.9.22
+        2023.10.27
     typing_extensions:
         4.8.0
     urllib3:
-        2.0.6
+        2.0.7
     validate-pyproject:
         0.13.post1.dev0+gb752273.d20230520
     wheel:

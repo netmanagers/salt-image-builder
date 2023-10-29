@@ -150,13 +150,13 @@ local:
     cracklib-dicts:
         2.9.6-27.el9
     crypto-policies:
-        20230920-1.git8dcf74d.el9
+        20231016-1.git77ceb0b.el9
     crypto-policies-scripts:
-        20230920-1.git8dcf74d.el9
+        20231016-1.git77ceb0b.el9
     cryptsetup-libs:
         2.6.0-3.el9
     curl-minimal:
-        7.76.1-26.el9
+        7.76.1-28.el9
     cyrus-sasl-lib:
         2.1.27-21.el9
     dbus:
@@ -202,7 +202,7 @@ local:
     gawk:
         5.1.0-6.el9
     gdb-gdbserver:
-        10.2-11.el9
+        10.2-12.el9
     gdbm-libs:
         1:1.19-4.el9
     git:
@@ -214,13 +214,13 @@ local:
     glib2:
         2.68.4-11.el9
     glibc:
-        2.34-82.el9
+        2.34-83.el9.7
     glibc-common:
-        2.34-82.el9
+        2.34-83.el9.7
     glibc-langpack-en:
-        2.34-82.el9
+        2.34-83.el9.7
     glibc-minimal-langpack:
-        2.34-82.el9
+        2.34-83.el9.7
     gmp:
         1:6.2.0-13.el9
     gnupg2:
@@ -282,11 +282,11 @@ local:
     libcbor:
         0.7.0-5.el9
     libcom_err:
-        1.46.5-3.el9
+        1.46.5-4.el9
     libcomps:
         0.1.18-1.el9
     libcurl-minimal:
-        7.76.1-26.el9
+        7.76.1-28.el9
     libdb:
         5.3.28-53.el9
     libdnf:
@@ -304,11 +304,11 @@ local:
     libfido2:
         1.13.0-1.el9
     libgcc:
-        11.4.1-2.1.el9
+        11.4.1-2.3.el9
     libgcrypt:
         1.10.0-10.el9
     libgomp:
-        11.4.1-2.1.el9
+        11.4.1-2.3.el9
     libgpg-error:
         1.42-5.el9
     libidn2:
@@ -320,7 +320,7 @@ local:
     libmount:
         2.37.4-15.el9
     libnghttp2:
-        1.43.0-5.el9
+        1.43.0-5.el9.1
     libpkgconf:
         1.7.3-10.el9
     libpwquality:
@@ -344,7 +344,7 @@ local:
     libsolv:
         0.7.24-2.el9
     libstdc++:
-        11.4.1-2.1.el9
+        11.4.1-2.3.el9
     libtasn1:
         4.16.0-8.el9
     libunistring:

@@ -2,10 +2,10 @@ fedo-38.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3007.0+0na.6e64117
+          Salt: 3007.0+0na.93b6405
  
 Python Version:
-        Python: 3.11.5 (main, Aug 28 2023, 00:00:00) [GCC 13.2.1 20230728 (Red Hat 13.2.1-1)]
+        Python: 3.11.6 (main, Oct  3 2023, 00:00:00) [GCC 13.2.1 20230728 (Red Hat 13.2.1-1)]
  
 Dependency Versions:
           cffi: 1.16.0
@@ -105,13 +105,13 @@ local:
     pythonversion:
         - 3
         - 11
-        - 5
+        - 6
         - final
         - 0
     saltpath:
         /usr/lib/python3.11/site-packages/salt
     saltversion:
-        3007.0+0na.6e64117
+        3007.0+0na.93b6405
     saltversioninfo:
         - 3007
         - 0
@@ -143,13 +143,13 @@ local:
     bash:
         5.2.15-3.fc38
     binutils:
-        2.39-9.fc38
+        2.39-15.fc38
     binutils-gold:
-        2.39-9.fc38
+        2.39-15.fc38
     bzip2-libs:
         1.0.8-13.fc38
     ca-certificates:
-        2023.2.60-2.fc38
+        2023.2.60_v7.0.306-1.0.fc38
     coreutils:
         9.1-12.fc38
     coreutils-common:
@@ -157,7 +157,7 @@ local:
     cpio:
         2.13-14.fc38
     cpp:
-        13.2.1-1.fc38
+        13.2.1-4.fc38
     cracklib:
         2.9.11-1.fc38
     crypto-policies:
@@ -167,7 +167,7 @@ local:
     cryptsetup-libs:
         2.6.1-1.fc38
     curl:
-        8.0.1-4.fc38
+        8.0.1-5.fc38
     cyrus-sasl-lib:
         2.1.28-9.fc38
     dbus:
@@ -185,7 +185,7 @@ local:
     dnf-data:
         4.17.0-6.fc38
     dracut:
-        059-3.fc38
+        059-4.fc38
     elfutils-debuginfod-client:
         0.189-3.fc38
     elfutils-default-yama-scope:
@@ -223,9 +223,9 @@ local:
     gc:
         8.2.2-3.fc38
     gcc:
-        13.2.1-1.fc38
+        13.2.1-4.fc38
     gcc-c++:
-        13.2.1-1.fc38
+        13.2.1-4.fc38
     gdbm-libs:
         1:1.23-3.fc38
     gettext-envsubst:
@@ -243,17 +243,17 @@ local:
     glib2:
         2.76.5-2.fc38
     glibc:
-        2.37-10.fc38
+        2.37-12.fc38
     glibc-common:
-        2.37-10.fc38
+        2.37-12.fc38
     glibc-devel:
-        2.37-10.fc38
+        2.37-12.fc38
     glibc-headers-x86:
-        2.37-10.fc38
+        2.37-12.fc38
     glibc-langpack-en:
-        2.37-10.fc38
+        2.37-12.fc38
     glibc-minimal-langpack:
-        2.37-10.fc38
+        2.37-12.fc38
     gmp:
         1:6.2.1-4.fc38
     gnupg2:
@@ -331,9 +331,9 @@ local:
     libcom_err:
         1.46.5-4.fc38
     libcomps:
-        0.1.18-6.fc38
+        0.1.20-1.fc38
     libcurl:
-        8.0.1-4.fc38
+        8.0.1-5.fc38
     libdb:
         5.3.28-55.fc38
     libdnf:
@@ -353,11 +353,11 @@ local:
     libfsverity:
         1.4-9.fc38
     libgcc:
-        13.2.1-1.fc38
+        13.2.1-4.fc38
     libgcrypt:
         1.10.2-1.fc38
     libgomp:
-        13.2.1-1.fc38
+        13.2.1-4.fc38
     libgpg-error:
         1.47-1.fc38
     libidn2:
@@ -375,7 +375,7 @@ local:
     libmpc:
         1.3.1-2.fc38
     libnghttp2:
-        1.52.0-1.fc38
+        1.52.0-2.fc38
     libnsl2:
         2.0.0-5.fc38
     libpkgconf:
@@ -385,7 +385,7 @@ local:
     libpwquality:
         1.4.5-3.fc38
     librepo:
-        1.16.0-2.fc38
+        1.17.0-1.fc38
     libreport-filesystem:
         2.17.11-1.fc38
     libseccomp:
@@ -401,19 +401,19 @@ local:
     libsmartcols:
         2.38.1-4.fc38
     libsolv:
-        0.7.22-4.fc38
+        0.7.25-1.fc38
     libssh:
         0.10.5-1.fc38
     libssh-config:
         0.10.5-1.fc38
     libstdc++:
-        13.2.1-1.fc38
+        13.2.1-4.fc38
     libstdc++-devel:
-        13.2.1-1.fc38
+        13.2.1-4.fc38
     libtasn1:
         4.19.0-2.fc38
     libtirpc:
-        1.3.3-1.rc2.fc38
+        1.3.4-0.fc38
     libtool-ltdl:
         2.4.7-6.fc38
     libunistring:
@@ -473,9 +473,9 @@ local:
     os-prober:
         1.81-3.fc38
     p11-kit:
-        0.25.0-1.fc38
+        0.25.1-1.fc38
     p11-kit-trust:
-        0.25.0-1.fc38
+        0.25.1-1.fc38
     pam:
         1.5.2-16.fc38
     pam-libs:
@@ -627,9 +627,9 @@ local:
     python-setuptools-wheel:
         65.5.1-2.fc38
     python3:
-        3.11.5-1.fc38
+        3.11.6-1.fc38
     python3-devel:
-        3.11.5-1.fc38
+        3.11.6-1.fc38
     python3-dnf:
         4.17.0-6.fc38
     python3-gpg:
@@ -637,11 +637,11 @@ local:
     python3-hawkey:
         0.71.0-2.fc38
     python3-libcomps:
-        0.1.18-6.fc38
+        0.1.20-1.fc38
     python3-libdnf:
         0.71.0-2.fc38
     python3-libs:
-        3.11.5-1.fc38
+        3.11.6-1.fc38
     python3-pip:
         22.3.1-3.fc38
     python3-rpm:
@@ -673,13 +673,13 @@ local:
     sudo:
         1.9.13-2.p2.fc38
     systemd:
-        253.10-1.fc38
+        253.12-1.fc38
     systemd-libs:
-        253.10-1.fc38
+        253.12-1.fc38
     systemd-pam:
-        253.10-1.fc38
+        253.12-1.fc38
     systemd-udev:
-        253.10-1.fc38
+        253.12-1.fc38
     tar:
         2:1.34-8.fc38
     tpm2-tools:
@@ -693,9 +693,9 @@ local:
     util-linux-core:
         2.38.1-4.fc38
     vim-data:
-        2:9.0.1968-1.fc38
+        2:9.0.2048-1.fc38
     vim-minimal:
-        2:9.0.1968-1.fc38
+        2:9.0.2048-1.fc38
     which:
         2.21-39.fc38
     xz:
@@ -705,7 +705,7 @@ local:
     yum:
         4.17.0-6.fc38
     zchunk-libs:
-        1.3.1-1.fc38
+        1.3.2-1.fc38
     zlib:
         1.2.13-3.fc38
 # salt-call --local pip.list
@@ -722,11 +722,11 @@ local:
     cffi:
         1.16.0
     charset-normalizer:
-        3.3.0
+        3.3.1
     contextvars:
         2.4
     cryptography:
-        41.0.4
+        41.0.5
     distro:
         1.8.0
     gpg:
@@ -738,7 +738,7 @@ local:
     jmespath:
         1.0.1
     libcomps:
-        0.1.18
+        0.1.20
     looseversion:
         1.3.0
     msgpack:
@@ -748,7 +748,7 @@ local:
     pip:
         22.3.1
     psutil:
-        5.9.5
+        5.9.6
     pycparser:
         2.21
     pycryptodomex:
@@ -760,13 +760,13 @@ local:
     rpm:
         4.18.1
     salt:
-        3007.0+0na.6e64117
+        3007.0+0na.93b6405
     setuptools:
         65.5.1
     tornado:
         6.3.3
     urllib3:
-        2.0.6
+        2.0.7
     wheel:
         0.41.2
 # salt-call --local locale.list_avail

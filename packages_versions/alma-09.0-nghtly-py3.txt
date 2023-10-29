@@ -161,7 +161,7 @@ local:
     cryptsetup-libs:
         2.6.0-2.el9
     curl-minimal:
-        7.76.1-23.el9_2.2
+        7.76.1-23.el9_2.4
     cyrus-sasl-lib:
         2.1.27-21.el9
     dbus:
@@ -283,7 +283,7 @@ local:
     libcomps:
         0.1.18-1.el9
     libcurl-minimal:
-        7.76.1-23.el9_2.2
+        7.76.1-23.el9_2.4
     libdb:
         5.3.28-53.el9
     libdnf:
@@ -317,7 +317,7 @@ local:
     libmount:
         2.37.4-11.el9_2
     libnghttp2:
-        1.43.0-5.el9
+        1.43.0-5.el9_2.1
     libpkgconf:
         1.7.3-10.el9
     libpwquality:

@@ -125,7 +125,7 @@ local:
     acl:
         2.2.53-1.el8
     almalinux-release:
-        8.8-1.el8
+        8.8-3.el8
     audit-libs:
         3.0.7-4.el8
     basesystem:
@@ -321,7 +321,7 @@ local:
     libmount:
         2.32.1-42.el8_8
     libnghttp2:
-        1.33.0-3.el8_2.1
+        1.33.0-5.el8_8
     libnsl2:
         1.2.0-2.20180605git4a062cf.el8
     libpkgconf:
@@ -525,9 +525,9 @@ local:
     pkgconf-pkg-config:
         1.4.2-1.el8
     platform-python:
-        3.6.8-51.el8_8.1.alma
+        3.6.8-51.el8_8.2.alma.1
     platform-python-devel:
-        3.6.8-51.el8_8.1.alma
+        3.6.8-51.el8_8.2.alma.1
     platform-python-pip:
         9.0.3-22.el8
     platform-python-setuptools:
@@ -557,7 +557,7 @@ local:
     python3-libdnf:
         0.63.0-14.el8_8.alma
     python3-libs:
-        3.6.8-51.el8_8.1.alma
+        3.6.8-51.el8_8.2.alma.1
     python3-pip:
         9.0.3-22.el8
     python3-pip-wheel:

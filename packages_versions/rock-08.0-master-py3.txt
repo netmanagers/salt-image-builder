@@ -2,7 +2,7 @@ rock-08.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3007.0+0na.6e64117
+          Salt: 3007.0+0na.93b6405
  
 Python Version:
         Python: 3.11.2 (main, Oct  5 2023, 16:06:03) [GCC 8.5.0 20210514 (Red Hat 8.5.0-18)]
@@ -111,7 +111,7 @@ local:
     saltpath:
         /usr/lib/python3.11/site-packages/salt
     saltversion:
-        3007.0+0na.6e64117
+        3007.0+0na.93b6405
     saltversioninfo:
         - 3007
         - 0
@@ -339,7 +339,7 @@ local:
     libmpc:
         1.1.0-9.1.el8
     libnghttp2:
-        1.33.0-3.el8_3.1
+        1.33.0-5.el8_8
     libnsl2:
         1.2.0-2.20180605git4a062cf.el8
     libpkgconf:
@@ -543,9 +543,9 @@ local:
     pkgconf-pkg-config:
         1.4.2-1.el8
     platform-python:
-        3.6.8-51.el8_8.1.rocky.0
+        3.6.8-51.el8_8.2.rocky.0
     platform-python-devel:
-        3.6.8-51.el8_8.1.rocky.0
+        3.6.8-51.el8_8.2.rocky.0
     platform-python-pip:
         9.0.3-22.el8.rocky.0
     platform-python-setuptools:
@@ -575,7 +575,7 @@ local:
     python3-libdnf:
         0.63.0-14.el8_8
     python3-libs:
-        3.6.8-51.el8_8.1.rocky.0
+        3.6.8-51.el8_8.2.rocky.0
     python3-pip:
         9.0.3-22.el8.rocky.0
     python3-pip-wheel:
@@ -686,11 +686,11 @@ local:
     cffi:
         1.16.0
     charset-normalizer:
-        3.3.0
+        3.3.1
     contextvars:
         2.4
     cryptography:
-        41.0.4
+        41.0.5
     distro:
         1.8.0
     idna:
@@ -708,7 +708,7 @@ local:
     pip:
         22.3.1
     psutil:
-        5.9.5
+        5.9.6
     pycparser:
         2.21
     pycryptodomex:
@@ -718,13 +718,13 @@ local:
     requests:
         2.31.0
     salt:
-        3007.0+0na.6e64117
+        3007.0+0na.93b6405
     setuptools:
         65.5.1
     tornado:
         6.3.3
     urllib3:
-        2.0.6
+        2.0.7
     wheel:
         0.41.2
 # salt-call --local locale.list_avail

@@ -1,5 +1,18 @@
 # Changelog
 
+# [1.84.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.83.0...v1.84.0) (2023-10-29)
+
+
+### Continuous Integration
+
+* config for the local build tool `gitlab-ci-local` ([b102446](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/b10244688e840813e15a25eb7f5498e7aa84f666))
+
+
+### Features
+
+* **salt:** update to version `v3005.4` ([9721b7f](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/9721b7f56bd68308fa30ac7a6976f7e60f6170cc))
+* **salt:** update to version `v3006.4` ([d231dbc](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/d231dbc072b3ecf2c9bbcd565d7923e831451532))
+
 # [1.83.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.82.0...v1.83.0) (2023-10-07)
 
 

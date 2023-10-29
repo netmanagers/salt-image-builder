@@ -148,7 +148,7 @@ local:
     cryptsetup-libs:
         1.7.4-4.amzn2
     curl:
-        8.3.0-1.amzn2.0.2
+        8.3.0-1.amzn2.0.4
     cyrus-sasl-lib:
         2.1.26-24.amzn2
     dbus:
@@ -246,7 +246,7 @@ local:
     libcrypt:
         2.26-63.amzn2.0.1
     libcurl:
-        8.3.0-1.amzn2.0.2
+        8.3.0-1.amzn2.0.4
     libdb:
         5.3.21-24.amzn2.0.4
     libdb-utils:
@@ -270,7 +270,7 @@ local:
     libmount:
         2.30.2-2.amzn2.0.11
     libnghttp2:
-        1.41.0-1.amzn2.0.3
+        1.41.0-1.amzn2.0.4
     libpwquality:
         1.2.3-5.amzn2
     libselinux:
@@ -278,7 +278,7 @@ local:
     libsemanage:
         2.5-11.amzn2
     libsepol:
-        2.5-8.1.amzn2.0.2
+        2.5-10.amzn2.0.1
     libsmartcols:
         2.30.2-2.amzn2.0.11
     libssh2:
@@ -500,7 +500,7 @@ local:
     sqlite:
         3.7.17-8.amzn2.1.2
     sudo:
-        1.8.23-10.amzn2.3.4
+        1.8.23-10.amzn2.3.5
     system-release:
         1:2-16.amzn2
     systemd:
@@ -516,15 +516,15 @@ local:
     util-linux:
         2.30.2-2.amzn2.0.11
     vim-data:
-        2:9.0.1882-1.amzn2.0.1
+        2:9.0.1882-1.amzn2.0.2
     vim-minimal:
-        2:9.0.1882-1.amzn2.0.1
+        2:9.0.1882-1.amzn2.0.2
     which:
         2.20-7.amzn2.0.2
     xz-libs:
         5.2.2-1.amzn2.0.3
     yum:
-        3.4.3-158.amzn2.0.6
+        3.4.3-158.amzn2.0.7
     yum-metadata-parser:
         1.1.4-10.amzn2.0.2
     yum-plugin-ovl:

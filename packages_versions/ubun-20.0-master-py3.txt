@@ -2,7 +2,7 @@ ubun-20.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3007.0+0na.6e64117
+          Salt: 3007.0+0na.93b6405
  
 Python Version:
         Python: 3.8.10 (default, May 26 2023, 14:05:08)
@@ -114,7 +114,7 @@ local:
     saltpath:
         /usr/local/lib/python3.8/dist-packages/salt
     saltversion:
-        3007.0+0na.6e64117
+        3007.0+0na.93b6405
     saltversioninfo:
         - 3007
         - 0
@@ -164,7 +164,7 @@ local:
     cpp-9:
         9.4.0-1ubuntu1~20.04.2
     curl:
-        7.68.0-1ubuntu2.19
+        7.68.0-1ubuntu2.20
     dash:
         0.5.10.2-6
     debconf:
@@ -176,7 +176,7 @@ local:
     dirmngr:
         2.2.19-3ubuntu2.2
     distro-info-data:
-        0.43ubuntu1.13
+        0.43ubuntu1.14
     dpkg:
         1.19.7ubuntu3.2
     e2fsprogs:
@@ -258,7 +258,7 @@ local:
     libbz2-1.0:
         1.0.8-2
     libc-bin:
-        2.31-0ubuntu9.9
+        2.31-0ubuntu9.12
     libc-dev-bin:
         2.31-0ubuntu9.12
     libc6:
@@ -286,9 +286,9 @@ local:
     libctf0:
         2.34-6ubuntu1.6
     libcurl3-gnutls:
-        7.68.0-1ubuntu2.19
+        7.68.0-1ubuntu2.20
     libcurl4:
-        7.68.0-1ubuntu2.19
+        7.68.0-1ubuntu2.20
     libdb5.3:
         5.3.28+dfsg1-0.6ubuntu2
     libdebconfclient0:
@@ -458,7 +458,7 @@ local:
     libssh-4:
         0.9.3-2ubuntu2.3
     libssl1.1:
-        1.1.1f-1ubuntu2.19
+        1.1.1f-1ubuntu2.20
     libstdc++6:
         10.5.0-1ubuntu1~20.04
     libsystemd0:
@@ -484,7 +484,7 @@ local:
     libzstd1:
         1.4.4+dfsg-3ubuntu0.1
     linux-libc-dev:
-        5.4.0-164.181
+        5.4.0-165.182
     locales:
         2.31-0ubuntu9.12
     login:
@@ -514,7 +514,7 @@ local:
     openssh-sftp-server:
         1:8.2p1-4ubuntu0.9
     openssl:
-        1.1.1f-1ubuntu2.19
+        1.1.1f-1ubuntu2.20
     passwd:
         1:4.8.1-1ubuntu5.20.04.4
     perl:
@@ -603,11 +603,11 @@ local:
     cffi:
         1.16.0
     charset-normalizer:
-        3.3.0
+        3.3.1
     contextvars:
         2.4
     cryptography:
-        41.0.4
+        41.0.5
     distro:
         1.8.0
     idna:
@@ -625,7 +625,7 @@ local:
     pip:
         20.0.2
     psutil:
-        5.9.5
+        5.9.6
     pycparser:
         2.21
     pycryptodomex:
@@ -637,13 +637,13 @@ local:
     requests:
         2.31.0
     salt:
-        3007.0+0na.6e64117
+        3007.0+0na.93b6405
     setuptools:
         68.2.2
     tornado:
         6.3.3
     urllib3:
-        2.0.6
+        2.0.7
     wheel:
         0.41.2
 # salt-call --local locale.list_avail

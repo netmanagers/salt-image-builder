@@ -133,13 +133,13 @@ local:
     bc:
         1.06.95-13.el7
     bind-export-libs:
-        32:9.11.4-26.P2.el7_9.14
+        32:9.11.4-26.P2.el7_9.15
     binutils:
         2.27-44.base.0.3.el7_9.1
     bzip2-libs:
         1.0.6-13.el7
     ca-certificates:
-        2022.2.54-74.el7_9
+        2023.2.60_v7.0.306-72.el7_9
     chkconfig:
         1.7.6-1.el7
     coreutils:
@@ -325,7 +325,7 @@ local:
     libsmartcols:
         2.23.2-65.0.3.el7_9.1
     libssh2:
-        1.8.0-4.el7
+        1.8.0-4.el7_9.1
     libstdc++:
         4.8.5-44.0.3.el7
     libtasn1:
@@ -369,21 +369,21 @@ local:
     newt-python:
         0.52.15-4.el7
     nspr:
-        4.34.0-3.1.el7_9
+        4.35.0-1.el7_9
     nss:
-        3.79.0-5.el7_9
+        3.90.0-2.el7_9
     nss-pem:
         1.0.3-7.el7_9.1
     nss-softokn:
-        3.79.0-4.0.1.el7_9
+        3.90.0-6.0.1.el7_9
     nss-softokn-freebl:
-        3.79.0-4.0.1.el7_9
+        3.90.0-6.0.1.el7_9
     nss-sysinit:
-        3.79.0-5.el7_9
+        3.90.0-2.el7_9
     nss-tools:
-        3.79.0-5.el7_9
+        3.90.0-2.el7_9
     nss-util:
-        3.79.0-1.el7_9
+        3.90.0-1.el7_9
     openldap:
         2.4.44-25.el7_9
     openssh:
@@ -491,7 +491,7 @@ local:
     popt:
         1.13-16.el7
     procps-ng:
-        3.3.10-28.el7
+        3.3.10-28.0.1.el7
     pth:
         2.0.7-23.el7
     pyOpenSSL:

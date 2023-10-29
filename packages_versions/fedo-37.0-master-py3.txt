@@ -2,10 +2,10 @@ fedo-37.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3007.0+0na.6e64117
+          Salt: 3007.0+0na.93b6405
  
 Python Version:
-        Python: 3.11.5 (main, Aug 28 2023, 00:00:00) [GCC 12.3.1 20230508 (Red Hat 12.3.1-1)]
+        Python: 3.11.6 (main, Oct  3 2023, 00:00:00) [GCC 12.3.1 20230508 (Red Hat 12.3.1-1)]
  
 Dependency Versions:
           cffi: 1.16.0
@@ -105,13 +105,13 @@ local:
     pythonversion:
         - 3
         - 11
-        - 5
+        - 6
         - final
         - 0
     saltpath:
         /usr/lib/python3.11/site-packages/salt
     saltversion:
-        3007.0+0na.6e64117
+        3007.0+0na.93b6405
     saltversioninfo:
         - 3007
         - 0
@@ -149,7 +149,7 @@ local:
     bzip2-libs:
         1.0.8-12.fc37
     ca-certificates:
-        2023.2.60-1.0.fc37
+        2023.2.60_v7.0.306-1.0.fc37
     coreutils:
         9.1-8.fc37
     coreutils-common:
@@ -167,7 +167,7 @@ local:
     cryptsetup-libs:
         2.6.1-1.fc37
     curl:
-        7.85.0-11.fc37
+        7.85.0-12.fc37
     cyrus-sasl-lib:
         2.1.28-8.fc37
     dbus:
@@ -181,11 +181,11 @@ local:
     device-mapper-libs:
         1.02.175-9.fc37
     dnf:
-        4.16.2-1.fc37
+        4.17.0-6.fc37
     dnf-data:
-        4.16.2-1.fc37
+        4.17.0-6.fc37
     dracut:
-        059-2.fc37
+        059-3.fc37
     elfutils-debuginfod-client:
         0.189-3.fc37
     elfutils-default-yama-scope:
@@ -199,11 +199,11 @@ local:
     fedora-gpg-keys:
         37-2
     fedora-release-common:
-        37-16
+        37-17
     fedora-release-container:
-        37-16
+        37-17
     fedora-release-identity-container:
-        37-16
+        37-17
     fedora-repos:
         37-2
     fedora-repos-modular:
@@ -329,13 +329,13 @@ local:
     libcom_err:
         1.46.5-3.fc37
     libcomps:
-        0.1.18-4.fc37
+        0.1.20-1.fc37
     libcurl:
-        7.85.0-11.fc37
+        7.85.0-12.fc37
     libdb:
         5.3.28-53.fc37
     libdnf:
-        0.70.2-1.fc37
+        0.71.0-2.fc37
     libeconf:
         0.5.2-1.fc37
     libedit:
@@ -373,7 +373,7 @@ local:
     libmpc:
         1.2.1-5.fc37
     libnghttp2:
-        1.51.0-1.fc37
+        1.51.0-2.fc37
     libnsl2:
         2.0.0-4.fc37
     libpkgconf:
@@ -383,7 +383,7 @@ local:
     libpwquality:
         1.4.5-3.fc37
     librepo:
-        1.15.2-1.fc37
+        1.16.0-2.fc37
     libreport-filesystem:
         2.17.11-1.fc37
     libseccomp:
@@ -399,7 +399,7 @@ local:
     libsmartcols:
         2.38.1-1.fc37
     libsolv:
-        0.7.22-3.fc37
+        0.7.25-1.fc37
     libssh:
         0.10.5-1.fc37
     libssh-config:
@@ -457,7 +457,7 @@ local:
     npth:
         1.6-9.fc37
     openldap:
-        2.6.4-1.fc37
+        2.6.6-1.fc37
     openssh:
         8.8p1-11.fc37
     openssh-clients:
@@ -601,21 +601,21 @@ local:
     python-setuptools-wheel:
         62.6.0-3.fc37
     python3:
-        3.11.5-1.fc37
+        3.11.6-1.fc37
     python3-devel:
-        3.11.5-1.fc37
+        3.11.6-1.fc37
     python3-dnf:
-        4.16.2-1.fc37
+        4.17.0-6.fc37
     python3-gpg:
         1.17.0-4.fc37
     python3-hawkey:
-        0.70.2-1.fc37
+        0.71.0-2.fc37
     python3-libcomps:
-        0.1.18-4.fc37
+        0.1.20-1.fc37
     python3-libdnf:
-        0.70.2-1.fc37
+        0.71.0-2.fc37
     python3-libs:
-        3.11.5-1.fc37
+        3.11.6-1.fc37
     python3-pip:
         22.2.2-3.fc37
     python3-rpm:
@@ -667,9 +667,9 @@ local:
     util-linux-core:
         2.38.1-1.fc37
     vim-data:
-        2:9.0.1927-1.fc37
+        2:9.0.2048-1.fc37
     vim-minimal:
-        2:9.0.1927-1.fc37
+        2:9.0.2048-1.fc37
     which:
         2.21-39.fc37
     xz:
@@ -677,9 +677,9 @@ local:
     xz-libs:
         5.4.1-1.fc37
     yum:
-        4.16.2-1.fc37
+        4.17.0-6.fc37
     zchunk-libs:
-        1.3.1-1.fc37
+        1.3.2-1.fc37
     zlib:
         1.2.12-5.fc37
 # salt-call --local pip.list
@@ -696,11 +696,11 @@ local:
     cffi:
         1.16.0
     charset-normalizer:
-        3.3.0
+        3.3.1
     contextvars:
         2.4
     cryptography:
-        41.0.4
+        41.0.5
     distro:
         1.8.0
     gpg:
@@ -712,7 +712,7 @@ local:
     jmespath:
         1.0.1
     libcomps:
-        0.1.18
+        0.1.20
     looseversion:
         1.3.0
     msgpack:
@@ -722,7 +722,7 @@ local:
     pip:
         22.2.2
     psutil:
-        5.9.5
+        5.9.6
     pycparser:
         2.21
     pycryptodomex:
@@ -734,13 +734,13 @@ local:
     rpm:
         4.18.1
     salt:
-        3007.0+0na.6e64117
+        3007.0+0na.93b6405
     setuptools:
         68.2.2
     tornado:
         6.3.3
     urllib3:
-        2.0.6
+        2.0.7
     wheel:
         0.41.2
 # salt-call --local locale.list_avail

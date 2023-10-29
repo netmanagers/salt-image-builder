@@ -122,11 +122,11 @@ local:
 local:
     ----------
     NetworkManager:
-        1:1.40.16-9.el8
+        1:1.40.16-11.el8
     NetworkManager-libnm:
-        1:1.40.16-9.el8
+        1:1.40.16-11.el8
     acl:
-        2.2.53-1.el8
+        2.2.53-3.el8
     audit-libs:
         3.0.7-5.el8
     basesystem:
@@ -226,13 +226,13 @@ local:
     glib2:
         2.56.4-161.el8
     glibc:
-        2.28-236.el8.6
+        2.28-237.el8
     glibc-common:
-        2.28-236.el8.6
+        2.28-237.el8
     glibc-langpack-en:
-        2.28-236.el8.6
+        2.28-237.el8
     glibc-minimal-langpack:
-        2.28-236.el8.6
+        2.28-237.el8
     gmp:
         1:6.1.2-10.el8
     gnupg2:
@@ -282,7 +282,7 @@ local:
     less:
         530-1.el8
     libacl:
-        2.2.53-1.el8
+        2.2.53-3.el8
     libarchive:
         3.3.3-5.el8
     libassuan:
@@ -318,7 +318,7 @@ local:
     libffi:
         3.1-24.el8
     libgcc:
-        8.5.0-20.el8
+        8.5.0-21.el8
     libgcrypt:
         1.8.5-7.el8
     libgpg-error:
@@ -342,7 +342,7 @@ local:
     libndp:
         1.7-6.el8
     libnghttp2:
-        1.33.0-3.el8_2.1
+        1.33.0-5.el8
     libnsl2:
         1.2.0-2.20180605git4a062cf.el8
     libpkgconf:
@@ -372,7 +372,7 @@ local:
     libsolv:
         0.7.20-6.el8
     libstdc++:
-        8.5.0-20.el8
+        8.5.0-21.el8
     libtasn1:
         4.13-4.el8
     libtirpc:

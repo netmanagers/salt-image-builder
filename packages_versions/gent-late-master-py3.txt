@@ -2,7 +2,7 @@ gent-late-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3007.0+0na.6e64117
+          Salt: 3007.0+0na.93b6405
  
 Python Version:
         Python: 3.11.5 (main, Aug 27 2023, 17:24:15) [GCC 12.3.1 20230526]
@@ -113,7 +113,7 @@ local:
     saltpath:
         /usr/lib/python3.11/site-packages/salt
     saltversion:
-        3007.0+0na.6e64117
+        3007.0+0na.93b6405
     saltversioninfo:
         - 3007
         - 0
@@ -176,7 +176,7 @@ local:
     acct-user/sshd:
         0-r2
     app-admin/eselect:
-        1.4.26
+        1.4.27
     app-admin/metalog:
         20230719
     app-admin/perl-cleaner:
@@ -238,7 +238,7 @@ local:
     app-portage/elt-patches:
         20221210
     app-portage/gemato:
-        20.4
+        20.5
     app-portage/portage-utils:
         0.96.1
     app-shells/bash:
@@ -262,7 +262,7 @@ local:
     app-text/xmlto:
         0.0.28-r11
     dev-db/sqlite:
-        3.42.0
+        3.43.2
     dev-lang/perl:
         5.38.0-r1
     dev-lang/python:
@@ -310,7 +310,7 @@ local:
     dev-libs/npth:
         1.6-r1
     dev-libs/openssl:
-        3.0.10
+        3.0.11
     dev-libs/popt:
         1.19
     dev-perl/Authen-SASL:
@@ -362,7 +362,7 @@ local:
     dev-python/ensurepip-pip:
         23.2.1
     dev-python/ensurepip-setuptools:
-        68.1.2
+        68.2.2
     dev-python/ensurepip-wheels:
         100
     dev-python/flit-core:
@@ -408,7 +408,7 @@ local:
     dev-python/requests:
         2.31.0
     dev-python/setuptools:
-        68.1.2
+        68.2.2
     dev-python/setuptools-scm:
         7.1.0
     dev-python/tomli:
@@ -442,7 +442,7 @@ local:
     net-dns/c-ares:
         1.19.1
     net-dns/libidn2:
-        2.3.4
+        2.3.4-r1
     net-firewall/iptables:
         1.8.9
     net-libs/gnutls:
@@ -454,15 +454,15 @@ local:
     net-libs/libtirpc:
         1.3.3
     net-misc/curl:
-        8.2.1
+        8.4.0
     net-misc/dhcpcd:
-        10.0.2
+        10.0.3
     net-misc/iputils:
         20221126-r1
     net-misc/netifrc:
         0.7.5
     net-misc/openssh:
-        9.3_p2
+        9.4_p1-r1
     net-misc/rsync:
         3.2.7-r2
     net-misc/wget:
@@ -484,7 +484,7 @@ local:
     sys-apps/diffutils:
         3.10
     sys-apps/file:
-        5.45-r1
+        5.45-r3
     sys-apps/findutils:
         4.9.0-r2
     sys-apps/gawk:
@@ -500,7 +500,7 @@ local:
     sys-apps/install-xattr:
         0.8
     sys-apps/iproute2:
-        6.4.0
+        6.5.0
     sys-apps/kbd:
         2.6.1
     sys-apps/kmod:
@@ -520,13 +520,13 @@ local:
     sys-apps/portage:
         3.0.51
     sys-apps/sandbox:
-        2.37
+        2.38
     sys-apps/sed:
         4.9
     sys-apps/shadow:
         4.13-r4
     sys-apps/systemd-utils:
-        253.11
+        253.11-r1
     sys-apps/sysvinit:
         3.07
     sys-apps/texinfo:
@@ -586,7 +586,7 @@ local:
     sys-libs/gdbm:
         1.23
     sys-libs/glibc:
-        2.37-r3
+        2.37-r7
     sys-libs/libcap:
         2.69
     sys-libs/libseccomp:
@@ -702,7 +702,7 @@ local:
     virtual/tmpfiles:
         0-r5
     virtual/udev:
-        217-r6
+        217-r7
 # salt-call --local pip.list
 local:
     ----------
@@ -715,7 +715,7 @@ local:
     PyYAML:
         6.0.1
     calver:
-        2023.8.13
+        2023.10.15
     certifi:
         2023.7.22
     certifi-system-store:
@@ -727,7 +727,7 @@ local:
     contextvars:
         2.4
     cryptography:
-        41.0.4
+        41.0.5
     distro:
         1.8.0
     editables:
@@ -735,7 +735,7 @@ local:
     flit_core:
         3.9.0
     gemato:
-        20.4
+        20.5
     hatchling:
         1.18.0
     idna:
@@ -775,7 +775,7 @@ local:
     pluggy:
         1.3.0
     psutil:
-        5.9.5
+        5.9.6
     pycparser:
         2.21
     pycryptodomex:
@@ -787,7 +787,7 @@ local:
     requests:
         2.31.0
     salt:
-        3007.0+0na.6e64117
+        3007.0+0na.93b6405
     setuptools:
         68.2.2
     setuptools-scm:
