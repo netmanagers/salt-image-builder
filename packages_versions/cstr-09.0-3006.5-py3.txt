@@ -1,8 +1,11 @@
-alma-09.0-3005.4-py3
+cstr-09.0-3006.5-py3
 Salt install method: onedir
 # salt-call --versions-report
 Salt Version:
-          Salt: 3005.4
+          Salt: 3006.5
+ 
+Python Version:
+        Python: 3.10.13 (main, Nov 15 2023, 04:34:27) [GCC 11.2.0]
  
 Dependency Versions:
           cffi: 1.14.6
@@ -11,33 +14,35 @@ Dependency Versions:
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
-        Jinja2: 3.1.0
+        Jinja2: 3.1.2
        libgit2: Not Installed
+  looseversion: 1.0.2
       M2Crypto: Not Installed
           Mako: Not Installed
        msgpack: 1.0.2
   msgpack-pure: Not Installed
   mysql-python: Not Installed
+     packaging: 22.0
      pycparser: 2.21
       pycrypto: Not Installed
   pycryptodome: 3.9.8
         pygit2: Not Installed
-        Python: 3.9.18 (main, Nov  1 2022, 00:00:00)
   python-gnupg: 0.4.8
         PyYAML: 6.0.1
          PyZMQ: 23.2.0
+        relenv: 0.14.2
          smmap: Not Installed
        timelib: 0.2.4
        Tornado: 4.5.3
            ZMQ: 4.3.4
  
 System Versions:
-          dist: almalinux 9.3 Shamrock Pampas Cat
-        locale: ascii
+          dist: centos 9 
+        locale: utf-8
        machine: x86_64
        release: 5.4.109+
         system: Linux
-       version: AlmaLinux 9.3 Shamrock Pampas Cat
+       version: CentOS Stream 9 
  
 # salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
 local:
@@ -53,61 +58,62 @@ local:
     locale_info:
         ----------
         defaultencoding:
-            None
+            UTF-8
         defaultlanguage:
-            None
+            en_US
         detectedencoding:
-            ascii
+            utf-8
         timezone:
             UTC
     lsb_distrib_codename:
-        AlmaLinux 9.3 (Shamrock Pampas Cat)
+        CentOS Stream 9
     lsb_distrib_id:
-        AlmaLinux
+        CentOS Stream
     lsb_distrib_release:
-        9.3
+        9
     os:
-        AlmaLinux
+        CentOS Stream
     os_family:
         RedHat
     osarch:
         x86_64
     osbuild:
     oscodename:
-        AlmaLinux 9.3 (Shamrock Pampas Cat)
+        CentOS Stream 9
     osfinger:
-        AlmaLinux-9
+        CentOS Stream-9
     osfullname:
-        AlmaLinux
+        CentOS Stream
     osmajorrelease:
         9
     osmanufacturer:
     osrelease:
-        9.3
+        9
     osrelease_info:
         - 9
-        - 3
     osversion:
     pythonexecutable:
-        /opt/saltstack/salt/run/run
+        /opt/saltstack/salt/bin/python3.10
     pythonpath:
-        - /opt/saltstack/salt/pypath/lib/python3.9/site-packages
-        - /opt/saltstack/salt/run/base_library.zip
-        - /opt/saltstack/salt/run/lib-dynload
-        - /opt/saltstack/salt/run
+        - /opt/saltstack/salt
+        - /opt/saltstack/salt/extras-3.10
+        - /opt/saltstack/salt/lib/python310.zip
+        - /opt/saltstack/salt/lib/python3.10
+        - /opt/saltstack/salt/lib/python3.10/lib-dynload
+        - /opt/saltstack/salt/lib/python3.10/site-packages
     pythonversion:
         - 3
-        - 9
-        - 18
+        - 10
+        - 13
         - final
         - 0
     saltpath:
-        /opt/saltstack/salt/run/salt
+        /opt/saltstack/salt/lib/python3.10/site-packages/salt
     saltversion:
-        3005.4
+        3006.5
     saltversioninfo:
-        - 3005
-        - 4
+        - 3006
+        - 5
     systemd:
         ----------
         features:
@@ -124,29 +130,25 @@ local:
 local:
     ----------
     acl:
-        2.3.1-3.el9
-    almalinux-gpg-keys:
-        9.3-1.el9
-    almalinux-release:
-        9.3-1.el9
-    almalinux-repos:
-        9.3-1.el9
+        2.3.1-4.el9
     alternatives:
         1.24-1.el9
     audit-libs:
-        3.0.7-104.el9
+        3.1.2-2.el9
     basesystem:
         11-13.el9
     bash:
-        5.1.8-6.el9_1
-    binutils:
-        2.35.2-42.el9
-    binutils-gold:
-        2.35.2-42.el9
+        5.1.8-6.el9
     bzip2-libs:
         1.0.8-8.el9
     ca-certificates:
-        2023.2.60_v7.0.306-90.1.el9_2
+        2023.2.60_v7.0.306-90.1.el9
+    centos-gpg-keys:
+        9.0-23.el9
+    centos-stream-release:
+        9.0-23.el9
+    centos-stream-repos:
+        9.0-23.el9
     chkconfig:
         1.24-1.el9
     coreutils-single:
@@ -156,13 +158,13 @@ local:
     cracklib-dicts:
         2.9.6-27.el9
     crypto-policies:
-        20230731-1.git94f0e2c.el9_3.1
+        20231113-1.gite9247c2.el9
     crypto-policies-scripts:
-        20230731-1.git94f0e2c.el9_3.1
+        20231113-1.gite9247c2.el9
     cryptsetup-libs:
         2.6.0-3.el9
     curl-minimal:
-        7.76.1-26.el9_3.2
+        7.76.1-28.el9
     cyrus-sasl-lib:
         2.1.27-21.el9
     dbus:
@@ -173,26 +175,26 @@ local:
         1:1.12.20-8.el9
     dbus-libs:
         1:1.12.20-8.el9
+    dejavu-sans-fonts:
+        2.37-18.el9
     device-mapper:
         9:1.02.195-3.el9
     device-mapper-libs:
         9:1.02.195-3.el9
     dmidecode:
-        1:3.5-1.el9
+        1:3.3-7.el9
     dnf:
-        4.14.0-8.el9.alma.1
+        4.14.0-9.el9
     dnf-data:
-        4.14.0-8.el9.alma.1
+        4.14.0-9.el9
     dnf-plugins-core:
-        4.3.0-11.el9_3
-    elfutils-debuginfod-client:
-        0.189-3.el9
+        4.3.0-12.el9
     elfutils-default-yama-scope:
-        0.189-3.el9
+        0.190-1.el9
     elfutils-libelf:
-        0.189-3.el9
+        0.190-1.el9
     elfutils-libs:
-        0.189-3.el9
+        0.190-1.el9
     emacs-filesystem:
         1:27.2-9.el9
     expat:
@@ -203,34 +205,38 @@ local:
         3.16-2.el9
     findutils:
         1:4.8.0-6.el9
+    fonts-filesystem:
+        1:2.0.5-7.el9.1
     gawk:
         5.1.0-6.el9
+    gdb-gdbserver:
+        10.2-12.el9
     gdbm-libs:
         1:1.19-4.el9
     git:
-        2.39.3-1.el9_2
+        2.39.3-1.el9
     git-core:
-        2.39.3-1.el9_2
+        2.39.3-1.el9
     git-core-doc:
-        2.39.3-1.el9_2
+        2.39.3-1.el9
     glib2:
-        2.68.4-11.el9
+        2.68.4-12.el9
     glibc:
-        2.34-83.el9_3.7
+        2.34-88.el9
     glibc-common:
-        2.34-83.el9_3.7
+        2.34-88.el9
     glibc-langpack-en:
-        2.34-83.el9_3.7
+        2.34-88.el9
     glibc-minimal-langpack:
-        2.34-83.el9_3.7
+        2.34-88.el9
     gmp:
         1:6.2.0-13.el9
     gnupg2:
         2.3.3-4.el9
     gnutls:
-        3.7.6-23.el9
+        3.8.2-1.el9
     gpg-pubkey.(none):
-        9d30d7b6-62d757ff,b86b3716-61e69f29
+        73d76b3f-63dace60,8483c65d-5ccc5b19
     gpgme:
         1.15.1-6.el9
     grep:
@@ -239,14 +245,10 @@ local:
         1.22.4-10.el9
     gzip:
         1.12-1.el9
-    hostname:
-        3.23-6.el9
     hwdata:
         0.348-9.11.el9
     ima-evm-utils:
         1.4-4.el9
-    iputils:
-        20210202-9.el9
     json-c:
         0.14-11.el9
     kbd:
@@ -263,10 +265,16 @@ local:
         28-9.el9
     krb5-libs:
         1.21.1-1.el9
+    langpacks-core-en:
+        3.0-16.el9
+    langpacks-core-font-en:
+        3.0-16.el9
+    langpacks-en:
+        3.0-16.el9
     less:
-        590-2.el9_2
+        590-2.el9
     libacl:
-        2.3.1-3.el9
+        2.3.1-4.el9
     libarchive:
         3.5.3-4.el9
     libassuan:
@@ -276,23 +284,23 @@ local:
     libblkid:
         2.37.4-15.el9
     libcap:
-        2.48-9.el9_2
+        2.48-9.el9
     libcap-ng:
         0.8.2-7.el9
     libcbor:
         0.7.0-5.el9
     libcom_err:
-        1.46.5-3.el9
+        1.46.5-4.el9
     libcomps:
         0.1.18-1.el9
     libcurl-minimal:
-        7.76.1-26.el9_3.2
+        7.76.1-28.el9
     libdb:
         5.3.28-53.el9
     libdnf:
-        0.69.0-6.el9_3.alma.1
+        0.69.0-7.el9
     libeconf:
-        0.4.1-3.el9_2
+        0.4.1-3.el9
     libedit:
         3.1-38.20210216cvs.el9
     libevent:
@@ -302,25 +310,25 @@ local:
     libffi:
         3.4.2-8.el9
     libfido2:
-        1.13.0-1.el9
+        1.13.0-2.el9
     libgcc:
-        11.4.1-2.1.el9.alma
+        11.4.1-2.3.el9
     libgcrypt:
-        1.10.0-10.el9_2
+        1.10.0-10.el9
     libgomp:
-        11.4.1-2.1.el9.alma
+        11.4.1-2.3.el9
     libgpg-error:
         1.42-5.el9
     libidn2:
         2.3.0-7.el9
     libksba:
-        1.5.1-6.el9_1
+        1.5.1-6.el9
     libmodulemd:
         2.13.0-2.el9
     libmount:
         2.37.4-15.el9
     libnghttp2:
-        1.43.0-5.el9_3.1
+        1.43.0-5.el9.1
     libpkgconf:
         1.7.3-10.el9
     libpwquality:
@@ -328,15 +336,15 @@ local:
     librepo:
         1.14.5-1.el9
     libreport-filesystem:
-        2.15.2-6.el9.alma
+        2.15.2-6.el9
     libseccomp:
         2.5.2-2.el9
     libselinux:
-        3.5-1.el9
+        3.6-0.rc1.1.el9
     libsemanage:
-        3.5-2.el9
+        3.6-0.rc1.1.el9
     libsepol:
-        3.5-1.el9
+        3.6-0.rc1.1.el9
     libsigsegv:
         2.13-4.el9
     libsmartcols:
@@ -344,9 +352,9 @@ local:
     libsolv:
         0.7.24-2.el9
     libstdc++:
-        11.4.1-2.1.el9.alma
+        11.4.1-2.3.el9
     libtasn1:
-        4.16.0-8.el9_1
+        4.16.0-8.el9
     libunistring:
         0.9.10-15.el9
     libutempter:
@@ -360,7 +368,7 @@ local:
     libxcrypt-compat:
         4.4.18-3.el9
     libxml2:
-        2.9.13-5.el9_3
+        2.9.13-5.el9
     libyaml:
         0.2.5-7.el9
     libzstd:
@@ -380,29 +388,29 @@ local:
     net-tools:
         2.0-0.62.20160912git.el9
     nettle:
-        3.8-3.el9_0
+        3.9.1-1.el9
     npth:
         1.6-8.el9
     openldap:
         2.6.3-1.el9
     openssh:
-        8.7p1-34.el9
+        8.7p1-35.el9
     openssh-clients:
-        8.7p1-34.el9
+        8.7p1-35.el9
     openssh-server:
-        8.7p1-34.el9
+        8.7p1-35.el9
     openssl:
-        1:3.0.7-24.el9
+        1:3.0.7-25.el9
     openssl-devel:
-        1:3.0.7-24.el9
+        1:3.0.7-25.el9
     openssl-libs:
-        1:3.0.7-24.el9
+        1:3.0.7-25.el9
     p11-kit:
-        0.24.1-2.el9
+        0.25.3-2.el9
     p11-kit-trust:
-        0.24.1-2.el9
+        0.25.3-2.el9
     pam:
-        1.5.1-15.el9
+        1.5.1-16.el9
     pciutils:
         3.7.0-5.el9
     pciutils-libs:
@@ -410,9 +418,9 @@ local:
     pcre:
         8.44-3.el9.3
     pcre2:
-        10.40-2.el9
+        10.40-4.el9
     pcre2-syntax:
-        10.40-2.el9
+        10.40-4.el9
     perl-AutoLoader:
         5.74-480.el9
     perl-B:
@@ -456,7 +464,7 @@ local:
     perl-Getopt-Std:
         1.12-480.el9
     perl-Git:
-        2.39.3-1.el9_2
+        2.39.3-1.el9
     perl-HTTP-Tiny:
         0.076-461.el9
     perl-IO:
@@ -550,33 +558,33 @@ local:
     procps-ng:
         3.3.17-13.el9
     python3:
-        3.9.18-1.el9_3
+        3.9.18-1.el9
     python3-dateutil:
         1:2.8.1-7.el9
     python3-dbus:
         1.2.18-2.el9
     python3-devel:
-        3.9.18-1.el9_3
+        3.9.18-1.el9
     python3-dnf:
-        4.14.0-8.el9.alma.1
+        4.14.0-9.el9
     python3-dnf-plugins-core:
-        4.3.0-11.el9_3
+        4.3.0-12.el9
     python3-gpg:
         1.15.1-6.el9
     python3-hawkey:
-        0.69.0-6.el9_3.alma.1
+        0.69.0-7.el9
     python3-libcomps:
         0.1.18-1.el9
     python3-libdnf:
-        0.69.0-6.el9_3.alma.1
+        0.69.0-7.el9
     python3-libs:
-        3.9.18-1.el9_3
+        3.9.18-1.el9
     python3-pip:
         21.2.3-7.el9
     python3-pip-wheel:
         21.2.3-7.el9
     python3-rpm:
-        4.16.1.3-25.el9
+        4.16.1.3-26.el9
     python3-setuptools:
         53.0.0-12.el9
     python3-setuptools-wheel:
@@ -590,17 +598,17 @@ local:
     rootfiles:
         8.1-31.el9
     rpm:
-        4.16.1.3-25.el9
+        4.16.1.3-26.el9
     rpm-build-libs:
-        4.16.1.3-25.el9
+        4.16.1.3-26.el9
     rpm-libs:
-        4.16.1.3-25.el9
+        4.16.1.3-26.el9
     rpm-sign-libs:
-        4.16.1.3-25.el9
+        4.16.1.3-26.el9
     salt:
-        3005.4-1.el9
+        3006.5-0
     salt-minion:
-        3005.4-1.el9
+        3006.5-0
     sed:
         4.8-9.el9
     setup:
@@ -608,7 +616,7 @@ local:
     shadow-utils:
         2:4.9-8.el9
     sqlite-libs:
-        3.34.1-6.el9_1
+        3.34.1-6.el9
     sudo:
         1.9.5p2-9.el9
     systemd:
@@ -622,7 +630,7 @@ local:
     systemd-udev:
         252-18.el9
     tar:
-        2:1.34-6.el9_1
+        2:1.34-6.el9
     tpm2-tss:
         3.2.2-2.el9
     tzdata:
@@ -632,24 +640,112 @@ local:
     util-linux-core:
         2.37.4-15.el9
     vim-minimal:
-        2:8.2.2637-20.el9_1
+        2:8.2.2637-20.el9
     which:
         2.21-29.el9
-    xz:
-        5.2.5-8.el9_0
     xz-libs:
-        5.2.5-8.el9_0
+        5.2.5-8.el9
     yum:
-        4.14.0-8.el9.alma.1
+        4.14.0-9.el9
     yum-utils:
-        4.3.0-11.el9_3
+        4.3.0-12.el9
     zlib:
-        1.2.11-40.el9
+        1.2.11-41.el9
 # salt-call --local pip.list
 local:
     ----------
+    CherryPy:
+        18.6.1
+    Jinja2:
+        3.1.2
+    MarkupSafe:
+        2.1.2
+    PyYAML:
+        6.0.1
+    certifi:
+        2023.7.22
+    cffi:
+        1.14.6
+    charset-normalizer:
+        3.2.0
+    cheroot:
+        8.5.2
+    contextvars:
+        2.4
+    cryptography:
+        41.0.7
+    distro:
+        1.5.0
+    idna:
+        3.2
+    immutables:
+        0.15
+    importlib-metadata:
+        6.0.0
+    jaraco.classes:
+        3.2.1
+    jaraco.collections:
+        3.4.0
+    jaraco.functools:
+        2.0
+    jaraco.text:
+        3.5.1
+    jmespath:
+        1.0.1
+    looseversion:
+        1.0.2
+    more-itertools:
+        5.0.0
+    msgpack:
+        1.0.2
+    packaging:
+        22.0
     pip:
-        22.2.2
+        22.3.1
+    portend:
+        2.4
+    psutil:
+        5.8.0
+    pyOpenSSL:
+        23.2.0
+    pycparser:
+        2.21
+    pycryptodomex:
+        3.9.8
+    python-dateutil:
+        2.8.1
+    python-gnupg:
+        0.4.8
+    pytz:
+        2022.1
+    pyzmq:
+        23.2.0
+    relenv:
+        0.14.2
+    requests:
+        2.31.0
+    rpm-vercmp:
+        0.1.2
+    salt:
+        3006.5
+    setproctitle:
+        1.3.2
+    setuptools:
+        68.2.2
+    six:
+        1.16.0
+    tempora:
+        4.1.1
+    timelib:
+        0.2.5
+    urllib3:
+        1.26.18
+    wheel:
+        0.42.0
+    zc.lockfile:
+        1.4
+    zipp:
+        3.6.0
 # salt-call --local locale.list_avail
 local:
     - C
