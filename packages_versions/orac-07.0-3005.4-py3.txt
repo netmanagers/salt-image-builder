@@ -154,7 +154,7 @@ local:
     cryptsetup-libs:
         2.0.3-6.el7
     curl:
-        7.29.0-59.0.3.el7_9.1
+        7.29.0-59.0.3.el7_9.2
     cyrus-sasl-lib:
         2.1.26-24.0.1.el7_9
     dbus:
@@ -268,7 +268,7 @@ local:
     libattr:
         2.4.46-13.el7
     libblkid:
-        2.23.2-65.0.3.el7_9.1
+        2.23.2-65.0.4.el7_9.1
     libcap:
         2.22-11.el7
     libcap-ng:
@@ -278,7 +278,7 @@ local:
     libcom_err-devel:
         1.42.9-19.0.1.el7
     libcurl:
-        7.29.0-59.0.3.el7_9.1
+        7.29.0-59.0.3.el7_9.2
     libdb:
         5.3.21-25.el7
     libdb-utils:
@@ -298,7 +298,7 @@ local:
     libgpg-error:
         1.12-3.el7
     libgudev1:
-        219-78.0.10.el7_9.7
+        219-78.0.10.el7_9.9
     libidn:
         1.28-4.el7
     libkadm5:
@@ -306,7 +306,7 @@ local:
     libmnl:
         1.0.3-7.el7
     libmount:
-        2.23.2-65.0.3.el7_9.1
+        2.23.2-65.0.4.el7_9.1
     libnl:
         1.1.4-3.el7
     libpwquality:
@@ -324,7 +324,7 @@ local:
     libsepol-devel:
         2.5-10.el7
     libsmartcols:
-        2.23.2-65.0.3.el7_9.1
+        2.23.2-65.0.4.el7_9.1
     libssh2:
         1.8.0-4.el7_9.1
     libstdc++:
@@ -338,7 +338,7 @@ local:
     libutempter:
         1.1.6-4.el7
     libuuid:
-        2.23.2-65.0.3.el7_9.1
+        2.23.2-65.0.4.el7_9.1
     libverto:
         0.2.5-4.el7
     libverto-devel:
@@ -504,7 +504,7 @@ local:
     pyliblzma:
         0.5.3-11.el7
     python:
-        2.7.5-93.0.1.el7_9
+        2.7.5-94.0.1.el7_9
     python-chardet:
         2.2.1-3.el7
     python-dmidecode:
@@ -520,7 +520,7 @@ local:
     python-kitchen:
         1.1.1-5.el7
     python-libs:
-        2.7.5-93.0.1.el7_9
+        2.7.5-94.0.1.el7_9
     python-pycurl:
         7.19.0-19.el7
     python-rpm-macros:
@@ -530,11 +530,11 @@ local:
     python-urlgrabber:
         3.10-10.el7
     python3:
-        3.6.8-19.0.1.el7_9
+        3.6.8-21.0.1.el7_9
     python3-devel:
-        3.6.8-19.0.1.el7_9
+        3.6.8-21.0.1.el7_9
     python3-libs:
-        3.6.8-19.0.1.el7_9
+        3.6.8-21.0.1.el7_9
     python3-pip:
         9.0.3-8.0.3.el7
     python3-rpm-generators:
@@ -598,9 +598,9 @@ local:
     swig:
         2.0.10-5.el7
     systemd:
-        219-78.0.10.el7_9.7
+        219-78.0.10.el7_9.9
     systemd-libs:
-        219-78.0.10.el7_9.7
+        219-78.0.10.el7_9.9
     sysvinit-tools:
         2.88-14.dsf.el7
     tar:
@@ -614,7 +614,7 @@ local:
     ustr:
         1.0.4-16.el7
     util-linux:
-        2.23.2-65.0.3.el7_9.1
+        2.23.2-65.0.4.el7_9.1
     vim-minimal:
         2:7.4.629-8.0.1.el7_9
     which:

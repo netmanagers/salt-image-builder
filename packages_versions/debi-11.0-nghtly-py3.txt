@@ -327,7 +327,7 @@ local:
     libnettle8:
         3.7.3-1
     libnghttp2-14:
-        1.43.0-1
+        1.43.0-1+deb11u1
     libnpth0:
         1.6-3
     libnsl2:
@@ -495,7 +495,7 @@ local:
     tar:
         1.34+dfsg-1
     tzdata:
-        2021a-1+deb11u10
+        2021a-1+deb11u11
     ucf:
         3.0043
     udev:

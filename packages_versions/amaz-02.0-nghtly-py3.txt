@@ -134,7 +134,7 @@ local:
     bzip2-libs:
         1.0.6-13.amzn2.0.3
     ca-certificates:
-        2021.2.50-72.amzn2.0.8
+        2023.2.62-1.amzn2.0.1
     chkconfig:
         1.7.4-1.amzn2.0.2
     coreutils:
@@ -182,7 +182,7 @@ local:
     fipscheck-lib:
         1.4.1-6.amzn2.0.2
     gawk:
-        4.0.2-4.amzn2.1.2
+        4.0.2-4.amzn2.1.3
     gdbm:
         1:1.13-6.amzn2.0.2
     git:
@@ -202,7 +202,7 @@ local:
     glibc-minimal-langpack:
         2.26-63.amzn2.0.1
     gmp:
-        1:6.0.0-15.amzn2.0.2
+        1:6.0.0-15.amzn2.0.3
     gnupg2:
         2.0.22-5.amzn2.0.5
     gpg-pubkey.(none):
@@ -298,9 +298,9 @@ local:
     libverto:
         0.2.5-4.amzn2.0.2
     libxml2:
-        2.9.1-6.amzn2.5.12
+        2.9.1-6.amzn2.5.13
     libxml2-python:
-        2.9.1-6.amzn2.5.12
+        2.9.1-6.amzn2.5.13
     lua:
         5.1.4-15.amzn2.0.2
     lz4:
@@ -316,21 +316,21 @@ local:
     net-tools:
         2.0-0.22.20131004git.amzn2.0.3
     nspr:
-        4.34.0-3.1.amzn2
+        4.35.0-1.amzn2
     nss:
-        3.79.0-4.amzn2.0.1
+        3.90.0-2.amzn2.0.1
     nss-pem:
         1.0.3-5.amzn2
     nss-softokn:
-        3.79.0-4.amzn2
+        3.90.0-6.amzn2
     nss-softokn-freebl:
-        3.79.0-4.amzn2
+        3.90.0-6.amzn2
     nss-sysinit:
-        3.79.0-4.amzn2.0.1
+        3.90.0-2.amzn2.0.1
     nss-tools:
-        3.79.0-4.amzn2.0.1
+        3.90.0-2.amzn2.0.1
     nss-util:
-        3.79.0-1.amzn2
+        3.90.0-1.amzn2
     openldap:
         2.4.44-25.amzn2.0.7
     openssh:
@@ -340,9 +340,9 @@ local:
     openssh-server:
         7.4p1-22.amzn2.0.5
     openssl:
-        1:1.0.2k-24.amzn2.0.9
+        1:1.0.2k-24.amzn2.0.11
     openssl-libs:
-        1:1.0.2k-24.amzn2.0.9
+        1:1.0.2k-24.amzn2.0.11
     p11-kit:
         0.23.22-1.amzn2.0.1
     p11-kit-trust:
@@ -430,7 +430,7 @@ local:
     pyliblzma:
         0.5.3-25.amzn2
     python:
-        2.7.18-1.amzn2.0.6
+        2.7.18-1.amzn2.0.7
     python-babel:
         0.9.6-8.amzn2.0.2
     python-chardet:
@@ -440,7 +440,7 @@ local:
     python-kitchen:
         1.1.1-5.amzn2
     python-libs:
-        2.7.18-1.amzn2.0.6
+        2.7.18-1.amzn2.0.7
     python-markupsafe:
         0.11-10.amzn2.0.2
     python-pycurl:
@@ -462,7 +462,7 @@ local:
     python3-markupsafe:
         0.11-10.amzn2.0.2
     python3-pip:
-        20.2.2-1.amzn2.0.4
+        20.2.2-1.amzn2.0.5
     python3-pysocks:
         1.7.1-7.amzn2.0.2
     python3-requests:
@@ -516,9 +516,9 @@ local:
     util-linux:
         2.30.2-2.amzn2.0.11
     vim-data:
-        2:9.0.1882-1.amzn2.0.2
+        2:9.0.2120-1.amzn2.0.1
     vim-minimal:
-        2:9.0.1882-1.amzn2.0.2
+        2:9.0.2120-1.amzn2.0.1
     which:
         2.20-7.amzn2.0.2
     xz-libs:
@@ -534,7 +534,7 @@ local:
     yum-utils:
         1.1.31-46.amzn2.0.1
     zlib:
-        1.2.7-19.amzn2.0.2
+        1.2.7-19.amzn2.0.3
 # salt-call --local pip.list
 local:
     ----------

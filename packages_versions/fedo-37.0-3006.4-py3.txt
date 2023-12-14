@@ -1,11 +1,11 @@
 fedo-37.0-3006.4-py3
-Salt install method: stable
+Salt install method: onedir
 # salt-call --versions-report
 Salt Version:
-          Salt: 3006.4
+          Salt: 3006.5
  
 Python Version:
-        Python: 3.10.13 (main, Oct  4 2023, 21:54:22) [GCC 11.2.0]
+        Python: 3.10.13 (main, Nov 15 2023, 04:34:27) [GCC 11.2.0]
  
 Dependency Versions:
           cffi: 1.14.6
@@ -30,7 +30,7 @@ Dependency Versions:
   python-gnupg: 0.4.8
         PyYAML: 6.0.1
          PyZMQ: 23.2.0
-        relenv: 0.13.12
+        relenv: 0.14.2
          smmap: Not Installed
        timelib: 0.2.4
        Tornado: 4.5.3
@@ -108,10 +108,10 @@ local:
     saltpath:
         /opt/saltstack/salt/lib/python3.10/site-packages/salt
     saltversion:
-        3006.4
+        3006.5
     saltversioninfo:
         - 3006
-        - 4
+        - 5
     systemd:
         ----------
         features:
@@ -130,7 +130,7 @@ local:
     alternatives:
         1.24-1.fc37
     audit-libs:
-        3.1.2-1.fc37
+        3.1.2-5.fc37
     authselect:
         1.4.2-1.fc37
     authselect-libs:
@@ -138,7 +138,7 @@ local:
     basesystem:
         11-14.fc37
     bash:
-        5.2.15-1.fc37
+        5.2.21-1.fc37
     bzip2-libs:
         1.0.8-12.fc37
     ca-certificates:
@@ -178,9 +178,9 @@ local:
     dmidecode:
         1:3.4-2.fc37
     dnf:
-        4.17.0-6.fc37
+        4.18.0-2.fc37
     dnf-data:
-        4.17.0-6.fc37
+        4.18.0-2.fc37
     dnf-plugins-core:
         4.4.3-1.fc37
     dnf-utils:
@@ -188,21 +188,21 @@ local:
     dracut:
         059-3.fc37
     elfutils-default-yama-scope:
-        0.189-3.fc37
+        0.190-2.fc37
     elfutils-libelf:
-        0.189-3.fc37
+        0.190-2.fc37
     elfutils-libs:
-        0.189-3.fc37
+        0.190-2.fc37
     expat:
         2.5.0-1.fc37
     fedora-gpg-keys:
         37-2
     fedora-release-common:
-        37-17
+        37-18
     fedora-release-container:
-        37-17
+        37-18
     fedora-release-identity-container:
-        37-17
+        37-18
     fedora-repos:
         37-2
     fedora-repos-modular:
@@ -230,21 +230,21 @@ local:
     gettext-runtime:
         0.21.1-1.fc37
     git:
-        2.41.0-1.fc37
+        2.42.0-2.fc37
     git-core:
-        2.41.0-1.fc37
+        2.42.0-2.fc37
     git-core-doc:
-        2.41.0-1.fc37
+        2.42.0-2.fc37
     glib2:
         2.74.7-2.fc37
     glibc:
-        2.36-14.fc37
+        2.36-18.fc37
     glibc-common:
-        2.36-14.fc37
+        2.36-18.fc37
     glibc-langpack-en:
-        2.36-14.fc37
+        2.36-18.fc37
     glibc-minimal-langpack:
-        2.36-14.fc37
+        2.36-18.fc37
     gmp:
         1:6.2.1-3.fc37
     gnupg2:
@@ -270,7 +270,7 @@ local:
     gzip:
         1.12-2.fc37
     hwdata:
-        0.375-1.fc37
+        0.376-1.fc37
     ima-evm-utils:
         1.4-6.fc37
     js-jquery:
@@ -326,7 +326,7 @@ local:
     libdb:
         5.3.28-53.fc37
     libdnf:
-        0.71.0-2.fc37
+        0.72.0-1.fc37
     libeconf:
         0.5.2-1.fc37
     libedit:
@@ -370,7 +370,7 @@ local:
     libpwquality:
         1.4.5-3.fc37
     librepo:
-        1.16.0-2.fc37
+        1.17.0-1.fc37
     libreport-filesystem:
         2.17.11-1.fc37
     libseccomp:
@@ -452,9 +452,9 @@ local:
     os-prober:
         1.81-1.fc37
     p11-kit:
-        0.25.0-1.fc37
+        0.25.3-1.fc37
     p11-kit-trust:
-        0.25.0-1.fc37
+        0.25.3-1.fc37
     pam:
         1.5.2-14.fc37
     pam-libs:
@@ -500,7 +500,7 @@ local:
     perl-Getopt-Std:
         1.13-494.fc37
     perl-Git:
-        2.41.0-1.fc37
+        2.42.0-2.fc37
     perl-HTTP-Tiny:
         0.086-1.fc37
     perl-IO:
@@ -592,23 +592,21 @@ local:
     python3-distro:
         1.7.0-3.fc37
     python3-dnf:
-        4.17.0-6.fc37
+        4.18.0-2.fc37
     python3-dnf-plugins-core:
         4.4.3-1.fc37
-    python3-gpg:
-        1.17.0-4.fc37
     python3-hawkey:
-        0.71.0-2.fc37
+        0.72.0-1.fc37
     python3-libcomps:
         0.1.20-1.fc37
     python3-libdnf:
-        0.71.0-2.fc37
+        0.72.0-1.fc37
     python3-libs:
         3.11.6-1.fc37
     python3-pip:
         22.2.2-3.fc37
     python3-rpm:
-        4.18.1-2.fc37
+        4.18.2-1.fc37
     python3-six:
         1.16.0-8.fc37
     python3-systemd:
@@ -618,17 +616,17 @@ local:
     rootfiles:
         8.1-32.fc37
     rpm:
-        4.18.1-2.fc37
+        4.18.2-1.fc37
     rpm-build-libs:
-        4.18.1-2.fc37
+        4.18.2-1.fc37
     rpm-libs:
-        4.18.1-2.fc37
+        4.18.2-1.fc37
     rpm-sign-libs:
-        4.18.1-2.fc37
+        4.18.2-1.fc37
     salt:
-        3006.4-0
+        3006.5-0
     salt-minion:
-        3006.4-0
+        3006.5-0
     sed:
         4.8-11.fc37
     setup:
@@ -640,15 +638,15 @@ local:
     sudo:
         1.9.13-1.p2.fc37
     systemd:
-        251.14-2.fc37
+        251.19-1.fc37
     systemd-boot-unsigned:
-        251.14-2.fc37
+        251.19-1.fc37
     systemd-libs:
-        251.14-2.fc37
+        251.19-1.fc37
     systemd-pam:
-        251.14-2.fc37
+        251.19-1.fc37
     systemd-udev:
-        251.14-2.fc37
+        251.19-1.fc37
     tar:
         2:1.34-6.fc37
     tpm2-tools:
@@ -662,9 +660,9 @@ local:
     util-linux-core:
         2.38.1-1.fc37
     vim-data:
-        2:9.0.2048-1.fc37
+        2:9.0.2120-1.fc37
     vim-minimal:
-        2:9.0.2048-1.fc37
+        2:9.0.2120-1.fc37
     web-assets-filesystem:
         5-18.fc37
     which:
@@ -674,7 +672,7 @@ local:
     xz-libs:
         5.4.1-1.fc37
     yum:
-        4.17.0-6.fc37
+        4.18.0-2.fc37
     zchunk-libs:
         1.3.2-1.fc37
     zlib:
@@ -701,11 +699,11 @@ local:
     contextvars:
         2.4
     cryptography:
-        41.0.4
+        41.0.7
     distro:
         1.5.0
     idna:
-        2.8
+        3.2
     immutables:
         0.15
     importlib-metadata:
@@ -749,17 +747,17 @@ local:
     pyzmq:
         23.2.0
     relenv:
-        0.13.12
+        0.14.2
     requests:
         2.31.0
     rpm-vercmp:
         0.1.2
     salt:
-        3006.4
+        3006.5
     setproctitle:
         1.3.2
     setuptools:
-        65.7.0
+        68.2.2
     six:
         1.16.0
     tempora:
@@ -767,9 +765,9 @@ local:
     timelib:
         0.2.5
     urllib3:
-        2.0.6
+        1.26.18
     wheel:
-        0.41.2
+        0.42.0
     zc.lockfile:
         1.4
     zipp:

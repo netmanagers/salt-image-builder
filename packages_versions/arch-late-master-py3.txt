@@ -2,15 +2,15 @@ arch-late-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3007.0+0na.93b6405
+          Salt: 3007.0+0na.84f434c
  
 Python Version:
-        Python: 3.11.5 (main, Sep  2 2023, 14:16:33) [GCC 13.2.1 20230801]
+        Python: 3.11.6 (main, Nov 14 2023, 09:36:21) [GCC 13.2.1 20230801]
  
 Dependency Versions:
           cffi: 1.16.0
-      cherrypy: Not Installed
-      dateutil: Not Installed
+      cherrypy: 18.9.0
+      dateutil: 2.8.2
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
@@ -27,25 +27,25 @@ Dependency Versions:
       pycrypto: Not Installed
   pycryptodome: 3.19.0
         pygit2: Not Installed
-  python-gnupg: Not Installed
+  python-gnupg: 0.5.2
         PyYAML: 6.0.1
-         PyZMQ: 25.1.1
+         PyZMQ: 25.1.2
         relenv: Not Installed
          smmap: Not Installed
-       timelib: Not Installed
-       Tornado: 6.3.3
+       timelib: 0.3.0
+       Tornado: 6.4
            ZMQ: 4.3.4
  
 Salt Package Information:
   Package Type: Not Installed
  
 System Versions:
-          dist: arch 20231029.0.188183 
+          dist: arch 20231214.0.199919 
         locale: utf-8
        machine: x86_64
        release: 5.4.109+
         system: Linux
-       version: Arch Linux 20231029.0.188183 
+       version: Arch Linux 20231214.0.199919 
  
 # salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
 local:
@@ -67,13 +67,13 @@ local:
         detectedencoding:
             utf-8
         timezone:
-            unknown
+            UTC
     lsb_distrib_codename:
         Arch Linux
     lsb_distrib_id:
         Arch Linux
     lsb_distrib_release:
-        20231029.0.188183
+        20231214.0.199919
     os:
         Arch
     os_family:
@@ -84,18 +84,18 @@ local:
     oscodename:
         Arch Linux
     osfinger:
-        Arch Linux-20231029
+        Arch Linux-20231214
     osfullname:
         Arch Linux
     osmajorrelease:
-        20231029
+        20231214
     osmanufacturer:
     osrelease:
-        20231029.0.188183
+        20231214.0.199919
     osrelease_info:
-        - 20231029
+        - 20231214
         - 0
-        - 188183
+        - 199919
     osversion:
     pythonexecutable:
         /usr/bin/python
@@ -108,22 +108,22 @@ local:
     pythonversion:
         - 3
         - 11
-        - 5
+        - 6
         - final
         - 0
     saltpath:
         /usr/lib/python3.11/site-packages/salt
     saltversion:
-        3007.0+0na.93b6405
+        3007.0+0na.84f434c
     saltversioninfo:
         - 3007
         - 0
     systemd:
         ----------
         features:
-            +PAM +AUDIT -SELINUX -APPARMOR -IMA +SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY +P11KIT -QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +XKBCOMMON +UTMP -SYSVINIT default-hierarchy=unified
+            +PAM +AUDIT -SELINUX -APPARMOR -IMA +SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +XKBCOMMON +UTMP -SYSVINIT default-hierarchy=unified
         version:
-            254
+            255
     virtual:
         container
     virtual_subtype:
@@ -136,7 +136,7 @@ local:
     acl:
         2.3.1-3
     archlinux-keyring:
-        20231026-1
+        20231207-1
     argon2:
         20190702-5
     attr:
@@ -146,7 +146,7 @@ local:
     base:
         3-2
     bash:
-        5.1.016-4
+        5.2.021-1
     binutils:
         2.41-3
     brotli:
@@ -156,7 +156,7 @@ local:
     ca-certificates:
         20220905-1
     ca-certificates-mozilla:
-        3.94-1
+        3.95-1
     ca-certificates-utils:
         20220905-1
     coreutils:
@@ -164,7 +164,7 @@ local:
     cryptsetup:
         2.6.1-3
     curl:
-        8.4.0-2
+        8.5.0-1
     db:
         6.2.32-1
     db5.3:
@@ -186,7 +186,7 @@ local:
     findutils:
         4.9.0-3
     gawk:
-        5.2.2-1
+        5.3.0-1
     gcc:
         13.2.1-3
     gcc-libs:
@@ -194,35 +194,35 @@ local:
     gdbm:
         1.23-2
     gettext:
-        0.22.3-1
+        0.22.4-1
     git:
-        2.42.0-1
+        2.43.0-1
     glib2:
-        2.78.1-1
+        2.78.3-1
     glibc:
         2.38-7
     gmp:
         6.3.0-1
     gnupg:
-        2.2.41-2
+        2.4.3-2
     gnutls:
-        3.8.1-2
+        3.8.2-1
     gpgme:
-        1.23.0-1
+        1.23.2-1
     grep:
         3.11-1
     gzip:
         1.13-2
     hwdata:
-        0.375-2
+        0.377-1
     iana-etc:
-        20231018-1
+        20231117-1
     icu:
         73.2-2
     iproute2:
-        6.5.0-1
+        6.6.0-2
     iptables:
-        1:1.8.9-1
+        1:1.8.10-1
     iputils:
         20221126-2
     jansson:
@@ -230,7 +230,7 @@ local:
     json-c:
         0.17-1
     kbd:
-        2.6.3-1
+        2.6.4-1
     keyutils:
         1.6.3-2
     kmod:
@@ -246,19 +246,19 @@ local:
     libbpf:
         1.2.2-1
     libcap:
-        2.69-1
+        2.69-3
     libcap-ng:
         0.8.3-2
     libedit:
         20230828_3.1-1
     libelf:
-        0.189-3
+        0.190-1
     libevent:
         2.1.12-4
     libffi:
         3.4.4-1
     libgcrypt:
-        1.10.2-1
+        1.10.3-1
     libgpg-error:
         1.47-1
     libidn2:
@@ -266,7 +266,7 @@ local:
     libisl:
         0.26-1
     libksba:
-        1.6.4-1
+        1.6.5-1
     libldap:
         2.6.6-2
     libmnl:
@@ -280,13 +280,13 @@ local:
     libnftnl:
         1.2.6-1
     libnghttp2:
-        1.57.0-1
+        1.58.0-1
     libnl:
-        3.8.0-1
+        3.9.0-1
     libnsl:
         2.0.1-1
     libp11-kit:
-        0.25.1-1
+        0.25.3-1
     libpcap:
         1.10.4-1
     libpsl:
@@ -316,7 +316,7 @@ local:
     libxcrypt:
         4.4.36-1
     libxml2:
-        2.11.5-1
+        2.12.2-1
     libyaml:
         0.2.5-2
     licenses:
@@ -340,7 +340,7 @@ local:
     openssl:
         3.1.4-1
     p11-kit:
-        0.25.1-1
+        0.25.3-1
     pacman:
         6.0.2-8
     pacman-mirrorlist:
@@ -354,7 +354,7 @@ local:
     pcre2:
         10.42-2
     perl:
-        5.38.0-1
+        5.38.1-1
     perl-error:
         0.17029-5
     perl-mailtools:
@@ -370,19 +370,19 @@ local:
     psmisc:
         23.6-1
     python:
-        3.11.5-2
+        3.11.6-1
     python-annotated-types:
         0.6.0-1
     python-attrs:
-        22.2.0-3
+        23.1.0-1
     python-autocommand:
         2.2.2-4
     python-cffi:
         1.16.0-1
     python-cryptography:
-        41.0.5-1
+        41.0.7-1
     python-fastjsonschema:
-        2.18.1-1
+        2.19.0-1
     python-inflect:
         7.0.0-2
     python-jaraco.context:
@@ -396,27 +396,27 @@ local:
     python-ordered-set:
         4.1.0-4
     python-packaging:
-        23.1-1
+        23.2-1
     python-pip:
         23.3.1-1
     python-platformdirs:
-        3.11.0-1
+        4.1.0-1
     python-ply:
         3.11-12
     python-pycparser:
         2.21-5
     python-pydantic:
-        2.3.0-1
+        2.5.2-1
     python-pydantic-core:
-        1:2.6.3-1
+        1:2.14.5-1
     python-setuptools:
-        1:68.0.0-1
+        1:69.0.0-1
     python-tomli:
         2.0.1-3
     python-trove-classifiers:
-        2023.10.18-1
+        2023.11.29-1
     python-typing_extensions:
-        4.8.0-1
+        4.9.0-1
     python-validate-pyproject:
         0.13-1
     python-wheel:
@@ -424,21 +424,21 @@ local:
     python-yaml:
         6.0.1-2
     readline:
-        8.2.001-2
+        8.2.007-1
     sed:
         4.9-3
     shadow:
-        4.14.1-1
+        4.14.2-1
     sqlite:
-        3.43.2-1
+        3.44.2-2
     sudo:
-        1.9.14.p3-1
+        1.9.15.p2-1
     systemd:
-        254.5-1
+        255-2
     systemd-libs:
-        254.5-1
+        255-2
     systemd-sysvcompat:
-        254.5-1
+        255-2
     tar:
         1.35-2
     tpm2-tss:
@@ -446,11 +446,11 @@ local:
     tzdata:
         2023c-2
     util-linux:
-        2.39.2-1
+        2.39.3-1
     util-linux-libs:
-        2.39.2-1
+        2.39.3-1
     xz:
-        5.4.4-1
+        5.4.5-1
     zlib:
         1:1.3-2
     zstd:
@@ -458,6 +458,8 @@ local:
 # salt-call --local pip.list
 local:
     ----------
+    CherryPy:
+        18.9.0
     Jinja2:
         3.1.2
     MarkupSafe:
@@ -467,35 +469,41 @@ local:
     annotated-types:
         0.6.0
     attrs:
-        22.2.0
+        23.1.0
     autocommand:
         2.2.2
     certifi:
-        2023.7.22
+        2023.11.17
     cffi:
         1.16.0
     charset-normalizer:
-        3.3.1
+        3.3.2
+    cheroot:
+        10.0.0
     contextvars:
         2.4
     cryptography:
-        41.0.5
+        41.0.7
     distro:
         1.8.0
     fastjsonschema:
-        2.18.1
+        2.19.0
     idna:
-        3.4
+        3.6
     immutables:
         0.20
+    importlib-metadata:
+        7.0.0
     inflect:
         7.0.0
+    jaraco.collections:
+        5.0.0
     jaraco.context:
         4.3.0
     jaraco.functools:
         3.9.0
     jaraco.text:
-        3.11.1
+        3.12.0
     jmespath:
         1.0.1
     looseversion:
@@ -511,41 +519,65 @@ local:
     pip:
         23.3.1
     platformdirs:
-        3.11.0
+        4.1.0
     ply:
         3.11
+    portend:
+        3.2.0
     psutil:
         5.9.6
+    pyOpenSSL:
+        23.3.0
     pycparser:
         2.21
     pycryptodomex:
         3.19.0
     pydantic:
-        2.3.0
+        2.5.2
     pydantic_core:
-        2.6.3
+        2.14.5
+    python-dateutil:
+        2.8.2
+    python-gnupg:
+        0.5.2
+    pytz:
+        2023.3.post1
     pyzmq:
-        25.1.1
+        25.1.2
     requests:
         2.31.0
+    rpm-vercmp:
+        0.1.2
     salt:
-        3007.0+0na.93b6405
+        3007.0+0na.84f434c
+    setproctitle:
+        1.3.3
     setuptools:
-        68.2.2
+        69.0.2
+    six:
+        1.16.0
+    tempora:
+        5.5.0
+    timelib:
+        0.3.0
     tomli:
         2.0.1
     tornado:
-        6.3.3
+        6.4
     trove-classifiers:
-        2023.10.27
+        2023.12.1
     typing_extensions:
-        4.8.0
+        4.9.0
     urllib3:
-        2.0.7
+        2.1.0
     validate-pyproject:
         0.13.post1.dev0+gb752273.d20230520
     wheel:
-        0.41.2
+        0.42.0
+    zc.lockfile:
+        3.0.post1
+    zipp:
+        3.17.0
 # salt-call --local locale.list_avail
 local:
     - C

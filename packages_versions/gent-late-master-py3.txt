@@ -2,15 +2,15 @@ gent-late-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3007.0+0na.93b6405
+          Salt: 3007.0+0na.84f434c
  
 Python Version:
-        Python: 3.11.5 (main, Aug 27 2023, 17:24:15) [GCC 12.3.1 20230526]
+        Python: 3.11.6 (main, Dec  3 2023, 17:23:49) [GCC 13.2.1 20230826]
  
 Dependency Versions:
           cffi: 1.16.0
-      cherrypy: Not Installed
-      dateutil: Not Installed
+      cherrypy: 18.9.0
+      dateutil: 2.8.2
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
@@ -27,13 +27,13 @@ Dependency Versions:
       pycrypto: Not Installed
   pycryptodome: 3.19.0
         pygit2: Not Installed
-  python-gnupg: Not Installed
+  python-gnupg: 0.5.2
         PyYAML: 6.0.1
-         PyZMQ: 25.1.1
+         PyZMQ: 25.1.2
         relenv: Not Installed
          smmap: Not Installed
-       timelib: Not Installed
-       Tornado: 6.3.3
+       timelib: 0.3.0
+       Tornado: 6.4
            ZMQ: 4.3.4
  
 Salt Package Information:
@@ -67,7 +67,7 @@ local:
         detectedencoding:
             utf-8
         timezone:
-            unknown
+            -00
     lsb_distrib_codename:
         Gentoo Linux
     lsb_distrib_id:
@@ -107,13 +107,13 @@ local:
     pythonversion:
         - 3
         - 11
-        - 5
+        - 6
         - final
         - 0
     saltpath:
         /usr/lib/python3.11/site-packages/salt
     saltversion:
-        3007.0+0na.93b6405
+        3007.0+0na.84f434c
     saltversioninfo:
         - 3007
         - 0
@@ -190,7 +190,7 @@ local:
     app-alternatives/bzip2:
         1
     app-alternatives/gzip:
-        0
+        1
     app-alternatives/lex:
         0-r1
     app-alternatives/sh:
@@ -208,13 +208,13 @@ local:
     app-arch/unzip:
         6.0_p27-r1
     app-arch/xz-utils:
-        5.4.3
+        5.4.5
     app-arch/zstd:
         1.5.5
     app-crypt/gnupg:
         2.2.41
     app-crypt/gpgme:
-        1.21.0
+        1.22.0
     app-crypt/libb2:
         0.98.1-r3
     app-crypt/pinentry:
@@ -239,6 +239,8 @@ local:
         20221210
     app-portage/gemato:
         20.5
+    app-portage/getuto:
+        1.9.1
     app-portage/portage-utils:
         0.96.1
     app-shells/bash:
@@ -266,7 +268,7 @@ local:
     dev-lang/perl:
         5.38.0-r1
     dev-lang/python:
-        3.11.5
+        3.11.6,3.12.1
     dev-lang/python-exec:
         2.4.10
     dev-lang/python-exec-conf:
@@ -354,15 +356,17 @@ local:
     dev-python/calver:
         2022.06.26
     dev-python/certifi:
-        3021.3.16-r3
+        3021.3.16-r4
     dev-python/charset-normalizer:
-        3.2.0
+        3.3.2
+    dev-python/cython:
+        3.0.5
     dev-python/editables:
         0.5
     dev-python/ensurepip-pip:
-        23.2.1
+        23.3.1
     dev-python/ensurepip-setuptools:
-        68.2.2
+        69.0.2
     dev-python/ensurepip-wheels:
         100
     dev-python/flit-core:
@@ -374,17 +378,19 @@ local:
     dev-python/hatchling:
         1.18.0
     dev-python/idna:
-        3.4
+        3.6
     dev-python/installer:
         0.7.0
     dev-python/jaraco-context:
         4.3.0
     dev-python/jaraco-functools:
-        3.9.0
+        4.0.0
     dev-python/jaraco-text:
         3.11.1-r1
     dev-python/jinja:
         3.1.2
+    dev-python/lxml:
+        4.9.3-r2
     dev-python/markupsafe:
         2.1.3
     dev-python/more-itertools:
@@ -394,13 +400,13 @@ local:
     dev-python/ordered-set:
         4.1.0
     dev-python/packaging:
-        23.1
+        23.2
     dev-python/pathspec:
         0.11.2
     dev-python/pip:
-        23.2.1
+        23.3.1
     dev-python/platformdirs:
-        3.10.0
+        4.0.0
     dev-python/pluggy:
         1.3.0
     dev-python/pyparsing:
@@ -408,25 +414,25 @@ local:
     dev-python/requests:
         2.31.0
     dev-python/setuptools:
-        68.2.2
+        69.0.2-r1
     dev-python/setuptools-scm:
-        7.1.0
+        8.0.4
     dev-python/tomli:
         2.0.1-r1
     dev-python/trove-classifiers:
-        2023.8.7
+        2023.11.29
     dev-python/typing-extensions:
-        4.7.1
+        4.8.0
     dev-python/urllib3:
-        2.0.4
+        2.1.0
     dev-python/wheel:
-        0.41.2
+        0.41.3
     dev-util/gperf:
         3.1-r1
     dev-util/gtk-doc-am:
         1.33.2
     dev-util/meson:
-        1.2.1-r1
+        1.2.3
     dev-util/meson-format-array:
         0
     dev-util/ninja:
@@ -440,7 +446,7 @@ local:
     mail-mta/nullmailer:
         2.2-r2
     net-dns/c-ares:
-        1.19.1
+        1.21.0
     net-dns/libidn2:
         2.3.4-r1
     net-firewall/iptables:
@@ -452,11 +458,11 @@ local:
     net-libs/libnsl:
         2.0.0-r1
     net-libs/libtirpc:
-        1.3.3
+        1.3.4
     net-misc/curl:
         8.4.0
     net-misc/dhcpcd:
-        10.0.3
+        10.0.5-r1
     net-misc/iputils:
         20221126-r1
     net-misc/netifrc:
@@ -498,7 +504,7 @@ local:
     sys-apps/help2man:
         1.49.3
     sys-apps/install-xattr:
-        0.8
+        0.8-r1
     sys-apps/iproute2:
         6.5.0
     sys-apps/kbd:
@@ -510,7 +516,7 @@ local:
     sys-apps/locale-gen:
         2.23-r1
     sys-apps/man-db:
-        2.11.2
+        2.12.0
     sys-apps/man-pages:
         6.05.01
     sys-apps/net-tools:
@@ -518,7 +524,7 @@ local:
     sys-apps/openrc:
         0.48
     sys-apps/portage:
-        3.0.51
+        3.0.56-r1
     sys-apps/sandbox:
         2.38
     sys-apps/sed:
@@ -526,13 +532,13 @@ local:
     sys-apps/shadow:
         4.13-r4
     sys-apps/systemd-utils:
-        253.11-r1
+        254.5-r2
     sys-apps/sysvinit:
         3.07
     sys-apps/texinfo:
         7.0.3
     sys-apps/util-linux:
-        2.38.1-r2
+        2.38.1-r3
     sys-apps/which:
         2.21
     sys-auth/pambase:
@@ -552,7 +558,7 @@ local:
     sys-devel/bc:
         1.07.1-r6
     sys-devel/binutils:
-        2.40-r5
+        2.40-r9
     sys-devel/binutils-config:
         5.5
     sys-devel/bison:
@@ -600,9 +606,9 @@ local:
     sys-libs/readline:
         8.1_p2-r1
     sys-libs/timezone-data:
-        2023c
+        2023c-r1
     sys-libs/zlib:
-        1.2.13-r1
+        1.3-r1
     sys-process/procps:
         3.3.17-r2
     sys-process/psmisc:
@@ -706,6 +712,10 @@ local:
 # salt-call --local pip.list
 local:
     ----------
+    CherryPy:
+        18.9.0
+    Cython:
+        3.0.5
     Jinja2:
         3.1.2
     MarkupSafe:
@@ -714,20 +724,26 @@ local:
         1.7.1
     PyYAML:
         6.0.1
+    annotated-types:
+        0.6.0
+    autocommand:
+        2.2.2
     calver:
         2023.10.15
     certifi:
-        2023.7.22
+        2023.11.17
     certifi-system-store:
         3021.3.16
     cffi:
         1.16.0
     charset-normalizer:
-        3.2.0
+        3.3.2
+    cheroot:
+        10.0.0
     contextvars:
         2.4
     cryptography:
-        41.0.5
+        41.0.7
     distro:
         1.8.0
     editables:
@@ -739,23 +755,31 @@ local:
     hatchling:
         1.18.0
     idna:
-        3.4
+        3.6
     immutables:
         0.20
+    importlib-metadata:
+        7.0.0
+    inflect:
+        7.0.0
     installer:
         0.7.0
+    jaraco.collections:
+        5.0.0
     jaraco.context:
         4.3.0
     jaraco.functools:
-        3.9.0
+        4.0.0
     jaraco.text:
         3.11.1
     jmespath:
         1.0.1
     looseversion:
         1.3.0
+    lxml:
+        4.9.3
     meson:
-        1.2.1
+        1.2.3
     more-itertools:
         10.1.0
     msgpack:
@@ -765,45 +789,73 @@ local:
     ordered-set:
         4.1.0
     packaging:
-        23.1
+        23.2
     pathspec:
         0.11.2
     pip:
-        23.2.1
+        23.3.1
     platformdirs:
-        3.10.0
+        4.0.0
     pluggy:
         1.3.0
+    portend:
+        3.2.0
     psutil:
         5.9.6
+    pyOpenSSL:
+        23.3.0
     pycparser:
         2.21
     pycryptodomex:
         3.19.0
+    pydantic:
+        2.5.2
+    pydantic_core:
+        2.14.5
     pyparsing:
         3.1.1
+    python-dateutil:
+        2.8.2
+    python-gnupg:
+        0.5.2
+    pytz:
+        2023.3.post1
     pyzmq:
-        25.1.1
+        25.1.2
     requests:
         2.31.0
+    rpm-vercmp:
+        0.1.2
     salt:
-        3007.0+0na.93b6405
+        3007.0+0na.84f434c
+    setproctitle:
+        1.3.3
     setuptools:
-        68.2.2
+        69.0.2
     setuptools-scm:
-        7.1.0
+        8.0.4
+    six:
+        1.16.0
+    tempora:
+        5.5.0
+    timelib:
+        0.3.0
     tomli:
         2.0.1
     tornado:
-        6.3.3
+        6.4
     trove-classifiers:
-        2023.8.7
+        2023.11.29
     typing_extensions:
-        4.7.1
+        4.8.0
     urllib3:
-        2.0.4
+        2.1.0
     wheel:
-        0.41.2
+        0.42.0
+    zc.lockfile:
+        3.0.post1
+    zipp:
+        3.17.0
 # salt-call --local locale.list_avail
 local:
     - C

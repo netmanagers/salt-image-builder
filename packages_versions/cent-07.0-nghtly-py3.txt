@@ -471,7 +471,7 @@ local:
     pyliblzma:
         0.5.3-11.el7
     python:
-        2.7.5-93.el7_9
+        2.7.5-94.el7_9
     python-chardet:
         2.2.1-3.el7
     python-gobject-base:
@@ -481,7 +481,7 @@ local:
     python-kitchen:
         1.1.1-5.el7
     python-libs:
-        2.7.5-93.el7_9
+        2.7.5-94.el7_9
     python-pycurl:
         7.19.0-19.el7
     python-rpm-macros:
@@ -491,11 +491,11 @@ local:
     python-urlgrabber:
         3.10-10.el7
     python3:
-        3.6.8-19.el7_9
+        3.6.8-21.el7_9
     python3-devel:
-        3.6.8-19.el7_9
+        3.6.8-21.el7_9
     python3-libs:
-        3.6.8-19.el7_9
+        3.6.8-21.el7_9
     python3-pip:
         9.0.3-8.el7
     python3-rpm-generators:
@@ -543,9 +543,9 @@ local:
     swig:
         2.0.10-5.el7
     systemd:
-        219-78.el7_9.7
+        219-78.el7_9.9
     systemd-libs:
-        219-78.el7_9.7
+        219-78.el7_9.9
     tar:
         2:1.26-35.el7
     tcp_wrappers-libs:

@@ -159,7 +159,7 @@ local:
     dirmngr:
         2.2.12-1+deb10u2
     distro-info-data:
-        0.41+deb10u7
+        0.41+deb10u8
     dmsetup:
         2:1.02.155-3
     dpkg:
@@ -283,7 +283,7 @@ local:
     libgmp10:
         2:6.1.2+dfsg-4+deb10u1
     libgnutls30:
-        3.6.7-4+deb10u10
+        3.6.7-4+deb10u11
     libgpg-error0:
         1.35-1
     libgssapi-krb5-2:
@@ -325,9 +325,9 @@ local:
     libmpdec2:
         2.4.2-2
     libncurses6:
-        6.1+20181013-2+deb10u4
+        6.1+20181013-2+deb10u5
     libncursesw6:
-        6.1+20181013-2+deb10u4
+        6.1+20181013-2+deb10u5
     libnettle6:
         3.4.1-1+deb10u1
     libnghttp2-14:
@@ -397,7 +397,7 @@ local:
     libtasn1-6:
         4.13-3+deb10u1
     libtinfo6:
-        6.1+20181013-2+deb10u4
+        6.1+20181013-2+deb10u5
     libudev1:
         241-7~deb10u10
     libunistring2:
@@ -427,9 +427,9 @@ local:
     mount:
         2.33.1-0.1
     ncurses-base:
-        6.1+20181013-2+deb10u4
+        6.1+20181013-2+deb10u5
     ncurses-bin:
-        6.1+20181013-2+deb10u4
+        6.1+20181013-2+deb10u5
     net-tools:
         1.60+git20180626.aebd88e-1
     openssh-client:
@@ -485,7 +485,7 @@ local:
     tar:
         1.30+dfsg-6
     tzdata:
-        2021a-0+deb10u11
+        2021a-0+deb10u12
     ucf:
         3.0038+nmu1
     udev:

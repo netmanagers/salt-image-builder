@@ -2,15 +2,15 @@ cstr-08.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3007.0+0na.93b6405
+          Salt: 3007.0+0na.84f434c
  
 Python Version:
-        Python: 3.11.4 (main, Aug 11 2023, 13:46:19) [GCC 8.5.0 20210514 (Red Hat 8.5.0-20)]
+        Python: 3.11.5 (main, Oct 25 2023, 14:45:39) [GCC 8.5.0 20210514 (Red Hat 8.5.0-21)]
  
 Dependency Versions:
           cffi: 1.16.0
-      cherrypy: Not Installed
-      dateutil: Not Installed
+      cherrypy: 18.9.0
+      dateutil: 2.8.2
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
@@ -27,13 +27,13 @@ Dependency Versions:
       pycrypto: Not Installed
   pycryptodome: 3.19.0
         pygit2: Not Installed
-  python-gnupg: Not Installed
+  python-gnupg: 0.5.2
         PyYAML: 6.0.1
-         PyZMQ: 25.1.1
+         PyZMQ: 25.1.2
         relenv: Not Installed
          smmap: Not Installed
-       timelib: Not Installed
-       Tornado: 6.3.3
+       timelib: 0.3.0
+       Tornado: 6.4
            ZMQ: 4.3.4
  
 Salt Package Information:
@@ -67,7 +67,7 @@ local:
         detectedencoding:
             utf-8
         timezone:
-            unknown
+            UTC
     lsb_distrib_codename:
         CentOS Stream 8
     lsb_distrib_id:
@@ -107,13 +107,13 @@ local:
     pythonversion:
         - 3
         - 11
-        - 4
+        - 5
         - final
         - 0
     saltpath:
         /usr/lib/python3.11/site-packages/salt
     saltversion:
-        3007.0+0na.93b6405
+        3007.0+0na.84f434c
     saltversioninfo:
         - 3007
         - 0
@@ -139,7 +139,7 @@ local:
     acl:
         2.2.53-3.el8
     audit-libs:
-        3.0.7-5.el8
+        3.1.2-1.el8
     basesystem:
         11-5.el8
     bash:
@@ -193,23 +193,23 @@ local:
     device-mapper-libs:
         8:1.02.181-9.el8
     dnf:
-        4.7.0-19.el8
+        4.7.0-20.el8
     dnf-data:
-        4.7.0-19.el8
+        4.7.0-20.el8
     dnf-plugins-core:
-        4.0.21-23.el8
+        4.0.21-24.el8
     dracut:
-        049-228.git20230802.el8
+        049-231.git20231115.el8
     dracut-network:
-        049-228.git20230802.el8
+        049-231.git20231115.el8
     dracut-squash:
-        049-228.git20230802.el8
+        049-231.git20231115.el8
     elfutils-default-yama-scope:
-        0.189-3.el8
+        0.190-1.el8
     elfutils-libelf:
-        0.189-3.el8
+        0.190-1.el8
     elfutils-libs:
-        0.189-3.el8
+        0.190-1.el8
     emacs-filesystem:
         1:26.1-11.el8
     ethtool:
@@ -221,7 +221,7 @@ local:
     filesystem:
         3.8-6.el8
     findutils:
-        1:4.6.0-21.el8
+        1:4.6.0-22.el8
     gawk:
         4.2.1-4.el8
     gcc:
@@ -239,17 +239,17 @@ local:
     glib2:
         2.56.4-161.el8
     glibc:
-        2.28-237.el8
+        2.28-241.el8
     glibc-common:
-        2.28-237.el8
+        2.28-241.el8
     glibc-devel:
-        2.28-237.el8
+        2.28-241.el8
     glibc-headers:
-        2.28-237.el8
+        2.28-241.el8
     glibc-langpack-en:
-        2.28-237.el8
+        2.28-241.el8
     glibc-minimal-langpack:
-        2.28-237.el8
+        2.28-241.el8
     gmp:
         1:6.1.2-10.el8
     gnupg2:
@@ -281,21 +281,21 @@ local:
     json-c:
         0.13.1-3.el8
     kernel-headers:
-        4.18.0-518.el8
+        4.18.0-527.el8
     kexec-tools:
-        2.0.26-10.el8
+        2.0.26-12.el8
     keyutils-libs:
         1.5.10-9.el8
     keyutils-libs-devel:
         1.5.10-9.el8
     kmod:
-        25-19.el8
+        25-20.el8
     kmod-libs:
-        25-19.el8
+        25-20.el8
     krb5-devel:
-        1.18.2-25.el8
+        1.18.2-26.el8
     krb5-libs:
-        1.18.2-25.el8
+        1.18.2-26.el8
     langpacks-en:
         1.0-12.el8
     less:
@@ -329,7 +329,7 @@ local:
     libdb-utils:
         5.3.28-42.el8_4
     libdnf:
-        0.63.0-17.el8
+        0.63.0-18.el8
     libedit:
         3.1-23.20170329cvs.el8
     libfdisk:
@@ -347,11 +347,11 @@ local:
     libidn2:
         2.2.0-1.el8
     libkadm5:
-        1.18.2-25.el8
+        1.18.2-26.el8
     libkcapi:
-        1.2.0-2.el8
+        1.4.0-1.el8
     libkcapi-hmaccalc:
-        1.2.0-2.el8
+        1.4.0-1.el8
     libksba:
         1.3.5-9.el8
     libmnl:
@@ -417,7 +417,7 @@ local:
     libxcrypt-devel:
         4.1.1-6.el8
     libxml2:
-        2.9.7-16.el8
+        2.9.7-18.el8
     libyaml:
         0.1.7-5.el8
     libzstd:
@@ -447,23 +447,23 @@ local:
     openldap:
         2.4.46-18.el8
     openssh:
-        8.0p1-19.el8
+        8.0p1-21.el8
     openssh-clients:
-        8.0p1-19.el8
+        8.0p1-21.el8
     openssh-server:
-        8.0p1-19.el8
+        8.0p1-21.el8
     openssl:
-        1:1.1.1k-9.el8
+        1:1.1.1k-11.el8
     openssl-devel:
-        1:1.1.1k-9.el8
+        1:1.1.1k-11.el8
     openssl-libs:
-        1:1.1.1k-9.el8
+        1:1.1.1k-11.el8
     p11-kit:
-        0.23.22-1.el8
+        0.23.22-2.el8
     p11-kit-trust:
-        0.23.22-1.el8
+        0.23.22-2.el8
     pam:
-        1.3.1-27.el8
+        1.3.1-30.el8
     pcre:
         8.42-6.el8
     pcre2:
@@ -569,9 +569,9 @@ local:
     pkgconf-pkg-config:
         1.4.2-1.el8
     platform-python:
-        3.6.8-55.el8
+        3.6.8-57.el8
     platform-python-devel:
-        3.6.8-55.el8
+        3.6.8-57.el8
     platform-python-pip:
         9.0.3-23.el8
     platform-python-setuptools:
@@ -591,19 +591,19 @@ local:
     python3-dbus:
         1.2.4-15.el8
     python3-dnf:
-        4.7.0-19.el8
+        4.7.0-20.el8
     python3-dnf-plugins-core:
-        4.0.21-23.el8
+        4.0.21-24.el8
     python3-gpg:
         1.13.1-11.el8
     python3-hawkey:
-        0.63.0-17.el8
+        0.63.0-18.el8
     python3-libcomps:
         0.1.18-1.el8
     python3-libdnf:
-        0.63.0-17.el8
+        0.63.0-18.el8
     python3-libs:
-        3.6.8-55.el8
+        3.6.8-57.el8
     python3-pip:
         9.0.3-23.el8
     python3-pip-wheel:
@@ -623,11 +623,11 @@ local:
     python3-systemd:
         234-8.el8
     python3.11:
-        3.11.4-4.el8
+        3.11.5-1.el8
     python3.11-devel:
-        3.11.4-4.el8
+        3.11.5-1.el8
     python3.11-libs:
-        3.11.4-4.el8
+        3.11.5-1.el8
     python3.11-pip:
         22.3.1-4.el8
     python3.11-pip-wheel:
@@ -637,9 +637,9 @@ local:
     python3.11-setuptools-wheel:
         65.5.1-2.el8
     python36:
-        3.6.8-38.module_el8.5.0+895+a459eca8
+        3.6.8-39.module_el8+762+77bd8591
     python36-devel:
-        3.6.8-38.module_el8.5.0+895+a459eca8
+        3.6.8-39.module_el8+762+77bd8591
     readline:
         7.0-10.el8
     rootfiles:
@@ -655,7 +655,7 @@ local:
     setup:
         2.12.2-9.el8
     shadow-utils:
-        2:4.6-19.el8
+        2:4.6-22.el8
     snappy:
         1.1.8-3.el8
     sqlite-libs:
@@ -677,7 +677,7 @@ local:
     tar:
         2:1.30-9.el8
     tpm2-tss:
-        2.3.2-5.el8
+        2.3.2-6.el8
     tzdata:
         2023c-1.el8
     util-linux:
@@ -691,9 +691,9 @@ local:
     xz-libs:
         5.2.4-4.el8
     yum:
-        4.7.0-19.el8
+        4.7.0-20.el8
     yum-utils:
-        4.0.21-23.el8
+        4.0.21-24.el8
     zlib:
         1.2.11-25.el8
     zlib-devel:
@@ -701,58 +701,110 @@ local:
 # salt-call --local pip.list
 local:
     ----------
+    CherryPy:
+        18.9.0
     Jinja2:
         3.1.2
     MarkupSafe:
         2.1.3
     PyYAML:
         6.0.1
+    annotated-types:
+        0.6.0
+    autocommand:
+        2.2.2
     certifi:
-        2023.7.22
+        2023.11.17
     cffi:
         1.16.0
     charset-normalizer:
-        3.3.1
+        3.3.2
+    cheroot:
+        10.0.0
     contextvars:
         2.4
     cryptography:
-        41.0.5
+        41.0.7
     distro:
         1.8.0
     idna:
-        3.4
+        3.6
     immutables:
         0.20
+    importlib-metadata:
+        7.0.0
+    inflect:
+        7.0.0
+    jaraco.collections:
+        5.0.0
+    jaraco.context:
+        4.3.0
+    jaraco.functools:
+        4.0.0
+    jaraco.text:
+        3.12.0
     jmespath:
         1.0.1
     looseversion:
         1.3.0
+    more-itertools:
+        10.1.0
     msgpack:
         1.0.7
     packaging:
         23.2
     pip:
         22.3.1
+    portend:
+        3.2.0
     psutil:
         5.9.6
+    pyOpenSSL:
+        23.3.0
     pycparser:
         2.21
     pycryptodomex:
         3.19.0
+    pydantic:
+        2.5.2
+    pydantic_core:
+        2.14.5
+    python-dateutil:
+        2.8.2
+    python-gnupg:
+        0.5.2
+    pytz:
+        2023.3.post1
     pyzmq:
-        25.1.1
+        25.1.2
     requests:
         2.31.0
+    rpm-vercmp:
+        0.1.2
     salt:
-        3007.0+0na.93b6405
+        3007.0+0na.84f434c
+    setproctitle:
+        1.3.3
     setuptools:
         65.5.1
+    six:
+        1.16.0
+    tempora:
+        5.5.0
+    timelib:
+        0.3.0
     tornado:
-        6.3.3
+        6.4
+    typing_extensions:
+        4.9.0
     urllib3:
-        2.0.7
+        2.1.0
     wheel:
-        0.41.2
+        0.42.0
+    zc.lockfile:
+        3.0.post1
+    zipp:
+        3.17.0
 # salt-call --local locale.list_avail
 local:
     - C

@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.84.1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.84.0...v1.84.1) (2023-12-14)
+
+
+### Bug Fixes
+
+* **fedora:** install with onedir SIM ([e4068f2](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/e4068f20a0486334f95ddacdcbdbf7a0e0c5a21f))
+* **gitlab-ci:** push to right docker repo ([dd21a83](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/dd21a8360035435a5c9ef4e04bbe5549a80c3fc0))
+
+
+### Continuous Integration
+
+* permit failure from bootstrap issues ([70ea0e9](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/70ea0e91087884c5d9c00c0b08f8e31cf8fdbc00))
+* permit failure from bootstrap issues ([2febd4c](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/2febd4c2fec9238cc0d18969e7c3fd00e4c75b3f))
+
 # [1.84.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.83.0...v1.84.0) (2023-10-29)
 
 
