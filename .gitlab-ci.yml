@@ -323,9 +323,10 @@ gent-sysd-3006.4-py3: {extends: '.build_image_failure_permitted', variables: {DN
 # For openSUSE, the bootstrap script only allows `latest` to be built using `stable`
 # Use for both Leap and Tumbleweed in order to test against these latest available packages
 # Note: Permitting failure on Tumbleweed until https://bugzilla.opensuse.org/show_bug.cgi?id=1190670 is resolved (similar situation to Fedora 35+)
+# Note: Permitting failure on 15.4 & 15.5 until https://github.com/saltstack/salt-bootstrap/issues/1979 is resolvedii
 opsu-tmbl-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'opensuse/tumbleweed'  , DV: 'latest' , PI: 'zyp', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: 'gawk python3-pip'}}
-opsu-15.5-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'        , DV: '15.5'   , PI: 'zyp', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3.11', EP: 'python311-pip'}}
-opsu-15.4-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'        , DV: '15.4'   , PI: 'zyp', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3.10', EP: 'python310-pip'}}
+opsu-15.5-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'opensuse/leap'        , DV: '15.5'   , PI: 'zyp', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3.11', EP: 'python311-pip'}}
+opsu-15.4-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'opensuse/leap'        , DV: '15.4'   , PI: 'zyp', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3.10', EP: 'python310-pip'}}
 
 # ORACLELINUX
 orac-09.0-nghtly-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'oraclelinux'          , DV: '9'      , PI: 'yum', SIM: 'onedir', SV: 'nghtly' , SVB: 'nightly', PV: '3', EP: 'glibc-langpack-en openssl-devel python3 python3-devel'}}
@@ -349,7 +350,8 @@ rock-08.0-3006.4-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 rock-08.0-3005.4-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'rockylinux'           , DV: '8'      , PI: 'yum', SIM: 'onedir', SV: '3005.4' , SVB: ''       , PV: '3', EP: 'curl findutils glibc-langpack-en openssl-devel procps-ng python3 python3-devel swig'}}
 
 # UBUNTU
-ubun-22.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'               , DV: '22.04'  , PI: 'apt', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: 'python3-apt python3-pip'}}
+# Note: Permitting failure on 22.0 master until https://github.com/saltstack/salt-bootstrap/issues/1978 is resolved
+ubun-22.0-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'ubuntu'               , DV: '22.04'  , PI: 'apt', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: 'python3-apt python3-pip'}}
 ubun-22.0-nghtly-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'               , DV: '22.04'  , PI: 'apt', SIM: 'onedir', SV: 'nghtly' , SVB: 'nightly', PV: '3', EP: ''}}
 ubun-22.0-3006.4-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'               , DV: '22.04'  , PI: 'apt', SIM: 'onedir', SV: '3006.4' , SVB: ''       , PV: '3', EP: ''}}
 ubun-22.0-3005.4-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'               , DV: '22.04'  , PI: 'apt', SIM: 'onedir', SV: '3005.4' , SVB: ''       , PV: '3', EP: ''}}
