@@ -120,7 +120,8 @@ commitlint:
         fi
     - 'echo "Building: ${TAG}"'
     # Prepare the required variables for building the image
-    - 'export DOCKERHUB_IMAGE=salt-${SV}-py${PV}:${TAG}'
+    - 'export DOCKERHUB_IMAGE=salt-${SV}-py${PV%%.*}:${TAG}'
+    - 'echo "Image: ${DOCKERHUB_IMAGE}"'
     - 'export CMD_DOCKER_BUILD="docker build ."'
     - 'export CACHE_FROM=${DOCKERHUB_ORG}/${DOCKERHUB_IMAGE}'
     # Source previous builds as a cache
