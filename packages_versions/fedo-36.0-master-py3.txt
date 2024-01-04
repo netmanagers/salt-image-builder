@@ -2,7 +2,7 @@ fedo-36.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3007.0+0na.84f434c
+          Salt: 3007.0+0na.c5cfe21
  
 Python Version:
         Python: 3.10.11 (main, Apr  5 2023, 00:00:00) [GCC 12.2.1 20221121 (Red Hat 12.2.1-4)]
@@ -25,7 +25,7 @@ Dependency Versions:
      packaging: 23.2
      pycparser: 2.21
       pycrypto: Not Installed
-  pycryptodome: 3.19.0
+  pycryptodome: 3.19.1
         pygit2: Not Installed
   python-gnupg: 0.5.2
         PyYAML: 6.0.1
@@ -111,7 +111,7 @@ local:
     saltpath:
         /usr/lib/python3.10/site-packages/salt
     saltversion:
-        3007.0+0na.84f434c
+        3007.0+0na.c5cfe21
     saltversioninfo:
         - 3007
         - 0
@@ -683,8 +683,16 @@ local:
         2.1.3
     PyYAML:
         6.0.1
+    aiohttp:
+        3.9.1
+    aiosignal:
+        1.3.1
     annotated-types:
         0.6.0
+    async-timeout:
+        4.0.3
+    attrs:
+        23.2.0
     autocommand:
         2.2.2
     certifi:
@@ -700,7 +708,9 @@ local:
     cryptography:
         41.0.7
     distro:
-        1.8.0
+        1.9.0
+    frozenlist:
+        1.4.1
     gpg:
         1.17.0
     idna:
@@ -708,7 +718,7 @@ local:
     immutables:
         0.20
     importlib-metadata:
-        7.0.0
+        7.0.1
     inflect:
         7.0.0
     jaraco.collections:
@@ -729,6 +739,8 @@ local:
         10.1.0
     msgpack:
         1.0.7
+    multidict:
+        6.0.4
     packaging:
         23.2
     pip:
@@ -736,17 +748,17 @@ local:
     portend:
         3.2.0
     psutil:
-        5.9.6
+        5.9.7
     pyOpenSSL:
         23.3.0
     pycparser:
         2.21
     pycryptodomex:
-        3.19.0
+        3.19.1
     pydantic:
-        2.5.2
+        2.5.3
     pydantic_core:
-        2.14.5
+        2.14.6
     python-dateutil:
         2.8.2
     python-gnupg:
@@ -759,14 +771,14 @@ local:
         2.31.0
     rpm:
         4.17.1
-    rpm-vercmp:
+    rpm_vercmp:
         0.1.2
     salt:
-        3007.0+0na.84f434c
+        3007.0+0na.c5cfe21
     setproctitle:
         1.3.3
     setuptools:
-        69.0.2
+        69.0.3
     six:
         1.16.0
     tempora:
@@ -781,6 +793,8 @@ local:
         2.1.0
     wheel:
         0.42.0
+    yarl:
+        1.9.4
     zc.lockfile:
         3.0.post1
     zipp:

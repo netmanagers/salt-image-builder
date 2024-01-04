@@ -2,7 +2,7 @@ debi-11.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3007.0+0na.84f434c
+          Salt: 3007.0+0na.c5cfe21
  
 Python Version:
         Python: 3.9.2 (default, Feb 28 2021, 17:03:44)
@@ -25,7 +25,7 @@ Dependency Versions:
      packaging: 23.2
      pycparser: 2.21
       pycrypto: Not Installed
-  pycryptodome: 3.19.0
+  pycryptodome: 3.19.1
         pygit2: Not Installed
   python-gnupg: 0.5.2
         PyYAML: 6.0.1
@@ -113,7 +113,7 @@ local:
     saltpath:
         /usr/local/lib/python3.9/dist-packages/salt
     saltversion:
-        3007.0+0na.84f434c
+        3007.0+0na.c5cfe21
     saltversioninfo:
         - 3007
         - 0
@@ -161,7 +161,7 @@ local:
     cpp-10:
         10.2.1-6
     curl:
-        7.74.0-1.3+deb11u10
+        7.74.0-1.3+deb11u11
     dash:
         0.5.11+git20200708+dd9ef66-5
     debconf:
@@ -287,9 +287,9 @@ local:
     libctf0:
         2.35.2-2
     libcurl3-gnutls:
-        7.74.0-1.3+deb11u10
+        7.74.0-1.3+deb11u11
     libcurl4:
-        7.74.0-1.3+deb11u10
+        7.74.0-1.3+deb11u11
     libdb5.3:
         5.3.28+dfsg1-0.8
     libdebconfclient0:
@@ -489,7 +489,7 @@ local:
     libzstd1:
         1.4.8+dfsg-2.1
     linux-libc-dev:
-        5.10.197-1
+        5.10.205-2
     locales:
         2.31-13+deb11u7
     login:
@@ -513,11 +513,11 @@ local:
     net-tools:
         1.60+git20181103.0eebece-1
     openssh-client:
-        1:8.4p1-5+deb11u2
+        1:8.4p1-5+deb11u3
     openssh-server:
-        1:8.4p1-5+deb11u2
+        1:8.4p1-5+deb11u3
     openssh-sftp-server:
-        1:8.4p1-5+deb11u2
+        1:8.4p1-5+deb11u3
     openssl:
         1.1.1w-0+deb11u1
     passwd:
@@ -611,8 +611,16 @@ local:
         2.1.3
     PyYAML:
         6.0.1
+    aiohttp:
+        3.9.1
+    aiosignal:
+        1.3.1
     annotated-types:
         0.6.0
+    async-timeout:
+        4.0.3
+    attrs:
+        23.2.0
     autocommand:
         2.2.2
     certifi:
@@ -628,13 +636,15 @@ local:
     cryptography:
         41.0.7
     distro:
-        1.8.0
+        1.9.0
+    frozenlist:
+        1.4.1
     idna:
         3.6
     immutables:
         0.20
     importlib-metadata:
-        7.0.0
+        7.0.1
     inflect:
         7.0.0
     jaraco.collections:
@@ -653,6 +663,8 @@ local:
         10.1.0
     msgpack:
         1.0.7
+    multidict:
+        6.0.4
     packaging:
         23.2
     pip:
@@ -660,17 +672,17 @@ local:
     portend:
         3.2.0
     psutil:
-        5.9.6
+        5.9.7
     pyOpenSSL:
         23.3.0
     pycparser:
         2.21
     pycryptodomex:
-        3.19.0
+        3.19.1
     pydantic:
-        2.5.2
+        2.5.3
     pydantic-core:
-        2.14.5
+        2.14.6
     python-apt:
         2.2.1
     python-dateutil:
@@ -686,11 +698,11 @@ local:
     rpm-vercmp:
         0.1.2
     salt:
-        3007.0+0na.84f434c
+        3007.0+0na.c5cfe21
     setproctitle:
         1.3.3
     setuptools:
-        69.0.2
+        69.0.3
     six:
         1.16.0
     tempora:
@@ -705,6 +717,8 @@ local:
         2.1.0
     wheel:
         0.42.0
+    yarl:
+        1.9.4
     zc.lockfile:
         3.0.post1
     zipp:

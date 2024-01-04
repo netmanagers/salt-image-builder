@@ -177,7 +177,7 @@ local:
     dnf-data:
         4.7.0-19.el8.alma
     dnf-plugins-core:
-        4.0.21-23.el8
+        4.0.21-23.el8.alma.1
     elfutils-default-yama-scope:
         0.189-3.el8
     elfutils-libelf:
@@ -399,11 +399,13 @@ local:
     openssh-server:
         8.0p1-19.el8_8
     openssl:
-        1:1.1.1k-9.el8_7
+        1:1.1.1k-12.el8_9
     openssl-devel:
-        1:1.1.1k-9.el8_7
+        1:1.1.1k-12.el8_9
     openssl-libs:
-        1:1.1.1k-9.el8_7
+        1:1.1.1k-12.el8_9
+    openssl-pkcs11:
+        0.4.10-3.el8
     p11-kit:
         0.23.22-1.el8
     p11-kit-trust:
@@ -541,7 +543,7 @@ local:
     python3-dnf:
         4.7.0-19.el8.alma
     python3-dnf-plugins-core:
-        4.0.21-23.el8
+        4.0.21-23.el8.alma.1
     python3-gpg:
         1.13.1-11.el8
     python3-hawkey:
@@ -571,9 +573,9 @@ local:
     python3-systemd:
         234-8.el8
     python36:
-        3.6.8-38.module_el8.5.0+2569+5c5719bc
+        3.6.8-38.module_el8.9.0+3700+efebe9fd
     python36-devel:
-        3.6.8-38.module_el8.5.0+2569+5c5719bc
+        3.6.8-38.module_el8.9.0+3700+efebe9fd
     readline:
         7.0-10.el8
     rootfiles:
@@ -627,7 +629,7 @@ local:
     yum:
         4.7.0-19.el8.alma
     yum-utils:
-        4.0.21-23.el8
+        4.0.21-23.el8.alma.1
     zlib:
         1.2.11-25.el8
     zlib-devel:

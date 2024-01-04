@@ -184,7 +184,7 @@ local:
     dnf-data:
         4.14.0-8.el9.alma.1
     dnf-plugins-core:
-        4.3.0-11.el9_3
+        4.3.0-11.el9_3.alma.1
     elfutils-debuginfod-client:
         0.189-3.el9
     elfutils-default-yama-scope:
@@ -560,7 +560,7 @@ local:
     python3-dnf:
         4.14.0-8.el9.alma.1
     python3-dnf-plugins-core:
-        4.3.0-11.el9_3
+        4.3.0-11.el9_3.alma.1
     python3-gpg:
         1.15.1-6.el9
     python3-hawkey:
@@ -642,7 +642,7 @@ local:
     yum:
         4.14.0-8.el9.alma.1
     yum-utils:
-        4.3.0-11.el9_3
+        4.3.0-11.el9_3.alma.1
     zlib:
         1.2.11-40.el9
 # salt-call --local pip.list

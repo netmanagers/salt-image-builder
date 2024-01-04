@@ -2,7 +2,7 @@ orac-08.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3007.0+0na.84f434c
+          Salt: 3007.0+0na.c5cfe21
  
 Python Version:
         Python: 3.11.5 (main, Nov 15 2023, 18:13:17) [GCC 8.5.0 20210514 (Red Hat 8.5.0-20.0.1)]
@@ -25,7 +25,7 @@ Dependency Versions:
      packaging: 23.2
      pycparser: 2.21
       pycrypto: Not Installed
-  pycryptodome: 3.19.0
+  pycryptodome: 3.19.1
         pygit2: Not Installed
   python-gnupg: 0.5.2
         PyYAML: 6.0.1
@@ -114,7 +114,7 @@ local:
     saltpath:
         /usr/lib/python3.11/site-packages/salt
     saltversion:
-        3007.0+0na.84f434c
+        3007.0+0na.c5cfe21
     saltversioninfo:
         - 3007
         - 0
@@ -435,8 +435,6 @@ local:
         4.1.1-6.el8
     libxcrypt-devel:
         4.1.1-6.el8
-    libxkbcommon:
-        0.9.1-1.el8
     libxml2:
         2.9.7-16.el8_8.1
     libyaml:
@@ -478,11 +476,11 @@ local:
     openssh-server:
         8.0p1-19.el8_8
     openssl:
-        1:1.1.1k-9.el8_7
+        1:1.1.1k-12.el8_9
     openssl-devel:
-        1:1.1.1k-9.el8_7
+        1:1.1.1k-12.el8_9
     openssl-libs:
-        1:1.1.1k-9.el8_7
+        1:1.1.1k-12.el8_9
     oraclelinux-release:
         8:8.9-1.0.8.el8
     oraclelinux-release-el8:
@@ -672,9 +670,9 @@ local:
     python3.11-setuptools-wheel:
         65.5.1-2.el8
     python36:
-        3.6.8-38.module+el8.5.0+20329+5c5719bc
+        3.6.8-38.module+el8.9.0+90104+968a3e84
     python36-devel:
-        3.6.8-38.module+el8.5.0+20329+5c5719bc
+        3.6.8-38.module+el8.9.0+90104+968a3e84
     readline:
         7.0-10.el8
     redhat-release:
@@ -723,8 +721,6 @@ local:
         2:8.0.1763-19.0.1.el8_6.4
     which:
         2.21-20.el8
-    xkeyboard-config:
-        2.28-1.el8
     xz-libs:
         5.2.4-4.el8_6
     yum:
@@ -746,8 +742,14 @@ local:
         2.1.3
     PyYAML:
         6.0.1
+    aiohttp:
+        3.9.1
+    aiosignal:
+        1.3.1
     annotated-types:
         0.6.0
+    attrs:
+        23.2.0
     autocommand:
         2.2.2
     certifi:
@@ -763,13 +765,15 @@ local:
     cryptography:
         41.0.7
     distro:
-        1.8.0
+        1.9.0
+    frozenlist:
+        1.4.1
     idna:
         3.6
     immutables:
         0.20
     importlib-metadata:
-        7.0.0
+        7.0.1
     inflect:
         7.0.0
     jaraco.collections:
@@ -788,6 +792,8 @@ local:
         10.1.0
     msgpack:
         1.0.7
+    multidict:
+        6.0.4
     packaging:
         23.2
     pip:
@@ -795,17 +801,17 @@ local:
     portend:
         3.2.0
     psutil:
-        5.9.6
+        5.9.7
     pyOpenSSL:
         23.3.0
     pycparser:
         2.21
     pycryptodomex:
-        3.19.0
+        3.19.1
     pydantic:
-        2.5.2
+        2.5.3
     pydantic_core:
-        2.14.5
+        2.14.6
     python-dateutil:
         2.8.2
     python-gnupg:
@@ -816,10 +822,10 @@ local:
         25.1.2
     requests:
         2.31.0
-    rpm-vercmp:
+    rpm_vercmp:
         0.1.2
     salt:
-        3007.0+0na.84f434c
+        3007.0+0na.c5cfe21
     setproctitle:
         1.3.3
     setuptools:
@@ -838,6 +844,8 @@ local:
         2.1.0
     wheel:
         0.42.0
+    yarl:
+        1.9.4
     zc.lockfile:
         3.0.post1
     zipp:

@@ -2,7 +2,7 @@ ubun-20.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3007.0+0na.84f434c
+          Salt: 3007.0+0na.c5cfe21
  
 Python Version:
         Python: 3.8.10 (default, Nov 22 2023, 10:22:35)
@@ -25,7 +25,7 @@ Dependency Versions:
      packaging: 23.2
      pycparser: 2.21
       pycrypto: Not Installed
-  pycryptodome: 3.19.0
+  pycryptodome: 3.19.1
         pygit2: Not Installed
   python-gnupg: 0.5.2
         PyYAML: 6.0.1
@@ -114,7 +114,7 @@ local:
     saltpath:
         /usr/local/lib/python3.8/dist-packages/salt
     saltversion:
-        3007.0+0na.84f434c
+        3007.0+0na.c5cfe21
     saltversioninfo:
         - 3007
         - 0
@@ -176,7 +176,7 @@ local:
     dirmngr:
         2.2.19-3ubuntu2.2
     distro-info-data:
-        0.43ubuntu1.14
+        0.43ubuntu1.15
     dpkg:
         1.19.7ubuntu3.2
     e2fsprogs:
@@ -258,7 +258,7 @@ local:
     libbz2-1.0:
         1.0.8-2
     libc-bin:
-        2.31-0ubuntu9.12
+        2.31-0ubuntu9.14
     libc-dev-bin:
         2.31-0ubuntu9.14
     libc6:
@@ -452,11 +452,11 @@ local:
     libsmartcols1:
         2.34-0.1ubuntu9.4
     libsqlite3-0:
-        3.31.1-4ubuntu0.5
+        3.31.1-4ubuntu0.6
     libss2:
         1.45.5-2ubuntu1.1
     libssh-4:
-        0.9.3-2ubuntu2.3
+        0.9.3-2ubuntu2.4
     libssl1.1:
         1.1.1f-1ubuntu2.20
     libstdc++6:
@@ -508,11 +508,11 @@ local:
     net-tools:
         1.60+git20180626.aebd88e-1ubuntu1
     openssh-client:
-        1:8.2p1-4ubuntu0.9
+        1:8.2p1-4ubuntu0.11
     openssh-server:
-        1:8.2p1-4ubuntu0.9
+        1:8.2p1-4ubuntu0.11
     openssh-sftp-server:
-        1:8.2p1-4ubuntu0.9
+        1:8.2p1-4ubuntu0.11
     openssl:
         1.1.1f-1ubuntu2.20
     passwd:
@@ -574,7 +574,7 @@ local:
     sysvinit-utils:
         2.96-2.1ubuntu1
     tar:
-        1.30+dfsg-7ubuntu0.20.04.3
+        1.30+dfsg-7ubuntu0.20.04.4
     ubuntu-keyring:
         2020.02.11.4
     ucf:
@@ -600,8 +600,16 @@ local:
         2.1.3
     PyYAML:
         6.0.1
+    aiohttp:
+        3.9.1
+    aiosignal:
+        1.3.1
     annotated-types:
         0.6.0
+    async-timeout:
+        4.0.3
+    attrs:
+        23.2.0
     autocommand:
         2.2.2
     certifi:
@@ -617,13 +625,15 @@ local:
     cryptography:
         41.0.7
     distro:
-        1.8.0
+        1.9.0
+    frozenlist:
+        1.4.1
     idna:
         3.6
     immutables:
         0.20
     importlib-metadata:
-        7.0.0
+        7.0.1
     importlib-resources:
         6.1.1
     inflect:
@@ -644,6 +654,8 @@ local:
         10.1.0
     msgpack:
         1.0.7
+    multidict:
+        6.0.4
     packaging:
         23.2
     pip:
@@ -651,17 +663,17 @@ local:
     portend:
         3.2.0
     psutil:
-        5.9.6
+        5.9.7
     pyOpenSSL:
         23.3.0
     pycparser:
         2.21
     pycryptodomex:
-        3.19.0
+        3.19.1
     pydantic:
-        2.5.2
+        2.5.3
     pydantic-core:
-        2.14.5
+        2.14.6
     python-apt:
         2.0.1+ubuntu0.20.4.1
     python-dateutil:
@@ -677,11 +689,11 @@ local:
     rpm-vercmp:
         0.1.2
     salt:
-        3007.0+0na.84f434c
+        3007.0+0na.c5cfe21
     setproctitle:
         1.3.3
     setuptools:
-        69.0.2
+        69.0.3
     six:
         1.16.0
     tempora:
@@ -696,6 +708,8 @@ local:
         2.1.0
     wheel:
         0.42.0
+    yarl:
+        1.9.4
     zc.lockfile:
         3.0.post1
     zipp:

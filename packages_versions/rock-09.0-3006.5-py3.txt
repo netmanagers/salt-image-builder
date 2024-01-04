@@ -593,11 +593,11 @@ local:
     readline:
         8.1-4.el9
     rocky-gpg-keys:
-        9.3-1.1.el9
+        9.3-1.2.el9
     rocky-release:
-        9.3-1.1.el9
+        9.3-1.2.el9
     rocky-repos:
-        9.3-1.1.el9
+        9.3-1.2.el9
     rootfiles:
         8.1-31.el9
     rpm:

@@ -334,11 +334,11 @@ local:
     openldap:
         2.4.44-25.amzn2.0.7
     openssh:
-        7.4p1-22.amzn2.0.5
+        7.4p1-22.amzn2.0.6
     openssh-clients:
-        7.4p1-22.amzn2.0.5
+        7.4p1-22.amzn2.0.6
     openssh-server:
-        7.4p1-22.amzn2.0.5
+        7.4p1-22.amzn2.0.6
     openssl:
         1:1.0.2k-24.amzn2.0.11
     openssl-libs:

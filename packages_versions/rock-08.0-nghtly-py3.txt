@@ -397,11 +397,13 @@ local:
     openssh-server:
         8.0p1-19.el8_8
     openssl:
-        1:1.1.1k-9.el8_7
+        1:1.1.1k-12.el8_9
     openssl-devel:
-        1:1.1.1k-9.el8_7
+        1:1.1.1k-12.el8_9
     openssl-libs:
-        1:1.1.1k-9.el8_7
+        1:1.1.1k-12.el8_9
+    openssl-pkcs11:
+        0.4.10-3.el8
     p11-kit:
         0.23.22-1.el8
     p11-kit-trust:
@@ -575,11 +577,11 @@ local:
     readline:
         7.0-10.el8
     rocky-gpg-keys:
-        8.9-1.6.el8
+        8.9-1.8.el8
     rocky-release:
-        8.9-1.6.el8
+        8.9-1.8.el8
     rocky-repos:
-        8.9-1.6.el8
+        8.9-1.8.el8
     rootfiles:
         8.1-22.el8
     rpm:

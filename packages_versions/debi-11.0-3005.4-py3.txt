@@ -145,7 +145,7 @@ local:
     coreutils:
         8.32-4+b1
     curl:
-        7.74.0-1.3+deb11u10
+        7.74.0-1.3+deb11u11
     dash:
         0.5.11+git20200708+dd9ef66-5
     dctrl-tools:
@@ -251,9 +251,9 @@ local:
     libcryptsetup12:
         2:2.3.7-1+deb11u1
     libcurl3-gnutls:
-        7.74.0-1.3+deb11u10
+        7.74.0-1.3+deb11u11
     libcurl4:
-        7.74.0-1.3+deb11u10
+        7.74.0-1.3+deb11u11
     libdb5.3:
         5.3.28+dfsg1-0.8
     libdebconfclient0:
@@ -439,11 +439,11 @@ local:
     net-tools:
         1.60+git20181103.0eebece-1
     openssh-client:
-        1:8.4p1-5+deb11u2
+        1:8.4p1-5+deb11u3
     openssh-server:
-        1:8.4p1-5+deb11u2
+        1:8.4p1-5+deb11u3
     openssh-sftp-server:
-        1:8.4p1-5+deb11u2
+        1:8.4p1-5+deb11u3
     openssl:
         1.1.1w-0+deb11u1
     passwd:

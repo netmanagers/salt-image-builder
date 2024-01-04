@@ -163,7 +163,7 @@ local:
     cryptsetup-libs:
         2.0.3-6.el7
     curl:
-        7.29.0-59.el7_9.1
+        7.29.0-59.el7_9.2
     cyrus-sasl-lib:
         2.1.26-24.el7_9
     dbus:
@@ -281,7 +281,7 @@ local:
     libcom_err-devel:
         1.42.9-19.el7
     libcurl:
-        7.29.0-59.el7_9.1
+        7.29.0-59.el7_9.2
     libdb:
         5.3.21-25.el7
     libdb-utils:

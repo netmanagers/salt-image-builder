@@ -2,7 +2,7 @@ gent-sysd-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3007.0+0na.84f434c
+          Salt: 3007.0+0na.c5cfe21
  
 Python Version:
         Python: 3.11.6 (main, Dec  3 2023, 17:23:49) [GCC 13.2.1 20230826]
@@ -25,7 +25,7 @@ Dependency Versions:
      packaging: 23.2
      pycparser: 2.21
       pycrypto: Not Installed
-  pycryptodome: 3.19.0
+  pycryptodome: 3.19.1
         pygit2: Not Installed
   python-gnupg: 0.5.2
         PyYAML: 6.0.1
@@ -113,7 +113,7 @@ local:
     saltpath:
         /usr/lib/python3.11/site-packages/salt
     saltversion:
-        3007.0+0na.84f434c
+        3007.0+0na.c5cfe21
     saltversioninfo:
         - 3007
         - 0
@@ -229,7 +229,7 @@ local:
     app-admin/perl-cleaner:
         2.31
     app-admin/sudo:
-        1.9.14_p3
+        1.9.15_p2
     app-alternatives/awk:
         4
     app-alternatives/bc:
@@ -781,8 +781,14 @@ local:
         1.7.1
     PyYAML:
         6.0.1
+    aiohttp:
+        3.9.1
+    aiosignal:
+        1.3.1
     annotated-types:
         0.6.0
+    attrs:
+        23.2.0
     autocommand:
         2.2.2
     calver:
@@ -802,11 +808,13 @@ local:
     cryptography:
         41.0.7
     distro:
-        1.8.0
+        1.9.0
     editables:
         0.5
     flit_core:
         3.9.0
+    frozenlist:
+        1.4.1
     gemato:
         20.5
     hatchling:
@@ -816,7 +824,7 @@ local:
     immutables:
         0.20
     importlib-metadata:
-        7.0.0
+        7.0.1
     inflect:
         7.0.0
     installer:
@@ -841,6 +849,8 @@ local:
         10.1.0
     msgpack:
         1.0.7
+    multidict:
+        6.0.4
     nspektr:
         0.5.0
     ordered-set:
@@ -858,17 +868,17 @@ local:
     portend:
         3.2.0
     psutil:
-        5.9.6
+        5.9.7
     pyOpenSSL:
         23.3.0
     pycparser:
         2.21
     pycryptodomex:
-        3.19.0
+        3.19.1
     pydantic:
-        2.5.2
+        2.5.3
     pydantic_core:
-        2.14.5
+        2.14.6
     pyparsing:
         3.1.1
     python-dateutil:
@@ -881,14 +891,14 @@ local:
         25.1.2
     requests:
         2.31.0
-    rpm-vercmp:
+    rpm_vercmp:
         0.1.2
     salt:
-        3007.0+0na.84f434c
+        3007.0+0na.c5cfe21
     setproctitle:
         1.3.3
     setuptools:
-        69.0.2
+        69.0.3
     setuptools-scm:
         8.0.4
     six:
@@ -909,6 +919,8 @@ local:
         2.1.0
     wheel:
         0.42.0
+    yarl:
+        1.9.4
     zc.lockfile:
         3.0.post1
     zipp:

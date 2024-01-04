@@ -2,10 +2,10 @@ fedo-38.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3007.0+0na.84f434c
+          Salt: 3007.0+0na.c5cfe21
  
 Python Version:
-        Python: 3.11.6 (main, Oct  3 2023, 00:00:00) [GCC 13.2.1 20230728 (Red Hat 13.2.1-1)]
+        Python: 3.11.7 (main, Dec 18 2023, 00:00:00) [GCC 13.2.1 20231011 (Red Hat 13.2.1-4)]
  
 Dependency Versions:
           cffi: 1.16.0
@@ -25,7 +25,7 @@ Dependency Versions:
      packaging: 23.2
      pycparser: 2.21
       pycrypto: Not Installed
-  pycryptodome: 3.19.0
+  pycryptodome: 3.19.1
         pygit2: Not Installed
   python-gnupg: 0.5.2
         PyYAML: 6.0.1
@@ -105,13 +105,13 @@ local:
     pythonversion:
         - 3
         - 11
-        - 6
+        - 7
         - final
         - 0
     saltpath:
         /usr/lib/python3.11/site-packages/salt
     saltversion:
-        3007.0+0na.84f434c
+        3007.0+0na.c5cfe21
     saltversioninfo:
         - 3007
         - 0
@@ -167,7 +167,7 @@ local:
     cryptsetup-libs:
         2.6.1-1.fc38
     curl:
-        8.0.1-5.fc38
+        8.0.1-6.fc38
     cyrus-sasl-lib:
         2.1.28-9.fc38
     dbus:
@@ -187,13 +187,13 @@ local:
     dracut:
         059-5.fc38
     elfutils-debuginfod-client:
-        0.190-1.fc38
+        0.190-2.fc38
     elfutils-default-yama-scope:
-        0.190-1.fc38
+        0.190-2.fc38
     elfutils-libelf:
-        0.190-1.fc38
+        0.190-2.fc38
     elfutils-libs:
-        0.190-1.fc38
+        0.190-2.fc38
     expat:
         2.5.0-2.fc38
     fedora-gpg-keys:
@@ -259,7 +259,7 @@ local:
     gnupg2:
         2.4.0-3.fc38
     gnutls:
-        3.8.1-1.fc38
+        3.8.2-2.fc38
     gpg-pubkey.(none):
         eb10b464-6202d9c6
     gpgme:
@@ -307,7 +307,7 @@ local:
     less:
         633-1.fc38
     libacl:
-        2.3.1-6.fc38
+        2.3.1-7.fc38
     libarchive:
         3.6.1-4.fc38
     libargon2:
@@ -323,7 +323,7 @@ local:
     libbrotli:
         1.0.9-11.fc38
     libcap:
-        2.48-7.fc38
+        2.48-8.fc38
     libcap-ng:
         0.8.3-8.fc38
     libcbor:
@@ -333,7 +333,7 @@ local:
     libcomps:
         0.1.20-1.fc38
     libcurl:
-        8.0.1-5.fc38
+        8.0.1-6.fc38
     libdb:
         5.3.28-55.fc38
     libdnf:
@@ -401,7 +401,7 @@ local:
     libsmartcols:
         2.38.1-4.fc38
     libsolv:
-        0.7.25-1.fc38
+        0.7.27-1.fc38
     libssh:
         0.10.5-1.fc38
     libssh-config:
@@ -485,13 +485,13 @@ local:
     pcre2-syntax:
         10.42-1.fc38.1
     perl-AutoLoader:
-        5.74-497.fc38
+        5.74-498.fc38
     perl-B:
-        1.83-497.fc38
+        1.83-498.fc38
     perl-Carp:
         1.52-490.fc38
     perl-Class-Struct:
-        0.66-497.fc38
+        0.66-498.fc38
     perl-Data-Dumper:
         2.184-491.fc38
     perl-Digest:
@@ -499,45 +499,45 @@ local:
     perl-Digest-MD5:
         2.58-490.fc38
     perl-DynaLoader:
-        1.52-497.fc38
+        1.52-498.fc38
     perl-Encode:
         4:3.19-493.fc38
     perl-Errno:
-        1.36-497.fc38
+        1.36-498.fc38
     perl-Error:
         1:0.17029-11.fc38
     perl-Exporter:
         5.77-490.fc38
     perl-Fcntl:
-        1.15-497.fc38
+        1.15-498.fc38
     perl-File-Basename:
-        2.85-497.fc38
+        2.85-498.fc38
     perl-File-Find:
-        1.40-497.fc38
+        1.40-498.fc38
     perl-File-Path:
         2.18-490.fc38
     perl-File-Temp:
         1:0.231.100-490.fc38
     perl-File-stat:
-        1.12-497.fc38
+        1.12-498.fc38
     perl-FileHandle:
-        2.03-497.fc38
+        2.03-498.fc38
     perl-Getopt-Long:
         1:2.54-2.fc38
     perl-Getopt-Std:
-        1.13-497.fc38
+        1.13-498.fc38
     perl-Git:
         2.43.0-1.fc38
     perl-HTTP-Tiny:
         0.086-2.fc38
     perl-IO:
-        1.50-497.fc38
+        1.50-498.fc38
     perl-IO-Socket-IP:
         0.41-492.fc38
     perl-IO-Socket-SSL:
         2.081-1.fc38
     perl-IPC-Open3:
-        1.22-497.fc38
+        1.22-498.fc38
     perl-MIME-Base64:
         3.16-490.fc38
     perl-Mozilla-CA:
@@ -545,7 +545,7 @@ local:
     perl-Net-SSLeay:
         1.92-5.fc38
     perl-POSIX:
-        2.03-497.fc38
+        2.03-498.fc38
     perl-PathTools:
         3.84-490.fc38
     perl-Pod-Escapes:
@@ -559,13 +559,13 @@ local:
     perl-Scalar-List-Utils:
         5:1.63-490.fc38
     perl-SelectSaver:
-        1.02-497.fc38
+        1.02-498.fc38
     perl-Socket:
         4:2.036-2.fc38
     perl-Storable:
         1:3.26-490.fc38
     perl-Symbol:
-        1.09-497.fc38
+        1.09-498.fc38
     perl-Term-ANSIColor:
         5.01-491.fc38
     perl-Term-Cap:
@@ -581,33 +581,33 @@ local:
     perl-URI:
         5.17-2.fc38
     perl-base:
-        2.27-497.fc38
+        2.27-498.fc38
     perl-constant:
         1.33-491.fc38
     perl-if:
-        0.61.000-497.fc38
+        0.61.000-498.fc38
     perl-interpreter:
-        4:5.36.1-497.fc38
+        4:5.36.3-498.fc38
     perl-lib:
-        0.65-497.fc38
+        0.65-498.fc38
     perl-libnet:
         3.15-1.fc38
     perl-libs:
-        4:5.36.1-497.fc38
+        4:5.36.3-498.fc38
     perl-locale:
-        1.10-497.fc38
+        1.10-498.fc38
     perl-mro:
-        1.26-497.fc38
+        1.26-498.fc38
     perl-overload:
-        1.35-497.fc38
+        1.35-498.fc38
     perl-overloading:
-        0.02-497.fc38
+        0.02-498.fc38
     perl-parent:
         1:0.241-1.fc38
     perl-podlators:
         1:5.01-2.fc38
     perl-vars:
-        1.05-497.fc38
+        1.05-498.fc38
     pigz:
         2.7-3.fc38
     pkgconf:
@@ -627,9 +627,9 @@ local:
     python-setuptools-wheel:
         65.5.1-2.fc38
     python3:
-        3.11.6-1.fc38
+        3.11.7-2.fc38
     python3-devel:
-        3.11.6-1.fc38
+        3.11.7-2.fc38
     python3-dnf:
         4.18.2-1.fc38
     python3-hawkey:
@@ -639,7 +639,7 @@ local:
     python3-libdnf:
         0.72.0-1.fc38
     python3-libs:
-        3.11.6-1.fc38
+        3.11.7-2.fc38
     python3-pip:
         22.3.1-3.fc38
     python3-rpm:
@@ -671,13 +671,13 @@ local:
     sudo:
         1.9.13-2.p2.fc38
     systemd:
-        253.13-1.fc38
+        253.14-1.fc38
     systemd-libs:
-        253.13-1.fc38
+        253.14-1.fc38
     systemd-pam:
-        253.13-1.fc38
+        253.14-1.fc38
     systemd-udev:
-        253.13-1.fc38
+        253.14-1.fc38
     tar:
         2:1.34-8.fc38
     tpm2-tools:
@@ -691,9 +691,9 @@ local:
     util-linux-core:
         2.38.1-4.fc38
     vim-data:
-        2:9.0.2153-1.fc38
+        2:9.0.2167-1.fc38
     vim-minimal:
-        2:9.0.2153-1.fc38
+        2:9.0.2167-1.fc38
     which:
         2.21-39.fc38
     xz:
@@ -703,7 +703,7 @@ local:
     yum:
         4.18.2-1.fc38
     zchunk-libs:
-        1.3.2-1.fc38
+        1.4.0-1.fc38
     zlib:
         1.2.13-3.fc38
 # salt-call --local pip.list
@@ -717,8 +717,14 @@ local:
         2.1.3
     PyYAML:
         6.0.1
+    aiohttp:
+        3.9.1
+    aiosignal:
+        1.3.1
     annotated-types:
         0.6.0
+    attrs:
+        23.2.0
     autocommand:
         2.2.2
     certifi:
@@ -734,15 +740,17 @@ local:
     cryptography:
         41.0.7
     distro:
-        1.8.0
+        1.9.0
     dnf:
         4.18.2
+    frozenlist:
+        1.4.1
     idna:
         3.6
     immutables:
         0.20
     importlib-metadata:
-        7.0.0
+        7.0.1
     inflect:
         7.0.0
     jaraco.collections:
@@ -765,6 +773,8 @@ local:
         10.1.0
     msgpack:
         1.0.7
+    multidict:
+        6.0.4
     packaging:
         23.2
     pip:
@@ -772,17 +782,17 @@ local:
     portend:
         3.2.0
     psutil:
-        5.9.6
+        5.9.7
     pyOpenSSL:
         23.3.0
     pycparser:
         2.21
     pycryptodomex:
-        3.19.0
+        3.19.1
     pydantic:
-        2.5.2
+        2.5.3
     pydantic_core:
-        2.14.5
+        2.14.6
     python-dateutil:
         2.8.2
     python-gnupg:
@@ -795,10 +805,10 @@ local:
         2.31.0
     rpm:
         4.18.2
-    rpm-vercmp:
+    rpm_vercmp:
         0.1.2
     salt:
-        3007.0+0na.84f434c
+        3007.0+0na.c5cfe21
     setproctitle:
         1.3.3
     setuptools:
@@ -817,6 +827,8 @@ local:
         2.1.0
     wheel:
         0.42.0
+    yarl:
+        1.9.4
     zc.lockfile:
         3.0.post1
     zipp:
