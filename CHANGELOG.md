@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.86.1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.86.0...v1.86.1) (2024-01-09)
+
+
+### Bug Fixes
+
+* **opsu:** add python devel pkgs ([90c0cda](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/90c0cdaf2272639157e5315adb475cd2366fd632))
+
 # [1.86.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.85.0...v1.86.0) (2024-01-04)
 
 

@@ -615,7 +615,7 @@ local:
     tpm2-tss:
         2.3.2-5.el8
     tzdata:
-        2023c-1.el8
+        2023d-1.el8
     util-linux:
         2.32.1-43.el8
     vim-minimal:

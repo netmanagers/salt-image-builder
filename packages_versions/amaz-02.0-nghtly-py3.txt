@@ -148,7 +148,7 @@ local:
     cryptsetup-libs:
         1.7.4-4.amzn2
     curl:
-        8.3.0-1.amzn2.0.4
+        8.3.0-1.amzn2.0.5
     cyrus-sasl-lib:
         2.1.26-24.amzn2
     dbus:
@@ -162,7 +162,7 @@ local:
     diffutils:
         3.3-5.amzn2
     dmidecode:
-        1:3.2-5.amzn2.1
+        1:3.2-5.amzn2.1.1
     elfutils-default-yama-scope:
         0.176-2.amzn2.0.2
     elfutils-libelf:
@@ -246,7 +246,7 @@ local:
     libcrypt:
         2.26-63.amzn2.0.1
     libcurl:
-        8.3.0-1.amzn2.0.4
+        8.3.0-1.amzn2.0.5
     libdb:
         5.3.21-24.amzn2.0.4
     libdb-utils:
@@ -308,11 +308,11 @@ local:
     make:
         1:3.82-24.amzn2
     ncurses:
-        6.0-8.20170212.amzn2.1.5
+        6.0-8.20170212.amzn2.1.7
     ncurses-base:
-        6.0-8.20170212.amzn2.1.5
+        6.0-8.20170212.amzn2.1.7
     ncurses-libs:
-        6.0-8.20170212.amzn2.1.5
+        6.0-8.20170212.amzn2.1.7
     net-tools:
         2.0-0.22.20131004git.amzn2.0.3
     nspr:
@@ -430,7 +430,7 @@ local:
     pyliblzma:
         0.5.3-25.amzn2
     python:
-        2.7.18-1.amzn2.0.7
+        2.7.18-1.amzn2.0.8
     python-babel:
         0.9.6-8.amzn2.0.2
     python-chardet:
@@ -440,7 +440,7 @@ local:
     python-kitchen:
         1.1.1-5.amzn2
     python-libs:
-        2.7.18-1.amzn2.0.7
+        2.7.18-1.amzn2.0.8
     python-markupsafe:
         0.11-10.amzn2.0.2
     python-pycurl:
@@ -516,9 +516,9 @@ local:
     util-linux:
         2.30.2-2.amzn2.0.11
     vim-data:
-        2:9.0.2120-1.amzn2.0.1
+        2:9.0.2153-1.amzn2.0.1
     vim-minimal:
-        2:9.0.2120-1.amzn2.0.1
+        2:9.0.2153-1.amzn2.0.1
     which:
         2.20-7.amzn2.0.2
     xz-libs:

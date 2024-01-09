@@ -2,7 +2,7 @@ fedo-38.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3007.0+0na.c5cfe21
+          Salt: 3007.0+0na.2e3b133
  
 Python Version:
         Python: 3.11.7 (main, Dec 18 2023, 00:00:00) [GCC 13.2.1 20231011 (Red Hat 13.2.1-4)]
@@ -111,7 +111,7 @@ local:
     saltpath:
         /usr/lib/python3.11/site-packages/salt
     saltversion:
-        3007.0+0na.c5cfe21
+        3007.0+0na.2e3b133
     saltversioninfo:
         - 3007
         - 0
@@ -770,7 +770,7 @@ local:
     looseversion:
         1.3.0
     more-itertools:
-        10.1.0
+        10.2.0
     msgpack:
         1.0.7
     multidict:
@@ -808,7 +808,7 @@ local:
     rpm_vercmp:
         0.1.2
     salt:
-        3007.0+0na.c5cfe21
+        3007.0+0na.2e3b133
     setproctitle:
         1.3.3
     setuptools:
