@@ -275,6 +275,7 @@ arch-late-3006.5-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 
 
 # CENTOS (STREAM)
+cstr-09.0-master-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'quay.io/centos/centos', DV: 'stream9', PI: 'yum', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3.11', EP: 'glibc-langpack-en openssl-devel procps-ng python3.11 python3.11-devel python3.11-pip'}}
 cstr-09.0-nghtly-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'quay.io/centos/centos', DV: 'stream9', PI: 'yum', SIM: 'onedir', SV: 'nghtly' , SVB: 'nightly', PV: '3', EP: 'glibc-langpack-en openssl-devel procps-ng python3 python3-devel'}}
 cstr-09.0-3006.5-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'quay.io/centos/centos', DV: 'stream9', PI: 'yum', SIM: 'onedir', SV: '3006.5' , SVB: ''       , PV: '3', EP: 'glibc-langpack-en openssl-devel procps-ng python3 python3-devel'}}
 cstr-09.0-3005.4-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'quay.io/centos/centos', DV: 'stream9', PI: 'yum', SIM: 'onedir', SV: '3005.4' , SVB: ''       , PV: '3', EP: 'glibc-langpack-en openssl-devel procps-ng python3 python3-devel'}}
