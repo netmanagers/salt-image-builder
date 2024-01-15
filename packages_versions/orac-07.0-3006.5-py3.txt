@@ -615,7 +615,7 @@ local:
     tcp_wrappers-libs:
         7.6-77.el7
     tzdata:
-        2023c-1.el7
+        2023d-1.el7
     usermode:
         1.111-6.el7
     ustr:

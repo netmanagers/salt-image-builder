@@ -229,7 +229,7 @@ local:
     gnupg2:
         2.2.20-3.el8_6
     gnutls:
-        3.6.16-7.el8
+        3.6.16-8.el8_9
     gpg-pubkey.(none):
         3abb34f8-5ffd890e,73d76b3f-63dace60,ced7258b-6525146f
     gpgme:
@@ -285,7 +285,7 @@ local:
     libblkid:
         2.32.1-43.el8
     libcap:
-        2.48-5.el8_8
+        2.48-6.el8_9
     libcap-ng:
         0.7.11-1.el8
     libcom_err:
@@ -375,7 +375,7 @@ local:
     libxcrypt:
         4.1.1-6.el8
     libxml2:
-        2.9.7-16.el8_8.1
+        2.9.7-18.el8_9
     libyaml:
         0.1.7-5.el8
     libzstd:
@@ -622,6 +622,10 @@ local:
         2:1.30-9.el8
     tpm2-tss:
         2.3.2-5.el8
+    trousers:
+        0.3.15-1.el8
+    trousers-lib:
+        0.3.15-1.el8
     tzdata:
         2023d-1.el8
     util-linux:

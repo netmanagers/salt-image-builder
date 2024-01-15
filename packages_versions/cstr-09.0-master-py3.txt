@@ -1,39 +1,47 @@
-cstr-09.0-3005.4-py3
-Salt install method: onedir
+cstr-09.0-master-py3
+Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3005.4
+          Salt: 3007.0+0na.daef761
+ 
+Python Version:
+        Python: 3.11.5 (main, Jan  9 2024, 00:00:00) [GCC 11.4.1 20231218 (Red Hat 11.4.1-3)]
  
 Dependency Versions:
-          cffi: 1.14.6
-      cherrypy: 18.6.1
-      dateutil: 2.8.1
+          cffi: 1.16.0
+      cherrypy: 18.9.0
+      dateutil: 2.8.2
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
-        Jinja2: 3.1.0
+        Jinja2: 3.1.3
        libgit2: Not Installed
+  looseversion: 1.3.0
       M2Crypto: Not Installed
           Mako: Not Installed
-       msgpack: 1.0.2
+       msgpack: 1.0.7
   msgpack-pure: Not Installed
   mysql-python: Not Installed
+     packaging: 23.2
      pycparser: 2.21
       pycrypto: Not Installed
-  pycryptodome: 3.9.8
+  pycryptodome: 3.20.0
         pygit2: Not Installed
-        Python: 3.9.18 (main, Nov  1 2022, 00:00:00)
-  python-gnupg: 0.4.8
+  python-gnupg: 0.5.2
         PyYAML: 6.0.1
-         PyZMQ: 23.2.0
+         PyZMQ: 25.1.2
+        relenv: Not Installed
          smmap: Not Installed
-       timelib: 0.2.4
-       Tornado: 4.5.3
+       timelib: 0.3.0
+       Tornado: 6.4
            ZMQ: 4.3.4
+ 
+Salt Package Information:
+  Package Type: Not Installed
  
 System Versions:
           dist: centos 9 
-        locale: ascii
+        locale: utf-8
        machine: x86_64
        release: 5.4.109+
         system: Linux
@@ -53,11 +61,11 @@ local:
     locale_info:
         ----------
         defaultencoding:
-            None
+            UTF-8
         defaultlanguage:
-            None
+            en_US
         detectedencoding:
-            ascii
+            utf-8
         timezone:
             UTC
     lsb_distrib_codename:
@@ -88,25 +96,27 @@ local:
         - 9
     osversion:
     pythonexecutable:
-        /opt/saltstack/salt/run/run
+        /usr/bin/python3.11
     pythonpath:
-        - /opt/saltstack/salt/pypath/lib/python3.9/site-packages
-        - /opt/saltstack/salt/run/base_library.zip
-        - /opt/saltstack/salt/run/lib-dynload
-        - /opt/saltstack/salt/run
+        - /usr/bin
+        - /usr/lib64/python311.zip
+        - /usr/lib64/python3.11
+        - /usr/lib64/python3.11/lib-dynload
+        - /usr/lib64/python3.11/site-packages
+        - /usr/lib/python3.11/site-packages
     pythonversion:
         - 3
-        - 9
-        - 18
+        - 11
+        - 5
         - final
         - 0
     saltpath:
-        /opt/saltstack/salt/run/salt
+        /usr/lib/python3.11/site-packages/salt
     saltversion:
-        3005.4
+        3007.0+0na.daef761
     saltversioninfo:
-        - 3005
-        - 4
+        - 3007
+        - 0
     systemd:
         ----------
         features:
@@ -132,6 +142,10 @@ local:
         11-13.el9
     bash:
         5.1.8-6.el9
+    binutils:
+        2.35.2-42.el9
+    binutils-gold:
+        2.35.2-42.el9
     bzip2-libs:
         1.0.8-8.el9
     ca-certificates:
@@ -146,6 +160,8 @@ local:
         1.24-1.el9
     coreutils-single:
         8.32-34.el9
+    cpp:
+        11.4.1-3.el9
     cracklib:
         2.9.6-27.el9
     cracklib-dicts:
@@ -174,14 +190,14 @@ local:
         9:1.02.195-3.el9
     device-mapper-libs:
         9:1.02.195-3.el9
-    dmidecode:
-        1:3.3-7.el9
     dnf:
         4.14.0-9.el9
     dnf-data:
         4.14.0-9.el9
     dnf-plugins-core:
         4.3.0-12.el9
+    elfutils-debuginfod-client:
+        0.190-2.el9
     elfutils-default-yama-scope:
         0.190-2.el9
     elfutils-libelf:
@@ -202,6 +218,8 @@ local:
         1:2.0.5-7.el9.1
     gawk:
         5.1.0-6.el9
+    gcc:
+        11.4.1-3.el9
     gdb-gdbserver:
         10.2-13.el9
     gdbm-libs:
@@ -218,6 +236,10 @@ local:
         2.34-95.el9
     glibc-common:
         2.34-95.el9
+    glibc-devel:
+        2.34-95.el9
+    glibc-headers:
+        2.34-95.el9
     glibc-langpack-en:
         2.34-95.el9
     glibc-minimal-langpack:
@@ -229,7 +251,7 @@ local:
     gnutls:
         3.8.2-2.el9
     gpg-pubkey.(none):
-        8483c65d-5ccc5b19,9d30d7b6-62d757ff
+        73d76b3f-63dace60,8483c65d-5ccc5b19
     gpgme:
         1.15.1-6.el9
     grep:
@@ -238,8 +260,6 @@ local:
         1.22.4-10.el9
     gzip:
         1.12-1.el9
-    hwdata:
-        0.348-9.12.el9
     ima-evm-utils:
         1.4-4.el9
     json-c:
@@ -250,6 +270,8 @@ local:
         2.4.0-9.el9
     kbd-misc:
         2.4.0-9.el9
+    kernel-headers:
+        5.14.0-407.el9
     keyutils-libs:
         1.6.3-1.el9
     kmod:
@@ -320,8 +342,12 @@ local:
         2.13.0-2.el9
     libmount:
         2.37.4-15.el9
+    libmpc:
+        1.2.1-4.el9
     libnghttp2:
         1.43.0-5.el9.1
+    libnsl2:
+        2.0.0-1.el9
     libpkgconf:
         1.7.3-10.el9
     libpwquality:
@@ -348,6 +374,8 @@ local:
         11.4.1-3.el9
     libtasn1:
         4.16.0-8.el9
+    libtirpc:
+        1.3.3-2.el9
     libunistring:
         0.9.10-15.el9
     libutempter:
@@ -360,6 +388,8 @@ local:
         4.4.18-3.el9
     libxcrypt-compat:
         4.4.18-3.el9
+    libxcrypt-devel:
+        4.4.18-3.el9
     libxml2:
         2.9.13-5.el9
     libyaml:
@@ -370,6 +400,10 @@ local:
         5.4.4-4.el9
     lz4-libs:
         1.9.3-5.el9
+    make:
+        1:4.3-7.el9
+    mpdecimal:
+        2.5.1-3.el9
     mpfr:
         4.1.0-7.el9
     ncurses:
@@ -404,10 +438,6 @@ local:
         0.25.3-2.el9
     pam:
         1.5.1-17.el9
-    pciutils:
-        3.7.0-5.el9
-    pciutils-libs:
-        3.7.0-5.el9
     pcre:
         8.44-3.el9.3
     pcre2:
@@ -586,6 +616,20 @@ local:
         1.15.0-9.el9
     python3-systemd:
         234-18.el9
+    python3.11:
+        3.11.5-2.el9
+    python3.11-devel:
+        3.11.5-2.el9
+    python3.11-libs:
+        3.11.5-2.el9
+    python3.11-pip:
+        22.3.1-4.el9
+    python3.11-pip-wheel:
+        22.3.1-4.el9
+    python3.11-setuptools:
+        65.5.1-2.el9
+    python3.11-setuptools-wheel:
+        65.5.1-2.el9
     readline:
         8.1-4.el9
     rootfiles:
@@ -598,10 +642,6 @@ local:
         4.16.1.3-29.el9
     rpm-sign-libs:
         4.16.1.3-29.el9
-    salt:
-        3005.4-1.el9
-    salt-minion:
-        3005.4-1.el9
     sed:
         4.8-9.el9
     setup:
@@ -647,8 +687,122 @@ local:
 # salt-call --local pip.list
 local:
     ----------
+    CherryPy:
+        18.9.0
+    Jinja2:
+        3.1.3
+    MarkupSafe:
+        2.1.3
+    PyYAML:
+        6.0.1
+    aiohttp:
+        3.9.1
+    aiosignal:
+        1.3.1
+    annotated-types:
+        0.6.0
+    attrs:
+        23.2.0
+    autocommand:
+        2.2.2
+    certifi:
+        2023.11.17
+    cffi:
+        1.16.0
+    charset-normalizer:
+        3.3.2
+    cheroot:
+        10.0.0
+    contextvars:
+        2.4
+    cryptography:
+        41.0.7
+    distro:
+        1.9.0
+    frozenlist:
+        1.4.1
+    idna:
+        3.6
+    immutables:
+        0.20
+    importlib-metadata:
+        7.0.1
+    inflect:
+        7.0.0
+    jaraco.collections:
+        5.0.0
+    jaraco.context:
+        4.3.0
+    jaraco.functools:
+        4.0.0
+    jaraco.text:
+        3.12.0
+    jmespath:
+        1.0.1
+    looseversion:
+        1.3.0
+    more-itertools:
+        10.2.0
+    msgpack:
+        1.0.7
+    multidict:
+        6.0.4
+    packaging:
+        23.2
     pip:
-        22.2.2
+        22.3.1
+    portend:
+        3.2.0
+    psutil:
+        5.9.7
+    pyOpenSSL:
+        23.3.0
+    pycparser:
+        2.21
+    pycryptodomex:
+        3.20.0
+    pydantic:
+        2.5.3
+    pydantic_core:
+        2.14.6
+    python-dateutil:
+        2.8.2
+    python-gnupg:
+        0.5.2
+    pytz:
+        2023.3.post1
+    pyzmq:
+        25.1.2
+    requests:
+        2.31.0
+    rpm_vercmp:
+        0.1.2
+    salt:
+        3007.0+0na.daef761
+    setproctitle:
+        1.3.3
+    setuptools:
+        65.5.1
+    six:
+        1.16.0
+    tempora:
+        5.5.0
+    timelib:
+        0.3.0
+    tornado:
+        6.4
+    typing_extensions:
+        4.9.0
+    urllib3:
+        2.1.0
+    wheel:
+        0.42.0
+    yarl:
+        1.9.4
+    zc.lockfile:
+        3.0.post1
+    zipp:
+        3.17.0
 # salt-call --local locale.list_avail
 local:
     - C

@@ -663,7 +663,7 @@ local:
     tpm2-tss:
         3.2.2-2.el9
     tzdata:
-        2023c-1.el9
+        2023d-1.el9
     util-linux:
         2.37.4-15.0.1.el9
     util-linux-core:

@@ -388,9 +388,9 @@ local:
     libsolv:
         0.7.27-1.fc38
     libssh:
-        0.10.5-1.fc38
+        0.10.6-2.fc38
     libssh-config:
-        0.10.5-1.fc38
+        0.10.6-2.fc38
     libstdc++:
         13.2.1-4.fc38
     libtasn1:
@@ -684,9 +684,9 @@ local:
     util-linux-core:
         2.38.1-4.fc38
     vim-data:
-        2:9.0.2167-1.fc38
+        2:9.0.2190-1.fc38
     vim-minimal:
-        2:9.0.2167-1.fc38
+        2:9.0.2190-1.fc38
     web-assets-filesystem:
         5-19.fc38
     which:

@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.87.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.86.1...v1.87.0) (2024-01-15)
+
+
+### Features
+
+* **centos:** build centosstream9 master ([5e855ff](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/5e855ffac3be234c8175380cb1f2067a53ff4b69))
+
 ## [1.86.1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.86.0...v1.86.1) (2024-01-09)
 
 
