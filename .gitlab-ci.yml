@@ -292,6 +292,7 @@ cent-07.0-3005.5-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 
 # DEBIAN
 # Note: Permitting failure on 12.0 master until Bootstrap enables installing into Python virtualenv
+# Note: Permitting failure on 11.0 master until Bootstrap fixes problems due to https://github.com/saltstack/salt-bootstrap/pull/1983
 debi-12.0-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'debian'               , DV: '12'     , PI: 'apt', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: 'python3-apt python3-pip'}}
 debi-12.0-nghtly-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'               , DV: '12'     , PI: 'apt', SIM: 'onedir', SV: 'nghtly' , SVB: 'nightly', PV: '3', EP: ''}}
 debi-12.0-3006.6-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'debian'               , DV: '12'     , PI: 'apt', SIM: 'onedir', SV: '3006.6' , SVB: ''       , PV: '3', EP: ''}}
