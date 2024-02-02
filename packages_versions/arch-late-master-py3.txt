@@ -2,7 +2,7 @@ arch-late-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3007.0+0na.daef761
+          Salt: 3007.0+0na.fe80b71
  
 Python Version:
         Python: 3.11.6 (main, Nov 14 2023, 09:36:21) [GCC 13.2.1 20230801]
@@ -40,12 +40,12 @@ Salt Package Information:
   Package Type: Not Installed
  
 System Versions:
-          dist: arch 20240115.0.207120 
+          dist: arch 20240202.0.211139 
         locale: utf-8
        machine: x86_64
        release: 5.4.109+
         system: Linux
-       version: Arch Linux 20240115.0.207120 
+       version: Arch Linux 20240202.0.211139 
  
 # salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
 local:
@@ -73,7 +73,7 @@ local:
     lsb_distrib_id:
         Arch Linux
     lsb_distrib_release:
-        20240115.0.207120
+        20240202.0.211139
     os:
         Arch
     os_family:
@@ -84,18 +84,18 @@ local:
     oscodename:
         Arch Linux
     osfinger:
-        Arch Linux-20240115
+        Arch Linux-20240202
     osfullname:
         Arch Linux
     osmajorrelease:
-        20240115
+        20240202
     osmanufacturer:
     osrelease:
-        20240115.0.207120
+        20240202.0.211139
     osrelease_info:
-        - 20240115
+        - 20240202
         - 0
-        - 207120
+        - 211139
     osversion:
     pythonexecutable:
         /usr/bin/python
@@ -114,7 +114,7 @@ local:
     saltpath:
         /usr/lib/python3.11/site-packages/salt
     saltversion:
-        3007.0+0na.daef761
+        3007.0+0na.fe80b71
     saltversioninfo:
         - 3007
         - 0
@@ -134,21 +134,21 @@ local:
 local:
     ----------
     acl:
-        2.3.1-3
+        2.3.2-1
     archlinux-keyring:
         20231222-1
     argon2:
         20190702-5
     attr:
-        2.5.1-3
+        2.5.2-1
     audit:
-        3.1.2-1
+        4.0-1
     base:
         3-2
     bash:
-        5.2.021-1
+        5.2.026-2
     binutils:
-        2.41-3
+        2.42-1
     brotli:
         1.1.0-1
     bzip2:
@@ -156,15 +156,15 @@ local:
     ca-certificates:
         20220905-1
     ca-certificates-mozilla:
-        3.96.1-1
+        3.97-1
     ca-certificates-utils:
         20220905-1
     coreutils:
-        9.4-2
+        9.4-3
     cryptsetup:
-        2.6.1-3
+        2.7.0-1
     curl:
-        8.5.0-1
+        8.6.0-1
     db:
         6.2.32-1
     db5.3:
@@ -186,15 +186,15 @@ local:
     file:
         5.45-1
     filesystem:
-        2023.09.18-1
+        2024.01.19-1
     findutils:
         4.9.0-3
     gawk:
         5.3.0-1
     gcc:
-        13.2.1-3
+        13.2.1-4
     gcc-libs:
-        13.2.1-3
+        13.2.1-4
     gdbm:
         1.23-2
     gettext:
@@ -202,15 +202,15 @@ local:
     git:
         2.43.0-1
     glib2:
-        2.78.3-1
+        2.78.4-1
     glibc:
-        2.38-7
+        2.38-8
     gmp:
         6.3.0-1
     gnupg:
-        2.4.3-2
+        2.4.4-1
     gnutls:
-        3.8.2-1
+        3.8.3-1
     gpgme:
         1.23.2-1
     grep:
@@ -220,7 +220,7 @@ local:
     hwdata:
         0.378-1
     iana-etc:
-        20231117-1
+        20231228-1
     icu:
         74.2-1
     iproute2:
@@ -228,7 +228,7 @@ local:
     iptables:
         1:1.8.10-1
     iputils:
-        20231222-2
+        20240117-1
     jansson:
         2.14-2
     json-c:
@@ -266,7 +266,7 @@ local:
     libgpg-error:
         1.47-1
     libidn2:
-        2.3.4-3
+        2.3.7-1
     libisl:
         0.26-1
     libksba:
@@ -284,7 +284,7 @@ local:
     libnftnl:
         1.2.6-1
     libnghttp2:
-        1.58.0-1
+        1.59.0-2
     libnl:
         3.9.0-1
     libnsl:
@@ -320,11 +320,11 @@ local:
     libxcrypt:
         4.4.36-1
     libxml2:
-        2.12.3-1
+        2.12.4-1
     libyaml:
         0.2.5-2
     licenses:
-        20231215-2
+        20240201-1
     linux-api-headers:
         6.4-1
     lz4:
@@ -342,7 +342,7 @@ local:
     openssh:
         9.6p1-1
     openssl:
-        3.2.0-1
+        3.2.1-1
     p11-kit:
         0.25.3-1
     pacman:
@@ -350,7 +350,7 @@ local:
     pacman-mirrorlist:
         20231001-1
     pam:
-        1.5.3-3
+        1.6.0-3
     pambase:
         20230918-1
     pciutils:
@@ -392,7 +392,7 @@ local:
     python-jaraco.context:
         4.3.0-3
     python-jaraco.functools:
-        3.9.0-1
+        4.0.0-1
     python-jaraco.text:
         3.12.0-1
     python-more-itertools:
@@ -402,7 +402,7 @@ local:
     python-packaging:
         23.2-1
     python-pip:
-        23.3.2-1
+        23.3.2-2
     python-platformdirs:
         4.1.0-1
     python-ply:
@@ -418,7 +418,7 @@ local:
     python-tomli:
         2.0.1-3
     python-trove-classifiers:
-        2024.1.8-1
+        2024.1.31-1
     python-typing_extensions:
         4.9.0-1
     python-validate-pyproject:
@@ -428,21 +428,21 @@ local:
     python-yaml:
         6.0.1-2
     readline:
-        8.2.007-1
+        8.2.010-1
     sed:
         4.9-3
     shadow:
-        4.14.2-1
+        4.14.3-1
     sqlite:
-        3.44.2-2
+        3.45.1-1
     sudo:
         1.9.15.p5-1
     systemd:
-        255.2-2
+        255.3-1
     systemd-libs:
-        255.2-2
+        255.3-1
     systemd-sysvcompat:
-        255.2-2
+        255.3-1
     tar:
         1.35-2
     tpm2-tss:
@@ -454,9 +454,9 @@ local:
     util-linux-libs:
         2.39.3-1
     xz:
-        5.4.5-1
+        5.4.6-1
     zlib:
-        1:1.3-2
+        1:1.3.1-1
     zstd:
         1.5.5-1
 # salt-call --local pip.list
@@ -467,11 +467,11 @@ local:
     Jinja2:
         3.1.3
     MarkupSafe:
-        2.1.3
+        2.1.4
     PyYAML:
         6.0.1
     aiohttp:
-        3.9.1
+        3.9.3
     aiosignal:
         1.3.1
     annotated-types:
@@ -481,7 +481,7 @@ local:
     autocommand:
         2.2.2
     certifi:
-        2023.11.17
+        2024.2.2
     cffi:
         1.16.0
     charset-normalizer:
@@ -491,7 +491,7 @@ local:
     contextvars:
         2.4
     cryptography:
-        41.0.7
+        42.0.2
     distro:
         1.9.0
     fastjsonschema:
@@ -511,7 +511,7 @@ local:
     jaraco.context:
         4.3.0
     jaraco.functools:
-        3.9.0
+        4.0.0
     jaraco.text:
         3.12.0
     jmespath:
@@ -523,7 +523,7 @@ local:
     msgpack:
         1.0.7
     multidict:
-        6.0.4
+        6.0.5
     ordered-set:
         4.1.0
     packaging:
@@ -537,15 +537,15 @@ local:
     portend:
         3.2.0
     psutil:
-        5.9.7
+        5.9.8
     pyOpenSSL:
-        23.3.0
+        24.0.0
     pycparser:
         2.21
     pycryptodomex:
         3.20.0
     pydantic:
-        2.5.3
+        2.6.0
     pydantic_core:
         2.14.6
     python-dateutil:
@@ -553,7 +553,7 @@ local:
     python-gnupg:
         0.5.2
     pytz:
-        2023.3.post1
+        2024.1
     pyzmq:
         25.1.2
     requests:
@@ -561,7 +561,7 @@ local:
     rpm_vercmp:
         0.1.2
     salt:
-        3007.0+0na.daef761
+        3007.0+0na.fe80b71
     setproctitle:
         1.3.3
     setuptools:
@@ -577,11 +577,11 @@ local:
     tornado:
         6.4
     trove-classifiers:
-        2024.1.9
+        2024.2.2
     typing_extensions:
         4.9.0
     urllib3:
-        2.1.0
+        2.2.0
     validate-pyproject:
         0.13.post1.dev0+gb752273.d20230520
     wheel:

@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.87.1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.87.0...v1.87.1) (2024-02-02)
+
+
+### Documentation
+
+* add note re. permitting failure on Debian 11.0 master ([c399431](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/c399431d7c06ee382c1facb31e1326004e15828b))
+
 # [1.87.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.86.1...v1.87.0) (2024-01-15)
 
 

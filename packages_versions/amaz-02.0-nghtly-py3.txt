@@ -152,9 +152,9 @@ local:
     cyrus-sasl-lib:
         2.1.26-24.amzn2
     dbus:
-        1:1.10.24-7.amzn2.0.3
+        1:1.10.24-7.amzn2.0.4
     dbus-libs:
-        1:1.10.24-7.amzn2.0.3
+        1:1.10.24-7.amzn2.0.4
     device-mapper:
         7:1.02.170-6.amzn2.5
     device-mapper-libs:
@@ -322,9 +322,9 @@ local:
     nss-pem:
         1.0.3-5.amzn2
     nss-softokn:
-        3.90.0-6.amzn2
+        3.90.0-6.amzn2.0.1
     nss-softokn-freebl:
-        3.90.0-6.amzn2
+        3.90.0-6.amzn2.0.1
     nss-sysinit:
         3.90.0-2.amzn2.0.1
     nss-tools:
@@ -510,7 +510,7 @@ local:
     tcp_wrappers-libs:
         7.6-77.amzn2.0.2
     tzdata:
-        2023c-1.amzn2.0.1
+        2023d-1.amzn2.0.1
     ustr:
         1.0.4-16.amzn2.0.3
     util-linux:

@@ -2,7 +2,7 @@ opsu-15.5-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3007.0+0na.daef761
+          Salt: 3007.0+0na.fe80b71
  
 Python Version:
         Python: 3.11.5 (main, Sep 06 2023, 11:21:05) [GCC]
@@ -115,7 +115,7 @@ local:
     saltpath:
         /usr/lib/python3.11/site-packages/salt
     saltversion:
-        3007.0+0na.daef761
+        3007.0+0na.fe80b71
     saltversioninfo:
         - 3007
         - 0
@@ -135,7 +135,7 @@ local:
 local:
     ----------
     aaa_base:
-        84.87+git20180409.04c9dae-150300.10.6.2
+        84.87+git20180409.04c9dae-150300.10.9.1
     bash:
         4.4-150400.25.22
     bash-sh:
@@ -155,11 +155,11 @@ local:
     coreutils:
         8.32-150400.7.5
     cpio:
-        2.13-150400.1.98
+        2.13-150400.3.6.1
     cpp:
         7-3.9.1
     cpp7:
-        7.5.0+r278197-150000.4.35.1
+        7.5.0+r278197-150000.4.38.1
     cracklib:
         2.9.7-11.6.1
     cracklib-dict-small:
@@ -187,7 +187,7 @@ local:
     gcc:
         7-3.9.1
     gcc7:
-        7.5.0+r278197-150000.4.35.1
+        7.5.0+r278197-150000.4.38.1
     git:
         2.35.3-150300.10.33.1
     git-core:
@@ -227,7 +227,7 @@ local:
     libargon2-1:
         0.0+git20171227.670229c-2.14
     libasan4:
-        7.5.0+r278197-150000.4.35.1
+        7.5.0+r278197-150000.4.38.1
     libassuan0:
         2.5.5-150000.4.5.2
     libatomic1:
@@ -239,7 +239,7 @@ local:
     libaugeas0:
         1.12.0-150400.3.3.6
     libblkid1:
-        2.37.4-150500.7.16
+        2.37.4-150500.9.3.1
     libboost_system1_66_0:
         1.66.0-12.3.1
     libboost_thread1_66_0:
@@ -257,7 +257,7 @@ local:
     libcbor0:
         0.5.0-150100.4.6.1
     libcilkrts5:
-        7.5.0+r278197-150000.4.35.1
+        7.5.0+r278197-150000.4.38.1
     libcom_err2:
         1.46.4-150400.3.3.1
     libcrack2:
@@ -291,7 +291,7 @@ local:
     libexpat1:
         2.4.4-150400.3.12.1
     libfdisk1:
-        2.37.4-150500.7.16
+        2.37.4-150500.9.3.1
     libffi7:
         3.2.1.git259-10.8
     libfido2-1:
@@ -349,7 +349,7 @@ local:
     libmagic1:
         5.32-7.14.1
     libmount1:
-        2.37.4-150500.7.16
+        2.37.4-150500.9.3.1
     libmpc3:
         1.1.0-1.47
     libmpfr6:
@@ -411,19 +411,19 @@ local:
     libsigc-2_0-0:
         2.10.7-150400.3.3.1
     libsmartcols1:
-        2.37.4-150500.7.16
+        2.37.4-150500.9.3.1
     libsolv-tools:
         0.7.27-150400.3.11.2
     libsqlite3-0:
         3.44.0-150000.3.23.1
     libssh-config:
-        0.9.6-150400.1.5
+        0.9.8-150400.3.3.1
     libssh4:
-        0.9.6-150400.1.5
+        0.9.8-150400.3.3.1
     libstdc++6:
         13.2.1+git7813-150000.1.6.1
     libsystemd0:
-        249.16-150400.8.35.5
+        249.17-150400.8.40.1
     libtasn1:
         4.13-150000.4.8.1
     libtasn1-6:
@@ -435,9 +435,9 @@ local:
     libtsan0:
         11.3.0+git1637-150000.1.11.2
     libubsan0:
-        7.5.0+r278197-150000.4.35.1
+        7.5.0+r278197-150000.4.38.1
     libudev1:
-        249.16-150400.8.35.5
+        249.17-150400.8.40.1
     libunistring2:
         0.9.10-1.1
     libusb-1_0-0:
@@ -445,7 +445,7 @@ local:
     libutempter0:
         1.1.6-3.42
     libuuid1:
-        2.37.4-150500.7.16
+        2.37.4-150500.9.3.1
     libverto1:
         0.2.6-3.20
     libxcrypt-devel:
@@ -499,7 +499,7 @@ local:
     p11-kit-tools:
         0.23.22-150500.8.3.1
     pam:
-        1.3.0-150000.6.61.1
+        1.3.0-150000.6.66.1
     pam-config:
         1.1-3.3.1
     patterns-base-fips:
@@ -541,7 +541,7 @@ local:
     python3-cffi:
         1.13.2-3.2.5
     python3-chardet:
-        3.0.4-3.23
+        3.0.4-150000.5.3.1
     python3-cryptography:
         3.3.2-150400.23.1
     python3-devel:
@@ -593,7 +593,7 @@ local:
     sudo:
         1.9.12p1-150500.5.1
     suse-module-tools:
-        15.5.3-150500.3.6.1
+        15.5.4-150500.3.9.1
     system-group-hardware:
         20170617-150400.24.2.1
     system-group-kvm:
@@ -601,7 +601,7 @@ local:
     system-user-root:
         20190513-3.3.1
     systemd:
-        249.16-150400.8.35.5
+        249.17-150400.8.40.1
     systemd-default-settings:
         0.7-3.2.1
     systemd-default-settings-branding-openSUSE:
@@ -619,11 +619,11 @@ local:
     timezone:
         2023c-150000.75.23.1
     udev:
-        249.16-150400.8.35.5
+        249.17-150400.8.40.1
     update-alternatives:
         1.19.0.4-150000.4.4.1
     util-linux:
-        2.37.4-150500.7.16
+        2.37.4-150500.9.3.1
     which:
         2.21-2.20
     zypper:
@@ -636,11 +636,11 @@ local:
     Jinja2:
         3.1.3
     MarkupSafe:
-        2.1.3
+        2.1.4
     PyYAML:
         6.0.1
     aiohttp:
-        3.9.1
+        3.9.3
     aiosignal:
         1.3.1
     annotated-types:
@@ -650,7 +650,7 @@ local:
     autocommand:
         2.2.2
     certifi:
-        2023.11.17
+        2024.2.2
     cffi:
         1.16.0
     charset-normalizer:
@@ -660,7 +660,7 @@ local:
     contextvars:
         2.4
     cryptography:
-        41.0.7
+        42.0.2
     distro:
         1.9.0
     frozenlist:
@@ -690,7 +690,7 @@ local:
     msgpack:
         1.0.7
     multidict:
-        6.0.4
+        6.0.5
     packaging:
         23.2
     pip:
@@ -698,23 +698,23 @@ local:
     portend:
         3.2.0
     psutil:
-        5.9.7
+        5.9.8
     pyOpenSSL:
-        23.3.0
+        24.0.0
     pycparser:
         2.21
     pycryptodomex:
         3.20.0
     pydantic:
-        2.5.3
+        2.6.0
     pydantic_core:
-        2.14.6
+        2.16.1
     python-dateutil:
         2.8.2
     python-gnupg:
         0.5.2
     pytz:
-        2023.3.post1
+        2024.1
     pyzmq:
         25.1.2
     requests:
@@ -722,7 +722,7 @@ local:
     rpm_vercmp:
         0.1.2
     salt:
-        3007.0+0na.daef761
+        3007.0+0na.fe80b71
     setproctitle:
         1.3.3
     setuptools:
@@ -738,7 +738,7 @@ local:
     typing_extensions:
         4.9.0
     urllib3:
-        2.1.0
+        2.2.0
     wheel:
         0.42.0
     yarl:

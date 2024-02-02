@@ -2,10 +2,10 @@ cstr-08.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3007.0+0na.daef761
+          Salt: 3007.0+0na.fe80b71
  
 Python Version:
-        Python: 3.11.5 (main, Oct 25 2023, 14:45:39) [GCC 8.5.0 20210514 (Red Hat 8.5.0-21)]
+        Python: 3.11.5 (main, Jan 12 2024, 23:13:15) [GCC 8.5.0 20210514 (Red Hat 8.5.0-21)]
  
 Dependency Versions:
           cffi: 1.16.0
@@ -113,7 +113,7 @@ local:
     saltpath:
         /usr/lib/python3.11/site-packages/salt
     saltversion:
-        3007.0+0na.daef761
+        3007.0+0na.fe80b71
     saltversioninfo:
         - 3007
         - 0
@@ -197,13 +197,13 @@ local:
     dnf-data:
         4.7.0-20.el8
     dnf-plugins-core:
-        4.0.21-24.el8
+        4.0.21-25.el8
     dracut:
-        049-231.git20231115.el8
+        049-233.git20240115.el8
     dracut-network:
-        049-231.git20231115.el8
+        049-233.git20240115.el8
     dracut-squash:
-        049-231.git20231115.el8
+        049-233.git20240115.el8
     elfutils-default-yama-scope:
         0.190-2.el8
     elfutils-libelf:
@@ -237,19 +237,19 @@ local:
     git-core-doc:
         2.43.0-1.el8
     glib2:
-        2.56.4-161.el8
+        2.56.4-162.el8
     glibc:
-        2.28-246.el8
+        2.28-251.el8
     glibc-common:
-        2.28-246.el8
+        2.28-251.el8
     glibc-devel:
-        2.28-246.el8
+        2.28-251.el8
     glibc-headers:
-        2.28-246.el8
+        2.28-251.el8
     glibc-langpack-en:
-        2.28-246.el8
+        2.28-251.el8
     glibc-minimal-langpack:
-        2.28-246.el8
+        2.28-251.el8
     gmp:
         1:6.1.2-10.el8
     gnupg2:
@@ -281,7 +281,7 @@ local:
     json-c:
         0.13.1-3.el8
     kernel-headers:
-        4.18.0-532.el8
+        4.18.0-536.el8
     kexec-tools:
         2.0.26-12.el8
     keyutils-libs:
@@ -329,7 +329,7 @@ local:
     libdb-utils:
         5.3.28-42.el8_4
     libdnf:
-        0.63.0-18.el8
+        0.63.0-19.el8
     libedit:
         3.1-23.20170329cvs.el8
     libfdisk:
@@ -447,23 +447,23 @@ local:
     openldap:
         2.4.46-18.el8
     openssh:
-        8.0p1-21.el8
+        8.0p1-23.el8
     openssh-clients:
-        8.0p1-21.el8
+        8.0p1-23.el8
     openssh-server:
-        8.0p1-21.el8
+        8.0p1-23.el8
     openssl:
-        1:1.1.1k-11.el8
+        1:1.1.1k-12.el8
     openssl-devel:
-        1:1.1.1k-11.el8
+        1:1.1.1k-12.el8
     openssl-libs:
-        1:1.1.1k-11.el8
+        1:1.1.1k-12.el8
     p11-kit:
         0.23.22-2.el8
     p11-kit-trust:
         0.23.22-2.el8
     pam:
-        1.3.1-30.el8
+        1.3.1-31.el8
     pcre:
         8.42-6.el8
     pcre2:
@@ -499,7 +499,7 @@ local:
     perl-Git:
         2.43.0-1.el8
     perl-HTTP-Tiny:
-        0.074-2.el8
+        0.074-3.el8
     perl-IO:
         1.38-422.el8
     perl-IO-Socket-IP:
@@ -569,9 +569,9 @@ local:
     pkgconf-pkg-config:
         1.4.2-1.el8
     platform-python:
-        3.6.8-58.el8
+        3.6.8-59.el8
     platform-python-devel:
-        3.6.8-58.el8
+        3.6.8-59.el8
     platform-python-pip:
         9.0.3-23.el8
     platform-python-setuptools:
@@ -593,17 +593,17 @@ local:
     python3-dnf:
         4.7.0-20.el8
     python3-dnf-plugins-core:
-        4.0.21-24.el8
+        4.0.21-25.el8
     python3-gpg:
         1.13.1-11.el8
     python3-hawkey:
-        0.63.0-18.el8
+        0.63.0-19.el8
     python3-libcomps:
         0.1.18-1.el8
     python3-libdnf:
-        0.63.0-18.el8
+        0.63.0-19.el8
     python3-libs:
-        3.6.8-58.el8
+        3.6.8-59.el8
     python3-pip:
         9.0.3-23.el8
     python3-pip-wheel:
@@ -623,11 +623,11 @@ local:
     python3-systemd:
         234-8.el8
     python3.11:
-        3.11.5-1.el8
+        3.11.5-2.el8
     python3.11-devel:
-        3.11.5-1.el8
+        3.11.5-2.el8
     python3.11-libs:
-        3.11.5-1.el8
+        3.11.5-2.el8
     python3.11-pip:
         22.3.1-4.el8
     python3.11-pip-wheel:
@@ -659,7 +659,7 @@ local:
     snappy:
         1.1.8-3.el8
     sqlite-libs:
-        3.26.0-18.el8
+        3.26.0-19.el8
     squashfs-tools:
         4.3-21.el8
     sudo:
@@ -667,19 +667,19 @@ local:
     swig:
         3.0.12-19.module_el8.3.0+386+5db24358
     systemd:
-        239-78.el8
+        239-79.el8
     systemd-libs:
-        239-78.el8
+        239-79.el8
     systemd-pam:
-        239-78.el8
+        239-79.el8
     systemd-udev:
-        239-78.el8
+        239-79.el8
     tar:
         2:1.30-9.el8
     tpm2-tss:
         2.3.2-6.el8
     tzdata:
-        2023c-1.el8
+        2023d-1.el8
     util-linux:
         2.32.1-43.el8
     vim-minimal:
@@ -693,7 +693,7 @@ local:
     yum:
         4.7.0-20.el8
     yum-utils:
-        4.0.21-24.el8
+        4.0.21-25.el8
     zlib:
         1.2.11-25.el8
     zlib-devel:
@@ -706,11 +706,11 @@ local:
     Jinja2:
         3.1.3
     MarkupSafe:
-        2.1.3
+        2.1.4
     PyYAML:
         6.0.1
     aiohttp:
-        3.9.1
+        3.9.3
     aiosignal:
         1.3.1
     annotated-types:
@@ -720,7 +720,7 @@ local:
     autocommand:
         2.2.2
     certifi:
-        2023.11.17
+        2024.2.2
     cffi:
         1.16.0
     charset-normalizer:
@@ -730,7 +730,7 @@ local:
     contextvars:
         2.4
     cryptography:
-        41.0.7
+        42.0.2
     distro:
         1.9.0
     frozenlist:
@@ -760,7 +760,7 @@ local:
     msgpack:
         1.0.7
     multidict:
-        6.0.4
+        6.0.5
     packaging:
         23.2
     pip:
@@ -768,23 +768,23 @@ local:
     portend:
         3.2.0
     psutil:
-        5.9.7
+        5.9.8
     pyOpenSSL:
-        23.3.0
+        24.0.0
     pycparser:
         2.21
     pycryptodomex:
         3.20.0
     pydantic:
-        2.5.3
+        2.6.0
     pydantic_core:
-        2.14.6
+        2.16.1
     python-dateutil:
         2.8.2
     python-gnupg:
         0.5.2
     pytz:
-        2023.3.post1
+        2024.1
     pyzmq:
         25.1.2
     requests:
@@ -792,7 +792,7 @@ local:
     rpm_vercmp:
         0.1.2
     salt:
-        3007.0+0na.daef761
+        3007.0+0na.fe80b71
     setproctitle:
         1.3.3
     setuptools:
@@ -808,7 +808,7 @@ local:
     typing_extensions:
         4.9.0
     urllib3:
-        2.1.0
+        2.2.0
     wheel:
         0.42.0
     yarl:

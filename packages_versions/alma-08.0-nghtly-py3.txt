@@ -221,7 +221,7 @@ local:
     gnupg2:
         2.2.20-3.el8_6
     gnutls:
-        3.6.16-8.el8_9
+        3.6.16-8.el8_9.1
     gpg-pubkey.(none):
         3abb34f8-5ffd890e,ced7258b-6525146f,de57bfbe-53a9be98
     gpgme:
@@ -393,11 +393,11 @@ local:
     openldap:
         2.4.46-18.el8
     openssh:
-        8.0p1-19.el8_8
+        8.0p1-19.el8_9.2
     openssh-clients:
-        8.0p1-19.el8_8
+        8.0p1-19.el8_9.2
     openssh-server:
-        8.0p1-19.el8_8
+        8.0p1-19.el8_9.2
     openssl:
         1:1.1.1k-12.el8_9
     openssl-devel:
@@ -521,9 +521,9 @@ local:
     pkgconf-pkg-config:
         1.4.2-1.el8
     platform-python:
-        3.6.8-56.el8_9.alma.1
+        3.6.8-56.el8_9.3.alma.1
     platform-python-devel:
-        3.6.8-56.el8_9.alma.1
+        3.6.8-56.el8_9.3.alma.1
     platform-python-pip:
         9.0.3-23.el8
     platform-python-setuptools:
@@ -553,7 +553,7 @@ local:
     python3-libdnf:
         0.63.0-17.el8_9.alma
     python3-libs:
-        3.6.8-56.el8_9.alma.1
+        3.6.8-56.el8_9.3.alma.1
     python3-pip:
         9.0.3-23.el8
     python3-pip-wheel:
@@ -597,7 +597,7 @@ local:
     shadow-utils:
         2:4.6-19.el8
     sqlite-libs:
-        3.26.0-18.el8_8
+        3.26.0-19.el8_9
     sudo:
         1.8.29-10.el8
     swig:
