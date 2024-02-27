@@ -454,7 +454,7 @@ local:
     libssh-4:
         0.9.3-2ubuntu2.5
     libssl1.1:
-        1.1.1f-1ubuntu2.20
+        1.1.1f-1ubuntu2.22
     libstdc++6:
         10.5.0-1ubuntu1~20.04
     libstemmer0d:
@@ -476,7 +476,7 @@ local:
     libwrap0:
         7.6.q-30
     libxml2:
-        2.9.10+dfsg-5ubuntu0.20.04.6
+        2.9.10+dfsg-5ubuntu0.20.04.7
     libyaml-0-2:
         0.2.2-1
     libzstd1:
@@ -484,7 +484,7 @@ local:
     locales:
         2.31-0ubuntu9.14
     login:
-        1:4.8.1-1ubuntu5.20.04.4
+        1:4.8.1-1ubuntu5.20.04.5
     logsave:
         1.45.5-2ubuntu1.1
     lsb-base:
@@ -510,11 +510,11 @@ local:
     openssh-sftp-server:
         1:8.2p1-4ubuntu0.11
     openssl:
-        1.1.1f-1ubuntu2.20
+        1.1.1f-1ubuntu2.22
     packagekit:
         1.1.13-2ubuntu1.1
     passwd:
-        1:4.8.1-1ubuntu5.20.04.4
+        1:4.8.1-1ubuntu5.20.04.5
     pci.ids:
         0.0~2020.03.20-1
     pciutils:

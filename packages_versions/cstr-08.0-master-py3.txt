@@ -2,10 +2,10 @@ cstr-08.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3007.0+0na.fe80b71
+          Salt: 3007.0+0na.6e10b5b
  
 Python Version:
-        Python: 3.11.5 (main, Jan 12 2024, 23:13:15) [GCC 8.5.0 20210514 (Red Hat 8.5.0-21)]
+        Python: 3.11.7 (main, Jan 26 2024, 19:22:20) [GCC 8.5.0 20210514 (Red Hat 8.5.0-21)]
  
 Dependency Versions:
           cffi: 1.16.0
@@ -107,13 +107,13 @@ local:
     pythonversion:
         - 3
         - 11
-        - 5
+        - 7
         - final
         - 0
     saltpath:
         /usr/lib/python3.11/site-packages/salt
     saltversion:
-        3007.0+0na.fe80b71
+        3007.0+0na.6e10b5b
     saltversioninfo:
         - 3007
         - 0
@@ -237,7 +237,7 @@ local:
     git-core-doc:
         2.43.0-1.el8
     glib2:
-        2.56.4-162.el8
+        2.56.4-163.el8
     glibc:
         2.28-251.el8
     glibc-common:
@@ -251,15 +251,15 @@ local:
     glibc-minimal-langpack:
         2.28-251.el8
     gmp:
-        1:6.1.2-10.el8
+        1:6.1.2-12.el8
     gnupg2:
         2.2.20-3.el8
     gnutls:
-        3.6.16-7.el8
+        3.6.16-8.el8.1
     gpg-pubkey.(none):
         73d76b3f-63dace60,8483c65d-5ccc5b19
     gpgme:
-        1.13.1-11.el8
+        1.13.1-12.el8
     grep:
         3.1-6.el8
     groff-base:
@@ -281,9 +281,9 @@ local:
     json-c:
         0.13.1-3.el8
     kernel-headers:
-        4.18.0-536.el8
+        4.18.0-540.el8
     kexec-tools:
-        2.0.26-12.el8
+        2.0.26-13.el8
     keyutils-libs:
         1.5.10-9.el8
     keyutils-libs-devel:
@@ -447,11 +447,11 @@ local:
     openldap:
         2.4.46-18.el8
     openssh:
-        8.0p1-23.el8
+        8.0p1-24.el8
     openssh-clients:
-        8.0p1-23.el8
+        8.0p1-24.el8
     openssh-server:
-        8.0p1-23.el8
+        8.0p1-24.el8
     openssl:
         1:1.1.1k-12.el8
     openssl-devel:
@@ -463,7 +463,7 @@ local:
     p11-kit-trust:
         0.23.22-2.el8
     pam:
-        1.3.1-31.el8
+        1.3.1-32.el8
     pcre:
         8.42-6.el8
     pcre2:
@@ -573,7 +573,7 @@ local:
     platform-python-devel:
         3.6.8-59.el8
     platform-python-pip:
-        9.0.3-23.el8
+        9.0.3-24.el8
     platform-python-setuptools:
         39.2.0-7.el8
     popt:
@@ -595,7 +595,7 @@ local:
     python3-dnf-plugins-core:
         4.0.21-25.el8
     python3-gpg:
-        1.13.1-11.el8
+        1.13.1-12.el8
     python3-hawkey:
         0.63.0-19.el8
     python3-libcomps:
@@ -605,9 +605,9 @@ local:
     python3-libs:
         3.6.8-59.el8
     python3-pip:
-        9.0.3-23.el8
+        9.0.3-24.el8
     python3-pip-wheel:
-        9.0.3-23.el8
+        9.0.3-24.el8
     python3-rpm:
         4.14.3-31.el8
     python3-rpm-generators:
@@ -623,15 +623,15 @@ local:
     python3-systemd:
         234-8.el8
     python3.11:
-        3.11.5-2.el8
+        3.11.7-1.el8
     python3.11-devel:
-        3.11.5-2.el8
+        3.11.7-1.el8
     python3.11-libs:
-        3.11.5-2.el8
+        3.11.7-1.el8
     python3.11-pip:
-        22.3.1-4.el8
+        22.3.1-5.el8
     python3.11-pip-wheel:
-        22.3.1-4.el8
+        22.3.1-5.el8
     python3.11-setuptools:
         65.5.1-2.el8
     python3.11-setuptools-wheel:
@@ -653,7 +653,7 @@ local:
     sed:
         4.5-5.el8
     setup:
-        2.12.2-9.el8
+        2.12.2-11.el8
     shadow-utils:
         2:4.6-22.el8
     snappy:
@@ -663,7 +663,7 @@ local:
     squashfs-tools:
         4.3-21.el8
     sudo:
-        1.8.29-10.el8
+        1.9.5p2-1.el8
     swig:
         3.0.12-19.module_el8.3.0+386+5db24358
     systemd:
@@ -679,7 +679,7 @@ local:
     tpm2-tss:
         2.3.2-6.el8
     tzdata:
-        2023d-1.el8
+        2024a-1.el8
     util-linux:
         2.32.1-43.el8
     vim-minimal:
@@ -706,7 +706,7 @@ local:
     Jinja2:
         3.1.3
     MarkupSafe:
-        2.1.4
+        2.1.5
     PyYAML:
         6.0.1
     aiohttp:
@@ -730,7 +730,7 @@ local:
     contextvars:
         2.4
     cryptography:
-        42.0.2
+        42.0.5
     distro:
         1.9.0
     frozenlist:
@@ -776,9 +776,9 @@ local:
     pycryptodomex:
         3.20.0
     pydantic:
-        2.6.0
+        2.6.2
     pydantic_core:
-        2.16.1
+        2.16.3
     python-dateutil:
         2.8.2
     python-gnupg:
@@ -792,7 +792,7 @@ local:
     rpm_vercmp:
         0.1.2
     salt:
-        3007.0+0na.fe80b71
+        3007.0+0na.6e10b5b
     setproctitle:
         1.3.3
     setuptools:
@@ -800,15 +800,15 @@ local:
     six:
         1.16.0
     tempora:
-        5.5.0
+        5.5.1
     timelib:
         0.3.0
     tornado:
         6.4
     typing_extensions:
-        4.9.0
+        4.10.0
     urllib3:
-        2.2.0
+        2.2.1
     wheel:
         0.42.0
     yarl:

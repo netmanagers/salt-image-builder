@@ -135,7 +135,7 @@ local:
     bzip2-libs:
         1.0.6-13.amzn2.0.3
     ca-certificates:
-        2023.2.62-1.amzn2.0.1
+        2023.2.64-1.amzn2.0.1
     chkconfig:
         1.7.4-1.amzn2.0.2
     coreutils:
@@ -319,17 +319,17 @@ local:
     nspr:
         4.35.0-1.amzn2
     nss:
-        3.90.0-2.amzn2.0.1
+        3.90.0-2.amzn2.0.2
     nss-pem:
         1.0.3-5.amzn2
     nss-softokn:
-        3.90.0-6.amzn2.0.1
+        3.90.0-6.amzn2.0.2
     nss-softokn-freebl:
-        3.90.0-6.amzn2.0.1
+        3.90.0-6.amzn2.0.2
     nss-sysinit:
-        3.90.0-2.amzn2.0.1
+        3.90.0-2.amzn2.0.2
     nss-tools:
-        3.90.0-2.amzn2.0.1
+        3.90.0-2.amzn2.0.2
     nss-util:
         3.90.0-1.amzn2
     openldap:
@@ -349,7 +349,7 @@ local:
     p11-kit-trust:
         0.23.22-1.amzn2.0.1
     pam:
-        1.1.8-23.amzn2.0.1
+        1.1.8-23.amzn2.0.2
     pciutils:
         3.5.1-3.amzn2
     pciutils-libs:
@@ -357,7 +357,7 @@ local:
     pcre:
         8.32-17.amzn2.0.3
     pcre2:
-        10.23-11.amzn2.0.1
+        10.23-11.amzn2.0.2
     perl:
         4:5.16.3-299.amzn2.0.2
     perl-Carp:
@@ -457,7 +457,7 @@ local:
     python3-idna:
         2.7-2.amzn2.0.2
     python3-jinja2:
-        2.7.2-4.amzn2.0.2
+        2.7.2-4.amzn2.0.3
     python3-libs:
         3.7.16-1.amzn2.0.4
     python3-markupsafe:
@@ -501,17 +501,17 @@ local:
     sqlite:
         3.7.17-8.amzn2.1.2
     sudo:
-        1.8.23-10.amzn2.3.5
+        1.8.23-10.amzn2.3.7
     system-release:
         1:2-16.amzn2
     systemd:
-        219-78.amzn2.0.22
+        219-78.amzn2.0.23
     systemd-libs:
-        219-78.amzn2.0.22
+        219-78.amzn2.0.23
     tcp_wrappers-libs:
         7.6-77.amzn2.0.2
     tzdata:
-        2023d-1.amzn2.0.1
+        2024a-1.amzn2.0.1
     ustr:
         1.0.4-16.amzn2.0.3
     util-linux:

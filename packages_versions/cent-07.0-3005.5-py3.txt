@@ -552,7 +552,7 @@ local:
     tcp_wrappers-libs:
         7.6-77.el7
     tzdata:
-        2023c-1.el7
+        2024a-1.el7
     ustr:
         1.0.4-16.el7
     util-linux:

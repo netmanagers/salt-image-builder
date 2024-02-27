@@ -130,7 +130,7 @@ local:
     apt-transport-https:
         2.4.11
     base-files:
-        12ubuntu4.5
+        12ubuntu4.6
     base-passwd:
         3.5.52build1
     bash:
@@ -144,7 +144,7 @@ local:
     ca-certificates:
         20230311ubuntu0.22.04.1
     coreutils:
-        8.32-4.1ubuntu1
+        8.32-4.1ubuntu1.1
     curl:
         7.81.0-1ubuntu1.15
     dash:
@@ -314,7 +314,7 @@ local:
     libidn2-0:
         2.3.2-2build1
     libip4tc2:
-        1.8.7-1ubuntu5.1
+        1.8.7-1ubuntu5.2
     libjson-c5:
         0.15-3~ubuntu1.22.04.2
     libk5crypto3:
@@ -416,7 +416,7 @@ local:
     libssh-4:
         0.9.6-2ubuntu0.22.04.3
     libssl3:
-        3.0.2-0ubuntu1.13
+        3.0.2-0ubuntu1.15
     libstdc++6:
         12.3.0-1ubuntu1~22.04
     libstemmer0d:
@@ -442,7 +442,7 @@ local:
     libwrap0:
         7.6.q-31build2
     libxml2:
-        2.9.13+dfsg-1ubuntu0.3
+        2.9.13+dfsg-1ubuntu0.4
     libxmlb2:
         0.3.6-2build1
     libxxhash0:
@@ -454,7 +454,7 @@ local:
     locales:
         2.35-0ubuntu3.6
     login:
-        1:4.8.1-2ubuntu2.1
+        1:4.8.1-2ubuntu2.2
     logsave:
         1.46.5-2ubuntu1.1
     lsb-base:
@@ -482,11 +482,11 @@ local:
     openssh-sftp-server:
         1:8.9p1-3ubuntu0.6
     openssl:
-        3.0.2-0ubuntu1.13
+        3.0.2-0ubuntu1.15
     packagekit:
         1.2.5-2ubuntu2
     passwd:
-        1:4.8.1-2ubuntu2.1
+        1:4.8.1-2ubuntu2.2
     pci.ids:
         0.0~2022.01.22-1
     pciutils:
@@ -508,11 +508,11 @@ local:
     procps:
         2:3.3.17-6ubuntu2.1
     python-apt-common:
-        2.4.0ubuntu2
+        2.4.0ubuntu3
     python3:
         3.10.6-1~22.04
     python3-apt:
-        2.4.0ubuntu2
+        2.4.0ubuntu3
     python3-blinker:
         1.4+dfsg1-0.4
     python3-certifi:

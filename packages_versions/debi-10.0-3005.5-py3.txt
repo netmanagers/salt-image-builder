@@ -283,7 +283,7 @@ local:
     libgmp10:
         2:6.1.2+dfsg-4+deb10u1
     libgnutls30:
-        3.6.7-4+deb10u11
+        3.6.7-4+deb10u12
     libgpg-error0:
         1.35-1
     libgssapi-krb5-2:
@@ -475,7 +475,7 @@ local:
     sensible-utils:
         0.0.12
     sudo:
-        1.8.27-1+deb10u5
+        1.8.27-1+deb10u6
     systemd:
         241-7~deb10u10
     systemd-sysv:

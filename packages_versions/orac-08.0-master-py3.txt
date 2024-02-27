@@ -2,7 +2,7 @@ orac-08.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3007.0+0na.fe80b71
+          Salt: 3007.0+0na.6e10b5b
  
 Python Version:
         Python: 3.11.5 (main, Nov 15 2023, 18:13:17) [GCC 8.5.0 20210514 (Red Hat 8.5.0-20.0.1)]
@@ -114,7 +114,7 @@ local:
     saltpath:
         /usr/lib/python3.11/site-packages/salt
     saltversion:
-        3007.0+0na.fe80b71
+        3007.0+0na.6e10b5b
     saltversioninfo:
         - 3007
         - 0
@@ -158,7 +158,7 @@ local:
     coreutils-common:
         8.30-15.0.1.el8
     cpp:
-        8.5.0-20.0.2.el8
+        8.5.0-20.0.3.el8
     cracklib:
         2.9.6-15.el8
     cracklib-dicts:
@@ -230,7 +230,7 @@ local:
     gawk:
         4.2.1-4.el8
     gcc:
-        8.5.0-20.0.2.el8
+        8.5.0-20.0.3.el8
     gdbm:
         1:1.18-2.el8
     gdbm-libs:
@@ -258,7 +258,7 @@ local:
     gnupg2:
         2.2.20-3.el8_6
     gnutls:
-        3.6.16-8.el8_9
+        3.6.16-8.el8_9.1
     gpg-pubkey.(none):
         73d76b3f-63dace60,ad986da3-5cabf60d
     gpgme:
@@ -292,7 +292,7 @@ local:
     kbd-misc:
         2.0.4-11.el8
     kernel-headers:
-        4.18.0-513.11.0.1.el8_9
+        4.18.0-513.18.0.1.el8_9
     keyutils-libs:
         1.5.10-9.el8
     keyutils-libs-devel:
@@ -352,11 +352,11 @@ local:
     libffi:
         3.1-24.el8
     libgcc:
-        8.5.0-20.0.2.el8
+        8.5.0-20.0.3.el8
     libgcrypt:
         1.8.5-7.el8_6
     libgomp:
-        8.5.0-20.0.2.el8
+        8.5.0-20.0.3.el8
     libgpg-error:
         1.31-1.el8
     libidn2:
@@ -412,7 +412,7 @@ local:
     libssh-config:
         0.9.6-13.el8_9
     libstdc++:
-        8.5.0-20.0.2.el8
+        8.5.0-20.0.3.el8
     libtasn1:
         4.13-4.el8_7
     libtirpc:
@@ -470,11 +470,11 @@ local:
     openldap:
         2.4.46-18.el8
     openssh:
-        8.0p1-19.el8_9.2
+        8.0p1-19.0.1.el8_9.2
     openssh-clients:
-        8.0p1-19.el8_9.2
+        8.0p1-19.0.1.el8_9.2
     openssh-server:
-        8.0p1-19.el8_9.2
+        8.0p1-19.0.1.el8_9.2
     openssl:
         1:1.1.1k-12.el8_9
     openssl-devel:
@@ -642,7 +642,7 @@ local:
     python3-pip-wheel:
         9.0.3-23.el8
     python3-rpm:
-        4.14.3-26.0.1.el8
+        4.14.3-28.0.2.el8_9
     python3-rpm-generators:
         5-8.el8
     python3-rpm-macros:
@@ -680,11 +680,11 @@ local:
     rootfiles:
         8.1-22.el8
     rpm:
-        4.14.3-26.0.1.el8
+        4.14.3-28.0.2.el8_9
     rpm-build-libs:
-        4.14.3-26.0.1.el8
+        4.14.3-28.0.2.el8_9
     rpm-libs:
-        4.14.3-26.0.1.el8
+        4.14.3-28.0.2.el8_9
     rsyslog:
         8.2102.0-15.el8
     sed:
@@ -696,7 +696,7 @@ local:
     sqlite-libs:
         3.26.0-19.0.1.el8_9
     sudo:
-        1.8.29-10.el8
+        1.9.5p2-1.el8_9
     swig:
         3.0.12-19.module+el8.3.0+7654+9c81efad
     systemd:
@@ -712,7 +712,7 @@ local:
     tpm2-tss:
         2.3.2-5.el8
     tzdata:
-        2023d-1.0.1.el8
+        2024a-1.0.1.el8
     userspace-rcu:
         0.10.1-4.el8
     util-linux:
@@ -739,7 +739,7 @@ local:
     Jinja2:
         3.1.3
     MarkupSafe:
-        2.1.4
+        2.1.5
     PyYAML:
         6.0.1
     aiohttp:
@@ -763,7 +763,7 @@ local:
     contextvars:
         2.4
     cryptography:
-        42.0.2
+        42.0.5
     distro:
         1.9.0
     frozenlist:
@@ -809,9 +809,9 @@ local:
     pycryptodomex:
         3.20.0
     pydantic:
-        2.6.0
+        2.6.2
     pydantic_core:
-        2.16.1
+        2.16.3
     python-dateutil:
         2.8.2
     python-gnupg:
@@ -825,7 +825,7 @@ local:
     rpm_vercmp:
         0.1.2
     salt:
-        3007.0+0na.fe80b71
+        3007.0+0na.6e10b5b
     setproctitle:
         1.3.3
     setuptools:
@@ -833,15 +833,15 @@ local:
     six:
         1.16.0
     tempora:
-        5.5.0
+        5.5.1
     timelib:
         0.3.0
     tornado:
         6.4
     typing_extensions:
-        4.9.0
+        4.10.0
     urllib3:
-        2.2.0
+        2.2.1
     wheel:
         0.42.0
     yarl:

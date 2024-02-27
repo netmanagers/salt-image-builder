@@ -208,19 +208,21 @@ local:
     glib2:
         2.56.4-161.el8
     glibc:
-        2.28-236.el8_9.7
+        2.28-236.el8_9.12
     glibc-common:
-        2.28-236.el8_9.7
+        2.28-236.el8_9.12
+    glibc-gconv-extra:
+        2.28-236.el8_9.12
     glibc-langpack-en:
-        2.28-236.el8_9.7
+        2.28-236.el8_9.12
     glibc-minimal-langpack:
-        2.28-236.el8_9.7
+        2.28-236.el8_9.12
     gmp:
         1:6.1.2-10.el8
     gnupg2:
         2.2.20-3.el8_6
     gnutls:
-        3.6.16-8.el8_9
+        3.6.16-8.el8_9.1
     gpg-pubkey.(none):
         6d745a60-60287f36,de57bfbe-53a9be98
     gpgme:
@@ -558,7 +560,7 @@ local:
     python3-pip-wheel:
         9.0.3-23.el8.rocky.0
     python3-rpm:
-        4.14.3-26.el8
+        4.14.3-28.el8_9
     python3-rpm-generators:
         5-8.el8
     python3-rpm-macros:
@@ -586,11 +588,11 @@ local:
     rootfiles:
         8.1-22.el8
     rpm:
-        4.14.3-26.el8
+        4.14.3-28.el8_9
     rpm-build-libs:
-        4.14.3-26.el8
+        4.14.3-28.el8_9
     rpm-libs:
-        4.14.3-26.el8
+        4.14.3-28.el8_9
     salt:
         3005.5-2.el8
     salt-minion:
@@ -604,7 +606,7 @@ local:
     sqlite-libs:
         3.26.0-19.el8_9
     sudo:
-        1.8.29-10.el8
+        1.9.5p2-1.el8_9
     swig:
         3.0.12-19.module+el8.4.0+385+82b6e804
     systemd:
@@ -624,7 +626,7 @@ local:
     trousers-lib:
         0.3.15-1.el8
     tzdata:
-        2023d-1.el8
+        2024a-1.el8
     util-linux:
         2.32.1-43.el8
     vim-minimal:

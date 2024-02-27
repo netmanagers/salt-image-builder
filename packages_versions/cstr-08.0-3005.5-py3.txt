@@ -225,7 +225,7 @@ local:
     git-core-doc:
         2.43.0-1.el8
     glib2:
-        2.56.4-162.el8
+        2.56.4-163.el8
     glibc:
         2.28-251.el8
     glibc-common:
@@ -235,15 +235,15 @@ local:
     glibc-minimal-langpack:
         2.28-251.el8
     gmp:
-        1:6.1.2-10.el8
+        1:6.1.2-12.el8
     gnupg2:
         2.2.20-3.el8
     gnutls:
-        3.6.16-7.el8
+        3.6.16-8.el8.1
     gpg-pubkey.(none):
         8483c65d-5ccc5b19,de57bfbe-53a9be98
     gpgme:
-        1.13.1-11.el8
+        1.13.1-12.el8
     grep:
         3.1-6.el8
     groff-base:
@@ -265,7 +265,7 @@ local:
     json-c:
         0.13.1-3.el8
     kexec-tools:
-        2.0.26-12.el8
+        2.0.26-13.el8
     keyutils-libs:
         1.5.10-9.el8
     keyutils-libs-devel:
@@ -421,11 +421,11 @@ local:
     openldap:
         2.4.46-18.el8
     openssh:
-        8.0p1-23.el8
+        8.0p1-24.el8
     openssh-clients:
-        8.0p1-23.el8
+        8.0p1-24.el8
     openssh-server:
-        8.0p1-23.el8
+        8.0p1-24.el8
     openssl:
         1:1.1.1k-12.el8
     openssl-devel:
@@ -437,7 +437,7 @@ local:
     p11-kit-trust:
         0.23.22-2.el8
     pam:
-        1.3.1-31.el8
+        1.3.1-32.el8
     pciutils:
         3.7.0-3.el8
     pciutils-libs:
@@ -551,7 +551,7 @@ local:
     platform-python-devel:
         3.6.8-59.el8
     platform-python-pip:
-        9.0.3-23.el8
+        9.0.3-24.el8
     platform-python-setuptools:
         39.2.0-7.el8
     popt:
@@ -573,7 +573,7 @@ local:
     python3-dnf-plugins-core:
         4.0.21-25.el8
     python3-gpg:
-        1.13.1-11.el8
+        1.13.1-12.el8
     python3-hawkey:
         0.63.0-19.el8
     python3-libcomps:
@@ -583,9 +583,9 @@ local:
     python3-libs:
         3.6.8-59.el8
     python3-pip:
-        9.0.3-23.el8
+        9.0.3-24.el8
     python3-pip-wheel:
-        9.0.3-23.el8
+        9.0.3-24.el8
     python3-rpm:
         4.14.3-31.el8
     python3-rpm-generators:
@@ -621,7 +621,7 @@ local:
     sed:
         4.5-5.el8
     setup:
-        2.12.2-9.el8
+        2.12.2-11.el8
     shadow-utils:
         2:4.6-22.el8
     snappy:
@@ -631,7 +631,7 @@ local:
     squashfs-tools:
         4.3-21.el8
     sudo:
-        1.8.29-10.el8
+        1.9.5p2-1.el8
     swig:
         3.0.12-19.module_el8.3.0+386+5db24358
     systemd:
@@ -647,7 +647,7 @@ local:
     tpm2-tss:
         2.3.2-6.el8
     tzdata:
-        2023d-1.el8
+        2024a-1.el8
     util-linux:
         2.32.1-43.el8
     vim-minimal:

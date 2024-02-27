@@ -388,11 +388,11 @@ local:
     openldap:
         2.4.44-25.el7_9
     openssh:
-        7.4p1-23.0.1.el7_9
+        7.4p1-23.0.3.el7_9
     openssh-clients:
-        7.4p1-23.0.1.el7_9
+        7.4p1-23.0.3.el7_9
     openssh-server:
-        7.4p1-23.0.1.el7_9
+        7.4p1-23.0.3.el7_9
     openssl:
         1:1.0.2k-26.el7_9
     openssl-devel:
@@ -608,7 +608,7 @@ local:
     tcp_wrappers-libs:
         7.6-77.el7
     tzdata:
-        2023d-1.el7
+        2024a-1.el7
     usermode:
         1.111-6.el7
     ustr:

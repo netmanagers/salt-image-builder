@@ -239,7 +239,7 @@ local:
     gnupg2:
         2.2.20-3.el8_6
     gnutls:
-        3.6.16-8.el8_9
+        3.6.16-8.el8_9.1
     gpg-pubkey.(none):
         ad986da3-5cabf60d,de57bfbe-53a9be98
     gpgme:
@@ -331,7 +331,7 @@ local:
     libffi:
         3.1-24.el8
     libgcc:
-        8.5.0-20.0.2.el8
+        8.5.0-20.0.3.el8
     libgcrypt:
         1.8.5-7.el8_6
     libgpg-error:
@@ -387,7 +387,7 @@ local:
     libssh-config:
         0.9.6-13.el8_9
     libstdc++:
-        8.5.0-20.0.2.el8
+        8.5.0-20.0.3.el8
     libtasn1:
         4.13-4.el8_7
     libtirpc:
@@ -441,11 +441,11 @@ local:
     openldap:
         2.4.46-18.el8
     openssh:
-        8.0p1-19.el8_9.2
+        8.0p1-19.0.1.el8_9.2
     openssh-clients:
-        8.0p1-19.el8_9.2
+        8.0p1-19.0.1.el8_9.2
     openssh-server:
-        8.0p1-19.el8_9.2
+        8.0p1-19.0.1.el8_9.2
     openssl:
         1:1.1.1k-12.el8_9
     openssl-devel:
@@ -617,7 +617,7 @@ local:
     python3-pip-wheel:
         9.0.3-23.el8
     python3-rpm:
-        4.14.3-26.0.1.el8
+        4.14.3-28.0.2.el8_9
     python3-rpm-generators:
         5-8.el8
     python3-rpm-macros:
@@ -641,11 +641,11 @@ local:
     rootfiles:
         8.1-22.el8
     rpm:
-        4.14.3-26.0.1.el8
+        4.14.3-28.0.2.el8_9
     rpm-build-libs:
-        4.14.3-26.0.1.el8
+        4.14.3-28.0.2.el8_9
     rpm-libs:
-        4.14.3-26.0.1.el8
+        4.14.3-28.0.2.el8_9
     rsyslog:
         8.2102.0-15.el8
     salt:
@@ -661,7 +661,7 @@ local:
     sqlite-libs:
         3.26.0-19.0.1.el8_9
     sudo:
-        1.8.29-10.el8
+        1.9.5p2-1.el8_9
     swig:
         3.0.12-19.module+el8.3.0+7654+9c81efad
     systemd:
@@ -677,7 +677,7 @@ local:
     tpm2-tss:
         2.3.2-5.el8
     tzdata:
-        2023d-1.0.1.el8
+        2024a-1.0.1.el8
     userspace-rcu:
         0.10.1-4.el8
     util-linux:

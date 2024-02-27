@@ -221,7 +221,7 @@ local:
     gnupg2:
         2.3.3-4.el9
     gnutls:
-        3.7.6-23.el9
+        3.7.6-23.el9_3.3
     gpg-pubkey.(none):
         8b4efbe6-629ec292,8d8b756f-629e59ec,9d30d7b6-62d757ff
     gpgme:
@@ -647,7 +647,7 @@ local:
     sqlite-libs:
         3.34.1-7.el9_3
     sudo:
-        1.9.5p2-9.el9
+        1.9.5p2-10.el9_3
     systemd:
         252-18.0.1.el9
     systemd-libs:
@@ -663,7 +663,7 @@ local:
     tpm2-tss:
         3.2.2-2.el9
     tzdata:
-        2023d-1.el9
+        2024a-1.el9
     util-linux:
         2.37.4-15.0.1.el9
     util-linux-core:

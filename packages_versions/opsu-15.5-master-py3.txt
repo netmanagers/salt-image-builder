@@ -2,7 +2,7 @@ opsu-15.5-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3007.0+0na.fe80b71
+          Salt: 3007.0+0na.6e10b5b
  
 Python Version:
         Python: 3.11.5 (main, Sep 06 2023, 11:21:05) [GCC]
@@ -115,7 +115,7 @@ local:
     saltpath:
         /usr/lib/python3.11/site-packages/salt
     saltversion:
-        3007.0+0na.fe80b71
+        3007.0+0na.6e10b5b
     saltversioninfo:
         - 3007
         - 0
@@ -367,9 +367,9 @@ local:
     libnsl2:
         1.2.0-2.44
     libopenssl1_1:
-        1.1.1l-150500.17.22.1
+        1.1.1l-150500.17.25.1
     libopenssl1_1-hmac:
-        1.1.1l-150500.17.22.1
+        1.1.1l-150500.17.25.1
     libp11-kit0:
         0.23.22-150500.8.3.1
     libpcre1:
@@ -389,11 +389,11 @@ local:
     libpsl5:
         0.20.1-150000.3.3.1
     libpython2_7-1_0:
-        2.7.18-150000.57.1
+        2.7.18-150000.62.1
     libpython3_11-1_0:
         3.11.5-150400.9.20.2
     libpython3_6m1_0:
-        3.6.15-150300.10.51.1
+        3.6.15-150300.10.54.1
     libreadline7:
         7.0-150400.25.22
     libsasl2-3:
@@ -413,7 +413,7 @@ local:
     libsmartcols1:
         2.37.4-150500.9.3.1
     libsolv-tools:
-        0.7.27-150400.3.11.2
+        0.7.28-150400.3.16.2
     libsqlite3-0:
         3.44.0-150000.3.23.1
     libssh-config:
@@ -451,7 +451,7 @@ local:
     libxcrypt-devel:
         4.4.15-150300.4.7.1
     libxml2-2:
-        2.10.3-150500.5.11.1
+        2.10.3-150500.5.14.1
     libyaml-cpp0_6:
         0.6.3-150400.4.3.1
     libz1:
@@ -463,7 +463,7 @@ local:
     libzstd1:
         1.5.0-150400.3.3.1
     libzypp:
-        17.31.27-150400.3.49.1
+        17.31.31-150400.3.52.2
     linux-glibc-devel:
         5.14-150500.12.3.2
     login_defs:
@@ -475,7 +475,7 @@ local:
     net-tools-deprecated:
         2.0+git20170221.479bb4a-3.11
     netcfg:
-        11.6-3.3.1
+        11.6-150000.3.6.1
     openSUSE-build-key:
         1.0-lp155.7.3.1
     openSUSE-release:
@@ -483,17 +483,17 @@ local:
     openSUSE-release-appliance-docker:
         15.5-lp155.288.1
     openssh:
-        8.4p1-150300.3.27.1
+        8.4p1-150300.3.30.1
     openssh-clients:
-        8.4p1-150300.3.27.1
+        8.4p1-150300.3.30.1
     openssh-common:
-        8.4p1-150300.3.27.1
+        8.4p1-150300.3.30.1
     openssh-fips:
-        8.4p1-150300.3.27.1
+        8.4p1-150300.3.30.1
     openssh-server:
-        8.4p1-150300.3.27.1
+        8.4p1-150300.3.30.1
     openssl-1_1:
-        1.1.1l-150500.17.22.1
+        1.1.1l-150500.17.25.1
     p11-kit:
         0.23.22-150500.8.3.1
     p11-kit-tools:
@@ -521,11 +521,11 @@ local:
     procps:
         3.3.17-150000.7.37.1
     python:
-        2.7.18-150000.57.1
+        2.7.18-150000.60.1
     python-base:
-        2.7.18-150000.57.1
+        2.7.18-150000.62.1
     python3:
-        3.6.15-150300.10.51.1
+        3.6.15-150300.10.54.1
     python3-PyYAML:
         5.4.1-1.1
     python3-apipkg:
@@ -535,7 +535,7 @@ local:
     python3-asn1crypto:
         0.24.0-3.2.1
     python3-base:
-        3.6.15-150300.10.51.1
+        3.6.15-150300.10.54.1
     python3-certifi:
         2018.1.18-150000.3.3.1
     python3-cffi:
@@ -545,7 +545,7 @@ local:
     python3-cryptography:
         3.3.2-150400.23.1
     python3-devel:
-        3.6.15-150300.10.51.1
+        3.6.15-150300.10.54.1
     python3-idna:
         2.6-1.20
     python3-iniconfig:
@@ -585,7 +585,7 @@ local:
     rpm-config-SUSE:
         1-150400.14.3.1
     rpm-ndb:
-        4.14.3-150400.59.3.1
+        4.14.3-150400.59.7.1
     sed:
         4.4-11.6
     shadow:
@@ -636,7 +636,7 @@ local:
     Jinja2:
         3.1.3
     MarkupSafe:
-        2.1.4
+        2.1.5
     PyYAML:
         6.0.1
     aiohttp:
@@ -660,7 +660,7 @@ local:
     contextvars:
         2.4
     cryptography:
-        42.0.2
+        42.0.5
     distro:
         1.9.0
     frozenlist:
@@ -706,9 +706,9 @@ local:
     pycryptodomex:
         3.20.0
     pydantic:
-        2.6.0
+        2.6.2
     pydantic_core:
-        2.16.1
+        2.16.3
     python-dateutil:
         2.8.2
     python-gnupg:
@@ -722,23 +722,23 @@ local:
     rpm_vercmp:
         0.1.2
     salt:
-        3007.0+0na.fe80b71
+        3007.0+0na.6e10b5b
     setproctitle:
         1.3.3
     setuptools:
-        69.0.3
+        69.1.1
     six:
         1.16.0
     tempora:
-        5.5.0
+        5.5.1
     timelib:
         0.3.0
     tornado:
         6.4
     typing_extensions:
-        4.9.0
+        4.10.0
     urllib3:
-        2.2.0
+        2.2.1
     wheel:
         0.42.0
     yarl:
