@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.89.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.88.0...v1.89.0) (2024-02-28)
+
+
+### Features
+
+* **salt:** remove 3005 ([5989003](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/5989003827272725ccf7dddae7daba5681cd238d))
+
 # [1.88.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.87.1...v1.88.0) (2024-02-27)
 
 

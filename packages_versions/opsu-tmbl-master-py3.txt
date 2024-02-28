@@ -709,7 +709,7 @@ local:
     pycryptodomex:
         3.20.0
     pydantic:
-        2.6.2
+        2.6.3
     pydantic_core:
         2.16.3
     python-dateutil:
