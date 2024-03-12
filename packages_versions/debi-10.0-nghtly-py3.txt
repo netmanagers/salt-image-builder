@@ -483,7 +483,7 @@ local:
     sysvinit-utils:
         2.93-8
     tar:
-        1.30+dfsg-6
+        1.30+dfsg-6+deb10u1
     tzdata:
         2021a-0+deb10u12
     ucf:

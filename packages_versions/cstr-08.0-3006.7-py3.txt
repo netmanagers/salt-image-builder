@@ -130,9 +130,9 @@ local:
 local:
     ----------
     NetworkManager:
-        1:1.40.16-14.el8
+        1:1.40.16-15.el8
     NetworkManager-libnm:
-        1:1.40.16-14.el8
+        1:1.40.16-15.el8
     acl:
         2.2.53-3.el8
     audit-libs:
@@ -184,9 +184,9 @@ local:
     dbus-tools:
         1:1.12.8-26.el8
     device-mapper:
-        8:1.02.181-9.el8
+        8:1.02.181-14.el8
     device-mapper-libs:
-        8:1.02.181-9.el8
+        8:1.02.181-14.el8
     dmidecode:
         1:3.3-4.el8
     dnf:
@@ -214,7 +214,7 @@ local:
     expat:
         2.2.5-11.el8
     file-libs:
-        5.33-25.el8
+        5.33-26.el8
     filesystem:
         3.8-6.el8
     findutils:
@@ -260,7 +260,7 @@ local:
     hostname:
         3.20-7.el8.0.1
     hwdata:
-        0.314-8.19.el8
+        0.314-8.22.el8
     ima-evm-utils:
         1.3.2-12.el8
     info:
@@ -272,7 +272,7 @@ local:
     json-c:
         0.13.1-3.el8
     kexec-tools:
-        2.0.26-13.el8
+        2.0.26-14.el8
     keyutils-libs:
         1.5.10-9.el8
     keyutils-libs-devel:
@@ -298,7 +298,7 @@ local:
     libattr:
         2.4.48-3.el8
     libblkid:
-        2.32.1-43.el8
+        2.32.1-46.el8
     libbpf:
         0.5.0-1.el8
     libcap:
@@ -322,7 +322,7 @@ local:
     libedit:
         3.1-23.20170329cvs.el8
     libfdisk:
-        2.32.1-43.el8
+        2.32.1-46.el8
     libffi:
         3.1-24.el8
     libgcc:
@@ -346,7 +346,7 @@ local:
     libmodulemd:
         2.13.0-1.el8
     libmount:
-        2.32.1-43.el8
+        2.32.1-46.el8
     libndp:
         1.7-6.el8
     libnghttp2:
@@ -376,7 +376,7 @@ local:
     libsigsegv:
         2.11-5.el8
     libsmartcols:
-        2.32.1-43.el8
+        2.32.1-46.el8
     libsolv:
         0.7.20-6.el8
     libstdc++:
@@ -392,7 +392,7 @@ local:
     libutempter:
         1.1.6-14.el8
     libuuid:
-        2.32.1-43.el8
+        2.32.1-46.el8
     libverto:
         0.3.2-2.el8
     libverto-devel:
@@ -444,7 +444,7 @@ local:
     p11-kit-trust:
         0.23.22-2.el8
     pam:
-        1.3.1-32.el8
+        1.3.1-33.el8
     pciutils:
         3.7.0-3.el8
     pciutils-libs:
@@ -642,13 +642,13 @@ local:
     swig:
         3.0.12-19.module_el8.3.0+386+5db24358
     systemd:
-        239-79.el8
+        239-81.el8
     systemd-libs:
-        239-79.el8
+        239-81.el8
     systemd-pam:
-        239-79.el8
+        239-81.el8
     systemd-udev:
-        239-79.el8
+        239-81.el8
     tar:
         2:1.30-9.el8
     tpm2-tss:
@@ -656,7 +656,7 @@ local:
     tzdata:
         2024a-1.el8
     util-linux:
-        2.32.1-43.el8
+        2.32.1-46.el8
     vim-minimal:
         2:8.0.1763-19.el8.4
     which:

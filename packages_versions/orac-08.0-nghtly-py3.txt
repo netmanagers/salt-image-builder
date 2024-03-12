@@ -169,13 +169,13 @@ local:
     dbus-tools:
         1:1.12.8-26.0.1.el8
     device-mapper:
-        8:1.02.181-13.0.2.el8_9
+        8:1.02.181-13.0.3.el8_9
     device-mapper-event:
-        8:1.02.181-13.0.2.el8_9
+        8:1.02.181-13.0.3.el8_9
     device-mapper-event-libs:
-        8:1.02.181-13.0.2.el8_9
+        8:1.02.181-13.0.3.el8_9
     device-mapper-libs:
-        8:1.02.181-13.0.2.el8_9
+        8:1.02.181-13.0.3.el8_9
     device-mapper-multipath:
         0.8.4-39.el8
     device-mapper-multipath-libs:
@@ -229,11 +229,11 @@ local:
     glib2:
         2.56.4-161.el8
     glibc:
-        2.28-236.0.1.el8.7
+        2.28-236.0.1.el8_9.12
     glibc-common:
-        2.28-236.0.1.el8.7
+        2.28-236.0.1.el8_9.12
     glibc-langpack-en:
-        2.28-236.0.1.el8.7
+        2.28-236.0.1.el8_9.12
     gmp:
         1:6.1.2-10.el8
     gnupg2:
@@ -419,9 +419,9 @@ local:
     lua-libs:
         5.3.4-12.el8
     lvm2:
-        8:2.03.14-13.0.2.el8_9
+        8:2.03.14-13.0.3.el8_9
     lvm2-libs:
-        8:2.03.14-13.0.2.el8_9
+        8:2.03.14-13.0.3.el8_9
     lz4-libs:
         1.8.3-3.el8_4
     mpfr:
@@ -665,13 +665,13 @@ local:
     swig:
         3.0.12-19.module+el8.3.0+7654+9c81efad
     systemd:
-        239-78.0.3.el8
+        239-78.0.4.el8
     systemd-libs:
-        239-78.0.3.el8
+        239-78.0.4.el8
     systemd-pam:
-        239-78.0.3.el8
+        239-78.0.4.el8
     systemd-udev:
-        239-78.0.3.el8
+        239-78.0.4.el8
     tar:
         2:1.30-9.el8
     tpm2-tss:

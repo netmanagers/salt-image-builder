@@ -291,9 +291,9 @@ local:
     libcap-ng:
         0.7.11-1.el8
     libcom_err:
-        1.45.6-5.el8
+        1.45.6-5.1.el8.alma.1
     libcom_err-devel:
-        1.45.6-5.el8
+        1.45.6-5.1.el8.alma.1
     libcomps:
         0.1.18-1.el8
     libcurl-minimal:

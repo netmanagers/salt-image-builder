@@ -592,7 +592,7 @@ local:
     tar:
         1.30+dfsg-7ubuntu0.20.04.4
     tzdata:
-        2023d-0ubuntu0.20.04
+        2024a-0ubuntu0.20.04
     ubuntu-keyring:
         2020.02.11.4
     ucf:

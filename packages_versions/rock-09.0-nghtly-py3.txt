@@ -129,13 +129,13 @@ local:
     audit-libs:
         3.0.7-104.el9
     basesystem:
-        11-13.el9
+        11-13.el9.0.1
     bash:
         5.1.8-6.el9_1
     binutils:
-        2.35.2-42.el9
+        2.35.2-42.el9_3.1
     binutils-gold:
-        2.35.2-42.el9
+        2.35.2-42.el9_3.1
     bzip2-libs:
         1.0.8-8.el9
     ca-certificates:
@@ -155,7 +155,7 @@ local:
     cryptsetup-libs:
         2.6.0-3.el9
     curl-minimal:
-        7.76.1-26.el9_3.2.0.1
+        7.76.1-26.el9_3.3
     cyrus-sasl-lib:
         2.1.27-21.el9
     dbus:
@@ -209,13 +209,13 @@ local:
     glib2:
         2.68.4-11.el9
     glibc:
-        2.34-83.el9.7
+        2.34-83.el9.12
     glibc-common:
-        2.34-83.el9.7
+        2.34-83.el9.12
     glibc-langpack-en:
-        2.34-83.el9.7
+        2.34-83.el9.12
     glibc-minimal-langpack:
-        2.34-83.el9.7
+        2.34-83.el9.12
     gmp:
         1:6.2.0-13.el9
     gnupg2:
@@ -277,7 +277,7 @@ local:
     libcomps:
         0.1.18-1.el9
     libcurl-minimal:
-        7.76.1-26.el9_3.2.0.1
+        7.76.1-26.el9_3.3
     libdb:
         5.3.28-53.el9
     libdnf:
@@ -381,11 +381,11 @@ local:
     openldap:
         2.6.3-1.el9
     openssh:
-        8.7p1-34.el9
+        8.7p1-34.el9_3.3
     openssh-clients:
-        8.7p1-34.el9
+        8.7p1-34.el9_3.3
     openssh-server:
-        8.7p1-34.el9
+        8.7p1-34.el9_3.3
     openssl:
         1:3.0.7-25.el9_3
     openssl-devel:
@@ -569,9 +569,9 @@ local:
     python3-libs:
         3.9.18-1.el9_3.1
     python3-pip:
-        21.2.3-7.el9
+        21.2.3-7.el9_3.1
     python3-pip-wheel:
-        21.2.3-7.el9
+        21.2.3-7.el9_3.1
     python3-rpm:
         4.16.1.3-27.el9_3
     python3-setuptools:

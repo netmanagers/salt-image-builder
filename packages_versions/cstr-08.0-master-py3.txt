@@ -2,7 +2,7 @@ cstr-08.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3007.0+0na.6e10b5b
+          Salt: 3007.0+0na.127a32e
  
 Python Version:
         Python: 3.11.7 (main, Jan 26 2024, 19:22:20) [GCC 8.5.0 20210514 (Red Hat 8.5.0-21)]
@@ -10,7 +10,7 @@ Python Version:
 Dependency Versions:
           cffi: 1.16.0
       cherrypy: 18.9.0
-      dateutil: 2.8.2
+      dateutil: 2.9.0.post0
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
@@ -19,10 +19,10 @@ Dependency Versions:
   looseversion: 1.3.0
       M2Crypto: Not Installed
           Mako: Not Installed
-       msgpack: 1.0.7
+       msgpack: 1.0.8
   msgpack-pure: Not Installed
   mysql-python: Not Installed
-     packaging: 23.2
+     packaging: 24.0
      pycparser: 2.21
       pycrypto: Not Installed
   pycryptodome: 3.20.0
@@ -113,7 +113,7 @@ local:
     saltpath:
         /usr/lib/python3.11/site-packages/salt
     saltversion:
-        3007.0+0na.6e10b5b
+        3007.0+0na.127a32e
     saltversioninfo:
         - 3007
         - 0
@@ -133,9 +133,9 @@ local:
 local:
     ----------
     NetworkManager:
-        1:1.40.16-14.el8
+        1:1.40.16-15.el8
     NetworkManager-libnm:
-        1:1.40.16-14.el8
+        1:1.40.16-15.el8
     acl:
         2.2.53-3.el8
     audit-libs:
@@ -189,9 +189,9 @@ local:
     dbus-tools:
         1:1.12.8-26.el8
     device-mapper:
-        8:1.02.181-9.el8
+        8:1.02.181-14.el8
     device-mapper-libs:
-        8:1.02.181-9.el8
+        8:1.02.181-14.el8
     dnf:
         4.7.0-20.el8
     dnf-data:
@@ -217,7 +217,7 @@ local:
     expat:
         2.2.5-11.el8
     file-libs:
-        5.33-25.el8
+        5.33-26.el8
     filesystem:
         3.8-6.el8
     findutils:
@@ -281,9 +281,9 @@ local:
     json-c:
         0.13.1-3.el8
     kernel-headers:
-        4.18.0-540.el8
+        4.18.0-544.el8
     kexec-tools:
-        2.0.26-13.el8
+        2.0.26-14.el8
     keyutils-libs:
         1.5.10-9.el8
     keyutils-libs-devel:
@@ -309,7 +309,7 @@ local:
     libattr:
         2.4.48-3.el8
     libblkid:
-        2.32.1-43.el8
+        2.32.1-46.el8
     libbpf:
         0.5.0-1.el8
     libcap:
@@ -333,7 +333,7 @@ local:
     libedit:
         3.1-23.20170329cvs.el8
     libfdisk:
-        2.32.1-43.el8
+        2.32.1-46.el8
     libffi:
         3.1-24.el8
     libgcc:
@@ -359,7 +359,7 @@ local:
     libmodulemd:
         2.13.0-1.el8
     libmount:
-        2.32.1-43.el8
+        2.32.1-46.el8
     libmpc:
         1.1.0-9.1.el8
     libndp:
@@ -391,7 +391,7 @@ local:
     libsigsegv:
         2.11-5.el8
     libsmartcols:
-        2.32.1-43.el8
+        2.32.1-46.el8
     libsolv:
         0.7.20-6.el8
     libstdc++:
@@ -407,7 +407,7 @@ local:
     libutempter:
         1.1.6-14.el8
     libuuid:
-        2.32.1-43.el8
+        2.32.1-46.el8
     libverto:
         0.3.2-2.el8
     libverto-devel:
@@ -463,7 +463,7 @@ local:
     p11-kit-trust:
         0.23.22-2.el8
     pam:
-        1.3.1-32.el8
+        1.3.1-33.el8
     pcre:
         8.42-6.el8
     pcre2:
@@ -667,13 +667,13 @@ local:
     swig:
         3.0.12-19.module_el8.3.0+386+5db24358
     systemd:
-        239-79.el8
+        239-81.el8
     systemd-libs:
-        239-79.el8
+        239-81.el8
     systemd-pam:
-        239-79.el8
+        239-81.el8
     systemd-udev:
-        239-79.el8
+        239-81.el8
     tar:
         2:1.30-9.el8
     tpm2-tss:
@@ -681,7 +681,7 @@ local:
     tzdata:
         2024a-1.el8
     util-linux:
-        2.32.1-43.el8
+        2.32.1-46.el8
     vim-minimal:
         2:8.0.1763-19.el8.4
     which:
@@ -739,8 +739,8 @@ local:
         3.6
     immutables:
         0.20
-    importlib-metadata:
-        7.0.1
+    importlib_metadata:
+        7.0.2
     inflect:
         7.0.0
     jaraco.collections:
@@ -758,11 +758,11 @@ local:
     more-itertools:
         10.2.0
     msgpack:
-        1.0.7
+        1.0.8
     multidict:
         6.0.5
     packaging:
-        23.2
+        24.0
     pip:
         22.3.1
     portend:
@@ -770,17 +770,17 @@ local:
     psutil:
         5.9.8
     pyOpenSSL:
-        24.0.0
+        24.1.0
     pycparser:
         2.21
     pycryptodomex:
         3.20.0
     pydantic:
-        2.6.3
+        2.6.4
     pydantic_core:
         2.16.3
     python-dateutil:
-        2.8.2
+        2.9.0.post0
     python-gnupg:
         0.5.2
     pytz:
@@ -792,7 +792,7 @@ local:
     rpm_vercmp:
         0.1.2
     salt:
-        3007.0+0na.6e10b5b
+        3007.0+0na.127a32e
     setproctitle:
         1.3.3
     setuptools:
@@ -810,7 +810,7 @@ local:
     urllib3:
         2.2.1
     wheel:
-        0.42.0
+        0.43.0
     yarl:
         1.9.4
     zc.lockfile:
