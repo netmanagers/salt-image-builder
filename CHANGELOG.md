@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.91.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.90.0...v1.91.0) (2024-08-07)
+
+
+### Features
+
+* **os:** Remove eol OS and fix ([43bcd81](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/43bcd81c3112c33a3cc69b6222aa750998d715ea))
+
 # [1.90.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.89.0...v1.90.0) (2024-03-12)
 
 

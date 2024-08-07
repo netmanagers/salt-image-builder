@@ -40,7 +40,7 @@ System Versions:
           dist: debian 12 bookworm
         locale: utf-8
        machine: x86_64
-       release: 5.4.109+
+       release: 5.15.154+
         system: Linux
        version: Debian GNU/Linux 12 bookworm
  
@@ -52,9 +52,9 @@ local:
     kernel:
         Linux
     kernelrelease:
-        5.4.109+
+        5.15.154+
     kernelversion:
-        #1 SMP Wed Jun 16 20:00:10 PDT 2021
+        #1 SMP Sat May 4 12:14:42 UTC 2024
     locale_info:
         ----------
         defaultencoding:
@@ -121,9 +121,8 @@ local:
         version:
             252
     virtual:
-        container
+        gce
     virtual_subtype:
-        Docker
     zmqversion:
         4.3.4
 # salt-call --local pkg.list_pkgs
@@ -136,23 +135,23 @@ local:
     apt-transport-https:
         2.6.1
     base-files:
-        12.4+deb12u5
+        12.4+deb12u6
     base-passwd:
         3.6.1
     bash:
-        5.2.15-2+b2
+        5.2.15-2+b7
     bsdextrautils:
-        2.38.1-5+b1
+        2.38.1-5+deb12u1
     bsdmainutils:
         12.1.8
     bsdutils:
-        1:2.38.1-5+b1
+        1:2.38.1-5+deb12u1
     ca-certificates:
         20230311
     coreutils:
         9.1-1
     curl:
-        7.88.1-10+deb12u5
+        7.88.1-10+deb12u6
     dash:
         0.5.12-2
     dctrl-tools:
@@ -228,7 +227,7 @@ local:
     libaudit1:
         1:3.0.9-1
     libblkid1:
-        2.38.1-5+b1
+        2.38.1-5+deb12u1
     libbrotli1:
         1.0.9-2+b6
     libbsd0:
@@ -236,11 +235,11 @@ local:
     libbz2-1.0:
         1.0.8-5+b1
     libc-bin:
-        2.36-9+deb12u4
+        2.36-9+deb12u7
     libc-l10n:
-        2.36-9+deb12u4
+        2.36-9+deb12u7
     libc6:
-        2.36-9+deb12u4
+        2.36-9+deb12u7
     libcap-ng0:
         0.8.3-1+b3
     libcap2:
@@ -254,9 +253,9 @@ local:
     libcryptsetup12:
         2:2.6.1-4~deb12u2
     libcurl3-gnutls:
-        7.88.1-10+deb12u5
+        7.88.1-10+deb12u6
     libcurl4:
-        7.88.1-10+deb12u5
+        7.88.1-10+deb12u6
     libdb5.3:
         5.3.28+dfsg2-1
     libdebconfclient0:
@@ -272,7 +271,7 @@ local:
     libext2fs2:
         1.47.0-2
     libfdisk1:
-        2.38.1-5+b1
+        2.38.1-5+deb12u1
     libffi8:
         3.4.4-1
     libfido2-1:
@@ -288,11 +287,11 @@ local:
     libgmp10:
         2:6.2.1+dfsg1-1.1
     libgnutls30:
-        3.7.9-2+deb12u2
+        3.7.9-2+deb12u3
     libgpg-error0:
         1.46-1
     libgssapi-krb5-2:
-        1.20.1-2+deb12u1
+        1.20.1-2+deb12u2
     libhogweed6:
         3.8.1-2
     libidn2-0:
@@ -302,15 +301,15 @@ local:
     libjson-c5:
         0.16-2
     libk5crypto3:
-        1.20.1-2+deb12u1
+        1.20.1-2+deb12u2
     libkeyutils1:
         1.6.3-2
     libkmod2:
         30+20221128-1
     libkrb5-3:
-        1.20.1-2+deb12u1
+        1.20.1-2+deb12u2
     libkrb5support0:
-        1.20.1-2+deb12u1
+        1.20.1-2+deb12u2
     libksba8:
         1.6.3-2
     libldap-2.5-0:
@@ -322,7 +321,7 @@ local:
     libmd0:
         1.0.4-2
     libmount1:
-        2.38.1-5+b1
+        2.38.1-5+deb12u1
     libncursesw6:
         6.4-4
     libnettle8:
@@ -356,9 +355,9 @@ local:
     libpython3-stdlib:
         3.11.2-1+b1
     libpython3.11-minimal:
-        3.11.2-6
+        3.11.2-6+deb12u2
     libpython3.11-stdlib:
-        3.11.2-6
+        3.11.2-6+deb12u2
     libreadline8:
         8.2-1.3
     librtmp1:
@@ -368,7 +367,7 @@ local:
     libsasl2-modules-db:
         2.1.28+dfsg-10
     libseccomp2:
-        2.5.4-1+b3
+        2.5.4-1+deb12u1
     libselinux1:
         3.4-1+b6
     libsemanage-common:
@@ -378,7 +377,7 @@ local:
     libsepol2:
         3.4-2.1
     libsmartcols1:
-        2.38.1-5+b1
+        2.38.1-5+deb12u1
     libsqlite3-0:
         3.40.1-2
     libss2:
@@ -386,13 +385,13 @@ local:
     libssh2-1:
         1.10.0-3+b1
     libssl3:
-        3.0.11-1~deb12u2
+        3.0.13-1~deb12u1
     libstdc++6:
         12.2.0-14
     libsystemd-shared:
-        252.22-1~deb12u1
+        252.26-1~deb12u2
     libsystemd0:
-        252.22-1~deb12u1
+        252.26-1~deb12u2
     libtasn1-6:
         4.19.0-2
     libtinfo6:
@@ -402,11 +401,11 @@ local:
     libtirpc3:
         1.3.3+ds-1
     libudev1:
-        252.22-1~deb12u1
+        252.26-1~deb12u2
     libunistring2:
         1.0-2
     libuuid1:
-        2.38.1-5+b1
+        2.38.1-5+deb12u1
     libwrap0:
         7.6.q-32
     libxxhash0:
@@ -416,7 +415,7 @@ local:
     libzstd1:
         1.5.4+dfsg2-5
     locales:
-        2.36-9+deb12u4
+        2.36-9+deb12u7
     login:
         1:4.13+dfsg1-1+b1
     logsave:
@@ -428,7 +427,7 @@ local:
     media-types:
         10.0.0
     mount:
-        2.38.1-5+b1
+        2.38.1-5+deb12u1
     ncal:
         12.1.8
     ncurses-base:
@@ -438,13 +437,13 @@ local:
     net-tools:
         2.10-0.1
     openssh-client:
-        1:9.2p1-2+deb12u2
+        1:9.2p1-2+deb12u3
     openssh-server:
-        1:9.2p1-2+deb12u2
+        1:9.2p1-2+deb12u3
     openssh-sftp-server:
-        1:9.2p1-2+deb12u2
+        1:9.2p1-2+deb12u3
     openssl:
-        3.0.11-1~deb12u2
+        3.0.13-1~deb12u1
     passwd:
         1:4.13+dfsg1-1+b1
     pci.ids:
@@ -468,9 +467,9 @@ local:
     python3-yaml:
         6.0-3+b2
     python3.11:
-        3.11.2-6
+        3.11.2-6+deb12u2
     python3.11-minimal:
-        3.11.2-6
+        3.11.2-6+deb12u2
     readline-common:
         8.2-1.3
     runit-helper:
@@ -486,9 +485,9 @@ local:
     sudo:
         1.9.13p3-1+deb12u1
     systemd:
-        252.22-1~deb12u1
+        252.26-1~deb12u2
     systemd-sysv:
-        252.22-1~deb12u1
+        252.26-1~deb12u2
     sysvinit-utils:
         3.06-4
     tar:
@@ -498,13 +497,13 @@ local:
     ucf:
         3.0043+nmu1
     udev:
-        252.22-1~deb12u1
+        252.26-1~deb12u2
     usr-is-merged:
         37~deb12u1
     util-linux:
-        2.38.1-5+b1
+        2.38.1-5+deb12u1
     util-linux-extra:
-        2.38.1-5+b1
+        2.38.1-5+deb12u1
     wget:
         1.21.3-1+b2
     zlib1g:

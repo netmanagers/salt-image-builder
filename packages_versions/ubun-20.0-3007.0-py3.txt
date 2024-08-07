@@ -43,7 +43,7 @@ System Versions:
           dist: ubuntu 20.04.6 focal
         locale: utf-8
        machine: x86_64
-       release: 5.4.109+
+       release: 5.15.154+
         system: Linux
        version: Ubuntu 20.04.6 focal
  
@@ -55,9 +55,9 @@ local:
     kernel:
         Linux
     kernelrelease:
-        5.4.109+
+        5.15.154+
     kernelversion:
-        #1 SMP Wed Jun 16 20:00:10 PDT 2021
+        #1 SMP Sat May 4 12:14:42 UTC 2024
     locale_info:
         ----------
         defaultencoding:
@@ -125,9 +125,8 @@ local:
         version:
             245
     virtual:
-        container
+        gce
     virtual_subtype:
-        Docker
     zmqversion:
         4.3.4
 # salt-call --local pkg.list_pkgs
@@ -148,7 +147,7 @@ local:
     bsdmainutils:
         11.1.2ubuntu3
     bsdutils:
-        1:2.34-0.1ubuntu9.4
+        1:2.34-0.1ubuntu9.6
     bzip2:
         1.0.8-2
     ca-certificates:
@@ -156,7 +155,7 @@ local:
     coreutils:
         8.30-3ubuntu2
     curl:
-        7.68.0-1ubuntu2.21
+        7.68.0-1ubuntu2.22
     dash:
         0.5.10.2-6
     dbus:
@@ -178,13 +177,13 @@ local:
     dirmngr:
         2.2.19-3ubuntu2.2
     distro-info-data:
-        0.43ubuntu1.15
+        0.43ubuntu1.16
     dpkg:
         1.19.7ubuntu3.2
     e2fsprogs:
         1.45.5-2ubuntu1.1
     fdisk:
-        2.34-0.1ubuntu9.4
+        2.34-0.1ubuntu9.6
     findutils:
         4.7.0-1ubuntu1
     gcc-10-base:
@@ -194,9 +193,9 @@ local:
     gir1.2-packagekitglib-1.0:
         1.1.13-2ubuntu1.1
     git:
-        1:2.25.1-1ubuntu3.11
+        1:2.25.1-1ubuntu3.13
     git-man:
-        1:2.25.1-1ubuntu3.11
+        1:2.25.1-1ubuntu3.13
     glib-networking:
         2.64.2-1ubuntu0.1
     glib-networking-common:
@@ -256,7 +255,7 @@ local:
     libaudit1:
         1:2.8.5-2ubuntu6
     libblkid1:
-        2.34-0.1ubuntu9.4
+        2.34-0.1ubuntu9.6
     libbrotli1:
         1.0.7-6ubuntu0.1
     libbsd0:
@@ -264,9 +263,9 @@ local:
     libbz2-1.0:
         1.0.8-2
     libc-bin:
-        2.31-0ubuntu9.14
+        2.31-0ubuntu9.16
     libc6:
-        2.31-0ubuntu9.14
+        2.31-0ubuntu9.16
     libcap-ng0:
         0.7.9-2.1build1
     libcap2:
@@ -282,9 +281,9 @@ local:
     libcryptsetup12:
         2:2.2.2-3ubuntu2.4
     libcurl3-gnutls:
-        7.68.0-1ubuntu2.21
+        7.68.0-1ubuntu2.22
     libcurl4:
-        7.68.0-1ubuntu2.21
+        7.68.0-1ubuntu2.22
     libdb5.3:
         5.3.28+dfsg1-0.6ubuntu2
     libdbus-1-3:
@@ -306,7 +305,7 @@ local:
     libext2fs2:
         1.45.5-2ubuntu1.1
     libfdisk1:
-        2.34-0.1ubuntu9.4
+        2.34-0.1ubuntu9.6
     libffi7:
         3.3-4
     libfido2-1:
@@ -322,15 +321,15 @@ local:
     libgirepository-1.0-1:
         1.64.1-1~ubuntu20.04.1
     libglib2.0-0:
-        2.64.6-1~ubuntu20.04.6
+        2.64.6-1~ubuntu20.04.7
     libglib2.0-bin:
-        2.64.6-1~ubuntu20.04.6
+        2.64.6-1~ubuntu20.04.7
     libglib2.0-data:
-        2.64.6-1~ubuntu20.04.6
+        2.64.6-1~ubuntu20.04.7
     libgmp10:
         2:6.2.0+dfsg-4ubuntu0.1
     libgnutls30:
-        3.6.13-2ubuntu1.10
+        3.6.13-2ubuntu1.11
     libgpg-error0:
         1.37-1
     libgssapi-krb5-2:
@@ -382,7 +381,7 @@ local:
     liblzma5:
         5.2.4-1ubuntu1.1
     libmount1:
-        2.34-0.1ubuntu9.4
+        2.34-0.1ubuntu9.6
     libmpdec2:
         2.4.2-3
     libncurses6:
@@ -392,7 +391,7 @@ local:
     libnettle7:
         3.5.1+really3.5.1-2ubuntu0.2
     libnghttp2-14:
-        1.40.0-1ubuntu0.2
+        1.40.0-1ubuntu0.3
     libnpth0:
         1.6-1
     libp11-kit0:
@@ -430,9 +429,9 @@ local:
     libpython3-stdlib:
         3.8.2-0ubuntu2
     libpython3.8-minimal:
-        3.8.10-0ubuntu1~20.04.9
+        3.8.10-0ubuntu1~20.04.11
     libpython3.8-stdlib:
-        3.8.10-0ubuntu1~20.04.9
+        3.8.10-0ubuntu1~20.04.11
     libreadline8:
         8.0-4
     libroken18-heimdal:
@@ -454,7 +453,7 @@ local:
     libsepol1:
         3.0-1ubuntu0.1
     libsmartcols1:
-        2.34-0.1ubuntu9.4
+        2.34-0.1ubuntu9.6
     libsoup2.4-1:
         2.70.0-1
     libsqlite3-0:
@@ -464,7 +463,7 @@ local:
     libssh-4:
         0.9.3-2ubuntu2.5
     libssl1.1:
-        1.1.1f-1ubuntu2.22
+        1.1.1f-1ubuntu2.23
     libstdc++6:
         10.5.0-1ubuntu1~20.04
     libstemmer0d:
@@ -480,7 +479,7 @@ local:
     libunistring2:
         0.9.10-2
     libuuid1:
-        2.34-0.1ubuntu9.4
+        2.34-0.1ubuntu9.6
     libwind0-heimdal:
         7.7.0+dfsg-1ubuntu1.4
     libwrap0:
@@ -492,7 +491,7 @@ local:
     libzstd1:
         1.4.4+dfsg-3ubuntu0.1
     locales:
-        2.31-0ubuntu9.14
+        2.31-0ubuntu9.16
     login:
         1:4.8.1-1ubuntu5.20.04.5
     logsave:
@@ -506,7 +505,7 @@ local:
     mime-support:
         3.64ubuntu1
     mount:
-        2.34-0.1ubuntu9.4
+        2.34-0.1ubuntu9.6
     ncurses-base:
         6.2-0ubuntu2.1
     ncurses-bin:
@@ -520,7 +519,7 @@ local:
     openssh-sftp-server:
         1:8.2p1-4ubuntu0.11
     openssl:
-        1.1.1f-1ubuntu2.22
+        1.1.1f-1ubuntu2.23
     packagekit:
         1.1.13-2ubuntu1.1
     passwd:
@@ -556,7 +555,7 @@ local:
     python3-gi:
         3.36.0-1
     python3-idna:
-        2.8-1
+        2.8-1ubuntu0.1
     python3-minimal:
         3.8.2-0ubuntu2
     python3-pkg-resources:
@@ -574,9 +573,9 @@ local:
     python3-yaml:
         5.3.1-1ubuntu0.1
     python3.8:
-        3.8.10-0ubuntu1~20.04.9
+        3.8.10-0ubuntu1~20.04.11
     python3.8-minimal:
-        3.8.10-0ubuntu1~20.04.9
+        3.8.10-0ubuntu1~20.04.11
     readline-common:
         8.0-4
     salt-common:
@@ -602,7 +601,7 @@ local:
     tar:
         1.30+dfsg-7ubuntu0.20.04.4
     tzdata:
-        2024a-0ubuntu0.20.04
+        2024a-0ubuntu0.20.04.1
     ubuntu-keyring:
         2020.02.11.4
     ucf:
@@ -610,9 +609,9 @@ local:
     udev:
         245.4-4ubuntu3.23
     util-linux:
-        2.34-0.1ubuntu9.4
+        2.34-0.1ubuntu9.6
     wget:
-        1.20.3-1ubuntu2
+        1.20.3-1ubuntu2.1
     zlib1g:
         1:1.2.11.dfsg-2ubuntu1.5
 # salt-call --local pip.list
