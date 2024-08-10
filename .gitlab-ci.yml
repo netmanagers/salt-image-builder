@@ -349,6 +349,10 @@ rock-08.0-3006.9-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 
 # UBUNTU
 # Note: Permitting failure on 22.0 master until https://github.com/saltstack/salt-bootstrap/issues/1978 is resolved
+ubun-24.0-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'ubuntu'               , DV: '24.04'  , PI: 'apt', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: 'python3-apt python3-pip'}}
+ubun-24.0-nghtly-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'ubuntu'               , DV: '24.04'  , PI: 'apt', SIM: 'onedir', SV: 'nghtly' , SVB: 'nightly', PV: '3', EP: ''}}
+ubun-24.0-3007.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'               , DV: '24.04'  , PI: 'apt', SIM: 'onedir', SV: '3007.1' , SVB: ''       , PV: '3', EP: ''}}
+ubun-24.0-3006.9-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'               , DV: '24.04'  , PI: 'apt', SIM: 'onedir', SV: '3006.9' , SVB: ''       , PV: '3', EP: ''}}
 ubun-22.0-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'ubuntu'               , DV: '22.04'  , PI: 'apt', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: 'python3-apt python3-pip'}}
 ubun-22.0-nghtly-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'ubuntu'               , DV: '22.04'  , PI: 'apt', SIM: 'onedir', SV: 'nghtly' , SVB: 'nightly', PV: '3', EP: ''}}
 ubun-22.0-3007.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'               , DV: '22.04'  , PI: 'apt', SIM: 'onedir', SV: '3007.1' , SVB: ''       , PV: '3', EP: ''}}
