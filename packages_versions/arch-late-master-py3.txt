@@ -40,12 +40,12 @@ Salt Package Information:
   Package Type: Not Installed
  
 System Versions:
-          dist: arch 20240809.0.252827 
+          dist: arch 20240810.0.253146 
         locale: utf-8
        machine: x86_64
        release: 5.15.154+
         system: Linux
-       version: Arch Linux 20240809.0.252827 
+       version: Arch Linux 20240810.0.253146 
  
 # salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
 local:
@@ -73,7 +73,7 @@ local:
     lsb_distrib_id:
         Arch Linux
     lsb_distrib_release:
-        20240809.0.252827
+        20240810.0.253146
     os:
         Arch
     os_family:
@@ -84,18 +84,18 @@ local:
     oscodename:
         Arch Linux
     osfinger:
-        Arch Linux-20240809
+        Arch Linux-20240810
     osfullname:
         Arch Linux
     osmajorrelease:
-        20240809
+        20240810
     osmanufacturer:
     osrelease:
-        20240809.0.252827
+        20240810.0.253146
     osrelease_info:
-        - 20240809
+        - 20240810
         - 0
-        - 252827
+        - 253146
     osversion:
     pythonexecutable:
         /usr/bin/python

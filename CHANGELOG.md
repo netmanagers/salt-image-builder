@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.94.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.93.0...v1.94.0) (2024-08-10)
+
+
+### Features
+
+* **os:** add ubuntu 24.04 ([6d5a729](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/6d5a7293af400e6ba02b44884717362c56c94b1e))
+
 # [1.93.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.92.0...v1.93.0) (2024-08-09)
 
 
