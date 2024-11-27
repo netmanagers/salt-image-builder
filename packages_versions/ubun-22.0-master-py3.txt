@@ -2,14 +2,15 @@ ubun-22.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-          Salt: 3007.0+0na.18ca4fd
+          Salt: 3007.1+445.g9233e1cc3b
  
 Python Version:
-        Python: 3.10.12 (main, Jul 29 2024, 16:56:48) [GCC 11.4.0]
+        Python: 3.10.12 (main, Nov  6 2024, 20:22:13) [GCC 11.4.0]
  
 Dependency Versions:
-          cffi: 1.17.0
+          cffi: 1.17.1
       cherrypy: 18.10.0
+  cryptography: 43.0.3
       dateutil: 2.9.0.post0
      docker-py: Not Installed
          gitdb: Not Installed
@@ -19,33 +20,34 @@ Dependency Versions:
   looseversion: 1.3.0
       M2Crypto: Not Installed
           Mako: Not Installed
-       msgpack: 1.0.8
+       msgpack: 1.1.0
   msgpack-pure: Not Installed
   mysql-python: Not Installed
-     packaging: 24.1
+      networkx: 3.4.2
+     packaging: 24.2
      pycparser: 2.22
       pycrypto: Not Installed
-  pycryptodome: 3.20.0
+  pycryptodome: 3.21.0
         pygit2: Not Installed
-  python-gnupg: 0.5.2
+  python-gnupg: 0.5.3
         PyYAML: 6.0.2
-         PyZMQ: 26.1.0
+         PyZMQ: 26.2.0
         relenv: Not Installed
          smmap: Not Installed
        timelib: 0.3.0
-       Tornado: 6.4.1
+       Tornado: 6.4.2
            ZMQ: 4.3.5
  
 Salt Package Information:
   Package Type: Not Installed
  
 System Versions:
-          dist: ubuntu 22.04.4 jammy
+          dist: ubuntu 22.04.5 jammy
         locale: utf-8
        machine: x86_64
        release: 5.15.154+
         system: Linux
-       version: Ubuntu 22.04.4 jammy
+       version: Ubuntu 22.04.5 jammy
  
 # salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
 local:
@@ -114,10 +116,10 @@ local:
     saltpath:
         /usr/local/lib/python3.10/dist-packages/salt
     saltversion:
-        3007.0+0na.18ca4fd
+        3007.1+445.g9233e1cc3b
     saltversioninfo:
         - 3007
-        - 0
+        - 1
     systemd:
         ----------
         features:
@@ -135,11 +137,11 @@ local:
     adduser:
         3.118ubuntu5
     apt:
-        2.4.12
+        2.4.13
     apt-transport-https:
-        2.4.12
+        2.4.13
     base-files:
-        12ubuntu4.6
+        12ubuntu4.7
     base-passwd:
         3.5.52build1
     bash:
@@ -153,7 +155,7 @@ local:
     bsdutils:
         1:2.37.2-4ubuntu3.4
     ca-certificates:
-        20230311ubuntu0.22.04.1
+        20240203~22.04.1
     coreutils:
         8.32-4.1ubuntu1.2
     cpp:
@@ -161,7 +163,7 @@ local:
     cpp-11:
         11.4.0-1ubuntu1~22.04
     curl:
-        7.81.0-1ubuntu1.17
+        7.81.0-1ubuntu1.19
     dash:
         0.5.11+git20210903+057cd650a4ed-3build1
     debconf:
@@ -173,11 +175,11 @@ local:
     dirmngr:
         2.2.27-3ubuntu2.1
     distro-info-data:
-        0.52ubuntu0.7
+        0.52ubuntu0.8
     dpkg:
         1.21.1ubuntu2.3
     e2fsprogs:
-        1.46.5-2ubuntu1.1
+        1.46.5-2ubuntu1.2
     findutils:
         4.8.0-1ubuntu3
     g++:
@@ -227,9 +229,9 @@ local:
     libacl1:
         2.3.1-1
     libapparmor1:
-        3.0.4-2ubuntu2.3
+        3.0.4-2ubuntu2.4
     libapt-pkg6.0:
-        2.4.12
+        2.4.13
     libargon2-1:
         0~20171227-0.3
     libasan6:
@@ -271,7 +273,7 @@ local:
     libcc1-0:
         12.3.0-1ubuntu1~22.04
     libcom-err2:
-        1.46.5-2ubuntu1.1
+        1.46.5-2ubuntu1.2
     libcrypt-dev:
         1:4.4.27-1
     libcrypt1:
@@ -283,9 +285,9 @@ local:
     libctf0:
         2.38-4ubuntu2.6
     libcurl3-gnutls:
-        7.81.0-1ubuntu1.17
+        7.81.0-1ubuntu1.19
     libcurl4:
-        7.81.0-1ubuntu1.17
+        7.81.0-1ubuntu1.19
     libdb5.3:
         5.3.28+dfsg1-0.8ubuntu3
     libdebconfclient0:
@@ -297,11 +299,11 @@ local:
     liberror-perl:
         0.17029-1
     libexpat1:
-        2.4.7-1ubuntu0.3
+        2.4.7-1ubuntu0.4
     libexpat1-dev:
-        2.4.7-1ubuntu0.3
+        2.4.7-1ubuntu0.4
     libext2fs2:
-        1.46.5-2ubuntu1.1
+        1.46.5-2ubuntu1.2
     libffi8:
         3.4.2-4
     libfido2-1:
@@ -325,7 +327,7 @@ local:
     libgpg-error0:
         1.43-3
     libgssapi-krb5-2:
-        1.19.2-2ubuntu0.3
+        1.19.2-2ubuntu0.4
     libhogweed6:
         3.7.3-1build2
     libidn2-0:
@@ -345,15 +347,15 @@ local:
     libjson-c5:
         0.15-3~ubuntu1.22.04.2
     libk5crypto3:
-        1.19.2-2ubuntu0.3
+        1.19.2-2ubuntu0.4
     libkeyutils1:
         1.6.1-2ubuntu3
     libkmod2:
         29-1ubuntu1
     libkrb5-3:
-        1.19.2-2ubuntu0.3
+        1.19.2-2ubuntu0.4
     libkrb5support0:
-        1.19.2-2ubuntu0.3
+        1.19.2-2ubuntu0.4
     libksba8:
         1.6.0-2ubuntu0.2
     libldap-2.5-0:
@@ -398,6 +400,8 @@ local:
         1.4.0-11ubuntu2.4
     libpam0g:
         1.4.0-11ubuntu2.4
+    libpci3:
+        1:3.7.0-6
     libpcre2-8-0:
         10.39-3ubuntu0.1
     libpcre3:
@@ -409,17 +413,17 @@ local:
     libpsl5:
         0.21.0-1.2build2
     libpython3-dev:
-        3.10.6-1~22.04
+        3.10.6-1~22.04.1
     libpython3-stdlib:
-        3.10.6-1~22.04
+        3.10.6-1~22.04.1
     libpython3.10:
-        3.10.12-1~22.04.5
+        3.10.12-1~22.04.7
     libpython3.10-dev:
-        3.10.12-1~22.04.5
+        3.10.12-1~22.04.7
     libpython3.10-minimal:
-        3.10.12-1~22.04.5
+        3.10.12-1~22.04.7
     libpython3.10-stdlib:
-        3.10.12-1~22.04.5
+        3.10.12-1~22.04.7
     libquadmath0:
         12.3.0-1ubuntu1~22.04
     libreadline8:
@@ -445,11 +449,11 @@ local:
     libsqlite3-0:
         3.37.2-2ubuntu0.3
     libss2:
-        1.46.5-2ubuntu1.1
+        1.46.5-2ubuntu1.2
     libssh-4:
         0.9.6-2ubuntu0.22.04.3
     libssl3:
-        3.0.2-0ubuntu1.16
+        3.0.2-0ubuntu1.18
     libstdc++-11-dev:
         11.4.0-1ubuntu1~22.04
     libstdc++6:
@@ -483,13 +487,13 @@ local:
     libzstd1:
         1.4.8+dfsg-3build1
     linux-libc-dev:
-        5.15.0-118.128
+        5.15.0-126.136
     locales:
         2.35-0ubuntu3.8
     login:
         1:4.8.1-2ubuntu2.2
     logsave:
-        1.46.5-2ubuntu1.1
+        1.46.5-2ubuntu1.2
     lsb-base:
         11.1.0ubuntu4
     lsb-release:
@@ -513,9 +517,13 @@ local:
     openssh-sftp-server:
         1:8.9p1-3ubuntu0.10
     openssl:
-        3.0.2-0ubuntu1.17
+        3.0.2-0ubuntu1.18
     passwd:
         1:4.8.1-2ubuntu2.2
+    pci.ids:
+        0.0~2022.01.22-1
+    pciutils:
+        1:3.7.0-6
     perl:
         5.34.0-3ubuntu1.3
     perl-base:
@@ -527,33 +535,33 @@ local:
     procps:
         2:3.3.17-6ubuntu2.1
     python-apt-common:
-        2.4.0ubuntu3
+        2.4.0ubuntu4
     python3:
-        3.10.6-1~22.04
+        3.10.6-1~22.04.1
     python3-apt:
-        2.4.0ubuntu3
+        2.4.0ubuntu4
     python3-dev:
-        3.10.6-1~22.04
+        3.10.6-1~22.04.1
     python3-distutils:
         3.10.8-1~22.04
     python3-lib2to3:
         3.10.8-1~22.04
     python3-minimal:
-        3.10.6-1~22.04
+        3.10.6-1~22.04.1
     python3-pip:
-        22.0.2+dfsg-1ubuntu0.4
+        22.0.2+dfsg-1ubuntu0.5
     python3-pkg-resources:
-        59.6.0-1.2ubuntu0.22.04.1
+        59.6.0-1.2ubuntu0.22.04.2
     python3-setuptools:
-        59.6.0-1.2ubuntu0.22.04.1
+        59.6.0-1.2ubuntu0.22.04.2
     python3-wheel:
         0.37.1-2ubuntu0.22.04.1
     python3.10:
-        3.10.12-1~22.04.5
+        3.10.12-1~22.04.7
     python3.10-dev:
-        3.10.12-1~22.04.5
+        3.10.12-1~22.04.7
     python3.10-minimal:
-        3.10.12-1~22.04.5
+        3.10.12-1~22.04.7
     readline-common:
         8.1.2-1
     rpcsvc-proto:
@@ -596,17 +604,17 @@ local:
     Jinja2:
         3.1.4
     MarkupSafe:
-        2.1.5
+        3.0.2
     PyYAML:
         6.0.2
     aiohappyeyeballs:
-        2.3.5
+        2.4.3
     aiohttp:
-        3.10.2
+        3.11.7
     aiosignal:
         1.3.1
     async-timeout:
-        4.0.3
+        5.0.1
     attrs:
         24.2.0
     autocommand:
@@ -614,33 +622,35 @@ local:
     backports.tarfile:
         1.2.0
     certifi:
-        2024.7.4
+        2024.8.30
     cffi:
-        1.17.0
+        1.17.1
     charset-normalizer:
-        3.3.2
+        3.4.0
     cheroot:
         10.0.1
     contextvars:
         2.4
+    croniter:
+        5.0.1
     cryptography:
-        43.0.0
+        43.0.3
     distro:
         1.9.0
     frozenlist:
-        1.4.1
+        1.5.0
     idna:
-        3.7
+        3.10
     immutables:
-        0.20
+        0.21
     importlib_metadata:
-        8.2.0
+        8.5.0
     jaraco.collections:
-        5.0.1
+        5.1.0
     jaraco.context:
-        5.3.0
+        6.0.1
     jaraco.functools:
-        4.0.2
+        4.1.0
     jaraco.text:
         4.0.0
     jmespath:
@@ -648,43 +658,49 @@ local:
     looseversion:
         1.3.0
     more-itertools:
-        10.4.0
+        10.5.0
     msgpack:
-        1.0.8
+        1.1.0
     multidict:
-        6.0.5
+        6.1.0
+    networkx:
+        3.4.2
     packaging:
-        24.1
-    pip:
         24.2
+    pip:
+        24.3.1
     portend:
         3.2.0
+    propcache:
+        0.2.0
     psutil:
-        6.0.0
+        6.1.0
     pyOpenSSL:
         24.2.1
     pycparser:
         2.22
     pycryptodomex:
-        3.20.0
+        3.21.0
     python-apt:
-        2.4.0+ubuntu3
+        2.4.0+ubuntu4
     python-dateutil:
         2.9.0.post0
     python-gnupg:
-        0.5.2
+        0.5.3
+    pytz:
+        2024.2
     pyzmq:
-        26.1.0
+        26.2.0
     requests:
         2.32.3
-    rpm_vercmp:
+    rpm-vercmp:
         0.1.2
     salt:
-        3007.0+0na.18ca4fd
+        3007.1+445.g9233e1cc3b
     setproctitle:
-        1.3.3
+        1.3.4
     setuptools:
-        72.1.0
+        68.2.2
     six:
         1.16.0
     tempora:
@@ -692,17 +708,19 @@ local:
     timelib:
         0.3.0
     tornado:
-        6.4.1
+        6.4.2
+    typing_extensions:
+        4.12.2
     urllib3:
-        2.2.2
+        2.2.3
     wheel:
-        0.44.0
+        0.45.1
     yarl:
-        1.9.4
+        1.18.0
     zc.lockfile:
         3.0.post1
     zipp:
-        3.19.2
+        3.21.0
 # salt-call --local locale.list_avail
 local:
     - C

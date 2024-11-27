@@ -2,19 +2,20 @@ fedo-39.0-3006.9-py3
 Salt install method: onedir
 # salt-call --versions-report
 Salt Version:
-          Salt: 3006.8
+          Salt: 3006.9
  
 Python Version:
-        Python: 3.10.14 (main, Apr  3 2024, 21:30:09) [GCC 11.2.0]
+        Python: 3.10.14 (main, Jun 26 2024, 11:44:37) [GCC 11.2.0]
  
 Dependency Versions:
           cffi: 1.14.6
       cherrypy: 18.6.1
+  cryptography: 42.0.5
       dateutil: 2.8.1
      docker-py: Not Installed
          gitdb: Not Installed
      gitpython: Not Installed
-        Jinja2: 3.1.3
+        Jinja2: 3.1.4
        libgit2: Not Installed
   looseversion: 1.0.2
       M2Crypto: Not Installed
@@ -30,7 +31,7 @@ Dependency Versions:
   python-gnupg: 0.4.8
         PyYAML: 6.0.1
          PyZMQ: 23.2.0
-        relenv: 0.16.0
+        relenv: 0.17.0
          smmap: Not Installed
        timelib: 0.2.4
        Tornado: 4.5.3
@@ -108,10 +109,10 @@ local:
     saltpath:
         /opt/saltstack/salt/lib/python3.10/site-packages/salt
     saltversion:
-        3006.8
+        3006.9
     saltversioninfo:
         - 3006
-        - 8
+        - 9
     systemd:
         ----------
         features:
@@ -141,13 +142,13 @@ local:
     bzip2-libs:
         1.0.8-16.fc39
     ca-certificates:
-        2023.2.60_v7.0.306-2.fc39
+        2024.2.69_v8.0.401-1.0.fc39
     chkconfig:
         1.26-1.fc39
     coreutils:
-        9.3-6.fc39
+        9.3-7.fc39
     coreutils-common:
-        9.3-6.fc39
+        9.3-7.fc39
     cpio:
         2.14-4.fc39
     cracklib:
@@ -177,23 +178,23 @@ local:
     dmidecode:
         1:3.6-1.fc39
     dnf:
-        4.21.0-1.fc39
+        4.21.1-1.fc39
     dnf-data:
-        4.21.0-1.fc39
+        4.21.1-1.fc39
     dnf-plugins-core:
-        4.8.0-1.fc39
+        4.9.0-1.fc39
     dnf-utils:
-        4.8.0-1.fc39
+        4.9.0-1.fc39
     dracut:
         059-16.fc39
     elfutils-default-yama-scope:
-        0.191-2.fc39
+        0.192-4.fc39
     elfutils-libelf:
-        0.191-2.fc39
+        0.192-4.fc39
     elfutils-libs:
-        0.191-2.fc39
+        0.192-4.fc39
     expat:
-        2.6.2-1.fc39
+        2.6.3-1.fc39
     fedora-gpg-keys:
         39-2
     fedora-release-common:
@@ -227,21 +228,21 @@ local:
     gettext-runtime:
         0.22-2.fc39
     git:
-        2.45.2-1.fc39
+        2.47.0-1.fc39
     git-core:
-        2.45.2-1.fc39
+        2.47.0-1.fc39
     git-core-doc:
-        2.45.2-1.fc39
+        2.47.0-1.fc39
     glib2:
         2.78.6-1.fc39
     glibc:
-        2.38-18.fc39
+        2.38-19.fc39
     glibc-common:
-        2.38-18.fc39
+        2.38-19.fc39
     glibc-langpack-en:
-        2.38-18.fc39
+        2.38-19.fc39
     glibc-minimal-langpack:
-        2.38-18.fc39
+        2.38-19.fc39
     gmp:
         1:6.2.1-5.fc39
     gnupg2:
@@ -265,7 +266,7 @@ local:
     gzip:
         1.12-6.fc39
     hwdata:
-        0.384-1.fc39
+        0.389-1.fc39
     ima-evm-utils:
         1.5-2.fc39
     js-jquery:
@@ -287,13 +288,13 @@ local:
     kpartx:
         0.9.5-2.fc39
     krb5-libs:
-        1.21.3-1.fc39
+        1.21.3-2.fc39
     less:
-        633-2.fc39
+        633-4.fc39
     libacl:
         2.3.1-9.fc39
     libarchive:
-        3.7.1-2.fc39
+        3.7.1-3.fc39
     libargon2:
         20190702-3.fc39
     libassuan:
@@ -321,11 +322,11 @@ local:
     libdb:
         5.3.28-56.fc39
     libdnf:
-        0.73.2-1.fc39
+        0.73.3-1.fc39
     libeconf:
         0.5.2-2.fc39
     libedit:
-        3.1-51.20240517cvs.fc39
+        3.1-53.20240808cvs.fc39
     libevent:
         2.1.12-9.fc39
     libfdisk:
@@ -337,19 +338,21 @@ local:
     libfsverity:
         1.4-10.fc39
     libgcc:
-        13.3.1-1.fc39
+        13.3.1-3.fc39
     libgcrypt:
         1.10.2-2.fc39
     libgomp:
-        13.3.1-1.fc39
+        13.3.1-3.fc39
     libgpg-error:
         1.47-2.fc39
     libidn2:
         2.3.7-1.fc39
     libkcapi:
-        1.4.0-7.fc39
+        1.5.0-4.fc39
+    libkcapi-hasher:
+        1.5.0-4.fc39
     libkcapi-hmaccalc:
-        1.4.0-7.fc39
+        1.5.0-4.fc39
     libksba:
         1.6.4-2.fc39
     libmodulemd:
@@ -365,7 +368,7 @@ local:
     libpwquality:
         1.4.5-6.fc39
     librepo:
-        1.18.0-1.fc39
+        1.19.0-1.fc39
     libseccomp:
         2.5.5-1.fc39
     libselinux:
@@ -385,11 +388,11 @@ local:
     libssh-config:
         0.10.6-2.fc39
     libstdc++:
-        13.3.1-1.fc39
+        13.3.1-3.fc39
     libtasn1:
         4.19.0-3.fc39
     libtirpc:
-        1.3.5-0.fc39
+        1.3.6-0.fc39
     libtool-ltdl:
         2.4.7-7.fc39
     libunistring:
@@ -439,9 +442,9 @@ local:
     openssh-server:
         9.3p1-11.fc39
     openssl:
-        1:3.1.1-4.fc39
+        1:3.1.4-4.fc39
     openssl-libs:
-        1:3.1.1-4.fc39
+        1:3.1.4-4.fc39
     os-prober:
         1.81-4.fc39
     p11-kit:
@@ -503,7 +506,7 @@ local:
     perl-Getopt-Std:
         1.13-502.fc39
     perl-Git:
-        2.45.2-1.fc39
+        2.47.0-1.fc39
     perl-HTTP-Tiny:
         0.088-3.fc39
     perl-IO:
@@ -597,7 +600,7 @@ local:
     python-systemd-doc:
         235-5.fc39
     python3:
-        3.12.4-1.fc39
+        3.12.7-1.fc39
     python3-dateutil:
         1:2.8.2-10.fc39
     python3-dbus:
@@ -605,17 +608,17 @@ local:
     python3-distro:
         1.8.0-6.fc39
     python3-dnf:
-        4.21.0-1.fc39
+        4.21.1-1.fc39
     python3-dnf-plugins-core:
-        4.8.0-1.fc39
+        4.9.0-1.fc39
     python3-hawkey:
-        0.73.2-1.fc39
+        0.73.3-1.fc39
     python3-libcomps:
         0.1.20-1.fc39
     python3-libdnf:
-        0.73.2-1.fc39
+        0.73.3-1.fc39
     python3-libs:
-        3.12.4-1.fc39
+        3.12.7-1.fc39
     python3-pip:
         23.2.1-2.fc39
     python3-rpm:
@@ -639,9 +642,9 @@ local:
     rpm-sign-libs:
         4.19.1.1-1.fc39
     salt:
-        3006.8-0
+        3006.9-0
     salt-minion:
-        3006.8-0
+        3006.9-0
     sed:
         4.8-14.fc39
     setup:
@@ -653,13 +656,13 @@ local:
     sudo:
         1.9.15-1.p5.fc39
     systemd:
-        254.16-1.fc39
+        254.20-1.fc39
     systemd-libs:
-        254.16-1.fc39
+        254.20-1.fc39
     systemd-pam:
-        254.16-1.fc39
+        254.20-1.fc39
     systemd-udev:
-        254.16-1.fc39
+        254.20-1.fc39
     tar:
         2:1.35-2.fc39
     tpm2-tools:
@@ -675,9 +678,9 @@ local:
     util-linux-core:
         2.39.4-1.fc39
     vim-data:
-        2:9.1.660-1.fc39
+        2:9.1.825-1.fc39
     vim-minimal:
-        2:9.1.660-1.fc39
+        2:9.1.825-1.fc39
     web-assets-filesystem:
         5-20.fc39
     which:
@@ -687,7 +690,7 @@ local:
     xz-libs:
         5.4.4-1.fc39
     yum:
-        4.21.0-1.fc39
+        4.21.1-1.fc39
     zchunk-libs:
         1.5.1-1.fc39
     zlib:
@@ -698,13 +701,13 @@ local:
     CherryPy:
         18.6.1
     Jinja2:
-        3.1.3
+        3.1.4
     MarkupSafe:
         2.1.2
     PyYAML:
         6.0.1
     certifi:
-        2023.7.22
+        2024.7.4
     cffi:
         1.14.6
     charset-normalizer:
@@ -713,6 +716,8 @@ local:
         8.5.2
     contextvars:
         2.4
+    croniter:
+        2.0.5
     cryptography:
         42.0.5
     distro:
@@ -762,13 +767,13 @@ local:
     pyzmq:
         23.2.0
     relenv:
-        0.16.0
+        0.17.0
     requests:
-        2.31.0
+        2.32.3
     rpm-vercmp:
         0.1.2
     salt:
-        3006.8
+        3006.9
     setproctitle:
         1.3.2
     setuptools:

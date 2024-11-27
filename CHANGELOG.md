@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.95.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.94.0...v1.95.0) (2024-11-27)
+
+
+### Features
+
+* **salt:** drop nightly ([d50c0ee](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/d50c0ee7a364d54c6ae7cd5599f1d94c3b04400c))
+
 # [1.94.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.93.0...v1.94.0) (2024-08-10)
 
 
