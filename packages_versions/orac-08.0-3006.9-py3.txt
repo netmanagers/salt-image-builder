@@ -469,7 +469,7 @@ local:
     p11-kit-trust:
         0.23.22-2.el8
     pam:
-        1.3.1-34.0.1.el8_10
+        1.3.1-36.0.1.el8_10
     passwd:
         0.80-4.el8
     pciutils:
@@ -581,9 +581,9 @@ local:
     pkgconf-pkg-config:
         1.4.2-1.el8
     platform-python:
-        3.6.8-67.0.1.el8_10
+        3.6.8-69.0.1.el8_10
     platform-python-devel:
-        3.6.8-67.0.1.el8_10
+        3.6.8-69.0.1.el8_10
     platform-python-pip:
         9.0.3-24.el8
     platform-python-setuptools:
@@ -619,7 +619,7 @@ local:
     python3-libdnf:
         0.63.0-20.0.1.el8_10
     python3-libs:
-        3.6.8-67.0.1.el8_10
+        3.6.8-69.0.1.el8_10
     python3-pip:
         9.0.3-24.el8
     python3-pip-wheel:

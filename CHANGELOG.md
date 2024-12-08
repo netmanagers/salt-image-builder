@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.96.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.95.0...v1.96.0) (2024-12-08)
+
+
+### Features
+
+* **salt:** remove suse 15.4 ([270f22e](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/270f22e5b4eedc812da4d22bd0693c40115ddbdf))
+
 # [1.95.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.94.0...v1.95.0) (2024-11-27)
 
 
