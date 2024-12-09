@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.97.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.96.0...v1.97.0) (2024-12-09)
+
+
+### Features
+
+* **os:** add fedora 41 & suse 15.6 ([f038347](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/f038347f06b7bcfac6b6606f11ca7564619ea427))
+
 # [1.96.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.95.0...v1.96.0) (2024-12-08)
 
 
