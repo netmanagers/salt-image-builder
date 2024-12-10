@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.98.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.97.0...v1.98.0) (2024-12-10)
+
+
+### Features
+
+* **os:** remove arch linux and gentoo ([2de191e](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/2de191ef4f607625ffad6e791231f05971198f7c))
+
 # [1.97.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.96.0...v1.97.0) (2024-12-09)
 
 

@@ -301,7 +301,7 @@ local:
     liberror-perl:
         0.17029-1
     libexpat1:
-        2.2.9-1ubuntu0.7
+        2.2.9-1ubuntu0.8
     libext2fs2:
         1.45.5-2ubuntu1.2
     libfdisk1:

@@ -193,9 +193,9 @@ local:
     dejavu-sans-fonts:
         2.37-18.el9
     device-mapper:
-        9:1.02.202-2.el9
+        9:1.02.202-3.el9
     device-mapper-libs:
-        9:1.02.202-2.el9
+        9:1.02.202-3.el9
     dnf:
         4.14.0-21.el9
     dnf-data:
@@ -277,7 +277,7 @@ local:
     kbd-misc:
         2.4.0-10.el9
     kernel-headers:
-        5.14.0-536.el9
+        5.14.0-539.el9
     keyutils:
         1.6.3-1.el9
     keyutils-libs:

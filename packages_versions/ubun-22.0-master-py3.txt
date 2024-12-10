@@ -302,9 +302,9 @@ local:
     liberror-perl:
         0.17029-1
     libexpat1:
-        2.4.7-1ubuntu0.4
+        2.4.7-1ubuntu0.5
     libexpat1-dev:
-        2.4.7-1ubuntu0.4
+        2.4.7-1ubuntu0.5
     libext2fs2:
         1.46.5-2ubuntu1.2
     libffi8:
