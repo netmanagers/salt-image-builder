@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.99.1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.99.0...v1.99.1) (2024-12-11)
+
+
+### Styles
+
+* **syntax:** fix naming convention ([2c5c598](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/2c5c598014fdb23f6d98e7799a9cceb192bb07c2))
+
 # [1.99.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.98.0...v1.99.0) (2024-12-11)
 
 

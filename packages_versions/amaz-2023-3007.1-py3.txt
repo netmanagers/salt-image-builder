@@ -1,0 +1,782 @@
+amaz-2023-3007.1-py3
+Salt install method: onedir
+# salt-call --versions-report
+Salt Version:
+          Salt: 3007.1
+ 
+Python Version:
+        Python: 3.10.14 (main, Apr  3 2024, 21:30:09) [GCC 11.2.0]
+ 
+Dependency Versions:
+          cffi: 1.16.0
+      cherrypy: 18.8.0
+      dateutil: 2.8.2
+     docker-py: Not Installed
+         gitdb: Not Installed
+     gitpython: Not Installed
+        Jinja2: 3.1.4
+       libgit2: Not Installed
+  looseversion: 1.3.0
+      M2Crypto: Not Installed
+          Mako: Not Installed
+       msgpack: 1.0.7
+  msgpack-pure: Not Installed
+  mysql-python: Not Installed
+     packaging: 23.1
+     pycparser: 2.21
+      pycrypto: Not Installed
+  pycryptodome: 3.19.1
+        pygit2: Not Installed
+  python-gnupg: 0.5.2
+        PyYAML: 6.0.1
+         PyZMQ: 25.1.2
+        relenv: 0.16.0
+         smmap: Not Installed
+       timelib: 0.3.0
+       Tornado: 6.3.3
+           ZMQ: 4.3.4
+ 
+Salt Package Information:
+  Package Type: onedir
+ 
+System Versions:
+          dist: amzn 2023.6.20241121 
+        locale: utf-8
+       machine: x86_64
+       release: 5.15.154+
+        system: Linux
+       version: Amazon Linux 2023.6.20241121 
+ 
+# salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
+local:
+    ----------
+    init:
+        unknown
+    kernel:
+        Linux
+    kernelrelease:
+        5.15.154+
+    kernelversion:
+        #1 SMP Sat May 4 12:14:42 UTC 2024
+    locale_info:
+        ----------
+        defaultencoding:
+            UTF-8
+        defaultlanguage:
+            en_US
+        detectedencoding:
+            utf-8
+        timezone:
+            UTC
+    lsb_distrib_codename:
+        Amazon Linux 2023.6.20241121
+    lsb_distrib_id:
+        Amazon Linux
+    lsb_distrib_release:
+        2023
+    os:
+        Amazon
+    os_family:
+        RedHat
+    osarch:
+        x86_64
+    osbuild:
+    oscodename:
+        Amazon Linux 2023.6.20241121
+    osfinger:
+        Amazon Linux-2023
+    osfullname:
+        Amazon Linux
+    osmajorrelease:
+        2023
+    osmanufacturer:
+    osrelease:
+        2023
+    osrelease_info:
+        - 2023
+    osversion:
+    pythonexecutable:
+        /opt/saltstack/salt/bin/python3.10
+    pythonpath:
+        - /opt/saltstack/salt
+        - /opt/saltstack/salt/extras-3.10
+        - /opt/saltstack/salt/lib/python310.zip
+        - /opt/saltstack/salt/lib/python3.10
+        - /opt/saltstack/salt/lib/python3.10/lib-dynload
+        - /opt/saltstack/salt/lib/python3.10/site-packages
+    pythonversion:
+        - 3
+        - 10
+        - 14
+        - final
+        - 0
+    saltpath:
+        /opt/saltstack/salt/lib/python3.10/site-packages/salt
+    saltversion:
+        3007.1
+    saltversioninfo:
+        - 3007
+        - 1
+    systemd:
+        ----------
+        features:
+            +PAM +AUDIT +SELINUX -APPARMOR +IMA +SMACK +SECCOMP -GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN -IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 -BZIP2 -LZ4 +XZ -ZLIB -ZSTD +BPF_FRAMEWORK +XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified
+        version:
+            252
+    virtual:
+        gce
+    virtual_subtype:
+    zmqversion:
+        4.3.4
+# salt-call --local pkg.list_pkgs
+local:
+    ----------
+    alternatives:
+        1.15-2.amzn2023.0.2
+    amazon-linux-repo-cdn:
+        2023.6.20241121-0.amzn2023
+    audit-libs:
+        3.0.6-1.amzn2023.0.2
+    basesystem:
+        11-11.amzn2023.0.2
+    bash:
+        5.2.15-1.amzn2023.0.2
+    bzip2-libs:
+        1.0.8-6.amzn2023.0.2
+    ca-certificates:
+        2023.2.68-1.0.amzn2023.0.1
+    coreutils-single:
+        8.32-30.amzn2023.0.3
+    cracklib:
+        2.9.6-27.amzn2023.0.2
+    crypto-policies:
+        20220428-1.gitdfb10ea.amzn2023.0.2
+    cryptsetup-libs:
+        2.6.1-1.amzn2023.0.1
+    curl-minimal:
+        8.5.0-1.amzn2023.0.4
+    cyrus-sasl-lib:
+        2.1.27-18.amzn2023.0.3
+    dbus:
+        1:1.12.28-1.amzn2023.0.1
+    dbus-broker:
+        32-1.amzn2023.0.2
+    dbus-common:
+        1:1.12.28-1.amzn2023.0.1
+    dbus-libs:
+        1:1.12.28-1.amzn2023.0.1
+    device-mapper:
+        1.02.185-1.amzn2023.0.5
+    device-mapper-libs:
+        1.02.185-1.amzn2023.0.5
+    diffutils:
+        3.8-1.amzn2023.0.2
+    dmidecode:
+        1:3.6-1.amzn2023.0.1
+    dnf:
+        4.14.0-1.amzn2023.0.5
+    dnf-data:
+        4.14.0-1.amzn2023.0.5
+    dnf-plugins-core:
+        4.3.0-13.amzn2023.0.4
+    dnf-utils:
+        4.3.0-13.amzn2023.0.4
+    elfutils-default-yama-scope:
+        0.188-3.amzn2023.0.2
+    elfutils-libelf:
+        0.188-3.amzn2023.0.2
+    elfutils-libs:
+        0.188-3.amzn2023.0.2
+    expat:
+        2.6.3-1.amzn2023.0.1
+    file-libs:
+        5.39-7.amzn2023.0.4
+    filesystem:
+        3.14-5.amzn2023.0.3
+    findutils:
+        1:4.8.0-2.amzn2023.0.2
+    gawk:
+        5.1.0-3.amzn2023.0.3
+    gdbm-libs:
+        1:1.19-2.amzn2023.0.2
+    git:
+        2.40.1-1.amzn2023.0.3
+    git-core:
+        2.40.1-1.amzn2023.0.3
+    git-core-doc:
+        2.40.1-1.amzn2023.0.3
+    glib2:
+        2.74.7-689.amzn2023.0.2
+    glibc:
+        2.34-117.amzn2023.0.1
+    glibc-common:
+        2.34-117.amzn2023.0.1
+    glibc-langpack-en:
+        2.34-117.amzn2023.0.1
+    glibc-minimal-langpack:
+        2.34-117.amzn2023.0.1
+    gmp:
+        1:6.2.1-2.amzn2023.0.2
+    gnupg2-minimal:
+        2.3.7-1.amzn2023.0.4
+    gpg-pubkey.(none):
+        73d76b3f-63dace60,d832c631-6515c85e
+    gpgme:
+        1.15.1-6.amzn2023.0.3
+    grep:
+        3.8-1.amzn2023.0.4
+    groff-base:
+        1.22.4-7.amzn2023.0.2
+    gzip:
+        1.12-1.amzn2023.0.1
+    hwdata:
+        0.384-1.amzn2023.0.3
+    json-c:
+        0.14-8.amzn2023.0.2
+    kbd:
+        2.4.0-2.amzn2023.0.3
+    kbd-misc:
+        2.4.0-2.amzn2023.0.3
+    keyutils-libs:
+        1.6.3-1.amzn2023.0.1
+    kmod:
+        29-2.amzn2023.0.5
+    kmod-libs:
+        29-2.amzn2023.0.5
+    krb5-libs:
+        1.21.3-1.amzn2023.0.1
+    less:
+        608-2.amzn2023.0.2
+    libacl:
+        2.3.1-2.amzn2023.0.2
+    libarchive:
+        3.7.4-2.amzn2023.0.2
+    libargon2:
+        20171227-9.amzn2023.0.2
+    libassuan:
+        2.5.5-1.amzn2023.0.2
+    libattr:
+        2.5.1-3.amzn2023.0.2
+    libblkid:
+        2.37.4-1.amzn2023.0.4
+    libcap:
+        2.48-2.amzn2023.0.3
+    libcap-ng:
+        0.8.2-4.amzn2023.0.2
+    libcbor:
+        0.7.0-3.amzn2023.0.2
+    libcom_err:
+        1.46.5-2.amzn2023.0.2
+    libcomps:
+        0.1.20-1.amzn2023
+    libcurl-minimal:
+        8.5.0-1.amzn2023.0.4
+    libdb:
+        5.3.28-49.amzn2023.0.2
+    libdnf:
+        0.69.0-8.amzn2023.0.5
+    libeconf:
+        0.4.0-1.amzn2023.0.3
+    libedit:
+        3.1-38.20210714cvs.amzn2023.0.2
+    libfdisk:
+        2.37.4-1.amzn2023.0.4
+    libffi:
+        3.4.4-1.amzn2023.0.1
+    libfido2:
+        1.10.0-2.amzn2023.0.2
+    libgcc:
+        11.4.1-2.amzn2023.0.2
+    libgcrypt:
+        1.10.2-1.amzn2023.0.2
+    libgomp:
+        11.4.1-2.amzn2023.0.2
+    libgpg-error:
+        1.42-1.amzn2023.0.2
+    libidn2:
+        2.3.2-1.amzn2023.0.5
+    libmodulemd:
+        2.13.0-2.amzn2023.0.2
+    libmount:
+        2.37.4-1.amzn2023.0.4
+    libnghttp2:
+        1.59.0-3.amzn2023.0.1
+    libpsl:
+        0.21.1-3.amzn2023.0.2
+    libpwquality:
+        1.4.4-6.amzn2023.0.2
+    librepo:
+        1.14.5-2.amzn2023.0.1
+    libreport-filesystem:
+        2.15.2-2.amzn2023.0.2
+    libseccomp:
+        2.5.3-1.amzn2023.0.2
+    libselinux:
+        3.4-5.amzn2023.0.2
+    libsemanage:
+        3.4-5.amzn2023.0.2
+    libsepol:
+        3.4-3.amzn2023.0.3
+    libsigsegv:
+        2.13-2.amzn2023.0.2
+    libsmartcols:
+        2.37.4-1.amzn2023.0.4
+    libsolv:
+        0.7.22-1.amzn2023.0.2
+    libstdc++:
+        11.4.1-2.amzn2023.0.2
+    libtasn1:
+        4.19.0-1.amzn2023.0.4
+    libunistring:
+        0.9.10-10.amzn2023.0.2
+    libutempter:
+        1.2.1-4.amzn2023.0.2
+    libuuid:
+        2.37.4-1.amzn2023.0.4
+    libverto:
+        0.3.2-1.amzn2023.0.2
+    libxcrypt:
+        4.4.33-7.amzn2023
+    libxkbcommon:
+        1.6.0-2.amzn2023.0.1
+    libxml2:
+        2.10.4-1.amzn2023.0.6
+    libyaml:
+        0.2.5-5.amzn2023.0.2
+    libzstd:
+        1.5.5-1.amzn2023.0.1
+    lua-libs:
+        5.4.4-3.amzn2023.0.2
+    lz4-libs:
+        1.9.4-1.amzn2023.0.2
+    mpfr:
+        4.1.0-7.amzn2023.0.2
+    nano:
+        5.8-3.amzn2023.0.4
+    nano-default-editor:
+        5.8-3.amzn2023.0.4
+    ncurses:
+        6.2-4.20200222.amzn2023.0.6
+    ncurses-base:
+        6.2-4.20200222.amzn2023.0.6
+    ncurses-libs:
+        6.2-4.20200222.amzn2023.0.6
+    net-tools:
+        2.0-0.59.20160912git.amzn2023.0.3
+    npth:
+        1.6-6.amzn2023.0.2
+    openldap:
+        2.4.57-6.amzn2023.0.6
+    openssh:
+        8.7p1-8.amzn2023.0.13
+    openssh-clients:
+        8.7p1-8.amzn2023.0.13
+    openssh-server:
+        8.7p1-8.amzn2023.0.13
+    openssl:
+        1:3.0.8-1.amzn2023.0.16
+    openssl-libs:
+        1:3.0.8-1.amzn2023.0.16
+    p11-kit:
+        0.24.1-2.amzn2023.0.3
+    p11-kit-trust:
+        0.24.1-2.amzn2023.0.3
+    pam:
+        1.5.1-8.amzn2023.0.4
+    pciutils:
+        3.7.0-3.amzn2023.0.2
+    pciutils-libs:
+        3.7.0-3.amzn2023.0.2
+    pcre2:
+        10.40-1.amzn2023.0.3
+    pcre2-syntax:
+        10.40-1.amzn2023.0.3
+    perl-AutoLoader:
+        5.74-477.amzn2023.0.6
+    perl-B:
+        1.80-477.amzn2023.0.6
+    perl-Carp:
+        1.50-458.amzn2023.0.2
+    perl-Class-Struct:
+        0.66-477.amzn2023.0.6
+    perl-Data-Dumper:
+        2.174-460.amzn2023.0.2
+    perl-Digest:
+        1.20-1.amzn2023.0.2
+    perl-Digest-MD5:
+        2.58-2.amzn2023.0.2
+    perl-DynaLoader:
+        1.47-477.amzn2023.0.6
+    perl-Encode:
+        4:3.15-462.amzn2023.0.2
+    perl-Errno:
+        1.30-477.amzn2023.0.6
+    perl-Error:
+        1:0.17029-5.amzn2023.0.2
+    perl-Exporter:
+        5.74-459.amzn2023.0.2
+    perl-Fcntl:
+        1.13-477.amzn2023.0.6
+    perl-File-Basename:
+        2.85-477.amzn2023.0.6
+    perl-File-Find:
+        1.37-477.amzn2023.0.6
+    perl-File-Path:
+        2.18-2.amzn2023.0.2
+    perl-File-Temp:
+        1:0.231.100-2.amzn2023.0.2
+    perl-File-stat:
+        1.09-477.amzn2023.0.6
+    perl-FileHandle:
+        2.03-477.amzn2023.0.6
+    perl-Getopt-Long:
+        1:2.52-2.amzn2023.0.2
+    perl-Getopt-Std:
+        1.12-477.amzn2023.0.6
+    perl-Git:
+        2.40.1-1.amzn2023.0.3
+    perl-HTTP-Tiny:
+        0.078-1.amzn2023.0.3
+    perl-IO:
+        1.43-477.amzn2023.0.6
+    perl-IO-Socket-IP:
+        0.41-3.amzn2023.0.2
+    perl-IO-Socket-SSL:
+        2.075-1.amzn2023.0.2
+    perl-IPC-Open3:
+        1.21-477.amzn2023.0.6
+    perl-MIME-Base64:
+        3.16-2.amzn2023.0.2
+    perl-Mozilla-CA:
+        20200520-4.amzn2023.0.2
+    perl-NDBM_File:
+        1.15-477.amzn2023.0.6
+    perl-Net-SSLeay:
+        1.92-2.amzn2023.0.2
+    perl-POSIX:
+        1.94-477.amzn2023.0.6
+    perl-PathTools:
+        3.78-459.amzn2023.0.2
+    perl-Pod-Escapes:
+        1:1.07-458.amzn2023.0.2
+    perl-Pod-Perldoc:
+        3.28.01-459.amzn2023.0.3
+    perl-Pod-Simple:
+        1:3.42-2.amzn2023.0.2
+    perl-Pod-Usage:
+        4:2.01-2.amzn2023.0.2
+    perl-Scalar-List-Utils:
+        4:1.56-459.amzn2023.0.2
+    perl-SelectSaver:
+        1.02-477.amzn2023.0.6
+    perl-Socket:
+        4:2.032-1.amzn2023.0.2
+    perl-Storable:
+        1:3.21-458.amzn2023.0.2
+    perl-Symbol:
+        1.08-477.amzn2023.0.6
+    perl-Term-ANSIColor:
+        5.01-459.amzn2023.0.2
+    perl-Term-Cap:
+        1.17-458.amzn2023.0.2
+    perl-TermReadKey:
+        2.38-9.amzn2023.0.2
+    perl-Text-ParseWords:
+        3.30-458.amzn2023.0.2
+    perl-Text-Tabs+Wrap:
+        2021.0726-1.amzn2023.0.1
+    perl-Time-Local:
+        2:1.300-5.amzn2023.0.2
+    perl-URI:
+        5.09-1.amzn2023.0.2
+    perl-base:
+        2.27-477.amzn2023.0.6
+    perl-constant:
+        1.33-459.amzn2023.0.2
+    perl-if:
+        0.60.800-477.amzn2023.0.6
+    perl-interpreter:
+        4:5.32.1-477.amzn2023.0.6
+    perl-lib:
+        0.65-477.amzn2023.0.6
+    perl-libnet:
+        3.13-2.amzn2023.0.2
+    perl-libs:
+        4:5.32.1-477.amzn2023.0.6
+    perl-mro:
+        1.23-477.amzn2023.0.6
+    perl-overload:
+        1.31-477.amzn2023.0.6
+    perl-overloading:
+        0.02-477.amzn2023.0.6
+    perl-parent:
+        1:0.238-458.amzn2023.0.2
+    perl-podlators:
+        1:4.14-458.amzn2023.0.2
+    perl-subs:
+        1.03-477.amzn2023.0.6
+    perl-vars:
+        1.05-477.amzn2023.0.6
+    popt:
+        1.18-6.amzn2023.0.2
+    procps-ng:
+        3.3.17-1.amzn2023.0.2
+    publicsuffix-list-dafsa:
+        20240212-61.amzn2023
+    python3:
+        3.9.16-1.amzn2023.0.9
+    python3-dateutil:
+        1:2.8.1-3.amzn2023.0.2
+    python3-dbus:
+        1.2.18-1.amzn2023.0.2
+    python3-distro:
+        1.5.0-5.amzn2023.0.2
+    python3-dnf:
+        4.14.0-1.amzn2023.0.5
+    python3-dnf-plugins-core:
+        4.3.0-13.amzn2023.0.4
+    python3-gpg:
+        1.15.1-6.amzn2023.0.3
+    python3-hawkey:
+        0.69.0-8.amzn2023.0.5
+    python3-libcomps:
+        0.1.20-1.amzn2023
+    python3-libdnf:
+        0.69.0-8.amzn2023.0.5
+    python3-libs:
+        3.9.16-1.amzn2023.0.9
+    python3-pip-wheel:
+        21.3.1-2.amzn2023.0.9
+    python3-rpm:
+        4.16.1.3-29.amzn2023.0.6
+    python3-setuptools:
+        59.6.0-2.amzn2023.0.5
+    python3-setuptools-wheel:
+        59.6.0-2.amzn2023.0.5
+    python3-six:
+        1.15.0-5.amzn2023.0.2
+    python3-systemd:
+        235-51.amzn2023.0.2
+    qrencode-libs:
+        4.1.1-2.amzn2023.0.2
+    readline:
+        8.1-2.amzn2023.0.2
+    rpm:
+        4.16.1.3-29.amzn2023.0.6
+    rpm-build-libs:
+        4.16.1.3-29.amzn2023.0.6
+    rpm-libs:
+        4.16.1.3-29.amzn2023.0.6
+    rpm-sign-libs:
+        4.16.1.3-29.amzn2023.0.6
+    salt:
+        3007.1-0
+    salt-minion:
+        3007.1-0
+    sed:
+        4.8-7.amzn2023.0.2
+    setup:
+        2.13.7-3.amzn2023.0.2
+    shadow-utils:
+        2:4.9-12.amzn2023.0.4
+    sqlite-libs:
+        3.40.0-1.amzn2023.0.4
+    sudo:
+        1.9.15-1.p5.amzn2023.0.1
+    sudo-python-plugin:
+        1.9.15-1.p5.amzn2023.0.1
+    system-release:
+        2023.6.20241121-0.amzn2023
+    systemd:
+        252.23-2.amzn2023
+    systemd-libs:
+        252.23-2.amzn2023
+    systemd-networkd:
+        252.23-2.amzn2023
+    systemd-pam:
+        252.23-2.amzn2023
+    systemd-resolved:
+        252.23-2.amzn2023
+    systemd-udev:
+        252.23-2.amzn2023
+    tpm2-tss:
+        4.0.2-1.amzn2023
+    tzdata:
+        2024a-1.amzn2023.0.1
+    util-linux:
+        2.37.4-1.amzn2023.0.4
+    util-linux-core:
+        2.37.4-1.amzn2023.0.4
+    which:
+        2.21-26.amzn2023.0.2
+    xkeyboard-config:
+        2.41-1.amzn2023.0.1
+    xz-libs:
+        5.2.5-9.amzn2023.0.2
+    yum:
+        4.14.0-1.amzn2023.0.5
+    zlib:
+        1.2.11-33.amzn2023.0.5
+# salt-call --local pip.list
+local:
+    ----------
+    CherryPy:
+        18.8.0
+    Jinja2:
+        3.1.4
+    MarkupSafe:
+        2.1.3
+    PyYAML:
+        6.0.1
+    aiohttp:
+        3.9.5
+    aiosignal:
+        1.3.1
+    annotated-types:
+        0.6.0
+    async-timeout:
+        4.0.3
+    attrs:
+        23.2.0
+    autocommand:
+        2.2.2
+    certifi:
+        2023.7.22
+    cffi:
+        1.16.0
+    charset-normalizer:
+        3.2.0
+    cheroot:
+        10.0.0
+    contextvars:
+        2.4
+    cryptography:
+        42.0.5
+    distro:
+        1.8.0
+    frozenlist:
+        1.4.1
+    idna:
+        3.7
+    immutables:
+        0.15
+    importlib-metadata:
+        6.6.0
+    inflect:
+        7.0.0
+    jaraco.collections:
+        4.1.0
+    jaraco.context:
+        4.3.0
+    jaraco.functools:
+        3.7.0
+    jaraco.text:
+        3.11.1
+    jmespath:
+        1.0.1
+    looseversion:
+        1.3.0
+    more-itertools:
+        9.1.0
+    msgpack:
+        1.0.7
+    multidict:
+        6.0.4
+    packaging:
+        23.1
+    pip:
+        23.3.2
+    portend:
+        3.1.0
+    psutil:
+        5.9.6
+    pyOpenSSL:
+        24.0.0
+    pycparser:
+        2.21
+    pycryptodomex:
+        3.19.1
+    pydantic:
+        2.6.4
+    pydantic_core:
+        2.16.3
+    python-dateutil:
+        2.8.2
+    python-gnupg:
+        0.5.2
+    pytz:
+        2024.1
+    pyzmq:
+        25.1.2
+    relenv:
+        0.16.0
+    requests:
+        2.31.0
+    rpm-vercmp:
+        0.1.2
+    salt:
+        3007.1
+    setproctitle:
+        1.3.2
+    setuptools:
+        68.2.2
+    six:
+        1.16.0
+    tempora:
+        5.3.0
+    timelib:
+        0.3.0
+    tornado:
+        6.3.3
+    typing_extensions:
+        4.8.0
+    urllib3:
+        1.26.18
+    wheel:
+        0.43.0
+    yarl:
+        1.9.4
+    zc.lockfile:
+        3.0.post1
+    zipp:
+        3.16.2
+# salt-call --local locale.list_avail
+local:
+    - C
+    - C.utf8
+    - POSIX
+    - en_AG
+    - en_AU
+    - en_AU.utf8
+    - en_BW
+    - en_BW.utf8
+    - en_CA
+    - en_CA.utf8
+    - en_DK
+    - en_DK.utf8
+    - en_GB
+    - en_GB.iso885915
+    - en_GB.utf8
+    - en_HK
+    - en_HK.utf8
+    - en_IE
+    - en_IE.utf8
+    - en_IE@euro
+    - en_IL
+    - en_IN
+    - en_NG
+    - en_NZ
+    - en_NZ.utf8
+    - en_PH
+    - en_PH.utf8
+    - en_SC.utf8
+    - en_SG
+    - en_SG.utf8
+    - en_US
+    - en_US.iso885915
+    - en_US.utf8
+    - en_ZA
+    - en_ZA.utf8
+    - en_ZM
+    - en_ZW
+    - en_ZW.utf8
