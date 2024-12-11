@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.99.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.98.0...v1.99.0) (2024-12-11)
+
+
+### Features
+
+* **os:** remove fedora 39 ([6c83864](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/6c8386443081727503150a829d865b4e45f1f62d))
+
 # [1.98.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.97.0...v1.98.0) (2024-12-10)
 
 
