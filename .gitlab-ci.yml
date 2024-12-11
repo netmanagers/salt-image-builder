@@ -305,14 +305,14 @@ fedo-40.0-3006.9-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 # Note: Permitting failure on Tumbleweed until https://bugzilla.opensuse.org/show_bug.cgi?id=1190670 is resolved (similar situation to Fedora 35+)
 # Note: Permitting failure on 15.4 & 15.5 until https://github.com/saltstack/salt-bootstrap/issues/1979 is resolved
 opsu-tmbl-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'opensuse/tumbleweed'  , DV: 'latest' , PI: 'zyp', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: 'gawk python3-pip'}}
-opsu-tmbl-3007-1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/tumbleweed'  , DV: 'latest' , PI: 'zyp', SIM: 'onedir', SV: '3007.1' , SVB: ''       , PV: '3', EP: 'gawk'}}
-opsu-tmbl-3006-9-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/tumbleweed'  , DV: 'latest' , PI: 'zyp', SIM: 'onedir', SV: '3006.9' , SVB: ''       , PV: '3', EP: 'gawk'}}
+opsu-tmbl-3007.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/tumbleweed'  , DV: 'latest' , PI: 'zyp', SIM: 'onedir', SV: '3007.1' , SVB: ''       , PV: '3', EP: 'gawk'}}
+opsu-tmbl-3006.9-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/tumbleweed'  , DV: 'latest' , PI: 'zyp', SIM: 'onedir', SV: '3006.9' , SVB: ''       , PV: '3', EP: 'gawk'}}
 opsu-15.6-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'opensuse/leap'        , DV: '15.6'   , PI: 'zyp', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3.11', EP: 'python311-pip python311-devel'}}
-opsu-15.6-3007-1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'        , DV: '15.6'   , PI: 'zyp', SIM: 'onedir', SV: '3007.1' , SVB: ''       , PV: '3', EP: 'procps'}}
-opsu-15.6-3006-9-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'        , DV: '15.6'   , PI: 'zyp', SIM: 'onedir', SV: '3006.9' , SVB: ''       , PV: '3', EP: 'procps'}}
+opsu-15.6-3007.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'        , DV: '15.6'   , PI: 'zyp', SIM: 'onedir', SV: '3007.1' , SVB: ''       , PV: '3', EP: 'procps'}}
+opsu-15.6-3006.9-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'        , DV: '15.6'   , PI: 'zyp', SIM: 'onedir', SV: '3006.9' , SVB: ''       , PV: '3', EP: 'procps'}}
 opsu-15.5-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'opensuse/leap'        , DV: '15.5'   , PI: 'zyp', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3.11', EP: 'python311-pip python311-devel'}}
-opsu-15.5-3007-1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'        , DV: '15.5'   , PI: 'zyp', SIM: 'onedir', SV: '3007.1' , SVB: ''       , PV: '3', EP: 'procps'}}
-opsu-15.5-3006-9-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'        , DV: '15.5'   , PI: 'zyp', SIM: 'onedir', SV: '3006.9' , SVB: ''       , PV: '3', EP: 'procps'}}
+opsu-15.5-3007.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'        , DV: '15.5'   , PI: 'zyp', SIM: 'onedir', SV: '3007.1' , SVB: ''       , PV: '3', EP: 'procps'}}
+opsu-15.5-3006.9-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'opensuse/leap'        , DV: '15.5'   , PI: 'zyp', SIM: 'onedir', SV: '3006.9' , SVB: ''       , PV: '3', EP: 'procps'}}
 
 # ORACLELINUX
 orac-09.0-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'oraclelinux'          , DV: '9'      , PI: 'yum', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3.11', EP: 'curl glibc-langpack-en openssl-devel python3.11 python3.11-devel python3.11-pip'}}
