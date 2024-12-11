@@ -296,9 +296,6 @@ fedo-41.0-3006.9-py3: {extends: '.build_image_failure_forbidden', variables: {DN
 fedo-40.0-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'fedora'               , DV: '40'     , PI: 'dnf', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: ''}}
 fedo-40.0-3007.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'               , DV: '40'     , PI: 'dnf', SIM: 'onedir', SV: '3007.1' , SVB: 'latest' , PV: '3', EP: ''}}
 fedo-40.0-3006.9-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'               , DV: '40'     , PI: 'dnf', SIM: 'onedir', SV: '3006.9' , SVB: 'latest' , PV: '3', EP: ''}}
-fedo-39.0-master-py3: {extends: '.build_image_failure_permitted', variables: {DN: 'fedora'               , DV: '39'     , PI: 'dnf', SIM: 'git'   , SV: 'master' , SVB: ''       , PV: '3', EP: ''}}
-fedo-39.0-3007.1-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'               , DV: '39'     , PI: 'dnf', SIM: 'onedir', SV: '3007.1' , SVB: 'latest' , PV: '3', EP: ''}}
-fedo-39.0-3006.9-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'               , DV: '39'     , PI: 'dnf', SIM: 'onedir', SV: '3006.9' , SVB: 'latest' , PV: '3', EP: ''}}
 
 # OPENSUSE
 # For openSUSE, the bootstrap script only allows `latest` to be built using `stable`
