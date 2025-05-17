@@ -2,10 +2,10 @@ alma-09.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-                  Salt: 3007.1+445.g9233e1cc3b
+                  Salt: 3007.2+354.gfb413fc38
  
 Python Version:
-                Python: 3.11.9 (main, Sep 11 2024, 00:00:00) [GCC 11.5.0 20240719 (Red Hat 11.5.0-2)]
+                Python: 3.11.9 (main, Apr  2 2025, 00:00:00) [GCC 11.5.0 20240719 (Red Hat 11.5.0-5)]
  
 Dependency Versions:
                   cffi: 1.16.0
@@ -15,7 +15,7 @@ Dependency Versions:
              docker-py: 7.1.0
                  gitdb: 4.0.10
              gitpython: 3.1.43
-                Jinja2: 3.1.4
+                Jinja2: 3.1.6
                libgit2: 1.7.1
           looseversion: 1.3.0
               M2Crypto: Not Installed
@@ -35,7 +35,7 @@ Dependency Versions:
                 relenv: Not Installed
                  smmap: 5.0.1
                timelib: 0.3.0
-               Tornado: 6.3.3
+               Tornado: 6.4.2
                    ZMQ: 4.3.4
  
 Salt Extensions:
@@ -119,10 +119,10 @@ local:
     saltpath:
         /usr/lib/python3.11/site-packages/salt
     saltversion:
-        3007.1+445.g9233e1cc3b
+        3007.2+354.gfb413fc38
     saltversioninfo:
         - 3007
-        - 1
+        - 2
     systemd:
         ----------
         features:
@@ -132,6 +132,7 @@ local:
     virtual:
         gce
     virtual_subtype:
+        Docker
     zmqversion:
         4.3.4
 # salt-call --local pkg.list_pkgs
@@ -140,11 +141,11 @@ local:
     acl:
         2.3.1-4.el9
     almalinux-gpg-keys:
-        9.5-1.el9
+        9.5-2.el9
     almalinux-release:
-        9.5-1.el9
+        9.5-2.el9
     almalinux-repos:
-        9.5-1.el9
+        9.5-2.el9
     alternatives:
         1.24-1.el9_5.1
     attr:
@@ -160,7 +161,7 @@ local:
     binutils-gold:
         2.35.2-54.el9
     bzip2-libs:
-        1.0.8-8.el9
+        1.0.8-10.el9_5
     ca-certificates:
         2024.2.69_v8.0.303-91.4.el9_4
     chkconfig:
@@ -168,7 +169,7 @@ local:
     coreutils-single:
         8.32-36.el9
     cpp:
-        11.5.0-2.el9.alma.1
+        11.5.0-5.el9_5.alma.1
     cracklib:
         2.9.6-27.el9
     cracklib-dicts:
@@ -195,8 +196,6 @@ local:
         9:1.02.198-2.el9
     device-mapper-libs:
         9:1.02.198-2.el9
-    diffutils:
-        3.7-12.el9
     dnf:
         4.14.0-17.el9.alma.1
     dnf-data:
@@ -212,9 +211,9 @@ local:
     elfutils-libs:
         0.191-4.el9.alma.1
     emacs-filesystem:
-        1:27.2-10.el9_4
+        1:27.2-11.el9_5.2
     expat:
-        2.5.0-3.el9_5.1
+        2.5.0-3.el9_5.3
     file-libs:
         5.39-16.el9
     filesystem:
@@ -224,29 +223,29 @@ local:
     gawk:
         5.1.0-6.el9
     gcc:
-        11.5.0-2.el9.alma.1
+        11.5.0-5.el9_5.alma.1
     gdbm-libs:
         1:1.23-1.el9
     git:
-        2.43.5-1.el9_4
+        2.43.5-2.el9_5
     git-core:
-        2.43.5-1.el9_4
+        2.43.5-2.el9_5
     git-core-doc:
-        2.43.5-1.el9_4
+        2.43.5-2.el9_5
     glib2:
         2.68.4-14.el9_4.1
     glibc:
-        2.34-125.el9_5.1
+        2.34-125.el9_5.8.alma.1
     glibc-common:
-        2.34-125.el9_5.1
+        2.34-125.el9_5.8.alma.1
     glibc-devel:
-        2.34-125.el9_5.1
+        2.34-125.el9_5.8.alma.1
     glibc-headers:
-        2.34-125.el9_5.1
+        2.34-125.el9_5.8.alma.1
     glibc-langpack-en:
-        2.34-125.el9_5.1
+        2.34-125.el9_5.8.alma.1
     glibc-minimal-langpack:
-        2.34-125.el9_5.1
+        2.34-125.el9_5.8.alma.1
     gmp:
         1:6.2.0-13.el9
     gnupg2:
@@ -268,7 +267,7 @@ local:
     ima-evm-utils:
         1.5-2.el9
     iputils:
-        20210202-9.el9
+        20210202-10.el9_5
     json-c:
         0.14-11.el9
     kbd:
@@ -278,7 +277,7 @@ local:
     kbd-misc:
         2.4.0-10.el9
     kernel-headers:
-        5.14.0-503.15.1.el9_5
+        5.14.0-503.40.1.el9_5
     keyutils:
         1.6.3-1.el9
     keyutils-libs:
@@ -330,11 +329,11 @@ local:
     libfido2:
         1.13.0-2.el9
     libgcc:
-        11.5.0-2.el9.alma.1
+        11.5.0-5.el9_5.alma.1
     libgcrypt:
         1.10.0-11.el9
     libgomp:
-        11.5.0-2.el9.alma.1
+        11.5.0-5.el9_5.alma.1
     libgpg-error:
         1.42-5.el9
     libidn2:
@@ -363,10 +362,8 @@ local:
         2.5.2-2.el9
     libselinux:
         3.6-1.el9
-    libselinux-utils:
-        3.6-1.el9
     libsemanage:
-        3.6-1.el9
+        3.6-2.1.el9_5
     libsepol:
         3.6-1.el9
     libsigsegv:
@@ -376,7 +373,7 @@ local:
     libsolv:
         0.7.24-3.el9
     libstdc++:
-        11.5.0-2.el9.alma.1
+        11.5.0-5.el9_5.alma.1
     libtasn1:
         4.16.0-8.el9_1
     libtirpc:
@@ -396,7 +393,7 @@ local:
     libxcrypt-devel:
         4.4.18-3.el9
     libxml2:
-        2.9.13-6.el9_4
+        2.9.13-6.el9_5.2
     libyaml:
         0.2.5-7.el9
     libzstd:
@@ -426,21 +423,21 @@ local:
     openldap:
         2.6.6-3.el9
     openssh:
-        8.7p1-43.el9
+        8.7p1-43.el9.alma.2
     openssh-clients:
-        8.7p1-43.el9
+        8.7p1-43.el9.alma.2
     openssh-server:
-        8.7p1-43.el9
+        8.7p1-43.el9.alma.2
     openssl:
-        1:3.2.2-6.el9_5
+        1:3.2.2-6.el9_5.1
     openssl-devel:
-        1:3.2.2-6.el9_5
+        1:3.2.2-6.el9_5.1
     openssl-libs:
-        1:3.2.2-6.el9_5
+        1:3.2.2-6.el9_5.1
     p11-kit:
-        0.25.3-2.el9
+        0.25.3-3.el9_5
     p11-kit-trust:
-        0.25.3-2.el9
+        0.25.3-3.el9_5
     pam:
         1.5.1-22.el9_5
     pcre:
@@ -492,7 +489,7 @@ local:
     perl-Getopt-Std:
         1.12-481.el9
     perl-Git:
-        2.43.5-1.el9_4
+        2.43.5-2.el9_5
     perl-HTTP-Tiny:
         0.076-462.el9
     perl-IO:
@@ -581,20 +578,18 @@ local:
         1.7.3-10.el9
     pkgconf-pkg-config:
         1.7.3-10.el9
-    policycoreutils:
-        3.6-2.1.el9
     popt:
         1.18-8.el9
     procps-ng:
         3.3.17-14.el9
     python3:
-        3.9.19-8.el9_5.1
+        3.9.21-1.el9_5
     python3-dateutil:
         1:2.8.1-7.el9
     python3-dbus:
         1.2.18-2.el9
     python3-devel:
-        3.9.19-8.el9_5.1
+        3.9.21-1.el9_5
     python3-dnf:
         4.14.0-17.el9.alma.1
     python3-dnf-plugins-core:
@@ -608,7 +603,7 @@ local:
     python3-libdnf:
         0.69.0-12.el9.alma.1
     python3-libs:
-        3.9.19-8.el9_5.1
+        3.9.21-1.el9_5
     python3-pip:
         21.3.1-1.el9
     python3-pip-wheel:
@@ -624,11 +619,11 @@ local:
     python3-systemd:
         234-19.el9
     python3.11:
-        3.11.9-7.el9_5.1
+        3.11.9-7.el9_5.3
     python3.11-devel:
-        3.11.9-7.el9_5.1
+        3.11.9-7.el9_5.3
     python3.11-libs:
-        3.11.9-7.el9_5.1
+        3.11.9-7.el9_5.3
     python3.11-pip:
         22.3.1-5.el9
     python3.11-pip-wheel:
@@ -647,40 +642,34 @@ local:
         4.16.1.3-34.el9
     rpm-libs:
         4.16.1.3-34.el9
-    rpm-plugin-selinux:
-        4.16.1.3-34.el9
     rpm-sign-libs:
         4.16.1.3-34.el9
     sed:
         4.8-9.el9
-    selinux-policy:
-        38.1.45-3.el9_5
-    selinux-policy-targeted:
-        38.1.45-3.el9_5
     setup:
         2.13.7-10.el9
     shadow-utils:
-        2:4.9-9.el9
+        2:4.9-10.el9_5
     sqlite-libs:
         3.34.1-7.el9_3
     sudo:
         1.9.5p2-10.el9_3
     systemd:
-        252-46.el9_5.2.alma.1
+        252-46.el9_5.3.alma.1
     systemd-libs:
-        252-46.el9_5.2.alma.1
+        252-46.el9_5.3.alma.1
     systemd-pam:
-        252-46.el9_5.2.alma.1
+        252-46.el9_5.3.alma.1
     systemd-rpm-macros:
-        252-46.el9_5.2.alma.1
+        252-46.el9_5.3.alma.1
     systemd-udev:
-        252-46.el9_5.2.alma.1
+        252-46.el9_5.3.alma.1
     tar:
         2:1.34-7.el9
     tpm2-tss:
         3.2.3-1.el9
     tzdata:
-        2024b-2.el9
+        2025b-1.el9
     util-linux:
         2.37.4-20.el9
     util-linux-core:
@@ -713,7 +702,7 @@ local:
     GitPython:
         3.1.43
     Jinja2:
-        3.1.4
+        3.1.6
     Mako:
         1.2.4
     MarkupSafe:
@@ -734,8 +723,6 @@ local:
         2.8.3
     aiosignal:
         1.3.1
-    annotated-types:
-        0.6.0
     ansible:
         9.1.0
     ansible-core:
@@ -765,7 +752,7 @@ local:
     cassandra-driver:
         3.28.0
     certifi:
-        2023.7.22
+        2024.7.4
     certvalidator:
         0.11.1
     cffi:
@@ -821,7 +808,7 @@ local:
     importlib-metadata:
         6.6.0
     inflect:
-        7.0.0
+        7.3.1
     iniconfig:
         2.0.0
     ipaddress:
@@ -863,7 +850,7 @@ local:
     mock:
         5.1.0
     more-itertools:
-        5.0.0
+        10.7.0
     moto:
         4.1.11
     msgpack:
@@ -914,10 +901,6 @@ local:
         2.21
     pycryptodomex:
         3.19.1
-    pydantic:
-        2.6.4
-    pydantic_core:
-        2.16.3
     pyeapi:
         1.0.0
     pyfakefs:
@@ -945,9 +928,9 @@ local:
     pytest-salt-factories:
         1.0.1
     pytest-shell-utilities:
-        1.8.0
+        1.9.7
     pytest-skip-markers:
-        1.5.0
+        1.5.2
     pytest-subtests:
         0.4.0
     pytest-system-statistics:
@@ -989,7 +972,7 @@ local:
     s3transfer:
         0.6.1
     salt:
-        3007.1+445.g9233e1cc3b
+        3007.2+354.gfb413fc38
     scp:
         0.14.5
     semantic-version:
@@ -1023,7 +1006,7 @@ local:
     tomli:
         2.0.1
     tornado:
-        6.3.3
+        6.4.2
     transitions:
         0.9.0
     trustme:
@@ -1041,7 +1024,7 @@ local:
     typing_extensions:
         4.8.0
     urllib3:
-        1.26.18
+        1.26.20
     vcert:
         0.7.4
     virtualenv:
