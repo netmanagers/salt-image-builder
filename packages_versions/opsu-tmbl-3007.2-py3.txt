@@ -41,12 +41,12 @@ Salt Package Information:
   Package Type: onedir
  
 System Versions:
-          dist: opensuse-tumbleweed 20250515 n/a
+          dist: opensuse-tumbleweed 20250602 n/a
         locale: utf-8
        machine: x86_64
        release: 5.15.154+
         system: Linux
-       version: openSUSE Tumbleweed 20250515 n/a
+       version: openSUSE Tumbleweed 20250602 n/a
  
 # salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
 local:
@@ -74,7 +74,7 @@ local:
     lsb_distrib_id:
         openSUSE Tumbleweed
     lsb_distrib_release:
-        20250515
+        20250602
     os:
         SUSE
     os_family:
@@ -85,16 +85,16 @@ local:
     oscodename:
         openSUSE Tumbleweed
     osfinger:
-        openSUSE Tumbleweed-20250515
+        openSUSE Tumbleweed-20250602
     osfullname:
         openSUSE Tumbleweed
     osmajorrelease:
-        20250515
+        20250602
     osmanufacturer:
     osrelease:
-        20250515
+        20250602
     osrelease_info:
-        - 20250515
+        - 20250602
     osversion:
     pythonexecutable:
         /opt/saltstack/salt/bin/python3.10
@@ -141,8 +141,8 @@ local:
         5.2.37-20.1
     bash-sh:
         5.2.37-20.1
-    boost-license1_87_0:
-        1.87.0-5.1
+    boost-license1_88_0:
+        1.88.0-1.1
     branding-openSUSE:
         84.87.20240405-4.11
     busybox:
@@ -164,7 +164,7 @@ local:
     crypto-policies-scripts:
         20250124.4d262e7-3.1
     curl:
-        8.13.0-1.1
+        8.14.0-1.1
     dbus-1:
         1.14.10-4.4
     dbus-1-common:
@@ -175,6 +175,8 @@ local:
         36-2.3
     dbus-broker-block-restart:
         36-2.3
+    device-mapper:
+        2.03.29_1.02.203-7.1
     dmidecode:
         3.6-2.3
     filesystem:
@@ -196,13 +198,13 @@ local:
     glibc-locale-base:
         2.41-2.1
     gpg2:
-        2.5.6-1.1
+        2.5.6-2.1
     grep:
         3.12-1.1
     gzip:
         1.14-1.1
     hwdata:
-        0.394-1.1
+        0.395-1.1
     kbd:
         2.7.1-2.1
     kmod:
@@ -214,7 +216,7 @@ local:
     libalternatives1:
         1.2+31.da24cd4-1.1
     libapparmor1:
-        4.1.0-1.1
+        4.1.0-2.1
     libassuan9:
         3.0.2-1.2
     libattr1:
@@ -225,8 +227,8 @@ local:
         1.14.1-2.1
     libblkid1:
         2.40.4-4.2
-    libboost_thread1_87_0:
-        1.87.0-5.1
+    libboost_thread1_88_0:
+        1.88.0-1.1
     libbrotlicommon1:
         1.1.0-1.6
     libbrotlidec1:
@@ -244,11 +246,13 @@ local:
     libcrypt1:
         4.4.38-1.2
     libcryptsetup12:
-        2.7.5-3.1
+        2.7.5-4.1
     libcurl4:
-        8.13.0-1.1
+        8.14.0-1.1
     libdbus-1-3:
         1.14.10-4.4
+    libdevmapper-event1_03:
+        2.03.29_1.02.203-7.1
     libdevmapper1_03:
         2.03.29_1.02.203-7.1
     libeconf0:
@@ -274,13 +278,13 @@ local:
     libgdbm_compat4:
         1.24-2.1
     libglib-2_0-0:
-        2.84.1-2.1
+        2.84.2-1.1
     libgmp10:
         6.3.0-5.1
     libgpg-error0:
         1.55-1.1
     libgpgme11:
-        1.24.2-2.3
+        1.24.3-2.1
     libhidapi-hidraw0:
         0.14.0-1.5
     libidn2-0:
@@ -314,7 +318,7 @@ local:
     libmpfr6:
         4.2.2-1.1
     libncurses6:
-        6.5.20250510-70.1
+        6.5.20250524-72.1
     libnghttp2-14:
         1.65.0-1.1
     libnpth0:
@@ -322,9 +326,9 @@ local:
     libnss_usrfiles2:
         2.27.1-1.4
     libopenssl-3-fips-provider:
-        3.5.0-1.1
+        3.5.0-3.1
     libopenssl3:
-        3.5.0-1.1
+        3.5.0-3.1
     libp11-kit0:
         0.25.5-1.4
     libpci3:
@@ -340,7 +344,7 @@ local:
     libpsl5:
         0.21.5-1.5
     libpython3_13-1_0:
-        3.13.3-2.1
+        3.13.3-4.1
     libreadline8:
         8.2.13-2.3
     libsasl2-3:
@@ -374,11 +378,11 @@ local:
     libsubid5:
         4.17.4-2.1
     libsystemd0:
-        257.5-2.1
+        257.5-3.1
     libtasn1-6:
         4.20.0-1.2
     libudev1:
-        257.5-2.1
+        257.5-3.1
     libunistring5:
         1.3-1.3
     libusb-1_0-0:
@@ -400,13 +404,13 @@ local:
     libzstd1:
         1.5.7-3.1
     libzypp:
-        17.36.7-1.1
+        17.37.2-1.1
     login_defs:
         4.17.4-2.1
     lsb-release:
         3.3-1.5
     ncurses-utils:
-        6.5.20250510-70.1
+        6.5.20250524-72.1
     net-tools:
         2.10-3.2
     net-tools-deprecated:
@@ -414,11 +418,11 @@ local:
     netcfg:
         11.6-13.5
     openSUSE-build-key:
-        1.0-56.1
+        1.0-57.1
     openSUSE-release:
-        20250515-3523.1
+        20250602-3542.1
     openSUSE-release-appliance-docker:
-        20250515-3523.1
+        20250602-3542.1
     openssh:
         10.0p2-2.1
     openssh-clients:
@@ -430,7 +434,7 @@ local:
     openssl:
         3.5.0-1.1
     openssl-3:
-        3.5.0-1.1
+        3.5.0-3.1
     p11-kit:
         0.25.5-1.4
     p11-kit-tools:
@@ -472,9 +476,9 @@ local:
     procps:
         4.0.5-1.2
     python313-base:
-        3.13.3-2.1
+        3.13.3-4.1
     rpm:
-        4.20.1-3.1
+        4.20.1-4.1
     rpm-config-SUSE:
         20250423-1.1
     salt:
@@ -488,7 +492,7 @@ local:
     sudo:
         1.9.16p2-1.1
     suse-module-tools:
-        16.0.59-1.1
+        16.0.60-1.1
     system-group-hardware:
         20170617-27.1
     system-group-kvm:
@@ -500,7 +504,7 @@ local:
     system-user-root:
         20190513-2.18
     systemd:
-        257.5-2.1
+        257.5-3.1
     systemd-default-settings:
         0.10-1.3
     systemd-default-settings-branding-openSUSE:
@@ -508,19 +512,21 @@ local:
     systemd-presets-branding-openSUSE:
         12.2-25.1
     systemd-presets-common-SUSE:
-        15-38.1
+        15-39.1
     systemd-rpm-macros:
         24-1.8
     sysuser-shadow:
         3.3-8.2
     tar:
-        1.35-3.3
+        1.35-4.1
     terminfo-base:
-        6.5.20250510-70.1
+        6.5.20250524-72.1
+    thin-provisioning-tools:
+        1.1.0-2.3
     timezone:
         2025b-1.1
     udev:
-        257.5-2.1
+        257.5-3.1
     util-linux:
         2.40.4-4.2
     which:
@@ -528,7 +534,7 @@ local:
     xz:
         5.8.1-1.1
     zypper:
-        1.14.89-1.1
+        1.14.90-1.1
 # salt-call --local pip.list
 local:
     ----------

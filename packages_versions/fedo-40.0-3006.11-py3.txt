@@ -1,4 +1,4 @@
-fedo-41.0-3007.2-py3
+fedo-40.0-3006.11-py3
 Salt install method: onedir
 # salt-call --versions-report
 Salt Version:
@@ -38,12 +38,12 @@ Dependency Versions:
            ZMQ: 4.3.4
  
 System Versions:
-          dist: fedora 41 
+          dist: fedora 40 
         locale: utf-8
        machine: x86_64
        release: 5.15.154+
         system: Linux
-       version: Fedora Linux 41 
+       version: Fedora Linux 40 
  
 # salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
 local:
@@ -70,7 +70,7 @@ local:
     lsb_distrib_id:
         Fedora Linux
     lsb_distrib_release:
-        41
+        40
     os:
         Fedora
     os_family:
@@ -80,16 +80,16 @@ local:
     osbuild:
     oscodename:
     osfinger:
-        Fedora Linux-41
+        Fedora Linux-40
     osfullname:
         Fedora Linux
     osmajorrelease:
-        41
+        40
     osmanufacturer:
     osrelease:
-        41
+        40
     osrelease_info:
-        - 41
+        - 40
     osversion:
     pythonexecutable:
         /opt/saltstack/salt/bin/python3.10
@@ -116,9 +116,9 @@ local:
     systemd:
         ----------
         features:
-            +PAM +AUDIT +SELINUX -APPARMOR +IMA +SMACK +SECCOMP -GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN -IPTC +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +XKBCOMMON +UTMP +SYSVINIT +LIBARCHIVE
+            +PAM +AUDIT +SELINUX -APPARMOR +IMA +SMACK +SECCOMP -GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN -IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified
         version:
-            256
+            255
     virtual:
         gce
     virtual_subtype:
@@ -129,575 +129,567 @@ local:
 local:
     ----------
     alternatives:
-        1.31-1.fc41
+        1.27-1.fc40
     audit-libs:
-        4.0.3-1.fc41
+        4.0.3-1.fc40
     authselect:
-        1.5.0-8.fc41
+        1.5.0-6.fc40
     authselect-libs:
-        1.5.0-8.fc41
+        1.5.0-6.fc40
     basesystem:
-        11-21.fc41
+        11-20.fc40
     bash:
-        5.2.32-1.fc41
+        5.2.26-3.fc40
     bzip2:
-        1.0.8-19.fc41
+        1.0.8-18.fc40
     bzip2-libs:
-        1.0.8-19.fc41
+        1.0.8-18.fc40
     ca-certificates:
-        2024.2.69_v8.0.401-1.0.fc41
+        2024.2.69_v8.0.401-1.0.fc40
     chkconfig:
-        1.31-1.fc41
+        1.27-1.fc40
     coreutils:
-        9.5-11.fc41
+        9.4-9.fc40
     coreutils-common:
-        9.5-11.fc41
+        9.4-9.fc40
+    cpio:
+        2.15-1.fc40
     cracklib:
-        2.9.11-6.fc41
+        2.9.11-5.fc40
     crypto-policies:
-        20250124-1.git4d262e7.fc41
+        20241011-1.git5930b9a.fc40
     crypto-policies-scripts:
-        20250124-1.git4d262e7.fc41
+        20241011-1.git5930b9a.fc40
     cryptsetup-libs:
-        2.7.5-1.fc41
+        2.7.5-1.fc40
     curl:
-        8.9.1-3.fc41
+        8.6.0-10.fc40
     cyrus-sasl-lib:
-        2.1.28-27.fc41
+        2.1.28-19.fc40
     dbus:
-        1:1.14.10-4.fc41
+        1:1.14.10-3.fc40
     dbus-broker:
-        36-4.fc41
+        36-2.fc40
     dbus-common:
-        1:1.14.10-4.fc41
+        1:1.14.10-3.fc40
     dbus-libs:
-        1:1.14.10-4.fc41
+        1:1.14.10-3.fc40
     device-mapper:
-        1.02.199-4.fc41
+        1.02.199-1.fc40
     device-mapper-libs:
-        1.02.199-4.fc41
+        1.02.199-1.fc40
     dmidecode:
-        1:3.6-4.fc41
+        1:3.6-1.fc40
+    dnf:
+        4.23.0-1.fc40.1
     dnf-data:
-        4.23.0-1.fc41
+        4.23.0-1.fc40.1
     dnf-plugins-core:
-        4.10.1-1.fc41
+        4.10.1-1.fc40
     dnf-utils:
-        4.10.1-1.fc41
-    dnf5:
-        5.2.13.1-1.fc41
-    dnf5-plugins:
-        5.2.13.1-1.fc41
-    duktape:
-        2.7.0-8.fc41
+        4.10.1-1.fc40
+    dracut:
+        102-2.fc40
     elfutils-default-yama-scope:
-        0.193-2.fc41
+        0.192-9.fc40
     elfutils-libelf:
-        0.193-2.fc41
+        0.192-9.fc40
     elfutils-libs:
-        0.193-2.fc41
+        0.192-9.fc40
     expat:
-        2.7.1-1.fc41
+        2.7.1-1.fc40
     fedora-gpg-keys:
-        41-3
+        40-2
     fedora-release-common:
-        41-32
+        40-40
     fedora-release-container:
-        41-32
+        40-40
     fedora-release-identity-container:
-        41-32
+        40-40
     fedora-repos:
-        41-3
+        40-2
+    file:
+        5.45-4.fc40
     file-libs:
-        5.45-7.fc41
+        5.45-4.fc40
     filesystem:
-        3.18-23.fc41
+        3.18-8.fc40
     findutils:
-        1:4.10.0-4.fc41
-    fmt:
-        11.0.2-2.fc41
+        1:4.9.0-9.fc40
+    fuse3-libs:
+        3.16.2-3.fc40
     gawk:
-        5.3.0-4.fc41
+        5.3.0-3.fc40
     gdbm:
-        1:1.23-7.fc41
+        1:1.23-6.fc40
     gdbm-libs:
-        1:1.23-7.fc41
+        1:1.23-6.fc40
+    gettext-envsubst:
+        0.22.5-4.fc40
+    gettext-libs:
+        0.22.5-4.fc40
+    gettext-runtime:
+        0.22.5-4.fc40
     git:
-        2.49.0-1.fc41
+        2.49.0-1.fc40
     git-core:
-        2.49.0-1.fc41
+        2.49.0-1.fc40
     git-core-doc:
-        2.49.0-1.fc41
+        2.49.0-1.fc40
     glib2:
-        2.82.5-1.fc41
+        2.80.5-1.fc40
     glibc:
-        2.40-25.fc41
+        2.39-38.fc40
     glibc-common:
-        2.40-25.fc41
+        2.39-38.fc40
     glibc-langpack-en:
-        2.40-25.fc41
+        2.39-38.fc40
     glibc-minimal-langpack:
-        2.40-25.fc41
+        2.39-38.fc40
     gmp:
-        1:6.3.0-2.fc41
+        1:6.2.1-8.fc40
     gnupg2:
-        2.4.5-3.fc41
-    gnupg2-smime:
-        2.4.5-3.fc41
+        2.4.4-1.fc40
     gnutls:
-        3.8.9-2.fc41
+        3.8.9-1.fc40
     gpg-pubkey.(none):
-        73d76b3f-63dace60,e99d6ad1-64d2612c
+        73d76b3f-63dace60,a15b79cc-63d04c2c
     grep:
-        3.11-9.fc41
+        3.11-7.fc40
     groff-base:
-        1.23.0-7.fc41
+        1.23.0-6.fc40
+    grub2-common:
+        1:2.12-16.fc40
+    grub2-tools:
+        1:2.12-16.fc40
+    grub2-tools-minimal:
+        1:2.12-16.fc40
+    grubby:
+        8.40-75.fc40
     gzip:
-        1.13-2.fc41
-    hiredis:
-        1.2.0-3.fc41
+        1.13-1.fc40
     hwdata:
-        0.395-1.fc41
-    ima-evm-utils-libs:
-        1.6.2-2.fc41
+        0.394-1.fc40
+    ima-evm-utils:
+        1.5-4.fc40
     json-c:
-        0.17-4.fc41
+        0.17-3.fc40
     kbd:
-        2.6.4-4.fc41
+        2.6.4-3.fc40
     kbd-legacy:
-        2.6.4-4.fc41
+        2.6.4-3.fc40
     kbd-misc:
-        2.6.4-4.fc41
+        2.6.4-3.fc40
     keyutils-libs:
-        1.6.3-4.fc41
+        1.6.3-3.fc40
     kmod:
-        33-1.fc41
+        31-5.fc40
     kmod-libs:
-        33-1.fc41
+        31-5.fc40
+    kpartx:
+        0.9.7-7.fc40
     krb5-libs:
-        1.21.3-4.fc41
+        1.21.3-3.fc40
     less:
-        668-1.fc41
+        643-6.fc40
     libacl:
-        2.3.2-2.fc41
+        2.3.2-1.fc40
     libarchive:
-        3.7.4-4.fc41
+        3.7.2-7.fc40
     libassuan:
-        2.5.7-2.fc41
+        2.5.7-1.fc40
     libattr:
-        2.5.2-4.fc41
+        2.5.2-3.fc40
     libb2:
-        0.98.1-12.fc41
+        0.98.1-11.fc40
     libblkid:
-        2.40.4-1.fc41
+        2.40.2-1.fc40
     libbrotli:
-        1.1.0-5.fc41
+        1.1.0-3.fc40
     libcap:
-        2.70-4.fc41
+        2.69-8.fc40
     libcap-ng:
-        0.8.5-3.fc41
+        0.8.4-4.fc40
     libcbor:
-        0.11.0-2.fc41
+        0.11.0-1.fc40
     libcom_err:
-        1.47.1-6.fc41
+        1.47.0-5.fc40
     libcomps:
-        0.1.21-4.fc41
+        0.1.20-5.fc40
     libcurl:
-        8.9.1-3.fc41
+        8.6.0-10.fc40
     libdnf:
-        0.74.0-1.fc41
-    libdnf5:
-        5.2.13.1-1.fc41
-    libdnf5-cli:
-        5.2.13.1-1.fc41
+        0.74.0-1.fc40
     libeconf:
-        0.6.2-3.fc41
+        0.6.2-2.fc40
     libedit:
-        3.1-54.20250104cvs.fc41
+        3.1-54.20250104cvs.fc40
     libevent:
-        2.1.12-14.fc41
+        2.1.12-12.fc40
     libfdisk:
-        2.40.4-1.fc41
+        2.40.2-1.fc40
     libffi:
-        3.4.6-3.fc41
+        3.4.4-7.fc40
     libfido2:
-        1.15.0-2.fc41
+        1.14.0-4.fc40
     libfsverity:
-        1.6-1.fc41
+        1.4-12.fc40
     libgcc:
-        14.3.1-1.fc41
+        14.2.1-3.fc40
     libgcrypt:
-        1.11.0-3.fc41
+        1.10.3-3.fc40
     libgomp:
-        14.3.1-1.fc41
+        14.2.1-3.fc40
     libgpg-error:
-        1.50-2.fc41
+        1.49-1.fc40
     libidn2:
-        2.3.8-1.fc41
+        2.3.8-1.fc40
+    libkcapi:
+        1.5.0-4.fc40
+    libkcapi-hasher:
+        1.5.0-4.fc40
+    libkcapi-hmaccalc:
+        1.5.0-4.fc40
     libksba:
-        1.6.7-2.fc41
+        1.6.6-1.fc40
     libmodulemd:
-        2.15.0-14.fc41
+        2.15.0-12.fc40
     libmount:
-        2.40.4-1.fc41
+        2.40.2-1.fc40
     libnghttp2:
-        1.62.1-3.fc41
+        1.59.0-3.fc40
     libnsl2:
-        2.0.1-2.fc41
-    libpkgconf:
-        2.3.0-1.fc41
+        2.0.1-1.fc40
     libpsl:
-        0.21.5-4.fc41
+        0.21.5-3.fc40
     libpwquality:
-        1.4.5-11.fc41
+        1.4.5-9.fc40
     librepo:
-        1.19.0-1.fc41
+        1.19.0-1.fc40
     libseccomp:
-        2.5.5-2.fc41
-    libsecret:
-        0.21.7-1.fc41
+        2.5.5-1.fc40
     libselinux:
-        3.7-5.fc41
+        3.7-5.fc40
     libsemanage:
-        3.7-2.fc41
+        3.7-2.fc40
     libsepol:
-        3.7-2.fc41
+        3.7-2.fc40
     libsmartcols:
-        2.40.4-1.fc41
+        2.40.2-1.fc40
     libsolv:
-        0.7.32-4.fc41
+        0.7.32-4.fc40
     libssh:
-        0.10.6-8.fc41
+        0.10.6-5.fc40
     libssh-config:
-        0.10.6-8.fc41
+        0.10.6-5.fc40
     libstdc++:
-        14.3.1-1.fc41
+        14.2.1-3.fc40
     libtasn1:
-        4.20.0-1.fc41
+        4.20.0-1.fc40
+    libtextstyle:
+        0.22.5-4.fc40
     libtirpc:
-        1.3.6-1.rc3.fc41
+        1.3.6-1.rc3.fc40
     libtool-ltdl:
-        2.4.7-12.fc41
+        2.4.7-10.fc40
     libunistring:
-        1.1-8.fc41
-    libusb1:
-        1.0.28-2.fc41
+        1.1-7.fc40
     libutempter:
-        1.2.1-15.fc41
+        1.2.1-13.fc40
     libuuid:
-        2.40.4-1.fc41
+        2.40.2-1.fc40
     libverto:
-        0.3.2-9.fc41
+        0.3.2-8.fc40
     libxcrypt:
-        4.4.38-7.fc41
+        4.4.38-7.fc40
     libxml2:
-        2.12.10-1.fc41
+        2.12.10-1.fc40
     libyaml:
-        0.2.5-16.fc41
+        0.2.5-14.fc40
     libzstd:
-        1.5.7-1.fc41
+        1.5.7-1.fc40
     lua-libs:
-        5.4.7-3.fc41
+        5.4.6-5.fc40
     lz4-libs:
-        1.10.0-1.fc41
+        1.9.4-6.fc40
+    memstrack:
+        0.2.5-4.fc40
     mpdecimal:
-        2.5.1-16.fc41
+        2.5.1-9.fc40
     mpfr:
-        4.2.1-5.fc41
+        4.2.1-4.fc40
     ncurses:
-        6.5-2.20240629.fc41
+        6.4-12.20240127.fc40
     ncurses-base:
-        6.5-2.20240629.fc41
+        6.4-12.20240127.fc40
     ncurses-libs:
-        6.5-2.20240629.fc41
+        6.4-12.20240127.fc40
     net-tools:
-        2.0-0.71.20160912git.fc41
+        2.0-0.69.20160912git.fc40
     nettle:
-        3.10-3.fc41
+        3.9.1-6.fc40
     npth:
-        1.7-2.fc41
+        1.7-1.fc40
     openldap:
-        2.6.9-1.fc41
+        2.6.9-1.fc40
     openssh:
-        9.9p1-4.fc41
+        9.6p1-2.fc40
     openssh-clients:
-        9.9p1-4.fc41
+        9.6p1-2.fc40
     openssh-server:
-        9.9p1-4.fc41
+        9.6p1-2.fc40
     openssl:
-        1:3.2.4-1.fc41
+        1:3.2.4-1.fc40
     openssl-libs:
-        1:3.2.4-1.fc41
+        1:3.2.4-1.fc40
+    os-prober:
+        1.81-6.fc40
     p11-kit:
-        0.25.5-3.fc41
+        0.25.5-1.fc40
     p11-kit-trust:
-        0.25.5-3.fc41
+        0.25.5-1.fc40
     pam:
-        1.6.1-7.fc41
+        1.6.1-5.fc40
     pam-libs:
-        1.6.1-7.fc41
+        1.6.1-5.fc40
     pciutils:
-        3.13.0-5.fc41
+        3.13.0-1.fc40
     pciutils-libs:
-        3.13.0-5.fc41
+        3.13.0-1.fc40
     pcre2:
-        10.44-1.fc41.1
+        10.44-1.fc40
     pcre2-syntax:
-        10.44-1.fc41.1
-    pcsc-lite:
-        2.3.1-1.fc41
-    pcsc-lite-ccid:
-        1.6.1-2.fc41
-    pcsc-lite-libs:
-        2.3.1-1.fc41
+        10.44-1.fc40
     perl-AutoLoader:
-        5.74-515.fc41
+        5.74-508.fc40
     perl-B:
-        1.89-515.fc41
+        1.88-508.fc40
     perl-Carp:
-        1.54-511.fc41
+        1.54-502.fc40
     perl-Class-Struct:
-        0.68-515.fc41
+        0.68-508.fc40
     perl-Data-Dumper:
-        2.189-512.fc41
+        2.188-503.fc40
     perl-Digest:
-        1.20-511.fc41
+        1.20-502.fc40
     perl-Digest-MD5:
-        2.59-5.fc41
+        2.59-3.fc40
     perl-DynaLoader:
-        1.56-515.fc41
+        1.54-508.fc40
     perl-Encode:
-        4:3.21-511.fc41
+        4:3.21-505.fc40
     perl-Errno:
-        1.38-515.fc41
+        1.37-508.fc40
     perl-Error:
-        1:0.17029-16.fc41
+        1:0.17029-15.fc40
     perl-Exporter:
-        5.78-511.fc41
+        5.78-3.fc40
     perl-Fcntl:
-        1.18-515.fc41
+        1.15-508.fc40
     perl-File-Basename:
-        2.86-515.fc41
+        2.86-508.fc40
     perl-File-Find:
-        1.44-515.fc41
+        1.43-508.fc40
     perl-File-Path:
-        2.18-511.fc41
+        2.18-503.fc40
     perl-File-Temp:
-        1:0.231.100-511.fc41
+        1:0.231.100-503.fc40
     perl-File-stat:
-        1.14-515.fc41
+        1.13-508.fc40
     perl-FileHandle:
-        2.05-515.fc41
+        2.05-508.fc40
     perl-Getopt-Long:
-        1:2.58-2.fc41
+        1:2.57-4.fc40
     perl-Getopt-Std:
-        1.14-515.fc41
+        1.13-508.fc40
     perl-Git:
-        2.49.0-1.fc41
+        2.49.0-1.fc40
     perl-HTTP-Tiny:
-        0.090-1.fc41
+        0.088-5.fc40
     perl-IO:
-        1.55-515.fc41
+        1.52-508.fc40
     perl-IO-Socket-IP:
-        0.43-1.fc41
+        0.42-2.fc40
     perl-IO-Socket-SSL:
-        2.089-1.fc41
+        2.085-1.fc40
     perl-IPC-Open3:
-        1.22-515.fc41
-    perl-MIME-Base32:
-        1.303-21.fc41
+        1.22-508.fc40
     perl-MIME-Base64:
-        3.16-511.fc41
+        3.16-503.fc40
+    perl-Mozilla-CA:
+        20231213-3.fc40
     perl-Net-SSLeay:
-        1.94-7.fc41
+        1.94-3.fc40
     perl-POSIX:
-        2.20-515.fc41
+        2.13-508.fc40
     perl-PathTools:
-        3.91-512.fc41
+        3.89-502.fc40
     perl-Pod-Escapes:
-        1:1.07-511.fc41
+        1:1.07-503.fc40
     perl-Pod-Perldoc:
-        3.28.01-512.fc41
+        3.28.01-503.fc40
     perl-Pod-Simple:
-        1:3.45-511.fc41
+        1:3.45-6.fc40
     perl-Pod-Usage:
-        4:2.03-511.fc41
+        4:2.03-504.fc40
     perl-Scalar-List-Utils:
-        5:1.68-1.fc41
+        5:1.63-503.fc40
     perl-SelectSaver:
-        1.02-515.fc41
+        1.02-508.fc40
     perl-Socket:
-        4:2.038-511.fc41
+        4:2.038-1.fc40
     perl-Storable:
-        1:3.32-511.fc41
+        1:3.32-502.fc40
     perl-Symbol:
-        1.09-515.fc41
+        1.09-508.fc40
     perl-Term-ANSIColor:
-        5.01-512.fc41
+        5.01-504.fc40
     perl-Term-Cap:
-        1.18-511.fc41
+        1.18-503.fc40
     perl-TermReadKey:
-        2.38-23.fc41
+        2.38-21.fc40
     perl-Text-ParseWords:
-        3.31-511.fc41
+        3.31-502.fc40
     perl-Text-Tabs+Wrap:
-        2024.001-511.fc41
+        2024.001-1.fc40
     perl-Time-Local:
-        2:1.350-511.fc41
+        2:1.350-5.fc40
     perl-URI:
-        5.30-1.fc41
+        5.28-1.fc40
     perl-base:
-        2.27-515.fc41
+        2.27-508.fc40
     perl-constant:
-        1.33-512.fc41
+        1.33-503.fc40
     perl-if:
-        0.61.000-515.fc41
+        0.61.000-508.fc40
     perl-interpreter:
-        4:5.40.2-515.fc41
+        4:5.38.4-508.fc40
     perl-lib:
-        0.65-515.fc41
+        0.65-508.fc40
     perl-libnet:
-        3.15-512.fc41
+        3.15-503.fc40
     perl-libs:
-        4:5.40.2-515.fc41
+        4:5.38.4-508.fc40
     perl-locale:
-        1.12-515.fc41
+        1.10-508.fc40
     perl-mro:
-        1.29-515.fc41
+        1.28-508.fc40
     perl-overload:
-        1.37-515.fc41
+        1.37-508.fc40
     perl-overloading:
-        0.02-515.fc41
+        0.02-508.fc40
     perl-parent:
-        1:0.242-1.fc41
+        1:0.241-502.fc40
     perl-podlators:
-        1:6.0.2-2.fc41
+        1:5.01-502.fc40
     perl-vars:
-        1.05-515.fc41
-    pinentry:
-        1.3.1-2.fc41
-    pkgconf:
-        2.3.0-1.fc41
-    pkgconf-m4:
-        2.3.0-1.fc41
-    pkgconf-pkg-config:
-        2.3.0-1.fc41
-    polkit:
-        125-1.fc41.1
-    polkit-libs:
-        125-1.fc41.1
-    polkit-pkla-compat:
-        0.1-29.fc41
+        1.05-508.fc40
+    pigz:
+        2.8-4.fc40
     popt:
-        1.19-7.fc41
+        1.19-6.fc40
     procps-ng:
-        4.0.4-4.fc41
-    protobuf-c:
-        1.5.0-4.fc41
+        4.0.4-3.fc40
     publicsuffix-list-dafsa:
-        20250116-1.fc41
+        20250116-1.fc40
     python-pip-wheel:
-        24.2-1.fc41
+        23.3.2-2.fc40
     python3:
-        3.13.3-2.fc41
+        3.12.10-2.fc40
     python3-dateutil:
-        1:2.8.2-16.fc41
+        1:2.8.2-13.fc40
     python3-dbus:
-        1.3.2-8.fc41
+        1.3.2-6.fc40
     python3-distro:
-        1.9.0-5.fc41
+        1.9.0-3.fc40
     python3-dnf:
-        4.23.0-1.fc41
+        4.23.0-1.fc40.1
     python3-dnf-plugins-core:
-        4.10.1-1.fc41
+        4.10.1-1.fc40
     python3-hawkey:
-        0.74.0-1.fc41
+        0.74.0-1.fc40
     python3-libcomps:
-        0.1.21-4.fc41
+        0.1.20-5.fc40
     python3-libdnf:
-        0.74.0-1.fc41
+        0.74.0-1.fc40
     python3-libs:
-        3.13.3-2.fc41
+        3.12.10-2.fc40
     python3-pip:
-        24.2-1.fc41
+        23.3.2-2.fc40
     python3-rpm:
-        4.20.1-1.fc41
+        4.19.1.1-1.fc40
     python3-six:
-        1.16.0-23.fc41
+        1.16.0-14.fc40
     python3-systemd:
-        235-11.fc41
-    python3-unbound:
-        1.22.0-14.fc41
+        235-9.fc40
     readline:
-        8.2-10.fc41
+        8.2-8.fc40
     rootfiles:
-        8.1-37.fc41
+        8.1-36.fc40
     rpm:
-        4.20.1-1.fc41
+        4.19.1.1-1.fc40
     rpm-build-libs:
-        4.20.1-1.fc41
+        4.19.1.1-1.fc40
     rpm-libs:
-        4.20.1-1.fc41
-    rpm-plugin-systemd-inhibit:
-        4.20.1-1.fc41
+        4.19.1.1-1.fc40
     rpm-sequoia:
-        1.7.0-5.fc41
+        1.7.0-5.fc40
     rpm-sign-libs:
-        4.20.1-1.fc41
+        4.19.1.1-1.fc40
     salt:
         3006.11-0
     salt-minion:
         3006.11-0
-    sdbus-cpp:
-        1.5.0-3.fc41
     sed:
-        4.9-3.fc41
+        4.9-1.fc40
     setup:
-        2.15.0-8.fc41
+        2.14.5-2.fc40
     shadow-utils:
-        2:4.15.1-12.fc41
+        2:4.15.1-4.fc40
     sqlite-libs:
-        3.46.1-3.fc41
+        3.45.1-3.fc40
     sudo:
-        1.9.15-5.p5.fc41
+        1.9.15-2.p5.fc40
     systemd:
-        256.15-1.fc41
+        255.18-1.fc40
     systemd-libs:
-        256.15-1.fc41
+        255.18-1.fc40
     systemd-pam:
-        256.15-1.fc41
+        255.18-1.fc40
     systemd-udev:
-        256.15-1.fc41
+        255.18-1.fc40
     tar:
-        2:1.35-4.fc41
+        2:1.35-3.fc40
+    tpm2-tools:
+        5.7-1.fc40
     tpm2-tss:
-        4.1.3-3.fc41
+        4.1.3-1.fc40
+    tpm2-tss-fapi:
+        4.1.3-1.fc40
     tzdata:
-        2025b-1.fc41
-    unbound-anchor:
-        1.22.0-14.fc41
-    unbound-libs:
-        1.22.0-14.fc41
+        2025b-1.fc40
     util-linux:
-        2.40.4-1.fc41
+        2.40.2-1.fc40
     util-linux-core:
-        2.40.4-1.fc41
+        2.40.2-1.fc40
     vim-data:
-        2:9.1.1418-1.fc41
+        2:9.1.1275-1.fc40
     vim-minimal:
-        2:9.1.1418-1.fc41
+        2:9.1.1275-1.fc40
     which:
-        2.21-42.fc41
+        2.21-41.fc40
     xz:
-        1:5.8.1-2.fc41
+        1:5.8.1-2.fc40
     xz-libs:
-        1:5.8.1-2.fc41
+        1:5.8.1-2.fc40
+    yum:
+        4.23.0-1.fc40.1
     zchunk-libs:
-        1.5.1-1.fc41
+        1.5.1-1.fc40
     zlib-ng-compat:
-        2.2.3-2.fc41
+        2.1.7-2.fc40
     zstd:
-        1.5.7-1.fc41
+        1.5.7-1.fc40
 # salt-call --local pip.list
 local:
     ----------

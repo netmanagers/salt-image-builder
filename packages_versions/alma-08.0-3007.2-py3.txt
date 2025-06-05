@@ -181,8 +181,6 @@ local:
         8:1.02.181-15.el8_10
     device-mapper-libs:
         8:1.02.181-15.el8_10
-    diffutils:
-        3.6-6.el8
     dmidecode:
         1:3.5-1.el8
     dnf:
@@ -214,18 +212,16 @@ local:
     gdbm-libs:
         1:1.18-2.el8
     git:
-        2.43.5-2.el8_10
+        2.43.5-3.el8_10
     git-core:
-        2.43.5-2.el8_10
+        2.43.5-3.el8_10
     git-core-doc:
-        2.43.5-2.el8_10
+        2.43.5-3.el8_10
     glib2:
         2.56.4-165.el8_10
     glibc:
         2.28-251.el8_10.16
     glibc-common:
-        2.28-251.el8_10.16
-    glibc-gconv-extra:
         2.28-251.el8_10.16
     glibc-langpack-en:
         2.28-251.el8_10.16
@@ -274,9 +270,9 @@ local:
     kmod-libs:
         25-20.el8
     krb5-devel:
-        1.18.2-31.el8_10
+        1.18.2-32.el8_10
     krb5-libs:
-        1.18.2-31.el8_10
+        1.18.2-32.el8_10
     langpacks-en:
         1.0-12.el8
     less:
@@ -296,9 +292,9 @@ local:
     libcap-ng:
         0.7.11-1.el8
     libcom_err:
-        1.45.6-5.1.el8.alma.1
+        1.45.6-6.el8_10
     libcom_err-devel:
-        1.45.6-5.1.el8.alma.1
+        1.45.6-6.el8_10
     libcomps:
         0.1.18-1.el8
     libcurl-minimal:
@@ -324,7 +320,7 @@ local:
     libidn2:
         2.2.0-1.el8
     libkadm5:
-        1.18.2-31.el8_10
+        1.18.2-32.el8_10
     libksba:
         1.3.5-9.el8_7
     libmodulemd:
@@ -350,7 +346,7 @@ local:
     libselinux-devel:
         2.9-10.el8_10
     libsemanage:
-        2.9-11.el8_10
+        2.9-12.el8_10
     libsepol:
         2.9-3.el8
     libsepol-devel:
@@ -381,8 +377,6 @@ local:
         0.3.2-2.el8
     libxcrypt:
         4.1.1-6.el8
-    libxkbcommon:
-        0.9.1-1.el8
     libxml2:
         2.9.7-19.el8_10
     libyaml:
@@ -464,7 +458,7 @@ local:
     perl-Getopt-Long:
         1:2.50-4.el8
     perl-Git:
-        2.43.5-2.el8_10
+        2.43.5-3.el8_10
     perl-HTTP-Tiny:
         0.074-3.el8
     perl-IO:
@@ -629,10 +623,6 @@ local:
         2:1.30-9.el8
     tpm2-tss:
         2.3.2-6.el8
-    trousers:
-        0.3.15-2.el8
-    trousers-lib:
-        0.3.15-2.el8
     tzdata:
         2025b-1.el8
     util-linux:
@@ -641,8 +631,6 @@ local:
         2:8.0.1763-19.el8_6.4
     which:
         2.21-20.el8
-    xkeyboard-config:
-        2.28-1.el8
     xz:
         5.2.4-4.el8_6
     xz-libs:

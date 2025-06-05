@@ -1,4 +1,4 @@
-fedo-41.0-3007.2-py3
+fedo-41.0-3006.11-py3
 Salt install method: onedir
 # salt-call --versions-report
 Salt Version:

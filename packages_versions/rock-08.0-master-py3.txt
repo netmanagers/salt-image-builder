@@ -2,7 +2,7 @@ rock-08.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-                  Salt: 3007.2+354.gfb413fc38
+                  Salt: 3007.2+398.g34112cd19
  
 Python Version:
                 Python: 3.11.11 (main, Dec 12 2024, 16:28:23) [GCC 8.5.0 20210514 (Red Hat 8.5.0-22)]
@@ -119,7 +119,7 @@ local:
     saltpath:
         /usr/lib/python3.11/site-packages/salt
     saltversion:
-        3007.2+354.gfb413fc38
+        3007.2+398.g34112cd19
     saltversioninfo:
         - 3007
         - 2
@@ -276,7 +276,7 @@ local:
     kbd-misc:
         2.0.4-11.el8
     kernel-headers:
-        4.18.0-553.51.1.el8_10
+        4.18.0-553.54.1.el8_10
     keyutils-libs:
         1.5.10-9.el8
     keyutils-libs-devel:
@@ -981,7 +981,7 @@ local:
     s3transfer:
         0.6.1
     salt:
-        3007.2+354.gfb413fc38
+        3007.2+398.g34112cd19
     scp:
         0.14.5
     semantic-version:

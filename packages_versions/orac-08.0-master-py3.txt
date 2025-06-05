@@ -2,7 +2,7 @@ orac-08.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-                  Salt: 3007.2+354.gfb413fc38
+                  Salt: 3007.2+398.g34112cd19
  
 Python Version:
                 Python: 3.11.11 (main, Dec 12 2024, 05:43:43) [GCC 8.5.0 20210514 (Red Hat 8.5.0-22.0.1)]
@@ -119,7 +119,7 @@ local:
     saltpath:
         /usr/lib/python3.11/site-packages/salt
     saltversion:
-        3007.2+354.gfb413fc38
+        3007.2+398.g34112cd19
     saltversioninfo:
         - 3007
         - 2
@@ -241,11 +241,11 @@ local:
     gdbm-libs:
         1:1.18-2.el8
     git:
-        2.43.5-2.el8_10
+        2.43.5-3.el8_10
     git-core:
-        2.43.5-2.el8_10
+        2.43.5-3.el8_10
     git-core-doc:
-        2.43.5-2.el8_10
+        2.43.5-3.el8_10
     glib2:
         2.56.4-165.el8_10
     glibc:
@@ -297,7 +297,7 @@ local:
     kbd-misc:
         2.0.4-11.el8
     kernel-headers:
-        4.18.0-553.52.1.el8_10
+        4.18.0-553.54.1.el8_10
     keyutils-libs:
         1.5.10-9.0.1.el8
     keyutils-libs-devel:
@@ -309,9 +309,9 @@ local:
     kpartx:
         0.8.4-42.el8_10
     krb5-devel:
-        1.18.2-31.0.1.el8_10
+        1.18.2-32.0.1.el8_10
     krb5-libs:
-        1.18.2-31.0.1.el8_10
+        1.18.2-32.0.1.el8_10
     less:
         530-3.el8_10
     libacl:
@@ -333,9 +333,9 @@ local:
     libcap-ng:
         0.7.11-1.el8
     libcom_err:
-        1.45.6-5.el8
+        1.45.6-6.el8_10
     libcom_err-devel:
-        1.45.6-5.el8
+        1.45.6-6.el8_10
     libcomps:
         0.1.18-1.el8
     libcurl:
@@ -367,7 +367,7 @@ local:
     libidn2:
         2.2.0-1.el8
     libkadm5:
-        1.18.2-31.0.1.el8_10
+        1.18.2-32.0.1.el8_10
     libksba:
         1.3.5-9.el8_7
     libmnl:
@@ -401,7 +401,7 @@ local:
     libselinux-utils:
         2.9-10.el8_10
     libsemanage:
-        2.9-11.el8_10
+        2.9-12.el8_10
     libsepol:
         2.9-3.el8
     libsepol-devel:
@@ -531,7 +531,7 @@ local:
     perl-Getopt-Long:
         1:2.50-4.el8
     perl-Git:
-        2.43.5-2.el8_10
+        2.43.5-3.el8_10
     perl-HTTP-Tiny:
         0.074-3.el8
     perl-IO:
@@ -705,13 +705,13 @@ local:
     swig:
         3.0.12-19.module+el8.3.0+7654+9c81efad
     systemd:
-        239-82.0.3.el8_10.5
+        239-82.0.4.el8_10.5
     systemd-libs:
-        239-82.0.3.el8_10.5
+        239-82.0.4.el8_10.5
     systemd-pam:
-        239-82.0.3.el8_10.5
+        239-82.0.4.el8_10.5
     systemd-udev:
-        239-82.0.3.el8_10.5
+        239-82.0.4.el8_10.5
     tar:
         2:1.30-9.el8
     tpm2-tss:
@@ -1020,7 +1020,7 @@ local:
     s3transfer:
         0.6.1
     salt:
-        3007.2+354.gfb413fc38
+        3007.2+398.g34112cd19
     scp:
         0.14.5
     semantic-version:
