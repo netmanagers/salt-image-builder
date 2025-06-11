@@ -139,6 +139,10 @@ local:
         4.4-150400.27.3.2
     boost-license1_66_0:
         1.66.0-12.3.1
+    busybox:
+        1.35.0-150500.10.3.3
+    busybox-gzip:
+        1.35.0-150500.7.4.1
     ca-certificates:
         2+git20240416.98ae794-150300.4.3.3
     ca-certificates-mozilla:
@@ -187,8 +191,6 @@ local:
         2.4.4-150600.1.4
     grep:
         3.1-150000.4.6.1
-    gzip:
-        1.10-150200.10.1
     hostname:
         3.16-2.22
     hwdata:
@@ -355,6 +357,8 @@ local:
         3.5-150600.1.48
     libsemanage2:
         3.5-150600.1.48
+    libsepol1:
+        3.1-150400.1.70
     libsepol2:
         3.5-150600.1.49
     libsha1detectcoll1:

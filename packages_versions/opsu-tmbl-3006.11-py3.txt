@@ -38,12 +38,12 @@ Dependency Versions:
            ZMQ: 4.3.4
  
 System Versions:
-          dist: opensuse-tumbleweed 20250604 n/a
+          dist: opensuse-tumbleweed 20250606 n/a
         locale: utf-8
        machine: x86_64
        release: 5.15.154+
         system: Linux
-       version: openSUSE Tumbleweed 20250604 n/a
+       version: openSUSE Tumbleweed 20250606 n/a
  
 # salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
 local:
@@ -71,7 +71,7 @@ local:
     lsb_distrib_id:
         openSUSE Tumbleweed
     lsb_distrib_release:
-        20250604
+        20250606
     os:
         SUSE
     os_family:
@@ -82,16 +82,16 @@ local:
     oscodename:
         openSUSE Tumbleweed
     osfinger:
-        openSUSE Tumbleweed-20250604
+        openSUSE Tumbleweed-20250606
     osfullname:
         openSUSE Tumbleweed
     osmajorrelease:
-        20250604
+        20250606
     osmanufacturer:
     osrelease:
-        20250604
+        20250606
     osrelease_info:
-        - 20250604
+        - 20250606
     osversion:
     pythonexecutable:
         /opt/saltstack/salt/bin/python3.10
@@ -161,7 +161,7 @@ local:
     crypto-policies-scripts:
         20250124.4d262e7-3.1
     curl:
-        8.14.0-1.1
+        8.14.1-1.1
     dbus-1:
         1.14.10-4.4
     dbus-1-common:
@@ -213,7 +213,7 @@ local:
     libalternatives1:
         1.2+31.da24cd4-1.1
     libapparmor1:
-        4.1.0-2.1
+        4.1.0-3.1
     libassuan9:
         3.0.2-1.2
     libattr1:
@@ -223,7 +223,7 @@ local:
     libaugeas0:
         1.14.1-2.1
     libblkid1:
-        2.40.4-4.2
+        2.41-1.1
     libboost_thread1_88_0:
         1.88.0-1.1
     libbrotlicommon1:
@@ -245,7 +245,7 @@ local:
     libcryptsetup12:
         2.7.5-4.1
     libcurl4:
-        8.14.0-1.1
+        8.14.1-1.1
     libdbus-1-3:
         1.14.10-4.4
     libdevmapper-event1_03:
@@ -261,13 +261,13 @@ local:
     libfa1:
         1.14.1-2.1
     libfdisk1:
-        2.40.4-4.2
+        2.41-1.1
     libffi8:
         3.4.7-1.1
     libfido2-1:
         1.15.0-1.4
     libgcc_s1:
-        15.1.1+git9642-1.1
+        15.1.1+git9739-1.1
     libgcrypt20:
         1.11.1-1.1
     libgdbm6:
@@ -309,7 +309,7 @@ local:
     liblzma5:
         5.8.1-1.1
     libmount1:
-        2.40.4-4.2
+        2.41-1.1
     libmpdec4:
         4.0.1-2.1
     libmpfr6:
@@ -361,17 +361,17 @@ local:
     libsigc-2_0-0:
         2.12.1-2.6
     libsmartcols1:
-        2.40.4-4.2
+        2.41-1.1
     libsolv-tools-base:
-        0.7.32-1.2
+        0.7.33-1.1
     libsqlite3-0:
         3.49.2-1.1
     libssh-config:
-        0.11.1-4.1
+        0.11.1-5.1
     libssh4:
-        0.11.1-4.1
+        0.11.1-5.1
     libstdc++6:
-        15.1.1+git9642-1.1
+        15.1.1+git9739-1.1
     libsubid5:
         4.17.4-2.1
     libsystemd0:
@@ -385,7 +385,7 @@ local:
     libusb-1_0-0:
         1.0.28-1.1
     libuuid1:
-        2.40.4-4.2
+        2.41-1.1
     libverto1:
         0.3.2-3.5
     libwtmpdb0:
@@ -401,7 +401,7 @@ local:
     libzstd1:
         1.5.7-3.1
     libzypp:
-        17.37.3-1.1
+        17.37.4-1.1
     login_defs:
         4.17.4-2.1
     lsb-release:
@@ -417,9 +417,9 @@ local:
     openSUSE-build-key:
         1.0-58.1
     openSUSE-release:
-        20250604-3546.1
+        20250606-3549.1
     openSUSE-release-appliance-docker:
-        20250604-3546.1
+        20250606-3549.1
     openssh:
         10.0p2-2.1
     openssh-clients:
@@ -501,7 +501,7 @@ local:
     system-user-root:
         20190513-2.18
     systemd:
-        257.5-3.1
+        257.6-1.1
     systemd-default-settings:
         0.10-1.3
     systemd-default-settings-branding-openSUSE:
@@ -523,9 +523,9 @@ local:
     timezone:
         2025b-1.1
     udev:
-        257.5-3.1
+        257.6-1.1
     util-linux:
-        2.40.4-4.2
+        2.41-1.1
     which:
         2.23-1.2
     xz:

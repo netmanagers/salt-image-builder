@@ -2,7 +2,7 @@ ubun-22.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-                  Salt: 3007.2+398.g34112cd19
+                  Salt: 3007.3+386.g31cfa53b5
  
 Python Version:
                 Python: 3.10.12 (main, Feb  4 2025, 14:57:36) [GCC 11.4.0]
@@ -119,10 +119,10 @@ local:
     saltpath:
         /usr/local/lib/python3.10/dist-packages/salt
     saltversion:
-        3007.2+398.g34112cd19
+        3007.3+386.g31cfa53b5
     saltversioninfo:
         - 3007
-        - 2
+        - 3
     systemd:
         ----------
         features:
@@ -463,7 +463,7 @@ local:
     libstdc++6:
         12.3.0-1ubuntu1~22.04
     libsystemd0:
-        249.11-0ubuntu3.15
+        249.11-0ubuntu3.16
     libtasn1-6:
         4.18.0-4ubuntu0.1
     libtinfo6:
@@ -479,7 +479,7 @@ local:
     libubsan1:
         12.3.0-1ubuntu1~22.04
     libudev1:
-        249.11-0ubuntu3.15
+        249.11-0ubuntu3.16
     libunistring2:
         1.0-1
     libuuid1:
@@ -577,9 +577,9 @@ local:
     sudo:
         1.9.9-1ubuntu2.4
     systemd:
-        249.11-0ubuntu3.15
+        249.11-0ubuntu3.16
     systemd-sysv:
-        249.11-0ubuntu3.15
+        249.11-0ubuntu3.16
     sysvinit-utils:
         3.01-1ubuntu1
     tar:
@@ -589,7 +589,7 @@ local:
     ucf:
         3.0043
     udev:
-        249.11-0ubuntu3.15
+        249.11-0ubuntu3.16
     usrmerge:
         25ubuntu2
     util-linux:
@@ -888,7 +888,7 @@ local:
     s3transfer:
         0.6.1
     salt:
-        3007.2+398.g34112cd19
+        3007.3+386.g31cfa53b5
     scp:
         0.14.5
     semantic-version:

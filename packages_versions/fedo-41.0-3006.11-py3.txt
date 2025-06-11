@@ -149,9 +149,9 @@ local:
     chkconfig:
         1.31-1.fc41
     coreutils:
-        9.5-11.fc41
+        9.5-12.fc41
     coreutils-common:
-        9.5-11.fc41
+        9.5-12.fc41
     cracklib:
         2.9.11-6.fc41
     crypto-policies:
@@ -257,7 +257,7 @@ local:
     hiredis:
         1.2.0-3.fc41
     hwdata:
-        0.395-1.fc41
+        0.396-1.fc41
     ima-evm-utils-libs:
         1.6.2-2.fc41
     json-c:
@@ -275,7 +275,7 @@ local:
     kmod-libs:
         33-1.fc41
     krb5-libs:
-        1.21.3-4.fc41
+        1.21.3-5.fc41
     less:
         668-1.fc41
     libacl:
@@ -337,7 +337,7 @@ local:
     libksba:
         1.6.7-2.fc41
     libmodulemd:
-        2.15.0-14.fc41
+        2.15.1-1.fc41
     libmount:
         2.40.4-1.fc41
     libnghttp2:
@@ -397,7 +397,7 @@ local:
     libzstd:
         1.5.7-1.fc41
     lua-libs:
-        5.4.7-3.fc41
+        5.4.8-1.fc41
     lz4-libs:
         1.10.0-1.fc41
     mpdecimal:
@@ -683,9 +683,9 @@ local:
     util-linux-core:
         2.40.4-1.fc41
     vim-data:
-        2:9.1.1418-1.fc41
+        2:9.1.1435-1.fc41
     vim-minimal:
-        2:9.1.1418-1.fc41
+        2:9.1.1435-1.fc41
     which:
         2.21-42.fc41
     xz:

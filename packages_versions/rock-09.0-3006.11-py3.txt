@@ -220,13 +220,13 @@ local:
     glib2:
         2.68.4-16.el9
     glibc:
-        2.34-168.el9_6.14
+        2.34-168.el9_6.19
     glibc-common:
-        2.34-168.el9_6.14
+        2.34-168.el9_6.19
     glibc-langpack-en:
-        2.34-168.el9_6.14
+        2.34-168.el9_6.19
     glibc-minimal-langpack:
-        2.34-168.el9_6.14
+        2.34-168.el9_6.19
     gmp:
         1:6.2.0-13.el9
     gnupg2:

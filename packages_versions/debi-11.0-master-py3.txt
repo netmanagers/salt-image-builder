@@ -2,7 +2,7 @@ debi-11.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-                  Salt: 3007.2+398.g34112cd19
+                  Salt: 3007.3+386.g31cfa53b5
  
 Python Version:
                 Python: 3.9.2 (default, Mar 20 2025, 02:07:39)
@@ -118,10 +118,10 @@ local:
     saltpath:
         /usr/local/lib/python3.9/dist-packages/salt
     saltversion:
-        3007.2+398.g34112cd19
+        3007.3+386.g31cfa53b5
     saltversioninfo:
         - 3007
-        - 2
+        - 3
     systemd:
         ----------
         features:
@@ -259,7 +259,7 @@ local:
     libbz2-1.0:
         1.0.8-4
     libc-bin:
-        2.31-13+deb11u12
+        2.31-13+deb11u13
     libc-dev-bin:
         2.31-13+deb11u13
     libc-l10n:
@@ -331,7 +331,7 @@ local:
     libgpg-error0:
         1.38-2
     libgssapi-krb5-2:
-        1.18.3-6+deb11u6
+        1.18.3-6+deb11u7
     libhogweed6:
         3.7.3-1
     libidn2-0:
@@ -351,15 +351,15 @@ local:
     libjson-c5:
         0.15-2+deb11u1
     libk5crypto3:
-        1.18.3-6+deb11u6
+        1.18.3-6+deb11u7
     libkeyutils1:
         1.6.1-2
     libkmod2:
         28-1
     libkrb5-3:
-        1.18.3-6+deb11u6
+        1.18.3-6+deb11u7
     libkrb5support0:
-        1.18.3-6+deb11u6
+        1.18.3-6+deb11u7
     libksba8:
         1.5.0-3+deb11u2
     libldap-2.4-2:
@@ -457,7 +457,7 @@ local:
     libssh2-1:
         1.9.0-2+deb11u1
     libssl1.1:
-        1.1.1w-0+deb11u2
+        1.1.1w-0+deb11u3
     libstdc++6:
         10.2.1-6
     libsystemd0:
@@ -878,7 +878,7 @@ local:
     s3transfer:
         0.6.1
     salt:
-        3007.2+398.g34112cd19
+        3007.3+386.g31cfa53b5
     scp:
         0.14.5
     semantic-version:

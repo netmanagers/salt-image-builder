@@ -2,7 +2,7 @@ debi-12.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-                  Salt: 3007.2+398.g34112cd19
+                  Salt: 3007.3+386.g31cfa53b5
  
 Python Version:
                 Python: 3.11.2 (main, Apr 28 2025, 14:11:48) [GCC 12.2.0]
@@ -118,10 +118,10 @@ local:
     saltpath:
         /usr/local/lib/python3.11/dist-packages/salt
     saltversion:
-        3007.2+398.g34112cd19
+        3007.3+386.g31cfa53b5
     saltversioninfo:
         - 3007
-        - 2
+        - 3
     systemd:
         ----------
         features:
@@ -885,7 +885,7 @@ local:
     s3transfer:
         0.6.1
     salt:
-        3007.2+398.g34112cd19
+        3007.3+386.g31cfa53b5
     scp:
         0.14.5
     semantic-version:

@@ -2,7 +2,7 @@ orac-08.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-                  Salt: 3007.2+398.g34112cd19
+                  Salt: 3007.3+386.g31cfa53b5
  
 Python Version:
                 Python: 3.11.11 (main, Dec 12 2024, 05:43:43) [GCC 8.5.0 20210514 (Red Hat 8.5.0-22.0.1)]
@@ -119,10 +119,10 @@ local:
     saltpath:
         /usr/lib/python3.11/site-packages/salt
     saltversion:
-        3007.2+398.g34112cd19
+        3007.3+386.g31cfa53b5
     saltversioninfo:
         - 3007
-        - 2
+        - 3
     systemd:
         ----------
         features:
@@ -691,7 +691,7 @@ local:
     rpm-libs:
         4.14.3-32.0.1.el8_10
     rsyslog:
-        8.2102.0-15.el8_10.1
+        8.2102.0-15.0.1.el8_10.1
     sed:
         4.5-5.el8
     setup:
@@ -1020,7 +1020,7 @@ local:
     s3transfer:
         0.6.1
     salt:
-        3007.2+398.g34112cd19
+        3007.3+386.g31cfa53b5
     scp:
         0.14.5
     semantic-version:
