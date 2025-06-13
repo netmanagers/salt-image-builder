@@ -1,56 +1,52 @@
-amaz-2023-master-py3
-Salt install method: git
+amaz-2023-3007.4-py3
+Salt install method: onedir
 # salt-call --versions-report
 Salt Version:
-                  Salt: 3007.3+387.g6fec97a1d
+          Salt: 3007.4
  
 Python Version:
-                Python: 3.9.22 (main, Apr 29 2025, 00:00:00)
+        Python: 3.10.17 (main, Jun  9 2025, 20:41:48) [GCC 11.2.0]
  
 Dependency Versions:
-                  cffi: 1.16.0
-              cherrypy: 18.8.0
-          cryptography: 42.0.5
-              dateutil: 2.8.2
-             docker-py: 7.1.0
-                 gitdb: 4.0.10
-             gitpython: 3.1.43
-                Jinja2: 3.1.6
-               libgit2: 1.7.1
-          looseversion: 1.3.0
-              M2Crypto: Not Installed
-                  Mako: 1.2.4
-               msgpack: 1.0.7
-          msgpack-pure: Not Installed
-          mysql-python: Not Installed
-              networkx: 3.1
-             packaging: 23.1
-             pycparser: 2.21
-              pycrypto: Not Installed
-          pycryptodome: 3.19.1
-                pygit2: 1.13.1
-          python-gnupg: 0.5.2
-                PyYAML: 6.0.1
-                 PyZMQ: 25.1.2
-                relenv: Not Installed
-                 smmap: 5.0.1
-               timelib: 0.3.0
-               Tornado: 6.4.2
-                   ZMQ: 4.3.4
- 
-Salt Extensions:
- pytest-salt-factories: 1.0.1
+          cffi: 1.16.0
+      cherrypy: 18.8.0
+  cryptography: 42.0.5
+      dateutil: 2.8.2
+     docker-py: Not Installed
+         gitdb: Not Installed
+     gitpython: Not Installed
+        Jinja2: 3.1.6
+       libgit2: Not Installed
+  looseversion: 1.3.0
+      M2Crypto: Not Installed
+          Mako: Not Installed
+       msgpack: 1.0.7
+  msgpack-pure: Not Installed
+  mysql-python: Not Installed
+     packaging: 24.0
+     pycparser: 2.21
+      pycrypto: Not Installed
+  pycryptodome: 3.19.1
+        pygit2: Not Installed
+  python-gnupg: 0.5.2
+        PyYAML: 6.0.1
+         PyZMQ: 25.1.2
+        relenv: 0.19.3
+         smmap: Not Installed
+       timelib: 0.3.0
+       Tornado: 6.4.2
+           ZMQ: 4.3.4
  
 Salt Package Information:
-          Package Type: Not Installed
+  Package Type: onedir
  
 System Versions:
-                  dist: amzn 2023.7.20250609 
-                locale: utf-8
-               machine: x86_64
-               release: 5.15.154+
-                system: Linux
-               version: Amazon Linux 2023.7.20250609 
+          dist: amzn 2023.7.20250609 
+        locale: utf-8
+       machine: x86_64
+       release: 5.15.154+
+        system: Linux
+       version: Amazon Linux 2023.7.20250609 
  
 # salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
 local:
@@ -101,27 +97,27 @@ local:
         - 2023
     osversion:
     pythonexecutable:
-        /usr/bin/python3
+        /opt/saltstack/salt/bin/python3.10
     pythonpath:
-        - /usr/bin
-        - /usr/lib64/python39.zip
-        - /usr/lib64/python3.9
-        - /usr/lib64/python3.9/lib-dynload
-        - /usr/lib64/python3.9/site-packages
-        - /usr/lib/python3.9/site-packages
+        - /opt/saltstack/salt
+        - /opt/saltstack/salt/extras-3.10
+        - /opt/saltstack/salt/lib/python310.zip
+        - /opt/saltstack/salt/lib/python3.10
+        - /opt/saltstack/salt/lib/python3.10/lib-dynload
+        - /opt/saltstack/salt/lib/python3.10/site-packages
     pythonversion:
         - 3
-        - 9
-        - 22
+        - 10
+        - 17
         - final
         - 0
     saltpath:
-        /usr/lib/python3.9/site-packages/salt
+        /opt/saltstack/salt/lib/python3.10/site-packages/salt
     saltversion:
-        3007.3+387.g6fec97a1d
+        3007.4
     saltversioninfo:
         - 3007
-        - 3
+        - 4
     systemd:
         ----------
         features:
@@ -141,20 +137,12 @@ local:
         1.15-2.amzn2023.0.2
     amazon-linux-repo-cdn:
         2023.7.20250609-0.amzn2023
-    amazon-rpm-config:
-        228-9.amzn2023.0.1
-    annobin-docs:
-        12.69-1.amzn2023.0.1
-    annobin-plugin-gcc:
-        12.69-1.amzn2023.0.1
     audit-libs:
         3.0.6-1.amzn2023.0.2
     basesystem:
         11-11.amzn2023.0.2
     bash:
         5.2.15-1.amzn2023.0.2
-    binutils:
-        2.41-50.amzn2023.0.3
     bzip2-libs:
         1.0.8-6.amzn2023.0.2
     ca-certificates:
@@ -163,8 +151,6 @@ local:
         1.15-2.amzn2023.0.2
     coreutils-single:
         8.32-30.amzn2023.0.3
-    cpp:
-        11.5.0-5.amzn2023.0.4
     cracklib:
         2.9.6-27.amzn2023.0.2
     crypto-policies:
@@ -189,6 +175,8 @@ local:
         1.02.185-1.amzn2023.0.5
     diffutils:
         3.8-1.amzn2023.0.2
+    dmidecode:
+        1:3.6-1.amzn2023.0.1
     dnf:
         4.14.0-1.amzn2023.0.6
     dnf-data:
@@ -197,12 +185,6 @@ local:
         4.3.0-13.amzn2023.0.5
     dnf-utils:
         4.3.0-13.amzn2023.0.5
-    dwz:
-        0.14-6.amzn2023.0.2
-    efi-srpm-macros:
-        5-4.amzn2023.0.5
-    elfutils-debuginfod-client:
-        0.188-3.amzn2023.0.3
     elfutils-default-yama-scope:
         0.188-3.amzn2023.0.3
     elfutils-libelf:
@@ -211,28 +193,16 @@ local:
         0.188-3.amzn2023.0.3
     expat:
         2.6.3-1.amzn2023.0.2
-    file:
-        5.39-7.amzn2023.0.4
     file-libs:
         5.39-7.amzn2023.0.4
     filesystem:
         3.14-5.amzn2023.0.3
     findutils:
         1:4.8.0-2.amzn2023.0.2
-    fonts-srpm-macros:
-        1:2.0.5-12.amzn2023.0.2
     gawk:
         5.1.0-3.amzn2023.0.3
-    gc:
-        8.0.4-5.amzn2023.0.2
-    gcc:
-        11.5.0-5.amzn2023.0.4
-    gcc-plugin-annobin:
-        11.5.0-5.amzn2023.0.4
     gdbm-libs:
         1:1.19-2.amzn2023.0.2
-    ghc-srpm-macros:
-        1.5.0-4.amzn2023.0.2
     git:
         2.47.1-1.amzn2023.0.3
     git-core:
@@ -245,12 +215,6 @@ local:
         2.34-196.amzn2023.0.1
     glibc-common:
         2.34-196.amzn2023.0.1
-    glibc-devel:
-        2.34-196.amzn2023.0.1
-    glibc-gconv-extra:
-        2.34-196.amzn2023.0.1
-    glibc-headers-x86:
-        2.34-196.amzn2023.0.1
     glibc-langpack-en:
         2.34-196.amzn2023.0.1
     glibc-minimal-langpack:
@@ -259,32 +223,24 @@ local:
         1:6.2.1-2.amzn2023.0.2
     gnupg2-minimal:
         2.3.7-1.amzn2023.0.4
-    go-srpm-macros:
-        3.2.0-37.amzn2023
     gpg-pubkey.(none):
-        d832c631-6515c85e
+        73d76b3f-63dace60,d832c631-6515c85e
     gpgme:
         1.23.2-182.amzn2023.0.1
     grep:
         3.8-1.amzn2023.0.4
     groff-base:
         1.22.4-7.amzn2023.0.2
-    guile22:
-        2.2.7-2.amzn2023.0.3
     gzip:
         1.12-1.amzn2023.0.1
-    jansson:
-        2.14-0.amzn2023
+    hwdata:
+        0.384-1.amzn2023.0.3
     json-c:
         0.14-8.amzn2023.0.2
     kbd:
         2.4.0-2.amzn2023.0.3
     kbd-misc:
         2.4.0-2.amzn2023.0.3
-    kernel-headers:
-        6.12.30-34.92.amzn2023
-    kernel-srpm-macros:
-        1.0-14.amzn2023.0.3
     keyutils-libs:
         1.6.3-1.amzn2023.0.2
     kmod:
@@ -347,12 +303,8 @@ local:
         2.13.0-2.amzn2023.0.2
     libmount:
         2.37.4-1.amzn2023.0.4
-    libmpc:
-        1.2.1-2.amzn2023.0.2
     libnghttp2:
         1.59.0-3.amzn2023.0.1
-    libpkgconf:
-        1.8.0-4.amzn2023.0.2
     libpsl:
         0.21.5-1.amzn2023.0.1
     libpwquality:
@@ -379,8 +331,6 @@ local:
         14.2.1-7.amzn2023.0.1
     libtasn1:
         4.19.0-1.amzn2023.0.5
-    libtool-ltdl:
-        2.4.7-1.amzn2023.0.3
     libunistring:
         0.9.10-10.amzn2023.0.2
     libutempter:
@@ -390,10 +340,6 @@ local:
     libverto:
         0.3.2-1.amzn2023.0.2
     libxcrypt:
-        4.4.33-7.amzn2023
-    libxcrypt-compat:
-        4.4.33-7.amzn2023
-    libxcrypt-devel:
         4.4.33-7.amzn2023
     libxkbcommon:
         1.6.0-2.amzn2023.0.1
@@ -405,12 +351,8 @@ local:
         1.5.5-1.amzn2023.0.1
     lua-libs:
         5.4.4-3.amzn2023.0.2
-    lua-srpm-macros:
-        1-4.amzn2023.0.2
     lz4-libs:
         1.9.4-1.amzn2023.0.2
-    make:
-        1:4.3-5.amzn2023.0.2
     mpfr:
         4.1.0-7.amzn2023.0.2
     nano:
@@ -427,10 +369,6 @@ local:
         2.0-0.59.20160912git.amzn2023.0.3
     npth:
         1.6-6.amzn2023.0.2
-    ocaml-srpm-macros:
-        6-6.amzn2023.0.2
-    openblas-srpm-macros:
-        2-9.amzn2023.0.2
     openldap:
         2.4.57-6.amzn2023.0.7
     openssh:
@@ -439,6 +377,8 @@ local:
         8.7p1-8.amzn2023.0.14
     openssh-server:
         8.7p1-8.amzn2023.0.14
+    openssl:
+        1:3.2.2-1.amzn2023.0.1
     openssl-fips-provider-latest:
         1:3.2.2-1.amzn2023.0.1
     openssl-libs:
@@ -447,10 +387,12 @@ local:
         0.24.1-2.amzn2023.0.3
     p11-kit-trust:
         0.24.1-2.amzn2023.0.3
-    package-notes-srpm-macros:
-        0.4-18.amzn2023.0.5
     pam:
         1.5.1-8.amzn2023.0.4
+    pciutils:
+        3.7.0-3.amzn2023.0.2
+    pciutils-libs:
+        3.7.0-3.amzn2023.0.2
     pcre2:
         10.40-1.amzn2023.0.3
     pcre2-syntax:
@@ -577,34 +519,22 @@ local:
         1:0.238-458.amzn2023.0.2
     perl-podlators:
         1:4.14-458.amzn2023.0.2
-    perl-srpm-macros:
-        1-39.amzn2023.0.2
     perl-subs:
         1.03-477.amzn2023.0.7
     perl-vars:
         1.05-477.amzn2023.0.7
-    pkgconf:
-        1.8.0-4.amzn2023.0.2
-    pkgconf-m4:
-        1.8.0-4.amzn2023.0.2
-    pkgconf-pkg-config:
-        1.8.0-4.amzn2023.0.2
     popt:
         1.18-6.amzn2023.0.2
     procps-ng:
         3.3.17-1.amzn2023.0.2
     publicsuffix-list-dafsa:
         20240212-61.amzn2023
-    python-srpm-macros:
-        3.9-41.amzn2023.0.6
     python3:
         3.9.22-1.amzn2023.0.1
     python3-dateutil:
         1:2.8.1-3.amzn2023.0.2
     python3-dbus:
         1.2.18-1.amzn2023.0.2
-    python3-devel:
-        3.9.22-1.amzn2023.0.1
     python3-distro:
         1.5.0-5.amzn2023.0.2
     python3-dnf:
@@ -621,8 +551,6 @@ local:
         0.69.0-8.amzn2023.0.5
     python3-libs:
         3.9.22-1.amzn2023.0.1
-    python3-pip:
-        21.3.1-2.amzn2023.0.11
     python3-pip-wheel:
         21.3.1-2.amzn2023.0.11
     python3-rpm:
@@ -647,8 +575,10 @@ local:
         4.16.1.3-29.amzn2023.0.6
     rpm-sign-libs:
         4.16.1.3-29.amzn2023.0.6
-    rust-toolset-srpm-macros:
-        1.85.0-1.amzn2023.0.1
+    salt:
+        3007.4-0
+    salt-minion:
+        3007.4-0
     sed:
         4.8-7.amzn2023.0.2
     setup:
@@ -679,8 +609,6 @@ local:
         4.0.2-1.amzn2023
     tzdata:
         2025b-1.amzn2023.0.1
-    unzip:
-        6.0-57.amzn2023.0.2
     util-linux:
         2.37.4-1.amzn2023.0.4
     util-linux-core:
@@ -693,373 +621,117 @@ local:
         5.2.5-9.amzn2023.0.2
     yum:
         4.14.0-1.amzn2023.0.6
-    zip:
-        3.0-28.amzn2023.0.2
     zlib:
         1.2.11-33.amzn2023.0.5
 # salt-call --local pip.list
 local:
     ----------
-    Cheetah3:
-        3.2.6.post1
     CherryPy:
         18.8.0
-    ClusterShell:
-        1.9.1
-    Genshi:
-        0.7.7
-    GitPython:
-        3.1.43
     Jinja2:
         3.1.6
-    Mako:
-        1.2.4
     MarkupSafe:
         2.1.3
-    PyJWT:
-        2.7.0
-    PyMySQL:
-        1.1.1
-    PyNaCl:
-        1.5.0
     PyYAML:
         6.0.1
-    Werkzeug:
-        3.0.3
     aiohttp:
         3.9.5
-    aiohttp-retry:
-        2.8.3
     aiosignal:
         1.3.1
-    anyio:
-        4.1.0
-    apache-libcloud:
-        3.7.0
-    asn1crypto:
-        1.5.1
     async-timeout:
         4.0.3
     attrs:
         23.2.0
     autocommand:
         2.2.2
-    backports.tarfile:
-        1.2.0
-    bcrypt:
-        4.0.1
-    boto:
-        2.49.0
-    boto3:
-        1.26.152
-    botocore:
-        1.29.152
-    cachetools:
-        5.3.1
-    cassandra-driver:
-        3.28.0
     certifi:
-        2023.7.22
-    certvalidator:
-        0.11.1
+        2024.7.4
     cffi:
         1.16.0
     charset-normalizer:
         3.2.0
     cheroot:
         10.0.0
-    click:
-        8.1.3
     contextvars:
         2.4
     croniter:
         2.0.5
     cryptography:
         42.0.5
-    dbus-python:
-        1.2.18
-    distlib:
-        0.3.8
     distro:
         1.8.0
-    dnspython:
-        2.6.1
-    docker:
-        7.1.0
-    etcd3-py:
-        0.1.6
-    exceptiongroup:
-        1.1.1
-    filelock:
-        3.13.1
-    flaky:
-        3.8.1
     frozenlist:
         1.4.1
-    future:
-        0.18.3
-    geomet:
-        0.2.1.post1
-    gitdb:
-        4.0.10
-    google-auth:
-        2.27.0
-    gpg:
-        1.23.2
-    h11:
-        0.14.0
-    hglib:
-        2.6.2
-    httpcore:
-        0.17.3
-    httpx:
-        0.24.1
     idna:
         3.7
     immutables:
         0.15
-    importlib-metadata:
+    importlib_metadata:
         6.6.0
-    inflect:
-        7.3.1
-    iniconfig:
-        2.0.0
-    ipaddress:
-        1.0.23
-    jaraco.classes:
-        3.4.0
     jaraco.collections:
-        5.1.0
+        4.1.0
     jaraco.context:
-        6.0.1
+        4.3.0
     jaraco.functools:
         4.1.0
     jaraco.text:
         4.0.0
     jmespath:
         1.0.1
-    jsonschema:
-        3.2.0
-    junit-xml:
-        1.9
-    junos-eznc:
-        2.6.7
-    jxmlease:
-        1.0.3
-    kazoo:
-        2.9.0
-    keyring:
-        5.7.1
-    kubernetes:
-        3.0.0
-    libcomps:
-        0.1.20
-    libnacl:
-        1.8.0
     looseversion:
         1.3.0
-    lxml:
-        4.9.2
-    mercurial:
-        6.4.4
-    mock:
-        5.1.0
     more-itertools:
-        10.7.0
-    moto:
-        4.1.11
+        9.1.0
     msgpack:
         1.0.7
     multidict:
         6.0.4
-    napalm:
-        4.1.0
-    ncclient:
-        0.6.13
-    netaddr:
-        0.8.0
-    netmiko:
-        4.2.0
-    netutils:
-        1.6.0
-    networkx:
-        3.1
-    ntc_templates:
-        4.0.1
-    oscrypto:
-        1.3.0
     packaging:
-        23.1
-    paramiko:
-        3.4.0
-    passlib:
-        1.7.4
-    pathspec:
-        0.11.1
+        24.0
     pip:
-        21.3.1
-    platformdirs:
-        4.0.0
-    pluggy:
-        1.4.0
+        23.3.2
     portend:
         3.1.0
     psutil:
         5.9.6
     pyOpenSSL:
         24.0.0
-    pyasn1:
-        0.5.1
-    pyasn1-modules:
-        0.3.0
     pycparser:
         2.21
     pycryptodomex:
         3.19.1
-    pyeapi:
-        1.0.0
-    pyfakefs:
-        5.3.1
-    pygit2:
-        1.13.1
-    pyiface:
-        0.0.11
-    pyinotify:
-        0.9.6
-    pyparsing:
-        3.0.9
-    pyrsistent:
-        0.19.3
-    pyserial:
-        3.5
-    pytest:
-        8.1.1
-    pytest-custom-exit-code:
-        0.3.0
-    pytest-helpers-namespace:
-        2021.12.29
-    pytest-httpserver:
-        1.0.8
-    pytest-salt-factories:
-        1.0.1
-    pytest-shell-utilities:
-        1.8.0
-    pytest-skip-markers:
-        1.5.2
-    pytest-subtests:
-        0.11.0
-    pytest-system-statistics:
-        1.0.2
-    pytest-timeout:
-        2.3.1
-    python-consul:
-        1.1.0
     python-dateutil:
         2.8.2
-    python-etcd:
-        0.4.5
     python-gnupg:
         0.5.2
-    python-telegram-bot:
-        20.3
     pytz:
         2024.1
-    pyvmomi:
-        8.0.1.0.1
     pyzmq:
         25.1.2
-    redis:
-        3.5.3
-    redis-py-cluster:
-        2.1.3
+    relenv:
+        0.19.3
     requests:
-        2.31.0
-    responses:
-        0.24.1
-    rfc3987:
-        1.3.8
-    rpm:
-        4.16.1.3
-    rpm-vercmp:
+        2.32.3
+    rpm_vercmp:
         0.1.2
-    rsa:
-        4.9
-    s3transfer:
-        0.6.1
     salt:
-        3007.3+387.g6fec97a1d
-    scp:
-        0.14.5
-    semantic-version:
-        2.10.0
+        3007.4
     setproctitle:
         1.3.2
     setuptools:
-        80.9.0
+        79.0.1
     six:
         1.16.0
-    slack-bolt:
-        1.18.0
-    slack-sdk:
-        3.21.3
-    smmap:
-        5.0.1
-    sniffio:
-        1.3.0
-    sqlparse:
-        0.5.0
-    strict-rfc3339:
-        0.7
-    systemd-python:
-        235
     tempora:
         5.3.0
-    textfsm:
-        1.1.3
     timelib:
         0.3.0
-    toml:
-        0.10.2
-    tomli:
-        2.0.1
     tornado:
         6.4.2
-    transitions:
-        0.9.0
-    trustme:
-        1.1.0
-    ttp:
-        0.9.5
-    ttp-templates:
-        0.3.5
-    twilio:
-        8.2.2
-    typeguard:
-        4.3.0
-    typing_extensions:
-        4.8.0
     urllib3:
         1.26.20
-    vcert:
-        0.9.1
-    virtualenv:
-        20.24.7
-    watchdog:
-        3.0.0
-    websocket-client:
-        0.40.0
-    wempy:
-        0.2.1
     wheel:
         0.45.1
-    xmldiff:
-        2.6.3
-    xmltodict:
-        0.13.0
-    yamllint:
-        1.32.0
-    yamlordereddictloader:
-        0.4.0
     yarl:
         1.9.4
     zc.lockfile:

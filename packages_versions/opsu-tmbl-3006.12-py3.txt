@@ -1,0 +1,1141 @@
+opsu-tmbl-3006.12-py3
+Salt install method: onedir
+# salt-call --versions-report
+Salt Version:
+          Salt: 3006.12
+ 
+Python Version:
+        Python: 3.10.17 (main, Jun  9 2025, 20:41:48) [GCC 11.2.0]
+ 
+Dependency Versions:
+          cffi: 1.14.6
+      cherrypy: 18.6.1
+  cryptography: 42.0.5
+      dateutil: 2.8.1
+     docker-py: Not Installed
+         gitdb: Not Installed
+     gitpython: Not Installed
+        Jinja2: 3.1.6
+       libgit2: Not Installed
+  looseversion: 1.0.2
+      M2Crypto: Not Installed
+          Mako: Not Installed
+       msgpack: 1.0.2
+  msgpack-pure: Not Installed
+  mysql-python: Not Installed
+     packaging: 22.0
+     pycparser: 2.21
+      pycrypto: Not Installed
+  pycryptodome: 3.19.1
+        pygit2: Not Installed
+  python-gnupg: 0.4.8
+        PyYAML: 6.0.1
+         PyZMQ: 23.2.0
+        relenv: 0.19.3
+         smmap: Not Installed
+       timelib: 0.2.4
+       Tornado: 4.5.3
+           ZMQ: 4.3.4
+ 
+System Versions:
+          dist: opensuse-tumbleweed 20250612 n/a
+        locale: utf-8
+       machine: x86_64
+       release: 5.15.154+
+        system: Linux
+       version: openSUSE Tumbleweed 20250612 n/a
+ 
+# salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
+local:
+    ----------
+    init:
+        unknown
+    kernel:
+        Linux
+    kernelrelease:
+        5.15.154+
+    kernelversion:
+        #1 SMP Sat May 4 12:14:42 UTC 2024
+    locale_info:
+        ----------
+        defaultencoding:
+            UTF-8
+        defaultlanguage:
+            en_US
+        detectedencoding:
+            utf-8
+        timezone:
+            UTC
+    lsb_distrib_codename:
+        openSUSE Tumbleweed
+    lsb_distrib_id:
+        openSUSE Tumbleweed
+    lsb_distrib_release:
+        20250612
+    os:
+        SUSE
+    os_family:
+        Suse
+    osarch:
+        x86_64
+    osbuild:
+    oscodename:
+        openSUSE Tumbleweed
+    osfinger:
+        openSUSE Tumbleweed-20250612
+    osfullname:
+        openSUSE Tumbleweed
+    osmajorrelease:
+        20250612
+    osmanufacturer:
+    osrelease:
+        20250612
+    osrelease_info:
+        - 20250612
+    osversion:
+    pythonexecutable:
+        /opt/saltstack/salt/bin/python3.10
+    pythonpath:
+        - /opt/saltstack/salt
+        - /opt/saltstack/salt/extras-3.10
+        - /opt/saltstack/salt/lib/python310.zip
+        - /opt/saltstack/salt/lib/python3.10
+        - /opt/saltstack/salt/lib/python3.10/lib-dynload
+        - /opt/saltstack/salt/lib/python3.10/site-packages
+    pythonversion:
+        - 3
+        - 10
+        - 17
+        - final
+        - 0
+    saltpath:
+        /opt/saltstack/salt/lib/python3.10/site-packages/salt
+    saltversion:
+        3006.12
+    saltversioninfo:
+        - 3006
+        - 12
+    systemd:
+        ----------
+        features:
+            +PAM +AUDIT +SELINUX +APPARMOR +IMA +IPE -SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK -BTF -XKBCOMMON -UTMP +SYSVINIT +LIBARCHIVE
+        version:
+            257
+    virtual:
+        gce
+    virtual_subtype:
+        Docker
+    zmqversion:
+        4.3.4
+# salt-call --local pkg.list_pkgs
+local:
+    ----------
+    aaa_base:
+        84.87+git20250429.1cad3bc-1.1
+    alts:
+        1.2+31.da24cd4-1.1
+    bash:
+        5.2.37-20.1
+    bash-sh:
+        5.2.37-20.1
+    boost-license1_88_0:
+        1.88.0-1.1
+    branding-openSUSE:
+        84.87.20240405-4.13
+    busybox:
+        1.37.0-4.1
+    busybox-diffutils:
+        1.37.0-33.4
+    busybox-less:
+        1.37.0-33.4
+    ca-certificates:
+        2+git20240805.fd24d50-1.2
+    ca-certificates-mozilla:
+        2.74-4.1
+    coreutils:
+        9.7-2.1
+    cracklib-dict-small:
+        2.9.11-1.6
+    crypto-policies:
+        20250124.4d262e7-3.1
+    crypto-policies-scripts:
+        20250124.4d262e7-3.1
+    curl:
+        8.14.1-2.1
+    dbus-1:
+        1.14.10-4.4
+    dbus-1-common:
+        1.14.10-4.4
+    dbus-1-tools:
+        1.14.10-4.4
+    dbus-broker:
+        36-2.3
+    dbus-broker-block-restart:
+        36-2.3
+    device-mapper:
+        2.03.29_1.02.203-7.1
+    dmidecode:
+        3.6-2.3
+    filesystem:
+        84.87-18.2
+    fillup:
+        1.42-281.3
+    findutils:
+        4.10.0-2.2
+    gawk:
+        5.3.2-1.1
+    git:
+        2.49.0-2.1
+    git-core:
+        2.49.0-2.1
+    glibc:
+        2.41-2.1
+    glibc-locale:
+        2.41-2.1
+    glibc-locale-base:
+        2.41-2.1
+    gpg2:
+        2.5.7-2.1
+    grep:
+        3.12-1.1
+    gzip:
+        1.14-1.1
+    hwdata:
+        0.395-1.1
+    kbd:
+        2.7.1-2.1
+    kmod:
+        34.2-1.1
+    krb5:
+        1.21.3-3.1
+    libacl1:
+        2.3.2-2.3
+    libalternatives1:
+        1.2+31.da24cd4-1.1
+    libapparmor1:
+        4.1.0-4.1
+    libassuan9:
+        3.0.2-1.2
+    libattr1:
+        2.5.2-1.4
+    libaudit1:
+        4.0-3.3
+    libaugeas0:
+        1.14.1-2.1
+    libblkid1:
+        2.41-1.1
+    libboost_thread1_88_0:
+        1.88.0-1.1
+    libbrotlicommon1:
+        1.1.0-1.6
+    libbrotlidec1:
+        1.1.0-1.6
+    libbz2-1:
+        1.0.8-5.12
+    libcap-ng0:
+        0.8.5-1.3
+    libcap2:
+        2.75-1.1
+    libcbor0_11:
+        0.11.0-3.3
+    libcom_err2:
+        1.47.2-1.1
+    libcrypt1:
+        4.4.38-1.2
+    libcryptsetup12:
+        2.7.5-4.1
+    libcurl4:
+        8.14.1-1.1
+    libdbus-1-3:
+        1.14.10-4.4
+    libdevmapper-event1_03:
+        2.03.29_1.02.203-7.1
+    libdevmapper1_03:
+        2.03.29_1.02.203-7.1
+    libeconf0:
+        0.7.9-1.1
+    libedit0:
+        20250104.3.1-1.1
+    libexpat1:
+        2.7.1-2.1
+    libfa1:
+        1.14.1-2.1
+    libfdisk1:
+        2.41-1.1
+    libffi8:
+        3.4.7-1.1
+    libfido2-1:
+        1.15.0-1.4
+    libgcc_s1:
+        15.1.1+git9739-2.1
+    libgcrypt20:
+        1.11.1-2.1
+    libgdbm6:
+        1.24-2.1
+    libgdbm_compat4:
+        1.24-2.1
+    libglib-2_0-0:
+        2.84.2-1.1
+    libgmp10:
+        6.3.0-5.1
+    libgpg-error0:
+        1.55-1.1
+    libgpgme11:
+        1.24.3-2.1
+    libhidapi-hidraw0:
+        0.14.0-1.5
+    libidn2-0:
+        2.3.8-1.1
+    libjitterentropy3:
+        3.6.3-1.1
+    libjson-c5:
+        0.18-1.3
+    libkbdfile1:
+        2.7.1-2.1
+    libkeymap1:
+        2.7.1-2.1
+    libkeyutils1:
+        1.6.3-7.4
+    libkfont0:
+        2.7.1-2.1
+    libkmod2:
+        34.2-1.1
+    libksba8:
+        1.6.7-1.3
+    libldap2:
+        2.6.8-2.5
+    liblua5_4-5:
+        5.4.7-4.1
+    liblzma5:
+        5.8.1-1.1
+    libmount1:
+        2.41-1.1
+    libmpdec4:
+        4.0.1-2.1
+    libmpfr6:
+        4.2.2-1.1
+    libncurses6:
+        6.5.20250531-73.1
+    libnghttp2-14:
+        1.65.0-1.1
+    libnpth0:
+        1.8-2.1
+    libnss_usrfiles2:
+        2.27.1-1.4
+    libopenssl-3-fips-provider:
+        3.5.0-3.1
+    libopenssl3:
+        3.5.0-3.1
+    libp11-kit0:
+        0.25.5-1.4
+    libpci3:
+        3.13.0-3.1
+    libpcre2-8-0:
+        10.45-2.1
+    libpkgconf5:
+        2.2.0-1.3
+    libpopt0:
+        1.19-1.10
+    libproc2-1:
+        4.0.5-1.2
+    libpsl5:
+        0.21.5-1.5
+    libpython3_13-1_0:
+        3.13.3-4.1
+    libreadline8:
+        8.2.13-2.3
+    libsasl2-3:
+        2.1.28-10.1
+    libseccomp2:
+        2.6.0-2.2
+    libselinux1:
+        3.8.1-1.1
+    libsemanage-conf:
+        3.8.1-1.1
+    libsemanage2:
+        3.8.1-1.1
+    libsepol2:
+        3.8.1-1.1
+    libsha1detectcoll1:
+        1.0.3-5.3
+    libsigc-2_0-0:
+        2.12.1-2.6
+    libsmartcols1:
+        2.41-1.1
+    libsolv-tools-base:
+        0.7.33-1.1
+    libsqlite3-0:
+        3.50.1-1.1
+    libssh-config:
+        0.11.1-5.1
+    libssh4:
+        0.11.1-5.1
+    libstdc++6:
+        15.1.1+git9739-2.1
+    libsubid5:
+        4.17.4-2.1
+    libsystemd0:
+        257.6-1.1
+    libtasn1-6:
+        4.20.0-1.2
+    libudev1:
+        257.6-1.1
+    libunistring5:
+        1.3-1.3
+    libusb-1_0-0:
+        1.0.28-1.1
+    libuuid1:
+        2.41-1.1
+    libverto1:
+        0.3.2-3.5
+    libwtmpdb0:
+        0.74.0+git20250509.272b109-1.1
+    libxml2-2:
+        2.13.8-1.1
+    libyaml-cpp0_8:
+        0.8.0-4.1
+    libz1:
+        1.3.1-1.3
+    libzck1:
+        1.5.1-1.3
+    libzstd1:
+        1.5.7-3.1
+    libzypp:
+        17.37.4-1.1
+    login_defs:
+        4.17.4-2.1
+    lsb-release:
+        3.3-1.5
+    ncurses-utils:
+        6.5.20250531-73.1
+    net-tools:
+        2.10-3.2
+    net-tools-deprecated:
+        2.10-3.2
+    netcfg:
+        11.6-13.5
+    openSUSE-build-key:
+        1.0-58.1
+    openSUSE-release:
+        20250612-3555.1
+    openSUSE-release-appliance-docker:
+        20250612-3555.1
+    openssh:
+        10.0p2-2.1
+    openssh-clients:
+        10.0p2-2.1
+    openssh-common:
+        10.0p2-2.1
+    openssh-server:
+        10.0p2-2.1
+    openssl:
+        3.5.0-1.1
+    openssl-3:
+        3.5.0-3.1
+    p11-kit:
+        0.25.5-1.4
+    p11-kit-tools:
+        0.25.5-1.4
+    pam:
+        1.7.0-3.1
+    pam-config:
+        2.12+git.20250411-1.1
+    pam-extra:
+        1.7.0-3.1
+    patterns-base-fips:
+        20241218-10.1
+    patterns-base-minimal_base:
+        20241218-10.1
+    pciutils:
+        3.13.0-3.1
+    perl:
+        5.40.2-2.1
+    perl-Error:
+        0.170.300-1.1
+    perl-Git:
+        2.49.0-2.1
+    perl-base:
+        5.40.2-2.1
+    permctl:
+        1699_20250120-1.3
+    permissions:
+        1699_20250120-1.3
+    permissions-config:
+        1699_20250120-1.3
+    pinentry:
+        1.3.1-2.4
+    pkgconf:
+        2.2.0-1.3
+    pkgconf-m4:
+        2.2.0-1.3
+    pkgconf-pkg-config:
+        2.2.0-1.3
+    procps:
+        4.0.5-1.2
+    python313-base:
+        3.13.3-4.1
+    rpm:
+        4.20.1-5.1
+    rpm-config-SUSE:
+        20250423-1.1
+    salt:
+        3006.12-0
+    salt-minion:
+        3006.12-0
+    sed:
+        4.9-2.8
+    shadow:
+        4.17.4-2.1
+    sudo:
+        1.9.16p2-1.1
+    suse-module-tools:
+        16.0.60-1.1
+    system-group-hardware:
+        20170617-27.1
+    system-group-kvm:
+        20170617-27.1
+    system-user-lp:
+        20170617-27.1
+    system-user-nobody:
+        20170617-27.1
+    system-user-root:
+        20190513-2.18
+    systemd:
+        257.6-1.1
+    systemd-default-settings:
+        0.10-1.3
+    systemd-default-settings-branding-openSUSE:
+        0.10-1.3
+    systemd-presets-branding-openSUSE:
+        12.2-25.1
+    systemd-presets-common-SUSE:
+        15-39.1
+    systemd-rpm-macros:
+        24-1.8
+    sysuser-shadow:
+        3.3-8.2
+    tar:
+        1.35-4.1
+    terminfo-base:
+        6.5.20250531-73.1
+    thin-provisioning-tools:
+        1.1.0-2.3
+    timezone:
+        2025b-1.1
+    udev:
+        257.6-1.1
+    util-linux:
+        2.41-1.1
+    which:
+        2.23-1.2
+    xz:
+        5.8.1-1.1
+    zypper:
+        1.14.90-1.1
+# salt-call --local pip.list
+local:
+    ----------
+    CherryPy:
+        18.6.1
+    Jinja2:
+        3.1.6
+    MarkupSafe:
+        2.1.2
+    PyYAML:
+        6.0.1
+    certifi:
+        2024.7.4
+    cffi:
+        1.14.6
+    charset-normalizer:
+        3.2.0
+    cheroot:
+        8.5.2
+    contextvars:
+        2.4
+    croniter:
+        2.0.5
+    cryptography:
+        42.0.5
+    distro:
+        1.5.0
+    idna:
+        3.7
+    immutables:
+        0.15
+    importlib-metadata:
+        6.0.0
+    jaraco.classes:
+        3.2.1
+    jaraco.collections:
+        3.4.0
+    jaraco.functools:
+        2.0
+    jaraco.text:
+        3.5.1
+    jmespath:
+        1.0.1
+    looseversion:
+        1.0.2
+    more-itertools:
+        5.0.0
+    msgpack:
+        1.0.2
+    packaging:
+        22.0
+    pip:
+        23.3.2
+    portend:
+        2.4
+    psutil:
+        5.8.0
+    pyOpenSSL:
+        24.0.0
+    pycparser:
+        2.21
+    pycryptodomex:
+        3.19.1
+    python-dateutil:
+        2.8.1
+    python-gnupg:
+        0.4.8
+    pytz:
+        2022.1
+    pyzmq:
+        23.2.0
+    relenv:
+        0.19.3
+    requests:
+        2.32.3
+    rpm-vercmp:
+        0.1.2
+    salt:
+        3006.12
+    setproctitle:
+        1.3.2
+    setuptools:
+        68.2.2
+    six:
+        1.16.0
+    tempora:
+        4.1.1
+    timelib:
+        0.2.5
+    urllib3:
+        1.26.20
+    wheel:
+        0.45.1
+    zc.lockfile:
+        1.4
+    zipp:
+        3.6.0
+# salt-call --local locale.list_avail
+local:
+    - C
+    - C.utf8
+    - POSIX
+    - aa_DJ
+    - aa_DJ.utf8
+    - aa_ER
+    - aa_ET
+    - af_ZA
+    - af_ZA.utf8
+    - agr_PE
+    - ak_GH
+    - am_ET
+    - an_ES
+    - an_ES.utf8
+    - anp_IN
+    - ar_AE
+    - ar_AE.utf8
+    - ar_BH
+    - ar_BH.utf8
+    - ar_DZ
+    - ar_DZ.utf8
+    - ar_EG
+    - ar_EG.utf8
+    - ar_IN
+    - ar_IQ
+    - ar_IQ.utf8
+    - ar_JO
+    - ar_JO.utf8
+    - ar_KW
+    - ar_KW.utf8
+    - ar_LB
+    - ar_LB.utf8
+    - ar_LY
+    - ar_LY.utf8
+    - ar_MA
+    - ar_MA.utf8
+    - ar_OM
+    - ar_OM.utf8
+    - ar_QA
+    - ar_QA.utf8
+    - ar_SA
+    - ar_SA.utf8
+    - ar_SD
+    - ar_SD.utf8
+    - ar_SS
+    - ar_SY
+    - ar_SY.utf8
+    - ar_TN
+    - ar_TN.utf8
+    - ar_YE
+    - ar_YE.utf8
+    - as_IN
+    - ast_ES
+    - ast_ES.utf8
+    - ayc_PE
+    - az_AZ
+    - az_IR
+    - be_BY
+    - be_BY.utf8
+    - be_BY@latin
+    - bem_ZM
+    - ber_DZ
+    - ber_MA
+    - bg_BG
+    - bg_BG.utf8
+    - bhb_IN.utf8
+    - bho_IN
+    - bho_NP
+    - bi_VU
+    - bn_BD
+    - bn_IN
+    - bo_CN
+    - bo_IN
+    - br_FR
+    - br_FR.utf8
+    - br_FR@euro
+    - brx_IN
+    - bs_BA
+    - bs_BA.utf8
+    - byn_ER
+    - ca_AD
+    - ca_AD.utf8
+    - ca_ES
+    - ca_ES.utf8
+    - ca_ES@euro
+    - ca_ES@valencia
+    - ca_FR
+    - ca_FR.utf8
+    - ca_IT
+    - ca_IT.utf8
+    - ce_RU
+    - chr_US
+    - ckb_IQ
+    - cmn_TW
+    - crh_RU
+    - crh_UA
+    - cs_CZ
+    - cs_CZ.utf8
+    - csb_PL
+    - cv_RU
+    - cy_GB
+    - cy_GB.utf8
+    - da_DK
+    - da_DK.utf8
+    - de_AT
+    - de_AT.utf8
+    - de_AT@euro
+    - de_BE
+    - de_BE.utf8
+    - de_BE@euro
+    - de_CH
+    - de_CH.utf8
+    - de_DE
+    - de_DE.utf8
+    - de_DE@euro
+    - de_IT
+    - de_IT.utf8
+    - de_LI.utf8
+    - de_LU
+    - de_LU.utf8
+    - de_LU@euro
+    - doi_IN
+    - dsb_DE
+    - dv_MV
+    - dz_BT
+    - el_CY
+    - el_CY.utf8
+    - el_GR
+    - el_GR.utf8
+    - el_GR@euro
+    - en_AG
+    - en_AU
+    - en_AU.utf8
+    - en_BW
+    - en_BW.utf8
+    - en_CA
+    - en_CA.utf8
+    - en_DK
+    - en_DK.utf8
+    - en_GB
+    - en_GB.iso885915
+    - en_GB.utf8
+    - en_HK
+    - en_HK.utf8
+    - en_IE
+    - en_IE.utf8
+    - en_IE@euro
+    - en_IL
+    - en_IN
+    - en_NG
+    - en_NZ
+    - en_NZ.utf8
+    - en_PH
+    - en_PH.utf8
+    - en_SC.utf8
+    - en_SG
+    - en_SG.utf8
+    - en_US
+    - en_US.iso885915
+    - en_US.utf8
+    - en_ZA
+    - en_ZA.utf8
+    - en_ZM
+    - en_ZW
+    - en_ZW.utf8
+    - eo
+    - es_AR
+    - es_AR.utf8
+    - es_BO
+    - es_BO.utf8
+    - es_CL
+    - es_CL.utf8
+    - es_CO
+    - es_CO.utf8
+    - es_CR
+    - es_CR.utf8
+    - es_CU
+    - es_DO
+    - es_DO.utf8
+    - es_EC
+    - es_EC.utf8
+    - es_ES
+    - es_ES.utf8
+    - es_ES@euro
+    - es_GT
+    - es_GT.utf8
+    - es_HN
+    - es_HN.utf8
+    - es_MX
+    - es_MX.utf8
+    - es_NI
+    - es_NI.utf8
+    - es_PA
+    - es_PA.utf8
+    - es_PE
+    - es_PE.utf8
+    - es_PR
+    - es_PR.utf8
+    - es_PY
+    - es_PY.utf8
+    - es_SV
+    - es_SV.utf8
+    - es_US
+    - es_US.utf8
+    - es_UY
+    - es_UY.utf8
+    - es_VE
+    - es_VE.utf8
+    - et_EE
+    - et_EE.iso885915
+    - et_EE.utf8
+    - eu_ES
+    - eu_ES.utf8
+    - eu_ES@euro
+    - fa_IR
+    - ff_SN
+    - fi_FI
+    - fi_FI.utf8
+    - fi_FI@euro
+    - fil_PH
+    - fo_FO
+    - fo_FO.utf8
+    - fr_BE
+    - fr_BE.utf8
+    - fr_BE@euro
+    - fr_CA
+    - fr_CA.utf8
+    - fr_CH
+    - fr_CH.utf8
+    - fr_FR
+    - fr_FR.utf8
+    - fr_FR@euro
+    - fr_LU
+    - fr_LU.utf8
+    - fr_LU@euro
+    - fur_IT
+    - fy_DE
+    - fy_NL
+    - ga_IE
+    - ga_IE.utf8
+    - ga_IE@euro
+    - gbm_IN
+    - gd_GB
+    - gd_GB.utf8
+    - gez_ER
+    - gez_ER@abegede
+    - gez_ET
+    - gez_ET@abegede
+    - gl_ES
+    - gl_ES.utf8
+    - gl_ES@euro
+    - gu_IN
+    - gv_GB
+    - gv_GB.utf8
+    - ha_NG
+    - hak_TW
+    - he_IL
+    - he_IL.utf8
+    - hi_IN
+    - hif_FJ
+    - hne_IN
+    - hr_HR
+    - hr_HR.utf8
+    - hsb_DE
+    - hsb_DE.utf8
+    - ht_HT
+    - hu_HU
+    - hu_HU.utf8
+    - hy_AM
+    - hy_AM.armscii8
+    - ia_FR
+    - id_ID
+    - id_ID.utf8
+    - ig_NG
+    - ik_CA
+    - is_IS
+    - is_IS.utf8
+    - it_CH
+    - it_CH.utf8
+    - it_IT
+    - it_IT.utf8
+    - it_IT@euro
+    - iu_CA
+    - ja_JP.eucjp
+    - ja_JP.shiftjisx0213
+    - ja_JP.sjis
+    - ja_JP.utf8
+    - ka_GE
+    - ka_GE.utf8
+    - kab_DZ
+    - kk_KZ
+    - kk_KZ.utf8
+    - kl_GL
+    - kl_GL.utf8
+    - km_KH
+    - kn_IN
+    - ko_KR.euckr
+    - ko_KR.utf8
+    - kok_IN
+    - ks_IN
+    - ks_IN@devanagari
+    - ku_TR
+    - ku_TR.utf8
+    - kv_RU
+    - kw_GB
+    - kw_GB.utf8
+    - ky_KG
+    - lb_LU
+    - lg_UG
+    - lg_UG.utf8
+    - li_BE
+    - li_NL
+    - lij_IT
+    - ln_CD
+    - lo_LA
+    - lt_LT
+    - lt_LT.utf8
+    - ltg_LV.utf8
+    - lv_LV
+    - lv_LV.utf8
+    - lzh_TW
+    - mag_IN
+    - mai_IN
+    - mai_NP
+    - mdf_RU
+    - mfe_MU
+    - mg_MG
+    - mg_MG.utf8
+    - mhr_RU
+    - mi_NZ
+    - mi_NZ.utf8
+    - miq_NI
+    - mjw_IN
+    - mk_MK
+    - mk_MK.utf8
+    - ml_IN
+    - mn_MN
+    - mni_IN
+    - mnw_MM
+    - mr_IN
+    - ms_MY
+    - ms_MY.utf8
+    - mt_MT
+    - mt_MT.utf8
+    - my_MM
+    - nan_TW
+    - nan_TW@latin
+    - nb_NO
+    - nb_NO.utf8
+    - nds_DE
+    - nds_NL
+    - ne_NP
+    - nhn_MX
+    - niu_NU
+    - niu_NZ
+    - nl_AW
+    - nl_BE
+    - nl_BE.utf8
+    - nl_BE@euro
+    - nl_NL
+    - nl_NL.utf8
+    - nl_NL@euro
+    - nn_NO
+    - nn_NO.utf8
+    - no_NO
+    - no_NO.utf8
+    - nr_ZA
+    - nso_ZA
+    - oc_FR
+    - oc_FR.utf8
+    - om_ET
+    - om_KE
+    - om_KE.utf8
+    - or_IN
+    - os_RU
+    - pa_IN
+    - pa_PK
+    - pap_AW
+    - pap_CW
+    - pl_PL
+    - pl_PL.utf8
+    - ps_AF
+    - pt_BR
+    - pt_BR.utf8
+    - pt_PT
+    - pt_PT.utf8
+    - pt_PT@euro
+    - quz_PE
+    - raj_IN
+    - rif_MA
+    - ro_RO
+    - ro_RO.utf8
+    - ru_RU
+    - ru_RU.koi8r
+    - ru_RU.utf8
+    - ru_UA
+    - ru_UA.utf8
+    - rw_RW
+    - sa_IN
+    - sah_RU
+    - sat_IN
+    - sc_IT
+    - scn_IT
+    - sd_IN
+    - sd_IN@devanagari
+    - se_NO
+    - sgs_LT
+    - shn_MM
+    - shs_CA
+    - si_LK
+    - sid_ET
+    - sk_SK
+    - sk_SK.utf8
+    - sl_SI
+    - sl_SI.utf8
+    - sm_WS
+    - so_DJ
+    - so_DJ.utf8
+    - so_ET
+    - so_KE
+    - so_KE.utf8
+    - so_SO
+    - so_SO.utf8
+    - sq_AL
+    - sq_AL.utf8
+    - sq_MK
+    - sr_ME
+    - sr_RS
+    - sr_RS@latin
+    - ss_ZA
+    - ssy_ER
+    - st_ZA
+    - st_ZA.utf8
+    - su_ID
+    - sv_FI
+    - sv_FI.utf8
+    - sv_FI@euro
+    - sv_SE
+    - sv_SE.utf8
+    - sw_KE
+    - sw_TZ
+    - syr
+    - szl_PL
+    - ta_IN
+    - ta_LK
+    - tcy_IN.utf8
+    - te_IN
+    - tg_TJ
+    - tg_TJ.utf8
+    - th_TH
+    - th_TH.utf8
+    - the_NP
+    - ti_ER
+    - ti_ET
+    - tig_ER
+    - tk_TM
+    - tl_PH
+    - tl_PH.utf8
+    - tn_ZA
+    - to_TO
+    - tok
+    - tpi_PG
+    - tr_CY
+    - tr_CY.utf8
+    - tr_TR
+    - tr_TR.utf8
+    - ts_ZA
+    - tt_RU
+    - tt_RU@iqtelif
+    - ug_CN
+    - uk_UA
+    - uk_UA.utf8
+    - unm_US
+    - ur_IN
+    - ur_PK
+    - uz_UZ
+    - uz_UZ.utf8
+    - uz_UZ@cyrillic
+    - ve_ZA
+    - vi_VN
+    - wa_BE
+    - wa_BE.utf8
+    - wa_BE@euro
+    - wae_CH
+    - wal_ET
+    - wo_SN
+    - xh_ZA
+    - xh_ZA.utf8
+    - yi_US
+    - yi_US.utf8
+    - yo_NG
+    - yue_HK
+    - yuw_PG
+    - zgh_MA
+    - zh_CN
+    - zh_CN.gb18030
+    - zh_CN.gbk
+    - zh_CN.utf8
+    - zh_HK
+    - zh_HK.utf8
+    - zh_SG
+    - zh_SG.gbk
+    - zh_SG.utf8
+    - zh_TW
+    - zh_TW.euctw
+    - zh_TW.utf8
+    - zu_ZA
+    - zu_ZA.utf8

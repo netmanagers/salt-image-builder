@@ -2,7 +2,7 @@ alma-08.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-                  Salt: 3007.3+386.g31cfa53b5
+                  Salt: 3007.3+387.g6fec97a1d
  
 Python Version:
                 Python: 3.11.11 (main, Dec 12 2024, 09:11:52) [GCC 8.5.0 20210514 (Red Hat 8.5.0-22)]
@@ -119,7 +119,7 @@ local:
     saltpath:
         /usr/lib/python3.11/site-packages/salt
     saltversion:
-        3007.3+386.g31cfa53b5
+        3007.3+387.g6fec97a1d
     saltversioninfo:
         - 3007
         - 3
@@ -226,17 +226,17 @@ local:
     glib2:
         2.56.4-165.el8_10
     glibc:
-        2.28-251.el8_10.16
+        2.28-251.el8_10.22
     glibc-common:
-        2.28-251.el8_10.16
+        2.28-251.el8_10.22
     glibc-devel:
-        2.28-251.el8_10.16
+        2.28-251.el8_10.22
     glibc-headers:
-        2.28-251.el8_10.16
+        2.28-251.el8_10.22
     glibc-langpack-en:
-        2.28-251.el8_10.16
+        2.28-251.el8_10.22
     glibc-minimal-langpack:
-        2.28-251.el8_10.16
+        2.28-251.el8_10.22
     gmp:
         1:6.1.2-11.el8
     gnupg2:
@@ -272,7 +272,7 @@ local:
     kbd-misc:
         2.0.4-11.el8
     kernel-headers:
-        4.18.0-553.54.1.el8_10
+        4.18.0-553.56.1.el8_10
     keyutils-libs:
         1.5.10-9.el8
     keyutils-libs-devel:
@@ -396,7 +396,7 @@ local:
     libxcrypt-devel:
         4.1.1-6.el8
     libxml2:
-        2.9.7-19.el8_10
+        2.9.7-20.el8_10
     libyaml:
         0.1.7-5.el8
     libzstd:
@@ -646,7 +646,7 @@ local:
     systemd-udev:
         239-82.el8_10.5
     tar:
-        2:1.30-9.el8
+        2:1.30-10.el8_10
     tpm2-tss:
         2.3.2-6.el8
     tzdata:
@@ -953,7 +953,7 @@ local:
     s3transfer:
         0.6.1
     salt:
-        3007.3+386.g31cfa53b5
+        3007.3+387.g6fec97a1d
     scp:
         0.14.5
     semantic-version:
