@@ -2,7 +2,7 @@ alma-08.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-                  Salt: 3007.3+387.g6fec97a1d
+                  Salt: 3007.4+517.g3b846729f
  
 Python Version:
                 Python: 3.11.11 (main, Dec 12 2024, 09:11:52) [GCC 8.5.0 20210514 (Red Hat 8.5.0-22)]
@@ -119,10 +119,10 @@ local:
     saltpath:
         /usr/lib/python3.11/site-packages/salt
     saltversion:
-        3007.3+387.g6fec97a1d
+        3007.4+517.g3b846729f
     saltversioninfo:
         - 3007
-        - 3
+        - 4
     systemd:
         ----------
         features:
@@ -272,7 +272,7 @@ local:
     kbd-misc:
         2.0.4-11.el8
     kernel-headers:
-        4.18.0-553.56.1.el8_10
+        4.18.0-553.58.1.el8_10
     keyutils-libs:
         1.5.10-9.el8
     keyutils-libs-devel:
@@ -801,7 +801,7 @@ local:
     jaraco.context:
         4.3.0
     jaraco.functools:
-        4.1.0
+        4.2.1
     jaraco.text:
         4.0.0
     jmespath:
@@ -953,7 +953,7 @@ local:
     s3transfer:
         0.6.1
     salt:
-        3007.3+387.g6fec97a1d
+        3007.4+517.g3b846729f
     scp:
         0.14.5
     semantic-version:
