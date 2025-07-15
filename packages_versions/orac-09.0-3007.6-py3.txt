@@ -1,56 +1,52 @@
-orac-09.0-master-py3
-Salt install method: git
+orac-09.0-3007.6-py3
+Salt install method: onedir
 # salt-call --versions-report
 Salt Version:
-                  Salt: 3007.5+546.g5c86f6d0d
+          Salt: 3007.6
  
 Python Version:
-                Python: 3.11.11 (main, Jun 20 2025, 00:00:00) [GCC 11.5.0 20240719 (Red Hat 11.5.0-5.0.1)]
+        Python: 3.10.17 (main, Jul  2 2025, 22:34:57) [GCC 11.2.0]
  
 Dependency Versions:
-                  cffi: 1.16.0
-              cherrypy: 18.8.0
-          cryptography: 42.0.5
-              dateutil: 2.8.2
-             docker-py: 7.1.0
-                 gitdb: 4.0.10
-             gitpython: 3.1.43
-                Jinja2: 3.1.6
-               libgit2: 1.7.1
-          looseversion: 1.3.0
-              M2Crypto: Not Installed
-                  Mako: 1.2.4
-               msgpack: 1.0.7
-          msgpack-pure: Not Installed
-          mysql-python: Not Installed
-              networkx: 3.1
-             packaging: 23.1
-             pycparser: 2.21
-              pycrypto: Not Installed
-          pycryptodome: 3.19.1
-                pygit2: 1.13.1
-          python-gnupg: 0.5.2
-                PyYAML: 6.0.1
-                 PyZMQ: 25.1.2
-                relenv: Not Installed
-                 smmap: 5.0.1
-               timelib: 0.3.0
-               Tornado: 6.4.2
-                   ZMQ: 4.3.4
- 
-Salt Extensions:
- pytest-salt-factories: 1.0.1
+          cffi: 1.16.0
+      cherrypy: 18.8.0
+  cryptography: 42.0.5
+      dateutil: 2.8.2
+     docker-py: Not Installed
+         gitdb: Not Installed
+     gitpython: Not Installed
+        Jinja2: 3.1.6
+       libgit2: Not Installed
+  looseversion: 1.3.0
+      M2Crypto: Not Installed
+          Mako: Not Installed
+       msgpack: 1.0.7
+  msgpack-pure: Not Installed
+  mysql-python: Not Installed
+     packaging: 24.0
+     pycparser: 2.21
+      pycrypto: Not Installed
+  pycryptodome: 3.19.1
+        pygit2: Not Installed
+  python-gnupg: 0.5.2
+        PyYAML: 6.0.1
+         PyZMQ: 25.1.2
+        relenv: 0.19.4
+         smmap: Not Installed
+       timelib: 0.3.0
+       Tornado: 6.4.2
+           ZMQ: 4.3.4
  
 Salt Package Information:
-          Package Type: Not Installed
+  Package Type: onedir
  
 System Versions:
-                  dist: oracle 9.6 
-                locale: utf-8
-               machine: x86_64
-               release: 5.15.154+
-                system: Linux
-               version: Oracle Linux Server 9.6 
+          dist: oracle 9.6 
+        locale: utf-8
+       machine: x86_64
+       release: 5.15.154+
+        system: Linux
+       version: Oracle Linux Server 9.6 
  
 # salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
 local:
@@ -102,27 +98,27 @@ local:
         - 6
     osversion:
     pythonexecutable:
-        /usr/bin/python3.11
+        /opt/saltstack/salt/bin/python3.10
     pythonpath:
-        - /usr/bin
-        - /usr/lib64/python311.zip
-        - /usr/lib64/python3.11
-        - /usr/lib64/python3.11/lib-dynload
-        - /usr/lib64/python3.11/site-packages
-        - /usr/lib/python3.11/site-packages
+        - /opt/saltstack/salt
+        - /opt/saltstack/salt/extras-3.10
+        - /opt/saltstack/salt/lib/python310.zip
+        - /opt/saltstack/salt/lib/python3.10
+        - /opt/saltstack/salt/lib/python3.10/lib-dynload
+        - /opt/saltstack/salt/lib/python3.10/site-packages
     pythonversion:
         - 3
-        - 11
-        - 11
+        - 10
+        - 17
         - final
         - 0
     saltpath:
-        /usr/lib/python3.11/site-packages/salt
+        /opt/saltstack/salt/lib/python3.10/site-packages/salt
     saltversion:
-        3007.5+546.g5c86f6d0d
+        3007.6
     saltversioninfo:
         - 3007
-        - 5
+        - 6
     systemd:
         ----------
         features:
@@ -150,10 +146,6 @@ local:
         11-13.el9
     bash:
         5.1.8-9.el9
-    binutils:
-        2.35.2-63.0.1.el9
-    binutils-gold:
-        2.35.2-63.0.1.el9
     bzip2-libs:
         1.0.8-10.el9_5
     ca-certificates:
@@ -164,8 +156,6 @@ local:
         8.32-39.0.1.el9
     coreutils-common:
         8.32-39.0.1.el9
-    cpp:
-        11.5.0-5.0.1.el9_5
     cracklib:
         2.9.6-27.el9
     cracklib-dicts:
@@ -198,14 +188,14 @@ local:
         12:4.4.2-19.b1.el9
     diffutils:
         3.7-12.el9
+    dmidecode:
+        1:3.6-1.el9
     dnf:
         4.14.0-25.0.1.el9
     dnf-data:
         4.14.0-25.0.1.el9
     dnf-plugins-core:
         4.3.0-20.0.1.el9
-    elfutils-debuginfod-client:
-        0.192-6.el9_6
     elfutils-default-yama-scope:
         0.192-6.el9_6
     elfutils-libelf:
@@ -224,8 +214,6 @@ local:
         1:4.8.0-7.el9
     gawk:
         5.1.0-6.el9
-    gcc:
-        11.5.0-5.0.1.el9_5
     gdbm-libs:
         1:1.23-1.el9
     git:
@@ -240,10 +228,6 @@ local:
         2.34-168.0.1.el9_6.20
     glibc-common:
         2.34-168.0.1.el9_6.20
-    glibc-devel:
-        2.34-168.0.1.el9_6.20
-    glibc-headers:
-        2.34-168.0.1.el9_6.20
     glibc-langpack-en:
         2.34-168.0.1.el9_6.20
     gmp:
@@ -253,7 +237,7 @@ local:
     gnutls:
         3.8.3-6.el9
     gpg-pubkey.(none):
-        8b4efbe6-629ec292,8d8b756f-629e59ec
+        73d76b3f-63dace60,8b4efbe6-629ec292,8d8b756f-629e59ec
     gpgme:
         1.15.1-6.el9
     grep:
@@ -262,6 +246,8 @@ local:
         1.22.4-10.el9
     gzip:
         1.12-1.el9
+    hwdata:
+        0.348-9.18.el9
     ima-evm-utils:
         1.5-3.el9
     initscripts:
@@ -284,8 +270,6 @@ local:
         2.4.0-11.el9
     kbd-misc:
         2.4.0-11.el9
-    kernel-headers:
-        5.14.0-570.25.1.0.1.el9_6
     keyutils:
         1.6.3-1.el9
     keyutils-libs:
@@ -362,12 +346,8 @@ local:
         2.13.0-2.el9
     libmount:
         2.37.4-21.0.1.el9
-    libmpc:
-        1.2.1-4.el9
     libnghttp2:
         1.43.0-6.el9
-    libnsl2:
-        2.0.0-1.el9
     libpkgconf:
         1.7.3-10.el9
     libpsl:
@@ -402,8 +382,6 @@ local:
         11.5.0-5.0.1.el9_5
     libtasn1:
         4.16.0-9.el9
-    libtirpc:
-        1.3.3-9.el9
     libtool-ltdl:
         2.4.6-46.el9
     libunistring:
@@ -420,8 +398,6 @@ local:
         4.4.18-3.el9
     libxcrypt-compat:
         4.4.18-3.el9
-    libxcrypt-devel:
-        4.4.18-3.el9
     libxml2:
         2.9.13-10.el9_6
     libyaml:
@@ -432,10 +408,6 @@ local:
         5.4.4-4.el9
     lz4-libs:
         1.9.3-5.el9
-    make:
-        1:4.3-8.el9
-    mpdecimal:
-        2.5.1-3.el9
     mpfr:
         4.1.0-7.el9
     ncurses:
@@ -480,6 +452,10 @@ local:
         1.5.1-25.0.1.el9_6
     passwd:
         0.80-12.el9
+    pciutils:
+        3.7.0-7.el9
+    pciutils-libs:
+        3.7.0-7.el9
     pcre:
         8.44-4.el9
     pcre2:
@@ -664,20 +640,6 @@ local:
         1.15.0-9.0.1.el9
     python3-systemd:
         234-19.el9
-    python3.11:
-        3.11.11-2.el9_6.1
-    python3.11-devel:
-        3.11.11-2.el9_6.1
-    python3.11-libs:
-        3.11.11-2.el9_6.1
-    python3.11-pip:
-        22.3.1-5.el9
-    python3.11-pip-wheel:
-        22.3.1-5.el9
-    python3.11-setuptools:
-        65.5.1-3.el9
-    python3.11-setuptools-wheel:
-        65.5.1-3.el9
     readline:
         8.1-4.el9
     redhat-release:
@@ -694,6 +656,10 @@ local:
         4.16.1.3-37.el9
     rsyslog:
         8.2412.0-1.0.1.el9
+    salt:
+        3007.6-0
+    salt-minion:
+        3007.6-0
     sed:
         4.8-9.el9
     setup:
@@ -739,363 +705,115 @@ local:
 # salt-call --local pip.list
 local:
     ----------
+    CherryPy:
+        18.8.0
+    Jinja2:
+        3.1.6
+    MarkupSafe:
+        2.1.3
+    PyYAML:
+        6.0.1
     aiohttp:
         3.9.5
-    aiohttp-retry:
-        2.8.3
     aiosignal:
         1.3.1
-    ansible:
-        9.1.0
-    ansible-core:
-        2.16.3
-    anyio:
-        4.1.0
-    apache-libcloud:
-        3.7.0
-    asn1crypto:
-        1.5.1
+    async-timeout:
+        4.0.3
     attrs:
         23.2.0
     autocommand:
         2.2.2
-    backports-tarfile:
-        1.2.0
-    bcrypt:
-        4.0.1
-    boto:
-        2.49.0
-    boto3:
-        1.26.152
-    botocore:
-        1.29.152
-    cachetools:
-        5.3.1
-    cassandra-driver:
-        3.28.0
     certifi:
         2024.7.4
-    certvalidator:
-        0.11.1
     cffi:
         1.16.0
     charset-normalizer:
         3.2.0
-    cheetah3:
-        3.2.6.post2
     cheroot:
         10.0.0
-    cherrypy:
-        18.8.0
-    click:
-        8.1.3
-    clustershell:
-        1.9.1
     contextvars:
         2.4
     croniter:
         2.0.5
     cryptography:
         42.0.5
-    distlib:
-        0.3.8
     distro:
         1.8.0
-    dnspython:
-        2.6.1
-    docker:
-        7.1.0
-    etcd3-py:
-        0.1.6
-    filelock:
-        3.13.1
-    flaky:
-        3.8.1
     frozenlist:
         1.4.1
-    future:
-        1.0.0
-    genshi:
-        0.7.7
-    geomet:
-        0.2.1.post1
-    gitdb:
-        4.0.10
-    gitpython:
-        3.1.43
-    google-auth:
-        2.27.0
-    h11:
-        0.14.0
-    hglib:
-        2.6.2
-    httpcore:
-        0.17.3
-    httpx:
-        0.24.1
     idna:
         3.7
     immutables:
         0.15
-    importlib-metadata:
+    importlib_metadata:
         6.6.0
-    inflect:
-        7.3.1
-    iniconfig:
-        2.0.0
-    ipaddress:
-        1.0.23
-    jaraco-classes:
-        3.4.0
-    jaraco-collections:
+    jaraco.collections:
         4.1.0
-    jaraco-context:
+    jaraco.context:
         4.3.0
-    jaraco-functools:
-        4.2.1
-    jaraco-text:
+    jaraco.functools:
+        4.1.0
+    jaraco.text:
         4.0.0
-    jinja2:
-        3.1.6
     jmespath:
         1.0.1
-    jsonschema:
-        3.2.0
-    junit-xml:
-        1.9
-    junos-eznc:
-        2.6.7
-    jxmlease:
-        1.0.3
-    kazoo:
-        2.9.0
-    keyring:
-        5.7.1
-    kubernetes:
-        3.0.0
-    libnacl:
-        1.8.0
     looseversion:
         1.3.0
-    lxml:
-        4.9.2
-    mako:
-        1.2.4
-    markupsafe:
-        2.1.3
-    mercurial:
-        6.0.1
-    mock:
-        5.1.0
     more-itertools:
-        10.7.0
-    moto:
-        4.1.11
+        9.1.0
     msgpack:
         1.0.7
     multidict:
         6.0.4
-    napalm:
-        4.1.0
-    ncclient:
-        0.6.13
-    netaddr:
-        0.8.0
-    netmiko:
-        4.2.0
-    netutils:
-        1.6.0
-    networkx:
-        3.1
-    ntc-templates:
-        4.0.1
-    oscrypto:
-        1.3.0
     packaging:
-        23.1
-    paramiko:
-        3.4.0
-    passlib:
-        1.7.4
-    pathspec:
-        0.11.1
+        24.0
     pip:
-        22.3.1
-    platformdirs:
-        4.0.0
-    pluggy:
-        1.4.0
+        23.3.2
     portend:
         3.1.0
     psutil:
         5.9.6
-    pyasn1:
-        0.5.1
-    pyasn1-modules:
-        0.3.0
+    pyOpenSSL:
+        24.0.0
     pycparser:
         2.21
     pycryptodomex:
         3.19.1
-    pyeapi:
-        1.0.0
-    pyfakefs:
-        5.3.1
-    pygit2:
-        1.13.1
-    pyiface:
-        0.0.11
-    pyinotify:
-        0.9.6
-    pyjwt:
-        2.4.0
-    pymysql:
-        1.1.1
-    pynacl:
-        1.5.0
-    pyopenssl:
-        24.0.0
-    pyparsing:
-        3.0.9
-    pyrsistent:
-        0.19.3
-    pyserial:
-        3.5
-    pytest:
-        8.1.1
-    pytest-custom-exit-code:
-        0.3.0
-    pytest-helpers-namespace:
-        2021.12.29
-    pytest-httpserver:
-        1.0.8
-    pytest-salt-factories:
-        1.0.1
-    pytest-shell-utilities:
-        1.9.7
-    pytest-skip-markers:
-        1.5.2
-    pytest-subtests:
-        0.4.0
-    pytest-system-statistics:
-        1.0.2
-    pytest-timeout:
-        2.3.1
-    python-consul:
-        1.1.0
     python-dateutil:
         2.8.2
-    python-etcd:
-        0.4.5
     python-gnupg:
         0.5.2
-    python-telegram-bot:
-        20.3
     pytz:
         2024.1
-    pyvmomi:
-        8.0.1.0.1
-    pyyaml:
-        6.0.1
     pyzmq:
         25.1.2
-    redis:
-        3.5.3
-    redis-py-cluster:
-        2.1.3
+    relenv:
+        0.19.4
     requests:
         2.32.3
-    resolvelib:
-        1.0.1
-    responses:
-        0.23.1
-    rfc3987:
-        1.3.8
-    rpm-vercmp:
+    rpm_vercmp:
         0.1.2
-    rsa:
-        4.9
-    s3transfer:
-        0.6.1
     salt:
-        3007.5+546.g5c86f6d0d
-    scp:
-        0.14.5
-    semantic-version:
-        2.10.0
+        3007.6
     setproctitle:
         1.3.2
     setuptools:
-        65.5.1
+        79.0.1
     six:
         1.16.0
-    slack-bolt:
-        1.18.0
-    slack-sdk:
-        3.21.3
-    smmap:
-        5.0.1
-    sniffio:
-        1.3.0
-    sqlparse:
-        0.5.0
-    strict-rfc3339:
-        0.7
     tempora:
         5.3.0
-    textfsm:
-        1.1.3
     timelib:
         0.3.0
-    toml:
-        0.10.2
-    tomli:
-        2.0.1
     tornado:
         6.4.2
-    transitions:
-        0.9.0
-    trustme:
-        1.1.0
-    ttp:
-        0.9.5
-    ttp-templates:
-        0.3.5
-    twilio:
-        8.2.2
-    typeguard:
-        4.3.0
-    types-pyyaml:
-        6.0.12.12
-    typing-extensions:
-        4.8.0
     urllib3:
-        1.26.20
-    vcert:
-        0.7.4
-    virtualenv:
-        20.24.7
-    watchdog:
-        3.0.0
-    websocket-client:
-        0.40.0
-    wempy:
-        0.2.1
-    werkzeug:
-        3.0.3
+        2.5.0
     wheel:
         0.45.1
-    xmldiff:
-        2.6.3
-    xmltodict:
-        0.13.0
-    yamllint:
-        1.32.0
-    yamlordereddictloader:
-        0.4.0
     yarl:
         1.9.4
-    zc-lockfile:
+    zc.lockfile:
         3.0.post1
     zipp:
         3.16.2
