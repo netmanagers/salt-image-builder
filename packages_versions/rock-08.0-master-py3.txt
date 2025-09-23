@@ -276,7 +276,7 @@ local:
     kbd-misc:
         2.0.4-11.el8
     kernel-headers:
-        4.18.0-553.69.1.el8_10
+        4.18.0-553.74.1.el8_10
     keyutils-libs:
         1.5.10-9.el8
     keyutils-libs-devel:
