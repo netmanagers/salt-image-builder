@@ -16,7 +16,7 @@
     entrypoint: ['/bin/ash', '-c']
   image_commitlint: &image_commitlint 'myii/ssf-commitlint:11'
   # yamllint disable-line rule:line-length
-  image_dindpy3virtualenv: &image_dindpy3virtualenv 'myii/ssf-dind-py3-virtualenv:20.0.21-r0'
+  image_dindpy3virtualenv: &image_dindpy3virtualenv 'techneg/ci-docker-python-ruby'
   image_hadolint: &image_hadolint 'hadolint/hadolint:v2.0.0-alpine'
   image_semantic-release: &image_semanticrelease 'myii/ssf-semantic-release-gitlab:17.3'
   image_yamllint: &image_yamllint
