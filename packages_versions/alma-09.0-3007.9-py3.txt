@@ -1,56 +1,52 @@
-cstr-09.0-master-py3
-Salt install method: git
+alma-09.0-3007.9-py3
+Salt install method: onedir
 # salt-call --versions-report
 Salt Version:
-                  Salt: 3007.8+679.g904d08b6a
+          Salt: 3007.9
  
 Python Version:
-                Python: 3.11.13 (main, Aug 21 2025, 00:00:00) [GCC 11.5.0 20240719 (Red Hat 11.5.0-11)]
+        Python: 3.10.19 (main, Oct 30 2025, 04:53:28) [GCC 11.2.0]
  
 Dependency Versions:
-                  cffi: 1.16.0
-              cherrypy: 18.8.0
-          cryptography: 42.0.5
-              dateutil: 2.8.2
-             docker-py: 7.1.0
-                 gitdb: 4.0.10
-             gitpython: 3.1.43
-                Jinja2: 3.1.6
-               libgit2: 1.7.1
-          looseversion: 1.3.0
-              M2Crypto: Not Installed
-                  Mako: 1.2.4
-               msgpack: 1.0.7
-          msgpack-pure: Not Installed
-          mysql-python: Not Installed
-              networkx: 3.1
-             packaging: 24.0
-             pycparser: 2.21
-              pycrypto: Not Installed
-          pycryptodome: 3.19.1
-                pygit2: 1.13.1
-          python-gnupg: 0.5.2
-                PyYAML: 6.0.1
-                 PyZMQ: 25.1.2
-                relenv: Not Installed
-                 smmap: 5.0.1
-               timelib: 0.3.0
-               Tornado: 6.5.2
-                   ZMQ: 4.3.4
- 
-Salt Extensions:
- pytest-salt-factories: 1.0.1
+          cffi: 2.0.0
+      cherrypy: 18.8.0
+  cryptography: 42.0.5
+      dateutil: 2.8.2
+     docker-py: Not Installed
+         gitdb: Not Installed
+     gitpython: Not Installed
+        Jinja2: 3.1.6
+       libgit2: Not Installed
+  looseversion: 1.3.0
+      M2Crypto: Not Installed
+          Mako: Not Installed
+       msgpack: 1.0.7
+  msgpack-pure: Not Installed
+  mysql-python: Not Installed
+     packaging: 24.0
+     pycparser: 2.21
+      pycrypto: Not Installed
+  pycryptodome: 3.19.1
+        pygit2: Not Installed
+  python-gnupg: 0.5.2
+        PyYAML: 6.0.1
+         PyZMQ: 25.1.2
+        relenv: 0.21.2
+         smmap: Not Installed
+       timelib: 0.3.0
+       Tornado: 6.5.2
+           ZMQ: 4.3.4
  
 Salt Package Information:
-          Package Type: Not Installed
+  Package Type: onedir
  
 System Versions:
-                  dist: centos 9 
-                locale: utf-8
-               machine: x86_64
-               release: 5.15.154+
-                system: Linux
-               version: CentOS Stream 9 
+          dist: almalinux 9.7 Moss Jungle Cat
+        locale: utf-8
+       machine: x86_64
+       release: 5.15.154+
+        system: Linux
+       version: AlmaLinux 9.7 Moss Jungle Cat
  
 # salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
 local:
@@ -74,54 +70,55 @@ local:
         timezone:
             UTC
     lsb_distrib_codename:
-        CentOS Stream 9
+        Moss Jungle Cat
     lsb_distrib_id:
-        CentOS Stream
+        AlmaLinux
     lsb_distrib_release:
-        9
+        9.7
     os:
-        CentOS Stream
+        AlmaLinux
     os_family:
         RedHat
     osarch:
         x86_64
     osbuild:
     oscodename:
-        CentOS Stream 9
+        Moss Jungle Cat
     osfinger:
-        CentOS Stream-9
+        AlmaLinux-9
     osfullname:
-        CentOS Stream
+        AlmaLinux
     osmajorrelease:
         9
     osmanufacturer:
     osrelease:
-        9
+        9.7
     osrelease_info:
         - 9
+        - 7
     osversion:
     pythonexecutable:
-        /usr/bin/python3.11
+        /opt/saltstack/salt/bin/python3.10
     pythonpath:
-        - /usr/bin
-        - /usr/lib64/python311.zip
-        - /usr/lib64/python3.11
-        - /usr/lib64/python3.11/lib-dynload
-        - /usr/lib64/python3.11/site-packages
-        - /usr/lib/python3.11/site-packages
+        - /opt/saltstack/salt
+        - /opt/saltstack/salt/extras-3.10
+        - /opt/saltstack/salt/lib/python310.zip
+        - /opt/saltstack/salt/lib/python3.10
+        - /opt/saltstack/salt/lib/python3.10/lib-dynload
+        - /opt/saltstack/salt/lib/python3.10/site-packages
     pythonversion:
         - 3
-        - 11
-        - 13
+        - 10
+        - 19
         - final
         - 0
     saltpath:
-        /usr/lib/python3.11/site-packages/salt
+        /opt/saltstack/salt/lib/python3.10/site-packages/salt
     saltversion:
-        3007.8+679.g904d08b6a
+        3007.9
     saltversioninfo:
         - 3007
-        - 8
+        - 9
     systemd:
         ----------
         features:
@@ -139,6 +136,12 @@ local:
     ----------
     acl:
         2.3.1-4.el9
+    almalinux-gpg-keys:
+        9.7-1.el9
+    almalinux-release:
+        9.7-1.el9
+    almalinux-repos:
+        9.7-1.el9
     alternatives:
         1.24-2.el9
     attr:
@@ -150,39 +153,31 @@ local:
     bash:
         5.1.8-9.el9
     binutils:
-        2.35.2-68.el9
+        2.35.2-67.el9
     binutils-gold:
-        2.35.2-68.el9
+        2.35.2-67.el9
     bzip2-libs:
-        1.0.8-10.el9
+        1.0.8-10.el9_5
     ca-certificates:
         2025.2.80_v9.0.305-91.el9
-    centos-gpg-keys:
-        9.0-30.el9
-    centos-stream-release:
-        9.0-30.el9
-    centos-stream-repos:
-        9.0-30.el9
     chkconfig:
         1.24-2.el9
     coreutils-single:
         8.32-39.el9
-    cpp:
-        11.5.0-14.el9
     cracklib:
         2.9.6-27.el9
     cracklib-dicts:
         2.9.6-27.el9
     crypto-policies:
-        20250905-1.git377cc42.el9
+        20250905-1.git377cc42.el9_7
     crypto-policies-scripts:
-        20250905-1.git377cc42.el9
+        20250905-1.git377cc42.el9_7
     cryptsetup-libs:
-        2.8.1-2.el9
+        2.7.2-4.el9
     curl-minimal:
         7.76.1-34.el9
     cyrus-sasl-lib:
-        2.1.27-21.el9
+        2.1.27-22.el9
     dbus:
         1:1.12.20-8.el9
     dbus-broker:
@@ -191,66 +186,56 @@ local:
         1:1.12.20-8.el9
     dbus-libs:
         1:1.12.20-8.el9
-    dejavu-sans-fonts:
-        2.37-18.el9
     device-mapper:
         9:1.02.206-2.el9
     device-mapper-libs:
         9:1.02.206-2.el9
+    dmidecode:
+        1:3.6-1.el9
     dnf:
-        4.14.0-31.el9
+        4.14.0-31.el9.alma.1
     dnf-data:
-        4.14.0-31.el9
+        4.14.0-31.el9.alma.1
     dnf-plugins-core:
-        4.3.0-24.el9
+        4.3.0-24.el9_7
     elfutils-debuginfod-client:
-        0.194-1.el9
+        0.193-1.el9.alma.1
     elfutils-default-yama-scope:
-        0.194-1.el9
+        0.193-1.el9.alma.1
     elfutils-libelf:
-        0.194-1.el9
+        0.193-1.el9.alma.1
     elfutils-libs:
-        0.194-1.el9
+        0.193-1.el9.alma.1
     emacs-filesystem:
         1:27.2-18.el9
     expat:
-        2.5.0-5.el9
+        2.5.0-5.el9_6
     file-libs:
         5.39-16.el9
     filesystem:
         3.16-5.el9
     findutils:
         1:4.8.0-7.el9
-    fonts-filesystem:
-        1:2.0.5-7.el9.1
     gawk:
         5.1.0-6.el9
-    gcc:
-        11.5.0-14.el9
-    gdb-gdbserver:
-        16.3-2.el9
     gdbm-libs:
         1:1.23-1.el9
     git:
-        2.47.3-1.el9
+        2.47.3-1.el9_6
     git-core:
-        2.47.3-1.el9
+        2.47.3-1.el9_6
     git-core-doc:
-        2.47.3-1.el9
+        2.47.3-1.el9_6
     glib2:
-        2.68.4-18.el9
+        2.68.4-18.el9_7
     glibc:
-        2.34-244.el9
+        2.34-231.el9_7.2
     glibc-common:
-        2.34-244.el9
-    glibc-devel:
-        2.34-244.el9
-    glibc-headers:
-        2.34-244.el9
+        2.34-231.el9_7.2
     glibc-langpack-en:
-        2.34-244.el9
+        2.34-231.el9_7.2
     glibc-minimal-langpack:
-        2.34-244.el9
+        2.34-231.el9_7.2
     gmp:
         1:6.2.0-13.el9
     gnupg2:
@@ -258,7 +243,7 @@ local:
     gnutls:
         3.8.3-9.el9
     gpg-pubkey.(none):
-        8483c65d-5ccc5b19
+        73d76b3f-63dace60,b86b3716-61e69f29
     gpgme:
         1.15.1-6.el9
     grep:
@@ -267,8 +252,14 @@ local:
         1.22.4-10.el9
     gzip:
         1.12-1.el9
+    hostname:
+        3.23-6.el9
+    hwdata:
+        0.348-9.20.el9
     ima-evm-utils:
         1.6.2-2.el9
+    iputils:
+        20210202-15.el9_7
     json-c:
         0.14-11.el9
     kbd:
@@ -277,8 +268,6 @@ local:
         2.4.0-11.el9
     kbd-misc:
         2.4.0-11.el9
-    kernel-headers:
-        5.14.0-642.el9
     keyutils:
         1.6.3-1.el9
     keyutils-libs:
@@ -288,19 +277,13 @@ local:
     kmod-libs:
         28-11.el9
     krb5-libs:
-        1.21.1-8.el9
-    langpacks-core-en:
-        3.0-16.el9
-    langpacks-core-font-en:
-        3.0-16.el9
-    langpacks-en:
-        3.0-16.el9
+        1.21.1-8.el9_6
     less:
         590-6.el9
     libacl:
         2.3.1-4.el9
     libarchive:
-        3.5.3-6.el9
+        3.5.3-6.el9_6
     libassuan:
         2.5.5-3.el9
     libattr:
@@ -320,15 +303,15 @@ local:
     libcurl-minimal:
         7.76.1-34.el9
     libdb:
-        5.3.28-57.el9
+        5.3.28-57.el9_6
     libdnf:
-        0.69.0-16.el9
+        0.69.0-16.el9.alma.1
     libeconf:
         0.4.1-4.el9
     libedit:
         3.1-38.20210216cvs.el9
     libevent:
-        2.1.12-8.el9
+        2.1.12-8.el9_4
     libfdisk:
         2.37.4-21.el9
     libffi:
@@ -336,11 +319,11 @@ local:
     libfido2:
         1.13.0-2.el9
     libgcc:
-        11.5.0-14.el9
+        11.5.0-11.el9.alma.1
     libgcrypt:
         1.10.0-11.el9
     libgomp:
-        11.5.0-14.el9
+        11.5.0-11.el9.alma.1
     libgpg-error:
         1.42-5.el9
     libidn2:
@@ -351,12 +334,8 @@ local:
         2.13.0-2.el9
     libmount:
         2.37.4-21.el9
-    libmpc:
-        1.2.1-4.el9
     libnghttp2:
         1.43.0-6.el9
-    libnsl2:
-        2.0.0-1.el9
     libpkgconf:
         1.7.3-10.el9
     libpwquality:
@@ -364,13 +343,13 @@ local:
     librepo:
         1.14.5-3.el9
     libreport-filesystem:
-        2.15.2-6.el9
+        2.15.2-6.el9.alma
     libseccomp:
         2.5.2-2.el9
     libselinux:
         3.6-3.el9
     libsemanage:
-        3.6-5.el9
+        3.6-5.el9_6
     libsepol:
         3.6-3.el9
     libsigsegv:
@@ -380,11 +359,9 @@ local:
     libsolv:
         0.7.24-3.el9
     libstdc++:
-        11.5.0-14.el9
+        11.5.0-11.el9.alma.1
     libtasn1:
         4.16.0-9.el9
-    libtirpc:
-        1.3.3-9.el9
     libtool-ltdl:
         2.4.6-46.el9
     libunistring:
@@ -399,10 +376,8 @@ local:
         4.4.18-3.el9
     libxcrypt-compat:
         4.4.18-3.el9
-    libxcrypt-devel:
-        4.4.18-3.el9
     libxml2:
-        2.9.13-14.el9
+        2.9.13-12.el9_6
     libyaml:
         0.2.5-7.el9
     libzstd:
@@ -411,10 +386,6 @@ local:
         5.4.4-4.el9
     lz4-libs:
         1.9.3-5.el9
-    make:
-        1:4.3-8.el9
-    mpdecimal:
-        2.5.1-3.el9
     mpfr:
         4.1.0-7.el9
     ncurses:
@@ -432,25 +403,29 @@ local:
     openldap:
         2.6.8-4.el9
     openssh:
-        9.9p1-2.el9
+        8.7p1-46.el9.alma.1
     openssh-clients:
-        9.9p1-2.el9
+        8.7p1-46.el9.alma.1
     openssh-server:
-        9.9p1-2.el9
+        8.7p1-46.el9.alma.1
     openssl:
-        1:3.5.1-6.el9
+        1:3.5.1-4.el9_7
     openssl-devel:
-        1:3.5.1-6.el9
+        1:3.5.1-4.el9_7
     openssl-fips-provider:
-        1:3.5.1-6.el9
+        1:3.5.1-4.el9_7
     openssl-libs:
-        1:3.5.1-6.el9
+        1:3.5.1-4.el9_7
     p11-kit:
-        0.25.10-1.el9
+        0.25.3-3.el9_5
     p11-kit-trust:
-        0.25.10-1.el9
+        0.25.3-3.el9_5
     pam:
-        1.5.1-26.el9
+        1.5.1-26.el9_6
+    pciutils:
+        3.7.0-7.el9
+    pciutils-libs:
+        3.7.0-7.el9
     pcre:
         8.44-4.el9
     pcre2:
@@ -458,13 +433,13 @@ local:
     pcre2-syntax:
         10.40-6.el9
     perl-AutoLoader:
-        5.74-483.el9
+        5.74-481.1.el9_6
     perl-B:
-        1.80-483.el9
+        1.80-481.1.el9_6
     perl-Carp:
         1.50-460.el9
     perl-Class-Struct:
-        0.66-483.el9
+        0.66-481.1.el9_6
     perl-Data-Dumper:
         2.174-462.el9
     perl-Digest:
@@ -472,55 +447,55 @@ local:
     perl-Digest-MD5:
         2.58-4.el9
     perl-DynaLoader:
-        1.47-483.el9
+        1.47-481.1.el9_6
     perl-Encode:
         4:3.08-462.el9
     perl-Errno:
-        1.30-483.el9
+        1.30-481.1.el9_6
     perl-Error:
         1:0.17029-7.el9
     perl-Exporter:
         5.74-461.el9
     perl-Fcntl:
-        1.13-483.el9
+        1.13-481.1.el9_6
     perl-File-Basename:
-        2.85-483.el9
+        2.85-481.1.el9_6
     perl-File-Find:
-        1.37-483.el9
+        1.37-481.1.el9_6
     perl-File-Path:
         2.18-4.el9
     perl-File-Temp:
         1:0.231.100-4.el9
     perl-File-stat:
-        1.09-483.el9
+        1.09-481.1.el9_6
     perl-FileHandle:
-        2.03-483.el9
+        2.03-481.1.el9_6
     perl-Getopt-Long:
         1:2.52-4.el9
     perl-Getopt-Std:
-        1.12-483.el9
+        1.12-481.1.el9_6
     perl-Git:
-        2.47.3-1.el9
+        2.47.3-1.el9_6
     perl-HTTP-Tiny:
         0.076-462.el9
     perl-IO:
-        1.43-483.el9
+        1.43-481.1.el9_6
     perl-IO-Socket-IP:
         0.41-5.el9
     perl-IO-Socket-SSL:
         2.073-2.el9
     perl-IPC-Open3:
-        1.21-483.el9
+        1.21-481.1.el9_6
     perl-MIME-Base64:
         3.16-4.el9
     perl-Mozilla-CA:
         20200520-6.el9
     perl-NDBM_File:
-        1.15-483.el9
+        1.15-481.1.el9_6
     perl-Net-SSLeay:
         1.94-3.el9
     perl-POSIX:
-        1.94-483.el9
+        1.94-481.1.el9_6
     perl-PathTools:
         3.78-461.el9
     perl-Pod-Escapes:
@@ -534,13 +509,13 @@ local:
     perl-Scalar-List-Utils:
         4:1.56-462.el9
     perl-SelectSaver:
-        1.02-483.el9
+        1.02-481.1.el9_6
     perl-Socket:
         4:2.031-4.el9
     perl-Storable:
         1:3.21-460.el9
     perl-Symbol:
-        1.08-483.el9
+        1.08-481.1.el9_6
     perl-Term-ANSIColor:
         5.01-461.el9
     perl-Term-Cap:
@@ -556,33 +531,33 @@ local:
     perl-URI:
         5.09-3.el9
     perl-base:
-        2.27-483.el9
+        2.27-481.1.el9_6
     perl-constant:
         1.33-461.el9
     perl-if:
-        0.60.800-483.el9
+        0.60.800-481.1.el9_6
     perl-interpreter:
-        4:5.32.1-483.el9
+        4:5.32.1-481.1.el9_6
     perl-lib:
-        0.65-483.el9
+        0.65-481.1.el9_6
     perl-libnet:
         3.13-4.el9
     perl-libs:
-        4:5.32.1-483.el9
+        4:5.32.1-481.1.el9_6
     perl-mro:
-        1.23-483.el9
+        1.23-481.1.el9_6
     perl-overload:
-        1.31-483.el9
+        1.31-481.1.el9_6
     perl-overloading:
-        0.02-483.el9
+        0.02-481.1.el9_6
     perl-parent:
         1:0.238-460.el9
     perl-podlators:
         1:4.14-460.el9
     perl-subs:
-        1.03-483.el9
+        1.03-481.1.el9_6
     perl-vars:
-        1.05-483.el9
+        1.05-481.1.el9_6
     pkgconf:
         1.7.3-10.el9
     pkgconf-m4:
@@ -596,23 +571,23 @@ local:
     python3:
         3.9.23-2.el9
     python3-dateutil:
-        1:2.9.0.post0-1.el9
+        1:2.9.0.post0-1.el9_7
     python3-dbus:
         1.2.18-2.el9
     python3-devel:
         3.9.23-2.el9
     python3-dnf:
-        4.14.0-31.el9
+        4.14.0-31.el9.alma.1
     python3-dnf-plugins-core:
-        4.3.0-24.el9
+        4.3.0-24.el9_7
     python3-gpg:
         1.15.1-6.el9
     python3-hawkey:
-        0.69.0-16.el9
+        0.69.0-16.el9.alma.1
     python3-libcomps:
         0.1.18-1.el9
     python3-libdnf:
-        0.69.0-16.el9
+        0.69.0-16.el9.alma.1
     python3-libs:
         3.9.23-2.el9
     python3-pip:
@@ -629,20 +604,6 @@ local:
         1.15.0-9.el9
     python3-systemd:
         234-19.el9
-    python3.11:
-        3.11.13-3.el9
-    python3.11-devel:
-        3.11.13-3.el9
-    python3.11-libs:
-        3.11.13-3.el9
-    python3.11-pip:
-        22.3.1-6.el9
-    python3.11-pip-wheel:
-        22.3.1-6.el9
-    python3.11-setuptools:
-        65.5.1-5.el9
-    python3.11-setuptools-wheel:
-        65.5.1-5.el9
     readline:
         8.1-4.el9
     rootfiles:
@@ -655,6 +616,10 @@ local:
         4.16.1.3-39.el9
     rpm-sign-libs:
         4.16.1.3-39.el9
+    salt:
+        3007.9-0
+    salt-minion:
+        3007.9-0
     sed:
         4.8-9.el9
     setup:
@@ -662,19 +627,19 @@ local:
     shadow-utils:
         2:4.9-15.el9
     sqlite-libs:
-        3.34.1-9.el9
+        3.34.1-9.el9_7
     sudo:
         1.9.5p2-13.el9
     systemd:
-        252-59.el9
+        252-55.el9_7.2.alma.2
     systemd-libs:
-        252-59.el9
+        252-55.el9_7.2.alma.2
     systemd-pam:
-        252-59.el9
+        252-55.el9_7.2.alma.2
     systemd-rpm-macros:
-        252-59.el9
+        252-55.el9_7.2.alma.2
     systemd-udev:
-        252-59.el9
+        252-55.el9_7.2.alma.2
     tar:
         2:1.34-7.el9
     tpm2-tss:
@@ -686,367 +651,137 @@ local:
     util-linux-core:
         2.37.4-21.el9
     vim-minimal:
-        2:8.2.2637-23.el9
+        2:8.2.2637-23.el9_7
     which:
-        2.21-30.el9
+        2.21-30.el9_6
+    xz:
+        5.2.5-8.el9_0
     xz-libs:
-        5.2.5-8.el9
+        5.2.5-8.el9_0
     yum:
-        4.14.0-31.el9
+        4.14.0-31.el9.alma.1
     yum-utils:
-        4.3.0-24.el9
+        4.3.0-24.el9_7
     zlib:
-        1.2.11-41.el9
+        1.2.11-40.el9
 # salt-call --local pip.list
 local:
     ----------
+    CherryPy:
+        18.8.0
+    Jinja2:
+        3.1.6
+    MarkupSafe:
+        2.1.3
+    PyYAML:
+        6.0.1
     aiohappyeyeballs:
         2.6.1
     aiohttp:
-        3.12.15
-    aiohttp-retry:
-        2.8.3
+        3.12.14
     aiosignal:
         1.4.0
-    ansible:
-        12.0.0
-    ansible-core:
-        2.19.2
-    anyio:
-        4.1.0
-    apache-libcloud:
-        3.7.0
-    asn1crypto:
-        1.5.1
+    async-timeout:
+        4.0.3
     attrs:
         23.2.0
     autocommand:
         2.2.2
-    backports-tarfile:
-        1.2.0
-    bcrypt:
-        4.0.1
-    boto:
-        2.49.0
-    boto3:
-        1.39.4
-    botocore:
-        1.39.4
-    cachetools:
-        5.3.1
-    cassandra-driver:
-        3.28.0
     certifi:
         2024.7.4
-    certvalidator:
-        0.11.1
     cffi:
-        1.16.0
+        2.0.0
     charset-normalizer:
         3.2.0
-    cheetah3:
-        3.2.6.post2
     cheroot:
         10.0.0
-    cherrypy:
-        18.8.0
-    click:
-        8.1.3
-    clustershell:
-        1.9.1
     contextvars:
         2.4
     croniter:
         2.0.5
     cryptography:
         42.0.5
-    distlib:
-        0.3.8
     distro:
         1.8.0
-    dnspython:
-        2.6.1
-    docker:
-        7.1.0
-    etcd3-py:
-        0.1.6
-    filelock:
-        3.13.1
-    flaky:
-        3.8.1
     frozenlist:
-        1.7.0
-    future:
-        1.0.0
-    genshi:
-        0.7.7
-    geomet:
-        0.2.1.post1
-    gitdb:
-        4.0.10
-    gitpython:
-        3.1.43
-    google-auth:
-        2.27.0
-    h11:
-        0.14.0
-    hglib:
-        2.6.2
-    httpcore:
-        0.17.3
-    httpx:
-        0.24.1
+        1.4.1
     idna:
         3.7
     immutables:
-        0.15
-    importlib-metadata:
+        0.21
+    importlib_metadata:
         8.7.0
-    inflect:
-        7.3.1
-    iniconfig:
-        2.0.0
-    ipaddress:
-        1.0.23
-    jaraco-classes:
-        3.4.0
-    jaraco-collections:
+    jaraco.collections:
         4.1.0
-    jaraco-context:
+    jaraco.context:
         4.3.0
-    jaraco-functools:
-        4.3.0
-    jaraco-text:
+    jaraco.functools:
+        4.1.0
+    jaraco.text:
         4.0.0
-    jinja2:
-        3.1.6
     jmespath:
         1.0.1
-    jsonschema:
-        3.2.0
-    junit-xml:
-        1.9
-    junos-eznc:
-        2.6.7
-    jxmlease:
-        1.0.3
-    kazoo:
-        2.9.0
-    keyring:
-        5.7.1
-    kubernetes:
-        3.0.0
-    libnacl:
-        1.8.0
     looseversion:
         1.3.0
-    lxml:
-        4.9.2
-    mako:
-        1.2.4
-    markupsafe:
-        2.1.3
-    mercurial:
-        6.0.1
-    mock:
-        5.1.0
     more-itertools:
-        10.8.0
-    moto:
-        5.1.8
+        9.1.0
     msgpack:
         1.0.7
     multidict:
         6.0.4
-    ncclient:
-        0.6.13
-    netaddr:
-        0.8.0
-    networkx:
-        3.1
-    oscrypto:
-        1.3.0
     packaging:
         24.0
-    paramiko:
-        3.4.0
-    passlib:
-        1.7.4
-    pathspec:
-        0.11.1
     pip:
-        22.3.1
-    platformdirs:
-        4.0.0
-    pluggy:
-        1.4.0
+        25.2
     portend:
         3.1.0
     propcache:
         0.3.2
     psutil:
         5.9.6
-    pyasn1:
-        0.5.1
-    pyasn1-modules:
-        0.3.0
+    pyOpenSSL:
+        24.0.0
     pycparser:
         2.21
     pycryptodomex:
         3.19.1
-    pyfakefs:
-        5.3.1
-    pygit2:
-        1.13.1
-    pyiface:
-        0.0.11
-    pyinotify:
-        0.9.6
-    pyjwt:
-        2.4.0
-    pymysql:
-        1.1.1
-    pynacl:
-        1.5.0
-    pyopenssl:
-        24.0.0
-    pyparsing:
-        3.0.9
-    pyrsistent:
-        0.19.3
-    pyserial:
-        3.5
-    pytest:
-        8.1.1
-    pytest-custom-exit-code:
-        0.3.0
-    pytest-helpers-namespace:
-        2021.12.29
-    pytest-httpserver:
-        1.0.8
-    pytest-salt-factories:
-        1.0.1
-    pytest-shell-utilities:
-        1.9.7
-    pytest-skip-markers:
-        1.5.2
-    pytest-subtests:
-        0.4.0
-    pytest-system-statistics:
-        1.0.2
-    pytest-timeout:
-        2.3.1
-    python-consul:
-        1.1.0
     python-dateutil:
         2.8.2
-    python-etcd:
-        0.4.5
     python-gnupg:
         0.5.2
-    python-telegram-bot:
-        20.3
     pytz:
         2024.1
-    pyvmomi:
-        8.0.1.0.1
-    pyyaml:
-        6.0.1
     pyzmq:
         25.1.2
-    redis:
-        3.5.3
-    redis-py-cluster:
-        2.1.3
+    relenv:
+        0.21.2
     requests:
         2.32.5
-    resolvelib:
-        1.0.1
-    responses:
-        0.23.1
-    rfc3987:
-        1.3.8
-    rpm-vercmp:
+    rpm_vercmp:
         0.1.2
-    rsa:
-        4.9
-    s3transfer:
-        0.13.0
     salt:
-        3007.8+679.g904d08b6a
-    scp:
-        0.14.5
-    semantic-version:
-        2.10.0
+        3007.9
     setproctitle:
         1.3.2
     setuptools:
-        65.5.1
+        80.9.0
     six:
         1.16.0
-    slack-bolt:
-        1.18.0
-    slack-sdk:
-        3.21.3
-    smmap:
-        5.0.1
-    sniffio:
-        1.3.0
-    sqlparse:
-        0.5.0
-    strict-rfc3339:
-        0.7
     tempora:
         5.3.0
-    textfsm:
-        1.1.3
     timelib:
         0.3.0
-    toml:
-        0.10.2
-    tomli:
-        2.0.1
     tornado:
         6.5.2
-    transitions:
-        0.9.0
-    trustme:
-        1.1.0
-    twilio:
-        8.2.2
-    typeguard:
-        4.3.0
-    types-pyyaml:
-        6.0.12.12
-    typing-extensions:
+    typing_extensions:
         4.14.1
     urllib3:
         2.5.0
-    vcert:
-        0.7.4
-    virtualenv:
-        20.24.7
-    watchdog:
-        3.0.0
-    websocket-client:
-        0.40.0
-    wempy:
-        0.2.1
-    werkzeug:
-        3.1.3
     wheel:
         0.45.1
-    xmldiff:
-        2.6.3
-    xmltodict:
-        0.13.0
-    yamllint:
-        1.32.0
-    yamlordereddictloader:
-        0.4.0
     yarl:
         1.20.1
-    zc-lockfile:
+    zc.lockfile:
         3.0.post1
     zipp:
         3.23.0

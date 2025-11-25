@@ -2,7 +2,7 @@ rock-08.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-                  Salt: 3007.6+606.g3ce11a76c
+                  Salt: 3007.8+679.g904d08b6a
  
 Python Version:
                 Python: 3.11.13 (main, Aug 28 2025, 15:10:45) [GCC 8.5.0 20210514 (Red Hat 8.5.0-28)]
@@ -35,7 +35,7 @@ Dependency Versions:
                 relenv: Not Installed
                  smmap: 5.0.1
                timelib: 0.3.0
-               Tornado: 6.4.2
+               Tornado: 6.5.2
                    ZMQ: 4.3.4
  
 Salt Extensions:
@@ -119,10 +119,10 @@ local:
     saltpath:
         /usr/lib/python3.11/site-packages/salt
     saltversion:
-        3007.6+606.g3ce11a76c
+        3007.8+679.g904d08b6a
     saltversioninfo:
         - 3007
-        - 6
+        - 8
     systemd:
         ----------
         features:
@@ -146,11 +146,11 @@ local:
     bash:
         4.4.20-6.el8_10
     binutils:
-        2.30-125.el8_10
+        2.30-127.el8_10
     bzip2-libs:
         1.0.6-28.el8_10
     ca-certificates:
-        2024.2.69_v8.0.303-80.0.el8_10
+        2025.2.80_v9.0.304-80.2.el8_10
     chkconfig:
         1.19.2-1.el8
     coreutils-single:
@@ -166,7 +166,7 @@ local:
     cryptsetup-libs:
         2.3.7-7.el8
     curl:
-        7.61.1-34.el8_10.3
+        7.61.1-34.el8_10.8
     cyrus-sasl-lib:
         2.1.27-6.el8_5
     dbus:
@@ -204,9 +204,9 @@ local:
     emacs-filesystem:
         1:26.1-15.el8_10
     expat:
-        2.2.5-17.el8_10
+        2.5.0-1.el8_10
     file-libs:
-        5.33-26.el8
+        5.33-27.el8_10
     filesystem:
         3.8-6.el8
     findutils:
@@ -226,7 +226,7 @@ local:
     git-core-doc:
         2.43.7-1.el8_10
     glib2:
-        2.56.4-166.el8_10
+        2.56.4-167.el8_10
     glibc:
         2.28-251.el8_10.25
     glibc-common:
@@ -246,7 +246,7 @@ local:
     gnupg2:
         2.2.20-3.el8_6
     gnutls:
-        3.6.16-8.el8_10.3
+        3.6.16-8.el8_10.4
     gpg-pubkey.(none):
         6d745a60-60287f36
     gpgme:
@@ -276,7 +276,7 @@ local:
     kbd-misc:
         2.0.4-11.el8
     kernel-headers:
-        4.18.0-553.74.1.el8_10
+        4.18.0-553.83.1.el8_10
     keyutils-libs:
         1.5.10-9.el8
     keyutils-libs-devel:
@@ -308,13 +308,13 @@ local:
     libcap-ng:
         0.7.11-1.el8
     libcom_err:
-        1.45.6-6.el8_10
+        1.45.6-7.el8_10
     libcom_err-devel:
-        1.45.6-6.el8_10
+        1.45.6-7.el8_10
     libcomps:
         0.1.18-1.el8
     libcurl-minimal:
-        7.61.1-34.el8_10.3
+        7.61.1-34.el8_10.8
     libdb:
         5.3.28-42.el8_4
     libdb-utils:
@@ -432,11 +432,11 @@ local:
     openldap:
         2.4.46-21.el8_10
     openssh:
-        8.0p1-25.el8_10
+        8.0p1-26.el8_10
     openssh-clients:
-        8.0p1-25.el8_10
+        8.0p1-26.el8_10
     openssh-server:
-        8.0p1-25.el8_10
+        8.0p1-26.el8_10
     openssl:
         1:1.1.1k-14.el8_10
     openssl-devel:
@@ -660,13 +660,13 @@ local:
     swig:
         3.0.12-19.module+el8.4.0+385+82b6e804
     systemd:
-        239-82.el8_10.5
+        239-82.el8_10.8
     systemd-libs:
-        239-82.el8_10.5
+        239-82.el8_10.8
     systemd-pam:
-        239-82.el8_10.5
+        239-82.el8_10.8
     systemd-udev:
-        239-82.el8_10.5
+        239-82.el8_10.8
     tar:
         2:1.30-11.el8_10
     tpm2-tss:
@@ -682,7 +682,7 @@ local:
     util-linux:
         2.32.1-46.el8
     vim-minimal:
-        2:8.0.1763-19.el8_6.4
+        2:8.0.1763-21.el8_10
     which:
         2.21-21.el8_10
     xkeyboard-config:
@@ -709,9 +709,9 @@ local:
     aiosignal:
         1.4.0
     ansible:
-        9.1.0
+        12.0.0
     ansible-core:
-        2.16.3
+        2.19.2
     anyio:
         4.1.0
     apache-libcloud:
@@ -775,7 +775,7 @@ local:
     flaky:
         3.8.1
     frozenlist:
-        1.4.1
+        1.7.0
     future:
         1.0.0
     genshi:
@@ -801,7 +801,7 @@ local:
     immutables:
         0.15
     importlib-metadata:
-        6.6.0
+        8.7.0
     inflect:
         7.3.1
     iniconfig:
@@ -959,7 +959,7 @@ local:
     redis-py-cluster:
         2.1.3
     requests:
-        2.32.3
+        2.32.5
     resolvelib:
         1.0.1
     responses:
@@ -973,7 +973,7 @@ local:
     s3transfer:
         0.13.0
     salt:
-        3007.6+606.g3ce11a76c
+        3007.8+679.g904d08b6a
     scp:
         0.14.5
     semantic-version:
@@ -1007,7 +1007,7 @@ local:
     tomli:
         2.0.1
     tornado:
-        6.4.2
+        6.5.2
     transitions:
         0.9.0
     trustme:
@@ -1049,7 +1049,7 @@ local:
     zc-lockfile:
         3.0.post1
     zipp:
-        3.16.2
+        3.23.0
 # salt-call --local locale.list_avail
 local:
     - C

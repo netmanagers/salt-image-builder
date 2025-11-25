@@ -1,5 +1,18 @@
 # Changelog
 
+# [1.109.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.108.0...v1.109.0) (2025-11-25)
+
+
+### Continuous Integration
+
+* update the Docker (client) image ([fe3123c](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/fe3123cc687767169b03c46a18df849e08060341))
+
+
+### Features
+
+* **salt:** upgrade to v3006.17 ([44a6b33](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/44a6b336a2ddb6f9c4d46e3400649ede49893e94))
+* **salt:** upgrade to v3007.9 ([1b999b1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/1b999b117cd1b43d448d35058c75001cdf8f5509))
+
 # [1.108.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.107.0...v1.108.0) (2025-09-23)
 
 
