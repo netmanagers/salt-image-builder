@@ -25,6 +25,7 @@ RUN if [[ "${DISTRO_NAME}" = "centos" ]]; then \
       # Install EPEL repo for `centos`
       yum -y install epel-release; \
     fi \
+ && yum -y swap curl-minimal curl \
  && yum -y install ${PKGS} \
  && yum clean all
 ARG CACHEBUST=1
