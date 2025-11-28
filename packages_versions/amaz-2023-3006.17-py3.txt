@@ -154,7 +154,7 @@ local:
         20240828-2.git626aa59.amzn2023.0.1
     cryptsetup-libs:
         2.6.1-1.amzn2023.0.1
-    curl-minimal:
+    curl:
         8.11.1-4.amzn2023.0.1
     cyrus-sasl-lib:
         2.1.27-18.amzn2023.0.3

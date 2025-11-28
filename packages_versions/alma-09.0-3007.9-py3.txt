@@ -174,7 +174,7 @@ local:
         20250905-1.git377cc42.el9_7
     cryptsetup-libs:
         2.7.2-4.el9
-    curl-minimal:
+    curl:
         7.76.1-34.el9
     cyrus-sasl-lib:
         2.1.27-22.el9

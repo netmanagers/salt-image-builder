@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.109.1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.109.0...v1.109.1) (2025-11-28)
+
+
+### Bug Fixes
+
+* **yum:** swap `curl-minimal` with `curl` ([f442740](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/f4427405b9a089e0cb0e77ae19ffed48e830fd0b))
+
 # [1.109.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.108.0...v1.109.0) (2025-11-25)
 
 
