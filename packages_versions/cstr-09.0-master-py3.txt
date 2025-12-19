@@ -2,13 +2,13 @@ cstr-09.0-master-py3
 Salt install method: git
 # salt-call --versions-report
 Salt Version:
-                  Salt: 3007.8+679.g904d08b6a
+                  Salt: 3007.9+636.ge3c222b77
  
 Python Version:
                 Python: 3.11.13 (main, Aug 21 2025, 00:00:00) [GCC 11.5.0 20240719 (Red Hat 11.5.0-11)]
  
 Dependency Versions:
-                  cffi: 1.16.0
+                  cffi: 2.0.0
               cherrypy: 18.8.0
           cryptography: 42.0.5
               dateutil: 2.8.2
@@ -39,7 +39,7 @@ Dependency Versions:
                    ZMQ: 4.3.4
  
 Salt Extensions:
- pytest-salt-factories: 1.0.1
+ pytest-salt-factories: 1.0.5
  
 Salt Package Information:
           Package Type: Not Installed
@@ -118,10 +118,10 @@ local:
     saltpath:
         /usr/lib/python3.11/site-packages/salt
     saltversion:
-        3007.8+679.g904d08b6a
+        3007.9+636.ge3c222b77
     saltversioninfo:
         - 3007
-        - 8
+        - 9
     systemd:
         ----------
         features:
@@ -150,19 +150,19 @@ local:
     bash:
         5.1.8-9.el9
     binutils:
-        2.35.2-68.el9
+        2.35.2-69.el9
     binutils-gold:
-        2.35.2-68.el9
+        2.35.2-69.el9
     bzip2-libs:
         1.0.8-10.el9
     ca-certificates:
         2025.2.80_v9.0.305-91.el9
     centos-gpg-keys:
-        9.0-30.el9
+        9.0-32.el9
     centos-stream-release:
-        9.0-30.el9
+        9.0-32.el9
     centos-stream-repos:
-        9.0-30.el9
+        9.0-32.el9
     chkconfig:
         1.24-2.el9
     coreutils-single:
@@ -174,13 +174,13 @@ local:
     cracklib-dicts:
         2.9.6-27.el9
     crypto-policies:
-        20250905-1.git377cc42.el9
+        20251126-1.gite9c4db2.el9
     crypto-policies-scripts:
-        20250905-1.git377cc42.el9
+        20251126-1.gite9c4db2.el9
     cryptsetup-libs:
         2.8.1-2.el9
     curl:
-        7.76.1-34.el9
+        7.76.1-38.el9
     cyrus-sasl-lib:
         2.1.27-21.el9
     dbus:
@@ -202,7 +202,7 @@ local:
     dnf-data:
         4.14.0-31.el9
     dnf-plugins-core:
-        4.3.0-24.el9
+        4.3.0-25.el9
     elfutils-debuginfod-client:
         0.194-1.el9
     elfutils-default-yama-scope:
@@ -214,7 +214,7 @@ local:
     emacs-filesystem:
         1:27.2-18.el9
     expat:
-        2.5.0-5.el9
+        2.5.0-6.el9
     file-libs:
         5.39-16.el9
     filesystem:
@@ -240,23 +240,23 @@ local:
     glib2:
         2.68.4-18.el9
     glibc:
-        2.34-244.el9
+        2.34-245.el9
     glibc-common:
-        2.34-244.el9
+        2.34-245.el9
     glibc-devel:
-        2.34-244.el9
+        2.34-245.el9
     glibc-headers:
-        2.34-244.el9
+        2.34-245.el9
     glibc-langpack-en:
-        2.34-244.el9
+        2.34-245.el9
     glibc-minimal-langpack:
-        2.34-244.el9
+        2.34-245.el9
     gmp:
         1:6.2.0-13.el9
     gnupg2:
         2.3.3-4.el9
     gnutls:
-        3.8.3-9.el9
+        3.8.10-1.el9
     gpg-pubkey.(none):
         8483c65d-5ccc5b19
     gpgme:
@@ -278,7 +278,7 @@ local:
     kbd-misc:
         2.4.0-11.el9
     kernel-headers:
-        5.14.0-642.el9
+        5.14.0-651.el9
     keyutils:
         1.6.3-1.el9
     keyutils-libs:
@@ -318,13 +318,13 @@ local:
     libcomps:
         0.1.18-1.el9
     libcurl-minimal:
-        7.76.1-34.el9
+        7.76.1-38.el9
     libdb:
         5.3.28-57.el9
     libdnf:
         0.69.0-16.el9
     libeconf:
-        0.4.1-4.el9
+        0.4.1-5.el9
     libedit:
         3.1-38.20210216cvs.el9
     libevent:
@@ -362,7 +362,7 @@ local:
     libpwquality:
         1.4.4-8.el9
     librepo:
-        1.14.5-3.el9
+        1.19.0-1.el9
     libreport-filesystem:
         2.15.2-6.el9
     libseccomp:
@@ -432,11 +432,11 @@ local:
     openldap:
         2.6.8-4.el9
     openssh:
-        9.9p1-2.el9
+        9.9p1-3.el9
     openssh-clients:
-        9.9p1-2.el9
+        9.9p1-3.el9
     openssh-server:
-        9.9p1-2.el9
+        9.9p1-3.el9
     openssl:
         1:3.5.1-6.el9
     openssl-devel:
@@ -450,7 +450,7 @@ local:
     p11-kit-trust:
         0.25.10-1.el9
     pam:
-        1.5.1-26.el9
+        1.5.1-28.el9
     pcre:
         8.44-4.el9
     pcre2:
@@ -594,17 +594,17 @@ local:
     procps-ng:
         3.3.17-14.el9
     python3:
-        3.9.23-2.el9
+        3.9.25-2.el9
     python3-dateutil:
         1:2.9.0.post0-1.el9
     python3-dbus:
         1.2.18-2.el9
     python3-devel:
-        3.9.23-2.el9
+        3.9.25-2.el9
     python3-dnf:
         4.14.0-31.el9
     python3-dnf-plugins-core:
-        4.3.0-24.el9
+        4.3.0-25.el9
     python3-gpg:
         1.15.1-6.el9
     python3-hawkey:
@@ -614,13 +614,13 @@ local:
     python3-libdnf:
         0.69.0-16.el9
     python3-libs:
-        3.9.23-2.el9
+        3.9.25-2.el9
     python3-pip:
         21.3.1-1.el9
     python3-pip-wheel:
         21.3.1-1.el9
     python3-rpm:
-        4.16.1.3-39.el9
+        4.16.1.3-40.el9
     python3-setuptools:
         53.0.0-15.el9
     python3-setuptools-wheel:
@@ -648,19 +648,19 @@ local:
     rootfiles:
         8.1-35.el9
     rpm:
-        4.16.1.3-39.el9
+        4.16.1.3-40.el9
     rpm-build-libs:
-        4.16.1.3-39.el9
+        4.16.1.3-40.el9
     rpm-libs:
-        4.16.1.3-39.el9
+        4.16.1.3-40.el9
     rpm-sign-libs:
-        4.16.1.3-39.el9
+        4.16.1.3-40.el9
     sed:
         4.8-9.el9
     setup:
         2.13.7-10.el9
     shadow-utils:
-        2:4.9-15.el9
+        2:4.9-16.el9
     sqlite-libs:
         3.34.1-9.el9
     sudo:
@@ -694,7 +694,7 @@ local:
     yum:
         4.14.0-31.el9
     yum-utils:
-        4.3.0-24.el9
+        4.3.0-25.el9
     zlib:
         1.2.11-41.el9
 # salt-call --local pip.list
@@ -741,7 +741,7 @@ local:
     certvalidator:
         0.11.1
     cffi:
-        1.16.0
+        2.0.0
     charset-normalizer:
         3.2.0
     cheetah3:
@@ -799,7 +799,7 @@ local:
     idna:
         3.7
     immutables:
-        0.15
+        0.21
     importlib-metadata:
         8.7.0
     inflect:
@@ -925,7 +925,7 @@ local:
     pytest-httpserver:
         1.0.8
     pytest-salt-factories:
-        1.0.1
+        1.0.5
     pytest-shell-utilities:
         1.9.7
     pytest-skip-markers:
@@ -973,7 +973,7 @@ local:
     s3transfer:
         0.13.0
     salt:
-        3007.8+679.g904d08b6a
+        3007.9+636.ge3c222b77
     scp:
         0.14.5
     semantic-version:
