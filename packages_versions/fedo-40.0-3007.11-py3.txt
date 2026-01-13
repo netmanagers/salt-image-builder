@@ -1,0 +1,837 @@
+fedo-40.0-3007.11-py3
+Salt install method: onedir
+# salt-call --versions-report
+Salt Version:
+          Salt: 3006.19
+ 
+Python Version:
+        Python: 3.10.19 (main, Jan  7 2026, 23:50:47) [GCC 11.2.0]
+ 
+Dependency Versions:
+          cffi: 2.0.0
+      cherrypy: 18.10.0
+  cryptography: 42.0.5
+      dateutil: 2.8.1
+     docker-py: Not Installed
+         gitdb: Not Installed
+     gitpython: Not Installed
+        Jinja2: 3.1.6
+       libgit2: Not Installed
+  looseversion: 1.0.2
+      M2Crypto: Not Installed
+          Mako: Not Installed
+       msgpack: 1.0.2
+  msgpack-pure: Not Installed
+  mysql-python: Not Installed
+     packaging: 24.0
+     pycparser: 2.21
+      pycrypto: Not Installed
+  pycryptodome: 3.19.1
+        pygit2: Not Installed
+  python-gnupg: 0.4.8
+        PyYAML: 6.0.1
+         PyZMQ: 23.2.0
+        relenv: 0.22.2
+         smmap: Not Installed
+       timelib: 0.3.0
+       Tornado: 4.5.3
+           ZMQ: 4.3.4
+ 
+System Versions:
+          dist: fedora 40 
+        locale: utf-8
+       machine: x86_64
+       release: 5.15.154+
+        system: Linux
+       version: Fedora Linux 40 
+ 
+# salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
+local:
+    ----------
+    init:
+        unknown
+    kernel:
+        Linux
+    kernelrelease:
+        5.15.154+
+    kernelversion:
+        #1 SMP Sat May 4 12:14:42 UTC 2024
+    locale_info:
+        ----------
+        defaultencoding:
+            UTF-8
+        defaultlanguage:
+            en_US
+        detectedencoding:
+            utf-8
+        timezone:
+            UTC
+    lsb_distrib_codename:
+    lsb_distrib_id:
+        Fedora Linux
+    lsb_distrib_release:
+        40
+    os:
+        Fedora
+    os_family:
+        RedHat
+    osarch:
+        x86_64
+    osbuild:
+    oscodename:
+    osfinger:
+        Fedora Linux-40
+    osfullname:
+        Fedora Linux
+    osmajorrelease:
+        40
+    osmanufacturer:
+    osrelease:
+        40
+    osrelease_info:
+        - 40
+    osversion:
+    pythonexecutable:
+        /opt/saltstack/salt/bin/python3.10
+    pythonpath:
+        - /opt/saltstack/salt
+        - /opt/saltstack/salt/extras-3.10
+        - /opt/saltstack/salt/lib/python310.zip
+        - /opt/saltstack/salt/lib/python3.10
+        - /opt/saltstack/salt/lib/python3.10/lib-dynload
+        - /opt/saltstack/salt/lib/python3.10/site-packages
+    pythonversion:
+        - 3
+        - 10
+        - 19
+        - final
+        - 0
+    saltpath:
+        /opt/saltstack/salt/lib/python3.10/site-packages/salt
+    saltversion:
+        3006.19
+    saltversioninfo:
+        - 3006
+        - 19
+    systemd:
+        ----------
+        features:
+            +PAM +AUDIT +SELINUX -APPARMOR +IMA +SMACK +SECCOMP -GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN -IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified
+        version:
+            255
+    virtual:
+        gce
+    virtual_subtype:
+        Docker
+    zmqversion:
+        4.3.4
+# salt-call --local pkg.list_pkgs
+local:
+    ----------
+    alternatives:
+        1.27-1.fc40
+    audit-libs:
+        4.0.3-1.fc40
+    authselect:
+        1.5.0-6.fc40
+    authselect-libs:
+        1.5.0-6.fc40
+    basesystem:
+        11-20.fc40
+    bash:
+        5.2.26-3.fc40
+    bzip2:
+        1.0.8-18.fc40
+    bzip2-libs:
+        1.0.8-18.fc40
+    ca-certificates:
+        2024.2.69_v8.0.401-1.0.fc40
+    chkconfig:
+        1.27-1.fc40
+    coreutils:
+        9.4-9.fc40
+    coreutils-common:
+        9.4-9.fc40
+    cpio:
+        2.15-1.fc40
+    cracklib:
+        2.9.11-5.fc40
+    crypto-policies:
+        20241011-1.git5930b9a.fc40
+    crypto-policies-scripts:
+        20241011-1.git5930b9a.fc40
+    cryptsetup-libs:
+        2.7.5-1.fc40
+    curl:
+        8.6.0-10.fc40
+    cyrus-sasl-lib:
+        2.1.28-19.fc40
+    dbus:
+        1:1.14.10-3.fc40
+    dbus-broker:
+        36-2.fc40
+    dbus-common:
+        1:1.14.10-3.fc40
+    dbus-libs:
+        1:1.14.10-3.fc40
+    device-mapper:
+        1.02.199-1.fc40
+    device-mapper-libs:
+        1.02.199-1.fc40
+    dmidecode:
+        1:3.6-1.fc40
+    dnf:
+        4.23.0-1.fc40.1
+    dnf-data:
+        4.23.0-1.fc40.1
+    dnf-plugins-core:
+        4.10.1-1.fc40
+    dnf-utils:
+        4.10.1-1.fc40
+    dracut:
+        102-2.fc40
+    elfutils-default-yama-scope:
+        0.192-9.fc40
+    elfutils-libelf:
+        0.192-9.fc40
+    elfutils-libs:
+        0.192-9.fc40
+    expat:
+        2.7.1-1.fc40
+    fedora-gpg-keys:
+        40-2
+    fedora-release-common:
+        40-40
+    fedora-release-container:
+        40-40
+    fedora-release-identity-container:
+        40-40
+    fedora-repos:
+        40-2
+    file:
+        5.45-4.fc40
+    file-libs:
+        5.45-4.fc40
+    filesystem:
+        3.18-8.fc40
+    findutils:
+        1:4.9.0-9.fc40
+    fuse3-libs:
+        3.16.2-3.fc40
+    gawk:
+        5.3.0-3.fc40
+    gdbm:
+        1:1.23-6.fc40
+    gdbm-libs:
+        1:1.23-6.fc40
+    gettext-envsubst:
+        0.22.5-4.fc40
+    gettext-libs:
+        0.22.5-4.fc40
+    gettext-runtime:
+        0.22.5-4.fc40
+    git:
+        2.49.0-1.fc40
+    git-core:
+        2.49.0-1.fc40
+    git-core-doc:
+        2.49.0-1.fc40
+    glib2:
+        2.80.5-1.fc40
+    glibc:
+        2.39-38.fc40
+    glibc-common:
+        2.39-38.fc40
+    glibc-langpack-en:
+        2.39-38.fc40
+    glibc-minimal-langpack:
+        2.39-38.fc40
+    gmp:
+        1:6.2.1-8.fc40
+    gnupg2:
+        2.4.4-1.fc40
+    gnutls:
+        3.8.9-1.fc40
+    gpg-pubkey.(none):
+        73d76b3f-63dace60,a15b79cc-63d04c2c
+    grep:
+        3.11-7.fc40
+    groff-base:
+        1.23.0-6.fc40
+    grub2-common:
+        1:2.12-16.fc40
+    grub2-tools:
+        1:2.12-16.fc40
+    grub2-tools-minimal:
+        1:2.12-16.fc40
+    grubby:
+        8.40-75.fc40
+    gzip:
+        1.13-1.fc40
+    hwdata:
+        0.394-1.fc40
+    ima-evm-utils:
+        1.5-4.fc40
+    json-c:
+        0.17-3.fc40
+    kbd:
+        2.6.4-3.fc40
+    kbd-legacy:
+        2.6.4-3.fc40
+    kbd-misc:
+        2.6.4-3.fc40
+    keyutils-libs:
+        1.6.3-3.fc40
+    kmod:
+        31-5.fc40
+    kmod-libs:
+        31-5.fc40
+    kpartx:
+        0.9.7-7.fc40
+    krb5-libs:
+        1.21.3-3.fc40
+    less:
+        643-6.fc40
+    libacl:
+        2.3.2-1.fc40
+    libarchive:
+        3.7.2-7.fc40
+    libassuan:
+        2.5.7-1.fc40
+    libattr:
+        2.5.2-3.fc40
+    libb2:
+        0.98.1-11.fc40
+    libblkid:
+        2.40.2-1.fc40
+    libbrotli:
+        1.1.0-3.fc40
+    libcap:
+        2.69-8.fc40
+    libcap-ng:
+        0.8.4-4.fc40
+    libcbor:
+        0.11.0-1.fc40
+    libcom_err:
+        1.47.0-5.fc40
+    libcomps:
+        0.1.20-5.fc40
+    libcurl:
+        8.6.0-10.fc40
+    libdnf:
+        0.74.0-1.fc40
+    libeconf:
+        0.6.2-2.fc40
+    libedit:
+        3.1-54.20250104cvs.fc40
+    libevent:
+        2.1.12-12.fc40
+    libfdisk:
+        2.40.2-1.fc40
+    libffi:
+        3.4.4-7.fc40
+    libfido2:
+        1.14.0-4.fc40
+    libfsverity:
+        1.4-12.fc40
+    libgcc:
+        14.2.1-3.fc40
+    libgcrypt:
+        1.10.3-3.fc40
+    libgomp:
+        14.2.1-3.fc40
+    libgpg-error:
+        1.49-1.fc40
+    libidn2:
+        2.3.8-1.fc40
+    libkcapi:
+        1.5.0-4.fc40
+    libkcapi-hasher:
+        1.5.0-4.fc40
+    libkcapi-hmaccalc:
+        1.5.0-4.fc40
+    libksba:
+        1.6.6-1.fc40
+    libmodulemd:
+        2.15.0-12.fc40
+    libmount:
+        2.40.2-1.fc40
+    libnghttp2:
+        1.59.0-3.fc40
+    libnsl2:
+        2.0.1-1.fc40
+    libpsl:
+        0.21.5-3.fc40
+    libpwquality:
+        1.4.5-9.fc40
+    librepo:
+        1.19.0-1.fc40
+    libseccomp:
+        2.5.5-1.fc40
+    libselinux:
+        3.7-5.fc40
+    libsemanage:
+        3.7-2.fc40
+    libsepol:
+        3.7-2.fc40
+    libsmartcols:
+        2.40.2-1.fc40
+    libsolv:
+        0.7.32-4.fc40
+    libssh:
+        0.10.6-5.fc40
+    libssh-config:
+        0.10.6-5.fc40
+    libstdc++:
+        14.2.1-3.fc40
+    libtasn1:
+        4.20.0-1.fc40
+    libtextstyle:
+        0.22.5-4.fc40
+    libtirpc:
+        1.3.6-1.rc3.fc40
+    libtool-ltdl:
+        2.4.7-10.fc40
+    libunistring:
+        1.1-7.fc40
+    libutempter:
+        1.2.1-13.fc40
+    libuuid:
+        2.40.2-1.fc40
+    libverto:
+        0.3.2-8.fc40
+    libxcrypt:
+        4.4.38-7.fc40
+    libxml2:
+        2.12.10-1.fc40
+    libyaml:
+        0.2.5-14.fc40
+    libzstd:
+        1.5.7-1.fc40
+    lua-libs:
+        5.4.6-5.fc40
+    lz4-libs:
+        1.9.4-6.fc40
+    memstrack:
+        0.2.5-4.fc40
+    mpdecimal:
+        2.5.1-9.fc40
+    mpfr:
+        4.2.1-4.fc40
+    ncurses:
+        6.4-12.20240127.fc40
+    ncurses-base:
+        6.4-12.20240127.fc40
+    ncurses-libs:
+        6.4-12.20240127.fc40
+    net-tools:
+        2.0-0.69.20160912git.fc40
+    nettle:
+        3.9.1-6.fc40
+    npth:
+        1.7-1.fc40
+    openldap:
+        2.6.9-1.fc40
+    openssh:
+        9.6p1-2.fc40
+    openssh-clients:
+        9.6p1-2.fc40
+    openssh-server:
+        9.6p1-2.fc40
+    openssl:
+        1:3.2.4-1.fc40
+    openssl-libs:
+        1:3.2.4-1.fc40
+    os-prober:
+        1.81-6.fc40
+    p11-kit:
+        0.25.5-1.fc40
+    p11-kit-trust:
+        0.25.5-1.fc40
+    pam:
+        1.6.1-5.fc40
+    pam-libs:
+        1.6.1-5.fc40
+    pciutils:
+        3.13.0-1.fc40
+    pciutils-libs:
+        3.13.0-1.fc40
+    pcre2:
+        10.44-1.fc40
+    pcre2-syntax:
+        10.44-1.fc40
+    perl-AutoLoader:
+        5.74-508.fc40
+    perl-B:
+        1.88-508.fc40
+    perl-Carp:
+        1.54-502.fc40
+    perl-Class-Struct:
+        0.68-508.fc40
+    perl-Data-Dumper:
+        2.188-503.fc40
+    perl-Digest:
+        1.20-502.fc40
+    perl-Digest-MD5:
+        2.59-3.fc40
+    perl-DynaLoader:
+        1.54-508.fc40
+    perl-Encode:
+        4:3.21-505.fc40
+    perl-Errno:
+        1.37-508.fc40
+    perl-Error:
+        1:0.17029-15.fc40
+    perl-Exporter:
+        5.78-3.fc40
+    perl-Fcntl:
+        1.15-508.fc40
+    perl-File-Basename:
+        2.86-508.fc40
+    perl-File-Find:
+        1.43-508.fc40
+    perl-File-Path:
+        2.18-503.fc40
+    perl-File-Temp:
+        1:0.231.100-503.fc40
+    perl-File-stat:
+        1.13-508.fc40
+    perl-FileHandle:
+        2.05-508.fc40
+    perl-Getopt-Long:
+        1:2.57-4.fc40
+    perl-Getopt-Std:
+        1.13-508.fc40
+    perl-Git:
+        2.49.0-1.fc40
+    perl-HTTP-Tiny:
+        0.088-5.fc40
+    perl-IO:
+        1.52-508.fc40
+    perl-IO-Socket-IP:
+        0.42-2.fc40
+    perl-IO-Socket-SSL:
+        2.085-1.fc40
+    perl-IPC-Open3:
+        1.22-508.fc40
+    perl-MIME-Base64:
+        3.16-503.fc40
+    perl-Mozilla-CA:
+        20231213-3.fc40
+    perl-Net-SSLeay:
+        1.94-3.fc40
+    perl-POSIX:
+        2.13-508.fc40
+    perl-PathTools:
+        3.89-502.fc40
+    perl-Pod-Escapes:
+        1:1.07-503.fc40
+    perl-Pod-Perldoc:
+        3.28.01-503.fc40
+    perl-Pod-Simple:
+        1:3.45-6.fc40
+    perl-Pod-Usage:
+        4:2.03-504.fc40
+    perl-Scalar-List-Utils:
+        5:1.63-503.fc40
+    perl-SelectSaver:
+        1.02-508.fc40
+    perl-Socket:
+        4:2.038-1.fc40
+    perl-Storable:
+        1:3.32-502.fc40
+    perl-Symbol:
+        1.09-508.fc40
+    perl-Term-ANSIColor:
+        5.01-504.fc40
+    perl-Term-Cap:
+        1.18-503.fc40
+    perl-TermReadKey:
+        2.38-21.fc40
+    perl-Text-ParseWords:
+        3.31-502.fc40
+    perl-Text-Tabs+Wrap:
+        2024.001-1.fc40
+    perl-Time-Local:
+        2:1.350-5.fc40
+    perl-URI:
+        5.28-1.fc40
+    perl-base:
+        2.27-508.fc40
+    perl-constant:
+        1.33-503.fc40
+    perl-if:
+        0.61.000-508.fc40
+    perl-interpreter:
+        4:5.38.4-508.fc40
+    perl-lib:
+        0.65-508.fc40
+    perl-libnet:
+        3.15-503.fc40
+    perl-libs:
+        4:5.38.4-508.fc40
+    perl-locale:
+        1.10-508.fc40
+    perl-mro:
+        1.28-508.fc40
+    perl-overload:
+        1.37-508.fc40
+    perl-overloading:
+        0.02-508.fc40
+    perl-parent:
+        1:0.241-502.fc40
+    perl-podlators:
+        1:5.01-502.fc40
+    perl-vars:
+        1.05-508.fc40
+    pigz:
+        2.8-4.fc40
+    popt:
+        1.19-6.fc40
+    procps-ng:
+        4.0.4-3.fc40
+    publicsuffix-list-dafsa:
+        20250116-1.fc40
+    python-pip-wheel:
+        23.3.2-2.fc40
+    python3:
+        3.12.10-2.fc40
+    python3-dateutil:
+        1:2.8.2-13.fc40
+    python3-dbus:
+        1.3.2-6.fc40
+    python3-distro:
+        1.9.0-3.fc40
+    python3-dnf:
+        4.23.0-1.fc40.1
+    python3-dnf-plugins-core:
+        4.10.1-1.fc40
+    python3-hawkey:
+        0.74.0-1.fc40
+    python3-libcomps:
+        0.1.20-5.fc40
+    python3-libdnf:
+        0.74.0-1.fc40
+    python3-libs:
+        3.12.10-2.fc40
+    python3-pip:
+        23.3.2-2.fc40
+    python3-rpm:
+        4.19.1.1-1.fc40
+    python3-six:
+        1.16.0-14.fc40
+    python3-systemd:
+        235-9.fc40
+    readline:
+        8.2-8.fc40
+    rootfiles:
+        8.1-36.fc40
+    rpm:
+        4.19.1.1-1.fc40
+    rpm-build-libs:
+        4.19.1.1-1.fc40
+    rpm-libs:
+        4.19.1.1-1.fc40
+    rpm-sequoia:
+        1.7.0-5.fc40
+    rpm-sign-libs:
+        4.19.1.1-1.fc40
+    salt:
+        3006.19-0
+    salt-minion:
+        3006.19-0
+    sed:
+        4.9-1.fc40
+    setup:
+        2.14.5-2.fc40
+    shadow-utils:
+        2:4.15.1-4.fc40
+    sqlite-libs:
+        3.45.1-3.fc40
+    sudo:
+        1.9.15-2.p5.fc40
+    systemd:
+        255.18-1.fc40
+    systemd-libs:
+        255.18-1.fc40
+    systemd-pam:
+        255.18-1.fc40
+    systemd-udev:
+        255.18-1.fc40
+    tar:
+        2:1.35-3.fc40
+    tpm2-tools:
+        5.7-1.fc40
+    tpm2-tss:
+        4.1.3-1.fc40
+    tpm2-tss-fapi:
+        4.1.3-1.fc40
+    tzdata:
+        2025b-1.fc40
+    util-linux:
+        2.40.2-1.fc40
+    util-linux-core:
+        2.40.2-1.fc40
+    vim-data:
+        2:9.1.1275-1.fc40
+    vim-minimal:
+        2:9.1.1275-1.fc40
+    which:
+        2.21-41.fc40
+    xz:
+        1:5.8.1-2.fc40
+    xz-libs:
+        1:5.8.1-2.fc40
+    yum:
+        4.23.0-1.fc40.1
+    zchunk-libs:
+        1.5.1-1.fc40
+    zlib-ng-compat:
+        2.1.7-2.fc40
+    zstd:
+        1.5.7-1.fc40
+# salt-call --local pip.list
+local:
+    ----------
+    CherryPy:
+        18.10.0
+    Jinja2:
+        3.1.6
+    MarkupSafe:
+        2.1.2
+    PyYAML:
+        6.0.1
+    autocommand:
+        2.2.2
+    backports.tarfile:
+        1.2.0
+    certifi:
+        2024.7.4
+    cffi:
+        2.0.0
+    charset-normalizer:
+        3.2.0
+    cheroot:
+        8.5.2
+    contextvars:
+        2.4
+    croniter:
+        2.0.5
+    cryptography:
+        42.0.5
+    distro:
+        1.5.0
+    frozenlist:
+        1.7.0
+    idna:
+        3.7
+    immutables:
+        0.21
+    importlib_metadata:
+        8.7.0
+    jaraco.classes:
+        3.2.1
+    jaraco.collections:
+        3.4.0
+    jaraco.context:
+        6.0.1
+    jaraco.functools:
+        4.2.1
+    jaraco.text:
+        4.0.0
+    jmespath:
+        1.0.1
+    looseversion:
+        1.0.2
+    more-itertools:
+        10.7.0
+    msgpack:
+        1.0.2
+    packaging:
+        24.0
+    pip:
+        25.2
+    portend:
+        2.4
+    psutil:
+        5.8.0
+    pyOpenSSL:
+        24.0.0
+    pycparser:
+        2.21
+    pycryptodomex:
+        3.19.1
+    python-dateutil:
+        2.8.1
+    python-gnupg:
+        0.4.8
+    pytz:
+        2022.1
+    pyzmq:
+        23.2.0
+    relenv:
+        0.22.2
+    requests:
+        2.32.5
+    rpm_vercmp:
+        0.1.2
+    salt:
+        3006.19
+    setproctitle:
+        1.3.2
+    setuptools:
+        80.9.0
+    six:
+        1.16.0
+    tempora:
+        4.1.1
+    timelib:
+        0.3.0
+    urllib3:
+        2.6.3
+    wheel:
+        0.45.1
+    zc.lockfile:
+        1.4
+    zipp:
+        3.23.0
+# salt-call --local locale.list_avail
+local:
+    - C
+    - C.utf8
+    - POSIX
+    - en_AG
+    - en_AU
+    - en_AU.utf8
+    - en_BW
+    - en_BW.utf8
+    - en_CA
+    - en_CA.utf8
+    - en_DK
+    - en_DK.utf8
+    - en_GB
+    - en_GB.iso885915
+    - en_GB.utf8
+    - en_HK
+    - en_HK.utf8
+    - en_IE
+    - en_IE.utf8
+    - en_IE@euro
+    - en_IL
+    - en_IN
+    - en_NG
+    - en_NZ
+    - en_NZ.utf8
+    - en_PH
+    - en_PH.utf8
+    - en_SC.utf8
+    - en_SG
+    - en_SG.utf8
+    - en_US
+    - en_US.iso885915
+    - en_US.utf8
+    - en_ZA
+    - en_ZA.utf8
+    - en_ZM
+    - en_ZW
+    - en_ZW.utf8

@@ -1,5 +1,18 @@
 # Changelog
 
+# [1.111.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.110.0...v1.111.0) (2026-01-13)
+
+
+### Continuous Integration
+
+* fix CI_JOB_NAME variable ([ff19349](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/ff19349de6d23b0f1b5fc5060b264df0a24d8b10))
+
+
+### Features
+
+* **salt:** upgrade to 3006.19 ([3dd6335](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/3dd6335fe02762d34b3cbf6ccdbbc223d77e7dc5))
+* **salt:** upgrade to 3007.11 ([b4b30c8](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/b4b30c8eacef466552214e21a75e8f27dfa11e11))
+
 # [1.110.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.109.1...v1.110.0) (2025-12-19)
 
 
