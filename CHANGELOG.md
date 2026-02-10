@@ -1,5 +1,13 @@
 # Changelog
 
+# [1.112.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.111.0...v1.112.0) (2026-02-10)
+
+
+### Features
+
+* **salt:** upgrade to 3006.20 ([88fdb9e](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/88fdb9ef9fde6a520a85e962c579f2f52f65c3ef))
+* **salt:** upgrade to 3007.12 ([8dad19e](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/8dad19e5b882100a6cf87e47ae9f333d922f0b5f))
+
 # [1.111.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.110.0...v1.111.0) (2026-01-13)
 
 
