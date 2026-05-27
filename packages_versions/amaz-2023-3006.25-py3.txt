@@ -1,20 +1,20 @@
-amaz-2023-3007.12-py3
+amaz-2023-3006.25-py3
 Salt install method: onedir
 # salt-call --versions-report
 Salt Version:
-          Salt: 3007.12
+          Salt: 3006.25
  
 Python Version:
-        Python: 3.10.19 (main, Feb  5 2026, 07:05:38) [GCC 11.2.0]
+        Python: 3.10.20 (main, Apr 22 2026, 05:54:37) [GCC 11.2.0]
  
 Dependency Versions:
           cffi: 2.0.0
-      cherrypy: 18.8.0
-  cryptography: 42.0.5
+      cherrypy: unknown
+  cryptography: 46.0.7
       dateutil: 2.8.2
      docker-py: Not Installed
-         gitdb: Not Installed
-     gitpython: Not Installed
+         gitdb: 4.0.12
+     gitpython: 3.1.46
         Jinja2: 3.1.6
        libgit2: Not Installed
   looseversion: 1.3.0
@@ -26,19 +26,16 @@ Dependency Versions:
      packaging: 24.0
      pycparser: 2.21
       pycrypto: Not Installed
-  pycryptodome: 3.19.1
+  pycryptodome: 3.23.0
         pygit2: Not Installed
   python-gnupg: 0.5.2
         PyYAML: 6.0.1
          PyZMQ: 25.1.2
-        relenv: 0.22.3
-         smmap: Not Installed
+        relenv: 0.22.8
+         smmap: 5.0.2
        timelib: 0.3.0
-       Tornado: 6.5.4
+       Tornado: 6.5.5
            ZMQ: 4.3.4
- 
-Salt Package Information:
-  Package Type: onedir
  
 System Versions:
           dist: amzn 2023.11.20260514 
@@ -108,16 +105,16 @@ local:
     pythonversion:
         - 3
         - 10
-        - 19
+        - 20
         - final
         - 0
     saltpath:
         /opt/saltstack/salt/lib/python3.10/site-packages/salt
     saltversion:
-        3007.12
+        3006.25
     saltversioninfo:
-        - 3007
-        - 12
+        - 3006
+        - 25
     systemd:
         ----------
         features:
@@ -576,9 +573,9 @@ local:
     rpm-sign-libs:
         4.16.1.3-29.amzn2023.0.6
     salt:
-        3007.12-0
+        3006.25-0
     salt-minion:
-        3007.12-0
+        3006.25-0
     sed:
         4.8-7.amzn2023.0.2
     setup:
@@ -628,6 +625,8 @@ local:
     ----------
     CherryPy:
         18.8.0
+    GitPython:
+        3.1.46
     Jinja2:
         3.1.6
     MarkupSafe:
@@ -637,15 +636,19 @@ local:
     aiohappyeyeballs:
         2.6.1
     aiohttp:
-        3.13.3
+        3.13.5
     aiosignal:
         1.4.0
+    apache-libcloud:
+        3.9.0
     async-timeout:
         4.0.3
     attrs:
         23.2.0
     autocommand:
         2.2.2
+    backports.tarfile:
+        1.2.0
     certifi:
         2024.7.4
     cffi:
@@ -653,13 +656,13 @@ local:
     charset-normalizer:
         3.2.0
     cheroot:
-        10.0.0
+        11.1.2
     contextvars:
         2.4
     croniter:
-        2.0.5
+        6.0.0
     cryptography:
-        42.0.5
+        46.0.7
     distlib:
         0.4.0
     distro:
@@ -668,6 +671,8 @@ local:
         3.20.3
     frozenlist:
         1.4.1
+    gitdb:
+        4.0.12
     idna:
         3.7
     immutables:
@@ -677,13 +682,15 @@ local:
     jaraco.collections:
         4.1.0
     jaraco.context:
-        4.3.0
+        6.1.0
     jaraco.functools:
         4.1.0
     jaraco.text:
         4.0.0
     jmespath:
-        1.0.1
+        1.1.0
+    linode-python:
+        1.1.1
     looseversion:
         1.3.0
     more-itertools:
@@ -703,13 +710,15 @@ local:
     propcache:
         0.3.2
     psutil:
-        5.9.6
+        7.2.2
     pyOpenSSL:
-        24.0.0
+        26.0.0
+    pyasn1:
+        0.6.3
     pycparser:
         2.21
     pycryptodomex:
-        3.19.1
+        3.23.0
     python-dateutil:
         2.8.2
     python-gnupg:
@@ -719,33 +728,35 @@ local:
     pyzmq:
         25.1.2
     relenv:
-        0.22.3
+        0.22.8
     requests:
-        2.32.5
+        2.33.1
     rpm_vercmp:
         0.1.2
     salt:
-        3007.12
+        3006.25
     setproctitle:
         1.3.2
     setuptools:
-        80.10.2
+        82.0.0
     six:
         1.16.0
+    smmap:
+        5.0.2
     tempora:
         5.3.0
     timelib:
         0.3.0
-    tornado:
-        6.5.4
     typing_extensions:
         4.14.1
     urllib3:
-        2.6.3
+        2.7.0
     virtualenv:
         20.36.1
+    vultr:
+        1.0.1
     wheel:
-        0.46.3
+        0.47.0
     yarl:
         1.20.1
     zc.lockfile:

@@ -2,39 +2,39 @@ fedo-41.0-3007.12-py3
 Salt install method: onedir
 # salt-call --versions-report
 Salt Version:
-          Salt: 3006.20
+          Salt: 3006.25
  
 Python Version:
-        Python: 3.10.19 (main, Feb  5 2026, 07:05:38) [GCC 11.2.0]
+        Python: 3.10.20 (main, Apr 22 2026, 05:54:37) [GCC 11.2.0]
  
 Dependency Versions:
           cffi: 2.0.0
-      cherrypy: 18.10.0
-  cryptography: 42.0.5
-      dateutil: 2.8.1
+      cherrypy: unknown
+  cryptography: 46.0.7
+      dateutil: 2.8.2
      docker-py: Not Installed
-         gitdb: Not Installed
-     gitpython: Not Installed
+         gitdb: 4.0.12
+     gitpython: 3.1.46
         Jinja2: 3.1.6
        libgit2: Not Installed
-  looseversion: 1.0.2
+  looseversion: 1.3.0
       M2Crypto: Not Installed
           Mako: Not Installed
-       msgpack: 1.0.2
+       msgpack: 1.0.7
   msgpack-pure: Not Installed
   mysql-python: Not Installed
      packaging: 24.0
      pycparser: 2.21
       pycrypto: Not Installed
-  pycryptodome: 3.19.1
+  pycryptodome: 3.23.0
         pygit2: Not Installed
-  python-gnupg: 0.4.8
+  python-gnupg: 0.5.2
         PyYAML: 6.0.1
-         PyZMQ: 23.2.0
-        relenv: 0.22.3
-         smmap: Not Installed
+         PyZMQ: 25.1.2
+        relenv: 0.22.8
+         smmap: 5.0.2
        timelib: 0.3.0
-       Tornado: 4.5.3
+       Tornado: 6.5.5
            ZMQ: 4.3.4
  
 System Versions:
@@ -103,16 +103,16 @@ local:
     pythonversion:
         - 3
         - 10
-        - 19
+        - 20
         - final
         - 0
     saltpath:
         /opt/saltstack/salt/lib/python3.10/site-packages/salt
     saltversion:
-        3006.20
+        3006.25
     saltversioninfo:
         - 3006
-        - 20
+        - 25
     systemd:
         ----------
         features:
@@ -643,9 +643,9 @@ local:
     rpm-sign-libs:
         4.20.1-1.fc41
     salt:
-        3006.20-0
+        3006.25-0
     salt-minion:
-        3006.20-0
+        3006.25-0
     sdbus-cpp:
         1.5.0-3.fc41
     sed:
@@ -700,13 +700,27 @@ local:
 local:
     ----------
     CherryPy:
-        18.10.0
+        18.8.0
+    GitPython:
+        3.1.46
     Jinja2:
         3.1.6
     MarkupSafe:
-        2.1.2
+        2.1.3
     PyYAML:
         6.0.1
+    aiohappyeyeballs:
+        2.6.1
+    aiohttp:
+        3.13.5
+    aiosignal:
+        1.4.0
+    apache-libcloud:
+        3.9.0
+    async-timeout:
+        4.0.3
+    attrs:
+        23.2.0
     autocommand:
         2.2.2
     backports.tarfile:
@@ -718,45 +732,49 @@ local:
     charset-normalizer:
         3.2.0
     cheroot:
-        8.5.2
+        11.1.2
     contextvars:
         2.4
     croniter:
-        2.0.5
+        6.0.0
     cryptography:
-        42.0.5
+        46.0.7
     distlib:
         0.4.0
     distro:
-        1.5.0
+        1.8.0
     filelock:
         3.20.3
     frozenlist:
-        1.7.0
+        1.4.1
+    gitdb:
+        4.0.12
     idna:
         3.7
     immutables:
         0.21
     importlib_metadata:
         8.7.0
-    jaraco.classes:
-        3.2.1
     jaraco.collections:
-        3.4.0
+        4.1.0
     jaraco.context:
-        6.0.1
+        6.1.0
     jaraco.functools:
-        4.2.1
+        4.1.0
     jaraco.text:
         4.0.0
     jmespath:
-        1.0.1
+        1.1.0
+    linode-python:
+        1.1.1
     looseversion:
-        1.0.2
+        1.3.0
     more-itertools:
-        10.7.0
+        9.1.0
     msgpack:
-        1.0.2
+        1.0.7
+    multidict:
+        6.0.4
     packaging:
         24.0
     pip:
@@ -764,51 +782,61 @@ local:
     platformdirs:
         4.5.1
     portend:
-        2.4
+        3.1.0
+    propcache:
+        0.3.2
     psutil:
-        5.8.0
+        7.2.2
     pyOpenSSL:
-        24.0.0
+        26.0.0
+    pyasn1:
+        0.6.3
     pycparser:
         2.21
     pycryptodomex:
-        3.19.1
+        3.23.0
     python-dateutil:
-        2.8.1
+        2.8.2
     python-gnupg:
-        0.4.8
+        0.5.2
     pytz:
-        2022.1
+        2024.1
     pyzmq:
-        23.2.0
+        25.1.2
     relenv:
-        0.22.3
+        0.22.8
     requests:
-        2.32.5
+        2.33.1
     rpm_vercmp:
         0.1.2
     salt:
-        3006.20
+        3006.25
     setproctitle:
         1.3.2
     setuptools:
-        80.10.2
+        82.0.0
     six:
         1.16.0
+    smmap:
+        5.0.2
     tempora:
-        4.1.1
+        5.3.0
     timelib:
         0.3.0
     typing_extensions:
-        4.15.0
+        4.14.1
     urllib3:
-        2.6.3
+        2.7.0
     virtualenv:
         20.36.1
+    vultr:
+        1.0.1
     wheel:
-        0.46.3
+        0.47.0
+    yarl:
+        1.20.1
     zc.lockfile:
-        1.4
+        3.0.post1
     zipp:
         3.23.0
 # salt-call --local locale.list_avail
