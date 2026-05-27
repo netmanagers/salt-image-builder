@@ -607,8 +607,6 @@ local:
         4.16.1.3-40.el9
     rpm-libs:
         4.16.1.3-40.el9
-    rpm-plugin-systemd-inhibit:
-        4.16.1.3-40.el9
     rpm-sign-libs:
         4.16.1.3-40.el9
     salt:
