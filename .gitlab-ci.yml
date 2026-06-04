@@ -350,9 +350,6 @@ ubun-22.0-master-py3: {extends: '.build_image_failure_permitted' , variables: {D
 ubun-22.0-3008.0-py3: {extends: '.build_image_failure_forbidden' , variables: {DN: 'ubuntu'               , DV: '22.04'  , PI: 'apt', SIM: 'onedir', SV: '3008.0'   , SVB: ''       , PV: '3'   , EP: ''}}
 ubun-22.0-3007.14-py3: {extends: '.build_image_failure_forbidden' , variables: {DN: 'ubuntu'               , DV: '22.04'  , PI: 'apt', SIM: 'onedir', SV: '3007.14'  , SVB: ''       , PV: '3'   , EP: ''}}
 ubun-22.0-3006.25-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'               , DV: '22.04'  , PI: 'apt', SIM: 'onedir', SV: '3006.25' , SVB: ''       , PV: '3'   , EP: ''}}
-ubun-20.0-3008.0-py3: {extends: '.build_image_failure_forbidden' , variables: {DN: 'ubuntu'               , DV: '20.04'  , PI: 'apt', SIM: 'onedir', SV: '3008.0'   , SVB: ''       , PV: '3'   , EP: ''}}
-ubun-20.0-3007.14-py3: {extends: '.build_image_failure_forbidden' , variables: {DN: 'ubuntu'               , DV: '20.04'  , PI: 'apt', SIM: 'onedir', SV: '3007.14'  , SVB: ''       , PV: '3'   , EP: ''}}
-ubun-20.0-3006.25-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'ubuntu'               , DV: '20.04'  , PI: 'apt', SIM: 'onedir', SV: '3006.25' , SVB: ''       , PV: '3'   , EP: ''}}
 # yamllint enable rule:commas rule:line-length
 
 ###############################################################################
