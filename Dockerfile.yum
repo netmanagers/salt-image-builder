@@ -25,7 +25,15 @@ RUN if [[ "${DISTRO_NAME}" = "centos" ]]; then \
       # Install EPEL repo for `centos`
       yum -y install epel-release; \
     fi \
- && yum -y swap curl-minimal curl \
+ && if  [[ "${DISTRO_NAME}" =~ ^(almalinux|oraclelinux|rockylinux/rockylinux)$ ]]  && [[ "${DISTRO_VERSION}" -lt 10 ]]; then \
+      yum -y swap curl-minimal curl; \
+    fi \
+ && if  [[ "${DISTRO_NAME}" =~ ^(quay.io/centos/centos)$ ]]  && [[ "${DISTRO_VERSION}" =~ ^(stream9)$ ]]; then \
+      yum -y swap curl-minimal curl; \
+    fi \
+ && if  [[ "${DISTRO_NAME}" =~ ^(amazonlinux)$ ]]; then \
+      yum -y swap curl-minimal curl; \
+    fi \
  && yum -y install ${PKGS} \
  && yum clean all
 ARG CACHEBUST=1
