@@ -198,7 +198,7 @@ local:
     emacs-filesystem:
         1:26.1-15.el8_10
     expat:
-        2.5.0-1.el8_10
+        2.5.0-2.el8_10
     file-libs:
         5.33-27.el8_10
     filesystem:
@@ -222,8 +222,6 @@ local:
     glibc:
         2.28-251.el8_10.37
     glibc-common:
-        2.28-251.el8_10.37
-    glibc-gconv-extra:
         2.28-251.el8_10.37
     glibc-langpack-en:
         2.28-251.el8_10.37
@@ -625,16 +623,12 @@ local:
         2:1.30-11.el8_10
     tpm2-tss:
         2.3.2-6.el8
-    trousers:
-        0.3.15-2.el8
-    trousers-lib:
-        0.3.15-2.el8
     tzdata:
         2026b-1.el8
     util-linux:
         2.32.1-48.el8_10
     vim-minimal:
-        2:8.0.1763-22.el8_10.3
+        2:8.0.1763-23.el8_10
     which:
         2.21-21.el8_10
     xz:

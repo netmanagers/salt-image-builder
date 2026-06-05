@@ -38,12 +38,12 @@ Dependency Versions:
            ZMQ: 4.3.4
  
 System Versions:
-          dist: amzn 2023.11.20260514 
+          dist: amzn 2023.11.20260526 
         locale: utf-8
        machine: x86_64
        release: 5.15.154+
         system: Linux
-       version: Amazon Linux 2023.11.20260514 
+       version: Amazon Linux 2023.11.20260526 
  
 # salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
 local:
@@ -67,7 +67,7 @@ local:
         timezone:
             UTC
     lsb_distrib_codename:
-        Amazon Linux 2023.11.20260514
+        Amazon Linux 2023.11.20260526
     lsb_distrib_id:
         Amazon Linux
     lsb_distrib_release:
@@ -80,7 +80,7 @@ local:
         x86_64
     osbuild:
     oscodename:
-        Amazon Linux 2023.11.20260514
+        Amazon Linux 2023.11.20260526
     osfinger:
         Amazon Linux-2023
     osfullname:
@@ -133,7 +133,7 @@ local:
     alternatives:
         1.15-2.amzn2023.0.2
     amazon-linux-repo-cdn:
-        2023.11.20260514-0.amzn2023
+        2023.11.20260526-0.amzn2023
     audit-libs:
         3.1.5-1.amzn2023.0.2
     basesystem:
@@ -261,7 +261,7 @@ local:
     libblkid:
         2.37.4-1.amzn2023.0.4
     libcap:
-        2.73-1.amzn2023.0.6
+        2.73-1.amzn2023.0.7
     libcap-ng:
         0.8.2-4.amzn2023.0.2
     libcbor:
@@ -323,7 +323,7 @@ local:
     libsmartcols:
         2.37.4-1.amzn2023.0.4
     libsolv:
-        0.7.22-1.amzn2023.0.2
+        0.7.22-1.amzn2023.0.3
     libstdc++:
         14.2.1-7.amzn2023.0.2
     libtasn1:
@@ -369,11 +369,11 @@ local:
     openldap:
         2.4.57-6.amzn2023.0.7
     openssh:
-        8.7p1-8.amzn2023.0.17
+        8.7p1-8.amzn2023.0.18
     openssh-clients:
-        8.7p1-8.amzn2023.0.17
+        8.7p1-8.amzn2023.0.18
     openssh-server:
-        8.7p1-8.amzn2023.0.17
+        8.7p1-8.amzn2023.0.18
     openssl:
         1:3.5.5-1.amzn2023.0.4
     openssl-fips-provider-latest:
@@ -403,15 +403,15 @@ local:
     perl-Class-Struct:
         0.66-477.amzn2023.0.8
     perl-Data-Dumper:
-        2.191-522.amzn2023.0.2
+        2.191-522.amzn2023.0.3
     perl-Digest:
         1.20-1.amzn2023.0.2
     perl-Digest-MD5:
-        2.59-521.amzn2023.0.1
+        2.59-521.amzn2023.0.2
     perl-DynaLoader:
         1.47-477.amzn2023.0.8
     perl-Encode:
-        4:3.21-520.amzn2023.0.1
+        4:3.21-520.amzn2023.0.2
     perl-Errno:
         1.30-477.amzn2023.0.8
     perl-Error:
@@ -449,15 +449,15 @@ local:
     perl-IPC-Open3:
         1.21-477.amzn2023.0.8
     perl-MIME-Base64:
-        3.16-2.amzn2023.0.2
+        3.16-2.amzn2023.0.3
     perl-NDBM_File:
         1.15-477.amzn2023.0.8
     perl-Net-SSLeay:
-        1.94-3.amzn2023.0.2
+        1.94-3.amzn2023.0.3
     perl-POSIX:
         1.94-477.amzn2023.0.8
     perl-PathTools:
-        3.78-459.amzn2023.0.2
+        3.78-459.amzn2023.0.3
     perl-Pod-Escapes:
         1:1.07-458.amzn2023.0.2
     perl-Pod-Perldoc:
@@ -467,13 +467,13 @@ local:
     perl-Pod-Usage:
         4:2.01-2.amzn2023.0.2
     perl-Scalar-List-Utils:
-        4:1.56-459.amzn2023.0.2
+        4:1.56-459.amzn2023.0.3
     perl-SelectSaver:
         1.02-477.amzn2023.0.8
     perl-Socket:
-        4:2.032-1.amzn2023.0.2
+        4:2.032-1.amzn2023.0.3
     perl-Storable:
-        1:3.37-522.amzn2023.0.1
+        1:3.37-522.amzn2023.0.2
     perl-Symbol:
         1.08-477.amzn2023.0.8
     perl-Term-ANSIColor:
@@ -481,13 +481,13 @@ local:
     perl-Term-Cap:
         1.17-458.amzn2023.0.2
     perl-TermReadKey:
-        2.38-9.amzn2023.0.2
+        2.38-9.amzn2023.0.3
     perl-Text-ParseWords:
         3.30-458.amzn2023.0.2
     perl-Text-Tabs+Wrap:
         2021.0726-1.amzn2023.0.1
     perl-Time-HiRes:
-        4:1.9764-460.amzn2023.0.2
+        4:1.9764-460.amzn2023.0.3
     perl-Time-Local:
         2:1.300-5.amzn2023.0.2
     perl-URI:
@@ -589,7 +589,7 @@ local:
     sudo-python-plugin:
         1.9.15-1.p5.amzn2023.0.3
     system-release:
-        2023.11.20260514-0.amzn2023
+        2023.11.20260526-0.amzn2023
     systemd:
         252.23-11.amzn2023
     systemd-libs:

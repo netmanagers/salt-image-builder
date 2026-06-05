@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.116.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.115.0...v1.116.0) (2026-06-05)
+
+
+### Features
+
+* **ubuntu:** deprecate 20.04 ([e79eea1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/e79eea153ff9485a887677093611bc930b8add76))
+
 # [1.115.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.114.0...v1.115.0) (2026-05-27)
 
 

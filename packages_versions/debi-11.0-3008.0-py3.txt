@@ -293,7 +293,7 @@ local:
     libgpg-error0:
         1.38-2
     libgssapi-krb5-2:
-        1.18.3-6+deb11u7
+        1.18.3-6+deb11u8
     libhogweed6:
         3.7.3-1
     libidn2-0:
@@ -303,15 +303,15 @@ local:
     libjson-c5:
         0.15-2+deb11u1
     libk5crypto3:
-        1.18.3-6+deb11u7
+        1.18.3-6+deb11u8
     libkeyutils1:
         1.6.1-2
     libkmod2:
         28-1
     libkrb5-3:
-        1.18.3-6+deb11u7
+        1.18.3-6+deb11u8
     libkrb5support0:
-        1.18.3-6+deb11u7
+        1.18.3-6+deb11u8
     libksba8:
         1.5.0-3+deb11u2
     libldap-2.4-2:
@@ -489,7 +489,7 @@ local:
     sensible-utils:
         0.0.14
     sudo:
-        1.9.5p2-3+deb11u3
+        1.9.5p2-3+deb11u4
     systemd:
         247.3-7+deb11u8
     systemd-sysv:

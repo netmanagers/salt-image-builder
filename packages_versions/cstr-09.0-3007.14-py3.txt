@@ -376,7 +376,7 @@ local:
     libxcrypt-compat:
         4.4.18-3.el9
     libxml2:
-        2.9.13-14.el9
+        2.9.13-15.el9
     libyaml:
         0.2.5-7.el9
     libzstd:
@@ -648,7 +648,7 @@ local:
     util-linux-core:
         2.37.4-25.el9
     vim-minimal:
-        2:8.2.2637-29.el9
+        2:8.2.2637-31.el9
     which:
         2.21-30.el9
     xz-libs:

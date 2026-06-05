@@ -216,7 +216,7 @@ local:
     emacs-filesystem:
         1:26.1-15.el8_10
     expat:
-        2.5.0-1.el8_10
+        2.5.0-2.el8_10
     file-libs:
         5.33-27.el8_10
     filesystem:
@@ -238,17 +238,19 @@ local:
     glib2:
         2.56.4-169.el8_10
     glibc:
-        2.28-251.0.4.el8_10.34
+        2.28-251.0.4.el8_10.37
     glibc-common:
-        2.28-251.0.4.el8_10.34
+        2.28-251.0.4.el8_10.37
+    glibc-gconv-extra:
+        2.28-251.0.4.el8_10.37
     glibc-langpack-en:
-        2.28-251.0.4.el8_10.34
+        2.28-251.0.4.el8_10.37
     gmp:
         1:6.1.2-11.el8
     gnupg2:
         2.2.20-4.el8_10
     gnutls:
-        3.6.16-8.el8_10.5
+        3.6.16-8.el8_10.6
     gpg-pubkey.(none):
         73d76b3f-63dace60,ad986da3-5cabf60d
     gpgme:
@@ -687,14 +689,18 @@ local:
         2:1.30-11.el8_10
     tpm2-tss:
         2.3.2-6.el8
+    trousers:
+        0.3.15-2.el8
+    trousers-lib:
+        0.3.15-2.el8
     tzdata:
-        2026a-1.0.1.el8
+        2026b-1.0.1.el8
     userspace-rcu:
         0.10.1-4.el8
     util-linux:
         2.32.1-48.0.2.el8_10
     vim-minimal:
-        2:8.0.1763-22.0.1.el8_10.3
+        2:8.0.1763-23.0.1.el8_10
     which:
         2.21-21.el8_10
     xkeyboard-config:

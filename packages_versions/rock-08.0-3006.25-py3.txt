@@ -197,7 +197,7 @@ local:
     emacs-filesystem:
         1:26.1-15.el8_10
     expat:
-        2.5.0-1.el8_10
+        2.5.0-2.el8_10
     file-libs:
         5.33-27.el8_10
     filesystem:
@@ -219,15 +219,15 @@ local:
     glib2:
         2.56.4-169.el8_10
     glibc:
-        2.28-251.el8_10.34
+        2.28-251.el8_10.37
     glibc-common:
-        2.28-251.el8_10.34
+        2.28-251.el8_10.37
     glibc-gconv-extra:
-        2.28-251.el8_10.34
+        2.28-251.el8_10.37
     glibc-langpack-en:
-        2.28-251.el8_10.34
+        2.28-251.el8_10.37
     glibc-minimal-langpack:
-        2.28-251.el8_10.34
+        2.28-251.el8_10.37
     gmp:
         1:6.1.2-12.el8
     gnupg2:
@@ -235,7 +235,7 @@ local:
     gnupg2-smime:
         2.2.20-4.el8_10
     gnutls:
-        3.6.16-8.el8_10.5
+        3.6.16-8.el8_10.6
     gpg-pubkey.(none):
         6d745a60-60287f36,73d76b3f-63dace60
     gpgme:
@@ -595,7 +595,7 @@ local:
     python3-systemd:
         234-8.el8
     python3-unbound:
-        1.16.2-5.9.el8
+        1.16.2-5.10.el8_10
     python36:
         3.6.8-39.module+el8.10.0+1910+234ad790
     python36-devel:
@@ -653,13 +653,13 @@ local:
     trousers-lib:
         0.3.15-2.el8
     tzdata:
-        2026a-1.el8_10
+        2026b-1.el8_10
     unbound-libs:
-        1.16.2-5.9.el8
+        1.16.2-5.10.el8_10
     util-linux:
         2.32.1-48.el8_10
     vim-minimal:
-        2:8.0.1763-22.el8_10.3
+        2:8.0.1763-23.el8_10
     which:
         2.21-21.el8_10
     xkeyboard-config:
