@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.117.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.116.0...v1.117.0) (2026-06-05)
+
+
+### Features
+
+* **debian:** build debian 13 ([7f31924](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/7f31924b69e03fae2d0dd07a2dfd79ece278787d))
+
 # [1.116.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.115.0...v1.116.0) (2026-06-05)
 
 
