@@ -311,14 +311,14 @@ debi-11.0-3006.25-py3: {extends: '.build_image_failure_forbidden', variables: {D
 # Use for both accordingly in order to test against these latest available packages
 # Progress for new releases is visible here: https://bodhi.fedoraproject.org/updates/?search=salt
 # Git-based installs aren't currently working on Fedora 37+, so commented out below
-fedo-41.0-master-py3: {extends: '.build_image_failure_permitted' , variables: {DN: 'fedora'               , DV: '41'     , PI: 'dnf', SIM: 'git'   , SV: 'master'  , SVB: ''       , PV: '3'   , EP: ''}}
-fedo-41.0-3008.0-py3: {extends: '.build_image_failure_forbidden' , variables: {DN: 'fedora'               , DV: '41'     , PI: 'dnf', SIM: 'onedir', SV: '3008.0'   , SVB: 'latest' , PV: '3'   , EP: ''}}
-fedo-41.0-3007.14-py3: {extends: '.build_image_failure_forbidden' , variables: {DN: 'fedora'               , DV: '41'     , PI: 'dnf', SIM: 'onedir', SV: '3007.14'  , SVB: 'latest' , PV: '3'   , EP: ''}}
-fedo-41.0-3006.25-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'               , DV: '41'     , PI: 'dnf', SIM: 'onedir', SV: '3006.25' , SVB: 'latest' , PV: '3'   , EP: ''}}
-fedo-40.0-master-py3: {extends: '.build_image_failure_permitted' , variables: {DN: 'fedora'               , DV: '40'     , PI: 'dnf', SIM: 'git'   , SV: 'master'  , SVB: ''       , PV: '3'   , EP: ''}}
-fedo-40.0-3008.0-py3: {extends: '.build_image_failure_forbidden' , variables: {DN: 'fedora'               , DV: '40'     , PI: 'dnf', SIM: 'onedir', SV: '3008.0'   , SVB: 'latest' , PV: '3'   , EP: ''}}
-fedo-40.0-3007.14-py3: {extends: '.build_image_failure_forbidden' , variables: {DN: 'fedora'               , DV: '40'     , PI: 'dnf', SIM: 'onedir', SV: '3007.14'  , SVB: 'latest' , PV: '3'   , EP: ''}}
-fedo-40.0-3006.25-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'               , DV: '40'     , PI: 'dnf', SIM: 'onedir', SV: '3006.25' , SVB: 'latest' , PV: '3'   , EP: ''}}
+fedo-44.0-master-py3: {extends: '.build_image_failure_permitted' , variables: {DN: 'fedora'               , DV: '44'     , PI: 'dnf', SIM: 'git'   , SV: 'master'  , SVB: ''       , PV: '3'   , EP: ''}}
+fedo-44.0-3008.0-py3: {extends: '.build_image_failure_forbidden' , variables: {DN: 'fedora'               , DV: '44'     , PI: 'dnf', SIM: 'onedir', SV: '3008.0'   , SVB: 'latest' , PV: '3'   , EP: ''}}
+fedo-44.0-3007.14-py3: {extends: '.build_image_failure_forbidden' , variables: {DN: 'fedora'               , DV: '44'     , PI: 'dnf', SIM: 'onedir', SV: '3007.14'  , SVB: 'latest' , PV: '3'   , EP: ''}}
+fedo-44.0-3006.25-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'               , DV: '44'     , PI: 'dnf', SIM: 'onedir', SV: '3006.25' , SVB: 'latest' , PV: '3'   , EP: ''}}
+fedo-43.0-master-py3: {extends: '.build_image_failure_permitted' , variables: {DN: 'fedora'               , DV: '43'     , PI: 'dnf', SIM: 'git'   , SV: 'master'  , SVB: ''       , PV: '3'   , EP: ''}}
+fedo-43.0-3008.0-py3: {extends: '.build_image_failure_forbidden' , variables: {DN: 'fedora'               , DV: '43'     , PI: 'dnf', SIM: 'onedir', SV: '3008.0'   , SVB: 'latest' , PV: '3'   , EP: ''}}
+fedo-43.0-3007.14-py3: {extends: '.build_image_failure_forbidden' , variables: {DN: 'fedora'               , DV: '43'     , PI: 'dnf', SIM: 'onedir', SV: '3007.14'  , SVB: 'latest' , PV: '3'   , EP: ''}}
+fedo-43.0-3006.25-py3: {extends: '.build_image_failure_forbidden', variables: {DN: 'fedora'               , DV: '43'     , PI: 'dnf', SIM: 'onedir', SV: '3006.25' , SVB: 'latest' , PV: '3'   , EP: ''}}
 
 # OPENSUSE
 # For openSUSE, the bootstrap script only allows `latest` to be built using `stable`
