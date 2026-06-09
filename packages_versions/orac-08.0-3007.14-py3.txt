@@ -143,7 +143,7 @@ local:
     bash:
         4.4.20-6.el8_10
     bind-export-libs:
-        32:9.11.36-16.el8_10.7
+        32:9.11.36-16.el8_10.8
     brotli:
         1.0.6-4.el8_10
     bzip2-libs:

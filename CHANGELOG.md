@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.118.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.117.0...v1.118.0) (2026-06-09)
+
+
+### Features
+
+* **os:** build RHEL 10 based distros ([9955310](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/99553107cec82726ac026514576a711bcad36c36))
+
 # [1.117.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.116.0...v1.117.0) (2026-06-05)
 
 

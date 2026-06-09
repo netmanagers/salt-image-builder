@@ -38,12 +38,12 @@ Dependency Versions:
            ZMQ: 4.3.4
  
 System Versions:
-          dist: opensuse-tumbleweed 20260603 n/a
+          dist: opensuse-tumbleweed 20260604 n/a
         locale: utf-8
        machine: x86_64
        release: 5.15.154+
         system: Linux
-       version: openSUSE Tumbleweed 20260603 n/a
+       version: openSUSE Tumbleweed 20260604 n/a
  
 # salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
 local:
@@ -71,7 +71,7 @@ local:
     lsb_distrib_id:
         openSUSE Tumbleweed
     lsb_distrib_release:
-        20260603
+        20260604
     os:
         SUSE
     os_family:
@@ -82,16 +82,16 @@ local:
     oscodename:
         openSUSE Tumbleweed
     osfinger:
-        openSUSE Tumbleweed-20260603
+        openSUSE Tumbleweed-20260604
     osfullname:
         openSUSE Tumbleweed
     osmajorrelease:
-        20260603
+        20260604
     osmanufacturer:
     osrelease:
-        20260603
+        20260604
     osrelease_info:
-        - 20260603
+        - 20260604
     osversion:
     pythonexecutable:
         /opt/saltstack/salt/bin/python3.10
@@ -157,7 +157,7 @@ local:
     crypto-policies-scripts:
         20250714.cd6043a-4.1
     curl:
-        8.20.0-1.1
+        8.20.0-2.1
     dbus-1-common:
         1.14.10-5.4
     dbus-broker:
@@ -409,9 +409,9 @@ local:
     openSUSE-build-key:
         1.0-66.1
     openSUSE-release:
-        20260603-4142.1
+        20260604-4144.1
     openSUSE-release-appliance-docker:
-        20260603-4142.1
+        20260604-4144.1
     openssh:
         10.3p1-6.1
     openssh-clients:

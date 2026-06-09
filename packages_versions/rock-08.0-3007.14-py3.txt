@@ -189,8 +189,6 @@ local:
         4.7.0-21.el8_10
     dnf-plugins-core:
         4.0.21-25.el8
-    elfutils-debuginfod-client:
-        0.190-2.el8
     elfutils-default-yama-scope:
         0.190-2.el8
     elfutils-libelf:

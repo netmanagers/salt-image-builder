@@ -239,11 +239,11 @@ local:
     libbz2-1.0:
         1.0.8-4
     libc-bin:
-        2.31-13+deb11u13
+        2.31-13+deb11u14
     libc-l10n:
-        2.31-13+deb11u13
+        2.31-13+deb11u14
     libc6:
-        2.31-13+deb11u13
+        2.31-13+deb11u14
     libcap-ng0:
         0.7.9-2.2+b1
     libcap2:
@@ -393,7 +393,7 @@ local:
     libssh2-1:
         1.9.0-2+deb11u1
     libssl1.1:
-        1.1.1w-0+deb11u5
+        1.1.1w-0+deb11u7
     libstdc++6:
         10.2.1-6
     libsystemd0:
@@ -421,7 +421,7 @@ local:
     libzstd1:
         1.4.8+dfsg-2.1
     locales:
-        2.31-13+deb11u13
+        2.31-13+deb11u14
     login:
         1:4.8.1-1+deb11u1
     logsave:
@@ -449,7 +449,7 @@ local:
     openssh-sftp-server:
         1:8.4p1-5+deb11u7
     openssl:
-        1.1.1w-0+deb11u5
+        1.1.1w-0+deb11u7
     passwd:
         1:4.8.1-1+deb11u1
     pci.ids:
