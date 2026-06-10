@@ -423,7 +423,7 @@ local:
     libssh-4:
         0.9.6-2ubuntu0.22.04.7
     libssl3:
-        3.0.2-0ubuntu1.23
+        3.0.2-0ubuntu1.25
     libstdc++6:
         12.3.0-1ubuntu1~22.04.3
     libstemmer0d:
@@ -487,7 +487,7 @@ local:
     openssh-sftp-server:
         1:8.9p1-3ubuntu0.15
     openssl:
-        3.0.2-0ubuntu1.23
+        3.0.2-0ubuntu1.25
     packagekit:
         1.2.5-2ubuntu3.1
     passwd:

@@ -1,5 +1,13 @@
 # Changelog
 
+# [1.119.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.118.0...v1.119.0) (2026-06-10)
+
+
+### Features
+
+* **fedora:** add 43 and 44 ([41cf184](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/41cf184e3a8b30cda1962fb9d08a9e187295756b))
+* **fedora:** deprecate 40 and 41 ([adf2a5f](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/adf2a5f246f1fbde61c938f6017881fd91691b3b))
+
 # [1.118.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.117.0...v1.118.0) (2026-06-09)
 
 

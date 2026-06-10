@@ -383,7 +383,7 @@ local:
     libssh2-1:
         1.10.0-3+b1
     libssl3:
-        3.0.20-1~deb12u1
+        3.0.20-1~deb12u2
     libstdc++6:
         12.2.0-14+deb12u1
     libsystemd-shared:
@@ -439,7 +439,7 @@ local:
     openssh-sftp-server:
         1:9.2p1-2+deb12u10
     openssl:
-        3.0.20-1~deb12u1
+        3.0.20-1~deb12u2
     passwd:
         1:4.13+dfsg1-1+deb12u2
     pci.ids:
