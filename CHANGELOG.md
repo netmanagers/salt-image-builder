@@ -1,5 +1,13 @@
 # Changelog
 
+# [1.120.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.119.0...v1.120.0) (2026-06-10)
+
+
+### Features
+
+* **suse:** build 16.0 ([cebd559](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/cebd559d097d7413aa83518e28403ec954e62b2c))
+* **suse:** deprecate 15.6 ([6d9927f](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/6d9927fdfd33161fecd106354424657303d91d2f))
+
 # [1.119.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.118.0...v1.119.0) (2026-06-10)
 
 
