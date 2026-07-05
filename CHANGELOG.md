@@ -1,5 +1,14 @@
 # Changelog
 
+# [1.121.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.120.0...v1.121.0) (2026-07-05)
+
+
+### Features
+
+* **salt:** remove 3007 ([1b4288d](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/1b4288d5685b58dd5abb7c74c1b8d10f4cd7e352))
+* **salt:** upgrade to 3006.27 ([c5d6850](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/c5d68509343c7a44e00efa43f1771b8eb39fc7db))
+* **salt:** upgrade to 3008.2 ([6259618](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/62596180ce6276c640ff0c49d89b1d8283ae954d))
+
 # [1.120.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.119.0...v1.120.0) (2026-06-10)
 
 
