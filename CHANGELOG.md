@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.122.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.121.0...v1.122.0) (2026-07-09)
+
+
+### Features
+
+* **os:** add Ubuntu 26.04 ([b66efc2](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/b66efc21a1c67b2b154c2773d62d078d1ba5144a))
+
 # [1.121.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.120.0...v1.121.0) (2026-07-05)
 
 

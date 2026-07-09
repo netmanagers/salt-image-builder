@@ -223,13 +223,13 @@ local:
     glib2:
         2.68.4-20.el9
     glibc:
-        2.34-272.el9
+        2.34-273.el9
     glibc-common:
-        2.34-272.el9
+        2.34-273.el9
     glibc-langpack-en:
-        2.34-272.el9
+        2.34-273.el9
     glibc-minimal-langpack:
-        2.34-272.el9
+        2.34-273.el9
     gmp:
         1:6.2.0-13.el9
     gnupg2:
@@ -301,7 +301,7 @@ local:
     libdb:
         5.3.28-57.el9
     libdnf:
-        0.69.0-19.el9
+        0.69.0-20.el9
     libeconf:
         0.4.1-7.el9
     libedit:
@@ -317,7 +317,7 @@ local:
     libgcc:
         11.5.0-14.el9
     libgcrypt:
-        1.10.0-12.el9
+        1.10.0-13.el9
     libgomp:
         11.5.0-14.el9
     libgpg-error:
@@ -399,19 +399,19 @@ local:
     openldap:
         2.6.13-1.el9
     openssh:
-        9.9p1-8.el9
+        9.9p1-9.el9
     openssh-clients:
-        9.9p1-8.el9
+        9.9p1-9.el9
     openssh-server:
-        9.9p1-8.el9
+        9.9p1-9.el9
     openssl:
-        1:3.5.5-3.el9
+        1:3.5.7-1.el9
     openssl-devel:
-        1:3.5.5-3.el9
+        1:3.5.7-1.el9
     openssl-fips-provider:
-        1:3.5.5-3.el9
+        1:3.5.7-1.el9
     openssl-libs:
-        1:3.5.5-3.el9
+        1:3.5.7-1.el9
     p11-kit:
         0.26.2-1.el9
     p11-kit-trust:
@@ -577,11 +577,11 @@ local:
     python3-gpg:
         1.15.1-6.el9
     python3-hawkey:
-        0.69.0-19.el9
+        0.69.0-20.el9
     python3-libcomps:
         0.1.18-1.el9
     python3-libdnf:
-        0.69.0-19.el9
+        0.69.0-20.el9
     python3-libs:
         3.9.25-7.el9
     python3-pip:

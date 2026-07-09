@@ -220,15 +220,15 @@ local:
     glib2:
         2.56.4-169.el8_10
     glibc:
-        2.28-251.el8_10.37
+        2.28-251.el8_10.38
     glibc-common:
-        2.28-251.el8_10.37
+        2.28-251.el8_10.38
     glibc-gconv-extra:
-        2.28-251.el8_10.37
+        2.28-251.el8_10.38
     glibc-langpack-en:
-        2.28-251.el8_10.37
+        2.28-251.el8_10.38
     glibc-minimal-langpack:
-        2.28-251.el8_10.37
+        2.28-251.el8_10.38
     gmp:
         1:6.1.2-12.el8
     gnupg2:

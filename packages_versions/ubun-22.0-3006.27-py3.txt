@@ -206,7 +206,7 @@ local:
     grep:
         3.7-1build1
     gzip:
-        1.10-4ubuntu4.1
+        1.10-4ubuntu4.2
     hostname:
         3.23ubuntu2
     init-system-helpers:
@@ -390,9 +390,9 @@ local:
     libpython3-stdlib:
         3.10.6-1~22.04.1
     libpython3.10-minimal:
-        3.10.12-1~22.04.15
+        3.10.12-1~22.04.16
     libpython3.10-stdlib:
-        3.10.12-1~22.04.15
+        3.10.12-1~22.04.16
     libreadline8:
         8.1.2-1
     librtmp1:
@@ -576,9 +576,9 @@ local:
     python3-zipp:
         1.0.0-3ubuntu0.1
     python3.10:
-        3.10.12-1~22.04.15
+        3.10.12-1~22.04.16
     python3.10-minimal:
-        3.10.12-1~22.04.15
+        3.10.12-1~22.04.16
     readline-common:
         8.1.2-1
     salt-common:
@@ -600,7 +600,7 @@ local:
     sysvinit-utils:
         3.01-1ubuntu1
     tar:
-        1.34+dfsg-1ubuntu0.1.22.04.3
+        1.34+dfsg-1ubuntu0.1.22.04.4
     ubuntu-keyring:
         2021.03.26
     ucf:

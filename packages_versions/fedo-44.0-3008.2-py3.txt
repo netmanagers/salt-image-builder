@@ -226,13 +226,13 @@ local:
     glib2:
         2.88.2-1.fc44
     glibc:
-        2.43-6.fc44
+        2.43-7.fc44
     glibc-common:
-        2.43-6.fc44
+        2.43-7.fc44
     glibc-langpack-en:
-        2.43-6.fc44
+        2.43-7.fc44
     glibc-minimal-langpack:
-        2.43-6.fc44
+        2.43-7.fc44
     gmp:
         1:6.3.0-5.fc44
     gnulib-l10n:
@@ -348,7 +348,7 @@ local:
     libnghttp2:
         1.68.0-4.fc44
     libnghttp3:
-        1.16.0-1.fc44
+        1.17.0-1.fc44
     libnsl2:
         2.0.1-5.fc44
     libpkgconf:
@@ -426,11 +426,11 @@ local:
     openldap:
         2.6.13-1.fc44
     openssh:
-        10.2p1-10.fc44
+        10.2p1-12.fc44
     openssh-clients:
-        10.2p1-10.fc44
+        10.2p1-12.fc44
     openssh-server:
-        10.2p1-10.fc44
+        10.2p1-12.fc44
     openssl:
         1:3.5.7-1.fc44
     openssl-libs:

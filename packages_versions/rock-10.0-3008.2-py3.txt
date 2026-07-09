@@ -159,7 +159,7 @@ local:
     chkconfig:
         1.30-2.el10
     coreutils-single:
-        9.5-7.el10
+        9.5-8.el10_2
     cracklib:
         2.9.11-8.el10
     cracklib-dicts:
@@ -227,13 +227,13 @@ local:
     glib2:
         2.80.4-12.el10_2.13
     glibc:
-        2.39-124.el10_2
+        2.39-126.el10_2
     glibc-common:
-        2.39-124.el10_2
+        2.39-126.el10_2
     glibc-langpack-en:
-        2.39-124.el10_2
+        2.39-126.el10_2
     glibc-minimal-langpack:
-        2.39-124.el10_2
+        2.39-126.el10_2
     gmp:
         1:6.2.1-12.el10
     gnutls:

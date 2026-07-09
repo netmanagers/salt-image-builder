@@ -224,11 +224,11 @@ local:
     gdbm-libs:
         1:1.23-10.fc43
     git:
-        2.54.0-1.fc43
+        2.55.0-1.fc43
     git-core:
-        2.54.0-1.fc43
+        2.55.0-1.fc43
     git-core-doc:
-        2.54.0-1.fc43
+        2.55.0-1.fc43
     glib2:
         2.86.5-1.fc43
     glibc:
@@ -268,7 +268,7 @@ local:
     hiredis:
         1.2.0-7.fc43
     hwdata:
-        0.408-1.fc43
+        0.409-1.fc43
     ima-evm-utils-libs:
         1.6.2-6.fc43
     json-c:
@@ -498,7 +498,7 @@ local:
     perl-Getopt-Std:
         1.14-523.fc43
     perl-Git:
-        2.54.0-1.fc43
+        2.55.0-1.fc43
     perl-HTTP-Tiny:
         0.094-1.fc43
     perl-IO:
@@ -686,9 +686,9 @@ local:
     util-linux-core:
         2.41.5-1.fc43
     vim-data:
-        2:9.2.725-1.fc43
+        2:9.2.780-1.fc43
     vim-minimal:
-        2:9.2.725-1.fc43
+        2:9.2.780-1.fc43
     which:
         2.23-3.fc43
     xz:

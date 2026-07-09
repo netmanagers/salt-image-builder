@@ -153,7 +153,7 @@ local:
     coreutils:
         9.4-3ubuntu6.2
     curl:
-        8.5.0-2ubuntu10.10
+        8.5.0-2ubuntu10.11
     dash:
         0.5.12-6ubuntu5
     dbus:
@@ -213,7 +213,7 @@ local:
     grep:
         3.11-4build1
     gzip:
-        1.12-1ubuntu3.1
+        1.12-1ubuntu3.2
     hostname:
         3.23+nmu2ubuntu2
     init-system-helpers:
@@ -267,9 +267,9 @@ local:
     libcryptsetup12:
         2:2.7.0-1ubuntu4.2
     libcurl3t64-gnutls:
-        8.5.0-2ubuntu10.10
+        8.5.0-2ubuntu10.11
     libcurl4t64:
-        8.5.0-2ubuntu10.10
+        8.5.0-2ubuntu10.11
     libdb5.3t64:
         5.3.28+dfsg2-7
     libdbus-1-3:
@@ -393,9 +393,9 @@ local:
     libpython3-stdlib:
         3.12.3-0ubuntu2.1
     libpython3.12-minimal:
-        3.12.3-1ubuntu0.13
+        3.12.3-1ubuntu0.15
     libpython3.12-stdlib:
-        3.12.3-1ubuntu0.13
+        3.12.3-1ubuntu0.15
     libreadline8t64:
         8.2-4build1
     librtmp1:
@@ -561,9 +561,9 @@ local:
     python3-yaml:
         6.0.1-2build2
     python3.12:
-        3.12.3-1ubuntu0.13
+        3.12.3-1ubuntu0.15
     python3.12-minimal:
-        3.12.3-1ubuntu0.13
+        3.12.3-1ubuntu0.15
     readline-common:
         8.2-4build1
     salt-common:
@@ -589,9 +589,9 @@ local:
     sysvinit-utils:
         3.08-6ubuntu3
     tar:
-        1.35+dfsg-3ubuntu0.1
+        1.35+dfsg-3ubuntu0.2
     tzdata:
-        2026a-0ubuntu0.24.04.1
+        2026b-0ubuntu0.24.04.1
     ubuntu-keyring:
         2023.11.28.1
     ucf:
