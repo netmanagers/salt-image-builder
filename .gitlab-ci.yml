@@ -115,6 +115,8 @@ commitlint:
           export TAG=arch-base-latest
         elif [ "${DN}" = "quay.io/centos/centos" ]; then
           export TAG=centos-${DV}
+        elif [ "${DN}" = "rockylinux/rockylinux" ]; then
+          export TAG=rockylinux-${DV}
         else
           export TAG=$(echo ${DN} | sed "s#/#-#g")-${DV}
         fi
