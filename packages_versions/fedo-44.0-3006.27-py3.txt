@@ -284,13 +284,13 @@ local:
     less:
         702-1.fc44
     libacl:
-        2.3.2-6.fc44
+        2.4.0-1.fc44
     libarchive:
         3.8.7-1.fc44
     libassuan:
         2.5.7-5.fc44
     libattr:
-        2.5.2-8.fc44
+        2.6.0-1.fc44
     libblkid:
         2.41.5-1.fc44
     libbrotli:
@@ -440,9 +440,9 @@ local:
     p11-kit-trust:
         0.26.2-1.fc44
     pam:
-        1.7.2-1.fc44
+        1.7.2-2.fc44
     pam-libs:
-        1.7.2-1.fc44
+        1.7.2-2.fc44
     pciutils:
         3.15.0-1.fc44
     pciutils-libs:

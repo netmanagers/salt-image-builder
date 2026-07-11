@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.122.1](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.122.0...v1.122.1) (2026-07-11)
+
+
+### Bug Fixes
+
+* **rocky:** correct image name ([a99680b](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/commit/a99680bce2db57e8eed2b9630868d02a0a17b1b9))
+
 # [1.122.0](https://gitlab.com/saltstack-formulas/infrastructure/salt-image-builder/compare/v1.121.0...v1.122.0) (2026-07-09)
 
 

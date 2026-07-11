@@ -38,12 +38,12 @@ Dependency Versions:
            ZMQ: 4.3.5
  
 System Versions:
-          dist: debian 13.5 trixie
+          dist: debian 13.6 trixie
         locale: utf-8
        machine: x86_64
        release: 5.15.154+
         system: Linux
-       version: Debian GNU/Linux 13.5 trixie
+       version: Debian GNU/Linux 13.6 trixie
  
 # salt-call --local grains.item init kernel kernelrelease kernelversion locale_info lsb_distrib_codename lsb_distrib_id lsb_distrib_release os os_family osarch osbuild oscodename osfinger osfullname osmajorrelease osmanufacturer osrelease osrelease_info osversion pythonexecutable pythonpath pythonversion saltpath saltversion saltversioninfo systemd virtual virtual_subtype zmqversion
 local:
@@ -137,7 +137,7 @@ local:
     apt-transport-https:
         3.0.3
     base-files:
-        13.8+deb13u5
+        13.8+deb13u6
     base-passwd:
         3.6.7
     bash:
@@ -149,7 +149,7 @@ local:
     coreutils:
         9.7-3
     curl:
-        8.14.1-2+deb13u3
+        8.14.1-2+deb13u4
     dash:
         0.5.12-12
     dctrl-tools:
@@ -163,7 +163,7 @@ local:
     diffutils:
         1:3.10-4
     dirmngr:
-        2.4.7-21+deb13u1+b3
+        2.4.7-21+deb13u1+b4
     dpkg:
         1.22.22
     findutils:
@@ -181,13 +181,13 @@ local:
     gnupg2:
         2.4.7-21+deb13u1
     gpg:
-        2.4.7-21+deb13u1+b3
+        2.4.7-21+deb13u1+b4
     gpg-agent:
-        2.4.7-21+deb13u1+b3
+        2.4.7-21+deb13u1+b4
     gpgconf:
-        2.4.7-21+deb13u1+b3
+        2.4.7-21+deb13u1+b4
     gpgsm:
-        2.4.7-21+deb13u1+b3
+        2.4.7-21+deb13u1+b4
     grep:
         3.11-4
     gzip:
@@ -235,9 +235,9 @@ local:
     libcrypt1:
         1:4.4.38-1
     libcurl3t64-gnutls:
-        8.14.1-2+deb13u3
+        8.14.1-2+deb13u4
     libcurl4t64:
-        8.14.1-2+deb13u3
+        8.14.1-2+deb13u4
     libdb5.3t64:
         5.3.28+dfsg2-9
     libdebconfclient0:
@@ -291,7 +291,7 @@ local:
     liblz4-1:
         1.10.0-4
     liblzma5:
-        5.8.1-1
+        5.8.1-1+deb13u1
     libmd0:
         1.1.0-2+b1
     libmount1:
@@ -333,9 +333,9 @@ local:
     libpython3-stdlib:
         3.13.5-1
     libpython3.13-minimal:
-        3.13.5-2+deb13u2
+        3.13.5-2+deb13u3
     libpython3.13-stdlib:
-        3.13.5-2+deb13u2
+        3.13.5-2+deb13u3
     libreadline8t64:
         8.2-6
     librtmp1:
@@ -369,7 +369,7 @@ local:
     libsystemd0:
         257.13-1~deb13u1
     libtasn1-6:
-        4.20.0-2
+        4.20.0-2+deb13u1
     libtext-charwidth-perl:
         0.04-11+b4
     libtext-wrapi18n-perl:
@@ -447,9 +447,9 @@ local:
     python3-yaml:
         6.0.2-1+b2
     python3.13:
-        3.13.5-2+deb13u2
+        3.13.5-2+deb13u3
     python3.13-minimal:
-        3.13.5-2+deb13u2
+        3.13.5-2+deb13u3
     readline-common:
         8.2-6
     runit-helper:

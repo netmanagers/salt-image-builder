@@ -160,7 +160,7 @@ local:
     crypto-policies-scripts:
         20250714.cd6043a-160000.2.1
     curl:
-        8.14.1-160000.7.1
+        8.14.1-160000.8.1
     dbus-1:
         1.14.10-160000.2.2
     dbus-1-common:
@@ -248,7 +248,7 @@ local:
     libcryptsetup12:
         2.8.4-160000.1.1
     libcurl4:
-        8.14.1-160000.7.1
+        8.14.1-160000.8.1
     libdbus-1-3:
         1.14.10-160000.2.2
     libdevmapper-event1_03:
@@ -380,11 +380,11 @@ local:
     libsubid5:
         4.17.2-160000.2.2
     libsystemd0:
-        257.13-160000.2.1
+        257.13-160000.3.1
     libtasn1-6:
         4.21.0-160000.1.1
     libudev1:
-        257.13-160000.2.1
+        257.13-160000.3.1
     libunistring5:
         1.3-160000.3.2
     libusb-1_0-0:
@@ -506,7 +506,7 @@ local:
     system-user-root:
         20190513-160000.2.2
     systemd:
-        257.13-160000.2.1
+        257.13-160000.3.1
     systemd-default-settings:
         0.10-160000.2.2
     systemd-default-settings-branding-openSUSE:
@@ -528,7 +528,7 @@ local:
     timezone:
         2026b-160000.1.1
     udev:
-        257.13-160000.2.1
+        257.13-160000.3.1
     util-linux:
         2.41.1-160000.4.1
     which:
